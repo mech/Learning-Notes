@@ -34,9 +34,33 @@ function createStore(reducer, initialState) {
 }
 ```
 
+```js
+// ??
+const createStoreWithMiddleware = applyMiddleware()(createStore)
+const store = createStoreWithMiddleware(reducer)
+```
+
 ## Actions
 
 Do not underestimate the power of action creator. It can help document your software by specifying what action a component can dispatch and this kind of information can be helpful in your team.
+
+Our action creator always return an object, but it can also return a function:
+
+```js
+const signInUser = ({ email, password }) => (
+  {
+    type: 'SIGN_IN_USER',
+    payload: { email, password }
+  }
+)
+
+// Or
+const signInUser = ({ email, password }) => (dispatch) => {
+  fetch()
+    .then(res => res.json)
+    .then(data => dispatch())
+}
+```
 
 ## Effects
 
@@ -48,6 +72,8 @@ Do not underestimate the power of action creator. It can help document your soft
 Isn't it funny that Redux's so-called "actions" don't actually do anything? They're just objects, boring and simple. Wouldn't it be cool if you could actually make them **do** something? Like, say, make an Ajax call, or trigger other actions? Because reducers are supposed to be pure we couldn't put that work inside a reducer. If you wanted an action to **do** something, that code would need to live inside a function. It would be nice if an action creator could return a function instead of an action object and that is what redux-thunk does. It is a simple middleware that looks at every action that passes through the system, and if it's a function, it calls that function. That's all it does.
 
 Normally `dispatch()` accepts only action object. redux-thunk allows you to pass a function to `dispatch()`.
+
+With redux-thunk, we are not limited to a single action, we can dispatches multiple actions down the pipeline to reducers.
 
 ## Middleware
 
