@@ -102,6 +102,8 @@ We need to pre-bind them in the constructor.
 * [Thinking statefully](https://daveceddia.com/thinking-statefully/)
 * [A visual guide to state in React](https://daveceddia.com/visual-guide-to-state-in-react/)
 
+State is only reserved for interactivity, that is, data changes over time.
+
 Eliminate time as much as possible. If your `render()` accumulate state over time, you will want to eliminate that. See how Ryan Florence [remove time](https://www.youtube.com/watch?v=kp-NOggyz54).
 
 Declaring state let you eliminate time.
