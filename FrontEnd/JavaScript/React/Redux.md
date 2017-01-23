@@ -3,6 +3,37 @@
 * [Jumpstate - simple and powerful state management utility for Redux (worth a look)](https://github.com/jumpsuit/jumpstate)
 * [conventional-redux](https://github.com/mjaneczek/conventional-redux)
 * [Practical Redux](http://blog.isquaredsoftware.com/2016/10/practical-redux-part-0-introduction/)
+* [Isn’t our code just the BEST - @fat](https://medium.com/bumpers/isnt-our-code-just-the-best-f028a78f33a9#.7xiqumcuk)
+
+Redux helps us enforce good state boundary. You do not want to misapply it by storing form state in the store. It is not meant for that.
+
+Redux solve React's data tunnelling problem.
+
+## Normalizr
+
+Why do we need it? Our JSON API may be deeply nested and duplicative. We want to coerce that deep API into more manageable and cacheable ID-indexed objects.
+
+```js
+// from this:
+{
+  "id": "123",
+  "name": "mech"
+}
+
+// to this
+{
+  "result": "123",
+  "entities": {
+    "users": {
+      "123": {
+        "name": "mech"
+      }
+    }
+  }
+}
+```
+
+https://medium.com/@mark.erikson/having-an-entities-slice-is-very-normal-60917516291f#.8hjj34h2y
 
 ## Store
 
@@ -40,6 +71,24 @@ const createStoreWithMiddleware = applyMiddleware()(createStore)
 const store = createStoreWithMiddleware(reducer)
 ```
 
+```js
+const configureStore = () => {
+  const middleware = [promise]
+  if (process.env.NODE_ENV !== 'production') {
+    middleware.push(createLogger())
+  }
+  
+  return createStore(
+    todoApp,
+    applyMiddleware(...middleware)
+  )
+}
+```
+
+## Provider
+
+
+
 ## Actions
 
 Do not underestimate the power of action creator. It can help document your software by specifying what action a component can dispatch and this kind of information can be helpful in your team.
@@ -74,6 +123,30 @@ Isn't it funny that Redux's so-called "actions" don't actually do anything? They
 Normally `dispatch()` accepts only action object. redux-thunk allows you to pass a function to `dispatch()`.
 
 With redux-thunk, we are not limited to a single action, we can dispatches multiple actions down the pipeline to reducers.
+
+```js
+// just in case you want to directly access the API
+// which allow your thunk to have access to all your API endpoint calls
+applyMiddleware(thunk.withExtraArgument(api), ...others)
+
+// then at your async actions:
+export const fetchUserByEmail = (email) => {
+  return (dispatch, getState, api) => {
+    // prevent race condition
+    if (getIsFetching(getState())) {
+      return Promise.resolve()
+    }    
+
+    dispatch(setIsFetching())
+    return api.fetchUserByEmail(email)
+      .then(api.checkStatus)
+      .then(api.toJSON)
+      .then(response => normalize(response.user, schema.user))
+      .then(response => dispatch(setUser(response)))
+      .catch(api.handleError(dispatch))
+  }
+}
+```
 
 ## Middleware
 
@@ -177,6 +250,7 @@ const combineReducers = (reducers) => {
 }
 ```
 
+You can use `combineReducers` multiple times in different files. You do not need to only use it at the root level.
 
 ### Higher Order Reducers
 
@@ -207,9 +281,10 @@ export default combineReducers({
 connect function takes care of:
 
 1. Subscribing and unsubscribing
-2. Re-rendering
+2. Re-rendering (`forceUpdate`)
 3. Getting state from `store.getState()`
 4. Setup `contextTypes` for the `store`
+5. Convert Redux state into React props with `mapState`. Allowing you to get a subset of state you care about for that component.
 
 ```js
 // Container component
@@ -238,7 +313,6 @@ ContainerComponent.contextTypes = {
   store: React.PropTypes.object
 }
 ```
-
 
 Why do we need `connect`?
 
@@ -301,4 +375,32 @@ AddTodo = connect(null, null)(AddTodo)
 
 // Same as, `dispatch` is automatically available
 AddTodo = connect()(AddTodo)
+```
+
+```js
+const mapStateToProps = (state, ownProps) => ({
+  todos: state.todos,
+  active: ownProps.filter === state.visibilityFilter
+})
+
+const mapDispatchToProps = (dispatch, ownProps) => ({
+  onTodoClick(id) {
+    dispatch(toggleTodo(id))
+  },
+})
+```
+
+## Selectors
+
+```js
+// We use getVisibleTodos() to "select" a "slice" of the todos we want
+const mapStateToProps = (state, { params }) => ({
+  todos: getVisibleTodos(state.todos, params.filter)
+})
+
+// We can move it to the reducer file
+export default todos
+
+export const getVisibleTodos = (todos, filter) => {
+}
 ```

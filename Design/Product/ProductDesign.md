@@ -7,6 +7,9 @@
 * Store all of it
 * Hold the designer accountable
 * Reduce risk through compartmentalization
+* To finish a project you must know what done looks like
+* [Productivity is overrated](http://calnewport.com/blog/2007/08/31/dangerous-ideas-productivity-is-overrated/)
+* At some point, even David Allen himself still has to convince himself to do hard things when he doesn't want to. Effort must be expended. This cannot be avoided.
 
 ## Jobs To Be Done
 

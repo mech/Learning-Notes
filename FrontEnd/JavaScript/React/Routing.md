@@ -3,6 +3,10 @@
 * [RR4 docs](https://react-router.now.sh/)
 * [Simple declarative Redux state with React Router 4 server side rendering](https://medium.com/@AlexFaunt/satisfying-your-apps-state-343118b0730d#.gh5ihu9ii)
 
+```
+Route Component === Route Handler === Screen Container === Controller (Horror)
+```
+
 You can think of URL as being an external keeper of state. URL is also a state.
 
 Starting from v4, routes are just components. The components now define the composition of the UI. Before all your routes may be in `index.js`:
@@ -88,6 +92,17 @@ Do not use exactly if you have nested routes or else refreshing will not work.
 ## URL Hierarchy and Component Hierarchy
 
 Does your application component tree reflect URL hierarchy?
+
+## Transitioning
+
+```js
+Component.contextTypes = {
+  router: object
+}
+
+// in your component, you can
+this.context.router.transitionTo('/')
+```
 
 ## Code splitting
 
