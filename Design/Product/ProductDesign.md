@@ -10,6 +10,7 @@
 * To finish a project you must know what done looks like
 * [Productivity is overrated](http://calnewport.com/blog/2007/08/31/dangerous-ideas-productivity-is-overrated/)
 * At some point, even David Allen himself still has to convince himself to do hard things when he doesn't want to. Effort must be expended. This cannot be avoided.
+* Software is like makeup in that way: you only notice it when it's messed up. "More interface" does not fix "bad interface". It amplifies it. - [Is Your Software Wearing Too Much Makeup?](https://ux.useronboard.com/is-your-software-wearing-too-much-makeup-a5f1e26f1057#.jyjira8fa)
 
 ## Jobs To Be Done
 

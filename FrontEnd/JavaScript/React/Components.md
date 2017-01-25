@@ -302,6 +302,10 @@ const App = () => { ... }
 module.exports = withPlayQueue(App)
 ```
 
+## Keys
+
+* [Why having proper key is important](http://buildwithreact.com/article/in-depth-diffing)
+
 ## Blogs
 
 * [Dave Ceddia](https://daveceddia.com/)

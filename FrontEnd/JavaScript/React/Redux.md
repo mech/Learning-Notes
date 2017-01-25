@@ -11,6 +11,29 @@ Redux solve React's data tunnelling problem.
 
 > Change is not the result of one object acting on another (OOP-way); change is the result of a process (Reducer) being applied to an unchangeable atom.
 
+## Code Organization
+
+* [Scaling your Redux App with ducks](https://medium.com/@alexnm/scaling-your-redux-app-with-ducks-6115955638be#.1qa7z6y4d)
+
+Function-first folders (e.g. `/container`, `/actions`, `/reducers`, `/components`) don't scale at all. As you add more features, you add files into the same folders.
+
+```
+duck/
+├── actions.js
+├── index.js
+├── reducers.js
+├── selectors.js
+├── tests.js
+├── types.js
+├── utils.js
+```
+
+* **types** - action types names like `timesheet/CANCEL`
+* **actions** - action creators and thunks
+* **reducers** - don't be afraid to use `combineReducers` as much as needed
+* **selectors** - the split between operations and selectors resembles the CQRS pattern. Selector functions take a slice of the application state and return some data based on that. They never introduce any changes to the application state.
+* **index** - export the default reducers, export as named exports the action creators and export types if they are needed elsewhere.
+
 ## Normalizr
 
 Why do we need it? Our JSON API may be deeply nested and duplicative. We want to coerce that deep API into more manageable and cacheable ID-indexed objects.
