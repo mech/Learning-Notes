@@ -8,3 +8,23 @@ Immutable.js allows us to detect changes in JavaScript objects/arrays without re
 
 * [React, Redux and Immutable.js: Ingredients for Efficient Web Applications](https://www.toptal.com/react/react-redux-and-immutablejs)
 * [updeep - Easily update nested frozen objects and arrays in a declarative and immutable manner](https://github.com/substantial/updeep)
+
+## Ways to Mutate
+
+### Array
+
+```js
+items.concat(newItem)
+
+[...items, newItem]
+```
+
+### Object
+
+```js
+// ES6
+Object.assign({}, originalObject, { field: newValue })
+
+// ES7 Object spread
+{...originalObject, field: newValue}
+```

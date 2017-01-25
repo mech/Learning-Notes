@@ -9,6 +9,8 @@ Redux helps us enforce good state boundary. You do not want to misapply it by st
 
 Redux solve React's data tunnelling problem.
 
+> Change is not the result of one object acting on another (OOP-way); change is the result of a process (Reducer) being applied to an unchangeable atom.
+
 ## Normalizr
 
 Why do we need it? Our JSON API may be deeply nested and duplicative. We want to coerce that deep API into more manageable and cacheable ID-indexed objects.
@@ -87,7 +89,22 @@ const configureStore = () => {
 
 ## Provider
 
+```js
+<BrowserRouter>
+  <Provider store={store}>
+    <div className="app">
+      <Match pattern="/" component={Landing} />
+    </div>
+  </Provider>
+</BrowserRouter>
 
+// Or
+<Provider store={store}>
+  <Router>
+    <Route />
+  </Router>
+</Provider>
+```
 
 ## Actions
 

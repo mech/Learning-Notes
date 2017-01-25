@@ -107,3 +107,49 @@ this.context.router.transitionTo('/')
 ## Code splitting
 
 * [DIY](https://twitter.com/ryanflorence/status/775743520615206913)
+
+Make your main `<App>` simple and only have several Matches to the routes. In this way you can then use code splitting easily and not concern with overlapping routes.
+
+```js
+// Inside <App>...
+
+<Provider store={store}>
+  <Match
+    exactly
+    pattern="/"
+    component={(props) =>
+      <AsyncRoute
+        props={props}
+        loadingPromise={System.import("./Landing")}
+      />
+    }
+  />
+  
+  <Match...>
+</Provider>
+```
+
+```js
+// A HOC for code splitting
+class AsyncRoute extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { loaded: false }
+  }
+  
+  componentDidMount() {
+    this.props.loadingPromise.then(module => {
+      this.component = module.default // Due to CommonJS
+      this.setState({ loaded: true })
+    })
+  }
+  
+  render() {
+    if (this.state.loaded) {
+      return <this.component {...this.props.props} />
+    } else {
+      return <Loading />
+    }
+  }
+}
+```

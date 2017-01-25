@@ -154,6 +154,18 @@ this.setState((prevState, props) => {
 
 The 2nd argument to `setState` to a callback function which will be invoked when `setState` has finished and the component is re-rendered. It's best to use other lifecycle method rather than relying on this callback function.
 
+## Lifecycle Methods
+
+## shouldComponentUpdate
+
+* [Turbocharge Your React Application with shouldComponentUpdate and Immutable.js](https://blog.javascripting.com/2015/03/31/turbocharge-your-react-application-with-shouldcomponentupdate-and-immutable-js/)
+
+React's `render()` do not really ask the DOM to immediately render itself. Instead `render()` is just a method that return a virtual DOM. If you tell React that certain component and their children need not be invoked with the `render()` through `shouldComponentUpdate`, then React will skip those calls.
+
+> Let's say you have a list composed of many components with a complicated nested structure, and one item in the list changes. It would be a waste of resources to perform a diff on every single component in the list. By implementing `shouldComponentUpdate`, you can basically tell React to ignore all the components except the one that changed.
+
+The default behavior of `shouldComponentUpdate` is to let React do a virtual DOM diff to arrive at a decision whether to update or not which can be time consuming.
+
 ## Context
 
 | Parent/Grandparent                                                    | Child                                            |
