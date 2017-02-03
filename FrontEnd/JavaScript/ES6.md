@@ -2,6 +2,7 @@
 
 * [Clean Code for JavaScript](https://github.com/ryanmcdermott/clean-code-javascript)
 * [Optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
+* [Polyfills: everything you ever wanted to know, or maybe a bit less](https://hackernoon.com/polyfills-everything-you-ever-wanted-to-know-or-maybe-a-bit-less-7c8de164e423#.1wg5unfwr)
 
 Encapsulate conditionals:
 
@@ -16,6 +17,32 @@ function shouldShowSpinner(fsm, listNode) {
 }
 
 if (shouldShowSpinner(fsm, listNode)) {
+}
+```
+
+## React
+
+```js
+class Button extends React.Component {
+  constructor(props) {
+    super(props)
+    
+    this.state = {
+    }
+    
+    // Binding option 1
+    this.handleClick = this.handleClick.bind(this)
+  }
+  
+  render() {
+  }
+}
+
+// Safe way if we do not want to depend on Class Properties (Draft stage)
+Button.propTypes = {
+}
+
+Button.defaultProps = {
 }
 ```
 
@@ -75,3 +102,138 @@ foo(...a, ...b) //=> [3, 4, 5, 6]
 // rest gather the rest of the argument into an array
 foo(1, 2, 3, 4, 5, 6)
 ```
+
+## Destructuring
+
+Kind of like pattern matching, but not really.
+
+### Array Destructuring
+
+```js
+var array = [1, 2, 3]
+
+// We can have default value and gather/rest operator
+// a = 1
+// b = 2
+// c = 3
+// d = 42
+// e = undefined
+// args = []
+var [a, b, c, d = 42, e, ...args] = array || []
+```
+
+```js
+var a = [1, 2, 3]
+
+// Throwing away first 2 elements [0, 1] and then gather the rest
+// and re-assign to `a`
+[, , ...a] = [0, ...a, 4] // => [2, 3, 4]
+```
+
+**Nested array destructuring**
+
+```js
+var a = [1, 2, 3, [4, 5, 6]]
+
+// args = [[4, 5, 6]] which may not be what you want
+var [a, b, c,...args] = a
+
+// d = 4
+// e = 6
+var [a, b, c, [d, , e]] = a
+```
+
+### Object Destructuring
+
+Mimic named arguments pattern somehow.
+
+## Tag Functions
+
+```js
+function upper(strings, ...values) {
+  var str = '';
+  for (var i=0; i<strings.length; i++) {
+    if (i > 0) str += values[i-1].toUpperCase()
+    str += strings[i]
+  }
+  
+  return str
+}
+
+// usage
+upper`Hello ${name}`
+```
+
+## Symbols
+
+All not that useful in a general case. A unique unguessable value. Use it as a symbolic placeholder for "something".
+
+## Iterator
+
+```js
+Array.prototype[Symbol.iterator] = function* () {
+  for (let i = 0; i < this.length; i++) {
+    yield this[i];
+  }
+}
+
+// Using for-of
+for (const elem of ['a', 'b', 'c']) {
+  console.log(elem);
+}
+```
+
+```js
+class TupleArray extends Array {
+  *[Symbol.iterator]() {
+    for (let i = 0; i < this.length; i++) {
+      yield [i, this[i]];
+    }
+  }
+}
+
+// Will return tuples
+// [0, 'a']
+// [1, 'b']
+// [2, 'c']
+```
+
+```js
+Number.prototype[Symbol.iterator] = function* () {
+  let i = 0;
+  while (i < this) { // Notice the this here
+    yield i++;
+  }
+}
+
+// Using spread operator directly on a number primitive
+console.log(...5);
+```
+
+Iterables implement `[Symbol.iterator]()`
+
+Iterators implement `next()` and `throw()`
+
+## Object Getter
+
+```js
+get canShowSecretData() {
+  return dataIsReady && isAdmin
+}
+
+get price() {
+  return `${this.props.currency}${this.props.value}` 
+}
+
+render() {
+  return (
+    <div>
+      {this.canShowSecretData && <SecretData />}
+    </div>
+  )
+}
+```
+
+## Videos
+
+* [Untangle your code with yield](https://www.youtube.com/watch?v=B15sTBSAotk)

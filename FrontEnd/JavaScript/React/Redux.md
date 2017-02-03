@@ -11,6 +11,13 @@ Redux solve React's data tunnelling problem.
 
 > Change is not the result of one object acting on another (OOP-way); change is the result of a process (Reducer) being applied to an unchangeable atom.
 
+Most actual code should be written as:
+
+* Redux middleware
+* Higher-order components
+
+This means you should almost never write logic in a plain UI component.
+
 ## Code Organization
 
 * [Scaling your Redux App with ducks](https://medium.com/@alexnm/scaling-your-redux-app-with-ducks-6115955638be#.1qa7z6y4d)
@@ -37,6 +44,8 @@ duck/
 ## Normalizr
 
 Why do we need it? Our JSON API may be deeply nested and duplicative. We want to coerce that deep API into more manageable and cacheable ID-indexed objects.
+
+We then pass the normalized records to reducers. Reducers should only store these. When reducers only store normalized records it becomes super easy to query using Reselect.
 
 ```js
 // from this:
@@ -430,7 +439,11 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
 })
 ```
 
-## Selectors
+## Selectors - State Transformation
+
+Every component you write has different needs. Some might show data in the same format as your API, while others might need to amend, blend or selectively combine data for its UI.
+
+Classically components get state directly from the store. Reselect queries and transforms data for each component.
 
 ```js
 // We use getVisibleTodos() to "select" a "slice" of the todos we want

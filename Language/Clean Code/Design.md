@@ -1,6 +1,7 @@
 # Object Oriented Design
 
 * [The Unofficial Guide to Rich Hickey's Brain](http://www.flyingmachinestudios.com/programming/the-unofficial-guide-to-rich-hickeys-brain/)
+* [Software Engineering Blogs](https://github.com/kilimchoi/engineering-blogs)
 
 Good code not only works, but is also simple, understandable, expressive and changeable.
 

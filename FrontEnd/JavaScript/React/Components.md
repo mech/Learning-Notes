@@ -63,6 +63,8 @@ render() {
 ```js
 // `todos` and `onTodoClick` are promoted to the props because we
 // want this to be a presentational component
+// BAD - poor performance as it need to re-render whenever props
+// changes due to function binding and lack of shouldComponentUpdate
 const TodoList = ({
   todos,
   onTodoClick
@@ -97,12 +99,18 @@ These are 2 **BAD** ways to do binding in component, because it will cause Compo
 
 We need to pre-bind them in the constructor.
 
-## State
+## Props
+
+Be careful when passing props as `null`. Any default prop value will not be used if the props is `null`.
+
+## States
 
 * [Thinking statefully](https://daveceddia.com/thinking-statefully/)
 * [A visual guide to state in React](https://daveceddia.com/visual-guide-to-state-in-react/)
 
 State is only reserved for interactivity, that is, data changes over time.
+
+Every time we can compute (derivables) the final value from the props, we should not store any data into the state.
 
 Eliminate time as much as possible. If your `render()` accumulate state over time, you will want to eliminate that. See how Ryan Florence [remove time](https://www.youtube.com/watch?v=kp-NOggyz54).
 
@@ -139,6 +147,8 @@ class FetchUser extends Component {
 </FetchUser>
 ```
 
+Every time the state changes React runs the `render()` again unless told by `shouldComponentUpdate()` not to. Or else it's default behavior is to re-render every single time.
+
 ### Use function in `setState`
 
 See [for more details](https://medium.com/@shopsifter/using-a-function-in-setstate-instead-of-an-object-1f5cfd6e55d1#.u0tfkb84b)
@@ -154,17 +164,91 @@ this.setState((prevState, props) => {
 
 The 2nd argument to `setState` to a callback function which will be invoked when `setState` has finished and the component is re-rendered. It's best to use other lifecycle method rather than relying on this callback function.
 
+## PropTypes
+
+We should always try to pass primitive props to components because they are simpler to validate and to compare. However, in some case it is unavoidable to pass objects and in those cases, we should declare our `propTypes` using **shapes**.
+
+```js
+const Profile = ({ user }) => (
+  <div>{user.name} {user.surname}</div>
+)
+
+Profile.propTypes = {
+  user: React.PropTypes.shape({
+    name: React.PropTypes.string.isRequired,
+    surname: React.PropTypes.string
+  }).isRequired
+}
+```
+
+**Custom PropType**
+
+```js
+const age = (props, propName) => {
+  if (!(props[propName] > 0 && props[propName] < 100>)) {
+    return new Error(`${propName} must be between 1 and 99`)
+  }
+  return null
+}
+```
+
 ## Lifecycle Methods
 
-## shouldComponentUpdate
+### componentWillMount
+
+* Called before `render()`
+* Called only once
+* No access to DOM
+* A chance to handle configuration (like global events), update state since props and states are defined
+* `setState()` will not trigger a re-render, but you can still use it to prepare
+
+### componentDidMount
+
+* Called only once, so won't have infinite loop if you use `setState()`
+* By walking backwards, we know that every child has mounted and also run its own `componentDidMount()`. This guarantees the parent can access the Native UI elements for itself and its children. The leaf components always start first.
+
+### componentWillReceiveProps
+
+Because props are immutable, the parent must provide the new values when there is changes.
+
+* Calling `setState()` will not trigger re-render
+* Ignored by `forceUpdate()`
+
+### shouldComponentUpdate
 
 * [Turbocharge Your React Application with shouldComponentUpdate and Immutable.js](https://blog.javascripting.com/2015/03/31/turbocharge-your-react-application-with-shouldcomponentupdate-and-immutable-js/)
+* Ignored by `forceUpdate()`
 
 React's `render()` do not really ask the DOM to immediately render itself. Instead `render()` is just a method that return a virtual DOM. If you tell React that certain component and their children need not be invoked with the `render()` through `shouldComponentUpdate`, then React will skip those calls.
 
 > Let's say you have a list composed of many components with a complicated nested structure, and one item in the list changes. It would be a waste of resources to perform a diff on every single component in the list. By implementing `shouldComponentUpdate`, you can basically tell React to ignore all the components except the one that changed.
 
 The default behavior of `shouldComponentUpdate` is to let React do a virtual DOM diff to arrive at a decision whether to update or not which can be time consuming.
+
+### componentWillUpdate
+
+* Will be called whenever we decide to `render()`
+* Sort of like `componentWillMount`, but not quite
+* You can access `refs` but is not recommended since it will be soon be out of date, but using it for animation may be helpful if just temporarily.
+* Calling `setState()` will result in infinite loop
+
+### componentDidUpdate
+
+* Sort of like `componentDidMount`
+* Have access to DOM, refs, etc.
+* Good when you want to update 3rd party library
+* Avoid `setState()`
+
+```js
+// Access our chart instance and update it when data has changed
+componentDidUpdate(prevProps, prevState) {
+  if (prevProps.data !== this.props.data) {
+    this.chart = c3.load({
+      data: this.props.data
+    })
+  }
+}
+```
 
 ## Context
 
@@ -203,6 +287,57 @@ AddTodo.contextTypes = {
 }
 ```
 
+**More examples**
+
+```js
+// SFC take props, context as arguments
+// Not reusable as it needs a parent (<Provider/>??) with the
+// currency as child context types to work
+const Price = ({ value }, { currency }) => (
+  <div>{currency}{value}</div>
+)
+
+Price.propTypes = {
+  value: React.PropTypes.number
+}
+
+Price.contextTypes = {
+  currency: React.PropTypes.string
+}
+
+// We can use Recompose's getContext() to create a HOC
+// that can receive the context and pass it as props
+const Price = ({ currency, value }) => (
+  <div>{currency}{value}</div>
+)
+
+// getContext is a HOC using partial application to
+// specialize itself
+const withCurrency = getContext({
+  currency: React.PropTypes.string
+})
+
+const PriceWithCurrency = withCurrency(Price)
+```
+
+## Container and Presentational Pattern
+
+React components typically contain a mix of **logic** and **presentation**.
+
+By logic, it can be:
+
+* API calls
+* Data manipulation
+* Event handling
+
+There is no rules that say that the Presentational component must not have a state. For example, it could keep a UI state inside it like toggling menu etc.
+
+You data team can work on container component and your designer can work on iterating the UI. The data team can even replace the presentational component with another one just for debugging purposes.
+
+Being able to work in parallel on the same component is a big win for teams, especially for those companies where building interfaces is an iterative process.
+
+Applying this pattern without real reason can make the codebase less useful. So we need to think carefully before we refactor into this pattern.
+
 ## Children
 
 Always use `React.Children.map` instead of `props.children.map` because we cannot assume that `children` will be an array. It could be a single object.
@@ -220,11 +355,122 @@ Always use `React.Children.map` instead of `props.children.map` because we canno
 </Parent>
 ```
 
+This is because when a component has a single child, React optimizes the creation of the elements and avoid allocating an array for performance reasons.
+
+```js
+Button.propTypes = {
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.array,
+    React.PropTypes.element
+  ])
+}
+```
+
+### Function as Child
+
+```js
+<Fetch url="...">
+  {data => <List data={data} />}
+</Fetch>
+```
+
 ## Higher Order Components
+
+Components by itself are great to achieve reusability and composability. But what if different components in different domains share the same behavior? Early React gives use mixins to share behaviors.
+
+```js
+// Pre-React 0.13
+// Creating mixins is very similar to creating a component
+const WindowResize = {
+  getInitialState() {
+    return {
+      innerWidth: window.innerWidth
+    }
+  }
+  
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize)
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize)
+  }
+  
+  handleResize() {
+    this.setState({
+      innerWidth: window.innerWidth
+    })
+  }
+}
+
+// Switching that into HOC
+const withInnerWidth = Component => (
+  class extends React.Component {
+    constructor(props) {
+      super(props)
+      
+      this.state = {
+        innerWidth: window.innerWidth
+      }
+      
+      this.handleResize = this.handleResize.bind(this)
+    }
+    
+    componentDidMount() {
+      window.addEventListener('resize', this.handleResize)
+    }
+  
+    componentWillUnmount() {
+      window.removeEventListener('resize', this.handleResize)
+    }
+
+    handleResize() {
+      this.setState({
+        innerWidth: window.innerWidth
+      })
+    }
+    
+    render() {
+      return <Component {...this.props} {...this.state} />
+    }
+  }
+)
+
+// Wrapped component
+const MyComponent = ({ innerWidth }) => {
+  console.log('window.innerWidth', innerWidth)
+}
+
+// Enhanced component
+const MyComponentWithInnerWidth = withInnerWidth(MyComponent)
+```
+
+Mixins tend to communicate with the component using the state, while HOC communicate using props which is much more nicer.
+
+The advantages of HOC over mixins: we do not pollute state and we do not require the component to implement any function.
 
 Behavioral-Oriented Component. HOC encapsulate behavior and typically does not render anything. It enhance and compose component.
 
+Good for addressing cross-cutting concerns or common functionalities, such as logging and tracking and listening for window resize events.
+
 * [HOC: A React Application Design Pattern from SitePoint](https://www.sitepoint.com/react-higher-order-components/)
+* [Functions as child components and HOC](http://rea.tech/functions-as-child-components-and-higher-order-components/)
+* [Real World Examples of Higher-Order Components](http://rea.tech/reactjs-real-world-examples-of-higher-order-components/)
+
+Benefits of HOC:
+
+* Do things before and/or after it calls that component
+* Avoid rendering the component if certain criteria is not met
+* Update the props passed to that component, or add new props
+* Transform the output of rendering a component (e.g. wrap with extra DOM elements, etc.)
+* Enforce Single Responsibility Principle. Authenticated HOC should only be concerned with authentication and route handler component should be concerned with route handling only.
+
+It's rare to need to build a HOC; typically most components you build will directly render nodes to the DOM. Building a HOC that's abstract enough to reuse take planning. It's often easier to write a HOC after you see recurring patterns within your components.
+
+```js
+// HOCs are function that take a component as input and return an enhanced one as output
+const HOC = Component => EnhancedComponent
+```
 
 ```js
 // Simple HOC
@@ -302,9 +548,146 @@ const App = () => { ... }
 module.exports = withPlayQueue(App)
 ```
 
+```js
+const showHide = (Title, Content) => class ShowHide extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { isActive: false }
+    this.onToggle = this.onToggle.bind(this)
+  }
+  
+  render() {
+    return (
+      <div>
+        <Title onClick={this.onToggle} />
+        { this.state.isActive && <Content /> }
+      </div>
+    )
+  }
+  
+  onToggle() {
+    this.setState({ isActive: !this.state.isActive })
+  }
+}
+
+const Title = props => <p {...props}>title<p>
+const Content = props => <p>content<p>
+
+const ConcreteToggle = showHide(Title, Content)
+```
+
+**Tracking metric HOC example**
+
+The trackingData were specific to every page, but the tracking calls were not.
+
+```js
+import tracker from './tracking-api'
+
+const metricTracking = ComposedComponent => React.createClass({
+  componentDidMount() {
+    tracker.trackPageLoad(this.props.trackingData)
+  },
+  
+  componentDidUpdate() {
+    tracker.trackPageLoad(this.props.trackingData)
+  },
+  
+  render() {
+    return <ComposedComponent {...this.props} />
+  }
+})
+```
+
+**Some more examples**
+
+```js
+// We are returning a stateless functional component
+const withClassName = Component => props => (
+  <Component {...props} className="my-class" />
+)
+```
+
+### HOC with partial application
+
+You can use partial application to let your HOC receives parameters first before applying it.
+
+```js
+const HOC = args => Component => EnhancedComponent
+```
+
+See the [Recompose](https://github.com/acdlite/recompose) library fore more examples.
+
+```js
+const enhanced = compose(
+  flattenProp('user),
+  renameProp('username', 'name'),
+  withInnerWidth
+)
+```
+
+**Warning:** Don't abuse HOC. Every time you wrap a component into a HOC, you are adding a new `render()`, a new lifecycle method call, and memory allocation. It may be a performance issues.
+
 ## Keys
 
 * [Why having proper key is important](http://buildwithreact.com/article/in-depth-diffing)
+
+## Data Fetching
+
+* Two unconnected sibling can share data through their common Parent
+* You can create a generic HOC to fetch data from any API endpoints
+
+React enforces a very interesting pattern to make data go from the root to the leaves. This pattern is called **Unidirectional Data Flow**.
+
+Children can hold local state and use it as props for its nested component. Re-rendering of that local state only affect the nested component downward.
+
+There are 2 lifecycle hooks where we can fetch data:
+
+* `componentWillMount` - fired before `render()`
+* `componentDidMount` - fired after `render()`
+
+Using `componentWillMount` seems to be the right choice because we want to load the data as soon as we can, but there is a caveat: `componentWillMount` is fired on both server and client-side rendering. Naturally firing an async API call on the server can give you unexpected result.
+
+We can use HOC to load data on behalf of the enhanced component and it would provide the data to the child in the form of props.
+
+```js
+// A generic HOC for fetching simple data
+// Use partial application to pass in the URL
+const withData = url => Component => class extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { data:[] }
+  }
+  
+  componentDidMount() {
+    const endpoint = typeof url === 'function'
+      ? url(this.props)
+      : url
+      
+    fetch(endpoint)
+      .then(res => res.json())
+      .then(data => this.setState({ data }))
+  }
+  
+  render() {
+    return <Component {...this.props} {...this.state} />
+  }
+}
+
+// Use it
+const List = ({ data: gists }) => (
+  <ul>
+    {gists.map(gist => (
+      <li key={gist.id}>{gist.description}</li>
+    ))}
+    <li>
+  </ul>
+)
+
+const ListWithGists = withData(props => `https://github.com/${props.username}/gists`)(List)
+
+// Pass the props along
+<ListWithGists username="mech" />
+```
 
 ## Blogs
 

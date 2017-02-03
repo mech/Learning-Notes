@@ -11,6 +11,12 @@
 * [Productivity is overrated](http://calnewport.com/blog/2007/08/31/dangerous-ideas-productivity-is-overrated/)
 * At some point, even David Allen himself still has to convince himself to do hard things when he doesn't want to. Effort must be expended. This cannot be avoided.
 * Software is like makeup in that way: you only notice it when it's messed up. "More interface" does not fix "bad interface". It amplifies it. - [Is Your Software Wearing Too Much Makeup?](https://ux.useronboard.com/is-your-software-wearing-too-much-makeup-a5f1e26f1057#.jyjira8fa)
+* Not being too precious about what got us here. I learned the lesson from watching other companies who held onto things too long. Morph every couple of years into something new.
+* [It's not the interface that makes the experience](https://uxdesign.cc/it-s-not-the-interface-that-makes-the-experience-fb16f8e29299#.1zgmr947y)
+
+## Design Thinking
+
+* [Shh! Don't Tell Them There's No Magic In Design Thinking](https://medium.com/ux-immersion-interactions/ssh-dont-tell-them-there-s-no-magic-in-design-thinking-b95f33867656#.g6wttjsah)
 
 ## Jobs To Be Done
 

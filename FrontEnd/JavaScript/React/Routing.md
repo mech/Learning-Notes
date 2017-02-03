@@ -107,11 +107,22 @@ this.context.router.transitionTo('/')
 ## Code splitting
 
 * [DIY](https://twitter.com/ryanflorence/status/775743520615206913)
+* [TC39 Proposal - Dynamic `import()`](https://github.com/tc39/proposal-dynamic-import)
+* [Webpack Performance Budgets](https://github.com/webpack/webpack/issues/3216)
+* [`System.import()` will be deprecated in webpack 3](https://github.com/webpack/webpack/issues/3098)
+
+Large JavaScript bundles will peg the main thread, taking longer to compile and run.
+
+Splitting up your work into smaller chunks can get you closer to being interactive sooner, in particular when using HTTP/2. Only serving down the code a user needs for a route is just one pattern here [PRPL](https://developers.google.com/web/fundamentals/performance/prpl-pattern/).
+
+Webpack treats `import()` as a split-point and puts the requested module in a separate chunk.
 
 Make your main `<App>` simple and only have several Matches to the routes. In this way you can then use code splitting easily and not concern with overlapping routes.
 
 ```js
 // Inside <App>...
+// When we navigate to "/", it will render the AsyncRoute and pass in a
+// import() promise
 
 <Provider store={store}>
   <Match
@@ -120,7 +131,7 @@ Make your main `<App>` simple and only have several Matches to the routes. In th
     component={(props) =>
       <AsyncRoute
         props={props}
-        loadingPromise={System.import("./Landing")}
+        loadingPromise={import("./Landing")}
       />
     }
   />
