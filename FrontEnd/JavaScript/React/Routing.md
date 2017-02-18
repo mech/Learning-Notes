@@ -28,10 +28,10 @@ In v4, you need to replace your `props.children` (outlets) with several matches/
 const App = (props) => {
   <BrowserRouter>
     <div class="container">
-      <Match exactly pattern="/" component={HomeContainer} />
-      <Match exactly pattern="/r/:name" component={SubredditContainer} />
-      <Match pattern="/one" render={() => <h2>One</h2>} />
-      <Match pattern="/re" render={() => (<Redirect to="/10/20" />)} />
+      <Route exact path="/" component={HomeContainer} />
+      <Route exact path="/r/:name" component={SubredditContainer} />
+      <Route path="/one" render={() => <h2>One</h2>} />
+      <Route path="/re" render={() => (<Redirect to="/10/20" />)} />
     </div>
   </BrowserRouter>
 }
@@ -41,7 +41,7 @@ const App = (props) => {
 
 ```js
 const MatchWithFade = ({ component: Component, ...rest }) => (
-  <Match {...rest} render={(matchProps) => {
+  <Route {...rest} render={(matchProps) => {
     <FadeIn>
       <Component {...matchProps} />
     </FadeIn>
@@ -53,11 +53,11 @@ const MatchWithFade = ({ component: Component, ...rest }) => (
 
 Match renders UI when a pattern matches a location.
 
-`<Match>` is a component that determines whether or not to render a specified component based on the app's location.
+`<Route>` is a component that determines whether or not to render a specified component based on the app's location.
 
 ```js
-// Simplified <Match> implementation
-const Match = ({ pattern, component: Component }) => {
+// Simplified <Route> implementation
+const Route = ({ pattern, component: Component }) => {
   const pathname = window.location.pathname
   
   if (pathname.match(pattern)) {
@@ -71,8 +71,8 @@ const Match = ({ pattern, component: Component }) => {
 ## Pattern Matching
 
 ```js
-<Match pattern="/contracts" component={Contracts} />
-<Match pattern="/contracts/current" component={CurrentContract} />
+<Route path="/contracts" component={Contracts} />
+<Route path="/contracts/current" component={CurrentContract} />
 ```
 
 If you visit `/contracts/current`, both `<Contracts>` and `<CurrentContract>` components will render side by side.
@@ -86,7 +86,7 @@ This pose a problem for `/` root URL where it will match everything.
 Do not use exactly if you have nested routes or else refreshing will not work.
 
 ```js
-<Match pattern="/e" component={Employment} />
+<Route path="/e" component={Employment} />
 ```
 
 ## URL Hierarchy and Component Hierarchy
@@ -106,10 +106,13 @@ this.context.router.transitionTo('/')
 
 ## Code splitting
 
+* [v2.1.0-beta.28 release note](https://github.com/webpack/webpack/releases/tag/v2.1.0-beta.28)
+* [babel-plugin-syntax-dynamic-import](https://github.com/babel/babel/tree/master/packages/babel-plugin-syntax-dynamic-import)
 * [DIY](https://twitter.com/ryanflorence/status/775743520615206913)
 * [TC39 Proposal - Dynamic `import()`](https://github.com/tc39/proposal-dynamic-import)
 * [Webpack Performance Budgets](https://github.com/webpack/webpack/issues/3216)
 * [`System.import()` will be deprecated in webpack 3](https://github.com/webpack/webpack/issues/3098)
+* [react-async-component](https://github.com/ctrlplusb/react-async-component)
 
 Large JavaScript bundles will peg the main thread, taking longer to compile and run.
 
@@ -117,7 +120,7 @@ Splitting up your work into smaller chunks can get you closer to being interacti
 
 Webpack treats `import()` as a split-point and puts the requested module in a separate chunk.
 
-Make your main `<App>` simple and only have several Matches to the routes. In this way you can then use code splitting easily and not concern with overlapping routes.
+Make your main `<App>` simple and only have several <Route> to the routes. In this way you can then use code splitting easily and not concern with overlapping routes.
 
 ```js
 // Inside <App>...
@@ -125,9 +128,9 @@ Make your main `<App>` simple and only have several Matches to the routes. In th
 // import() promise
 
 <Provider store={store}>
-  <Match
-    exactly
-    pattern="/"
+  <Route
+    exact
+    path="/"
     component={(props) =>
       <AsyncRoute
         props={props}
@@ -136,7 +139,7 @@ Make your main `<App>` simple and only have several Matches to the routes. In th
     }
   />
   
-  <Match...>
+  <Route...>
 </Provider>
 ```
 
@@ -164,3 +167,8 @@ class AsyncRoute extends Component {
   }
 }
 ```
+
+## Scroll Management
+
+* [Scroll management](https://github.com/ReactTraining/react-router/issues/3950#issuecomment-279293199)
+* [Found](https://github.com/4Catalyzer/found)

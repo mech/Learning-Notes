@@ -6,6 +6,16 @@
 ## Forms
 
 * [react-reform](https://github.com/codecks-io/react-reform)
+* [react-jsonschema-form](https://github.com/mozilla-services/react-jsonschema-form)
+
+```js
+// Generic change handler
+handleChange({ target }) {
+  this.setState({
+    [target.name]: target.value
+  })
+}
+```
 
 ```js
 const AddTodo = ({onAddClick}) => {
@@ -37,6 +47,9 @@ What API is good for inputs:
 ## Handling Events
 
 * [Best alternative to binding in render()](https://daveceddia.com/react-best-alternative-bind-render/)
+* [Event Switch](https://github.com/chantastic/reactpatterns.com#event-switch)
+
+Synthetic Events are reusable and there is a single global handler. This means you cannot store a synthetic event and reuse it later because it becomes `null` right after the action. If you really want to store it, you can use `persist()`.
 
 ```js
 // Note that this returns a function
@@ -92,12 +105,37 @@ const TodoList = ({
 />
 ```
 
+```js
+// Notice that the remove() is passed in as well as id
+const Item = ({ id, title, remove }) => (
+  <div className="item">
+    {title}
+    <span
+      className="deleteItem"
+      onClick={() => remove(id)}
+    >Delete</span>
+  </div>
+)
+```
+
 These are 2 **BAD** ways to do binding in component, because it will cause Component to re-render as different reference has been passed every time:
 
 * `<Component onClick={() => this.handleClick()} />`
 * `<Component onClick={this.handleClick.bind(this)} />`
 
 We need to pre-bind them in the constructor.
+
+## Refs
+
+In case we need it, React gives us access to the actual DOM nodes in a way that we can perform imperative operations with them (like 3rd-party libraries).
+
+Using refs is imperative (i.e. `input.focus()`) and we should avoid using refs as much as possible because they force the code to be more imperative and harder to read and maintain.
+
+It is important to note that when setting the ref callback on a non-native component, the reference will be the whole instance itself and not the DOM node:
+
+```js
+<Input ref={element => this.element = element} />
+```
 
 ## Props
 
@@ -608,6 +646,8 @@ const withClassName = Component => props => (
 ```
 
 ### HOC with partial application
+
+* [Curry or Partial Application?](https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8#.fxhqqauo2)
 
 You can use partial application to let your HOC receives parameters first before applying it.
 

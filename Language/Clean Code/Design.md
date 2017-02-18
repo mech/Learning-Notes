@@ -1,11 +1,22 @@
 # Object Oriented Design
 
+> Working code pay the bill
+
+> Write the usage code first
+
 * [The Unofficial Guide to Rich Hickey's Brain](http://www.flyingmachinestudios.com/programming/the-unofficial-guide-to-rich-hickeys-brain/)
 * [Software Engineering Blogs](https://github.com/kilimchoi/engineering-blogs)
+* [Code Show and Tell: PolymorphicFinder](https://robots.thoughtbot.com/code-show-and-tell-polymorphic-finder)
 
 Good code not only works, but is also simple, understandable, expressive and changeable.
 
 Good design preserves maximum flexibility at minimum cost by putting off decisions at every opportunity, deferring commitments until more specific information arrive.
+
+## Naming
+
+Introduce new words into the application vocabulary.
+
+New name is actually an opportunity to reveal intent. But more names also has its cognitive costs.
 
 ## Lack of Design
 
@@ -64,6 +75,10 @@ end
 
 > Make visible the invisible and thus reveal core concepts.
 
+---
+
+> Expert can suggest abstraction that's just perfect, it is one of those things that you'll never discover yourself, but which is obvious in hindsight.
+
 * [The Wrong Abstraction](http://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)
 
 > Your code is less concrete but more abstract - you've made it initially harder to understand in hopes that it will ultimately be easier to maintain.
@@ -118,9 +133,70 @@ When abstractions are correct, code is easy to understand. But if you DRY with t
 
 > Abstraction is the Core Concept. It is the named information thingy that you need.
 
+## Coupling
+
+* [Nice wiki article on coupling](https://en.wikipedia.org/wiki/Coupling_(computer_programming))
+
+We can have low coupling if we design our public interfaces (API) sensibly. Limit the responsibilities along functionality. Only interact with simple and stable interface. Only depend on high cohesion interfaces where related functionalities are being bundled together.
+
+## nil is unfriendly
+
+* [The Tragedy of Maybe and Ruby](http://bendyworks.com/blog/tragedy-maybe-monad-ruby)
+* [Rails Refactoring Example: Introduce Null Object](https://robots.thoughtbot.com/rails-refactoring-example-introduce-null-object)
+
+---
+
+* NullObject when nil is always handled the same way
+* Exceptions when nil is always a bug
+* Maybe when nil needs to be handled specially each time
+
+```ruby
+# BAD
+# We are afraid that price will return nil
+# We are not confident to directly send the right message to an
+# object we know can receive this message
+price = subscription.try(:price) || 0
+credit_card.charge(price)
+```
+
+```ruby
+class User
+  def address
+    @address || NullAddress.new
+  end
+end
+
+class NullAddress
+  def address
+    'No street name on file'
+  end
+end
+```
+
+## Eliminate `if` and `switch`
+
+```ruby
+# When you see a parameter in a conditional, that's control coupling
+# The fact that this method has an if in it has leaked out into client code
+# Changes can now require changes in these clients
+# This method is a split with 2 different methods
+def save(should_run_validations=true)
+  if should_run_validations
+    run_validations
+    persist
+  else
+    persist
+  end
+end
+```
+
 ## Relationship of Different Pieces
 
 Change ripple through the system.
+
+## Fluent Interface, Chain of Responsibility
+
+* [Fluent Interfaces in Ruby ecosystem](http://blog.arkency.com/2017/01/fluent-interfaces-in-ruby-ecosystem/)
 
 ## Locality
 
@@ -204,3 +280,7 @@ If you're unclear how to make code open, the way forward is to start removing co
 ```ruby
 number.to_s.capitalize
 ```
+
+## The Flocking Rules
+
+* [The Scandalous Story of the Dreadful Code Written by the Best of Us](https://www.youtube.com/watch?v=-wYLmsizBc0)

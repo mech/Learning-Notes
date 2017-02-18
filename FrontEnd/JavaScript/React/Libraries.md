@@ -1,5 +1,7 @@
 # Libraries
 
+* [React Desktop](http://reactdesktop.js.org/)
+
 ## Show/Hide
 
 * [render-if](https://github.com/ajwhite/render-if)

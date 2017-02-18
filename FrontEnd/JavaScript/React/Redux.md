@@ -457,3 +457,7 @@ export default todos
 export const getVisibleTodos = (todos, filter) => {
 }
 ```
+
+## Recompose
+
+* [Why The Hipsters Recompose Everything](https://medium.com/javascript-inside/why-the-hipsters-recompose-everything-23ac08748198#.91wws275y)

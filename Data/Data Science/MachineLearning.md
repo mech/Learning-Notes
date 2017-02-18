@@ -18,6 +18,10 @@ Knapsack problem
 NP-Complete
 ```
 
+## Case Studies
+
+* [Using Machine Learning to Predict Parking Difficulty](https://iot-for-all.com/using-machine-learning-to-predict-parking-difficulty-d0af0cd3b9a9#.qusfhp3j8)
+
 ## Companies
 
 * [Zebra Medical Vision](https://www.zebra-med.com/)

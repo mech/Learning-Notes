@@ -1,4 +1,6 @@
-# Grid
+# Grid System
+
+* [Layout powered by CSS variables](https://codepen.io/pixelass/post/layout-powered-by-css-variables)
 
 ## 8pt Grid
 
@@ -7,4 +9,4 @@
 * [Sketch Workflow - 8 point Soft Grids](https://medium.com/sketch-app-sources/8-point-soft-grids-in-sketch-e8f1d5ca2cd4#.fukr02nqe)
 * [Google Material - Baseline Grids](https://material.io/guidelines/layout/metrics-keylines.html#metrics-keylines-baseline-grids)
 * [Responsive & Baseline (Atomic) Grids](http://harmony.intuit.com/grid/)
-* [Space in Design Systems - ](https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62#.svn04vu44)
+* [Space in Design Systems](https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62#.svn04vu44)

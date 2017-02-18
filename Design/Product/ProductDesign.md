@@ -1,8 +1,15 @@
 # Product Design
 
+> GoodEnough: If I set out quickly expecting to fail, it reduces my perfection anxiety
+ 
+---
+
+> It's the product, not the brand - [Against Storytelling](https://trackchanges.postlight.com/against-storytelling-7e53b6d7a0d8#.spugsihjn)
+
 ## Advice
 
 * Make an ugly version where all the things work
+* It needs to look like crap in order for it to move forward - the art of iteration
 * Make a gorgeous version that doesn't do anything
 * Store all of it
 * Hold the designer accountable

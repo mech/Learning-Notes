@@ -5,8 +5,12 @@
 * [Part 3](https://medium.com/@addyosmani/progressive-web-apps-with-react-js-part-3-offline-support-and-network-resilience-c84db889162c#.l1tvdx76q)
 * [create-react-app's discussion on PWA](https://github.com/facebookincubator/create-react-app/issues/1086)
 * [create-react-pwa](https://github.com/jeffposnick/create-react-pwa/blob/master/README.md)
-* [Instant loading web apps with an application shell architecture](https://developers.google.com/web/updates/2015/11/app-shell)
 * [How to speed up your UX with skeleton screens](https://www.sitepoint.com/how-to-speed-up-your-ux-with-skeleton-screens/)
+
+## PRPL Pattern
+
+* [The PRPL Pattern](https://developers.google.com/web/fundamentals/performance/prpl-pattern/)
+* [Instant loading web apps with an application shell architecture](https://developers.google.com/web/updates/2015/11/app-shell)
 
 ## Service Worker
 
