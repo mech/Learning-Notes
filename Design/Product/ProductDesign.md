@@ -6,8 +6,14 @@
 
 > It's the product, not the brand - [Against Storytelling](https://trackchanges.postlight.com/against-storytelling-7e53b6d7a0d8#.spugsihjn)
 
+---
+
+* [Design principles behind great products](https://medium.muz.li/design-principles-behind-great-products-6ef13cd74ccf#.ljkow9ido)
+* [5 questions to ask before every design project](https://uxdesign.cc/5-questions-a02fb76dcbd#.ei1vs2c0g)
+
 ## Advice
 
+* Up-front user research is a form of Product Procrastination. It's busy-work. **Even though it was nice to "have the user in mind", the useful data came from the first user tests, not the research.**
 * Make an ugly version where all the things work
 * It needs to look like crap in order for it to move forward - the art of iteration
 * Make a gorgeous version that doesn't do anything

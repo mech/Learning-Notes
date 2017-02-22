@@ -11,3 +11,7 @@
 ## Headings
 
 Usually have tighter letter spacing for headers.
+
+## Variable Fonts
+
+* [Introducing OpenType Variable Fonts](https://medium.com/@tiro/https-medium-com-tiro-introducing-opentype-variable-fonts-12ba6cd2369#.lhg40zqy1)

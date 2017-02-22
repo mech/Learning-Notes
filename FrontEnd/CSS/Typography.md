@@ -4,9 +4,9 @@
 
 By default, use:
 
-* **rem** - font-size
-* **px** - border-width
-* **em** - padding, margin, border-radius
+* **rem** - for font-size
+* **px** - for border-width
+* **em** - for everything else like padding, margin, border-radius
 
 
 ```js
@@ -56,6 +56,18 @@ Instead of defining our typography with an absolute unit like the pixel, we can 
 0.64em
 0.512em
 0.41em
+```
+
+## EM
+
+Always tied to font-size. It is good for media queries or grid layout:
+
+```css
+/* Given a 1000px width */
+/* 15em = 15em * 16px = 240px */
+/* 10% = 100px */
+/* 1fr = 660px */
+grid-template-columns: 15em 1fr 10%;
 ```
 
 ## REM

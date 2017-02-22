@@ -7,6 +7,7 @@
 
 * [react-reform](https://github.com/codecks-io/react-reform)
 * [react-jsonschema-form](https://github.com/mozilla-services/react-jsonschema-form)
+* [Web Form Validation: Best Practices](https://www.smashingmagazine.com/2009/07/web-form-validation-best-practices-and-tutorials/)
 
 ```js
 // Generic change handler
