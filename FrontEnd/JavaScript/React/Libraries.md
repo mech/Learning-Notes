@@ -18,3 +18,4 @@
 ## Editor
 
 * [Dante 2](https://michelson.github.io/dante2/)
+* [Slate](https://github.com/ianstormtaylor/slate)
