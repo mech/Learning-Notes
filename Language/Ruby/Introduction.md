@@ -2,8 +2,12 @@
 
 * [Design Patterns in Ruby](https://github.com/davidgf/design-patterns-in-ruby)
 * [Have Generics Killed Java?](http://www.artima.com/weblogs/viewpost.jsp?thread=299081)
+* [11 Ruby Tricks You Haven't Seen Before](http://www.blackbytes.info/2016/01/ruby-tricks/)
 
 ## Enumerable
+
+* [Five Ruby methods your should be using](https://blog.engineyard.com/2015/five-ruby-methods-you-should-be-using)
+* [101 Ruby Code Factoids](https://6ftdan.com/allyourdev/2016/01/13/101-ruby-code-factoids/)
 
 ```ruby
 array = [1, 2, 3, 4, 5]

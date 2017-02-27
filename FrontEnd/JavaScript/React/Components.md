@@ -1,13 +1,17 @@
 # Components
 
 * [React FAQ](https://github.com/timarney/react-faq)
+* [React Patterns](https://github.com/chantastic/reactpatterns.com)
 * [React A-ha Moments](https://tylermcginnis.com/react-aha-moments/)
+* [Exploration: Front-end JavaScript at Artsy in 2017](https://artsy.github.io/blog/2017/02/05/Front-end-JavaScript-at-Artsy-2017/)
+* [10 React Mini Patterns](https://hackernoon.com/10-react-mini-patterns-c1da92f068c5#.7ev5n4sus)
 
 ## Forms
 
 * [react-reform](https://github.com/codecks-io/react-reform)
 * [react-jsonschema-form](https://github.com/mozilla-services/react-jsonschema-form)
 * [Web Form Validation: Best Practices](https://www.smashingmagazine.com/2009/07/web-form-validation-best-practices-and-tutorials/)
+* [How to create a Redux-Form with validation and initialized values](https://www.davidmeents.com/blog/create-redux-form-validation-initialized-values/)
 
 ```js
 // Generic change handler
@@ -495,6 +499,7 @@ Good for addressing cross-cutting concerns or common functionalities, such as lo
 * [HOC: A React Application Design Pattern from SitePoint](https://www.sitepoint.com/react-higher-order-components/)
 * [Functions as child components and HOC](http://rea.tech/functions-as-child-components-and-higher-order-components/)
 * [Real World Examples of Higher-Order Components](http://rea.tech/reactjs-real-world-examples-of-higher-order-components/)
+* [Abstract your UI from elemental component (`<input>`), then use HOC to add additional functionalities](https://www.youtube.com/watch?v=5rtbSYl70ak)
 
 Benefits of HOC:
 
@@ -671,6 +676,7 @@ const enhanced = compose(
 ## Keys
 
 * [Why having proper key is important](http://buildwithreact.com/article/in-depth-diffing)
+* [Issues with numeric keys vs string?](https://discuss.reactjs.org/t/performance-problems-with-react-when-using-a-big-list/3432/13)
 
 ## Data Fetching
 

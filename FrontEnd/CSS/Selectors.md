@@ -5,6 +5,7 @@
 * [Keep your selectors short](http://csswizardry.com/2012/05/keep-your-css-selectors-short/)
 * [Don't use ID in CSS selector?](http://oli.jp/2011/ids/)
 * [CSS 4 Selectors](http://css4-selectors.com/)
+* [CSS 4 Selectors?](https://gokulkrishh.github.io/css/2017/02/16/CSS4-selectors.html)
 
 Only ever use [selectivizr](http://selectivizr.com/) for IE6-8! **We strongly advice not to use IE8!**
 

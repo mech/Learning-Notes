@@ -56,3 +56,15 @@ loader: 'style!css?modules&localIdentName=[local]--[hash:base64:5]'
 * [Tagged Template Literal](http://exploringjs.com/es6/ch_template-literals.html)
 * [Comparison with other solutions](https://github.com/styled-components/comparison)
 * [Glen Maddern - Styling React Apps with Styled Components](https://www.youtube.com/watch?v=qu4U7lwZTRI)
+* [Glenn Maddern - The Future of Reusable CSS](https://www.youtube.com/watch?v=XR6eM_5pAb0)
+* [Styled-Component - Production Patterns](https://medium.com/@jamiedixon/styled-components-production-patterns-c22e24b1d896#.f0rayh3o3)
+* [The magic behind styled-components](https://mxstbr.blog/2016/11/styled-components-magic-explained/)
+
+> @simurai Between em and currentColor, who needs variables? - [Styling with Strings]
+(https://www.youtube.com/watch?v=jPOBVaomzLE)
+
+Benefits:
+
+* Switch styles based on incoming props rather than appending new class names to HTML - (i.e. `isOpen` props)
+* Clearer JSX with little `<div>` littering around
+* Composing styles

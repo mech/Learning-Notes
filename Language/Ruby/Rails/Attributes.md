@@ -11,6 +11,7 @@ ActiveRecord's types have been moved to ActiveModel and each needs their own `se
 * [Custom type-casting with ActiveRecord, Virtus and dry-types](http://blog.arkency.com/2016/03/custom-typecasting-with-activerecord-virtus-and-dry-types/)
 * [dry-validation](http://dry-rb.org/gems/dry-validation/)
 * [Always use the new "Sexy Validation" introduced in Rails 3](http://thelucid.com/2010/01/08/sexy-validation-in-edge-rails-rails-3/)
+* [Validation, Database Constraint, or Both?](https://robots.thoughtbot.com/validation-database-constraint-or-both)
 
 ```ruby
 class RecurringEvent < ApplicationRecord

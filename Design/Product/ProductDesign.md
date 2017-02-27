@@ -8,6 +8,10 @@
 
 ---
 
+> Solving a problem requires a weird combination of freedom and constraint. Whenever I hear "Just have fun with it" or "Think outside the box" I know from experience that things are about to turn into a colossal waste of time - Josh Weltman
+
+---
+
 * [Design principles behind great products](https://medium.muz.li/design-principles-behind-great-products-6ef13cd74ccf#.ljkow9ido)
 * [5 questions to ask before every design project](https://uxdesign.cc/5-questions-a02fb76dcbd#.ei1vs2c0g)
 
@@ -26,6 +30,7 @@
 * Software is like makeup in that way: you only notice it when it's messed up. "More interface" does not fix "bad interface". It amplifies it. - [Is Your Software Wearing Too Much Makeup?](https://ux.useronboard.com/is-your-software-wearing-too-much-makeup-a5f1e26f1057#.jyjira8fa)
 * Not being too precious about what got us here. I learned the lesson from watching other companies who held onto things too long. Morph every couple of years into something new.
 * [It's not the interface that makes the experience](https://uxdesign.cc/it-s-not-the-interface-that-makes-the-experience-fb16f8e29299#.1zgmr947y)
+* [Set expectations, do good-enough work and let the results worry about itself.](https://zellwk.com/blog/fighting-decision-paralysis/)
 
 ## Design Thinking
 

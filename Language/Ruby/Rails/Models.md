@@ -1,8 +1,8 @@
 # Models
 
+* [**Rails Database Practices**](http://blog.carbonfive.com/2016/11/16/rails-database-best-practices/)
 * [7 Design Patterns to Refactor MVC Components in Rails](https://www.sitepoint.com/7-design-patterns-to-refactor-mvc-components-in-rails/)
 * [7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
-* [Rails Database Practices](http://blog.carbonfive.com/2016/11/16/rails-database-best-practices/)
 * [Gourmet Service Objects](http://brewhouse.io/blog/2014/04/30/gourmet-service-objects.html)
 * [Service objects in Rails will help you design clean and maintainable code. Here's how.](https://www.netguru.co/blog/service-objects-in-rails-will-help)
 * [The World Needs Another Post About Dependency Injection in Ruby](http://solnic.eu/2013/12/17/the-world-needs-another-post-about-dependency-injection-in-ruby.html)
@@ -65,6 +65,7 @@ Some services use verbs instead of nouns: `Movies::Create` vs `Movies::Creator`.
 * [18 Con-Struct Attributes Gems](http://idiosyncratic-ruby.com/18-con-struct-attributes.html)
 * [Form Objects with Virtus](http://hawkins.io/2014/01/form_objects_with_virtus/)
 * [Creating Form Objects with ActiveModel and Virtus](https://webuild.envato.com/blog/creating-form-objects-with-activemodel-and-virtus/)
+* [ActiveModel Form Objects](https://robots.thoughtbot.com/activemodel-form-objects)
 
 Encapsulate logic related to validating and persisting data.
 

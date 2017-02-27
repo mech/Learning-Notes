@@ -441,6 +441,8 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
 
 ## Selectors - State Transformation
 
+* [Choose wisely (a fun introduction to reselect.js)](https://decembersoft.com/posts/redux-hero-part-3-choose-wisely-a-fun-introduction-to-reselect-js/)
+
 Every component you write has different needs. Some might show data in the same format as your API, while others might need to amend, blend or selectively combine data for its UI.
 
 Classically components get state directly from the store. Reselect queries and transforms data for each component.

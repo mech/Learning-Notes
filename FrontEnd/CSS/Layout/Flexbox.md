@@ -5,17 +5,22 @@
 * [Codrops' Flexbox Reference](https://tympanus.net/codrops/css_reference/flexbox/)
 * [Flex-grow 9999 Hack](http://joren.co/flex-grow-9999-hack/)
 * [flex-grow is weird. Or is it?](https://css-tricks.com/flex-grow-is-weird/)
+* [How Flexbox works - explained with big, colorful, animated gifs](https://medium.freecodecamp.com/an-animated-guide-to-flexbox-d280cf6afc35#.3jg4somu6)
+* [Even more about how Flexbox works - explained in big, colorful, animated gifs](https://medium.freecodecamp.com/even-more-about-how-flexbox-works-explained-in-big-colorful-animated-gifs-a5a74812b053#.kd8xsu86o)
+* [Flexbox is awesome but don't use it here](https://medium.com/@ohansemmanuel/flexbox-is-awesome-but-its-not-welcome-here-a90601c292b6#.7m0yqvvqc)
 
 Using float is like pre-defining the width of your element. It is not very content focus and is very width focus.
 
 > Flexbox is an efficient way to align and distribute space for dynamic items in a container along an axis.
 
-* Distribute space among flex-items. Expand and shrink items to prevent overflow.
+* Distribute space among flex-items. Expand and grow to fill unused space or shrink items to prevent overflow the parent.
 * Flexbox is all about alignment and ordering. It is a smart layout mode that calculates and distributes space.
 * Don't always think you need to use media queries. Most of the time a default flexbox can make the site very responsive already.
 * Flexbox lets the DOM know that elements on the page have a relationship
 * Don't force flexbox to be a grid system, it was not designed for that!
 * Flexbox will override floats, table-cell and inline-block. It will not override absolute positioning.
+* <strong style="color:red;">Don't use flexbox as a true Grid System, even if you can get away with it</strong>
+* Use flexbox for progressive enhancement only and fallback to table display
 
 ## Browser Support
 
@@ -38,11 +43,11 @@ align-items: flex-start | flex-end | center | stretch | baseline
 align-content: flex-start | flex-end | center | stretch
 ```
 
-`justify-content` defines how flex-items are laid out on the **main axis**. For `row`, the main axis is horizontal, for `column`, it is vertical.
+* `justify-content` defines how flex-items are laid out on the **main axis**. For `row`, the main axis is horizontal, for `column`, it is vertical.
+* `align-items` defines how flex-items are laid out on the **cross axis**.
+* `align-content` is very interesting and only happen if flex-items wrap to become multi-line.
 
-`align-items` defines how flex-items are laid out on the **cross axis**.
-
-`align-content` is very interesting and only happen if flex-items wrap to become multi-line.
+Note that for `align-items: stretch`, you had to set `height: auto` or else the height property would override the stretch.
 
 ## Flex Items
 
@@ -70,7 +75,7 @@ flex: 1;
 /* Default behavior for all flex-items */
 /* I will not grow, but I will shrink. I maintain an auto width */
 flex: 0 1 auto;
-flex: default;
+flex: initial;
 
 /* Item does not grow or shrink, essentially a fixed width element */
 flex: 0 0 auto;
@@ -86,7 +91,8 @@ flex: 2 1 0;
 flex: 2;
 ```
 
-`align-self` align a **single** flex-item along the cross-axis (vertical by default).
+* `align-self` align a **single** flex-item along the cross-axis (vertical by default). It basically overriding `align-items` for one item.
+* `flex-basis` controls how large an element will be along the main-axis **before** any growing or shrinking occurs.
 
 ## flow-grow
 
@@ -94,13 +100,42 @@ flow-grow will take the remaining space and divide it by the total amount of fle
 
 If an element has `flex-grow` set to 3 it does not mean that it's 3 times bigger than an element that has `flex-grow` set to 1, but it means that it gets 3 times more pixels added to its initial width than the other element.
 
+flow-grow will override its `width` if necessary.
+
+The math involved in calculating the remaining space is as follow: add all the `flex-grow` and divide it the available remaining space after `flex-basis` is applied. Do not divide it by the parent container's width.
+
 ## Auto Margin
 
 If you use `margin: auto` alignment on flex-item, the `justify-content` property no longer works.
 
 ## Bugs, Advice
 
+* [Flexbugs by Philip Walton](https://github.com/philipwalton/flexbugs)
+
+Whenever building a layout in flexbox, you should start by looking out for what sections of your layout may stand out as flex-containers.
+
 * Be careful when you mark `body` as `display: flex`, it will screw up all your block-level elements and make them unable to become 100% full-width since you are essentially marking all immediately children as flex items.
+
+## Examples
+
+```html
+<!-- Footer stick to the bottom -->
+<main></main>
+<footer></footer>
+
+<style>
+main {
+  /* Please compute the size of the flex item automatically, but never shrink */
+  flex: 1 0 auto;
+}
+
+footer {
+  /* 100px here refer to the height, since flex-direction is column */
+  flex: 0 0 100px;
+}
+</style>
+```
+
 
 ## Video
 
