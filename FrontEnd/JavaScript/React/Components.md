@@ -1,6 +1,7 @@
 # Components
 
 * [React FAQ](https://github.com/timarney/react-faq)
+* [React FAQ Site](https://reactfaq.site/)
 * [React Patterns](https://github.com/chantastic/reactpatterns.com)
 * [React A-ha Moments](https://tylermcginnis.com/react-aha-moments/)
 * [Exploration: Front-end JavaScript at Artsy in 2017](https://artsy.github.io/blog/2017/02/05/Front-end-JavaScript-at-Artsy-2017/)
@@ -267,6 +268,8 @@ React's `render()` do not really ask the DOM to immediately render itself. Inste
 > Let's say you have a list composed of many components with a complicated nested structure, and one item in the list changes. It would be a waste of resources to perform a diff on every single component in the list. By implementing `shouldComponentUpdate`, you can basically tell React to ignore all the components except the one that changed.
 
 The default behavior of `shouldComponentUpdate` is to let React do a virtual DOM diff to arrive at a decision whether to update or not which can be time consuming.
+
+If `shouldComponentUpdate` returns `false`, the component and all its children's `render` methods are not called during an update of its parents.
 
 ### componentWillUpdate
 

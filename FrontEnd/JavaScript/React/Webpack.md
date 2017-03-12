@@ -81,3 +81,6 @@ Long-term bundle caching is achieved with content-based hashing policy: `[chunkh
 
 You should not use `[chunkhash]` or `[hash]` for development as this will cause memory leak, because the dev server does not know when to clean up the old files.
 
+## Hot Reload
+
+* [Hot reload all the things!](https://hackernoon.com/hot-reload-all-the-things-ec0fed8ab0#.dok0iuu17)

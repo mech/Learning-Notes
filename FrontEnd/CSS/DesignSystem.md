@@ -15,6 +15,7 @@ Maintain a visual language, UI elements, components and page types to realize su
 
 Living documentation based on executable examples.
 
+* [Maintainable CSS](http://maintainablecss.com/)
 * [Atomic Design](http://atomicdesign.bradfrost.com/chapter-1/)
 * [Subform - Capturing Design Intent](https://medium.com/subform/disrupting-design-interns-comps-and-redlines-b2ecdc07604c#.ir5th17ia)
 * [Responsive deliverables - Dave Rupert](http://daverupert.com/2013/04/responsive-deliverables/)
@@ -91,6 +92,7 @@ Without a design system, you are rendered inflexible. You can't explore and expe
 
 * [FutureLearn](https://www.futurelearn.com/pattern-library)
 * [Polymer Library - Learn from it!](https://www.polymer-project.org/1.0/)
+* [Pattern Patter](https://ethanmarcotte.com/wrote/pattern-patter/)
 
 ## Broader Strokes - Style Tiles, Element Collages
 

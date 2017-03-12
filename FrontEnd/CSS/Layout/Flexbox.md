@@ -1,5 +1,31 @@
 # Flexbox
 
+Traditionally, we have 3 ways to do layout:
+
+1. `float` - Need clearfix hack
+2. `display: inline-block` - whitespace sensitive
+3. `display: table` - `border-spacing`
+
+```css
+/* With Modernizr, we can have fallback */
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.flexbox .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+```
+
+---
+
 * [Understanding Flexbox: Everything you need to know](https://medium.freecodecamp.com/understanding-flexbox-everything-you-need-to-know-b4013d4dc9af#.44b5tgfom)
 * [The Ultimate Flexbox Cheat Sheet](http://www.sketchingwithcss.com/samplechapter/cheatsheet.html)
 * [Codrops' Flexbox Reference](https://tympanus.net/codrops/css_reference/flexbox/)
@@ -8,6 +34,7 @@
 * [How Flexbox works - explained with big, colorful, animated gifs](https://medium.freecodecamp.com/an-animated-guide-to-flexbox-d280cf6afc35#.3jg4somu6)
 * [Even more about how Flexbox works - explained in big, colorful, animated gifs](https://medium.freecodecamp.com/even-more-about-how-flexbox-works-explained-in-big-colorful-animated-gifs-a5a74812b053#.kd8xsu86o)
 * [Flexbox is awesome but don't use it here](https://medium.com/@ohansemmanuel/flexbox-is-awesome-but-its-not-welcome-here-a90601c292b6#.7m0yqvvqc)
+* [In CSS Flexbox, why are there no `justify-items` and `justify-self` properties?](https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties)
 
 Using float is like pre-defining the width of your element. It is not very content focus and is very width focus.
 
@@ -21,6 +48,8 @@ Using float is like pre-defining the width of your element. It is not very conte
 * Flexbox will override floats, table-cell and inline-block. It will not override absolute positioning.
 * <strong style="color:red;">Don't use flexbox as a true Grid System, even if you can get away with it</strong>
 * Use flexbox for progressive enhancement only and fallback to table display
+
+To understand why flexbox is not meant for grid system, you can imagine a layout like the [Pricing Example](https://thecssworkshop.com/lessons/a-flexbox-pricing-example) where 3 boxes of pricing with uneven bottom content with multiple lines.
 
 ## Browser Support
 
@@ -92,7 +121,6 @@ flex: 2;
 ```
 
 * `align-self` align a **single** flex-item along the cross-axis (vertical by default). It basically overriding `align-items` for one item.
-* `flex-basis` controls how large an element will be along the main-axis **before** any growing or shrinking occurs.
 
 ## flow-grow
 
@@ -104,7 +132,28 @@ flow-grow will override its `width` if necessary.
 
 The math involved in calculating the remaining space is as follow: add all the `flex-grow` and divide it the available remaining space after `flex-basis` is applied. Do not divide it by the parent container's width.
 
+## flow-basis
+
+`flex-basis` controls how large an element will be along the main-axis **before** any growing or shrinking occurs.
+
+Set `flex-basis: auto` and give it a `width`. If you don't supply a `width`, then `auto` become the **content width**.
+
+```css
+/* All item with equal width, we don't want to set to auto which is content width */
+.option {
+  flex: 1 1 0;
+}
+```
+
 ## Auto Margin
+
+Auto margin is useful together with flexbox.
+
+```css
+li:last-child {
+  margin: 0 0 0 auto;
+}
+```
 
 If you use `margin: auto` alignment on flex-item, the `justify-content` property no longer works.
 

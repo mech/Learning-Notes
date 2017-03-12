@@ -27,6 +27,7 @@ https://github.com/souporserious/react-aria
 
 * [react-big-calendar](https://github.com/intljusticemission/react-big-calendar)
 * [react-calendar-timeline](https://github.com/namespace-ee/react-calendar-timeline)
+* [react-dates from Airbnb](https://github.com/airbnb/react-dates)
 
 ## D3
 

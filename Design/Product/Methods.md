@@ -10,7 +10,9 @@ Prototyping is a habit. It is a way to validate assumptions and ideas.
 
 > Trying, building, learning
 
+## Contextual Research
 
+* In-depth interviews
 
 ## Story telling
 

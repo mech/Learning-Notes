@@ -18,6 +18,8 @@ Most actual code should be written as:
 
 This means you should almost never write logic in a plain UI component.
 
+> Make the rest of your components accept data without much validation. Then do your validation rigorously at the Store level. See [#9 The store is the component's servant](https://hackernoon.com/10-react-mini-patterns-c1da92f068c5#.7ev5n4sus)
+
 ## Code Organization
 
 * [Scaling your Redux App with ducks](https://medium.com/@alexnm/scaling-your-redux-app-with-ducks-6115955638be#.1qa7z6y4d)
@@ -40,6 +42,10 @@ duck/
 * **reducers** - don't be afraid to use `combineReducers` as much as needed
 * **selectors** - the split between operations and selectors resembles the CQRS pattern. Selector functions take a slice of the application state and return some data based on that. They never introduce any changes to the application state.
 * **index** - export the default reducers, export as named exports the action creators and export types if they are needed elsewhere.
+
+## Authentication
+
+* [Nice series to watch](https://www.youtube.com/watch?v=g8O0FT0uoDA&list=PLuNEz8XtB51K-x3bwCC9uNM_cxXaiCcRY&index=21#t=155.03974)
 
 ## Normalizr
 

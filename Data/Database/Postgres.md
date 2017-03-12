@@ -3,6 +3,10 @@
 * [PostgreSQL Exercises](https://pgexercises.com/)
 * [Our Postgres Infrastructure](http://blog.honeybadger.io/our-postgres-infrastructure/)
 
+```
+▶ \x auto
+```
+
 ## pg_tune
 
 ## Incidents to learn

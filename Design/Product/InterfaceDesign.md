@@ -7,6 +7,7 @@
 * Clarity
 * Remove all extra elements - every item should have a purpose
 * Simplify color scheme - limit the number of used colors
+* Chronological order - feeds, events, etc.
 
 > UI design is just a series of "endless tweaking".
 
@@ -17,6 +18,10 @@
 ---
 
 > Content needs to be structured and structuring alters your content, designing alters content. It's not 'content then design', or 'content or design'. It's 'content and design' - Mark Boulton
+
+---
+
+> The best approach to take is to let the content you have on your site dictate the actual widths you put into your media queries.
 
 ## Variations
 

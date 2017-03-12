@@ -1,5 +1,7 @@
 # Functional JavaScript
 
+> Functions are treated no differently than data. Function is data.
+
 2 models of computations:
 
 1. Alonzo Church - Lambda calculus is a universal model of computation based on function composition.
@@ -11,6 +13,7 @@
 * [The Rise and Fall and Rise of Functional Programming - A Series (Must read)](https://medium.com/javascript-scene/the-rise-and-fall-and-rise-of-functional-programming-composable-software-c2d91b424c8c#.7ourrkni2)
 * [Curry or Partial Application?](https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8#.fxhqqauo2)
 * [Currying - the Underrated Concept in Javascript](https://medium.com/@iquardt/currying-the-underestimated-concept-in-javascript-c95d9a823fc6#.n1jqb68ju)
+* [Learn the fundamentals of functional programming](https://medium.freecodecamp.com/learning-the-fundamentals-of-functional-programming-425c9fd901c6#.qchw5q8go)
 
 ```js
 // Functions can be anonymous

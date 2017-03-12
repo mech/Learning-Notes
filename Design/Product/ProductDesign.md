@@ -1,5 +1,9 @@
 # Product Design
 
+```
+document.getElementsByTagName('video')[0].playbackRate = 1.5;
+```
+
 > GoodEnough: If I set out quickly expecting to fail, it reduces my perfection anxiety
  
 ---
@@ -12,6 +16,7 @@
 
 ---
 
+* [Quality Design Articles](https://svbset.com/)
 * [Design principles behind great products](https://medium.muz.li/design-principles-behind-great-products-6ef13cd74ccf#.ljkow9ido)
 * [5 questions to ask before every design project](https://uxdesign.cc/5-questions-a02fb76dcbd#.ei1vs2c0g)
 
@@ -32,13 +37,47 @@
 * [It's not the interface that makes the experience](https://uxdesign.cc/it-s-not-the-interface-that-makes-the-experience-fb16f8e29299#.1zgmr947y)
 * [Set expectations, do good-enough work and let the results worry about itself.](https://zellwk.com/blog/fighting-decision-paralysis/)
 
+## Microinteraction
+
+* Focusing on tiny moment - Features vs Microinteraction
+* Manual Triggers spring from explicit user wants or needs.
+* Signature moment
+* Bring the data forward - people has some interest in it. See Chrome's download count and progress circle.
+* Don't start from zero. Get data from your existing customer. Watch my past behavior.
+* Rules tell you what you can or cannot do.
+
+## Design Sprint
+
+* Sprints can create habits in your company. After the first sprint, you might notice a shift in the way your team works. You'll look for ways to turn discussions into testable hypotheses.
+* You'll look for ways to answer big questions, not someday, but this week.
+* Taken the sprint process and used it on their own to solve problems, reduce risk, and make better decisions at work.
+
 ## Design Thinking
 
 * [Shh! Don't Tell Them There's No Magic In Design Thinking](https://medium.com/ux-immersion-interactions/ssh-dont-tell-them-there-s-no-magic-in-design-thinking-b95f33867656#.g6wttjsah)
 
+## Service Design
+
+> Shifting from products to services requires not only a new mindset and methods, but also new organizational structures. Whereas in a product based organization, teams are organized around each product and organically piece together the customer experience of company offerings, in a services-based organization, teams are organized in alignment with the end-to-end customer experience of the service, with each 'product' as a touchpoint along that journey
+
+* [Going from UX to service design; the stark honest truth no one will tell you](https://blog.practicalservicedesign.com/going-from-ux-to-service-design-the-stark-honest-truth-no-one-will-tell-you-953028156b86#.sti6lsrdm)
+
+---
+
+Backstage and frontstage
+
+> I've been working for 15 years and I've never seen the end-to-end experience.
+
+```
+Service Blueprint -> Roadmap -> ??
+```
+
 ## Jobs To Be Done
 
 * [Position, Position, Position!](https://m.signalvnoise.com/position-position-position-34b510a28ddc#.e3zqxe7le)
+* [People don't buy products, they buy better versions of themselves](https://blog.bufferapp.com/people-dont-buy-products-they-buy-better-versions-of-themselves)
+* [Jobs to be Done: from Doubter to Believer by Sian Townsend at Front 2016](https://vimeo.com/167029277)
+* [Features vs. Benefits](http://www.useronboard.com/features-vs-benefits/)
 
 > We could build custom features that let you tune Basecamp to your exact workflow. But then you'd have to learn how to configure it, navigate all the options and setup flows, and train your team on the inevitably complicated UI.
 
