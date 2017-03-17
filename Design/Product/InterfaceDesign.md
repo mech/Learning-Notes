@@ -8,6 +8,8 @@
 * Remove all extra elements - every item should have a purpose
 * Simplify color scheme - limit the number of used colors
 * Chronological order - feeds, events, etc.
+* We learned that users often lose their place in the system. The implication is that the UI should prioritize clarifying context.
+* Be great at "look" and "do"
 
 > UI design is just a series of "endless tweaking".
 

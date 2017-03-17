@@ -6,9 +6,12 @@
 * [React A-ha Moments](https://tylermcginnis.com/react-aha-moments/)
 * [Exploration: Front-end JavaScript at Artsy in 2017](https://artsy.github.io/blog/2017/02/05/Front-end-JavaScript-at-Artsy-2017/)
 * [10 React Mini Patterns](https://hackernoon.com/10-react-mini-patterns-c1da92f068c5#.7ev5n4sus)
+* [A deep dive into children in React](https://mxstbr.blog/2017/02/react-children-deepdive/)
+* [Components in Figma](https://medium.com/figma-design/components-in-figma-e7e80fcf6fd2#.c40b1b20h)
 
 ## Forms
 
+* [Form Validation as HOC](https://medium.com/javascript-inside/form-validation-as-a-higher-order-component-pt-1-83ac8fd6c1f0#.fv2zg6miy)
 * [react-reform](https://github.com/codecks-io/react-reform)
 * [react-jsonschema-form](https://github.com/mozilla-services/react-jsonschema-form)
 * [Web Form Validation: Best Practices](https://www.smashingmagazine.com/2009/07/web-form-validation-best-practices-and-tutorials/)
@@ -738,6 +741,27 @@ const ListWithGists = withData(props => `https://github.com/${props.username}/gi
 // Pass the props along
 <ListWithGists username="mech" />
 ```
+
+## Namespaced Components
+
+```js
+import Toolbar from './Toolbar'
+
+render() {
+  <Toolbar.Item label="News" />
+  <Toolbar.Menu label="News" />
+}
+
+// At the Toolbar.jsx
+export Item
+export Menu
+```
+
+## Layouts
+
+* Slots and Fills - https://github.com/camwest/react-slot-fill
+* Portals - https://github.com/tajo/react-portal
+* Modals
 
 ## Blogs
 

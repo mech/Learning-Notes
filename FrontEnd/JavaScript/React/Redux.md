@@ -127,6 +127,8 @@ const configureStore = () => {
 
 ## Provider
 
+Distant leaf components need access to state that intermediary components don't need.
+
 ```js
 <BrowserRouter>
   <Provider store={store}>

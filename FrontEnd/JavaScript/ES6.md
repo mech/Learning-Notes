@@ -3,6 +3,7 @@
 * [Clean Code for JavaScript](https://github.com/ryanmcdermott/clean-code-javascript)
 * [Optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
 * [Polyfills: everything you ever wanted to know, or maybe a bit less](https://hackernoon.com/polyfills-everything-you-ever-wanted-to-know-or-maybe-a-bit-less-7c8de164e423#.1wg5unfwr)
+* [Nice tutorial on ES6 with React](http://www.benmvp.com/slides/2017/reactconf/react-esnext.html#/)
 
 Encapsulate conditionals:
 
@@ -231,6 +232,28 @@ render() {
       {this.canShowSecretData && <SecretData />}
     </div>
   )
+}
+```
+
+## Async Await
+
+* `await` takes in any Promises
+* Use normal try-catch to handle exceptions
+
+```js
+async submitForm(data) {
+  try {
+    let res = await fetch(url, {
+      method: 'POST',
+      body: JSON.stringify(data)
+    })
+    
+    newData = await res.json()
+  } catch(err) {
+    // handle error
+  }
+  
+  this.setState({ data })
 }
 ```
 

@@ -1,5 +1,15 @@
 # Components
 
+## Examples
+
+```js
+<AppBar
+  title="Title"
+  iconElementLeft={<IconButton><Close /></IconButton>}
+  iconElementRight={this.state.logged ? <Logged /> : <Login />}
+/>
+```
+
 ## Button
 
 * [The ins and outs of input](https://www.youtube.com/watch?v=T1OwKW3tokE)

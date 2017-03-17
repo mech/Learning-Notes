@@ -1,6 +1,7 @@
 # React Animation
 
 * [React Page Transition Animations](https://medium.com/front-end-hacking/react-page-transition-animations-9d18c90a9831#.jpe9r2a9b)
+* [Moving Beyond Animations to User Interactions at 60 FPS in React Native](https://medium.com/@talkol/moving-beyond-animations-to-user-interactions-at-60-fps-in-react-native-b6b1fa0ba525#.v3vy9yw0i)
 
 React ships with react-addons-css-transition-group which is a component that helps us build animations in a declarative way.
 
@@ -32,3 +33,5 @@ const Transition = () => (
   transition: opacity .5s ease-in;
 }
 ```
+
+## Physicality, Velocity, Spring, Realism, Snapping, Friction

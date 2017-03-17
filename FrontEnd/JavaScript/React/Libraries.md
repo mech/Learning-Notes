@@ -6,6 +6,10 @@ Examples to study:
 
 https://github.com/souporserious/react-aria
 
+## PDF
+
+* [react-pdf](https://github.com/nnarhinen/react-pdf)
+
 ## Show/Hide
 
 * [render-if](https://github.com/ajwhite/render-if)
@@ -18,6 +22,7 @@ https://github.com/souporserious/react-aria
 ## Modal and Dialog
 
 * [react-portal](https://github.com/tajo/react-portal)
+* [react-slot-fill](https://github.com/camwest/react-slot-fill)
 
 ## Auto-complete
 

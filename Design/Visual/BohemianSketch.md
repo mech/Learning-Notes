@@ -8,6 +8,10 @@
 * [A Crafty way to automagically keep your design team in sync](https://medium.com/nordnet-design-studio/a-crafty-way-to-automagically-keep-your-design-team-in-sync-3d9483ee2d96#.lubnutnei)
 * [Sketch Talk](http://sketchtalk.io/)
 
+## Shortcuts
+
+* Ctrl-C = Color picker
+
 ## Artboards and Pages
 
 You can have as many Artboards on the canvas as you like, but try to separate them into Pages for better performance.

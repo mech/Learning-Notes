@@ -106,6 +106,7 @@ this.context.router.transitionTo('/')
 
 ## Code splitting
 
+* [**Route-based splitting vs Component-based splitting**](https://medium.com/@thejameskyle/react-loadable-2674c59de178#.kbvk273ju)
 * [v2.1.0-beta.28 release note](https://github.com/webpack/webpack/releases/tag/v2.1.0-beta.28)
 * [babel-plugin-syntax-dynamic-import](https://github.com/babel/babel/tree/master/packages/babel-plugin-syntax-dynamic-import)
 * [DIY](https://twitter.com/ryanflorence/status/775743520615206913)
@@ -113,6 +114,28 @@ this.context.router.transitionTo('/')
 * [Webpack Performance Budgets](https://github.com/webpack/webpack/issues/3216)
 * [`System.import()` will be deprecated in webpack 3](https://github.com/webpack/webpack/issues/3098)
 * [react-async-component](https://github.com/ctrlplusb/react-async-component)
+
+**Use Babel plugin: `syntax-dynamic-import`**
+
+```js
+// Before
+SystemJS.import('/js/main.js')
+System.import('/js/main.js')
+require('/js/main.js')
+require.ensure(['/js/main.js'], cb)
+myCustomNIHLoader('/js/main.js')
+
+// Now
+import main from '../js/main'
+
+// Future - Dynamic import
+// Stage-3
+const AsyncModulePromise = import(
+  '../js/lib/somethingNotNeededNow'
+)
+```
+
+> Code splitting fixes the SPA Syndrome: Downloading the code for the Settings section when all you wanted was the About page.
 
 Large JavaScript bundles will peg the main thread, taking longer to compile and run.
 
@@ -165,6 +188,42 @@ class AsyncRoute extends Component {
       return <Loading />
     }
   }
+}
+```
+
+```js
+// Other implementation
+class LazyLoad extends Component {
+  state = {
+    AsyncModule: null
+  }
+  
+  componentDidMount() {
+    this.props.getComponent()
+      .then(module => module.default)
+      .then(AsyncModule => this.setState({AsyncModule}))
+  }
+  
+  render() {
+    const { loader, ...childProps } = this.props
+    const { AsyncModule } = this.state
+    
+    if (AsyncModule) {
+      return <AsyncModule {...childProps}>
+    }
+    
+    if (loader) {
+      const Loader = loader
+      return <Loader>
+    }
+    
+    return null
+  }
+}
+
+// Using it
+const MyComponent = () => {
+  return <LazyLoad getComponent={() => import('./someFile.js')} />
 }
 ```
 

@@ -15,6 +15,7 @@ Maintain a visual language, UI elements, components and page types to realize su
 
 Living documentation based on executable examples.
 
+* [Components in Figma](https://medium.com/figma-design/components-in-figma-e7e80fcf6fd2#.w1l2qwds0)
 * [Maintainable CSS](http://maintainablecss.com/)
 * [Atomic Design](http://atomicdesign.bradfrost.com/chapter-1/)
 * [Subform - Capturing Design Intent](https://medium.com/subform/disrupting-design-interns-comps-and-redlines-b2ecdc07604c#.ir5th17ia)

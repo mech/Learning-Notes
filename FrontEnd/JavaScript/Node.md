@@ -2,6 +2,11 @@
 
 * [Better search for NPM](http://node-modules.com/)
 
+```
+▶ npm completion >> ~/.zshrc
+▶ source ~/.zshrc
+```
+
 ## Yarn
 
 ```
