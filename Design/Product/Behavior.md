@@ -1,5 +1,7 @@
 # Behavior
 
+* [Fast and Slow Dopamine](https://medium.com/the-spike/the-crimes-against-dopamine-b82b082d5f3d#.i4fhrfmdh)
+
 ## Ritual
 
 Mapping Experiences -> Habitual ritual

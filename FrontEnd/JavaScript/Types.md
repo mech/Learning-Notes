@@ -1,15 +1,105 @@
 # Type Checking
 
+Types are a set of possible values.
+
+What's the purpose of type checking?
+
+* Let the team knows what types the function needs if you don't write JSDoc (no more `@param` and `@return`).
+* Throw type errors if components are not given required props (but leave props with default values as optional)
+* Type annotations provide a form of always-up-to-date [documentation](http://documentation.js.org/) for developers to understand unfamiliar code base.
+* Provide feedback as you write code
+
+---
+
 * [Type systems will make you a better JavaScript programmer](http://jaredforsyth.com/type-systems-js-dev/#/)
+* [Advanced features in Flow](http://sitr.us/2015/05/31/advanced-features-in-flow.html)
+* [Flow-type cheat sheet](http://www.saltycrane.com/blog/2016/06/flow-type-cheat-sheet/)
+* [Why use flow?](https://blog.aria.ai/post/why-use-flow/)
 
 ```
 ▶ npm install -g flow-bin
 ▶ npm install -g flow-typed
 
+▶ yarn add global flow-bin
+▶ yarn add global flow-typed
+▶ flow-typed install
+
 ▶ npm install --save-dev babel-plugin-transform-flow-strip-types
 
 // Create .flowconfig file
 ▶ flow init
+```
+
+```js
+// Just a simple variable binding
+var foo = "Hello";
+// Variable binding with type annotation
+var foo: string = "Hello";
+
+// Type parameters for generic functions
+function reversed<T>(array: T[]): T[] {
+}
+
+// Custom properties
+let rating: {[id:string]: number} = {};
+rating["stars"] = 5
+
+// A promise that returns an array of numbers
+Promise<number[]>
+
+// A promise that returns an array of strings
+Promise<string[]>
+Promise<string>
+
+Generator<number, void, void>
+
+// Use sparingly
+var anyObject: Object = {};
+var anyFunction: Function = () => {};
+
+// Structurally similar
+interface Fooable {
+  foo(): string;
+}
+
+// Is Array being defined by Generics type alias?
+type Array<T> = [ item: T ];
+var stringArray: Array<string> = ['hi', 'there'];
+
+// Same
+var array: number[] = [];
+var array: Array<number> = [];
+
+// Allowed literal values
+const value: 'enabled' | 'disabled' = 'enabled'
+
+// Type unions
+const stringOrNumber: string | number = 'foo'
+
+// Object
+const obj: { [key: string]: number } = { "foo": 1 }
+
+// Algebraic data type
+// AppState type can be one of two types:
+type AppState = ViewingState | EditingState;
+type ViewingState = { mode: 'Viewing' };
+type EditingState = {
+  mode: 'Editing';
+  articleId: number;
+};
+
+class AppComponent extends React.Component {
+  state: AppState;
+  
+  constructor(props: any, children: any) {
+    this.state = States.Viewing();
+  }
+  
+  // A shim to attach flow annotations and enforce type safety
+  setState(object: AppState) {
+    super.setState(object);
+  }
+}
 ```
 
 ```js
@@ -39,9 +129,116 @@ function isValid(items: Array<string>): boolean {
 }
 ```
 
+## Type Aliases
+
+Make it easy to refer to complex type by simple name. Essential to sharing codebase.
+
+```js
+import type { MediaType } from './MediaType'
+
+export type UserType = {
+  username: string,
+  firstName?: string,
+  lastName?: string,
+  email: string,
+  avatar: MediaType,
+}
+```
+
+## Object Types
+
+```js
+type Person = {
+  name: string,
+  age: number,
+  (x: string): number, // callable property
+  [x: number]: string  // computed property
+}
+```
+
+## Function Types
+
+```js
+type TimesTwo = (value: number) => number;
+
+// Type parameter for generic function type
+type Identity = <T>(x: T) => T;
+```
+
+## Tuples
+
+Tuple is an array that use positional items like `["foo", 1, true]`.
+
+```js
+const tuple: [string, number, boolean] = ["foo", 1, true];
+```
+
+## Polymorphic Types
+
+* [Flow: Mapping an object](https://medium.com/@thejameskyle/flow-mapping-an-object-373d64c44592#.7n0tsa306)
+
+Really sound scary, but are actually much more simple than they sound.
+
+## Generic and Type Parameters
+
+When you write code that doesn't care about types, you can use generics which are kind of like type placeholders.
+
+`T` is often used as a type that will be defined at the call-site.
+
+```js
+// `T` here, is a type that will defined at the call-site
+// This is a "generic function"
+function findLast<T> (
+  array: Array<T>,
+  func: (item: T, index: number, array: Array<T>) => any
+): null | T {
+  let index = array.length
+  while(--index >= 0) {
+    const item = array[index]
+    if(func(item, index, array)) {
+      return item
+    }
+  }
+  return null
+}
+
+// Flow knows that in this case, `T` will be a number
+const lastEvenNumber: ?number = findLast(
+  [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+  (item) => item % 2 === 0
+)
+```
+
+```js
+// Type parameters - Looks like React's props and state
+class GenericClass<T> {
+  x: T;
+  
+  constructor(x: T) {
+    this.x = x;
+  }
+}
+```
+
+```js
+// If you find yourself using `any` for generic type
+function first(arr: any[], predicate: (x) => boolean): any {
+}
+
+// You can change it to a generic function
+function first<T>(arr: T[], predicate: (x: T) => boolean): T {
+}
+
+// So why do we do this? So that IDE can show us available methods to use
+var arr = [4, 16, 7, 21]
+var item = first(arr, x => !!(x % 2))
+item. // => here we have intellisense
+```
+
 ## Type-First Approach
 
 ```js
+// Type alias
 type Post {
   title: string,
   createdAt: Date,
@@ -52,4 +249,196 @@ type Post {
     numberOfPosts: number
   }>
 }
+
+type Kibble = Array<any> | number
 ```
+
+```js
+declare type ActionSendInquiry = {
+  type: 'SEND_INQUIRY';
+  action: PetAction;
+  id: number;
+  inquiry: PetInquiry;
+}
+
+declare type SendInquiry = (x: ActionSendInquiry) => void
+```
+
+## React
+
+`React.Component` takes type parameters. See [flowtype for react](https://github.com/facebook/flow/blob/master/lib/react.js)
+
+```js
+type Props = {}
+type State = {}
+type DefaultProps = {}
+
+// But why do we do these type annotation?
+// Flow requires type annotations for class method arguments and return values, so that Flow can:
+// 1. Check you're instantiating with the required props
+// 2. Props that are not required have default values
+// 3. Make sure properties exist for props and state
+// 4. Make sure setState() is using declared types
+class Counter extends React.Component<DefaultProps, Props, State> {
+  constructor(props: Props, context: any) {
+    super(props, context)
+  }
+  
+  render(): React.Element {
+  }
+}
+```
+
+```js
+type ModalProps = {
+  sendInquiry: SendInquiry;
+  pet: Pet;
+}
+
+type ModalState = {
+  inquiry: ?PetInquiry;
+}
+
+class PetModal extends React.Component {
+  // This is class field which is specified inside the class
+  // body. See "class properties proposal" at stage-2
+  props: ModalProps;
+  state: ModalState;
+  onSubmit: () => void;
+  
+  constructor(props: ModalProps) {
+    super(props);
+    
+    this.state = {
+      inquiry: null
+    }
+    
+    this.onSubmit = () => {
+      props.sendInquiry({
+        type: 'SEND_INQUIRY',
+        action: props.pet.action || 'adopt',
+        id: props.pet.id,
+        inquiry: this.state.inquiry
+      })
+    }
+  }
+}
+```
+
+```js
+import React, { Component, PropTypes } from "react";
+import { connect } from "react-redux";
+import { mapDispatchToProps } from "./actions/mappers";
+
+type CurrentArticle = {
+  content: string,
+  id: number,
+  name: string,
+};
+
+class ArticleContent extends Component {
+  props: {
+    category_id: number,
+    current_article: CurrentArticle,
+    editing: bool,
+    saveEditing: (id: number, cat_id: number, name: string) => void,
+    startEditing: (id: number) => void,
+  };
+
+  state: {
+    content_value: string;
+  };
+
+  defaultProps: { visited: boolean };
+
+  constructor(props) {
+    super(props);
+    (this:any).isNotChanged = this.isNotChanged.bind(this);
+    (this:any).onChangeContent = this.onChangeContent.bind(this);
+    (this:any).onModify = this.onModify.bind(this);
+    (this:any).onSave = this.onSave.bind(this);
+    (this:any).onUndo = this.onUndo.bind(this);
+    (this:any).dangerous = this.dangerous.bind(this);
+    (this:any).state = {
+      content_value: props.current_article.content
+    };
+  }
+}
+```
+
+## Disjoint Union
+
+```js
+// "leaf" and "branch" are Singleton Types
+type BinaryTree =
+  { kind: "leaf", value: number } |
+  { kind: "branch", left: BinaryTree, right: BinaryTree }
+  
+function sumLeaves(tree: BinaryTree): number {
+  switch (tree.kind) {
+    case "leaf":
+      return tree.value;
+    default
+      return sumLeaves(tree.left) + sumLeaves(tree.right);
+  }
+}
+```
+
+## Singleton Types
+
+## Optional
+
+```js
+// Optional parameter with trailing ?
+function foo(x?) {...}
+
+// Callback is optional, but if defined, take no argument and return nothing
+function foo(x: number, callback?: () => void): void {...}
+```
+
+## Nullability
+
+Flow has null, but treat it as a distinct type that is generally not compatible with other types. Values are non-nullable by default.
+
+```js
+function LoginForm(props) {
+  // emailInput might be null
+  let emailInput: ?HTMLInputElement
+  
+  return (
+    <form onSubmit={event => props.onLogin(event, emailInput)}>
+      <input type="email" ref={el => emailInput = el} />
+      <input type="submit" />
+    </form>
+  )
+}
+
+function onLoginTake1(event: Event, emailInput: ?HTMLInputElement) {
+  event.preventDefault()
+  
+  // Type error! Cannot read property `value` on possibly `null` or `undefined` value
+  dispatch(loginEvent(emailInput.value))
+}
+
+function onLoginTake2(event: Event, emailInput: ?HTMLInputElement) {
+  event.preventDefault()
+  
+  if (emailInput) {
+    // Safe! Flow infers that emailInput cannot be `null` or `undefined` in the block
+    dispatch(loginEvent(emailInput.value))
+  }
+}
+```
+
+Contrast this to Go's approach:
+
+```go
+func validate(user *User) bool {
+  return user.Name != ""
+}
+```
+
+## People
+
+* [Jesse Hallett](http://sitr.us/)
+* [Giulio Canti](https://medium.com/@gcanti)

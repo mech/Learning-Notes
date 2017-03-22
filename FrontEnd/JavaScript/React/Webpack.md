@@ -2,6 +2,7 @@
 
 * [Webpack v2 Quick Start](http://bendyworks.com/blog/webpack-v2-quick-start)
 * [From zero to webpack, one error at the time](http://www.jumoel.com/2017/zero-to-webpack.html)
+* [Webpack 2 Loader Variations](http://andrewhfarmer.com/webpack-2-loader-variations/)
 
 ```js
 module: {

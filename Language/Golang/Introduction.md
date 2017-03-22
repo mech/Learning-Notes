@@ -1,8 +1,11 @@
 # Golang
 
 * [Building web apps with Go](https://infinum.co/the-capsized-eight/building-web-apps-with-go)
+* [Changes I would make to Go](http://sitr.us/2017/02/21/changes-i-would-make-to-go.html)
 
-## Struct
+## Struct - Store data
+
+Go has separation of behavior and data: structs store data, then function manipulate data in structs.
 
 ```go
 type Page struct {
@@ -11,6 +14,8 @@ type Page struct {
   Posts []*Post
 }
 ```
+
+## Interfaces - Promote composition
 
 ## Server Programming
 

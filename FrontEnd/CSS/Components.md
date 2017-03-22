@@ -24,3 +24,17 @@
   </span>
 </button>
 ```
+
+## Menu
+
+Use checkbox hack to open and close the menu so we don't need to wait for JavaScript to load to do that.
+
+```css
+.menu {
+  transform: translateX(-500px);
+}
+
+.toggle:checked ~ .menu {
+  transform: none;
+}
+```

@@ -95,6 +95,10 @@ Without a design system, you are rendered inflexible. You can't explore and expe
 * [Polymer Library - Learn from it!](https://www.polymer-project.org/1.0/)
 * [Pattern Patter](https://ethanmarcotte.com/wrote/pattern-patter/)
 
+## Design Tokens
+
+* [CenturyLink](http://assets.ctl.io/cyclops/1.8.2/tokens.html)
+
 ## Broader Strokes - Style Tiles, Element Collages
 
 To establish aesthetic direction, mood and atmosphere.

@@ -11,7 +11,7 @@
 * We learned that users often lose their place in the system. The implication is that the UI should prioritize clarifying context.
 * Be great at "look" and "do"
 
-> UI design is just a series of "endless tweaking".
+> UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
 
 ## Content Structure
 

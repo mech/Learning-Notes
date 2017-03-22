@@ -21,6 +21,21 @@ if (shouldShowSpinner(fsm, listNode)) {
 }
 ```
 
+## Module Export Import
+
+```js
+export default {
+  red: '#ff4433',
+  yellow: '#ffdc00'
+}
+
+import { red, yellow } from './colors'
+```
+
+## Classes
+
+* [Classes in ECMAScript 6 (final semantics)](http://2ality.com/2015/02/es6-classes-final.html)
+
 ## React
 
 ```js
@@ -58,6 +73,13 @@ There are 3 different "spread" operators in JavaScript:
 1. Array spreads, which is part of ES6
 2. Object spreads, which are currently a Stage 3
 3. JSX spreads
+
+```js
+// ...restProps will pull out all of the props that hasn't
+// been pulled out
+const Greeting = ({ name, punc, ...restProps }) =>
+  <h1 {...restProps}>Hello, {name}(punc)</h1>
+```
 
 ### Gather/Rest
 

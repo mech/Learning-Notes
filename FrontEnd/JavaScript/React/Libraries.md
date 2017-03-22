@@ -2,9 +2,10 @@
 
 * [React Desktop](http://reactdesktop.js.org/)
 
-Examples to study:
+## Case Study
 
-https://github.com/souporserious/react-aria
+* [react-soundplayer](http://labs.voronianski.com/react-soundplayer/)
+* [react-aria](https://github.com/souporserious/react-aria)
 
 ## PDF
 

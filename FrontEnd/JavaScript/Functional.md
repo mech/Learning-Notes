@@ -32,3 +32,11 @@ f . g
 
 compose2 = f => g => x => f(g(x))
 ```
+
+## Functor
+
+* [Functors & Categories](https://medium.com/javascript-scene/functors-categories-61e031bac53f#.gug709a8t)
+
+A functor is something that can be mapped over. It's a container that is "mappable".
+
+Array and Promises are functors. Interesting `.then()` obeys the functor laws.

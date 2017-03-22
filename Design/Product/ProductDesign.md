@@ -1,5 +1,7 @@
 # Product Design
 
+> It's comfortable to focus on the areas where you are strong in your day-to-day role. By avoiding comfort and seeking continual improvement, you can skyrocket your true potential. Fail. A lot. Failure is the new success. Deliberate practicing your failure.
+
 ```
 document.getElementsByTagName('video')[0].playbackRate = 1.5;
 ```
@@ -23,6 +25,8 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 
 ## Advice
 
+* Lean UX allows you to embrace continuous change to focus on outcome instead of feature. Sense and respond.
+* Product need to improve in fast pace. Iterate on product and learn new thing and trigger scepticism.
 * You MUST fail fast and fail early.
 * Up-front user research is a form of Product Procrastination. It's busy-work. **Even though it was nice to "have the user in mind", the useful data came from the first user tests, not the research.**
 * Make an ugly version where all the things work

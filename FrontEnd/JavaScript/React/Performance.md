@@ -1,6 +1,7 @@
 # React Performance
 
 * [React Performance Tune-up](http://engineering.invisionapp.com/post/react-performance-tune-up/)
+* [Be careful with code splitting using link preload](https://medium.com/reloading/a-link-rel-preload-analysis-from-the-chrome-data-saver-team-5edf54b08715#.ssqki3op6)
 
 ```js
 componentWillUpdate() {

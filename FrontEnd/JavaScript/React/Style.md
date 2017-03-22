@@ -12,6 +12,51 @@
 <Button icon="check">Okay</Button>
 ```
 
+```css
+/* Ultimately this is bad approach since .btn may get used elsewhere without the .modal context */
+.modal > .btn {
+}
+```
+
+Using components to abstract style:
+
+```js
+<Relative>
+  <Absolute top={0} left={0} />
+</Relative>
+```
+
+## Minions
+
+Atomic CSS - Good for prototyping.
+
+* [chantastic's minions](https://github.com/chantastic/minions.css)
+
+Why do we want to have such immutable classes besides our CSS Modules component styles?
+
+Sometimes you need to do the owl selector thing like:
+
+```css
+/* A button next to a button */
+.btn + .btn {
+  margin: 5px;
+}
+
+/* Where does the style lives? Input or Button? */
+.input + .btn {
+  margin-right: -1px;
+}
+
+* + * {}
+```
+
+If we have generic requirement like apply 5px margins to certain elements, we can use simple helper classes like `.m5` for `margin: 5px`. These are all tiny adjustment to be make in a global fashion.
+
+## Videos to get started
+
+* [Michael Chan - Inline Styles: themes, media queries, contexts, & when it's best to use CSS](https://www.youtube.com/watch?v=ERB1TJBn32c)
+* [The case for CSS modules - Mark Dalgleish](https://www.youtube.com/watch?v=zR1lOuyQEt8)
+
 ## Storybook
 
 * [Algolia](https://community.algolia.com/instantsearch.js/react/storybook)
@@ -25,6 +70,8 @@
 * Server-render
 * Works with pseudo classes and media queries directly
 * Aware of theming
+* Deleting code shouldn't be touchy
+* We need style fallback, especially for IE
 
 ## Variables
 
@@ -49,6 +96,7 @@ If you need to change style, you need to go through all HTML files that are usin
 ## CSS Modules
 
 * [react-css-modules](https://github.com/gajus/react-css-modules)
+* [Journey to Enjoyable, Maintainable Styling with React, ITCSS, and CSS-in-JS](https://medium.com/maintainable-react-apps/journey-to-enjoyable-maintainable-styling-with-react-itcss-and-css-in-js-632cfa9c70d6#.up1dm9wh1)
 
 ```js
 loader: 'style!css?modules&localIdentName=[local]--[hash:base64:5]'
@@ -77,6 +125,22 @@ loader: 'style!css?modules&localIdentName=[local]--[hash:base64:5]'
 <h2 class="title--3JCJR mb0--21SyP fw6--1JRhZ">Hello React</h2>
 ```
 
+```js
+// Look at the styles[property] pattern
+import styles from './style'
+import cn from 'classnames'
+
+const Photo = ({src, alt, isLarge}) =>
+  <div {...{ className: cn({
+    [styles.Photo]: true,
+    [styles['Photo--large']]: isLarge})
+  }}>
+    <img {...{ src, alt,
+      className: styles['Photo__img'] }}
+    />
+  </div>
+```
+
 ## styled-components
 
 * [Tagged Template Literal](http://exploringjs.com/es6/ch_template-literals.html)
@@ -94,3 +158,13 @@ Benefits:
 * Switch styles based on incoming props rather than appending new class names to HTML - (i.e. `isOpen` props)
 * Clearer JSX with little `<div>` littering around
 * Composing styles
+
+## Theming
+
+Basically overriding styles. Treat the style as props.
+
+```js
+<MyComponent theme={theme} />
+```
+
+We don't nest across component boundary. If you want to make component look different depending on context, you can use props instead which is more maintainable than relying on parent-sibling-child relationship.

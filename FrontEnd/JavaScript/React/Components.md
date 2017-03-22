@@ -425,6 +425,8 @@ Button.propTypes = {
 
 ## Higher Order Components
 
+A type of Container Component.
+
 Components by itself are great to achieve reusability and composability. But what if different components in different domains share the same behavior? Early React gives use mixins to share behaviors.
 
 ```js
@@ -742,6 +744,18 @@ const ListWithGists = withData(props => `https://github.com/${props.username}/gi
 <ListWithGists username="mech" />
 ```
 
+## Passthrough Props
+
+You wrote the `<Component>`, your consumer want to pass `props` to the underlying element without any hinder.
+
+* [Building a property passthrough (can't be used with Flow)](http://jamesknelson.com/building-a-property-passthrough-higher-order-component-for-react/)
+
+```js
+const { theme, className, children, ...others } = this.props;
+const classes = `NavBar NavBar-${theme} ${className}`
+return <div {...others} className={classes}>{children}</div>
+```
+
 ## Namespaced Components
 
 ```js
@@ -768,3 +782,7 @@ export Menu
 * [Dave Ceddia](https://daveceddia.com/)
 * [Tyler McGinnis](https://tylermcginnis.com/)
 * [Mark Erikson](http://blog.isquaredsoftware.com/)
+
+## Videos
+
+* [React Component Patterns by Michael Chan](https://www.youtube.com/watch?v=YaZg8wg39QQ)
