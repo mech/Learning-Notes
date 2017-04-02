@@ -49,6 +49,10 @@ const MatchWithFade = ({ component: Component, ...rest }) => (
 )
 ```
 
+## Animation
+
+* [react-router v4 animated with data-driven-motion](https://gist.github.com/tkh44/4cfedc32762966e318b24fcfe6f3564a)
+
 ## Rendering a Match
 
 Match renders UI when a pattern matches a location.

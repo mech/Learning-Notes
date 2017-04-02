@@ -8,6 +8,12 @@
 * [10 React Mini Patterns](https://hackernoon.com/10-react-mini-patterns-c1da92f068c5#.7ev5n4sus)
 * [A deep dive into children in React](https://mxstbr.blog/2017/02/react-children-deepdive/)
 * [Components in Figma](https://medium.com/figma-design/components-in-figma-e7e80fcf6fd2#.c40b1b20h)
+* [Our Best Practices for Writing React Components](https://engineering.musefind.com/our-best-practices-for-writing-react-components-dec3eb5c3fc8#.ktdv8jlh2)
+
+## Reusable Components
+
+* Reusable components shouldn't worry about where data is coming from. It should come from the parent as `props`.
+* Reusable should deal with its interaction however and not rely on parent.
 
 ## Forms
 
@@ -59,6 +65,16 @@ What API is good for inputs:
 * [Event Switch](https://github.com/chantastic/reactpatterns.com#event-switch)
 
 Synthetic Events are reusable and there is a single global handler. This means you cannot store a synthetic event and reuse it later because it becomes `null` right after the action. If you really want to store it, you can use `persist()`.
+
+```js
+// SyntheticEvent is pooled and reuse and will be reset, so this won't work
+handleClick(evt) {
+  setTimeout(function() {
+    // ERROR - name will be null
+    console.log(evt.target.name)
+  }, 1000)
+}
+```
 
 ```js
 // Note that this returns a function
@@ -136,6 +152,8 @@ We need to pre-bind them in the constructor.
 
 ## Refs
 
+* [When to use Ref on a DOM node in React](https://www.robinwieruch.de/react-ref-attribute-dom-node/)
+
 In case we need it, React gives us access to the actual DOM nodes in a way that we can perform imperative operations with them (like 3rd-party libraries).
 
 Using refs is imperative (i.e. `input.focus()`) and we should avoid using refs as much as possible because they force the code to be more imperative and harder to read and maintain.
@@ -154,6 +172,9 @@ Be careful when passing props as `null`. Any default prop value will not be used
 
 * [Thinking statefully](https://daveceddia.com/thinking-statefully/)
 * [A visual guide to state in React](https://daveceddia.com/visual-guide-to-state-in-react/)
+* [`setState()` Gate - Navigating React `setState()` Behavior Confusion](https://medium.com/javascript-scene/setstate-gate-abc10a9b2d82#.66ktn17qa)
+* [Functional `setState` is the future of React](https://medium.freecodecamp.com/functional-setstate-is-the-future-of-react-374f30401b6b#.2b7ljzb5c)
+* [5 types of application states](http://jamesknelson.com/5-types-react-application-state/)
 
 State is only reserved for interactivity, that is, data changes over time.
 
@@ -207,6 +228,9 @@ this.setState((prevState, props) => {
     showForm: !prevState.showForm
   }
 })
+
+// Notice the parentheses if there is not `return`
+this.setState(prevState => ({ expanded: !prevState.expanded }))
 ```
 
 The 2nd argument to `setState` to a callback function which will be invoked when `setState` has finished and the component is re-rendered. It's best to use other lifecycle method rather than relying on this callback function.
@@ -782,6 +806,7 @@ export Menu
 * [Dave Ceddia](https://daveceddia.com/)
 * [Tyler McGinnis](https://tylermcginnis.com/)
 * [Mark Erikson](http://blog.isquaredsoftware.com/)
+* [Guillermo Rauch](https://rauchg.com/essays)
 
 ## Videos
 

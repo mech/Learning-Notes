@@ -4,6 +4,7 @@
 * [conventional-redux](https://github.com/mjaneczek/conventional-redux)
 * [Practical Redux](http://blog.isquaredsoftware.com/2016/10/practical-redux-part-0-introduction/)
 * [Isn’t our code just the BEST - @fat](https://medium.com/bumpers/isnt-our-code-just-the-best-f028a78f33a9#.7xiqumcuk)
+* [Redux best practices gotchas](https://getstream.io/blog/react-redux-best-practices-gotchas/)
 
 Redux helps us enforce good state boundary. You do not want to misapply it by storing form state in the store. It is not meant for that.
 
@@ -23,6 +24,9 @@ This means you should almost never write logic in a plain UI component.
 ## Code Organization
 
 * [Scaling your Redux App with ducks](https://medium.com/@alexnm/scaling-your-redux-app-with-ducks-6115955638be#.1qa7z6y4d)
+* [10 Tips for Better Redux Architecture](https://medium.com/javascript-scene/10-tips-for-better-redux-architecture-69250425af44#.p35g31etj)
+* [Redux Architecture](https://github.com/jarvisaoieong/redux-architecture/blob/master/README.md)
+* [Undirectional User Interface Architectures](http://staltz.com/unidirectional-user-interface-architectures.html)
 
 Function-first folders (e.g. `/container`, `/actions`, `/reducers`, `/components`) don't scale at all. As you add more features, you add files into the same folders.
 
@@ -160,7 +164,7 @@ const signInUser = ({ email, password }) => (
   }
 )
 
-// Or
+// Or with redux-thunk
 const signInUser = ({ email, password }) => (dispatch) => {
   fetch()
     .then(res => res.json)
@@ -174,6 +178,7 @@ const signInUser = ({ email, password }) => (dispatch) => {
 * [Idiomatic Redux: Thoughts on Thunks, Sagas, Abstraction, and Reusability](http://blog.isquaredsoftware.com/2017/01/idiomatic-redux-thoughts-on-thunks-sagas-abstraction-and-reusability/)
 * [redux-loop](https://github.com/redux-loop/redux-loop)
 * [redux-pack](https://github.com/lelandrichardson/redux-pack)
+* [Redux Side Effects](https://github.com/markerikson/react-redux-links/blob/master/redux-side-effects.md)
 
 Isn't it funny that Redux's so-called "actions" don't actually do anything? They're just objects, boring and simple. Wouldn't it be cool if you could actually make them **do** something? Like, say, make an Ajax call, or trigger other actions? Because reducers are supposed to be pure we couldn't put that work inside a reducer. If you wanted an action to **do** something, that code would need to live inside a function. It would be nice if an action creator could return a function instead of an action object and that is what redux-thunk does. It is a simple middleware that looks at every action that passes through the system, and if it's a function, it calls that function. That's all it does.
 
@@ -210,10 +215,16 @@ export const fetchUserByEmail = (email) => {
 Middleware has opportunity to log, stop, modify, or not touch an action.
 
 ```
-View => Action Creator => Action => Middleware => Reducers => State
+View => Action Creator => Action => Middleware => Reducers => State (Store)
 ```
 
 ### API Middleware
+
+* [Redux 4 Ways - Comparison of thunk, saga, observable and promise middleware](https://medium.com/react-native-training/redux-4-ways-95a130da0cdc#.ev3d5xmwj)
+* [redux-api-middleware](https://github.com/agraboso/redux-api-middleware)
+* [redux-promise](https://github.com/acdlite/redux-promise)
+* [redux-promises](https://github.com/CrocoDillon/redux-promises)
+* [redux-promise-middleware](https://github.com/pburtchaell/redux-promise-middleware)
 
 The goal of API middleware is to do async operation so that by the time the action reaches the reducer, it should have been resolved already.
 

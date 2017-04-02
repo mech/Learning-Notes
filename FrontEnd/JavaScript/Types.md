@@ -1,6 +1,10 @@
 # Type Checking
 
-Types are a set of possible values.
+Types are a set of possible values. Types can be strong or generic.
+
+Haskell is perhaps one of the most strongly typed languages. However, Haskell support Generic Programming, in the sense that you write methods that work with any type conforming to a certain concept (or interface). Duck typing! Haskell also uses Type Inference so you never have to declare the type of your variables.
+
+Python and Ruby are strongly typed, dynamic languages. JavaScript is a weakly typed, dynamic language.
 
 What's the purpose of type checking?
 
@@ -8,6 +12,10 @@ What's the purpose of type checking?
 * Throw type errors if components are not given required props (but leave props with default values as optional)
 * Type annotations provide a form of always-up-to-date [documentation](http://documentation.js.org/) for developers to understand unfamiliar code base.
 * Provide feedback as you write code
+* Designing a type means to understand a domain and its operations
+* Keeping a type discipline can be an advantage for long term maintainability
+* [Flow is nominal typing](https://flowtype.org/docs/classes.html#structural-vs-nominal-typing-for-classes)
+* [TypeScript is structural typing](https://www.typescriptlang.org/docs/handbook/type-compatibility.html)
 
 ---
 
@@ -15,6 +23,7 @@ What's the purpose of type checking?
 * [Advanced features in Flow](http://sitr.us/2015/05/31/advanced-features-in-flow.html)
 * [Flow-type cheat sheet](http://www.saltycrane.com/blog/2016/06/flow-type-cheat-sheet/)
 * [Why use flow?](https://blog.aria.ai/post/why-use-flow/)
+* [dom.js](https://carousell.com/p/genuine-windows-10-pro-95810506/?ref=search&ref_query=windows%2010&ref_rank=14&ref_referrer=%2Fsearch%2Fproducts%3Fquery%3Dwindows%252010)
 
 ```
 ▶ npm install -g flow-bin
@@ -89,6 +98,8 @@ type EditingState = {
 };
 
 class AppComponent extends React.Component {
+  // Same as:
+  // state: AppState = States.Viewing()
   state: AppState;
   
   constructor(props: any, children: any) {
@@ -251,6 +262,22 @@ type Post {
 }
 
 type Kibble = Array<any> | number
+
+// Simple type aliases
+type Username = string
+type ID = number
+type URL = string
+
+type Item = {
+  by: Username,
+  id: ID,
+  time: number,
+}
+
+// Intersection type
+type Item =
+  | { type: 'story', url: URL } & TopLevel
+  | { type: 'ask', text: string } & TopLevel
 ```
 
 ```js
@@ -266,7 +293,11 @@ declare type SendInquiry = (x: ActionSendInquiry) => void
 
 ## React
 
+* [Flow Cookbook: Flow & React](http://sitr.us/2017/01/03/flow-cookbook-react.html)
+
 `React.Component` takes type parameters. See [flowtype for react](https://github.com/facebook/flow/blob/master/lib/react.js)
+
+Flowtype annotations provide an alternative to `propTypes` runtime checks. It has the benefit to check `state` as well as `props`.
 
 ```js
 type Props = {}
@@ -284,8 +315,14 @@ class Counter extends React.Component<DefaultProps, Props, State> {
     super(props, context)
   }
   
-  render(): React.Element {
+  render(): React.Element<*> {
   }
+}
+```
+
+```js
+// For stateless functional component
+function MyComponent(props: Props): React.Element<*> {
 }
 ```
 
@@ -363,6 +400,34 @@ class ArticleContent extends Component {
       content_value: props.current_article.content
     };
   }
+}
+```
+
+```js
+import type { Story } from 'hacker-news'
+
+// This is type for props
+// `onSelect` is a function that takes zero arguments and returns `undefined`
+// You can use `mixed` also if you do not want to put any constraint on the callback's return type
+type StoryListItemProps = {
+  story: Story,
+  onSelect: () => void,
+}
+
+function StoryListItem(props: StoryListItemProps): React.Element<*> {
+  const { by, title } = props.story
+  
+  return (
+    <p>
+      <a href="#" onClick={event => selectStory(props, event)}>
+      </a> posted by {by}
+    </p>
+  )
+}
+
+function selectStory(props: StoryListItemProps, event: Event) {
+  event.preventDefault()
+  props.onSelect()
 }
 ```
 

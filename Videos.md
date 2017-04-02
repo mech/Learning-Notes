@@ -7,6 +7,7 @@
 ## JavaScript
 
 * [ReactiveConf](https://www.youtube.com/channel/UCBHdUnixTWymmXBIw12Y8Qg/videos)
+* [dot Conferences](https://www.youtube.com/channel/UCSRhwaM00ay0fasnsw6EXKA)
 
 ## Innovation and Startups
 

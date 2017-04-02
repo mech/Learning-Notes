@@ -18,10 +18,17 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 
 ---
 
+> Good design is good business
+
+---
+
 * [Quality Design Articles](https://svbset.com/)
 * [Design principles behind great products](https://medium.muz.li/design-principles-behind-great-products-6ef13cd74ccf#.ljkow9ido)
 * [5 questions to ask before every design project](https://uxdesign.cc/5-questions-a02fb76dcbd#.ei1vs2c0g)
 * [Design Principles FTW](http://www.designprinciplesftw.com/)
+* [IDEO designed unsafe car](https://iot-for-all.com/bad-design-kills-self-driving-cars-or-not-3f02558acbb4?gi=d9b346a3fd71)
+* [Bad gear design](https://www.youtube.com/watch?v=EQdnsrkjo6o)
+* [Iteration is not design](https://medium.com/the-design-innovator/iteration-is-not-design-668695445f76)
 
 ## Advice
 
@@ -42,6 +49,7 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 * Not being too precious about what got us here. I learned the lesson from watching other companies who held onto things too long. Morph every couple of years into something new.
 * [It's not the interface that makes the experience](https://uxdesign.cc/it-s-not-the-interface-that-makes-the-experience-fb16f8e29299#.1zgmr947y)
 * [Set expectations, do good-enough work and let the results worry about itself.](https://zellwk.com/blog/fighting-decision-paralysis/)
+* If strategic design is missing from a product, no number of iterations can save it. Product managers need to establish the soul, the meaning, the why of a product early on, using thoughtful strategic design.
 
 ## Microinteraction
 
@@ -57,6 +65,7 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 * Sprints can create habits in your company. After the first sprint, you might notice a shift in the way your team works. You'll look for ways to turn discussions into testable hypotheses.
 * You'll look for ways to answer big questions, not someday, but this week.
 * Taken the sprint process and used it on their own to solve problems, reduce risk, and make better decisions at work.
+* Crazy 8 and silent voting: look at business problem and solve it with design without pushing individual feature preferences.
 
 ## Design Thinking
 

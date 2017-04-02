@@ -13,6 +13,14 @@
 * [Improving Large Rails Apps with Service Objects](https://aaronlasseigne.com/2016/04/27/improving-large-rails-apps-with-service-objects/)
 * [Chain service objects](https://medium.com/@apneadiving/chain-service-objects-like-a-boss-35d0b83606ab#.9yci8ds4z)
 
+## Database
+
+* [Database constraints made easy for ActiveRecord](https://github.com/nullobject/rein)
+* [Validation, Database Constraint, or Both?](https://robots.thoughtbot.com/validation-database-constraint-or-both)
+* [Database views for Rails](https://github.com/thoughtbot/scenic)
+
+Each uniqueness constraint must be backed by a unique database index to protect against race conditions.
+
 ---
 
 1. Service Object

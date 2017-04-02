@@ -10,6 +10,8 @@
 * Chronological order - feeds, events, etc.
 * We learned that users often lose their place in the system. The implication is that the UI should prioritize clarifying context.
 * Be great at "look" and "do"
+* The more we wanted to communicate earlier in the journey, the more users got confused. The crisper and concise we kept our communication and quickly brought the users to try our app, the more we got them comfortable.
+* Progressively unfold content to increase awareness of how things actually worked
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
 

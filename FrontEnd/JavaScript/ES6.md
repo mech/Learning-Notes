@@ -23,6 +23,8 @@ if (shouldShowSpinner(fsm, listNode)) {
 
 ## Module Export Import
 
+* [JavaScript Module System](http://exploringjs.com/es6/ch_modules.html)
+
 ```js
 export default {
   red: '#ff4433',

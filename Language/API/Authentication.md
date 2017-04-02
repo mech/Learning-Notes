@@ -8,10 +8,14 @@
 
 ## JWT
 
+JWT's payload contain **claims** which are **assertions** about a subject.
+
 * Expire token
 * Refresh token if user still using app
 
 > What's also interesting with JWT is that basically this is what Rails already does with encrypted/signed cookie based sessions, it just doesn't use JSON. But essentially it's an identical mechanism. There isn't really much value at all in using JWT over just using sessions with a Rails based API outside of the fact that JWT is a standard (though I think that's a pretty good benefit.) I might be interesting to implement JWT as an option for handling Rails sessions with support for both cookies and Authorization headers built in.
+
+When a route transition starts (`onEnter` in RR2), the `exp` time in the JWT payload is checked. If it is expired, the transition is disallowed. If a route requires a certain access level, the `scope` in the JWT is checked when the route transition starts.
 
 ### Storage
 

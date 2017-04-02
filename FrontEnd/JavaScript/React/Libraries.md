@@ -1,6 +1,16 @@
 # Libraries
 
+* [**Awesome React Components & Libraries**](https://github.com/brillout/awesome-react-components/blob/master/readme.md)
 * [React Desktop](http://reactdesktop.js.org/)
+
+## UI Libraries
+
+* [iOS HIG](https://developer.apple.com/ios/human-interface-guidelines/resources/)
+* [instructure-ui](https://instructure.github.io/instructure-ui/)
+* [Semantic UI React](https://react.semantic-ui.com/introduction)
+* [React Toolbox](http://react-toolbox.com/#/)
+* [Ant Design of React](https://ant.design/docs/react/introduce)
+* [Wix Style - React](https://github.com/wix/wix-style-react)
 
 ## Case Study
 
@@ -9,6 +19,7 @@
 
 ## PDF
 
+* [Rendering PDFs with React Components](https://themeteorchef.com/tutorials/rendering-pdfs-with-react-components)
 * [react-pdf](https://github.com/nnarhinen/react-pdf)
 
 ## Show/Hide
@@ -44,3 +55,5 @@
 * [Dante 2](https://michelson.github.io/dante2/)
 * [Slate](https://github.com/ianstormtaylor/slate)
 * [react-in-markdown](https://github.com/kitze/react-in-markdown)
+* [markdown-it](https://github.com/markdown-it/markdown-it)
+* [react-mde](https://github.com/andrerpena/react-mde)

@@ -2,6 +2,10 @@
 
 * [Efficient Rails DevOps - A book](https://efficientrailsdevops.com/)
 
+## Deployment
+
+* [Ruby in Production: Lessons Learned](https://medium.com/@rdsubhas/ruby-in-production-lessons-learned-36d7ab726d99)
+
 ## Bad Press
 
 * [My time with Rails is up](http://solnic.eu/2016/05/22/my-time-with-rails-is-up.html)

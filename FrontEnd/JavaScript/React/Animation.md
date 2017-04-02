@@ -34,4 +34,8 @@ const Transition = () => (
 }
 ```
 
+## Libraries
+
+* [React Overdrive - Simple and powerful animations](https://react-overdrive.now.sh/)
+
 ## Physicality, Velocity, Spring, Realism, Snapping, Friction

@@ -32,3 +32,6 @@ Object.assign({}, originalObject, { field: newValue })
 // ES7 Object spread
 {...originalObject, field: newValue}
 ```
+
+## Immutable.js
+
