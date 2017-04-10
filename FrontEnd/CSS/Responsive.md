@@ -36,3 +36,9 @@ h1 {
 
 * [PX, EM or REM Media Queries?](https://zellwk.com/blog/media-query-units/)
 * [On container queries](https://ethanmarcotte.com/wrote/on-container-queries/)
+
+We have no idea what screen size our users have. We just can't control that. But there's a few things we do know. We know our brand and our UI. And we know our content. Content isn't just paragraphs of text. It's the things that are held or included in something.
+
+We should always start with content. Without content, design is meaningless. We design to help users consume content. We don't use content to help users enjoy our designs.
+
+> We often start designing with a box. And then we put smaller boxes inside it. Then later will fill in these boxes with actual content. As Frank Chimero beautifully explains in The Web's Grain, this is just about the worst thing we can do.

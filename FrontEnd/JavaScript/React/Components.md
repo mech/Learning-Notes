@@ -2,6 +2,7 @@
 
 * [React FAQ](https://github.com/timarney/react-faq)
 * [React FAQ Site](https://reactfaq.site/)
+* [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react)
 * [React Patterns](https://github.com/chantastic/reactpatterns.com)
 * [React A-ha Moments](https://tylermcginnis.com/react-aha-moments/)
 * [Exploration: Front-end JavaScript at Artsy in 2017](https://artsy.github.io/blog/2017/02/05/Front-end-JavaScript-at-Artsy-2017/)
@@ -9,6 +10,21 @@
 * [A deep dive into children in React](https://mxstbr.blog/2017/02/react-children-deepdive/)
 * [Components in Figma](https://medium.com/figma-design/components-in-figma-e7e80fcf6fd2#.c40b1b20h)
 * [Our Best Practices for Writing React Components](https://engineering.musefind.com/our-best-practices-for-writing-react-components-dec3eb5c3fc8#.ktdv8jlh2)
+* [Functional React — Get your App outta my Component](https://medium.com/@adamterlson/functional-react-series-part-1-get-your-app-outta-my-component-92656ae13e25?ref=mybridge.co)
+* [Embracing stateless functional component](https://medium.com/javascript-inside/embracing-functions-in-react-d7d558d8bd30)
+
+## Verbs for component name
+
+You can use verb to describe a component:
+
+```js
+const App = () => (
+  <div>
+    <Grid />
+    <SetSize />
+  </div>
+)
+```
 
 ## Reusable Components
 
@@ -62,6 +78,7 @@ What API is good for inputs:
 ## Handling Events
 
 * [Best alternative to binding in render()](https://daveceddia.com/react-best-alternative-bind-render/)
+* [React Binding Patterns: 5 Approaches for Handling `this`](https://medium.com/@housecor/react-binding-patterns-5-approaches-for-handling-this-92c651b5af56?ref=mybridge.co)
 * [Event Switch](https://github.com/chantastic/reactpatterns.com#event-switch)
 
 Synthetic Events are reusable and there is a single global handler. This means you cannot store a synthetic event and reuse it later because it becomes `null` right after the action. If you really want to store it, you can use `persist()`.
@@ -282,6 +299,8 @@ const age = (props, propName) => {
 
 Because props are immutable, the parent must provide the new values when there is changes.
 
+If component needs to derive state from props then you need to process those props in both the constructor and `componentWillReceiveProps` especially when the component is going to be receiving new properties from its ancestors.
+
 * Calling `setState()` will not trigger re-render
 * Ignored by `forceUpdate()`
 
@@ -439,12 +458,23 @@ Button.propTypes = {
 }
 ```
 
-### Function as Child
+### Function as Child (vs HOC)
+
+* [Function as child components](https://medium.com/merrickchristensen/function-as-child-components-5f3920a9ace9)
 
 ```js
 <Fetch url="...">
   {data => <List data={data} />}
 </Fetch>
+
+<Ratio>
+  {(width, height, hasComputed) => (
+    hasComputed && height > TOO_TALL
+      ? <TallThing />
+      : <NotSoTallThing />
+  )}
+</Ratio>
+
 ```
 
 ## Higher Order Components
@@ -532,6 +562,7 @@ Good for addressing cross-cutting concerns or common functionalities, such as lo
 * [Functions as child components and HOC](http://rea.tech/functions-as-child-components-and-higher-order-components/)
 * [Real World Examples of Higher-Order Components](http://rea.tech/reactjs-real-world-examples-of-higher-order-components/)
 * [Abstract your UI from elemental component (`<input>`), then use HOC to add additional functionalities](https://www.youtube.com/watch?v=5rtbSYl70ak)
+* [Why The Hipsters Recompose Everything](https://medium.com/javascript-inside/why-the-hipsters-recompose-everything-23ac08748198#.qbwgfntlp)
 
 Benefits of HOC:
 
@@ -807,6 +838,7 @@ export Menu
 * [Tyler McGinnis](https://tylermcginnis.com/)
 * [Mark Erikson](http://blog.isquaredsoftware.com/)
 * [Guillermo Rauch](https://rauchg.com/essays)
+* [Jack Hsu](https://jaysoo.ca/)
 
 ## Videos
 

@@ -1,6 +1,7 @@
 # Grid System
 
 * [Layout powered by CSS variables](https://codepen.io/pixelass/post/layout-powered-by-css-variables)
+* [Stop using device breakpoints - Let the content be the grid](https://medium.com/simple-human/stop-using-device-breakpoints-b11a87e2625c)
 
 ## 8pt Grid
 

@@ -14,6 +14,7 @@
 * [Curry or Partial Application?](https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8#.fxhqqauo2)
 * [Currying - the Underrated Concept in Javascript](https://medium.com/@iquardt/currying-the-underestimated-concept-in-javascript-c95d9a823fc6#.n1jqb68ju)
 * [Learn the fundamentals of functional programming](https://medium.freecodecamp.com/learning-the-fundamentals-of-functional-programming-425c9fd901c6#.qchw5q8go)
+* [Writing Elegant Code With React, Redux and Ramda](https://medium.com/javascript-inside/the-elegance-of-react-ebc21a2dcd19)
 
 ```js
 // Functions can be anonymous

@@ -12,6 +12,8 @@
 * [Build Sleek Rails Components With Plain Old Ruby Objects](https://www.toptal.com/ruby-on-rails/decoupling-rails-components)
 * [Improving Large Rails Apps with Service Objects](https://aaronlasseigne.com/2016/04/27/improving-large-rails-apps-with-service-objects/)
 * [Chain service objects](https://medium.com/@apneadiving/chain-service-objects-like-a-boss-35d0b83606ab#.9yci8ds4z)
+* [My Rails Models Are Bloated. Should I Use Concerns?](http://www.rubypigeon.com/posts/rails-models-bloated-should-i-use-concerns/)
+* [Good Module, Bad Module](https://blog.codeship.com/good-module-bad-module/)
 
 ## Database
 

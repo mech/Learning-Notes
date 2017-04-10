@@ -1,5 +1,11 @@
 # Methods
 
+## Personas
+
+* [Personas, you don't need them](https://hondo.wtf/posts/on-personas/)
+
+> Personas create a false barrier between stakeholders and real world customers. This causes unnecessary revisions and wheel spinning.
+
 ## Prototype
 
 > No Prototype, No Meeting

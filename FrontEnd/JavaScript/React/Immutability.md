@@ -8,6 +8,7 @@ Immutable.js allows us to detect changes in JavaScript objects/arrays without re
 
 * [React, Redux and Immutable.js: Ingredients for Efficient Web Applications](https://www.toptal.com/react/react-redux-and-immutablejs)
 * [updeep - Easily update nested frozen objects and arrays in a declarative and immutable manner](https://github.com/substantial/updeep)
+* [Immutable Data Structures and JavaScript](http://jlongster.com/Using-Immutable-Data-Structures-in-JavaScript)
 
 A `const` object can't be reassigned to refer to a completely different object, but the object it refers to can have its properties mutated, so `const` is not an immutable value.
 

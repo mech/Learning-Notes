@@ -5,6 +5,7 @@
 * [Practical Redux](http://blog.isquaredsoftware.com/2016/10/practical-redux-part-0-introduction/)
 * [Isn’t our code just the BEST - @fat](https://medium.com/bumpers/isnt-our-code-just-the-best-f028a78f33a9#.7xiqumcuk)
 * [Redux best practices gotchas](https://getstream.io/blog/react-redux-best-practices-gotchas/)
+* [React state management with Redux store](https://onsen.io/blog/react-state-management-redux-store/)
 
 Redux helps us enforce good state boundary. You do not want to misapply it by storing form state in the store. It is not meant for that.
 
@@ -27,6 +28,11 @@ This means you should almost never write logic in a plain UI component.
 * [10 Tips for Better Redux Architecture](https://medium.com/javascript-scene/10-tips-for-better-redux-architecture-69250425af44#.p35g31etj)
 * [Redux Architecture](https://github.com/jarvisaoieong/redux-architecture/blob/master/README.md)
 * [Undirectional User Interface Architectures](http://staltz.com/unidirectional-user-interface-architectures.html)
+* [ducks-modular-redux](https://github.com/erikras/ducks-modular-redux)
+* [Things I wish I knew about Redux](https://medium.com/horrible-hacks/things-i-wish-i-knew-about-redux-9924abf2f9e0)
+* [A Better File Structure For React/Redux Applications](https://marmelab.com/blog/2015/12/17/react-directory-structure.html)
+* [Three Rules For Structuring (Redux) Applications](https://jaysoo.ca/2016/02/28/organizing-redux-application/)
+* [Redux best practices](https://medium.com/lexical-labs-engineering/redux-best-practices-64d59775802e)
 
 Function-first folders (e.g. `/container`, `/actions`, `/reducers`, `/components`) don't scale at all. As you add more features, you add files into the same folders.
 
@@ -152,6 +158,23 @@ Distant leaf components need access to state that intermediary components don't 
 
 ## Actions
 
+Action describes something has (or should) happen, but did not say how it should be done. It is completely serializable as an intent.
+
+But what happen if you want to debounce/buffer/throttle it?
+
+You can combine the action types with action creators:
+
+```js
+// Note the 2 export here... we do not need separate types.js file just for the constants
+export const SET_GRID_SIZE = 'SET_GRID_SIZE'
+
+export const setGridSize = ({width, height}) => ({
+  type: SET_GRID_SIZE,
+  width,
+  height
+})
+```
+
 Do not underestimate the power of action creator. It can help document your software by specifying what action a component can dispatch and this kind of information can be helpful in your team.
 
 Our action creator always return an object, but it can also return a function:
@@ -254,11 +277,21 @@ You can use middleware to:
 
 ## Reducers
 
+* [Structuring Reducers](https://github.com/markerikson/redux/blob/structuring-reducers-page/docs/recipes/StructuringReducers.md)
+
 Reducer is our action handler. It is where update of state happens.
 
 The reducer is (almost) synonymous with "store", so don't be surprise when people are referring them as the same thing.
 
 > Loop took the approach of replicating the Elm model where the reducer becomes an update function exclusively responsible for inspecting the action log.
+
+### replaceReducer
+
+* [Dispatch INIT after replaceReducer](https://github.com/reactjs/redux/issues/350)
+* [How to dynamically load reducers for code splitting in a Redux application?](https://stackoverflow.com/questions/32968016/how-to-dynamically-load-reducers-for-code-splitting-in-a-redux-application)
+* [redux-injector](https://github.com/randallknutson/redux-injector)
+
+Don't confuse between state tree and reducers. They are 2 separate things. You can retain your state tree while swapping out reducers during code splitting.
 
 ### Reducer Composition
 
@@ -343,6 +376,8 @@ export default combineReducers({
 ```
 
 ## Connect
+
+* [Recommended usage of `connect()`](https://github.com/reactjs/redux/issues/419)
 
 `connect` is a higher order/curry function for generating a container component to let presentational component "connect" to the Redux Store.
 
@@ -461,6 +496,7 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
 ## Selectors - State Transformation
 
 * [Choose wisely (a fun introduction to reselect.js)](https://decembersoft.com/posts/redux-hero-part-3-choose-wisely-a-fun-introduction-to-reselect-js/)
+* [Use reselect sparingly](https://medium.com/@yungsql/daf5a53bb93a)
 
 Every component you write has different needs. Some might show data in the same format as your API, while others might need to amend, blend or selectively combine data for its UI.
 
@@ -482,3 +518,7 @@ export const getVisibleTodos = (todos, filter) => {
 ## Recompose
 
 * [Why The Hipsters Recompose Everything](https://medium.com/javascript-inside/why-the-hipsters-recompose-everything-23ac08748198#.91wws275y)
+
+## Redux with Flowtype
+
+* [redux-thunk-flow: A working example on how to use Redux with redux-thunk and 100% flow coverage](https://github.com/hmeerlo/redux-thunk-flow)

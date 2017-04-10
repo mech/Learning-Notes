@@ -2,6 +2,13 @@
 
 * [**Awesome React Components & Libraries**](https://github.com/brillout/awesome-react-components/blob/master/readme.md)
 * [React Desktop](http://reactdesktop.js.org/)
+* [Smart modules for React](https://github.com/smalldots/smalldots)
+* [Best Practices on building a UI component library for your company](https://www.youtube.com/watch?v=j8eBXGPl_5E)
+* [Carte Blanche - Like Storybook?](https://github.com/carteb/carte-blanche)
+
+## Visual
+
+* [React Color](https://casesandberg.github.io/react-color/)
 
 ## UI Libraries
 
@@ -11,6 +18,7 @@
 * [React Toolbox](http://react-toolbox.com/#/)
 * [Ant Design of React](https://ant.design/docs/react/introduce)
 * [Wix Style - React](https://github.com/wix/wix-style-react)
+* [MuleSoft](http://ux.mulesoft.com/#/playground/Row)
 
 ## Case Study
 
@@ -26,6 +34,7 @@
 
 * [render-if](https://github.com/ajwhite/render-if)
 * [react-only-if](https://github.com/MicheleBertoli/react-only-if)
+* [react-hoverbox](https://github.com/wix/react-hoverbox)
 
 ## Table (Filtering, Pagination)
 
@@ -45,6 +54,10 @@
 * [react-big-calendar](https://github.com/intljusticemission/react-big-calendar)
 * [react-calendar-timeline](https://github.com/namespace-ee/react-calendar-timeline)
 * [react-dates from Airbnb](https://github.com/airbnb/react-dates)
+
+## File Upload
+
+* [Drag and drop file upload](https://codepen.io/pixelass/pen/dpyBOd?editors=0010)
 
 ## D3
 

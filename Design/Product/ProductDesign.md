@@ -29,6 +29,7 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 * [IDEO designed unsafe car](https://iot-for-all.com/bad-design-kills-self-driving-cars-or-not-3f02558acbb4?gi=d9b346a3fd71)
 * [Bad gear design](https://www.youtube.com/watch?v=EQdnsrkjo6o)
 * [Iteration is not design](https://medium.com/the-design-innovator/iteration-is-not-design-668695445f76)
+* [Use this exercise to solve any Product Design Challenge](https://medium.muz.li/a-super-simple-exercise-for-solving-almost-any-product-design-challenge-f9e6c0019d7d)
 
 ## Advice
 
@@ -95,6 +96,10 @@ Service Blueprint -> Roadmap -> ??
 * [Features vs. Benefits](http://www.useronboard.com/features-vs-benefits/)
 
 > We could build custom features that let you tune Basecamp to your exact workflow. But then you'd have to learn how to configure it, navigate all the options and setup flows, and train your team on the inevitably complicated UI.
+
+---
+
+> A key component of the JTBD framework is the replacement of user stories (Personas) with job stories. Job stories focus on the motivation and not the person. This helps to reduce bias contamination in the stories, but also increases the overall empathy within the story.
 
 ## Metaphors
 

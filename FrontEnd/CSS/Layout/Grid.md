@@ -1,5 +1,7 @@
 # Grid
 
+* [Does CSS Grid Replace Flexbox?](https://css-tricks.com/css-grid-replace-flexbox/)
+
 ## Grid Container
 
 Establishes a **grid-formatting context** in contrast to block-formatting context.
@@ -31,3 +33,7 @@ grid-template-columns: 15em 1fr 10%;
 /* The 3rd column should never be less than 5em wide */
 grid-template-columns: 15em 4.5fr minmax(5em, 3fr) 10%;
 ```
+
+## Videos
+
+* [Introduction To CSS Grids](https://www.youtube.com/watch?v=H3LRtAm2SOo)

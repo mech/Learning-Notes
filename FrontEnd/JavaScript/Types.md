@@ -1,5 +1,9 @@
 # Type Checking
 
+> Type correctness does not guarantee program correctness. If you haven't exercised the code, you really have no idea whether or not it works.
+
+Types and tests are both great mechanisms for doing "think real hard up front" thinking.
+
 Types are a set of possible values. Types can be strong or generic.
 
 Haskell is perhaps one of the most strongly typed languages. However, Haskell support Generic Programming, in the sense that you write methods that work with any type conforming to a certain concept (or interface). Duck typing! Haskell also uses Type Inference so you never have to declare the type of your variables.
@@ -19,6 +23,7 @@ What's the purpose of type checking?
 
 ---
 
+* [The Shocking Secret About Static Types](https://medium.com/javascript-scene/the-shocking-secret-about-static-types-514d39bf30a3)
 * [Type systems will make you a better JavaScript programmer](http://jaredforsyth.com/type-systems-js-dev/#/)
 * [Advanced features in Flow](http://sitr.us/2015/05/31/advanced-features-in-flow.html)
 * [Flow-type cheat sheet](http://www.saltycrane.com/blog/2016/06/flow-type-cheat-sheet/)
@@ -194,12 +199,12 @@ Really sound scary, but are actually much more simple than they sound.
 
 When you write code that doesn't care about types, you can use generics which are kind of like type placeholders.
 
-`T` is often used as a type that will be defined at the call-site.
+`T` is often used as a type that will be defined at the call-site. `T` is a type template representing a substitution variable. `T` can be a boolean, a number or a type you define or it can be an `interface`.
 
 ```js
 // `T` here, is a type that will defined at the call-site
 // This is a "generic function"
-function findLast<T> (
+function findLast<T>(
   array: Array<T>,
   func: (item: T, index: number, array: Array<T>) => any
 ): null | T {

@@ -1,10 +1,12 @@
 # Introduction
 
 * [Efficient Rails DevOps - A book](https://efficientrailsdevops.com/)
+* [Tools for a Modern Ruby Development Setup](https://www.sitepoint.com/tools-for-a-modern-ruby-development-setup/)
 
 ## Deployment
 
 * [Ruby in Production: Lessons Learned](https://medium.com/@rdsubhas/ruby-in-production-lessons-learned-36d7ab726d99)
+* [Dockerize a Rails 5, Postgres, Redis, Sidekiq and Action Cable Application with Docker Compose](https://nickjanetakis.com/blog/dockerize-a-rails-5-postgres-redis-sidekiq-action-cable-app-with-docker-compose)
 
 ## Bad Press
 

@@ -88,6 +88,7 @@ li p, li label {
 * [REMs And Viewport Measurements — Why You Shouldn't Use Them Yet](http://vanseodesign.com/css/rems-and-viewport-measurements/)
 * [Why I dislike REM unit](https://vasilis.nl/nerd/dislike-rem-unit/)
 * [Use EM and REM for the right use cases](https://vasilis.nl/nerd/use-em-rem-right-use-cases/)
+* [rems and ems, and why you probably don’t need them](https://hackernoon.com/rems-and-ems-and-why-you-probably-dont-need-them-664b9ce1e09f)
 
 ## Videos
 
