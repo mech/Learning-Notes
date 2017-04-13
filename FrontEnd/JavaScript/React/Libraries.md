@@ -5,6 +5,7 @@
 * [Smart modules for React](https://github.com/smalldots/smalldots)
 * [Best Practices on building a UI component library for your company](https://www.youtube.com/watch?v=j8eBXGPl_5E)
 * [Carte Blanche - Like Storybook?](https://github.com/carteb/carte-blanche)
+* [CUID compared to UUID or shortid](https://github.com/ericelliott/cuid)
 
 ## Visual
 
@@ -39,6 +40,7 @@
 ## Table (Filtering, Pagination)
 
 * [reactable](https://github.com/glittershark/reactable)
+* [react-table](https://github.com/tannerlinsley/react-table)
 
 ## Modal and Dialog
 

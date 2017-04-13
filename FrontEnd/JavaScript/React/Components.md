@@ -13,6 +13,14 @@
 * [Functional React — Get your App outta my Component](https://medium.com/@adamterlson/functional-react-series-part-1-get-your-app-outta-my-component-92656ae13e25?ref=mybridge.co)
 * [Embracing stateless functional component](https://medium.com/javascript-inside/embracing-functions-in-react-d7d558d8bd30)
 
+## Tips
+
+* [Tips to learn React and Redux](https://www.robinwieruch.de/tips-to-learn-react-redux/)
+
+1. Use Recompose before implement your own HOC
+2. Lift state up or down before using Redux
+3. 
+
 ## Verbs for component name
 
 You can use verb to describe a component:

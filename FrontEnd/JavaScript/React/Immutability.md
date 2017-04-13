@@ -16,7 +16,15 @@ JavaScript also has the ability to `freeze()` objects, but those objects are onl
 
 ## Ways to Mutate
 
+You need to also be mindful of:
+
+* Time
+* Random numbers
+* Logging
+
 ### Array
+
+* [Array's mutator methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Mutator_methods)
 
 ```js
 items.concat(newItem)

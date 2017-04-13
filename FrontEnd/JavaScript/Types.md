@@ -10,6 +10,8 @@ Haskell is perhaps one of the most strongly typed languages. However, Haskell su
 
 Python and Ruby are strongly typed, dynamic languages. JavaScript is a weakly typed, dynamic language.
 
+> Looking at the code, it's hard to know what a JavaScript promise resolves with.
+
 What's the purpose of type checking?
 
 * Let the team knows what types the function needs if you don't write JSDoc (no more `@param` and `@return`).
@@ -159,6 +161,14 @@ export type UserType = {
   email: string,
   avatar: MediaType,
 }
+
+// Create a Dictionary type alias. This will allow us to
+// define data that follows the { key: value } model shape
+type Dictionary<K, T> = {[key: K]: T};
+
+{
+  tracks: Dictionary<Track, number>
+}
 ```
 
 ## Object Types
@@ -179,6 +189,13 @@ type TimesTwo = (value: number) => number;
 
 // Type parameter for generic function type
 type Identity = <T>(x: T) => T;
+```
+
+Function types is good for writing callbacks:
+
+```js
+function method(callback: (error: Error | null, value: string | null) => void) {
+}
 ```
 
 ## Tuples
@@ -512,3 +529,7 @@ func validate(user *User) bool {
 
 * [Jesse Hallett](http://sitr.us/)
 * [Giulio Canti](https://medium.com/@gcanti)
+
+## Videos
+
+* [@Scale 2014 - Flow introduced](https://www.youtube.com/watch?v=M8x0bc81smU)

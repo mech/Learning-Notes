@@ -4,6 +4,10 @@
 * [Have Generics Killed Java?](http://www.artima.com/weblogs/viewpost.jsp?thread=299081)
 * [11 Ruby Tricks You Haven't Seen Before](http://www.blackbytes.info/2016/01/ruby-tricks/)
 
+## Delegation
+
+* [The Gang of Four is wrong and you don't understand delegation](https://www.saturnflyer.com/blog/the-gang-of-four-is-wrong-and-you-dont-understand-delegation)
+
 ## Enumerable
 
 * [Five Ruby methods your should be using](https://blog.engineyard.com/2015/five-ruby-methods-you-should-be-using)

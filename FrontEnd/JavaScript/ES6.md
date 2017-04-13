@@ -115,6 +115,10 @@ function foo(x, y, ...rest) {
   return rest
 }
 
+function foo([first, ...rest]) {
+}
+foo([1, 2, 3])
+
 var a = [1, 2, 3]
 var b = [4, 5, 6]
 
@@ -126,6 +130,11 @@ foo(...a, ...b) //=> [3, 4, 5, 6]
 // rest = [3, 4, 5, 6]
 // rest gather the rest of the argument into an array
 foo(1, 2, 3, 4, 5, 6)
+
+// Spread is just like concat
+var arr = [1, 2, 3]
+var newArr = [ ...arr ]
+var same = [].concat(arr)
 ```
 
 ## Destructuring

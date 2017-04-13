@@ -2,6 +2,7 @@
 
 * [Information Aesthetics](http://infosthetics.com/)
 * [Wind Map](http://hint.fm/wind/)
+* [BPM Plus/Minus](http://www.basketball-reference.com/about/bpm.html)
 
 ## Interesting
 

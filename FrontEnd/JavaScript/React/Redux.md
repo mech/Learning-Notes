@@ -1,11 +1,14 @@
 # Redux
 
+> The main purpose of Redux is to isolate state management from I/O side effects.
+
 * [Jumpstate - simple and powerful state management utility for Redux (worth a look)](https://github.com/jumpsuit/jumpstate)
 * [conventional-redux](https://github.com/mjaneczek/conventional-redux)
 * [Practical Redux](http://blog.isquaredsoftware.com/2016/10/practical-redux-part-0-introduction/)
 * [Isn’t our code just the BEST - @fat](https://medium.com/bumpers/isnt-our-code-just-the-best-f028a78f33a9#.7xiqumcuk)
 * [Redux best practices gotchas](https://getstream.io/blog/react-redux-best-practices-gotchas/)
 * [React state management with Redux store](https://onsen.io/blog/react-state-management-redux-store/)
+* [react-redux-realworld-example-app](https://github.com/gothinkster/react-redux-realworld-example-app)
 
 Redux helps us enforce good state boundary. You do not want to misapply it by storing form state in the store. It is not meant for that.
 
@@ -21,6 +24,39 @@ Most actual code should be written as:
 This means you should almost never write logic in a plain UI component.
 
 > Make the rest of your components accept data without much validation. Then do your validation rigorously at the Store level. See [#9 The store is the component's servant](https://hackernoon.com/10-react-mini-patterns-c1da92f068c5#.7ev5n4sus)
+
+Many moving parts:
+
+* Store, state, reducers, action creators, actions, async actions, middleware, connected components
+
+## Business Logic
+
+* [Where do I put my business logic in a React-Redux application?](https://medium.com/@jeffbski/where-do-i-put-my-business-logic-in-a-react-redux-application-9253ef91ce1)
+
+There are many kinds of logics:
+
+* Business logic
+* Domain logic
+* Application logic
+* UI logic
+* Form logic
+
+Business logic is naturally complex because of rules and many branches to consider.
+
+Business logic in Redux is typically spread across selectors, reducers, action creators and thunks.
+
+> Unfortunately in Redux, the reducer can only ever handle synchronous logic. So asynchronous "business logic" that depends on state either needs to get it from the component via dispatch (if the component has that info, which is not always), or through your orchestrator concept of your choice (thunk, sagas, epic), which have access to state for that.
+
+> If it wasn't for the reducer's limitation, there would be no need for it. - [@Phoenixmatrix](https://github.com/reactjs/redux/issues/2295#issuecomment-287769785)
+
+What is business logic?
+
+* Business rules
+* Validation, verification and correctness
+* Compliance
+* Complex calculation (rebates, payslip, rate, reimbursement)
+* Permission, what user is allowed to do
+* Processing (asynchronous orchestration) - waiting for response after making payment
 
 ## Code Organization
 
@@ -52,6 +88,8 @@ duck/
 * **reducers** - don't be afraid to use `combineReducers` as much as needed
 * **selectors** - the split between operations and selectors resembles the CQRS pattern. Selector functions take a slice of the application state and return some data based on that. They never introduce any changes to the application state.
 * **index** - export the default reducers, export as named exports the action creators and export types if they are needed elsewhere.
+
+Feature folder definitely make sense for isolated bounded-context kind of components. But for reducers, it may be difficult to know how the global state tree looks like.
 
 ## Authentication
 
@@ -86,6 +124,14 @@ We then pass the normalized records to reducers. Reducers should only store thes
 https://medium.com/@mark.erikson/having-an-entities-slice-is-very-normal-60917516291f#.8hjj34h2y
 
 ## Store
+
+> Redux gets easier once I treat it as a plain **database**:
+
+> I tell Redux the initial state, and how an action (**event**) affects the state of the application. (Like database schema and stored procedures.)
+
+> Then Redux takes care of managing it and notifying the listeners, and provides ways to inspect and debug the state.
+
+> For me that's all Redux is to me (I wouldn't expect a database to make an HTTP call). For I/O and asynchronous stuff, I perform it outside Redux. This keeps my Redux store predictable. The type signature is always `store.dispatch(actionObject)`. No dispatching functions and no hidden meaning inside the action (e.g. dispatching an action will not make an API call).
 
 ```js
 // Simplify Redux's store implementation
@@ -135,6 +181,10 @@ const configureStore = () => {
 }
 ```
 
+### Store Enhancer
+
+* [Alternate Proof of Concept: Enhancer Overhaul](https://github.com/reactjs/redux/pull/2214)
+
 ## Provider
 
 Distant leaf components need access to state that intermediary components don't need.
@@ -157,6 +207,14 @@ Distant leaf components need access to state that intermediary components don't 
 ```
 
 ## Actions
+
+> Action creators are not inherent part of Redux - Dan Abramov
+
+* [Idiomatic Redux: Why use action creators?](http://blog.isquaredsoftware.com/2016/10/idiomatic-redux-why-use-action-creators/)
+
+Note that same action can be handled by several reducers.
+
+> The one most valuable thing that made Redux so much easier for me is treating actions as **events** and not **commands**. This completely eliminates the struggle to decide how to design actions and what to put in them. - [@aikoven](https://github.com/reactjs/redux/issues/2295#issuecomment-287734255)
 
 Action describes something has (or should) happen, but did not say how it should be done. It is completely serializable as an intent.
 
@@ -194,6 +252,12 @@ const signInUser = ({ email, password }) => (dispatch) => {
     .then(data => dispatch())
 }
 ```
+
+There is no need for action creators to be pure, but it certainly help with testing when it is pure.
+
+A Promise is just an object with no side effects until `.then()` is called on it. So, returning a Promise from an action creator still retains its purity.
+
+You can return things from thunks. Returning Promises from thunks is useful, because then you can chain together async functions. See [Composition on redux-thunk](https://github.com/gaearon/redux-thunk#composition)
 
 ## Effects
 
@@ -235,6 +299,8 @@ export const fetchUserByEmail = (email) => {
 
 ## Middleware
 
+* [Why do we need middleware for async flow in Redux?](https://stackoverflow.com/questions/34570758/why-do-we-need-middleware-for-async-flow-in-redux/)
+
 Middleware has opportunity to log, stop, modify, or not touch an action.
 
 ```
@@ -248,8 +314,11 @@ View => Action Creator => Action => Middleware => Reducers => State (Store)
 * [redux-promise](https://github.com/acdlite/redux-promise)
 * [redux-promises](https://github.com/CrocoDillon/redux-promises)
 * [redux-promise-middleware](https://github.com/pburtchaell/redux-promise-middleware)
+* [redux-axios-middleware](https://github.com/svrcekmichal/redux-axios-middleware)
 
 The goal of API middleware is to do async operation so that by the time the action reaches the reducer, it should have been resolved already.
+
+The action is a specially packaged "API action" with `type='API'` maybe? It would be handled by a middleware that understand this type and proceed to use fetch API and do async request.
 
 ```js
 export default function({ dispatch }) {
@@ -278,8 +347,9 @@ You can use middleware to:
 ## Reducers
 
 * [Structuring Reducers](https://github.com/markerikson/redux/blob/structuring-reducers-page/docs/recipes/StructuringReducers.md)
+* [Generating Reducers](http://redux.js.org/docs/recipes/ReducingBoilerplate.html#generating-reducers)
 
-Reducer is our action handler. It is where update of state happens.
+Reducer is our action handler. It is where update of state happens. Reducer exists to specify how the state tree is **transformed** by actions. Reducer is a transformation function.
 
 The reducer is (almost) synonymous with "store", so don't be surprise when people are referring them as the same thing.
 
@@ -294,6 +364,9 @@ The reducer is (almost) synonymous with "store", so don't be surprise when peopl
 Don't confuse between state tree and reducers. They are 2 separate things. You can retain your state tree while swapping out reducers during code splitting.
 
 ### Reducer Composition
+
+* [Feature Request: Allow reducers to consult global state](https://github.com/reactjs/redux/pull/1768)
+* [RFC: Make combineReducers() shape-agnostic](https://github.com/reactjs/redux/issues/1792)
 
 Break up state management into smaller, more focused chunk to handle a subset of the app's state and actions.
 
@@ -352,6 +425,17 @@ const combineReducers = (reducers) => {
 ```
 
 You can use `combineReducers` multiple times in different files. You do not need to only use it at the root level.
+
+### Reducer Factories
+
+```js
+const { makeIndicator, makePayloadAssignor } from '../shared/reducers'
+
+const searchModule = combineReducers({
+  searching: makeIndicator(c.SEARCH),
+  results: makePayloadAssignor(c.SEARCH_RESPONSE, [])
+});
+```
 
 ### Higher Order Reducers
 
@@ -493,6 +577,20 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
 })
 ```
 
+You can also pass whole actions into `mapDispatchToProps` which will make that function dispatch-able. Redux will modify it to add a `dispatch()` so there is no need for you to call `this.props.dispatch()` yourself.
+
+```js
+import * as actions from './actions'
+
+connect(null, actions)(App)
+
+// Here you will find that actions exported function will become:
+
+function () {
+  return dispatch(actionCreator.apply(undefined, arguments));
+}
+```
+
 ## Selectors - State Transformation
 
 * [Choose wisely (a fun introduction to reselect.js)](https://decembersoft.com/posts/redux-hero-part-3-choose-wisely-a-fun-introduction-to-reselect-js/)
@@ -503,6 +601,13 @@ Every component you write has different needs. Some might show data in the same 
 Classically components get state directly from the store. Reselect queries and transforms data for each component.
 
 ```js
+// For simple computation, it is totally fine to not use reselect
+function mapStateToPros(state) {
+  return {
+    isShown: state.list.length > 0
+  }
+}
+
 // We use getVisibleTodos() to "select" a "slice" of the todos we want
 const mapStateToProps = (state, { params }) => ({
   todos: getVisibleTodos(state.todos, params.filter)
@@ -522,3 +627,47 @@ export const getVisibleTodos = (todos, filter) => {
 ## Redux with Flowtype
 
 * [redux-thunk-flow: A working example on how to use Redux with redux-thunk and 100% flow coverage](https://github.com/hmeerlo/redux-thunk-flow)
+* [Typed Redux](https://blog.callstack.io/typed-redux-2aa8bff926ff)
+* [Type-checking React and Redux (+Thunk) with Flow — Part 1](https://blog.callstack.io/type-checking-react-and-redux-thunk-with-flow-part-1-ad12de935c36)
+* [Redux and Flowtype](https://medium.com/@cdebotton/redux-and-flowtype-69ff1dd09036)
+* [Using Redux with Flow](http://frantic.im/using-redux-with-flow)
+
+```js
+// Type-check Actions
+
+// Using disjoint union type is much better than using constants for actions
+// Disjoint union is tagged by a single property like 'type' here
+export type Action =
+  | { type: 'INCREMENT', payload: number }
+  | { type: 'DECREMENT', payload: number }
+  
+const reducer = (state: State = initialState, action: Action): State => {
+}
+
+// We need to support dispatching thunk along with plain actions also
+
+import type {
+  Store as ReduxStore,
+  Dispatch as ReduxDispatch
+} from 'redux'
+
+
+
+const mapDispatchToProps = (dispatch: *) => ({
+})
+```
+
+## Take Latest and Debouncing
+
+* redux-observable
+* redux-saga
+
+```js
+// only load data for the last clicked
+.flatmapLatest()
+
+// Saga
+function* watch() {
+  yield* takeLatest('USER_FETCH', fetchUser)
+}
+```
