@@ -5,6 +5,7 @@
 * [shortid](https://github.com/dylang/shortid)
 * [Hashids](http://hashids.org/)
 * [Do you really need a UUID/GUID?](https://rclayton.silvrback.com/do-you-really-need-a-uuid-guid)
+* [Why Auto Increment Is A Terrible Idea](https://www.clever-cloud.com/blog/engineering/2015/05/20/why-auto-increment-is-a-terrible-idea/)
 
 ## JWT
 

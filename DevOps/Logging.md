@@ -32,6 +32,10 @@ Stream all your Docker logs to a centralized logging service. Never write to a l
 
 **Data acquisition and forwarding to a centralized log store**
 
+## Structured Logging
+
+* [Use Structured Logging](https://kartar.net/2015/12/structured-logging/)
+
 ## Elastic Stack
 
 * [Docker 1.6 and centralized logging](http://technologyconversations.com/2015/05/18/centralized-system-and-docker-logging-with-elk-stack/)

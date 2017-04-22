@@ -1,5 +1,7 @@
 # Type Checking
 
+* [Flow guide](https://github.com/ryyppy/flow-guide)
+
 > Type correctness does not guarantee program correctness. If you haven't exercised the code, you really have no idea whether or not it works.
 
 Types and tests are both great mechanisms for doing "think real hard up front" thinking.

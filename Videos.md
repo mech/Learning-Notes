@@ -10,6 +10,7 @@
 
 * [ReactiveConf](https://www.youtube.com/channel/UCBHdUnixTWymmXBIw12Y8Qg/videos)
 * [dot Conferences](https://www.youtube.com/channel/UCSRhwaM00ay0fasnsw6EXKA)
+* [Full Stack Fest](https://www.youtube.com/channel/UCwoOpKfkyCQHW562hXXQAGg/videos)
 
 ## Innovation and Startups
 

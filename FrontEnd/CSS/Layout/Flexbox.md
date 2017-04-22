@@ -1,5 +1,7 @@
 # Flexbox
 
+* [How To Approach CSS layouts in 2017 — and beyond](https://medium.com/flexbox-and-grids/css-flexbox-grid-layout-how-to-approach-css-layouts-in-2017-and-beyond-685deef03e6c)
+
 Traditionally, we have 3 ways to do layout:
 
 1. `float` - Need clearfix hack

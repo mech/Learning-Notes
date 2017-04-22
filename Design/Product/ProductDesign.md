@@ -1,5 +1,7 @@
 # Product Design
 
+**MTTR** - Mean Time To Recovery
+
 > It's comfortable to focus on the areas where you are strong in your day-to-day role. By avoiding comfort and seeking continual improvement, you can skyrocket your true potential. Fail. A lot. Failure is the new success. Deliberate practicing your failure.
 
 ```
@@ -30,6 +32,18 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 * [Bad gear design](https://www.youtube.com/watch?v=EQdnsrkjo6o)
 * [Iteration is not design](https://medium.com/the-design-innovator/iteration-is-not-design-668695445f76)
 * [Use this exercise to solve any Product Design Challenge](https://medium.muz.li/a-super-simple-exercise-for-solving-almost-any-product-design-challenge-f9e6c0019d7d)
+
+## Software influence behavior
+
+**Hospital case study**
+
+Due to safety and validation concern, all patient form has to be validated before submission. This is a very noble approach, but it failed to take into account nurses are on time constraint and something lack detailed information of patient and must wait for data to come in after a while. The system prevent the nurses from doing their job efficiently just because of database validation.
+
+**POS Cashier**
+
+Developer get design spec from manager who have safety in mind and want to prevent cashier from doing any price adjustment. Any price adjustment require manager's approval.
+
+This has performance issues because cashier will be slow to adjust price for a dozen products. So the new spec is modified to allow 10% allowance on price adjustment. This unfortunately lead to the behavior where all price are just adjusted forever at 10% because nobody want to go over the limit and bother the manager's approval.
 
 ## Advice
 

@@ -97,6 +97,7 @@ If you need to change style, you need to go through all HTML files that are usin
 
 * [react-css-modules](https://github.com/gajus/react-css-modules)
 * [Journey to Enjoyable, Maintainable Styling with React, ITCSS, and CSS-in-JS](https://medium.com/maintainable-react-apps/journey-to-enjoyable-maintainable-styling-with-react-itcss-and-css-in-js-632cfa9c70d6#.up1dm9wh1)
+* [What are CSS Modules and why do we need them?](https://css-tricks.com/css-modules-part-1-need/)
 
 ```js
 loader: 'style!css?modules&localIdentName=[local]--[hash:base64:5]'

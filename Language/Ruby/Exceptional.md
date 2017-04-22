@@ -2,6 +2,7 @@
 
 > `begin` keyword is a code smell in Ruby. It is nothing wrong, just a warning sign.
 
+* [Exceptional Ruby - Avdi](http://avdi.org/talks/exceptional-ruby-rubyconf-2011/exceptional-ruby.html)
 * [Rescuing Exceptions in Ruby: A Primer](http://blog.appsignal.com/blog/2016/10/18/ruby-magic-exceptions-primer.html)
 * [Airbrake's Ruby Exception Handling series](https://airbrake.io/blog/category/ruby-exception-handling)
 * [How to control an application flow?

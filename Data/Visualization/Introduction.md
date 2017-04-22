@@ -10,6 +10,10 @@
 * [OpenAI](https://blog.openai.com/evolution-strategies/)
 * [Perspective was created by Jigsaw and Google’s Counter Abuse Technology team in a collaborative research project called Conversation-AI](http://perspectiveapi.com/)
 
+## Blog
+
+* [The Guardian Data Blog](https://www.theguardian.com/data)
+
 ## Videos
 
 * [Some A/B testing and P-Value??](https://www.youtube.com/watch?v=VbKRQwWtXcg)

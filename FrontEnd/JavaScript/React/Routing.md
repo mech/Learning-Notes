@@ -235,3 +235,7 @@ const MyComponent = () => {
 
 * [Scroll management](https://github.com/ReactTraining/react-router/issues/3950#issuecomment-279293199)
 * [Found](https://github.com/4Catalyzer/found)
+
+## Blocking Update
+
+* [Ditching Subscriptions in React Router](https://medium.com/@pshrmn/ditching-subscriptions-in-react-router-6496c71ce4ec)

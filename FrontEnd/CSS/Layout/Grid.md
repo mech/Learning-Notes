@@ -1,6 +1,8 @@
 # Grid
 
 * [Does CSS Grid Replace Flexbox?](https://css-tricks.com/css-grid-replace-flexbox/)
+* [CSS Grid Layout: How to get Started in 2 Steps — well explained](https://medium.com/flexbox-and-grids/css-grid-layout-how-to-get-started-in-2-steps-well-explained-44fab69d9274)
+* [CSS Grid Layout: 3 Vital Differences between Grid Containers & Block Containers](https://medium.com/flexbox-and-grids/css-grid-layout-3-vital-differences-between-grid-containers-block-containers-6f3c39cf3bba)
 
 ## Grid Container
 

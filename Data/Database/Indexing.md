@@ -11,3 +11,11 @@ If you only index `lang` and not `created_at`, it will still be slow. The `lang`
 ## Concurrent Indexing
 
 * [Problems with concurrent Postgres indexes](https://medium.com/carwow-product-engineering/problems-with-concurrent-postgres-indexes-and-how-to-solve-them-c57f7656c852)
+
+## Secondary Index
+
+## Clustered and Non-Clustered Index
+
+## Multi-dimensional Index
+
+An interesting idea is that multi-dimensional indexes are not just for geographic locations. For example, on an e-commerce website you could use a three-dimensional index on the dimensions (red, green, blue) to search for products in a certain range of colors, or in a database of weather observations you could have a two-dimensional index on (date, temperature) in order to efficiently search for all the observations during the year 2013 where the temperature was between 25 and 30°C. With a one-dimensional index, you would have to either scan over all the records from 2013 (regardless of temperature) and then filter them by temperature, or vice versa. A 2D index could narrow down by timestamp and temperature simultaneously. This technique is used by HyperDex.

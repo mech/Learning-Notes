@@ -2,6 +2,8 @@
 
 ## Fixtures
 
+* [Testing a Rails API](https://johnmosesman.com/post/testing-a-rails-api/)
+
 When Rails boots up the testing environment, it reads all the fixture definitions and insert them directly into the database, indiscriminately, bypassing validations and callbacks.
 
 Your test data starts to form a narrative. A story takes shape around your models.
