@@ -1,5 +1,7 @@
 # Product Design
 
+> Constraints during the earliest stages of a hardware company's life force founders to carefully allocate resources to find creative solutions. I hope this post serves as a lesson to other hardware startups that spending tens of millions of dollars on product development prior to shipping a single unit is a goal that's not worth striving for. - [Here's Why Juicero's Press is So Expensive](https://blog.bolt.io/heres-why-juicero-s-press-is-so-expensive-6add74594e50)
+
 **MTTR** - Mean Time To Recovery
 
 > It's comfortable to focus on the areas where you are strong in your day-to-day role. By avoiding comfort and seeking continual improvement, you can skyrocket your true potential. Fail. A lot. Failure is the new success. Deliberate practicing your failure.

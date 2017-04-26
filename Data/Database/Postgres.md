@@ -31,3 +31,7 @@
 ## PL/V8
 
 * [JavaScript in your Postgres](https://blog.heroku.com/javascript_in_your_postgres)
+
+## Backup
+
+* [3 Methods of backing up Postgres](https://www.urbackup.org/backup_postgresql.html)

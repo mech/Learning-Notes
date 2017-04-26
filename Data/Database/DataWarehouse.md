@@ -38,6 +38,10 @@ LSM-trees are faster for writes, whereas B-trees are faster for reads.
 
 B-tree index must write every piece of data at least twice: once for the write-ahead log, and once to the tree page itself (and perhaps again as pages are split).
 
+Work well for low-cardinality columns (little distinct values like boolean True/False for example).
+
+Bitmap is less efficient than B-tree whose data is frequently updated.
+
 ## Redshift
 
 * Expensive

@@ -39,3 +39,5 @@ grid-template-columns: 15em 4.5fr minmax(5em, 3fr) 10%;
 ## Videos
 
 * [Introduction To CSS Grids](https://www.youtube.com/watch?v=H3LRtAm2SOo)
+* [CSS Grid Layout - Rachel Andrew | February 2017](https://www.youtube.com/watch?v=N5Lt1SLqBmQ)
+* [CSS4 Grid: True Layout Finally Arrives (Jen Kramer) - Full Stack Fest 2016](https://www.youtube.com/watch?v=axVw1Zduqn0)
