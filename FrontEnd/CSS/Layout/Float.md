@@ -112,6 +112,8 @@ Margins of floating and absolutely positioned elements NEVER collapsed.
 
 > There is only margin-top OR only margin-bottom. Choose one and stick to it!
 
+[Single-direction margin declarations](https://csswizardry.com/2012/06/single-direction-margin-declarations/)
+
 By only ever using `margin-bottom`, every element is in charge of how much space there should be below it. But some people like to use padding instead for paragraph:
 
 ```css

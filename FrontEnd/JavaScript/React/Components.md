@@ -1,5 +1,7 @@
 # Components
 
+> Learning functional programming completely changed my design process. There's a lot of parallels you can directly apply to your work day to day — it's about composition and I think this is something super useful for the design system we're working on. Rather than starting with a layout or a big marketing page and breaking it down, I love the idea of starting with the smallest possible primitives and building up and up and up.
+
 * [React FAQ](https://github.com/timarney/react-faq)
 * [React FAQ Site](https://reactfaq.site/)
 * [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react)

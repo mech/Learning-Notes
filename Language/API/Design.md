@@ -69,6 +69,7 @@ Track your API/endpoints call by incrementing counters. The most commonly used A
 * [jsonapi-resources](https://github.com/cerebris/jsonapi-resources)
 * [jsonapi-utils](https://github.com/tiagopog/jsonapi-utils)
 * [jsonapi-serializers](https://github.com/fotinakis/jsonapi-serializers)
+* [Rails JSON API Tutorial - Using JSONAPI Resources gem](http://tutorialsfordevs.com/tutorials/rails-json-api-tutorial/)
 
 ## OpenAPI
 

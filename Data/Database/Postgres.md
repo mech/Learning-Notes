@@ -7,6 +7,12 @@
 ▶ \x auto
 ```
 
+## EXPLAIN
+
+* [Explaining the unexplainable](https://www.depesz.com/2013/05/09/explaining-the-unexplainable-part-3)
+* [explain.depesz.com - Postgres explain analyze made readable](https://explain.depesz.com/)
+* [Distinguishing Access and Filter-Predicates](http://use-the-index-luke.com/sql/explain-plan/postgresql/filter-predicates)
+
 ## pg_tune
 
 ## Incidents to learn
@@ -16,6 +22,12 @@
 ## Materialized Views
 
 * [Speed up with Materialized Views on PostgreSQL and Rails](https://www.sitepoint.com/speed-up-with-materialized-views-on-postgresql-and-rails/)
+
+## Window Functions
+
+* [Folding Postgres Window Functions into Rails](https://blog.codeship.com/folding-postgres-window-functions-into-rails/)
+
+The strength of window functions is not pagination, but analytical calculation.
 
 ## Partition
 

@@ -10,6 +10,7 @@
 * [React state management with Redux store](https://onsen.io/blog/react-state-management-redux-store/)
 * [react-redux-realworld-example-app](https://github.com/gothinkster/react-redux-realworld-example-app)
 * [What are the disadvantages of storing all your state in a single immutable atom?](https://github.com/reactjs/redux/issues/1385#issuecomment-290466442)
+* [The SoundCloud Client in React + Redux](https://www.robinwieruch.de/the-soundcloud-client-in-react-redux/)
 
 Redux helps us enforce good state boundary. You do not want to misapply it by storing form state in the store. It is not meant for that.
 

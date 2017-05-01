@@ -10,8 +10,17 @@
 
 ## Time Series
 
+* [Open Source Time Series DB Comparison](https://docs.google.com/spreadsheets/d/1sMQe9oOKhMhIVw9WmuCEWdPtAoccJ4a-IuZv4fXDHxM/edit#gid=0)
+* [InfluxDB](https://www.influxdata.com/)
+* [Time-Series Database Requirements](https://www.xaprb.com/blog/2014/06/08/time-series-database-requirements/)
 * [Schema Design for Time Series Data in MongoDB](https://www.mongodb.com/blog/post/schema-design-for-time-series-data-in-mongodb)
 * [When Boring is Awesome: Building a scalable time-series database on PostgreSQL](https://blog.timescale.com/when-boring-is-awesome-building-a-scalable-time-series-database-on-postgresql-2900ea453ee2)
+* [Square Cube](https://square.github.io/cube/)
+* [Storing Time Series in PostgreSQL Efficiently](https://grisha.org/blog/2015/09/23/storing-time-series-in-postgresql-efficiently/)
+* [What DB to use for huge time series](https://news.ycombinator.com/item?id=8368509)
+* [Thoughts on Time-series Databases](http://jmoiron.net/blog/thoughts-on-timeseries-databases/)
+* Resampling into time resolutions different from the storage resolution.
+* Multi-tenancy. Some customers want to know their data is separate from other customers' data.
 
 Immutable, large in volume, ordered by time, and is primarily aggregated for access.
 

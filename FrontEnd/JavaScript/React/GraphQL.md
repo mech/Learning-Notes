@@ -17,10 +17,30 @@
 * [Thinking in Graphs](http://graphql.org/learn/thinking-in-graphs/)
 * **Hierarchical** - Most product development involves the creation and manipulation of view hierarchies. To achieve congruence with the structure of these applications, a GraphQL query itself is a hierarchical set of fields. The query is shaped just like the data it returns. It is natural way for product engineers to describe data requirements.
 
+## Design Your Schema
+
+Schema is GraphQL's killer feature.
+
+```ruby
+ShopType = ObjectType.define do
+  name 'Shop'
+  description 'An awesome shop!'
+  
+  field :name, types.String, "The shops's name"
+  field :currency, !types.Int # non-null field
+  field :products, types[ProductType]
+end
+```
+
 ## Relay
 
 * [Learn Relay](https://www.learnrelay.org/)
 
+## Data Loader
+
+* [graphql-batch for Ruby, sort of like DataLoader](https://github.com/Shopify/graphql-batch)
+
 ## Videos
 
 * [Lessons from 4 Years of GraphQL](https://www.youtube.com/watch?v=zVNrqo9XGOs)
+* [High Performance GraphQL - DataLoader](https://www.youtube.com/watch?v=c35bj1AT3X8)

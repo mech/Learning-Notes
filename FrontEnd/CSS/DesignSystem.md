@@ -15,6 +15,7 @@ Maintain a visual language, UI elements, components and page types to realize su
 
 Living documentation based on executable examples.
 
+* [Material.io - Layout– Responsive UI](https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints)
 * [Components in Figma](https://medium.com/figma-design/components-in-figma-e7e80fcf6fd2#.w1l2qwds0)
 * [Maintainable CSS](http://maintainablecss.com/)
 * [Atomic Design](http://atomicdesign.bradfrost.com/chapter-1/)

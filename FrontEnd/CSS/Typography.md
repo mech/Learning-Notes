@@ -34,6 +34,7 @@ body {
 * [Implementing baseline rhythm in CSS](https://pilot.co/blog/implementing-baseline-rhythm-in-css/)
 * [Vertical and horizontal rhythm](http://us5.campaign-archive2.com/?u=7e093c5cf4&id=564702bd96)
 * [Compose to a Vertical Rhythm](https://24ways.org/2006/compose-to-a-vertical-rhythm/)
+* [Vertical Rhythm Calculator](https://drewish.com/tools/vertical-rhythm/)
 
 ## Typography Scale
 

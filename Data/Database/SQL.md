@@ -9,3 +9,7 @@
 ## Subquery
 
 * [Use Subqueries to Count Distinct 50X Faster](https://www.periscopedata.com/blog/use-subqueries-to-count-distinct-50x-faster.html)
+
+## Grouping
+
+* [What You Need To Know About SQL's Group By](https://periscopedata.com/blog//everything-about-group-by.html)
