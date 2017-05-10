@@ -1,6 +1,10 @@
 # Interface Design
 
 * [What is Atomic Design?](https://blog.prototypr.io/what-is-atomic-design-b8f0368e580d#.bpbyph6i4)
+* [InterfaceLovers](https://interfacelovers.com)
+* [Mobile first, desktop worst](https://blog.prototypr.io/mobile-first-desktop-worst-f900909ae9e2)
+
+> Consistency, not uniformity
 
 ---
 
@@ -14,6 +18,28 @@
 * Progressively unfold content to increase awareness of how things actually worked
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
+
+## Complexion Reduction
+
+* [Complexion Reduction: A New Trend In Mobile Design](http://www.huffingtonpost.com/entry/complexion-reduction-a-new-trend-in-mobile-design_us_577d828fe4b05b4c02fb8b07)
+* Remove color. You can have one color, use it sparingly to indicate action. Everything is back and white. **Let the content of your app bring the color**.
+* Bigger, bolder, blacker headlines
+* Simple, thin, recognizable icons
+* Double your whitespace
+
+## Application Shell
+
+An excellent way to get an impression of an application's power and purpose is to glance at the set of available functions by way of its menus and dialogs just like you do with a restaurant's menu.
+
+Understanding the scope of what an application can and can't do is one of the fundamental aspects of creating an atmosphere conducive to learning to use a piece of software.
+
+Different tasks require different configuration specific to it.
+
+Accommodate change. Clear and crisp in its objectives and affordances.
+
+Identify the parts of the environment that have different **rates of change** and make them the base structure.
+
+How we use space to accomplish a task. (See [kitchen](http://andyfitzgerald.org/language-meaning-user-experience-architecture) example)
 
 ## Content Structure
 
@@ -46,3 +72,7 @@ To create more resilient design systems, you need to account for variations.
 ## Navigation
 
 * [Great Alternatives to Hamburger Menus](https://uxplanet.org/great-alternatives-to-hamburger-menus-d4c76d9414dd#.9vq36a5ry)
+
+## People
+
+* [Andy Fitzgerald](http://andyfitzgerald.org/)

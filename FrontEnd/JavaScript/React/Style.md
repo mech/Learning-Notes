@@ -95,6 +95,7 @@ If you need to change style, you need to go through all HTML files that are usin
 
 ## CSS Modules
 
+* [CSS Modules - Welcome to the Future - Glen Maddern](https://glenmaddern.com/articles/css-modules)
 * [react-css-modules](https://github.com/gajus/react-css-modules)
 * [Journey to Enjoyable, Maintainable Styling with React, ITCSS, and CSS-in-JS](https://medium.com/maintainable-react-apps/journey-to-enjoyable-maintainable-styling-with-react-itcss-and-css-in-js-632cfa9c70d6#.up1dm9wh1)
 * [What are CSS Modules and why do we need them?](https://css-tricks.com/css-modules-part-1-need/)
@@ -161,6 +162,8 @@ Benefits:
 * Composing styles
 
 ## Theming
+
+* [How we made our product more personalized with CSS Variables and React](https://medium.com/geckoboard-under-the-hood/how-we-made-our-product-more-personalized-with-css-variables-and-react-b29298fde608)
 
 Basically overriding styles. Treat the style as props.
 

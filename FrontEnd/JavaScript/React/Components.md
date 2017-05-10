@@ -197,6 +197,8 @@ Be careful when passing props as `null`. Any default prop value will not be used
 
 ## States
 
+> Visualizing all the discrete states an application can be in will make your design systems better.
+
 * [Thinking statefully](https://daveceddia.com/thinking-statefully/)
 * [A visual guide to state in React](https://daveceddia.com/visual-guide-to-state-in-react/)
 * [`setState()` Gate - Navigating React `setState()` Behavior Confusion](https://medium.com/javascript-scene/setstate-gate-abc10a9b2d82#.66ktn17qa)

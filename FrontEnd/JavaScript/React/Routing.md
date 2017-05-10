@@ -110,6 +110,7 @@ this.context.router.transitionTo('/')
 
 ## Code splitting
 
+* [extract-css-chunks-webpack-plugin - Code splitting with CSS styles](https://github.com/faceyspacey/extract-css-chunks-webpack-plugin)
 * [**Route-based splitting vs Component-based splitting**](https://medium.com/@thejameskyle/react-loadable-2674c59de178#.kbvk273ju)
 * [v2.1.0-beta.28 release note](https://github.com/webpack/webpack/releases/tag/v2.1.0-beta.28)
 * [babel-plugin-syntax-dynamic-import](https://github.com/babel/babel/tree/master/packages/babel-plugin-syntax-dynamic-import)

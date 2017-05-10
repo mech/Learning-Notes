@@ -11,11 +11,27 @@
 
 ## Shortcuts
 
-* Ctrl-C = Color picker
+```
+⌥ (Alt)
+⌘ (Command)
+⌃ (Control)
+⇧ (Shift)
+```
+
+* ⌃C = Color picker
+* ⌘D = Duplicate. You can also Alt-Drag to make a copy, put in position and then ⌘D to duplicate.
+* ⌘R = Rename layer
+* ⌃G = Show/hide grid
+* ⌘⌥ + Arrow = Move layer up and down
+* ⌃⌘⌥ + Arrow = Move layer to top and bottom directly
+* ⌘Esc = Return to instance from Symbols
+* ⇧⌘L = Lock layer
 
 ## Artboards and Pages
 
 You can have as many Artboards on the canvas as you like, but try to separate them into Pages for better performance.
+
+> Have a new idea? Make a new artboard!
 
 ## Group Resizing
 
@@ -33,6 +49,10 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 ## Text Style
 
 ## Symbols and Nested Symbols
+
+## Color Symbols
+
+* [Sketch: Tint icons using nested symbols](https://medium.com/@FreeAndWilling/sketch-tint-icons-using-nested-symbols-2d52867e0d29)
 
 ## Design System
 
@@ -54,3 +74,8 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 
 * [Auto Layout-like constraints](https://github.com/matt-curtis/Fluid-for-Sketch)
 * [Auto-Layout: Introducing Stacks — Flexbox for Sketch](https://medium.com/sketch-app-sources/auto-layout-introducing-stacks-flexbox-for-sketch-c8a11422c7b5)
+
+## People
+
+* [Jon Moore](https://medium.com/@jon.moore)
+* [Francesco Bertocci](https://medium.com/@FreeAndWilling)

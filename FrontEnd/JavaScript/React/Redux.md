@@ -2,6 +2,7 @@
 
 > The main purpose of Redux is to isolate state management from I/O side effects.
 
+* [Redux for state management in large web apps](https://www.mapbox.com/blog/redux-for-state-management-in-large-web-apps/)
 * [Jumpstate - simple and powerful state management utility for Redux (worth a look)](https://github.com/jumpsuit/jumpstate)
 * [conventional-redux](https://github.com/mjaneczek/conventional-redux)
 * [Practical Redux](http://blog.isquaredsoftware.com/2016/10/practical-redux-part-0-introduction/)
@@ -59,6 +60,14 @@ What is business logic?
 * Complex calculation (rebates, payslip, rate, reimbursement)
 * Permission, what user is allowed to do
 * Processing (asynchronous orchestration) - waiting for response after making payment
+
+## @@INIT
+
+@@INIT is launched twice on purpose.
+
+When the store is created, Redux immediately calls the reducers and uses their return values as initial state. This first call to the reducer sends `undefined` for the state.
+
+Note: The 2nd argument to `createStore` should only use for state hydration and not for initializing state.
 
 ## Code Organization
 
@@ -209,6 +218,9 @@ Distant leaf components need access to state that intermediary components don't 
 ```
 
 ## Actions
+
+* [redux-define](https://github.com/smeijer/redux-define)
+* [redux-act](https://github.com/pauldijou/redux-act)
 
 > Action creators are not inherent part of Redux - Dan Abramov
 

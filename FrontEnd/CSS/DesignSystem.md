@@ -15,6 +15,7 @@ Maintain a visual language, UI elements, components and page types to realize su
 
 Living documentation based on executable examples.
 
+* [Scalable CSS](http://mrmrs.io/writing/2016/03/24/scalable-css/)
 * [Material.io - Layout– Responsive UI](https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints)
 * [Components in Figma](https://medium.com/figma-design/components-in-figma-e7e80fcf6fd2#.w1l2qwds0)
 * [Maintainable CSS](http://maintainablecss.com/)
@@ -41,6 +42,10 @@ Living documentation based on executable examples.
 * [Designing Adobe Portfolio](https://medium.com/@andrewcouldwell/designing-adobe-portfolio-ffa1358e4913#.8beck9yc9)
 * [A useful list of design system documentation](https://dribbble.com/shots/3239960-Design-system-documentation)
 * [Seek's style guide](https://seek-oss.github.io/seek-style-guide/)
+
+> Visualizing all the discrete states an application can be in will make your design systems better. This in essence is the most pure form of a "living style guide" and will help your design team develop a cohesive and modular design system.
+
+---
 
 > Your design needs to adapt and change to fit the content on offer and the changing nature of the web. Whether it's a modified navigation bar to accommodate new sections, a new type of article page or a complete design refresh, the key to success is continuous improvement.
 
