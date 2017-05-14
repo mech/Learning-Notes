@@ -91,3 +91,7 @@ end
 ## People
 
 * [Aaron Lasseigne](https://aaronlasseigne.com/)
+
+## Videos
+
+* [Drifting Ruby](https://www.driftingruby.com/episodes)

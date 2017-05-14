@@ -14,12 +14,16 @@
 * [Chain service objects](https://medium.com/@apneadiving/chain-service-objects-like-a-boss-35d0b83606ab#.9yci8ds4z)
 * [My Rails Models Are Bloated. Should I Use Concerns?](http://www.rubypigeon.com/posts/rails-models-bloated-should-i-use-concerns/)
 * [Good Module, Bad Module](https://blog.codeship.com/good-module-bad-module/)
+* [Ruby Blog Pro](http://rubyblog.pro/)
+* [Flag argument is a code smell](http://craftingruby.com/posts/2017/05/04/flag-arguments-are-a-code-smell.html)
 
 ## Database
 
 * [Database constraints made easy for ActiveRecord](https://github.com/nullobject/rein)
 * [Validation, Database Constraint, or Both?](https://robots.thoughtbot.com/validation-database-constraint-or-both)
 * [Database views for Rails](https://github.com/thoughtbot/scenic)
+* [How to Check if a Record Exists](https://semaphoreci.com/blog/2017/03/14/faster-rails-how-to-check-if-a-record-exists.html)
+* [Compare password using BCrypt in Postgres](https://gist.github.com/Jacob-Kroeze/e0fa429e2b273f93ad65)
 
 Each uniqueness constraint must be backed by a unique database index to protect against race conditions.
 

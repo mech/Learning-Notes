@@ -71,7 +71,12 @@ To create more resilient design systems, you need to account for variations.
 
 ## Navigation
 
+In a large, complex information environment, a complete lack of lateral and vertical navigation aids can be very limiting. On the other hand, too many navigation aids can bury the hierarchy and overwhelm the user.
+
+Navigation can drown out the content.
+
 * [Great Alternatives to Hamburger Menus](https://uxplanet.org/great-alternatives-to-hamburger-menus-d4c76d9414dd#.9vq36a5ry)
+* Navigation stress test - Ignore the home page and parachuting deep into the middle of the site and see how disorienting you will be.
 
 ## People
 

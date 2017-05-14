@@ -24,3 +24,7 @@
 
 * [Housing Go](https://medium.com/engineering-housing/progressing-mobile-web-fac3efb8b454#.l80f3561a)
 * [PWA Rocks](https://pwa.rocks/)
+
+## Videos
+
+* [Progressive What Apps](https://www.youtube.com/watch?v=Y1l5Y3INwaE)

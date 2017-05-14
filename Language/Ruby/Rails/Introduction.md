@@ -1,5 +1,6 @@
 # Introduction
 
+* [Rails Development Dependencies Install](http://guides.rubyonrails.org/development_dependencies_install.html)
 * [Efficient Rails DevOps - A book](https://efficientrailsdevops.com/)
 * [Tools for a Modern Ruby Development Setup](https://www.sitepoint.com/tools-for-a-modern-ruby-development-setup/)
 
@@ -22,3 +23,7 @@
 * [AkitaOnRails](http://www.akitaonrails.com/?locale=en)
 * [solnic.eu](http://solnic.eu/)
 * [Michael Cordell - Reading Ruby Code](https://blog.mikecordell.com/)
+
+## Videos
+
+* [Perusing the Rails Source Code](https://www.youtube.com/watch?v=Q_MpGRfnY5s)

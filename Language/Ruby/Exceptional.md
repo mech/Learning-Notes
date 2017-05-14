@@ -55,3 +55,7 @@ render_user(user) { 'UNKNOWN USER' }
 ## Libraries
 
 * [StackExchange.Exceptional](https://github.com/NickCraver/StackExchange.Exceptional)
+
+## Videos
+
+* [The Arcane Art of Error Handling by Brad Urani](https://www.youtube.com/watch?v=9R4wlyWBP1k)

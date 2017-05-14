@@ -16,7 +16,7 @@ Maintain a visual language, UI elements, components and page types to realize su
 Living documentation based on executable examples.
 
 * [Scalable CSS](http://mrmrs.io/writing/2016/03/24/scalable-css/)
-* [Material.io - Layout– Responsive UI](https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints)
+* [**Material.io - Layout– Responsive UI**](https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints)
 * [Components in Figma](https://medium.com/figma-design/components-in-figma-e7e80fcf6fd2#.w1l2qwds0)
 * [Maintainable CSS](http://maintainablecss.com/)
 * [Atomic Design](http://atomicdesign.bradfrost.com/chapter-1/)
@@ -194,3 +194,4 @@ Do not anyhow add new patterns to library. Similarly, do not be afraid to create
 
 * [Can't You Make It More Like Bootstrap? – Alice Barlett from FT](https://www.youtube.com/watch?v=y4ggoN2xtAY)
 * [Thingness - Mark Boulton](https://vimeo.com/163510673)
+* [The Unbearable Likeness of Web Design](https://www.youtube.com/watch?v=8hK-JQlK89c)
