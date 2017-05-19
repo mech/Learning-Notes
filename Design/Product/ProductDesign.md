@@ -104,12 +104,47 @@ Backstage and frontstage
 Service Blueprint -> Roadmap -> ??
 ```
 
+## Goal-Directed Design
+
+Developers tend to want to put up dialog boxes and error messages and all sorts of intrusive widgets that explain what's going on behind the scenes, but users don't care. They only want to know the thing is working so they can accomplish their GOALS.
+
+A user's goal live outside the application. The goals are personal. Very few users have a goal of understanding how PeopleSoft works. The application itself is not a goal at all, it's an obstacle between user and his goal.
+
+Goals and tasks are different. You only have one ultimate goal to a certain things. But you can have many tiny and potentially irrelevant or inefficient tasks that you are forced to perform en route to reaching that goal.
+
+Using task-analysis allow us to fish out inefficient tasks or sub-optimal processes.
+
+Find:
+
+* Redundant task A
+* Annoying task B
+* I hate this part of my job task C
+
+ACD can be very useful in breaking down the "**what**" of user behaviors, but it really doesn't address the first question any designer should ask: Why is a user performing an activity, task, action, or operation in the first place?
+
+Goals motivate people to perform activities; understanding goals allows you to understand your users' expectations and aspirations, which in turn can help you decide which activities are truly relevant to your design. Task and activity analysis is useful at the detail level, but only after user goals have been analyzed.
+
+Most Research provide information at the task level instead of true goal. This type of information is useful for defining layout, work flow, and translation of functions into interface controls. But it is less useful for defining the basic framework of what a product is, what it does, and how it should meet the user’s broad needs.
+
+## Activity-Centered Design
+
+People adapt to technology. It's possible to design things that support the needs of your users without knowing anything about their goals and dreams and ambitions.
+
+Cars, alarm clocks, stove-tops, and millions of other devices have been developed almost entirely without the aid of Goal-Directed Design.
+
+Donald Norman points out that many technologies and products have become great not as a result of deep understanding of users, but rather because of a "deep understanding of the activities that were to be performed".
+
+> Focus upon individual people might improve things for them at a cost of making it worse for others. The more something is tailored for the particular likes, dislikes, skills, and needs of a particular target population, the less likely it will be appropriate for others.
+
+Basecamp designed around an activity and enabled thousands of potentially very different user types to work within the parameters of the activity.
+
 ## Jobs To Be Done
 
 * [Position, Position, Position!](https://m.signalvnoise.com/position-position-position-34b510a28ddc#.e3zqxe7le)
 * [People don't buy products, they buy better versions of themselves](https://blog.bufferapp.com/people-dont-buy-products-they-buy-better-versions-of-themselves)
 * [Jobs to be Done: from Doubter to Believer by Sian Townsend at Front 2016](https://vimeo.com/167029277)
 * [Features vs. Benefits](http://www.useronboard.com/features-vs-benefits/)
+* Conduct Jobs-to-be-done interviews.
 
 > We could build custom features that let you tune Basecamp to your exact workflow. But then you'd have to learn how to configure it, navigate all the options and setup flows, and train your team on the inevitably complicated UI.
 

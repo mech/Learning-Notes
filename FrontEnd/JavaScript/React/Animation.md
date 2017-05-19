@@ -37,5 +37,6 @@ const Transition = () => (
 ## Libraries
 
 * [React Overdrive - Simple and powerful animations](https://react-overdrive.now.sh/)
+* [react-move](https://github.com/tannerlinsley/react-move)
 
 ## Physicality, Velocity, Spring, Realism, Snapping, Friction

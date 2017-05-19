@@ -8,6 +8,8 @@
 
 ## Prototype
 
+* [Design by prototyping](https://rgabydesign.com/design-by-prototyping-744b4031e7c7)
+
 > No Prototype, No Meeting
 
 They were trying to think of a (brilliant) idea instead of *building their way* to lots of (generative) ideas.

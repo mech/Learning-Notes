@@ -27,3 +27,4 @@
 ## Videos
 
 * [Perusing the Rails Source Code](https://www.youtube.com/watch?v=Q_MpGRfnY5s)
+* [Ruby Australia](https://www.youtube.com/channel/UCr38SHAvOKMDyX3-8lhvJHA/videos)

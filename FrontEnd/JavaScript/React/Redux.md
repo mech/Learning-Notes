@@ -1,5 +1,17 @@
 # Redux
 
+> The command pattern, event sourcing, and Redux are all different architectures, but they all accomplish a similar goal: transactional state management.
+> 
+> What is revolutionary about Redux architecture is how it standardized the process of managing transactional state with reducers. In that sense, it applies the idea of transactional state to a particular context and demonstrates how reducer functions over action objects (events) can be the single source of truth for the application state.
+> 
+> Event sourcing never did anything of the sort. It does not prescribe how events are handled, only their creation and recording.
+>
+> Typical event sourcing implementations were a mix of object-oriented and imperative code. Event objects were commonly applied with polymorphic methods, and separately persisted with object serializers. Side effects were common.
+>
+> By encoding the action type in the message, and keeping the action object itself completely unaware of the objects on which it acts and methods being called, Redux action objects serialize easier. Reducers generalize easier. - [](https://medium.com/@_ericelliott/the-command-pattern-event-sourcing-and-redux-are-all-different-architectures-but-they-all-3e36b70cbc60)
+
+---
+
 > The main purpose of Redux is to isolate state management from I/O side effects.
 
 * [Redux for state management in large web apps](https://www.mapbox.com/blog/redux-for-state-management-in-large-web-apps/)

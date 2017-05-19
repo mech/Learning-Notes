@@ -15,6 +15,7 @@ Maintain a visual language, UI elements, components and page types to realize su
 
 Living documentation based on executable examples.
 
+* [Design system template by Brad Frost](https://bradfrost.github.io/style-guide-guide/)
 * [Scalable CSS](http://mrmrs.io/writing/2016/03/24/scalable-css/)
 * [**Material.io - Layout– Responsive UI**](https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints)
 * [Components in Figma](https://medium.com/figma-design/components-in-figma-e7e80fcf6fd2#.w1l2qwds0)
@@ -104,6 +105,7 @@ Without a design system, you are rendered inflexible. You can't explore and expe
 ## Design Tokens
 
 * [CenturyLink](http://assets.ctl.io/cyclops/1.8.2/tokens.html)
+* [Salesforce Design Tokens](https://www.lightningdesignsystem.com/design-tokens/)
 
 ## Broader Strokes - Style Tiles, Element Collages
 
@@ -112,6 +114,10 @@ To establish aesthetic direction, mood and atmosphere.
 In design, atmosphere comprises color, typography and texture, **separate from layout**. The layout can drastically change or move around depending on screen size, but the atmosphere (and feeling) remains. Layout is thus inconsequential when compared to the overall atmosphere.
 
 ## Company Design Language
+
+* [macOS HIG](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/)
+* [Material Design](https://material.io/)
+* [Microsoft Fluent Design System](http://fluent.microsoft.com/)
 
 http://styleguides.io/examples.html
 

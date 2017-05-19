@@ -1,7 +1,10 @@
 # Routing
 
+> In RR4, routes aren't really routes, they are just components. Routes are now more like components that simply conditionally show or hide a target component or element based on whether the current URL matches the given path. If you focus on this key point, all the features and functionality that the new format gives you become so much more intuitive to understand.
+
 * [RR4 docs](https://react-router.now.sh/)
 * [Simple declarative Redux state with React Router 4 server side rendering](https://medium.com/@AlexFaunt/satisfying-your-apps-state-343118b0730d#.gh5ihu9ii)
+* [The One Thing you need to know about React Router 4](https://medium.com/@thegreengreek/the-one-thing-you-need-to-know-about-react-router-4-34e27cbe7b53)
 
 ```
 Route Component === Route Handler === Screen Container === Controller (Horror)

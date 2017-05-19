@@ -1,5 +1,9 @@
 # Rails Testing
 
+## Integration Tests
+
+> In my experience, I've learned that the codebase with good unit test coverage is generally more error-prone than the one with good integration test coverage. I noticed that the majority of bugs introduced with developing work are regression bugs. An unit tests are usually not very good in catching those.
+
 ## Fixtures
 
 * [Testing a Rails API](https://johnmosesman.com/post/testing-a-rails-api/)

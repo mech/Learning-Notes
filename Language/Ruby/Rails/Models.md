@@ -27,6 +27,10 @@
 
 Each uniqueness constraint must be backed by a unique database index to protect against race conditions.
 
+## Validation
+
+* [Custom Validators in Ruby on Rails 4](http://www.rails-dev.com/custom-validators-in-ruby-on-rails-4)
+
 ---
 
 1. Service Object

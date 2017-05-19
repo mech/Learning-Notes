@@ -1,7 +1,11 @@
 # Math
 
-* [Moving Average](http://www.investopedia.com/terms/m/movingaverage.asp)
 * [The Problem with Math: Why Your Monitoring Solution is Wrong](https://www.circonus.com/2015/02/problem-math/)
+
+## Averages
+
+* [Moving Average](http://www.investopedia.com/terms/m/movingaverage.asp)
+* [The problem with averages](https://signalvnoise.com/posts/1836-the-problem-with-averages)
 
 ## Distribution
 

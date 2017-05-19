@@ -59,8 +59,8 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 * [How to share a design system in Sketch](https://blog.brand.ai/how-to-share-a-design-system-in-sketch-1-3-245308f2d7f1#.uvg19a95r)
 * [Airbnb - Building a Visual Language](http://airbnb.design/building-a-visual-language/)
 * [How to Collaborate With Your Team Using Sketch](https://webdesign.tutsplus.com/articles/how-to-collaborate-with-your-team-using-sketch--cms-25170)
-
 * [This is, without a doubt, the coolest Sketch technique you'll see all day](https://medium.com/ux-power-tools/this-is-without-a-doubt-the-coolest-sketch-technique-youll-see-all-day-ddefa65ea959#.c74pn3lwb)
+* [Brand AI](https://brand.ai/)
 
 # Sketch Plugins
 

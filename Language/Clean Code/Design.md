@@ -44,6 +44,8 @@ Design that anticipate specific future requirements almost always end badly. Pra
 
 ## Principles and Patterns
 
+* [Design Patterns for Humans!](https://github.com/kamranahmedse/design-patterns-for-humans)
+
 OO designer has tools - principles and patterns.
 
 ## Overdesign

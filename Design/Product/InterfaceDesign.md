@@ -8,6 +8,8 @@
 
 ---
 
+> The ways in which we experience and consume information are growing and changing - and the information available to us is often richer and more complex.
+
 * Clarity
 * Remove all extra elements - every item should have a purpose
 * Simplify color scheme - limit the number of used colors
@@ -16,6 +18,7 @@
 * Be great at "look" and "do"
 * The more we wanted to communicate earlier in the journey, the more users got confused. The crisper and concise we kept our communication and quickly brought the users to try our app, the more we got them comfortable.
 * Progressively unfold content to increase awareness of how things actually worked
+* Show just enough information to support essential decisions - no more, no less.
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
 
@@ -28,6 +31,8 @@
 * Double your whitespace
 
 ## Application Shell
+
+> You don't choose a layout. It chooses you. It's the result of the need to organize content, and it tends to take shape on its own.
 
 An excellent way to get an impression of an application's power and purpose is to glance at the set of available functions by way of its menus and dialogs just like you do with a restaurant's menu.
 
@@ -77,6 +82,11 @@ Navigation can drown out the content.
 
 * [Great Alternatives to Hamburger Menus](https://uxplanet.org/great-alternatives-to-hamburger-menus-d4c76d9414dd#.9vq36a5ry)
 * Navigation stress test - Ignore the home page and parachuting deep into the middle of the site and see how disorienting you will be.
+* Action-based labels like TED's "WATCH", "DISCOVER", "PARTICIPATE" links - [Simplified navigation](https://speckyboy.com/beauty-simplified-navigation/)
+
+You can have 2 types of navigation structures: content-based structure and audience-based structure.
+
+It shouldn't come as a surprise that when you change what your navigation looks like, you also are changing the way you communicate with your users. Typically a simple navigation will feature only one word per section label, so those words need to be chosen carefully.
 
 ## People
 
