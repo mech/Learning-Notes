@@ -4,10 +4,43 @@
 * [Efficient Rails DevOps - A book](https://efficientrailsdevops.com/)
 * [Tools for a Modern Ruby Development Setup](https://www.sitepoint.com/tools-for-a-modern-ruby-development-setup/)
 
+## Performance
+
+* [Rails Speed](https://www.railsspeed.com/)
+
 ## Deployment
 
 * [Ruby in Production: Lessons Learned](https://medium.com/@rdsubhas/ruby-in-production-lessons-learned-36d7ab726d99)
 * [Dockerize a Rails 5, Postgres, Redis, Sidekiq and Action Cable Application with Docker Compose](https://nickjanetakis.com/blog/dockerize-a-rails-5-postgres-redis-sidekiq-action-cable-app-with-docker-compose)
+* [Your App Server Config is Wrong: Workers count and threads count](https://www.youtube.com/watch?v=itbExaPqNAE)
+* [oink - Log parser to identify actions which significantly increase VM heap size](https://github.com/noahd1/oink)
+
+```
+passenger_max_request_time
+worker_timeout
+```
+
+## Background Job
+
+* [sidekiq-scheduler](https://github.com/moove-it/sidekiq-scheduler)
+* [rufus-scheduler](https://github.com/jmettraux/rufus-scheduler)
+* [Pub/Sub for Sidekiq](https://github.com/hired/reactor)
+* [wisper-activejob](https://github.com/krisleech/wisper-activejob)
+* [Beyond Validates_Presence_of: Ensuring Eventual Consistency](https://www.youtube.com/watch?v=QpbQpwXhrSI)
+
+Network failures:
+
+* Cannot connect
+* Service partially completes work; never responds
+* Service completes work; network cuts out at response
+* Service completes work; sees client side timeout and rolls back
+* Retry? Idempotency? Keep on trying?
+* Creates or deletes?
+* Circuit breakers?
+* **We want eventual consistency!**
+* Be kind to your downstream services (i.e. Slack notifier, Twitter, GeoTagging, etc.)
+* Roll back, roll forward
+* Timestamp your service to coalesce
 
 ## Bad Press
 

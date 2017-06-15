@@ -8,6 +8,8 @@
 * [A Crafty way to automagically keep your design team in sync](https://medium.com/nordnet-design-studio/a-crafty-way-to-automagically-keep-your-design-team-in-sync-3d9483ee2d96#.lubnutnei)
 * [Sketch Talk](http://sketchtalk.io/)
 * [Tips](https://medium.com/ux-power-tools/8-sketch-tricks-that-would-make-owen-wilson-say-wooow-tons-of-gifs-d2145ffb6ab2)
+* [Finally, Photoshop is dead for web and app design](https://www.xfive.co/blog/photoshop-dead-web-app-design/)
+* [Make icons with Sketch](https://github.com/allenwong/MakeIconsWithSketch)
 
 ## Shortcuts
 
@@ -50,6 +52,8 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 
 ## Symbols and Nested Symbols
 
+* [Nested Button Symbols: The Complete Guide](https://blog.prototypr.io/nested-button-symbols-the-complete-guide-c0c91be46952)
+
 ## Color Symbols
 
 * [Sketch: Tint icons using nested symbols](https://medium.com/@FreeAndWilling/sketch-tint-icons-using-nested-symbols-2d52867e0d29)
@@ -74,6 +78,7 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 
 * [Auto Layout-like constraints](https://github.com/matt-curtis/Fluid-for-Sketch)
 * [Auto-Layout: Introducing Stacks — Flexbox for Sketch](https://medium.com/sketch-app-sources/auto-layout-introducing-stacks-flexbox-for-sketch-c8a11422c7b5)
+* [Stacks - Flexbox](https://animaapp.github.io/docs/v1/guide/12-stacks-flexbox.html)
 
 ## People
 

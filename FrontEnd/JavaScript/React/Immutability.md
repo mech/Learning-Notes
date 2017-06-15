@@ -20,6 +20,7 @@ JavaScript also has the ability to `freeze()` objects, but those objects are onl
 * [seamless-immutable](https://github.com/rtfeldman/seamless-immutable)
 * [mori](https://github.com/swannodette/mori)
 * [Immutable.js](https://facebook.github.io/immutable-js/)
+* [Elsa - A babel plugin for replacing object and array literals with immutable versions](https://github.com/JonAbrams/elsa)
 
 ## Ways to Mutate
 

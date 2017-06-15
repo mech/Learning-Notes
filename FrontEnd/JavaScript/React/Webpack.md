@@ -85,3 +85,8 @@ You should not use `[chunkhash]` or `[hash]` for development as this will cause 
 ## Hot Reload
 
 * [Hot reload all the things!](https://hackernoon.com/hot-reload-all-the-things-ec0fed8ab0#.dok0iuu17)
+
+## CRA
+
+* [v1.0.0 release](https://github.com/facebookincubator/create-react-app/releases/tag/v1.0.0)
+* [README](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md)

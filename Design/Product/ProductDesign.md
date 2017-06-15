@@ -1,5 +1,21 @@
 # Product Design
 
+> Well, let's assume we are lazy by nature and that when we get presented with a challenging situation we are naturally going to refer to our own memories, to our previous experiences, to figure things out without trying too hard. It's fast, it's unconscious, and it's a trap. You're going to overlook the problem because your brain is a lazy little bastard. To get past that point, you need to force your brain and your creativity muscle to work.
+> 
+> It's pretty simple: you have to keep on moving. While the first reaction would be to look at your blank canvas and only think of the potential moves you can do, the ideal way to actually get started is...getting started.
+>
+> You didn't even start working that you're already looking at your work, judging what you may do next, and redeeming those moves as not good enough.
+>
+> Once you stop looking at yourself under this judgmental eye, you egomaniac pretentious prick ( read designer ), you'll quickly notice you can start designing things, laying down elements, blocks, fonts, colors, images, and what not.
+>
+> No, it may most probably not feel entirely relevant at first, BUT starting the movement, and producing small elements is going to **slowly start activating different parts of your brain**.
+
+---
+
+> It is all about trade-off. You don't have infinite time and energy. Go for 80%, not 100%. Tasteful trade-off. Pareto Principle (Good bang for the buck, the sweet-spot). Constraints enables creativity.
+
+---
+
 > Constraints during the earliest stages of a hardware company's life force founders to carefully allocate resources to find creative solutions. I hope this post serves as a lesson to other hardware startups that spending tens of millions of dollars on product development prior to shipping a single unit is a goal that's not worth striving for. - [Here's Why Juicero's Press is So Expensive](https://blog.bolt.io/heres-why-juicero-s-press-is-so-expensive-6add74594e50)
 
 **MTTR** - Mean Time To Recovery

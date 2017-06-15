@@ -1,5 +1,7 @@
 # Libraries
 
+https://github.com/hsnaydd/moveTo/
+
 * [**Awesome React Components & Libraries**](https://github.com/brillout/awesome-react-components/blob/master/readme.md)
 * [React Desktop](http://reactdesktop.js.org/)
 * [Smart modules for React](https://github.com/smalldots/smalldots)
@@ -21,6 +23,7 @@
 * [Wix Style - React](https://github.com/wix/wix-style-react)
 * [MuleSoft](http://ux.mulesoft.com/#/playground/Row)
 * [react-primitives](https://github.com/lelandrichardson/react-primitives)
+* [Blueprint](http://blueprintjs.com/)
 
 ## Case Study
 
@@ -47,20 +50,61 @@
 
 * [react-portal](https://github.com/tajo/react-portal)
 * [react-slot-fill](https://github.com/camwest/react-slot-fill)
+* [react-waypoint](https://github.com/brigade/react-waypoint)
 
-## Auto-complete
+## Auto-complete and Instant Search
 
 * [RDropdown](https://github.com/jamhall/rdropdown)
+* [GooglePlaceAutocomplete](https://github.com/ydeshayes/googlePlaceAutocomplete)
+* [Algolia](https://community.algolia.com/react-instantsearch/)
 
 ## Date Picker and Calendar
 
 * [react-big-calendar](https://github.com/intljusticemission/react-big-calendar)
 * [react-calendar-timeline](https://github.com/namespace-ee/react-calendar-timeline)
 * [react-dates from Airbnb](https://github.com/airbnb/react-dates)
+* [react-day-picker](http://react-day-picker.js.org)
+
+---
+
+* [The Past, Present, and Future of JavaScript Date and Time APIs](https://www.youtube.com/watch?v=aVuor-VAWTI)
+* [js-joda](https://github.com/js-joda/js-joda)
+
+Moment.js is mutable and may become immutable in the future so there is no need to clone anymore.
+
+```js
+const format = require('date-fns/format')
+const addDays = require('date-fns/addDays')
+
+const d = new Date(2017, 1, 1)
+const s = format(d, 'DD/MM/YYYY')
+
+const a = addDays(d, 10)
+```
 
 ## File Upload
 
 * [Drag and drop file upload](https://codepen.io/pixelass/pen/dpyBOd?editors=0010)
+
+```html
+<input type="file" accept="*">
+```
+
+```js
+input.addEventListener('change', () => {
+  const file = input.files[0]
+  
+  const metadata = {
+    name: file.name,
+    type: file.type,
+    size: file.size
+  }
+})
+```
+
+## Sortable and Drag and Drop
+
+* [Some react-dnd example](https://gist.github.com/krzysu/1b391ae0e3c87d0c654cdf6d5a409632)
 
 ## D3
 

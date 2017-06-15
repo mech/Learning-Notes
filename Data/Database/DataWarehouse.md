@@ -1,6 +1,10 @@
 # Data Warehouse
 
 * [Dremel made simple with Parquet](https://blog.twitter.com/2013/dremel-made-simple-with-parquet)
+* [Postgres-XL](http://www.postgres-xl.org/faq/)
+* [active_reporting](https://github.com/t27duck/active_reporting)
+* [ransack - Object-based searching](https://github.com/activerecord-hackery/ransack)
+* [Processing Streaming Data at a Large Scale with Kafka](https://www.youtube.com/watch?v=-NMDqqW1uCE)
 
 In normal business data processing, a write typically correspond to a transaction taking place. It is interactive and support ad-hoc queries.
 
@@ -13,6 +17,12 @@ Analytic query needs to scan over huge datasets, only reading a few columns per 
 * Ask yourself: What are you analyzing?
 * Get into the habit of tracking everything, like NSA.
 * Track any events as facts.
+
+## Issues
+
+* No ActiveRecord instances (less memory). When you show metrics, do not instantiate any AR records.
+* Generic, uniformed data (Arrays of rows)
+* Only get the information we care about
 
 ## Products
 
@@ -52,4 +62,6 @@ Bitmap is less efficient than B-tree whose data is frequently updated.
 * **Fact** - represents the event that occur
 * **Dimensions** - represent the who, what, where, when, how, and why of the event
 
+## Videos
 
+* [Reporting on Rails - ActiveRecord and ROLAP Working Together](https://www.youtube.com/watch?v=MczzCfTQGfU)

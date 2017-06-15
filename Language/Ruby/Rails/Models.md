@@ -16,6 +16,7 @@
 * [Good Module, Bad Module](https://blog.codeship.com/good-module-bad-module/)
 * [Ruby Blog Pro](http://rubyblog.pro/)
 * [Flag argument is a code smell](http://craftingruby.com/posts/2017/05/04/flag-arguments-are-a-code-smell.html)
+* [Using Services to Keep Your Rails Controllers Clean and DRY](https://blog.engineyard.com/2014/keeping-your-rails-controllers-dry-with-services)
 
 ## Database
 
@@ -40,6 +41,35 @@ Each uniqueness constraint must be backed by a unique database index to protect 
 5. View Object
 6. Policy Object
 7. Decorator
+
+```ruby
+class Unit < ActiveRecord::Base
+  validates :tracking_barcode, presence: true
+  
+  with_options on: :shipment_to_vendor do
+    validates :product_id, presence: true
+    validates :vendor_id, presence: true
+  end
+end
+
+# custom validation contexts
+@unit.save!(context: :shipment_to_vendor)
+
+# Service object
+UnitShippedToVendor.new(@unit).save!
+```
+
+```ruby
+# Using Dry Validation
+class MyFormObject
+  self.schema = Dry::Validation.Form do
+    optional(:attributes).maybe(:hash?)
+    optional(:remember_me).maybe(:bool?)
+    optional(:email).maybe(:str?)
+    optional(:note).maybe(:str?)
+  end
+end
+```
 
 ## Service Object
 
@@ -220,3 +250,10 @@ end
 * If you have many actions to cover
 * When you want to add more auxiliary behavior to individual object without affecting other objects of the same class
 * Format complex data for display
+
+## Batch Processing
+
+```ruby
+# 5.1 add support for limits in batch processing
+Post.limit(500).find_each.map(&:title)
+```

@@ -1,5 +1,7 @@
 # Rails Testing
 
+* [How to Write Better Code Using Mutation Testing](https://blog.cognitohq.com/how-to-write-better-code-using-mutation-testing/)
+
 ## Integration Tests
 
 > In my experience, I've learned that the codebase with good unit test coverage is generally more error-prone than the one with good integration test coverage. I noticed that the majority of bugs introduced with developing work are regression bugs. An unit tests are usually not very good in catching those.

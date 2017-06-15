@@ -2,6 +2,9 @@
 
 * [React Page Transition Animations](https://medium.com/front-end-hacking/react-page-transition-animations-9d18c90a9831#.jpe9r2a9b)
 * [Moving Beyond Animations to User Interactions at 60 FPS in React Native](https://medium.com/@talkol/moving-beyond-animations-to-user-interactions-at-60-fps-in-react-native-b6b1fa0ba525#.v3vy9yw0i)
+* [material-motion-js](https://github.com/material-motion/material-motion-js)
+* [Getting Reactive with CSS](http://slides.com/davidkhourshid/getting-reactive-with-css#/)
+* [Getting Reactive with CSS - Video](https://www.youtube.com/watch?v=4IRPxCMAIfA)
 
 React ships with react-addons-css-transition-group which is a component that helps us build animations in a declarative way.
 
@@ -38,5 +41,7 @@ const Transition = () => (
 
 * [React Overdrive - Simple and powerful animations](https://react-overdrive.now.sh/)
 * [react-move](https://github.com/tannerlinsley/react-move)
+* [mo.js](http://mojs.io/)
+* Web Animations API - not mature yet
 
 ## Physicality, Velocity, Spring, Realism, Snapping, Friction

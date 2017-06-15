@@ -14,6 +14,8 @@
 
 > The main purpose of Redux is to isolate state management from I/O side effects.
 
+* [mobx-state-tree](https://github.com/mobxjs/mobx-state-tree)
+* [Redux or MobX: An attempt to dissolve the Confusion](https://www.robinwieruch.de/redux-mobx-confusion/)
 * [Redux for state management in large web apps](https://www.mapbox.com/blog/redux-for-state-management-in-large-web-apps/)
 * [Jumpstate - simple and powerful state management utility for Redux (worth a look)](https://github.com/jumpsuit/jumpstate)
 * [conventional-redux](https://github.com/mjaneczek/conventional-redux)
@@ -145,6 +147,33 @@ We then pass the normalized records to reducers. Reducers should only store thes
 ```
 
 https://medium.com/@mark.erikson/having-an-entities-slice-is-very-normal-60917516291f#.8hjj34h2y
+
+```js
+// Using reduce to tag ID
+const colors = [
+  {
+    id: '-xekare',
+    title: 'rad red',
+    rating: 3
+  }
+]
+
+const hashColors = colors.reduce(
+  (hash, {id, title, rating}) => {
+    hash[id] = {title, rating}
+    return hash
+  },
+  {}
+)
+
+// Result, the ID is being used as the key now for better findability
+{
+  "-xekare": {
+    title: 'rad red',
+    rating: 3
+  }
+}
+```
 
 ## Store
 
@@ -326,6 +355,7 @@ export const fetchUserByEmail = (email) => {
 ## Middleware
 
 * [Why do we need middleware for async flow in Redux?](https://stackoverflow.com/questions/34570758/why-do-we-need-middleware-for-async-flow-in-redux/)
+* [You aren't using middleware enough](https://medium.com/@jacobp100/you-arent-using-redux-middleware-enough-94ffe991e6)
 
 Middleware has opportunity to log, stop, modify, or not touch an action.
 

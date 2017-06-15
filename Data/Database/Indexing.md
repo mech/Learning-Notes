@@ -17,6 +17,10 @@ If you only index `lang` and not `created_at`, it will still be slow. The `lang`
 * One index scan is faster than 2. So don't use 2 separate indexes.
 * Write range queries for period, do this even for a single day.
 
+## Unused or redundant indexes
+
+Covering indexes.
+
 ## Types of Indexes
 
 Note: `FullTEXT` are not for ordinary `WHERE` clause operations so B-Tree is still useful for some columns.
@@ -82,3 +86,7 @@ SELECT fname, lname, dob
 FROM employees
 WHERE lname < ? AND dob < ?
 ```
+
+## Videos
+
+* [The Secret Life of SQL: How to Optimize Database Performance](https://www.youtube.com/watch?v=BuDWWadCqIw)

@@ -1,6 +1,9 @@
 # Flexbox
 
 * [How To Approach CSS layouts in 2017 — and beyond](https://medium.com/flexbox-and-grids/css-flexbox-grid-layout-how-to-approach-css-layouts-in-2017-and-beyond-685deef03e6c)
+* [11 things I learned reading the flexbox spec](https://hackernoon.com/11-things-i-learned-reading-the-flexbox-spec-5f0c799c776b)
+* [Flexbox Grid - A grid system based on the flex display property](http://flexboxgrid.com/)
+* [Don't build a Bootstrap style grid-system with Flexbox](https://codepen.io/morganfeeney/post/dont-build-bootstrap-style-grid-systems-with-flexbox)
 
 Traditionally, we have 3 ways to do layout:
 
@@ -149,6 +152,8 @@ Set `flex-basis: auto` and give it a `width`. If you don't supply a `width`, the
 
 ## Auto Margin
 
+* [Aligning with auto margins](https://www.w3.org/TR/css-flexbox-1/#auto-margins)
+
 Auto margin is useful together with flexbox.
 
 ```css
@@ -171,8 +176,10 @@ Whenever building a layout in flexbox, you should start by looking out for what 
 
 ```html
 <!-- Footer stick to the bottom -->
-<main></main>
-<footer></footer>
+<body> <!-- Must be inside body or any container with height:100vh -->
+  <main></main>
+  <footer></footer>
+</body>
 
 <style>
 main {

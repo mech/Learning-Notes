@@ -9,6 +9,7 @@
 ## Prototype
 
 * [Design by prototyping](https://rgabydesign.com/design-by-prototyping-744b4031e7c7)
+* [Digital Product Design is Not Graphic Design](https://medium.com/subform/digital-product-design-is-not-graphic-design-931ea97a0beb)
 
 > No Prototype, No Meeting
 

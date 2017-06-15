@@ -4,6 +4,8 @@
 * [Optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
 * [Polyfills: everything you ever wanted to know, or maybe a bit less](https://hackernoon.com/polyfills-everything-you-ever-wanted-to-know-or-maybe-a-bit-less-7c8de164e423#.1wg5unfwr)
 * [Nice tutorial on ES6 with React](http://www.benmvp.com/slides/2017/reactconf/react-esnext.html#/)
+* [Introduction to commonly used ES6 features](https://zellwk.com/blog/es6/)
+* [Overview of ECMAScript 6 features](https://github.com/lukehoban/es6features)
 
 Encapsulate conditionals:
 
@@ -19,6 +21,56 @@ function shouldShowSpinner(fsm, listNode) {
 
 if (shouldShowSpinner(fsm, listNode)) {
 }
+```
+
+## Arrow Function
+
+```js
+// Never use arrow functions to declare object methods as you
+// can't reference the object with `this`
+let o = {
+  notThis: () => {
+    console.log(this) // window
+  },
+  
+  doThis() {
+  }
+}
+
+// Be careful that you're always keeping scope in mind. Arrow
+// functions do not block off the scope of `this`
+var tahoe = {
+  resorts: ['Kirkwood', 'Squaw', 'Alpine'],
+  
+  // No error
+  goodPrint: function(delay=1000) {
+    setTimeout(() => {
+      console.log(this.resorts.join(','))
+    }, delay)
+  },
+  
+  // Error!
+  // Cannot read property resorts of undefined
+  badPrint: (delay=1000) => {
+    setTimeout(() => {
+      console.log(this.resorts.join(','))
+    }, delay)
+  }
+}
+```
+
+```js
+// Cannot re-bind with bind, apply, or call
+
+const adder = {
+  sum: 0
+}
+
+const add = (numbers) => numbers.forEach(n => this.sum += 1)
+
+adder.add = add.bind(adder)
+
+adder.add([1, 2, 3])
 ```
 
 ## Module Export Import
@@ -290,6 +342,17 @@ async submitForm(data) {
 }
 ```
 
+## Tips
+
+```js
+// don't write this:
+if (obj.props) {} // could be 0, "", null...
+
+// if you mean this:
+if (obj.props !== undefined) {} // Explicit and faster
+```
+
 ## Videos
 
 * [Untangle your code with yield](https://www.youtube.com/watch?v=B15sTBSAotk)
+* [JavaScript Patterns for 2017](https://www.youtube.com/watch?v=hO7mzO83N1Q)

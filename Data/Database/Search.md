@@ -59,6 +59,9 @@ AZ ArizonaAR ArkansasCA CaliforniaCO Colorado
 
 Synonym management, hierarchical browsing, and associative linking.
 
+## ElasticSearch
+
+* [stretchy - Query builder for ElasticSearch](https://github.com/hired/stretchy)
 
 ## Blog
 

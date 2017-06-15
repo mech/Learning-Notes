@@ -122,6 +122,7 @@ this.context.router.transitionTo('/')
 * [Webpack Performance Budgets](https://github.com/webpack/webpack/issues/3216)
 * [`System.import()` will be deprecated in webpack 3](https://github.com/webpack/webpack/issues/3098)
 * [react-async-component](https://github.com/ctrlplusb/react-async-component)
+* [**react-perimeter**](https://github.com/aweary/react-perimeter)
 
 **Use Babel plugin: `syntax-dynamic-import`**
 
@@ -141,6 +142,50 @@ import main from '../js/main'
 const AsyncModulePromise = import(
   '../js/lib/somethingNotNeededNow'
 )
+
+// create-react-app v1
+class App extends Component {
+  state = { lazyChart: null }
+  
+  async componentDidMount() {
+    const { default: BarChart } = await import('./BarChart')
+    this.setState({
+      lazyChart: <BarChart />
+    })
+  }
+  
+  render() {
+    return (
+      <div className="App">
+        <div className="App-header">
+          {this.state.lazyChart || <h2>Loading...</h2>}
+        </div>
+      </div>
+    )
+  }
+}
+
+// Using react-loadable for preload
+const ProductLink = () => (
+  <div>
+    <h1>{props.name}</h1>
+    <Link
+      to={`/product/${props.id}`}
+      onMouseEnter={LoadableProductPage.preload}
+    >
+      View Product
+    </Link>
+  </div>
+)
+
+// Use together with react-perimeter to preload page when mouse over
+<Perimeter
+  padding={75}
+  onBreach={LoadableProductPage.preload}
+  once={true}
+>
+  <Link to={`/product/${props.id}`}>View Product</Link>
+</Perimeter>
 ```
 
 > Code splitting fixes the SPA Syndrome: Downloading the code for the Settings section when all you wanted was the About page.

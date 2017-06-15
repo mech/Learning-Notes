@@ -4,6 +4,57 @@
 * [Have Generics Killed Java?](http://www.artima.com/weblogs/viewpost.jsp?thread=299081)
 * [11 Ruby Tricks You Haven't Seen Before](http://www.blackbytes.info/2016/01/ruby-tricks/)
 
+## Ruby 2.4
+
+* [New Features in Ruby 2.4](https://blog.cognitohq.com/new-features-in-ruby-2-4/)
+
+## Date
+
+* [Timezone problem](https://www.youtube.com/watch?v=aUk9981C-fQ)
+
+```ruby
+Date.parse(params[:start])
+Date.iso8601(params[:start])
+
+10.hours.from_now
+7.days.ago
+
+Time.zone.parse(string_containing_timestamp)
+
+Time.strptime(
+  "2017-08-27T12:09:36Z",
+  "%Y-%m-%dT%H:%M:%S%z"
+).in_time_zone
+
+Time.current
+Time.current.utc.iso8601
+
+a_time_instance.in_time_zone
+
+Date.current # take into account timezone
+Date.today   # don't use this, not timezone-aware
+
+# Avoid these
+Time.now
+Date.today
+Time.parse()
+Time.strptime()
+```
+
+* Do not store dates as `DateTime`
+* Be very careful of `DateTime` to `Date` conversion
+* Be very careful of `Date` to `DateTime` conversion
+
+## Integer
+
+```ruby
+# if params return nil, the result will be 0, may or may not be serious error
+params[:id].to_i
+
+# More stricter form of getting ID
+Integer(params.fetch(:id))
+```
+
 ## Delegation
 
 * [The Gang of Four is wrong and you don't understand delegation](https://www.saturnflyer.com/blog/the-gang-of-four-is-wrong-and-you-dont-understand-delegation)
@@ -88,9 +139,10 @@ end
 
 * [Pair with Sum](http://routetomastery.com/blog/2017/01/08/has-pair-with-some-problem/)
 
-## People
+## People & Blog
 
 * [Aaron Lasseigne](https://aaronlasseigne.com/)
+* [Shopify Engineering Blog](https://engineering.shopify.com/blogs/engineering)
 
 ## Videos
 

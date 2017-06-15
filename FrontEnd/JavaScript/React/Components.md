@@ -15,6 +15,12 @@
 * [Functional React — Get your App outta my Component](https://medium.com/@adamterlson/functional-react-series-part-1-get-your-app-outta-my-component-92656ae13e25?ref=mybridge.co)
 * [Embracing stateless functional component](https://medium.com/javascript-inside/embracing-functions-in-react-d7d558d8bd30)
 
+## Frameworks
+
+* [rakt](https://github.com/threepointone/rakt)
+* [next.js](https://github.com/zeit/next.js/)
+* [ARc (Atomic React)](https://github.com/diegohaz/arc)
+
 ## Tips
 
 * [Tips to learn React and Redux](https://www.robinwieruch.de/tips-to-learn-react-redux/)
@@ -329,6 +335,8 @@ The default behavior of `shouldComponentUpdate` is to let React do a virtual DOM
 
 If `shouldComponentUpdate` returns `false`, the component and all its children's `render` methods are not called during an update of its parents.
 
+> In React, immutable structures often lead to better performance: when data changes in a mutable representation, **you'll likely need to rely on React's virtual DOM** to determine whether components should update; alternatively, in an immutable representation, you can use a basic strict equality check to determine whether an update should occur.
+
 ### componentWillUpdate
 
 * Will be called whenever we decide to `render()`
@@ -472,7 +480,11 @@ Button.propTypes = {
 
 ### Function as Child (vs HOC)
 
+* [return-null](https://github.com/joshwcomeau/return-null)
 * [Function as child components](https://medium.com/merrickchristensen/function-as-child-components-5f3920a9ace9)
+* [ReactCasts #2 - Function as Child Components](https://www.youtube.com/watch?v=WE3XAt9P8Ek)
+
+**Alert!** You lose the ability to optimize your component at the render().
 
 ```js
 <Fetch url="...">
@@ -487,6 +499,17 @@ Button.propTypes = {
   )}
 </Ratio>
 
+class Log extends PureComponent {
+  render() {
+    console.info(this.props.children)
+    return null; // so nothing is rendered to the DOM
+  }
+}
+
+// Use it
+<Log>{currentUser}</Log>
+
+<Speak message={this.state.message} />
 ```
 
 ## Higher Order Components
@@ -748,6 +771,51 @@ const enhanced = compose(
 
 **Warning:** Don't abuse HOC. Every time you wrap a component into a HOC, you are adding a new `render()`, a new lifecycle method call, and memory allocation. It may be a performance issues.
 
+### HOC with Ramda's compose
+
+```js
+import { compose } from 'ramda'
+// import { compose } from 'lodash/fp'
+// import { compose } from 'recompose'
+// import { compose } from 'react-apollo'
+
+const VisibleTodoList = compose(
+  withRouter,
+  connect(mapStateToProps, mapDispatchToProps)
+)(TodoList)
+
+// It can get more and more
+const enhance = compose(
+  withRouter,
+  withState('searchTerm', 'setSearchTerm'),
+  connect(mapStateToProps, mapDispatchToProps),
+  graphql(RepositoryQuery, {
+    options: ({ match }) => ({
+      variables: {
+        owner: match.params.owner,
+        name: match.params.name
+      }
+    })
+  })
+)
+
+export default enhance(Repository)
+```
+
+```js
+// One way to write the compose()
+const compose = (...fns) =>
+  (arg) =>
+    fns.reduce(
+      (composed, f) => f(composed),
+      arg
+    )
+```
+
+`compose()` takes in multiple functions as arguments and returns a single function. The returned function expects one argument `arg`. When this function is invoked, the `fns` array is piped starting with the argument we want to send through the function. The `arg` becomes the initial value for `composed` and then each iteration of the reduced callback returns. `composed` is the result of the previous function output. Eventually, the last function will be invoked and the last result returned.
+
+This is just a simple example of `compose()` and does not handle more than one argument or deal with arguments that are not functions. Other implementations of `compose()` may use `reduceRight` which would compose the functions in reverse order.
+
 ## Keys
 
 * [Why having proper key is important](http://buildwithreact.com/article/in-depth-diffing)
@@ -855,3 +923,4 @@ export Menu
 ## Videos
 
 * [React Component Patterns by Michael Chan](https://www.youtube.com/watch?v=YaZg8wg39QQ)
+* [ReactCasts](https://www.youtube.com/channel/UCZkjWyyLvzWeoVWEpRemrDQ/videos)

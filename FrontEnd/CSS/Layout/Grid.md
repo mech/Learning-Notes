@@ -1,9 +1,12 @@
 # Grid
 
+* [Learn CSS Grid](http://learncssgrid.com/)
 * [Does CSS Grid Replace Flexbox?](https://css-tricks.com/css-grid-replace-flexbox/)
 * [CSS Grid Layout: How to get Started in 2 Steps — well explained](https://medium.com/flexbox-and-grids/css-grid-layout-how-to-get-started-in-2-steps-well-explained-44fab69d9274)
 * [CSS Grid Layout: 3 Vital Differences between Grid Containers & Block Containers](https://medium.com/flexbox-and-grids/css-grid-layout-3-vital-differences-between-grid-containers-block-containers-6f3c39cf3bba)
 * [Spring Into CSS Grid](http://jonibologna.com/spring-into-css-grid/)
+* [Breaking Out With CSS Grid Layout](https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/)
+* [The CSS Fractional Unit (Fr) In Approachable, plain Language](https://medium.com/flexbox-and-grids/the-css-fractional-unit-fr-in-approachable-plain-language-fdc47bd387f7)
 
 ## Grid Container
 

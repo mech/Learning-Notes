@@ -8,6 +8,7 @@ APIs should be a key component of your deployment strategy. Without a widespread
 * [REST without PUT](https://www.thoughtworks.com/radar/techniques/rest-without-put)
 * [Best Practices for Designing a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
 * [How and why should you use JSON API in your Rails API?](http://blog.arkency.com/2016/02/how-and-why-should-you-use-json-api-in-your-rails-api/)
+* [Writing a Hypermedia API client in Ruby](https://robots.thoughtbot.com/writing-a-hypermedia-api-client-in-ruby)
 
 ---
 
@@ -110,6 +111,8 @@ meta: {
 
 ## Filtering Collections
 
+* [filterable](https://github.com/procore/filterable)
+
 ## Form Input
 
 Do not use URL encoding when submitting form. Rather use JSON as submission body.
@@ -143,3 +146,7 @@ X-Served-By: a30e6f9aa7cf5731b87dfb3b9992202d
 * [GitHub v3](https://developer.github.com/v3/)
 * [GitHub GraphQL](https://developer.github.com/early-access/graphql/)
 * [Enchant](http://dev.enchant.com/api/v1)
+
+## Videos
+
+* [Rails APIs: The Next Generation](https://www.youtube.com/watch?v=iTbTz8_ztIM)

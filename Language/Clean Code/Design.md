@@ -12,6 +12,16 @@ Good code not only works, but is also simple, understandable, expressive and cha
 
 Good design preserves maximum flexibility at minimum cost by putting off decisions at every opportunity, deferring commitments until more specific information arrive.
 
+> We propose instead that one begins with a list of difficult design decisions or **design decisions which are likely to change**.
+> 
+> Each module is then designed to **hide such a decision from the others**.
+
+## Boundaries
+
+* Just large enough - knows its boundaries
+* Highly cohesive and loosely coupled
+* Precise semantics that fully express the business domain
+
 ## Naming
 
 Introduce new words into the application vocabulary.

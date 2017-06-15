@@ -4,6 +4,7 @@
 * [ReactQL](https://reactql.org/)
 * [graphql-voyager](https://github.com/APIs-guru/graphql-voyager)
 * [DataLoader](https://github.com/facebook/dataloader)
+* [Relay/GraphQL Cheatsheet #1](https://medium.com/code-oil/relay-graphql-cheatsheet-1-78eb66421d77)
 
 ## What's Wrong with REST
 
@@ -32,13 +33,23 @@ ShopType = ObjectType.define do
 end
 ```
 
+## Type
+
+Under-fetching is actually a type error.
+
 ## Relay
 
 * [Learn Relay](https://www.learnrelay.org/)
 
+## Static Queries
+
 ## Data Loader
 
 * [graphql-batch for Ruby, sort of like DataLoader](https://github.com/Shopify/graphql-batch)
+
+## Rails
+
+* [Building a full on GraphQL app](https://medium.com/ryancollinsio/building-a-full-on-graphql-app-b261f6cfea93)
 
 ## Videos
 

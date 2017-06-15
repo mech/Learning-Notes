@@ -55,6 +55,7 @@ render_user(user) { 'UNKNOWN USER' }
 ## Libraries
 
 * [StackExchange.Exceptional](https://github.com/NickCraver/StackExchange.Exceptional)
+* [rusen](https://github.com/moove-it/rusen)
 
 ## Videos
 

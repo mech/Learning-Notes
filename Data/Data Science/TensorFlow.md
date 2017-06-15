@@ -6,3 +6,4 @@
 ## Videos
 
 * [Demystifying Deep Neural Nets](https://www.youtube.com/watch?v=S4vL355capU)
+* [Is it Food? An Introduction to Machine Learning](https://www.youtube.com/watch?v=8G709hKkthY)
