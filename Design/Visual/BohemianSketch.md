@@ -37,8 +37,10 @@ You can have as many Artboards on the canvas as you like, but try to separate th
 
 ## Group Resizing
 
+It's a feature for making LAYERS responsive to resizing of the PARENT group or ARTBOARD.
+
 * [Exploring group resizing in Sketch 39](https://medium.com/bpxl-craft/exploring-group-resizing-in-sketch-3-9-e372d6635a54#.ysvy0lc4u)
-* [Mastering group resizing feature](https://medium.com/sketch-app-sources/mastering-group-resizing-feature-in-sketch-38266286155#.av0het8vw)
+* [**Mastering group resizing feature**](https://medium.com/sketch-app-sources/mastering-group-resizing-feature-in-sketch-38266286155#.av0het8vw)
 * [Resizing Tables with Sketch 39](https://medium.com/sketch-app-sources/https-medium-com-megaroeny-resizing-tables-with-sketch-3-9-2e02e6382d3d#.pkakabmhy)
 * [Sketch 39 Resizing: Cheat Sheet](https://medium.com/sketch-app-sources/sketch-39-resizing-cheat-sheet-feec0450e7e2#.1zpx2zlga)
 

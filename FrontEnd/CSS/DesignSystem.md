@@ -15,6 +15,8 @@ Maintain a visual language, UI elements, components and page types to realize su
 
 Living documentation based on executable examples.
 
+* [The Future of Design Tools Isn’t Prototyping: Introducing Systems](https://www.uxpin.com/studio/design-systems/future-design-tools-isnt-prototyping-introducing-systems-uxpin/)
+* [Design Systems Sprint 0: The Silver Bullet of Product Development](https://medium.com/@marcintreder/design-systems-sprint-0-the-silver-bullet-of-product-development-8c0ed83bf00d)
 * [Design system template by Brad Frost](https://bradfrost.github.io/style-guide-guide/)
 * [Scalable CSS](http://mrmrs.io/writing/2016/03/24/scalable-css/)
 * [**Material.io - Layout– Responsive UI**](https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints)
@@ -96,6 +98,16 @@ Without a design system, you are rendered inflexible. You can't explore and expe
 
 > This inflexibility limits exploration; propagating changes is too difficult, tempting us to just stick with the first design that comes to mind. - [Digital product design is not graphic design](https://www.subformapp.com/articles/digital-not-graphic/)
 
+## What's in a Design System
+
+* **Building blocks** - Grid, Color, Typography, Structural, Icons
+* **UI Patterns** - Modules, Components, Elements, Templates
+* **Rules** - [Design Principles](https://medium.com/@marcintreder/design-system-sprint-4-design-principles-8efb22d8a208), Editorial Guidelines, Behavioral Guidelines
+
+A design system isn't set in stone. It should evolve with the product and always reflect the truth.
+
+* [Apple iOS Design Principles](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/)
+
 ## Pattern Library
 
 * [FutureLearn](https://www.futurelearn.com/pattern-library)
@@ -121,6 +133,7 @@ In design, atmosphere comprises color, typography and texture, **separate from l
 
 http://styleguides.io/examples.html
 
+* [Atlassian Design](https://atlassian.design)
 * [Yelp](https://www.yelp.com/styleguide)
 * [Apple Develop](https://developer.apple.com/develop/)
 * [Android Develop and Design](https://developer.android.com/design)
@@ -184,7 +197,7 @@ But nothing says that Event's content model can't be for Article also. What we n
 
 A Design System needs ongoing maintenance, support, and tender loving care for it to truly thrive.
 
-> A style guide is an artifact of design process. A design system is a living, funded product with a roadmap & backlog, serving an ecosystem. - Nathan Curtis
+> A style guide is an artefact of design process. A design system is a living, funded product with a roadmap & backlog, serving an ecosystem. - Nathan Curtis
 
 To prevent the system from being eroded by a series of one-off changes, we need to make changes at the system-level rather than at application-level.
 
@@ -201,3 +214,4 @@ Do not anyhow add new patterns to library. Similarly, do not be afraid to create
 * [Can't You Make It More Like Bootstrap? – Alice Barlett from FT](https://www.youtube.com/watch?v=y4ggoN2xtAY)
 * [Thingness - Mark Boulton](https://vimeo.com/163510673)
 * [The Unbearable Likeness of Web Design](https://www.youtube.com/watch?v=8hK-JQlK89c)
+* [The GE Design System and Thoughts about Craft at Scale](https://vimeo.com/album/3484349/video/132580829)

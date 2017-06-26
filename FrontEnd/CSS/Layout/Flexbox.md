@@ -1,9 +1,11 @@
 # Flexbox
 
+* [Build with Flexbox](http://flexbox.buildwithreact.com/)
 * [How To Approach CSS layouts in 2017 — and beyond](https://medium.com/flexbox-and-grids/css-flexbox-grid-layout-how-to-approach-css-layouts-in-2017-and-beyond-685deef03e6c)
 * [11 things I learned reading the flexbox spec](https://hackernoon.com/11-things-i-learned-reading-the-flexbox-spec-5f0c799c776b)
 * [Flexbox Grid - A grid system based on the flex display property](http://flexboxgrid.com/)
 * [Don't build a Bootstrap style grid-system with Flexbox](https://codepen.io/morganfeeney/post/dont-build-bootstrap-style-grid-systems-with-flexbox)
+* [Bulma - A modern CSS framework based on Flexbox](http://bulma.io/)
 
 Traditionally, we have 3 ways to do layout:
 
@@ -199,3 +201,4 @@ footer {
 
 * [It's Time To Ditch The Grid System](https://www.youtube.com/watch?v=5N9RkIs31Ok)
 * [CSS4 Grid: True Layout Finally Arrives](https://www.youtube.com/watch?v=jl164y-Vb5E)
+* [Enhancing Responsiveness with Flexbox - booking.com example](https://vimeo.com/145055822)

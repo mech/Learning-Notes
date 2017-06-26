@@ -25,6 +25,10 @@
 
 * [Postgres powerful new join type: Lateral](https://blog.heapanalytics.com/postgresqls-powerful-new-join-type-lateral/)
 
+## SKIP LOCKED
+
+* [PG Casts - The Skip Locked feature in Postgres 9.5](https://www.pgcasts.com/episodes/7/skip-locked/)
+* Good for implementing queue?
 
 ## pg_tune
 

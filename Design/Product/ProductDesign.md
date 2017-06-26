@@ -42,6 +42,7 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 
 ---
 
+* [Apple's 2016 in review](https://chuqui.com/2017/01/apples-2016-in-review/)
 * [Quality Design Articles](https://svbset.com/)
 * [Design principles behind great products](https://medium.muz.li/design-principles-behind-great-products-6ef13cd74ccf#.ljkow9ido)
 * [5 questions to ask before every design project](https://uxdesign.cc/5-questions-a02fb76dcbd#.ei1vs2c0g)

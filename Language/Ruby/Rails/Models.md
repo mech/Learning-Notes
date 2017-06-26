@@ -18,6 +18,16 @@
 * [Flag argument is a code smell](http://craftingruby.com/posts/2017/05/04/flag-arguments-are-a-code-smell.html)
 * [Using Services to Keep Your Rails Controllers Clean and DRY](https://blog.engineyard.com/2014/keeping-your-rails-controllers-dry-with-services)
 
+## Query
+
+```ruby
+# Bad
+Post.select(:id).map(&:id)
+
+# Good
+Post.pluck(:id)
+```
+
 ## Database
 
 * [Database constraints made easy for ActiveRecord](https://github.com/nullobject/rein)
@@ -31,6 +41,7 @@ Each uniqueness constraint must be backed by a unique database index to protect 
 ## Validation
 
 * [Custom Validators in Ruby on Rails 4](http://www.rails-dev.com/custom-validators-in-ruby-on-rails-4)
+* [Data Corruption: Stop the Evil Tribbles](https://www.youtube.com/watch?v=kA8aR1ffoOg)
 
 ---
 
@@ -110,16 +121,67 @@ Some services use verbs instead of nouns: `Movies::Create` vs `Movies::Creator`.
 
 ## Form Object
 
+* [Decouple Your Models with Form Objects](https://www.youtube.com/watch?v=d9vMENoqxEE)
 * [18 Con-Struct Attributes Gems](http://idiosyncratic-ruby.com/18-con-struct-attributes.html)
 * [Form Objects with Virtus](http://hawkins.io/2014/01/form_objects_with_virtus/)
 * [Creating Form Objects with ActiveModel and Virtus](https://webuild.envato.com/blog/creating-form-objects-with-activemodel-and-virtus/)
 * [ActiveModel Form Objects](https://robots.thoughtbot.com/activemodel-form-objects)
+* [**Reform**](https://github.com/trailblazer/reform)
 
 Encapsulate logic related to validating and persisting data.
 
 You can move validation to Form Object, but your model still need it just in case.
 
 > So this isn't a SRP violation, they are two different responsibilities and relate to different chapters in the lifecycle of information.
+
+```ruby
+# At the controller
+@company_form = CompanyForm.new(company_params)
+
+# The form object
+class CompanyForm
+  include ActiveModel::Model
+
+  validates :name, presence: true
+  validates :number, presence: true
+  validate :validate_company_and_phone
+  
+  # Act as the parent object
+  def self.model_name
+    Company.model_name
+  end
+  
+  def save
+    return unless valid?
+    ActiveRecord::Base.transaction do
+      company.save!
+      phone.save!
+    end
+  end
+  
+  private
+  
+  def company
+    @company ||= Company.new(name: name)
+  end
+  
+  def phone
+    @phone ||= @company.phones.build(number: number, primary: true)
+  end
+  
+  def validate_company_and_phone
+    return display_errors(company.errors) if company.invalid?
+    return display_errors(phone.errors) if phone.invalid?
+  end
+  
+  # Bubble error from child relationship up to the parent
+  def display_errors(errors)
+    errors.each do |attribute, message|
+      errors.add(attribute, message)
+    end
+  end
+end
+```
 
 ## Value Object (Immutable)
 

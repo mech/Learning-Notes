@@ -1,5 +1,9 @@
 # Exceptions and Errors
 
+> Don't rescue just because you can. It's ok to crash in rare or unknown circumstances.
+
+---
+
 > `begin` keyword is a code smell in Ruby. It is nothing wrong, just a warning sign.
 
 * [Exceptional Ruby - Avdi](http://avdi.org/talks/exceptional-ruby-rubyconf-2011/exceptional-ruby.html)
@@ -22,6 +26,88 @@ end
 It's tempting to raise an exception every time you get an answer you don't like. But exception handling interrupts and obscures the flow of your business logic. Consider carefully whether a situation is truly unusual before raising an Exception.
 
 Exception should only be used for unexpected situations. Use `throw` for expected cases.
+
+```ruby
+begin
+rescue => e
+end
+
+# Is equivalent to
+begin
+rescue StandardError => e
+end
+
+# Default for raise is RuntimeError
+# Default for rescue is StandardError
+
+# Since RuntimeError is a subclass of StandardError, when you rescue
+# with no specific, it will also catch RuntimeError.
+class RuntimeError < StandardError
+end
+
+# Never do this since Exception is the root of the error hierarchy
+# you will catch other system error thing like
+# SystemStackError, NoMemoryError, SignalException, etc
+begin
+rescue Exception => e
+end
+```
+
+```ruby
+# Adding severity and metadata is good for filtering
+begin
+rescue => e
+  Procore::ErrorHandler.handle(e, severity: :warn, metadata: {
+    tool: :onboarding
+  })
+end
+```
+
+## Error Hierarchy
+
+```ruby
+Store::Error
+Store::PurchaseError
+Store::InventoryError
+Store::CouponError
+Store::OutOfSeasonError
+Store::SecurityError
+Store::PermissionError
+Store::ReadOnlyError
+
+# Different error need to go to different path
+def create
+rescue InventoryError => ie
+  Store::Handler.handle(ie, { user_id: @user.id }, :warn)
+  redirect_to shopping_cart_path
+rescue CouponError => ce
+  Store::Handler.handle(ce, { user_id: @user.id }, :info)
+  redirect_to apply_coupon_path
+end
+
+class Store::Error < StandardError
+  attr_accessor :metadata
+  attr_accessor :severity
+  
+  def initialize(message, metadata = {}, severity = :error)
+    super(message)
+    @metadata = metadata
+    @severity = severity
+  end
+  
+  def user_message
+    I18n.t('errors.unknown')
+  end
+end
+
+# Empty class, but still useful
+class Store::PurchaseError < Store::Error
+end
+```
+
+## Rescue and Re-Raise
+
+Great for control flow.
 
 ## Performance
 

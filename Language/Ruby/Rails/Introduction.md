@@ -4,6 +4,15 @@
 * [Efficient Rails DevOps - A book](https://efficientrailsdevops.com/)
 * [Tools for a Modern Ruby Development Setup](https://www.sitepoint.com/tools-for-a-modern-ruby-development-setup/)
 
+```ruby
+# Look for config/payments.yml
+Rails.application.config_for(:payments)['stripe_key']
+
+# Use configuration file for globals
+if registered_at < Rails.application.config_for(:registration)['limit'].minutes.ago
+end
+```
+
 ## Performance
 
 * [Rails Speed](https://www.railsspeed.com/)

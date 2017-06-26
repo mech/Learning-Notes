@@ -1,10 +1,17 @@
 # Search
 
 * [What's Wrong With Taxonomies - The Future is Faceted](http://semanticstudios.com/the_speed_of_information_architecture/)
+* [Search at Slack](https://slack.engineering/search-at-slack-431f8c80619e)
 
 In Yelp business listing, there is business name, operating hours, images, and some attributes invisible to the users. There are also content components that we don't want to search, such as reviews and tips. These could confuse a user's search results; for example, if a review included the name of a competing restaurant.
 
 As much as we want to index all things, we should know when to leave out content that shouldn't be indexed.
+
+## Personalized and Recent Results
+
+Staff's search need to be personalized and relevance to them. This mean we need to embed staff_id for items relevant to them!
+
+> Imagine searching for "401k matching" and instead of just receiving relevant messages or files, you also get a list of people in HR that can answer your question, or a list of channels for your query where you might be able to find the information you are looking for, or even a list of commonly asked questions relevant to that topic with links to the channel where each one was answered. We still have a lot of work to do to reduce that 20% of information-seeking time, allowing users of Slack to have a more pleasant, productive experience.
 
 ## Similar documents
 

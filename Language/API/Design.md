@@ -36,6 +36,30 @@ class CustomerEnrollmentsController < ApplicationController
   def create
   end
 end
+
+# Be more RESTful
+class DiscountsController < ApplicationController
+  def create
+  end
+end
+
+Rails.application.routes.draw do
+  resource :cart do
+    resource :discount, only: :create, controller: :cart_discounts
+  end
+end
+
+# Instead of this which is not really RESTful
+class CartsController < ApplicationController
+  def apply_coupon
+  end
+end
+
+Rails.application.routes.draw do
+  resource :cart do
+    get :apply_coupon
+  end
+end
 ```
 
 > GitHub API is a good example of a reasonably well designed API in the public domain with right resource granularity. For example, creating a fork is an asynchronous operation. GitHub supports the reified "Forks" sub-collection resource that can be used to list existing forks or create a new fork. Performing code "merge" using merges sub-collection resource is another example of reification of the "merge" concept and the underlying merge operation. On the other hand, GitHub also supports many low level resources such as Tag. Most of the real world APIs will require both coarse grained aggregate resources and also low level "nouns in the domain" resources. - [REST API Design Resource Modeling](https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling)

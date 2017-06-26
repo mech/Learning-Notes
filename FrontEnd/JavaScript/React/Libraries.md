@@ -2,6 +2,8 @@
 
 https://github.com/hsnaydd/moveTo/
 
+https://dollarshaveclub.github.io/stickybits/
+
 * [**Awesome React Components & Libraries**](https://github.com/brillout/awesome-react-components/blob/master/readme.md)
 * [React Desktop](http://reactdesktop.js.org/)
 * [Smart modules for React](https://github.com/smalldots/smalldots)
@@ -110,6 +112,11 @@ input.addEventListener('change', () => {
 
 * [A starting point on using D3 with React](https://blog.sicara.com/a-starting-point-on-using-d3-with-react-869fdf3dfaf#.aood1myab)
 
+## Images
+
+* [css-aspect-ratio](https://github.com/sgomes/css-aspect-ratio)
+* [Low Quality Image Placeholders (LQIP) for Webpack](https://github.com/zouhir/lqip-loader)
+
 ## Editor
 
 * [Dante 2](https://michelson.github.io/dante2/)
@@ -117,3 +124,4 @@ input.addEventListener('change', () => {
 * [react-in-markdown](https://github.com/kitze/react-in-markdown)
 * [markdown-it](https://github.com/markdown-it/markdown-it)
 * [react-mde](https://github.com/andrerpena/react-mde)
+* [Anchorme - Tiny, fast, efficient, feature rich Javascript library to detect links/URLs/Emails in text and convert them to clickable HTML anchor links](https://alexcorvi.github.io/anchorme.js/)

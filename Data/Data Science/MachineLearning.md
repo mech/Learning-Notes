@@ -19,6 +19,10 @@ Knapsack problem
 NP-Complete
 ```
 
+## Simple Models
+
+* [Slack is using Simple Models first for their ML for Slack Highlights](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
+
 ## Case Studies
 
 * [Using Machine Learning to Predict Parking Difficulty](https://iot-for-all.com/using-machine-learning-to-predict-parking-difficulty-d0af0cd3b9a9#.qusfhp3j8)

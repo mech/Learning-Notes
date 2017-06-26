@@ -47,6 +47,20 @@ plugins: [
 ]
 ```
 
+## Tree Shaking
+
+* Relies on ES6 module definition
+
+```js
+const shake = () => console.log('Shake')
+const bake = () => console.log('Bake')
+export { shake, bake }
+
+// Shake it with
+import { bake } from './shake'
+bake()
+```
+
 ## Code Splitting
 
 2 splitting worth doing:
