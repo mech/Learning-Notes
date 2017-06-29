@@ -70,6 +70,7 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 
 # Sketch Plugins
 
+* [40 Powerful plugins for sketch](https://medium.muz.li/40-powerful-free-plugins-for-sketch-c1af03ea9d7e)
 * [Text Style](http://www.textstyl.es/)
 
 ## Exporting

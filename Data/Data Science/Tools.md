@@ -28,3 +28,7 @@ What's the problem with "process-after-store" model? Unnecessary latencies betwe
 * Flink ML for machine learning
 * Good YARN citizen
 * Low latency, high throughput
+
+## AWS Kinesis
+
+* [Processing Kinesis Streams w/ AWS Lambda and Golang](https://medium.com/@harlow/processing-kinesis-streams-w-aws-lambda-and-golang-264efc8f979a)

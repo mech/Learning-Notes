@@ -512,7 +512,7 @@ class Log extends PureComponent {
 <Speak message={this.state.message} />
 ```
 
-## Higher Order Components
+## Higher Order Components (HOC) - Behavior rather than Markup
 
 A type of Container Component.
 

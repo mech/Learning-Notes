@@ -1,5 +1,9 @@
 # Videos
 
+```
+document.getElementsByTagName('video')[0].playbackRate = 2;
+```
+
 * [@Scale](https://www.youtube.com/channel/UCd9I8ZkgoR1d7GeSj_wi_LQ)
 
 ## CSS

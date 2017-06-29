@@ -84,6 +84,7 @@ This has performance issues because cashier will be slow to adjust price for a d
 * [It's not the interface that makes the experience](https://uxdesign.cc/it-s-not-the-interface-that-makes-the-experience-fb16f8e29299#.1zgmr947y)
 * [Set expectations, do good-enough work and let the results worry about itself.](https://zellwk.com/blog/fighting-decision-paralysis/)
 * If strategic design is missing from a product, no number of iterations can save it. Product managers need to establish the soul, the meaning, the why of a product early on, using thoughtful strategic design.
+* Beneath every bad design concept is another more crazy, daring and wonderful. If you don't dig down into crazy ideas and give them a chance, you'll never find the wonderful ones buried beneath them.
 
 ## Microinteraction
 

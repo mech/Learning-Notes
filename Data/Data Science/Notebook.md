@@ -4,6 +4,7 @@ Computational narratives is spreading. Surface meaning from the data with narrat
 
 * [nteract](https://nteract.io/)
 * [My Binder](http://mybinder.org/)
+* [Getting Started in Data Science: A Beginner's Perspective](https://medium.com/the-data-logs/getting-started-in-data-science-a-beginners-perspective-8c54f8043ab8)
 
 ## Jupyter
 

@@ -11,6 +11,10 @@
 ▶ \x auto
 ```
 
+## UUID
+
+* [A Brief History of the UUID](https://segment.com/blog/a-brief-history-of-the-uuid/)
+
 ## Tuning
 
 * If you need more than 500 connections, use PGBouncer.

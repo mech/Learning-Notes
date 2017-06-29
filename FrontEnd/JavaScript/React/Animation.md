@@ -5,6 +5,7 @@
 * [material-motion-js](https://github.com/material-motion/material-motion-js)
 * [Getting Reactive with CSS](http://slides.com/davidkhourshid/getting-reactive-with-css#/)
 * [Getting Reactive with CSS - Video](https://www.youtube.com/watch?v=4IRPxCMAIfA)
+* [The principles of React Router are such that you can wrap up complex animation code into declarative components - Ryan Florence](https://github.com/tkh44/data-driven-motion/blob/master/demo/src/App.js#L187-L191)
 
 React ships with react-addons-css-transition-group which is a component that helps us build animations in a declarative way.
 

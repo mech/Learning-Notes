@@ -31,6 +31,7 @@ Amazon SQS take in transactional log (from S3), apply lambda function to produce
 ## Event Logs
 
 * [Why You Should Query Your Event Logs in Hadoop](http://querytreeapp.com/blog/querying-your-event-logs-in-hadoop/)
+* [The Totally Managed Analytics Pipeline: Segment, Lambda, and Dynamo](https://segment.com/blog/the-totally-managed-analytics-pipeline/)
 
 Why we don't store logs in databases:
 
@@ -53,3 +54,4 @@ Why we don't store logs in databases:
 
 * [MapR Blog](https://mapr.com/blog/)
 * [Data Artisans](https://data-artisans.com/blog)
+* [Segment Engineering Blog](https://segment.com/blog/categories/engineering/)

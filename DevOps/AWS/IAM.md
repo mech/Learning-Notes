@@ -1,10 +1,16 @@
 # AWS IAM
 
+* [The Code Spaces Nightmare](http://blog.trendmicro.com/the-code-spaces-nightmare/)
+
 User can have an account with password, but can't perform any function without being inside a Group that grant permission.
 
 1. Implicit Deny - By default everything is implicitly disallowed
 2. Explicit Deny - Then it look for all explicit deny which apply for all
 3. Explicit Allow - Until you explicitly allow it
+
+## Shared Security Model
+
+
 
 ## Users
 
@@ -15,6 +21,8 @@ If you have more users, you do not want to grant those users access to resources
 Users inherit permissions from a group.
 
 ## Roles
+
+The best way to protect credentials is to not need them in the first place. That's where IAM Roles come into play.
 
 How is Roles different from Groups? When you want a user to "assume" a role. The user can switch role and once done with the things will switch back to their original role.
 

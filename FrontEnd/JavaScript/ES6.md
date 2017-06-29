@@ -6,6 +6,7 @@
 * [Nice tutorial on ES6 with React](http://www.benmvp.com/slides/2017/reactconf/react-esnext.html#/)
 * [Introduction to commonly used ES6 features](https://zellwk.com/blog/es6/)
 * [Overview of ECMAScript 6 features](https://github.com/lukehoban/es6features)
+* [What Do I Need to Know to Ace a JavaScript Interview?](https://github.com/adam-s/js-interview-review)
 
 Encapsulate conditionals:
 

@@ -23,6 +23,9 @@
 * Show just enough information to support essential decisions - no more, no less.
 * If something is related to something else, they should be near each other. This sounds obvious at first, but lack of grouping is a surprisingly common mistake.
 * More options means people slow down
+* A well-designed and humane interface does not need to be split into beginner and expert subsystems - Jef Raskin
+* Simplicity is about subtracting the obvious and adding the meaningful – John Maeda
+* Innovation is often the product of constraint – Todd Waterbury
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
 
