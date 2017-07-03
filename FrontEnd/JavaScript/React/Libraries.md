@@ -125,3 +125,4 @@ input.addEventListener('change', () => {
 * [markdown-it](https://github.com/markdown-it/markdown-it)
 * [react-mde](https://github.com/andrerpena/react-mde)
 * [Anchorme - Tiny, fast, efficient, feature rich Javascript library to detect links/URLs/Emails in text and convert them to clickable HTML anchor links](https://alexcorvi.github.io/anchorme.js/)
+* [Alloy Editor](http://alloyeditor.com/)

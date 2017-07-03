@@ -7,6 +7,7 @@
 * [Spring Into CSS Grid](http://jonibologna.com/spring-into-css-grid/)
 * [Breaking Out With CSS Grid Layout](https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/)
 * [The CSS Fractional Unit (Fr) In Approachable, plain Language](https://medium.com/flexbox-and-grids/the-css-fractional-unit-fr-in-approachable-plain-language-fdc47bd387f7)
+* [Stripe Connect: behind the front-end experience](https://stripe.com/blog/connect-front-end-experience)
 
 ## Grid Container
 
