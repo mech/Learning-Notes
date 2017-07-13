@@ -10,6 +10,11 @@
 * [ReactSimpleFlexGrid](https://github.com/abraztsov/ReactSimpleFlexGrid)
 
 ```js
+// If you want to extract the className
+const { className, ...props } = this.props
+```
+
+```js
 <Button className="button-icon-check">Okay</Button>
 
 <Button icon="check">Okay</Button>

@@ -43,6 +43,7 @@ It's a feature for making LAYERS responsive to resizing of the PARENT group or A
 * [**Mastering group resizing feature**](https://medium.com/sketch-app-sources/mastering-group-resizing-feature-in-sketch-38266286155#.av0het8vw)
 * [Resizing Tables with Sketch 39](https://medium.com/sketch-app-sources/https-medium-com-megaroeny-resizing-tables-with-sketch-3-9-2e02e6382d3d#.pkakabmhy)
 * [Sketch 39 Resizing: Cheat Sheet](https://medium.com/sketch-app-sources/sketch-39-resizing-cheat-sheet-feec0450e7e2#.1zpx2zlga)
+* [Resizing Table and List in Sketch App 45](https://medium.com/sketch-app-sources/resizing-table-and-list-with-sketch-45-1-2-9793c34d2d5a)
 
 Getting the most out of Resizing requires advanced planning. Nothing is automatic, Sketch isn't going to inherently know how you expect the elements within a group or symbol to behave, but the four resizing options give you remarkable degree of flexibility.
 

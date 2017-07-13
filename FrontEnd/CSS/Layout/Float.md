@@ -104,6 +104,9 @@ By default, padding is added to the **content area**, and the content area's siz
 
 ### Margin Collapsing
 
+* [What's the Deal with Collapsible Margins?](https://bitsofco.de/collapsible-margins/)
+* [Single-direction margin declarations](https://csswizardry.com/2012/06/single-direction-margin-declarations/)
+
 One important aspect of vertical formatting is the collapsing of vertically adjacent margins. Collapsing applies only to margins. Padding and borders, where they exist, never collapse with anything.
 
 `margin-bottom` of previous element combined with `margin-top` of next element into a single margin of the largest margin.
@@ -111,8 +114,6 @@ One important aspect of vertical formatting is the collapsing of vertically adja
 Margins of floating and absolutely positioned elements NEVER collapsed.
 
 > There is only margin-top OR only margin-bottom. Choose one and stick to it!
-
-[Single-direction margin declarations](https://csswizardry.com/2012/06/single-direction-margin-declarations/)
 
 By only ever using `margin-bottom`, every element is in charge of how much space there should be below it. But some people like to use padding instead for paragraph:
 
@@ -123,7 +124,7 @@ p {
 }
 ```
 
-Margin collapsing can be interrupted by factors such as paddings and borders on parent elements.
+Margin collapsing can be interrupted by factors such as paddings and borders on parent elements. If you give it a border, it will not collapse! This happen because the margin of the parent is no longer in direct contact with the margin of the child.
 
 ### Inline Element
 

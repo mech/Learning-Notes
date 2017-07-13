@@ -15,7 +15,8 @@ end
 
 ## Performance
 
-* [Rails Speed](https://www.railsspeed.com/)
+* [**Rails Speed**](https://www.railsspeed.com/)
+* [Speedshop Blog](https://www.speedshop.co/blog/)
 
 ## Deployment
 
@@ -23,6 +24,8 @@ end
 * [Dockerize a Rails 5, Postgres, Redis, Sidekiq and Action Cable Application with Docker Compose](https://nickjanetakis.com/blog/dockerize-a-rails-5-postgres-redis-sidekiq-action-cable-app-with-docker-compose)
 * [Your App Server Config is Wrong: Workers count and threads count](https://www.youtube.com/watch?v=itbExaPqNAE)
 * [oink - Log parser to identify actions which significantly increase VM heap size](https://github.com/noahd1/oink)
+* [Scaling Ruby apps to 1000RPM](https://www.speedshop.co/2015/07/29/scaling-ruby-apps-to-1000-rpm.html)
+* [How To Scale Ruby on Rails Applications Across Multiple Droplets](https://www.digitalocean.com/community/tutorials/how-to-scale-ruby-on-rails-applications-across-multiple-droplets-part-1)
 
 ```
 passenger_max_request_time

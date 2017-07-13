@@ -2,9 +2,14 @@
 
 > In RR4, routes aren't really routes, they are just components. Routes are now more like components that simply conditionally show or hide a target component or element based on whether the current URL matches the given path. If you focus on this key point, all the features and functionality that the new format gives you become so much more intuitive to understand.
 
+There are 2 client-side navigation component: `window.location` and `window.history` and history.js make it easy to work with Location API and History API.
+
 * [RR4 docs](https://react-router.now.sh/)
 * [Simple declarative Redux state with React Router 4 server side rendering](https://medium.com/@AlexFaunt/satisfying-your-apps-state-343118b0730d#.gh5ihu9ii)
 * [The One Thing you need to know about React Router 4](https://medium.com/@thegreengreek/the-one-thing-you-need-to-know-about-react-router-4-34e27cbe7b53)
+* [Redux-First Routing](https://medium.freecodecamp.org/an-introduction-to-the-redux-first-routing-model-98926ebf53cb)
+* [Redux-First Router — A Step Beyond Redux-Little-Router](https://medium.com/faceyspacey/pre-release-redux-first-router-a-step-beyond-redux-little-router-cd2716576aea)
+* The best Redux-based apps design structure based on Redux state, and not on URL state. URL is just another place to store state externally, like a database.
 
 ```
 Route Component === Route Handler === Screen Container === Controller (Horror)
@@ -110,6 +115,10 @@ Component.contextTypes = {
 // in your component, you can
 this.context.router.transitionTo('/')
 ```
+
+## Redirecting
+
+Use the `<Redirect>` component or expose the history props with the `withRouter` HOC.
 
 ## Code splitting
 
@@ -288,3 +297,7 @@ const MyComponent = () => {
 ## Blocking Update
 
 * [Ditching Subscriptions in React Router](https://medium.com/@pshrmn/ditching-subscriptions-in-react-router-6496c71ce4ec)
+
+## Server Side Rendering
+
+* [SSR with Create React App v2](https://medium.com/@benlu/ssr-with-create-react-app-v2-1b8b520681d9)

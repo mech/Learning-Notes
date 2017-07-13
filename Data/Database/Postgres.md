@@ -6,10 +6,23 @@
 * [Chapter 66. Database Physical Storage](https://www.postgresql.org/docs/10/static/storage.html)
 * [Postgres at Any Scale](https://www.youtube.com/watch?v=_wU2dglywAU)
 * [Citus - For large Postgres](https://www.citusdata.com/)
+* [HypoPG - hypothetical indexes](https://github.com/dalibo/hypopg)
 
 ```
 ▶ \x auto
 ```
+
+## Embrace Constraints
+
+* NOT NULL
+* CREATE UNIQUE INDEX
+
+## Performance
+
+Most single queries should be aiming for around a 1ms query time.
+
+* [Expensive Query Dashboard](https://blog.heroku.com/expensive-query-speed-up-app)
+* [Using Rack Mini Profiler to find and fix slow queries](https://schneems.com/2017/06/22/a-tale-of-slow-pagination/)
 
 ## UUID
 
@@ -19,11 +32,12 @@
 
 * If you need more than 500 connections, use PGBouncer.
 
-## EXPLAIN
+## EXPLAIN ANALYZE
 
 * [Explaining the unexplainable](https://www.depesz.com/2013/05/09/explaining-the-unexplainable-part-3)
 * [explain.depesz.com - Postgres explain analyze made readable](https://explain.depesz.com/)
 * [Distinguishing Access and Filter-Predicates](http://use-the-index-luke.com/sql/explain-plan/postgresql/filter-predicates)
+* [Postgres EXPLAIN Visualizer (Pev)](http://tatiyants.com/pev/#/plans/new)
 
 ## Lateral Join
 
@@ -56,6 +70,15 @@ The strength of window functions is not pagination, but analytical calculation.
 * [pg_partman](https://github.com/keithf4/pg_partman)
 * [partitionable](https://github.com/pacuna/partitionable)
 
+## Date
+
+```sql
+AVG(sale.price) as average_price,
+MAX(sale.price) as max_price,
+MIN(sale.price) as min_price,
+ROUND(AVG(EXTRACT(EPOCH FROM sale.completed_at) - EXTRACT(EPOCH FROM sale.created_at))) as average_sale_time
+```
+
 ## Array
 
 * [Postgres, the Good Parts: Arrays](http://blog.ryankelly.us/2016/08/21/postgres-the-good-parts-arrays.html)
@@ -66,6 +89,11 @@ The strength of window functions is not pagination, but analytical calculation.
 
 * tstzrange
 
+## Pagination
+
+> offset pagination is broken and there are other ways to paginate
+
+* [Five ways to paginate in Postgres, from the basic to the exotic](https://www.citusdata.com/blog/2016/03/30/five-ways-to-paginate/)
 
 ## PL/V8
 

@@ -29,6 +29,8 @@ PCI Security Council deprecated SSLv3 and TLS 1.0 for commercial transactions.
 * [The Guardian has moved to HTTPS](https://www.theguardian.com/info/developer-blog/2016/nov/29/the-guardian-has-moved-to-https)
 * [Get HTTPS for free!](https://gethttpsforfree.com/)
 * [SO: Are HTTPS URLs encrypted?](https://stackoverflow.com/questions/499591/are-https-urls-encrypted/499602#499602)
+* [CertBot](https://certbot.eff.org/)
+* [Video: Browser Security in 2017](https://www.youtube.com/watch?v=vvZRYUBFX-8)
 
 ---
 

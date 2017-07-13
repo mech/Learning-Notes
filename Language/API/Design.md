@@ -9,6 +9,8 @@ APIs should be a key component of your deployment strategy. Without a widespread
 * [Best Practices for Designing a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
 * [How and why should you use JSON API in your Rails API?](http://blog.arkency.com/2016/02/how-and-why-should-you-use-json-api-in-your-rails-api/)
 * [Writing a Hypermedia API client in Ruby](https://robots.thoughtbot.com/writing-a-hypermedia-api-client-in-ruby)
+* [Designing robust and predictable APIs with idempotency](https://stripe.com/blog/idempotency)
+* [REST Anti-Patterns](https://www.infoq.com/articles/rest-anti-patterns)
 
 ---
 

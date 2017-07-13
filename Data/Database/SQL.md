@@ -13,3 +13,7 @@
 ## Grouping
 
 * [What You Need To Know About SQL's Group By](https://periscopedata.com/blog//everything-about-group-by.html)
+
+## Joins
+
+* [Keep INNER JOIN when merging relations](https://github.com/rails/rails/pull/27063)

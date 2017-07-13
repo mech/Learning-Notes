@@ -9,6 +9,10 @@ Authentication is handled by Users and Groups, whereas authorization is handled 
 
 The idea behind IAM is to separate users and groups from the actions they need to perform.
 
+## Least Privilege
+
+You have to earn your privileges! Start with the absolute minimum.
+
 ## Shared Security Model
 
 

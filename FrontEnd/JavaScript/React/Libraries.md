@@ -47,6 +47,7 @@ https://dollarshaveclub.github.io/stickybits/
 
 * [reactable](https://github.com/glittershark/reactable)
 * [react-table](https://github.com/tannerlinsley/react-table)
+* [csvtotable](https://github.com/vividvilla/csvtotable)
 
 ## Modal and Dialog
 
@@ -62,6 +63,7 @@ https://dollarshaveclub.github.io/stickybits/
 
 ## Date Picker and Calendar
 
+* [Designing The Perfect Date And Time Picker](https://www.smashingmagazine.com/2017/07/designing-perfect-date-time-picker/)
 * [react-big-calendar](https://github.com/intljusticemission/react-big-calendar)
 * [react-calendar-timeline](https://github.com/namespace-ee/react-calendar-timeline)
 * [react-dates from Airbnb](https://github.com/airbnb/react-dates)

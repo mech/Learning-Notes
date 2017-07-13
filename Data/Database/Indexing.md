@@ -59,11 +59,23 @@ As much as possible avoid concatenated index and just use single-column index. I
 
 ## Secondary Index
 
+## Partial Index
+
+Instead of indexing ALL the data, we can instead apply a partial index. I'm almost never querying for `state=closed` when it comes to issues, so we can ignore those while building our index. Here is the migration:
+
+```ruby
+add_index :issues, :created_at, where: "state = 'open'"
+```
+
 ## Clustered and Non-Clustered Index
 
 ## Multi-dimensional Index
 
 An interesting idea is that multi-dimensional indexes are not just for geographic locations. For example, on an e-commerce website you could use a three-dimensional index on the dimensions (red, green, blue) to search for products in a certain range of colors, or in a database of weather observations you could have a two-dimensional index on (date, temperature) in order to efficiently search for all the observations during the year 2013 where the temperature was between 25 and 30°C. With a one-dimensional index, you would have to either scan over all the records from 2013 (regardless of temperature) and then filter them by temperature, or vice versa. A 2D index could narrow down by timestamp and temperature simultaneously. This technique is used by HyperDex.
+
+## Combining Multiple Indexes
+
+* [Postgres: Combining Multiple Indexes](https://www.postgresql.org/docs/10/static/indexes-bitmap-scans.html)
 
 ## Selectivity and Cardinality
 

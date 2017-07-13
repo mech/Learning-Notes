@@ -5,6 +5,9 @@
 * [graphql-voyager](https://github.com/APIs-guru/graphql-voyager)
 * [DataLoader](https://github.com/facebook/dataloader)
 * [Relay/GraphQL Cheatsheet #1](https://medium.com/code-oil/relay-graphql-cheatsheet-1-78eb66421d77)
+* [GraphQL vs REST](https://dev-blog.apollodata.com/graphql-vs-rest-5d425123e34b)
+* [The Anatomy of a GraphQL Query](https://dev-blog.apollodata.com/the-anatomy-of-a-graphql-query-6dffa9e9e747)
+* [Representing State in REST and GraphQL](https://philsturgeon.uk/api/2017/06/19/representing-state-in-rest-and-graphql/)
 
 ## What's Wrong with REST
 
@@ -20,7 +23,19 @@
 
 ## Design Your Schema
 
-Schema is GraphQL's killer feature.
+Schema is GraphQL's killer feature. You don't have a "book endpoint" where you get at the resource. Instead you have a `Book` and `Author` types.
+
+```js
+type Book {
+  id: ID
+  title: String
+}
+
+type Author {
+  id: ID
+  name: String
+}
+```
 
 ```ruby
 ShopType = ObjectType.define do

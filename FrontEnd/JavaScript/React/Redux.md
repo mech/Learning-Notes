@@ -354,6 +354,8 @@ export const fetchUserByEmail = (email) => {
 
 ## Middleware
 
+The action passes through the store's chain of middlewares, where actions may be intercepted and additional behaviour may be executed. Middlewares are commonly used to handle side-effects in Redux applications.
+
 * [Why do we need middleware for async flow in Redux?](https://stackoverflow.com/questions/34570758/why-do-we-need-middleware-for-async-flow-in-redux/)
 * [You aren't using middleware enough](https://medium.com/@jacobp100/you-arent-using-redux-middleware-enough-94ffe991e6)
 

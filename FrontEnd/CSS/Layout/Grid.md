@@ -8,6 +8,19 @@
 * [Breaking Out With CSS Grid Layout](https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/)
 * [The CSS Fractional Unit (Fr) In Approachable, plain Language](https://medium.com/flexbox-and-grids/the-css-fractional-unit-fr-in-approachable-plain-language-fdc47bd387f7)
 * [Stripe Connect: behind the front-end experience](https://stripe.com/blog/connect-front-end-experience)
+* [Is it really safe to start using CSS Grid Layout?](https://www.rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/)
+
+## Fallback
+
+* Use Feature Queries
+* [Grid "fallbacks" and overrides](https://rachelandrew.co.uk/css/cheatsheets/grid-fallbacks)
+
+```css
+@supports (display: grid) {
+}
+```
+
+Use a Feature Query when you want to apply a mix of old and new CSS, but only when the new CSS is supported.
 
 ## Grid Container
 
