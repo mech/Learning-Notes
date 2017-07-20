@@ -1,5 +1,6 @@
 # ES6
 
+* [**Practical Modern Javascript**](https://github.com/mjavascript/practical-modern-javascript)
 * [Clean Code for JavaScript](https://github.com/ryanmcdermott/clean-code-javascript)
 * [Optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
 * [Polyfills: everything you ever wanted to know, or maybe a bit less](https://hackernoon.com/polyfills-everything-you-ever-wanted-to-know-or-maybe-a-bit-less-7c8de164e423#.1wg5unfwr)
@@ -134,6 +135,21 @@ There are 3 different "spread" operators in JavaScript:
 // been pulled out
 const Greeting = ({ name, punc, ...restProps }) =>
   <h1 {...restProps}>Hello, {name}(punc)</h1>
+```
+
+```js
+button: {
+  borderRadius: 2,
+  ...Platform.select({
+    ios: {
+      backgroundColor: IOS_BLUE
+    },
+    android: {
+      backgroundColor: MATERIAL_BLUE,
+      elevation: 3
+    }
+  })
+}
 ```
 
 ### Gather/Rest

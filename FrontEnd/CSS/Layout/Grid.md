@@ -9,6 +9,9 @@
 * [The CSS Fractional Unit (Fr) In Approachable, plain Language](https://medium.com/flexbox-and-grids/the-css-fractional-unit-fr-in-approachable-plain-language-fdc47bd387f7)
 * [Stripe Connect: behind the front-end experience](https://stripe.com/blog/connect-front-end-experience)
 * [Is it really safe to start using CSS Grid Layout?](https://www.rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/)
+* [How to Efficiently Master the CSS Grid in a Jiffy](https://medium.com/flexbox-and-grids/how-to-efficiently-master-the-css-grid-in-a-jiffy-585d0c213577)
+
+With 18 new CSS Grid properties, there are many ways to achieve the same thing with the Grid layout. This is what makes it overwhelming.
 
 ## Fallback
 
@@ -21,6 +24,10 @@
 ```
 
 Use a Feature Query when you want to apply a mix of old and new CSS, but only when the new CSS is supported.
+
+## Fractional Unit
+
+* [What You Didn't know about the CSS Fractional Unit](https://medium.com/flexbox-and-grids/what-you-didnt-know-about-the-css-fractional-unit-580bd62647e8)
 
 ## Grid Container
 

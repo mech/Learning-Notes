@@ -3,6 +3,14 @@
 * [React Performance Tune-up](http://engineering.invisionapp.com/post/react-performance-tune-up/)
 * [Be careful with code splitting using link preload](https://medium.com/reloading/a-link-rel-preload-analysis-from-the-chrome-data-saver-team-5edf54b08715#.ssqki3op6)
 * [High Performance React: 3 New Tools to Speed Up Your Apps](https://medium.freecodecamp.org/make-react-fast-again-tools-and-techniques-for-speeding-up-your-react-app-7ad39d3c1b82)
+* [Netflix - Crafting a high-performance TV user interface using React](https://medium.com/netflix-techblog/crafting-a-high-performance-tv-user-interface-using-react-3350e5a6ad3b)
+* [Optimizing the Performance of Your React Application](https://auth0.com/blog/optimizing-react/)
+* [React is Slow, React is Fast: Optimizing React Apps in Practice](https://marmelab.com/blog/2017/02/06/react-is-slow-react-is-fast.html)
+* [React at 60fps](https://hackernoon.com/react-at-60fps-4e36b8189a4c)
+
+```
+http://localhost:3000?react_perf
+```
 
 ```js
 componentWillUpdate() {
@@ -49,3 +57,22 @@ class Item extends React.PureComponent {
 ```
 
 Don't forget to avoid the common mistakes that make the `PureComponent` less effective, such as generating new functions inside the `render()`, or using constant as props.
+
+## Recompose
+
+Functional components can't use `shouldComponentUpdate`.
+
+```js
+import pure from 'recompose/pure'
+import onlyUpdateForKeys from 'recompose/onlyUpdateForKeys'
+
+const DatagridBody = ({ ids }) => (
+  <tbody>
+    {ids.map(id => (
+      <tr></tr>
+    ))}
+  </tbody>
+)
+
+export default pure(DatagridBody)
+```

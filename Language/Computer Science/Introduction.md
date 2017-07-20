@@ -10,6 +10,7 @@
 
 * [Quicksort](http://me.dt.in.th/page/Quicksort/)
 * [On Iteration](http://www.informit.com/articles/article.aspx?p=1407357&seqNum=3)
+* [Counting Linearly With Counting Sort](https://medium.com/basecs/counting-linearly-with-counting-sort-cd8516ae09b3)
 
 ## Searching
 

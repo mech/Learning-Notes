@@ -5,6 +5,8 @@
 * [BPM Plus/Minus](http://www.basketball-reference.com/about/bpm.html)
 * [A better way to view and analyze data](http://tadviewer.com/)
 * [How do you draw a circle? We analyzed 100,000 drawings to show how culture shapes our instincts](https://qz.com/994486/the-way-you-draw-circles-says-a-lot-about-you/)
+* [The Book of Shaders](http://thebookofshaders.com/)
+* [100 days of algorithms](https://medium.com/100-days-of-algorithms)
 
 ## Interesting
 

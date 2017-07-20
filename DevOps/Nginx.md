@@ -8,6 +8,10 @@ http {
 }
 ```
 
+## Monitoring
+
+* [Nginx Amplify](https://amplify.nginx.com/signup/)
+
 ## HTTP/2
 
 To solve latency issues, HTTP/2 uses multiplexing. This does not mean you don't do concatenation anymore. In fact you still need to do it. Just split it up intelligently.

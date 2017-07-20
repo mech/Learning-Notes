@@ -1,6 +1,7 @@
 # Components
 
-https://github.com/primer/primer-forms/blob/master/lib/form-control.scss
+* https://github.com/primer/primer-forms/blob/master/lib/form-control.scss
+* [Complete Guide to CSS](https://webdesign.tutsplus.com/series/learn-css-the-complete-guide--cms-1065)
 
 ## Examples
 
@@ -38,5 +39,24 @@ Use checkbox hack to open and close the menu so we don't need to wait for JavaSc
 
 .toggle:checked ~ .menu {
   transform: none;
+}
+```
+
+## Tabs
+
+```js
+handleTabClick(selectedTab) {
+  this.setState({ selectedTab })
+  
+  // Let parent know that UI has changed
+  this.props.tabEvents.onClick(selectedTab)
+}
+
+renderTabContent(isOverview) {
+  const currentTab = this.state.selectedTab
+  const tab = _.find(this.props.tabs, { key: currentTab })
+  const tabContent = tab.content
+  
+  return _.isFunction(tabContent) ? tabContent() : tabContent
 }
 ```

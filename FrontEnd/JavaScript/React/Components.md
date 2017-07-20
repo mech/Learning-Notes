@@ -1,5 +1,8 @@
 # Components
 
+* Self-sufficient, do one thing good
+* Easy to integrate with
+
 > Learning functional programming completely changed my design process. There's a lot of parallels you can directly apply to your work day to day — it's about composition and I think this is something super useful for the design system we're working on. Rather than starting with a layout or a big marketing page and breaking it down, I love the idea of starting with the smallest possible primitives and building up and up and up.
 
 * [React FAQ](https://github.com/timarney/react-faq)
@@ -14,6 +17,7 @@
 * [Our Best Practices for Writing React Components](https://engineering.musefind.com/our-best-practices-for-writing-react-components-dec3eb5c3fc8#.ktdv8jlh2)
 * [Functional React — Get your App outta my Component](https://medium.com/@adamterlson/functional-react-series-part-1-get-your-app-outta-my-component-92656ae13e25?ref=mybridge.co)
 * [Embracing stateless functional component](https://medium.com/javascript-inside/embracing-functions-in-react-d7d558d8bd30)
+* [Examples app to build](https://medium.freecodecamp.org/every-time-you-build-a-to-do-list-app-a-puppy-dies-505b54637a5d)
 
 ## Fiber
 
@@ -24,6 +28,13 @@
 * [rakt](https://github.com/threepointone/rakt)
 * [next.js](https://github.com/zeit/next.js/)
 * [ARc (Atomic React)](https://github.com/diegohaz/arc)
+* [rekit](https://github.com/supnate/rekit)
+* [formidable-react-starter](https://github.com/FormidableLabs/formidable-react-starter)
+* [OkCupid file structure](https://tech.okcupid.com/how-okcupid-organizes-its-multi-page-react-app/)
+
+## Storybook
+
+* [Using React within a Design System](https://medium.com/buildit/using-react-within-a-design-system-73d4bb0cc822)
 
 ## Tips
 
@@ -53,11 +64,16 @@ const App = () => (
 
 ## Forms
 
+> Thinking in React apply to form also: It's best not to think in terms of "getting data from a form or user input". You get your data from your "state".
+
+* [React.js controlled components](http://blog.klipse.tech/react/2016/12/20/react-controlled-components.html)
 * [Form Validation as HOC](https://medium.com/javascript-inside/form-validation-as-a-higher-order-component-pt-1-83ac8fd6c1f0#.fv2zg6miy)
 * [react-reform](https://github.com/codecks-io/react-reform)
 * [react-jsonschema-form](https://github.com/mozilla-services/react-jsonschema-form)
 * [Web Form Validation: Best Practices](https://www.smashingmagazine.com/2009/07/web-form-validation-best-practices-and-tutorials/)
 * [How to create a Redux-Form with validation and initialized values](https://www.davidmeents.com/blog/create-redux-form-validation-initialized-values/)
+* [Form Validation Example With React](https://stvmlbrn.github.io/2017/01/16/form-validation-with-react.html)
+* [Submitting Form Data With React](https://stvmlbrn.github.io/2017/04/07/submitting-form-data-with-react.html)
 
 ```js
 // Generic change handler
@@ -100,6 +116,7 @@ What API is good for inputs:
 * [Best alternative to binding in render()](https://daveceddia.com/react-best-alternative-bind-render/)
 * [React Binding Patterns: 5 Approaches for Handling `this`](https://medium.com/@housecor/react-binding-patterns-5-approaches-for-handling-this-92c651b5af56?ref=mybridge.co)
 * [Event Switch](https://github.com/chantastic/reactpatterns.com#event-switch)
+* [React - to Bind or Not to Bind](https://medium.com/shoutem/react-to-bind-or-not-to-bind-7bf58327e22a)
 
 Synthetic Events are reusable and there is a single global handler. This means you cannot store a synthetic event and reuse it later because it becomes `null` right after the action. If you really want to store it, you can use `persist()`.
 
@@ -368,6 +385,8 @@ componentDidUpdate(prevProps, prevState) {
 
 ## Context
 
+* [How to safely use React context](https://medium.com/@mweststrate/how-to-safely-use-react-context-b7e343eff076)
+
 | Parent/Grandparent                                                    | Child                                            |
 |-----------------------------------------------------------------------|--------------------------------------------------|
 | `childContextTypes` - defines what context to supply                  | `contextTypes` - defines what context to consume |
@@ -597,11 +616,14 @@ Behavioral-Oriented Component. HOC encapsulate behavior and typically does not r
 
 Good for addressing cross-cutting concerns or common functionalities, such as logging and tracking and listening for window resize events.
 
+* [Single-Prop HOCs – Better Composition in React](https://www.okgrow.com/posts/compose-react-sphoc)
+* [Facebook official HOC doc](https://facebook.github.io/react/docs/higher-order-components.html)
 * [HOC: A React Application Design Pattern from SitePoint](https://www.sitepoint.com/react-higher-order-components/)
 * [Functions as child components and HOC](http://rea.tech/functions-as-child-components-and-higher-order-components/)
 * [Real World Examples of Higher-Order Components](http://rea.tech/reactjs-real-world-examples-of-higher-order-components/)
 * [Abstract your UI from elemental component (`<input>`), then use HOC to add additional functionalities](https://www.youtube.com/watch?v=5rtbSYl70ak)
 * [Why The Hipsters Recompose Everything](https://medium.com/javascript-inside/why-the-hipsters-recompose-everything-23ac08748198#.qbwgfntlp)
+* [Higher Order Components: Theory and Practice](http://engineering.blogfoster.com/higher-order-components-theory-and-practice/)
 
 Benefits of HOC:
 
@@ -775,7 +797,7 @@ const enhanced = compose(
 
 **Warning:** Don't abuse HOC. Every time you wrap a component into a HOC, you are adding a new `render()`, a new lifecycle method call, and memory allocation. It may be a performance issues.
 
-### HOC with Ramda's compose
+### HOC with Ramda's compose or [Recompose](https://github.com/acdlite/recompose)
 
 ```js
 import { compose } from 'ramda'
@@ -819,6 +841,11 @@ const compose = (...fns) =>
 `compose()` takes in multiple functions as arguments and returns a single function. The returned function expects one argument `arg`. When this function is invoked, the `fns` array is piped starting with the argument we want to send through the function. The `arg` becomes the initial value for `composed` and then each iteration of the reduced callback returns. `composed` is the result of the previous function output. Eventually, the last function will be invoked and the last result returned.
 
 This is just a simple example of `compose()` and does not handle more than one argument or deal with arguments that are not functions. Other implementations of `compose()` may use `reduceRight` which would compose the functions in reverse order.
+
+```js
+// 4 HOC to decorate Todos dumb component
+compose(myTodos, createTodo, deleteTodo, isAdmin)(Todos)
+```
 
 ## Keys
 
@@ -923,6 +950,10 @@ export Menu
 * [Mark Erikson](http://blog.isquaredsoftware.com/)
 * [Guillermo Rauch](https://rauchg.com/essays)
 * [Jack Hsu](https://jaysoo.ca/)
+
+## Examples
+
+* [Some good touch and animation examples](https://medium.com/@sanchitgn/what-ive-learnt-developing-a-modern-progressive-web-app-d3abe69933fa)
 
 ## Videos
 

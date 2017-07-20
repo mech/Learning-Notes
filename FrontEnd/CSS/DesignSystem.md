@@ -209,6 +209,35 @@ Do not anyhow add new patterns to library. Similarly, do not be afraid to create
 
 > I'm finding that I have the most success when my Display patterns don't describe the content within and when my Content patterns don't suggest anything about their presentation.
 
+## Atomic Design
+
+* [Atomic design: how to design systems of components](https://uxdesign.cc/atomic-design-how-to-design-systems-of-components-ab41f24f260e)
+* [Atomic Design and Creativity](https://uxdesign.cc/atomic-design-creativity-28ef74d71bc6)
+
+> The part shapes the whole and the whole shapes the part
+
+In the past, we build screen, then deconstruct it into component.
+
+Today, the idea of Atomic Design is to begin with common raw material (atoms) with which we can build the rest of it.
+
+1. Start with a unique visual language that is very close to our brand identity.
+2. With a strong identity, we can release our first atoms: colors, typographic, forms, shadows, spaces, rhythms, animations principles...
+3. Again, it is essential to spend time designing this identity and make it unique, before you can tackle your atoms.
+4. To get rid this notion of "page", we will focus on features or user flow, not screens. Make components that are not "connected" to anything.
+5. We are going to focus on the action which we want our user to do and on the components that are needed to accomplish this action.
+6. Be generic as well as specific.
+7. Make distinction between the structure of an element and its contents.
+8. Make it both be reusable and rich at the same time.
+9. Zoom in on the details and zoom out to verify the results in the greater scheme of things. Even as you are designing reusable components in isolation, you need to make it coherent at the macro-level.
+10. Page view is still important for user flow and smooth journey.
+11. **Harmony** - It's the right organization of the components. It's what is going to make the final result harmonious and well balanced.
+12. **Melody** - It's the story we want to tell to our user and the global vision of the flow. Sometimes the flow needs to be quick and sometimes it needs to be calm.
+13. **Rhythm** - Last but not least, the rhythm is what will give user some emotions while using the product: animations, illustration, tone of voice...
+
+```
+Brand Identity -> Components -> System as a whole
+```
+
 ## Videos
 
 * [Can't You Make It More Like Bootstrap? – Alice Barlett from FT](https://www.youtube.com/watch?v=y4ggoN2xtAY)

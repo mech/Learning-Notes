@@ -1,11 +1,16 @@
 # React Animation
 
+* [How to build animated microinteraction in React](https://medium.freecodecamp.org/how-to-build-animated-microinteractions-in-react-aab1cb9fe7c8)
+* [Airbnb - Behind the scenes of our new open-source animation tool](https://airbnb.design/introducing-lottie/)
 * [React Page Transition Animations](https://medium.com/front-end-hacking/react-page-transition-animations-9d18c90a9831#.jpe9r2a9b)
 * [Moving Beyond Animations to User Interactions at 60 FPS in React Native](https://medium.com/@talkol/moving-beyond-animations-to-user-interactions-at-60-fps-in-react-native-b6b1fa0ba525#.v3vy9yw0i)
 * [material-motion-js](https://github.com/material-motion/material-motion-js)
 * [Getting Reactive with CSS](http://slides.com/davidkhourshid/getting-reactive-with-css#/)
 * [Getting Reactive with CSS - Video](https://www.youtube.com/watch?v=4IRPxCMAIfA)
 * [The principles of React Router are such that you can wrap up complex animation code into declarative components - Ryan Florence](https://github.com/tkh44/data-driven-motion/blob/master/demo/src/App.js#L187-L191)
+* [React at 60fps](https://hackernoon.com/react-at-60fps-4e36b8189a4c)
+* [One weird trick to performant touch-response animations with React](https://medium.com/@owencm/one-weird-trick-to-performant-touch-response-animations-with-react-9fe4a0838116)
+* [Val Head - Getting started with animation in React](http://us2.campaign-archive1.com/?u=6fbaddc8c1fce7588d1a35cb2&id=61966a3f9a)
 
 React ships with react-addons-css-transition-group which is a component that helps us build animations in a declarative way.
 

@@ -1,8 +1,19 @@
 # Webpack
 
+* [**Webpack Academy Free Videos**](https://webpack.academy/courses/enrolled/104961)
 * [Webpack v2 Quick Start](http://bendyworks.com/blog/webpack-v2-quick-start)
 * [From zero to webpack, one error at the time](http://www.jumoel.com/2017/zero-to-webpack.html)
 * [Webpack 2 Loader Variations](http://andrewhfarmer.com/webpack-2-loader-variations/)
+* [Getting Started with webpack 2](https://blog.madewithenvy.com/getting-started-with-webpack-2-ed2b86c68783)
+* [Migrating to Webpack 2](https://javascriptplayground.com/blog/2016/10/moving-to-webpack-2/)
+
+```
+▶ yarn global add webpack-bundle-size-analyzer
+▶ yarn global add source-map-explorer
+
+▶ ./node_modules/.bin/webpack --json | webpack-bundle-size-analyzer
+▶ source-map-explorer bundle.min.js bundle.min.js.map
+```
 
 ```js
 module: {

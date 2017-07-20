@@ -1,5 +1,6 @@
 # GraphQL
 
+* [**How to GraphQL**](https://www.howtographql.com/)
 * [Artsy's GraphQL for Mobile](https://artsy.github.io/blog/2016/06/19/graphql-for-mobile/)
 * [ReactQL](https://reactql.org/)
 * [graphql-voyager](https://github.com/APIs-guru/graphql-voyager)
@@ -8,6 +9,7 @@
 * [GraphQL vs REST](https://dev-blog.apollodata.com/graphql-vs-rest-5d425123e34b)
 * [The Anatomy of a GraphQL Query](https://dev-blog.apollodata.com/the-anatomy-of-a-graphql-query-6dffa9e9e747)
 * [Representing State in REST and GraphQL](https://philsturgeon.uk/api/2017/06/19/representing-state-in-rest-and-graphql/)
+* [GraphQL & React tutorial (part 1/6)](https://blog.hichroma.com/graphql-react-tutorial-part-1-6-d0691af25858)
 
 ## What's Wrong with REST
 
@@ -61,6 +63,10 @@ Under-fetching is actually a type error.
 ## Data Loader
 
 * [graphql-batch for Ruby, sort of like DataLoader](https://github.com/Shopify/graphql-batch)
+
+## Pagination
+
+* [Understanding pagination: REST, GraphQL, and Relay](https://dev-blog.apollodata.com/understanding-pagination-rest-graphql-and-relay-b10f835549e7)
 
 ## Rails
 

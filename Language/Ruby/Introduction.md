@@ -3,10 +3,15 @@
 * [Design Patterns in Ruby](https://github.com/davidgf/design-patterns-in-ruby)
 * [Have Generics Killed Java?](http://www.artima.com/weblogs/viewpost.jsp?thread=299081)
 * [11 Ruby Tricks You Haven't Seen Before](http://www.blackbytes.info/2016/01/ruby-tricks/)
+* [Towards Minimal, Idiomatic, and Performant Ruby Code](https://blog.codeminer42.com/towards-minimal-idiomatic-and-performant-ruby-code-f3fc6aed3c94)
 
 ## Ruby 2.4
 
 * [New Features in Ruby 2.4](https://blog.cognitohq.com/new-features-in-ruby-2-4/)
+
+## Regular Expression
+
+* [Onigmo](https://github.com/k-takata/Onigmo/blob/3ddfbfcc469a246f8c5bc50072c7e9cdb1e50b22/doc/RE#L293)
 
 ## Date
 

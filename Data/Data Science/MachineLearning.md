@@ -1,7 +1,11 @@
 # Machine Learning
 
+* [**A visual introduction to machine learning**](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
 * [**A.I Experiments** from Google](https://aiexperiments.withgoogle.com/)
 * [Online Course Review - the Best Machine Learning Course for Beginners](https://codeahoy.com/2017/01/19/online-course-review-the-best-machine-learning-course-for-beginners/)
+* [Data Science Simplified: Principles and Process](https://becominghuman.ai/data-science-simplified-principles-and-process-b06304d63308)
+* [Facial expression classification system](https://github.com/JostineHo/mememoji)
+* [Apple Machine Learning](https://machinelearning.apple.com)
 
 ML is not AI. ML is the ability for an algorithm to learn from prior data in order to produce a behavior. ML is teaching machines to make decisions in situations they have never seen.
 

@@ -23,6 +23,7 @@
 
 ## Viewport Units
 
+* [CSS Locks](https://fvsch.com/code/css-locks/)
 * [Unexpected power of viewport units in CSS](https://www.lullabot.com/articles/unexpected-power-of-viewport-units-in-css)
 * [Viewport unit based typography](https://zellwk.com/blog/viewport-based-typography/)
 * [Viewport height is taller than the visible part of the document in some mobile browsers](https://nicolas-hoizey.com/2015/02/viewport-height-is-taller-than-the-visible-part-of-the-document-in-some-mobile-browsers.html)

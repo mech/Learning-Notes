@@ -7,6 +7,7 @@
 * [The Unofficial Guide to Rich Hickey's Brain](http://www.flyingmachinestudios.com/programming/the-unofficial-guide-to-rich-hickeys-brain/)
 * [Software Engineering Blogs](https://github.com/kilimchoi/engineering-blogs)
 * [Code Show and Tell: PolymorphicFinder](https://robots.thoughtbot.com/code-show-and-tell-polymorphic-finder)
+* [How We Ship: Codetree](https://codetree.com/how-we-ship/interviews/codetree)
 
 Good code not only works, but is also simple, understandable, expressive and changeable.
 

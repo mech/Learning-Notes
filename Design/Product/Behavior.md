@@ -1,6 +1,7 @@
 # Behavior
 
 * [Fast and Slow Dopamine](https://medium.com/the-spike/the-crimes-against-dopamine-b82b082d5f3d#.i4fhrfmdh)
+* [The Psychology Principles Every UI/UX Designer Needs to Know](https://blog.marvelapp.com/psychology-principles-every-uiux-designer-needs-know/)
 
 ## Ritual
 

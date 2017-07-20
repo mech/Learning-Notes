@@ -11,9 +11,14 @@ https://dollarshaveclub.github.io/stickybits/
 * [Carte Blanche - Like Storybook?](https://github.com/carteb/carte-blanche)
 * [CUID compared to UUID or shortid](https://github.com/ericelliott/cuid)
 
+## For Development
+
+* [react-inspector](https://github.com/xyc/react-inspector)
+
 ## Visual
 
 * [React Color](https://casesandberg.github.io/react-color/)
+* [Pure CSS Tooltips](https://medium.freecodecamp.org/a-step-by-step-guide-to-making-pure-css-tooltips-3d5a3e237346)
 
 ## UI Libraries
 
@@ -26,6 +31,7 @@ https://dollarshaveclub.github.io/stickybits/
 * [MuleSoft](http://ux.mulesoft.com/#/playground/Row)
 * [react-primitives](https://github.com/lelandrichardson/react-primitives)
 * [Blueprint](http://blueprintjs.com/)
+* [buffer-components](https://github.com/bufferapp/buffer-components)
 
 ## Case Study
 
@@ -45,9 +51,28 @@ https://dollarshaveclub.github.io/stickybits/
 
 ## Table (Filtering, Pagination)
 
+> Tables are effective because the nature of enterprise applications requires users to view rows of data simultaneously, scanning through alerts, comparing data and looking at data in any specific order of the user's choice.
+> 
+> What you are seeing below might seem like a very regular table pattern and might seem like there is nothing wrong about the usability of it at first, but as you get deeper into working on it, one would start realizing the quirks of operating it.
+
+When paging, you can use arrow key. We also need to buffer and throttle requests
+
+If there are only 2 or 3 pages worth of data, why not just show all?
+
 * [reactable](https://github.com/glittershark/reactable)
 * [react-table](https://github.com/tannerlinsley/react-table)
 * [csvtotable](https://github.com/vividvilla/csvtotable)
+* [react-sticky](https://github.com/captivationsoftware/react-sticky)
+* [Design better tables for enterprise applications](https://uxdesign.cc/designing-better-tables-for-enterprise-applications-f9ef545e9fbd)
+* [Mailchimp Tables Pattern - See Slats also](https://ux.mailchimp.com/patterns/tables)
+* [Design better data tables](https://uxdesign.cc/design-better-data-tables-4ecc99d23356)
+* [Design Better Data Tables](https://medium.com/mission-log/design-better-data-tables-430a30a00d8c)
+* User tabular figures - `font-feature-settings: "tnum" 1`
+* [Free Work Sans has excellent true tabular lining figures](https://fonts.google.com/specimen/Work+Sans)
+
+## Spreadsheet
+
+* [Handsontable](https://handsontable.com/)
 
 ## Modal and Dialog
 
@@ -60,14 +85,18 @@ https://dollarshaveclub.github.io/stickybits/
 * [RDropdown](https://github.com/jamhall/rdropdown)
 * [GooglePlaceAutocomplete](https://github.com/ydeshayes/googlePlaceAutocomplete)
 * [Algolia](https://community.algolia.com/react-instantsearch/)
+* [react-categorized-tag-input](http://erizocosmi.co/react-categorized-tag-input/)
 
 ## Date Picker and Calendar
 
+* [Making input type=date complicated](https://medium.com/samsung-internet-dev/making-input-type-date-complicated-a544fd27c45a)
 * [Designing The Perfect Date And Time Picker](https://www.smashingmagazine.com/2017/07/designing-perfect-date-time-picker/)
 * [react-big-calendar](https://github.com/intljusticemission/react-big-calendar)
 * [react-calendar-timeline](https://github.com/namespace-ee/react-calendar-timeline)
 * [react-dates from Airbnb](https://github.com/airbnb/react-dates)
 * [react-day-picker](http://react-day-picker.js.org)
+* [calreact](https://github.com/learnetto/calreact)
+* [spectre](https://picturepan2.github.io/spectre/experimentals.html#calendars)
 
 ---
 
@@ -106,6 +135,10 @@ input.addEventListener('change', () => {
 })
 ```
 
+## Tabs
+
+* [react-tabs-redux](https://github.com/patrik-piskay/react-tabs-redux)
+
 ## Sortable and Drag and Drop
 
 * [Some react-dnd example](https://gist.github.com/krzysu/1b391ae0e3c87d0c654cdf6d5a409632)
@@ -125,6 +158,6 @@ input.addEventListener('change', () => {
 * [Slate](https://github.com/ianstormtaylor/slate)
 * [react-in-markdown](https://github.com/kitze/react-in-markdown)
 * [markdown-it](https://github.com/markdown-it/markdown-it)
-* [react-mde](https://github.com/andrerpena/react-mde)
+* [react-mde - React Markdown Editor](https://github.com/andrerpena/react-mde)
 * [Anchorme - Tiny, fast, efficient, feature rich Javascript library to detect links/URLs/Emails in text and convert them to clickable HTML anchor links](https://alexcorvi.github.io/anchorme.js/)
 * [Alloy Editor](http://alloyeditor.com/)

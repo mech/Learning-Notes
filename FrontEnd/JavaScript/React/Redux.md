@@ -14,6 +14,8 @@
 
 > The main purpose of Redux is to isolate state management from I/O side effects.
 
+* [Dissecting Twitter’s Redux Store](https://medium.com/statuscode/dissecting-twitters-redux-store-d7280b62c6b1)
+* [What's So Great About Redux?](https://medium.com/@modernserf/whats-so-great-about-redux-ac16f1cc0f8b)
 * [mobx-state-tree](https://github.com/mobxjs/mobx-state-tree)
 * [Redux or MobX: An attempt to dissolve the Confusion](https://www.robinwieruch.de/redux-mobx-confusion/)
 * [Redux for state management in large web apps](https://www.mapbox.com/blog/redux-for-state-management-in-large-web-apps/)
@@ -45,6 +47,11 @@ This means you should almost never write logic in a plain UI component.
 Many moving parts:
 
 * Store, state, reducers, action creators, actions, async actions, middleware, connected components
+
+## Compared to MobX
+
+* [Some complaints](https://news.ycombinator.com/item?id=12975737)
+* Redux often end up with very extensive lists of props. MobX generally get away with just passing in the model itself. You actions are just methods on the model class.
 
 ## Business Logic
 
@@ -84,6 +91,21 @@ When the store is created, Redux immediately calls the reducers and uses their r
 Note: The 2nd argument to `createStore` should only use for state hydration and not for initializing state.
 
 ## Code Organization
+
+```js
+// Try putting your actions and reducer into one file
+
+const ADD = 'cart/ADD'
+
+export default function cart(state, action) {
+}
+
+export function add() {
+  return {
+    type: ADD
+  }
+}
+```
 
 * [Scaling your Redux App with ducks](https://medium.com/@alexnm/scaling-your-redux-app-with-ducks-6115955638be#.1qa7z6y4d)
 * [10 Tips for Better Redux Architecture](https://medium.com/javascript-scene/10-tips-for-better-redux-architecture-69250425af44#.p35g31etj)
@@ -404,6 +426,8 @@ You can use middleware to:
 
 ## Reducers
 
+Function that manage application state by listening to particular actions.
+
 * [Structuring Reducers](https://github.com/markerikson/redux/blob/structuring-reducers-page/docs/recipes/StructuringReducers.md)
 * [Generating Reducers](http://redux.js.org/docs/recipes/ReducingBoilerplate.html#generating-reducers)
 
@@ -520,6 +544,7 @@ export default combineReducers({
 ## Connect
 
 * [Recommended usage of `connect()`](https://github.com/reactjs/redux/issues/419)
+* [connect.js explained](https://gist.github.com/gaearon/1d19088790e70ac32ea636c025ba424e)
 
 `connect` is a higher order/curry function for generating a container component to let presentational component "connect" to the Redux Store.
 
@@ -650,6 +675,8 @@ function () {
 ```
 
 ## Selectors - State Transformation
+
+A caching and memoization strategy. Calculation only happen when a change happens in a related part of the state tree.
 
 * [Choose wisely (a fun introduction to reselect.js)](https://decembersoft.com/posts/redux-hero-part-3-choose-wisely-a-fun-introduction-to-reselect-js/)
 * [Use reselect sparingly](https://medium.com/@yungsql/daf5a53bb93a)

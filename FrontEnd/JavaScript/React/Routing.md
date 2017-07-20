@@ -60,6 +60,7 @@ const MatchWithFade = ({ component: Component, ...rest }) => (
 ## Animation
 
 * [react-router v4 animated with data-driven-motion](https://gist.github.com/tkh44/4cfedc32762966e318b24fcfe6f3564a)
+* [**A shallow dive into React Router v4 Animated Transitions**](https://medium.com/@pshrmn/a-shallow-dive-into-react-router-v4-animated-transitions-4b73f634992a)
 
 ## Rendering a Match
 
@@ -119,6 +120,27 @@ this.context.router.transitionTo('/')
 ## Redirecting
 
 Use the `<Redirect>` component or expose the history props with the `withRouter` HOC.
+
+## Outlets / Nested Route
+
+* [Reusing layouts in React Router 4](https://simonsmith.io/reusing-layouts-in-react-router-4/)
+
+```js
+// Creating a route that has a default layout
+const DefaultLayout = ({ component: Component, ...rest }) => (
+  <Route {...rest} render={matchProps => (
+    <div className="default-layout">
+      <header>Header</header>
+        <Component {...matchProps} />
+      <footer>Footer</footer>
+    </div>
+  )} />
+)
+
+// Now we can use it instead of <Route>
+// path is the props passed to DefaultLayout as ...rest
+<DefaultLayout path="/" component={SomeComponent} />
+```
 
 ## Code splitting
 

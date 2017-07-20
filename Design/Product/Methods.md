@@ -1,5 +1,7 @@
 # Methods
 
+* [UX Deliverables](https://uxplanet.org/a-complete-list-of-ux-deliverables-d62ccf1de434)
+
 ## Personas
 
 * [Personas, you don't need them](https://hondo.wtf/posts/on-personas/)

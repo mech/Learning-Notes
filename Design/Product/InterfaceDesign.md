@@ -5,6 +5,7 @@
 * [Mobile first, desktop worst](https://blog.prototypr.io/mobile-first-desktop-worst-f900909ae9e2)
 * [Design Explosion: Mapping on iOS](https://designexplosions.academy/design-explosions-mapping-on-ios-ad4ec6ba5c59)
 * [Tooltips](https://www.appcues.com/blog/tooltips/)
+* [**Stop the overuse of overflow menus**](https://medium.freecodecamp.org/stop-the-overuse-of-overflow-menus-5caa4b54e843)
 
 > Consistency, not uniformity
 
@@ -12,7 +13,9 @@
 
 > The ways in which we experience and consume information are growing and changing - and the information available to us is often richer and more complex.
 
+* Good user interface design is based on human goals and behavior. The user interface in-turn effects behavior, which further design decisions are based on. In subtle and unconscious ways, user experience alters how humans make decisions. What is seen, where it is presented, and how interactions are afforded, influence actions.
 * Clarity
+* [Ruthless prioritization](https://medium.com/@dburka/i-really-appreciate-the-response-5f765a270a8b)
 * Remove all extra elements - every item should have a purpose
 * Simplify color scheme - limit the number of used colors
 * Chronological order - feeds, events, etc.

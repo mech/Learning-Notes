@@ -1,5 +1,9 @@
 # Product Design
 
+> Delivering simple, respectful, subtle and harmonious product - MUJI Philosophy
+
+---
+
 > Well, let's assume we are lazy by nature and that when we get presented with a challenging situation we are naturally going to refer to our own memories, to our previous experiences, to figure things out without trying too hard. It's fast, it's unconscious, and it's a trap. You're going to overlook the problem because your brain is a lazy little bastard. To get past that point, you need to force your brain and your creativity muscle to work.
 > 
 > It's pretty simple: you have to keep on moving. While the first reaction would be to look at your blank canvas and only think of the potential moves you can do, the ideal way to actually get started is...getting started.
@@ -42,6 +46,7 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 
 ---
 
+* [Why hire more designers?](https://medium.com/the-year-of-the-looking-glass/why-hire-more-designers-fa270c4bc085)
 * [Apple's 2016 in review](https://chuqui.com/2017/01/apples-2016-in-review/)
 * [Quality Design Articles](https://svbset.com/)
 * [Design principles behind great products](https://medium.muz.li/design-principles-behind-great-products-6ef13cd74ccf#.ljkow9ido)
@@ -85,6 +90,7 @@ This has performance issues because cashier will be slow to adjust price for a d
 * [Set expectations, do good-enough work and let the results worry about itself.](https://zellwk.com/blog/fighting-decision-paralysis/)
 * If strategic design is missing from a product, no number of iterations can save it. Product managers need to establish the soul, the meaning, the why of a product early on, using thoughtful strategic design.
 * Beneath every bad design concept is another more crazy, daring and wonderful. If you don't dig down into crazy ideas and give them a chance, you'll never find the wonderful ones buried beneath them.
+* [Friction Can Improve UX](https://uxplanet.org/when-friction-in-design-is-good-for-ux-e2dd82cfab67)
 
 ## Microinteraction
 
@@ -175,3 +181,7 @@ Basecamp designed around an activity and enabled thousands of potentially very d
 Product design is all about metaphors. Every icon, every button, and every interaction is a metaphor for something in the physical world. The Dropbox icon is a metaphor for a storage box. Click-and-drag is a metaphor for picking things up with your hand.
 
 But some metaphors mean different things in different cultures. In United States, an owl represents wisdom. In Finland and India, an owl can represent foolishness.
+
+## Videos
+
+* [Debbie Millman, Design Matter](https://transition.percolate.com/debbie-millman-design-technology/)
