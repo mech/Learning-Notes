@@ -7,4 +7,7 @@
 
 * Conversational form
 * Move away from "data entry" look
-* 
+
+## Validation
+
+* [Native form validation — part 1](https://medium.com/samsung-internet-dev/native-form-validation-part-1-bf8e35099f1d)

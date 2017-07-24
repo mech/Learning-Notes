@@ -2,6 +2,8 @@
 
 * [Return of the Unauthenticated, Unfirewalled protocols](https://ma.ttias.be/return-unauthenticated-unfirewalled-protocols/)
 * [Target="_blank" - the most underestimated vulnerability ever](https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/)
+* [IPLeak](https://ipleak.net/)
+* [VPN Comparison Chart](https://thatoneprivacysite.net/vpn-comparison-chart/)
 
 ## Threat Modeling
 

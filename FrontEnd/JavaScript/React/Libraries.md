@@ -59,6 +59,8 @@ When paging, you can use arrow key. We also need to buffer and throttle requests
 
 If there are only 2 or 3 pages worth of data, why not just show all?
 
+* [sematable](https://github.com/sematext/sematable)
+* [Facebook's fixed-data-table](https://github.com/facebook/fixed-data-table)
 * [reactable](https://github.com/glittershark/reactable)
 * [react-table](https://github.com/tannerlinsley/react-table)
 * [csvtotable](https://github.com/vividvilla/csvtotable)
@@ -161,3 +163,4 @@ input.addEventListener('change', () => {
 * [react-mde - React Markdown Editor](https://github.com/andrerpena/react-mde)
 * [Anchorme - Tiny, fast, efficient, feature rich Javascript library to detect links/URLs/Emails in text and convert them to clickable HTML anchor links](https://alexcorvi.github.io/anchorme.js/)
 * [Alloy Editor](http://alloyeditor.com/)
+* [Creating a rich text editor - Part 1 - Barebones Editor](http://bitwiser.in/2017/04/11/creating-rte-barebones-editor.html)

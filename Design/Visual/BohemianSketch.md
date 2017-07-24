@@ -84,6 +84,11 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 * [Auto-Layout: Introducing Stacks — Flexbox for Sketch](https://medium.com/sketch-app-sources/auto-layout-introducing-stacks-flexbox-for-sketch-c8a11422c7b5)
 * [Stacks - Flexbox](https://animaapp.github.io/docs/v1/guide/12-stacks-flexbox.html)
 
+## Icons
+
+* [Icons8 - Many interesting icons](https://icons8.com)
+* [Intro to Icons](http://introtoicons.com/)
+
 ## People
 
 * [Jon Moore](https://medium.com/@jon.moore)

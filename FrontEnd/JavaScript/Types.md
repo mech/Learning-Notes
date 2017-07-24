@@ -24,6 +24,7 @@ What's the purpose of type checking?
 * Keeping a type discipline can be an advantage for long term maintainability
 * [Flow is nominal typing](https://flowtype.org/docs/classes.html#structural-vs-nominal-typing-for-classes)
 * [TypeScript is structural typing](https://www.typescriptlang.org/docs/handbook/type-compatibility.html)
+* [If TypeScript is so great, how come all notable ReactJS projects use Babel?](https://discuss.reactjs.org/t/if-typescript-is-so-great-how-come-all-notable-reactjs-projects-use-babel/4887)
 
 ---
 

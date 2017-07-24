@@ -107,9 +107,11 @@ The strength of window functions is not pagination, but analytical calculation.
 * [pg_partman](https://github.com/keithf4/pg_partman)
 * [partitionable](https://github.com/pacuna/partitionable)
 
-## Date
+## Date and Time
 
 * [Dealing With User Timezones in Postgres](http://idlehands.codes/dealing-with-timezones-in-postgres)
+* [Dealing With Time Zones Using Rails and Postgres](http://brendankemp.com/essays/dealing-with-time-zones-using-rails-and-postgres/)
+* [How to deal with timestamps?](https://www.depesz.com/2014/04/04/how-to-deal-with-timestamps/)
 
 ```sql
 WHERE inserted_at
@@ -164,6 +166,7 @@ EXCLUDE USING gist (
 > offset pagination is broken and there are other ways to paginate
 
 * [Five ways to paginate in Postgres, from the basic to the exotic](https://www.citusdata.com/blog/2016/03/30/five-ways-to-paginate/)
+* [Build JSON API Responses With Postgres CTEs](https://58.185.193.190/fmi/xml/cnt/79126%20Microsoft%20Certificate%201.pdf?-db=particulars&-lay=particulars&-recid=89215&-field=document(1))
 
 ## PL/V8
 

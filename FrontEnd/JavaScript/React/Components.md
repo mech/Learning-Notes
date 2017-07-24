@@ -9,6 +9,7 @@
 * [React FAQ Site](https://reactfaq.site/)
 * [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react)
 * [React Patterns](https://github.com/chantastic/reactpatterns.com)
+* [React Bits - React patterns, techniques, tips and tricks](https://github.com/vasanthk/react-bits)
 * [React A-ha Moments](https://tylermcginnis.com/react-aha-moments/)
 * [Exploration: Front-end JavaScript at Artsy in 2017](https://artsy.github.io/blog/2017/02/05/Front-end-JavaScript-at-Artsy-2017/)
 * [10 React Mini Patterns](https://hackernoon.com/10-react-mini-patterns-c1da92f068c5#.7ev5n4sus)
@@ -31,6 +32,7 @@
 * [rekit](https://github.com/supnate/rekit)
 * [formidable-react-starter](https://github.com/FormidableLabs/formidable-react-starter)
 * [OkCupid file structure](https://tech.okcupid.com/how-okcupid-organizes-its-multi-page-react-app/)
+* [quantum-blox](https://github.com/metaphorical/quantum-blox)
 
 ## Storybook
 
@@ -59,6 +61,7 @@ const App = () => (
 
 ## Reusable Components
 
+* [Building a React Component Library - Part 1](https://hackernoon.com/building-a-react-component-library-part-1-d8a1e248fe6c)
 * Reusable components shouldn't worry about where data is coming from. It should come from the parent as `props`.
 * Reusable should deal with its interaction however and not rely on parent.
 
@@ -74,6 +77,7 @@ const App = () => (
 * [How to create a Redux-Form with validation and initialized values](https://www.davidmeents.com/blog/create-redux-form-validation-initialized-values/)
 * [Form Validation Example With React](https://stvmlbrn.github.io/2017/01/16/form-validation-with-react.html)
 * [Submitting Form Data With React](https://stvmlbrn.github.io/2017/04/07/submitting-form-data-with-react.html)
+* [Native form validation — part 1](https://medium.com/samsung-internet-dev/native-form-validation-part-1-bf8e35099f1d)
 
 ```js
 // Generic change handler
@@ -290,6 +294,25 @@ this.setState(prevState => ({ expanded: !prevState.expanded }))
 ```
 
 The 2nd argument to `setState` to a callback function which will be invoked when `setState` has finished and the component is re-rendered. It's best to use other lifecycle method rather than relying on this callback function.
+
+Remember that functional `setState` is async, so can't reference outdated events from within the closure:
+
+```js
+// Problematic
+handleChange(event) {
+  this.setState(() => ({
+    searchTerm: event.target.value
+  }))
+}
+
+// Solution
+handleChange(event) {
+  const value = event.target.value
+  this.setState(() => ({
+    searchTerm: value
+  }))
+}
+```
 
 ## PropTypes
 
@@ -624,6 +647,8 @@ Good for addressing cross-cutting concerns or common functionalities, such as lo
 * [Abstract your UI from elemental component (`<input>`), then use HOC to add additional functionalities](https://www.youtube.com/watch?v=5rtbSYl70ak)
 * [Why The Hipsters Recompose Everything](https://medium.com/javascript-inside/why-the-hipsters-recompose-everything-23ac08748198#.qbwgfntlp)
 * [Higher Order Components: Theory and Practice](http://engineering.blogfoster.com/higher-order-components-theory-and-practice/)
+* [Reusable State with Higher Order Components](https://daveceddia.com/extract-state-with-higher-order-components/)
+* [React Higher Order Components in depth](https://medium.com/@franleplant/react-higher-order-components-in-depth-cf9032ee6c3e)
 
 Benefits of HOC:
 

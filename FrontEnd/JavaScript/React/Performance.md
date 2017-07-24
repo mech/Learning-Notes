@@ -7,6 +7,11 @@
 * [Optimizing the Performance of Your React Application](https://auth0.com/blog/optimizing-react/)
 * [React is Slow, React is Fast: Optimizing React Apps in Practice](https://marmelab.com/blog/2017/02/06/react-is-slow-react-is-fast.html)
 * [React at 60fps](https://hackernoon.com/react-at-60fps-4e36b8189a4c)
+* [Performance Problems and Solutions in React.js Part 1](https://blog.axosoft.com/2017/03/30/performance-solutions-react-js-pt-1/)
+* [A Deep Dive into React Perf Debugging](http://benchling.engineering/deep-dive-react-perf-debugging/)
+* [Twitter Lite and High Performance React Progressive Web Apps at Scale](https://medium.com/@paularmstrong/twitter-lite-and-high-performance-react-progressive-web-apps-at-scale-d28a00e780a3)
+* [**React at Light Speed**](https://blog.vixlet.com/react-at-light-speed-78cd172a6411)
+* [45% Faster React Functional Components, Now](https://medium.com/missive-app/45-faster-react-functional-components-now-3509a668e69f)
 
 ```
 http://localhost:3000?react_perf
@@ -58,7 +63,15 @@ class Item extends React.PureComponent {
 
 Don't forget to avoid the common mistakes that make the `PureComponent` less effective, such as generating new functions inside the `render()`, or using constant as props.
 
+## render()
+
+* Do as little work as possible in the `render()` function
+* Function binding and Object/Array literals are bad for performance
+
 ## Recompose
+
+* [How to add state to functional components using recompose](http://blog.jakoblind.no/2017/04/03/how-to-add-state-to-functional-components-using-recompose/)
+* [Optimizing React Performance with Stateless Components](https://www.sitepoint.com/optimizing-react-performance-stateless-components/)
 
 Functional components can't use `shouldComponentUpdate`.
 

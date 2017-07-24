@@ -11,6 +11,7 @@ APIs should be a key component of your deployment strategy. Without a widespread
 * [Writing a Hypermedia API client in Ruby](https://robots.thoughtbot.com/writing-a-hypermedia-api-client-in-ruby)
 * [Designing robust and predictable APIs with idempotency](https://stripe.com/blog/idempotency)
 * [REST Anti-Patterns](https://www.infoq.com/articles/rest-anti-patterns)
+* [Ultimate Guide to API Design](https://blog.qmo.io/ultimate-guide-to-api-design/)
 
 ---
 

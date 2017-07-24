@@ -25,6 +25,7 @@ const clear = () => console.clear()
 * [Learn the fundamentals of functional programming](https://medium.freecodecamp.com/learning-the-fundamentals-of-functional-programming-425c9fd901c6#.qchw5q8go)
 * [Writing Elegant Code With React, Redux and Ramda](https://medium.com/javascript-inside/the-elegance-of-react-ebc21a2dcd19)
 * [Functional Programming Jargon](https://github.com/hemanth/functional-programming-jargon)
+* [Learn FP with React](https://jaysoo.ca/2017/04/30/learn-fp-with-react-part-1/)
 
 ```js
 // Functions can be anonymous
@@ -78,6 +79,10 @@ const log = userLogs('mech')
 
 log('attempted to load')
 ```
+
+## flatMap
+
+* [Functional pattern: flatMap](http://2ality.com/2017/04/flatmap.html)
 
 ## Functor
 

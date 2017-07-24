@@ -35,6 +35,7 @@ PCI Security Council deprecated SSLv3 and TLS 1.0 for commercial transactions.
 * [SO: Are HTTPS URLs encrypted?](https://stackoverflow.com/questions/499591/are-https-urls-encrypted/499602#499602)
 * [CertBot](https://certbot.eff.org/)
 * [Video: Browser Security in 2017](https://www.youtube.com/watch?v=vvZRYUBFX-8)
+* [Nginx Doc: Configuring HTTPS servers](https://nginx.org/en/docs/http/configuring_https_servers.html)
 
 ---
 

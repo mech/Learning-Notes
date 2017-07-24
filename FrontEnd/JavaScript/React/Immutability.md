@@ -6,6 +6,7 @@ Equality check for value like string, boolean and integer is simple. Equality ch
 
 Immutable.js allows us to detect changes in JavaScript objects/arrays without resorting to the inefficiencies of deep equality checks, which in turn allows React to avoid expensive re-render operations when they are not required.
 
+* [How To Use Immutable.js in a React Redux Application](https://codebrahma.com/how-to-use-immutable-js-in-a-react-redux-application/)
 * [React, Redux and Immutable.js: Ingredients for Efficient Web Applications](https://www.toptal.com/react/react-redux-and-immutablejs)
 * [updeep - Easily update nested frozen objects and arrays in a declarative and immutable manner](https://github.com/substantial/updeep)
 * [Immutable Data Structures and JavaScript](http://jlongster.com/Using-Immutable-Data-Structures-in-JavaScript)

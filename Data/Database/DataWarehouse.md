@@ -5,6 +5,7 @@
 * [active_reporting](https://github.com/t27duck/active_reporting)
 * [ransack - Object-based searching](https://github.com/activerecord-hackery/ransack)
 * [Processing Streaming Data at a Large Scale with Kafka](https://www.youtube.com/watch?v=-NMDqqW1uCE)
+* [Should You Use a Rowstore or a Columnstore?](http://blog.memsql.com/should-you-use-a-rowstore-or-a-columnstore/)
 
 In normal business data processing, a write typically correspond to a transaction taking place. It is interactive and support ad-hoc queries.
 
@@ -41,6 +42,13 @@ Analytic query needs to scan over huge datasets, only reading a few columns per 
 If your read is compute-intensive because you need to query a lot of places, you may want to do more work at write time to compute result ahead of time so you can do less at read time.
 
 Warehouse systems need to be read-optimized as most workload consists of ad-hoc queries that touch large amounts of historical data.
+
+* Rowstores are better at random reads and random writes
+* Columnstores are better at sequential reads and sequential writes
+
+---
+
+* Dimensional tables can benefits from rowstore since it is read more randomly and not sequentially
 
 ## Bitmap vs B-tree Index
 

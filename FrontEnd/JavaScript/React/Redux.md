@@ -15,6 +15,7 @@
 > The main purpose of Redux is to isolate state management from I/O side effects.
 
 * [Dissecting Twitter’s Redux Store](https://medium.com/statuscode/dissecting-twitters-redux-store-d7280b62c6b1)
+* [Diving Deeper into Twitter’s Redux Store: Adventures in Minified Vendor Javascript](https://medium.com/@nuncamind/diving-deeper-into-twitters-redux-store-adventures-in-minified-vendor-javascript-67fbac5dc219)
 * [What's So Great About Redux?](https://medium.com/@modernserf/whats-so-great-about-redux-ac16f1cc0f8b)
 * [mobx-state-tree](https://github.com/mobxjs/mobx-state-tree)
 * [Redux or MobX: An attempt to dissolve the Confusion](https://www.robinwieruch.de/redux-mobx-confusion/)
@@ -28,6 +29,9 @@
 * [react-redux-realworld-example-app](https://github.com/gothinkster/react-redux-realworld-example-app)
 * [What are the disadvantages of storing all your state in a single immutable atom?](https://github.com/reactjs/redux/issues/1385#issuecomment-290466442)
 * [The SoundCloud Client in React + Redux](https://www.robinwieruch.de/the-soundcloud-client-in-react-redux/)
+* [What is the right way to do asynchronous operations in Redux?](https://decembersoft.com/posts/what-is-the-right-way-to-do-asynchronous-operations-in-redux/)
+* [Some Redux Internals](https://medium.com/@jankjr_/dissecting-redux-864039c6cf59)
+* [How to make your React app fully functional, fully reactive, and able to handle all those crazy side effects](https://medium.freecodecamp.org/how-to-make-your-react-app-fully-functional-fully-reactive-and-able-to-handle-all-those-crazy-e5da8e7dac10)
 
 Redux helps us enforce good state boundary. You do not want to misapply it by storing form state in the store. It is not meant for that.
 
@@ -756,3 +760,7 @@ function* watch() {
   yield* takeLatest('USER_FETCH', fetchUser)
 }
 ```
+
+## Examples
+
+* [reddit-mobile](https://github.com/reddit/reddit-mobile)

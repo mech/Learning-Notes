@@ -9,6 +9,7 @@ There are 2 client-side navigation component: `window.location` and `window.hist
 * [The One Thing you need to know about React Router 4](https://medium.com/@thegreengreek/the-one-thing-you-need-to-know-about-react-router-4-34e27cbe7b53)
 * [Redux-First Routing](https://medium.freecodecamp.org/an-introduction-to-the-redux-first-routing-model-98926ebf53cb)
 * [Redux-First Router — A Step Beyond Redux-Little-Router](https://medium.com/faceyspacey/pre-release-redux-first-router-a-step-beyond-redux-little-router-cd2716576aea)
+* [Changing Old Habits in React Router 4](https://medium.com/@ivanmontiel/changing-old-habits-in-react-router-4-8483ee5e087c)
 * The best Redux-based apps design structure based on Redux state, and not on URL state. URL is just another place to store state externally, like a database.
 
 ```
@@ -79,6 +80,15 @@ const Route = ({ pattern, component: Component }) => {
     return null
   }
 }
+```
+
+```js
+// Props passed are useful for navigation
+<Route exact path="/" component={Home} />
+
+// However, the above approach cannot pass properties from parent
+// component down into sub-components, to do this, you need
+<Route exact path="/" render={() => <Home stuff={stuff} />} />
 ```
 
 ## Pattern Matching
@@ -154,6 +164,7 @@ const DefaultLayout = ({ component: Component, ...rest }) => (
 * [`System.import()` will be deprecated in webpack 3](https://github.com/webpack/webpack/issues/3098)
 * [react-async-component](https://github.com/ctrlplusb/react-async-component)
 * [**react-perimeter**](https://github.com/aweary/react-perimeter)
+* [Code Splitting across multiple bundles](https://frint.js.org/guides/code-splitting/)
 
 **Use Babel plugin: `syntax-dynamic-import`**
 
