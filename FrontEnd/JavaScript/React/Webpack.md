@@ -58,6 +58,25 @@ plugins: [
 ]
 ```
 
+## create-react-app
+
+* [Porting enterprise React app to create-react-app](https://medium.com/@KarandikarMihir/porting-enterprise-react-app-to-create-react-app-bfb565a25460)
+* [Tweaking Configuration For React Scripts In Create React App](https://medium.com/@shubheksha/tweaking-configuration-for-react-scripts-in-create-react-app-d91e9d03a42f)
+* [Configure create-react-app without ejecting](https://medium.com/@kitze/configure-create-react-app-without-ejecting-d8450e96196a)
+
+---
+
+What we want from CRA:
+
+* Support for CSS Module
+* Code splitting with react-loadable
+* Storybook support
+
+### Ejecting
+
+* [Configure create-react-app without ejecting ⏏](https://medium.com/@kitze/configure-create-react-app-without-ejecting-d8450e96196a)
+* [custom-react-scripts](https://github.com/kitze/custom-react-scripts)
+
 ## Tree Shaking
 
 * Relies on ES6 module definition
@@ -71,13 +90,6 @@ export { shake, bake }
 import { bake } from './shake'
 bake()
 ```
-
-## Code Splitting
-
-2 splitting worth doing:
-
-1. Vendor chunks
-2. Application chunks
 
 ## NamedModulesPlugin
 

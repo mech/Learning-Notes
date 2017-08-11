@@ -1,6 +1,7 @@
 # Computer Science
 
 * [10,000 times faster than MySQL?](https://brigade.engineering/10-000-times-faster-than-mysql-7296389e74bb#.kw0f0r6ce)
+* [Learn X in Y](https://learnxinyminutes.com/)
 
 ## Big O
 

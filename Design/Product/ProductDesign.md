@@ -1,6 +1,20 @@
 # Product Design
 
+> I did it because I'm one of those guys who needs a pressure to make relevant or quality stuff.
+
+> Dare enough to share your work even if its half baked.
+
+---
+
 > Delivering simple, respectful, subtle and harmonious product - MUJI Philosophy
+
+---
+
+> If you don't put out an imperfect version of yourself, you're not creating a story of how you got better that someone else can benefit from. - Sean McCabe
+
+---
+
+> Failed assumption is necessary in our design explorations. We need more crappy work.
 
 ---
 
@@ -46,6 +60,14 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 
 ---
 
+> Don't be afraid to throw things away. When we start planning a new, relatively large undertaking at Dribbble (or anywhere else I've been before) I always volunteer to sketch what the entire ecosystem of this new app/feature/whatever could look like. I let the team know I have no emotional attachment to this artifact and explain that it is simply a baseline for us to work from. By doing this, we can see the entire undertaking holistically and not in a vacuum. Then we can see how one change can have a ripple effect on everything else.
+
+> If you're not throwing things away you aren't replacing them with anything better.
+
+
+---
+
+* [Design without purpose is happening left and right](https://uxdesign.cc/pretty-pixels-vs-functional-design-35170e413d67)
 * [Why hire more designers?](https://medium.com/the-year-of-the-looking-glass/why-hire-more-designers-fa270c4bc085)
 * [Apple's 2016 in review](https://chuqui.com/2017/01/apples-2016-in-review/)
 * [Quality Design Articles](https://svbset.com/)
@@ -56,6 +78,7 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 * [Bad gear design](https://www.youtube.com/watch?v=EQdnsrkjo6o)
 * [Iteration is not design](https://medium.com/the-design-innovator/iteration-is-not-design-668695445f76)
 * [Use this exercise to solve any Product Design Challenge](https://medium.muz.li/a-super-simple-exercise-for-solving-almost-any-product-design-challenge-f9e6c0019d7d)
+* [Feature Fatigue](https://www.chargebee.com/blog/saas-product-feature-prioritization/)
 
 ## Software influence behavior
 
@@ -71,6 +94,7 @@ This has performance issues because cashier will be slow to adjust price for a d
 
 ## Advice
 
+* Set constraints. Whatever it is!
 * Lean UX allows you to embrace continuous change to focus on outcome instead of feature. Sense and respond.
 * Product need to improve in fast pace. Iterate on product and learn new thing and trigger scepticism.
 * You MUST fail fast and fail early.

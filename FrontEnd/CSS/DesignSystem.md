@@ -15,6 +15,7 @@ Maintain a visual language, UI elements, components and page types to realize su
 
 Living documentation based on executable examples.
 
+* [Learning from Lego: A Step Forward in Modular Web Design](https://alistapart.com/article/learning-from-lego-a-step-forward-in-modular-web-design)
 * [The Future of Design Tools Isn’t Prototyping: Introducing Systems](https://www.uxpin.com/studio/design-systems/future-design-tools-isnt-prototyping-introducing-systems-uxpin/)
 * [Design Systems Sprint 0: The Silver Bullet of Product Development](https://medium.com/@marcintreder/design-systems-sprint-0-the-silver-bullet-of-product-development-8c0ed83bf00d)
 * [Design system template by Brad Frost](https://bradfrost.github.io/style-guide-guide/)

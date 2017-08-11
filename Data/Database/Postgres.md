@@ -1,17 +1,29 @@
 # Postgres
 
+* [The Internals of PostgreSQL](http://www.interdb.jp/pg/)
 * [PostgreSQL Exercises](https://pgexercises.com/)
 * [Our Postgres Infrastructure](http://blog.honeybadger.io/our-postgres-infrastructure/)
 * [Introduction to PostgreSQL physical storage](http://rachbelaid.com/introduction-to-postgres-physical-storage/)
 * [Chapter 66. Database Physical Storage](https://www.postgresql.org/docs/10/static/storage.html)
 * [Postgres at Any Scale](https://www.youtube.com/watch?v=_wU2dglywAU)
 * [HypoPG - hypothetical indexes](https://github.com/dalibo/hypopg)
+* [5 Things I wish my grandfather told me about ActiveRecord and Postgres](https://medium.com/carwow-product-engineering/5-things-i-wish-my-grandfather-told-me-about-activerecord-and-postgres-93416faa09e7)
+* [My Top 10 Postgres Features and Tips for 2016](http://www.craigkerstiens.com/2015/12/29/my-postgres-top-10-for-2016/)
+* [pg_cron: Run periodic jobs in PostgreSQL](https://www.citusdata.com/blog/2016/09/09/pgcron-run-periodic-jobs-in-postgres/)
 
 ```
 ▶ \x auto
 ```
 
+## Rollup
+
+* [Efficient rollup tables with HyperLogLog in Postgres](https://www.citusdata.com/blog/2017/06/30/efficient-rollup-with-hyperloglog-on-postgres/)
+
 ## Indexing
+
+* [Introducing Dexter, the Automatic Indexer for Postgres](https://medium.com/@ankane/introducing-dexter-the-automatic-indexer-for-postgres-5f8fa8b28f27)
+* [How About Hypothetical Indexes ?](https://rjuju.github.io/postgresql/2015/07/02/how-about-hypothetical-indexes.html)
+* Indexes add overhead to write operations like INSERT, UPDATE and DELETE. Because of this, you may not want to index write-heavy tables.
 
 **BRIN**
 
@@ -66,7 +78,7 @@ Most single queries should be aiming for around a 1ms query time.
 
 * If you need more than 500 connections, use PGBouncer.
 
-## EXPLAIN ANALYZE
+## EXPLAIN and EXPLAIN ANALYZE
 
 * [Explaining the unexplainable](https://www.depesz.com/2013/05/09/explaining-the-unexplainable-part-3)
 * [explain.depesz.com - Postgres explain analyze made readable](https://explain.depesz.com/)
@@ -76,6 +88,7 @@ Most single queries should be aiming for around a 1ms query time.
 ## Lateral Join
 
 * [Postgres powerful new join type: Lateral](https://blog.heapanalytics.com/postgresqls-powerful-new-join-type-lateral/)
+* [PostgreSQL's LATERAL JOIN](https://medium.com/kkempin/postgresqls-lateral-join-bfd6bd0199df)
 
 ## SKIP LOCKED
 
@@ -112,6 +125,7 @@ The strength of window functions is not pagination, but analytical calculation.
 * [Dealing With User Timezones in Postgres](http://idlehands.codes/dealing-with-timezones-in-postgres)
 * [Dealing With Time Zones Using Rails and Postgres](http://brendankemp.com/essays/dealing-with-time-zones-using-rails-and-postgres/)
 * [How to deal with timestamps?](https://www.depesz.com/2014/04/04/how-to-deal-with-timestamps/)
+* [Working With Time in Postgres](http://www.craigkerstiens.com/2017/06/08/working-with-time-in-postgres/)
 
 ```sql
 WHERE inserted_at
@@ -136,6 +150,7 @@ ROUND(AVG(EXTRACT(EPOCH FROM sale.completed_at) - EXTRACT(EPOCH FROM sale.create
 * 12 operators and 23 functions (as of 9.5)
 * 2 different indexing methods
 * Good for storing, but need to be replaced entirely for updates
+* [How to convert json string to text?](https://stackoverflow.com/questions/27215216/postgres-how-to-convert-json-string-to-text/31757242#31757242)
 
 ## Range
 
@@ -166,7 +181,8 @@ EXCLUDE USING gist (
 > offset pagination is broken and there are other ways to paginate
 
 * [Five ways to paginate in Postgres, from the basic to the exotic](https://www.citusdata.com/blog/2016/03/30/five-ways-to-paginate/)
-* [Build JSON API Responses With Postgres CTEs](https://58.185.193.190/fmi/xml/cnt/79126%20Microsoft%20Certificate%201.pdf?-db=particulars&-lay=particulars&-recid=89215&-field=document(1))
+* [Build JSON API Responses With Postgres CTEs](http://www.codedependant.net/2017/04/30/build-json-api-responses-postregres-with-cte/)
+* [We need tool support for keyset pagination](http://use-the-index-luke.com/no-offset)
 
 ## PL/V8
 
@@ -179,9 +195,18 @@ EXCLUDE USING gist (
 * 9.6 has Parallel Sequential Scan
 * Parallel aggregate and parallel join
 
+## Full-Text Search
+
+* [Postgres Text Search: Simple, Adequate](http://info.pagnis.in/blog/2017/06/18/postgres-text-search-simple-adequate/)
+
 ## Backup
 
 * pg_dump is good for logical backup with less than 100GB of data
 * Once you reached data that can't fit into RAM, you need to use physical backup like [WAL-E](https://github.com/wal-e/wal-e)
 * [3 Methods of backing up Postgres](https://www.urbackup.org/backup_postgresql.html)
 * [WAL-E - Continuous archiving for Postgres](https://github.com/wal-e/wal-e)
+
+## Videos
+
+* [PostgresOpen](https://www.youtube.com/user/postgresopen)
+* [dotScale 2017 - Marco Slot - Scaling out (Postgre)SQL](https://www.youtube.com/watch?v=xJghcPs0ibQ)

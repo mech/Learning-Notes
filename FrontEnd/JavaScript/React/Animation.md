@@ -12,6 +12,10 @@
 * [One weird trick to performant touch-response animations with React](https://medium.com/@owencm/one-weird-trick-to-performant-touch-response-animations-with-react-9fe4a0838116)
 * [Val Head - Getting started with animation in React](http://us2.campaign-archive1.com/?u=6fbaddc8c1fce7588d1a35cb2&id=61966a3f9a)
 * [react-stack-grid - Look at the animation example](https://github.com/tsuyoshiwada/react-stack-grid)
+* [Build a Reusable Scroll List Component with Animated scrollTo in React](https://codeburst.io/build-a-reusable-scroll-list-component-with-animated-scrollto-in-react-4b4da8815f5b)
+* [Animated page transitions with React Router 4, ReactTransitionGroup and Animated](https://hackernoon.com/animated-page-transitions-with-react-router-4-reacttransitiongroup-and-animated-1ca17bd97a1a)
+* [Demystifying requestAnimationFrame](https://medium.com/@bkakadiya42/demystifying-the-requestanimationframe-867c3db6c217)
+* [Animating React Components with CSS and Styled-Components](https://codeburst.io/animating-react-components-with-css-and-styled-components-cc5a0585f105)
 
 React ships with react-addons-css-transition-group which is a component that helps us build animations in a declarative way.
 
@@ -44,11 +48,14 @@ const Transition = () => (
 }
 ```
 
+The `*-enter` and `*-enter-active` classes are applied when a new element is added as a child of the transition group.
+
 ## Libraries
 
 * [React Overdrive - Simple and powerful animations](https://react-overdrive.now.sh/)
 * [react-move](https://github.com/tannerlinsley/react-move)
 * [mo.js](http://mojs.io/)
 * Web Animations API - not mature yet
+* [Flight - Ultra Simple Animation Compositions for React](http://www.react-flight.io/)
 
 ## Physicality, Velocity, Spring, Realism, Snapping, Friction

@@ -13,6 +13,10 @@
 
 With 18 new CSS Grid properties, there are many ways to achieve the same thing with the Grid layout. This is what makes it overwhelming.
 
+## Differences with Flexbox
+
+* Flexbox is one-dimensional, it can be horizontally or vertically, but never both at the same time
+
 ## Fallback
 
 * Use Feature Queries

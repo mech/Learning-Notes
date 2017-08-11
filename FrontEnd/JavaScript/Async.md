@@ -29,6 +29,33 @@ async function getUser(username) {
 }
 ```
 
+## React
+
+To use Async/Await on lifecycle methods, you need `babel-polyfill`.
+
+```js
+entry: [
+  'babel-polyfill',
+  './index.jsx'
+]
+
+class App extends React.Component {
+  state = {
+    answer: 42
+  }
+
+  asyncFunc = () => {
+    return Promise.resolve(37)
+  }
+  
+  async componentDidMount() {
+    this.setState({
+      answer: await this.asyncFunc()
+    })
+  }
+}
+```
+
 ## RxJS
 
 * [Netflix JavaScript Talks - RxJS + Redux + React = Amazing!](https://www.youtube.com/watch?v=AslncyG8whg)

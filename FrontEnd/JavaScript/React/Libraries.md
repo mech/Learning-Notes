@@ -1,15 +1,22 @@
 # Libraries
 
+> Look at jQuery UI for props inspiration? - [Compound Components](https://www.youtube.com/watch?v=hEGg-3pIHlE)
+
 https://github.com/hsnaydd/moveTo/
 
 https://dollarshaveclub.github.io/stickybits/
 
+* [**JS.Coach**](https://js.coach/)
 * [**Awesome React Components & Libraries**](https://github.com/brillout/awesome-react-components/blob/master/readme.md)
 * [React Desktop](http://reactdesktop.js.org/)
 * [Smart modules for React](https://github.com/smalldots/smalldots)
 * [Best Practices on building a UI component library for your company](https://www.youtube.com/watch?v=j8eBXGPl_5E)
 * [Carte Blanche - Like Storybook?](https://github.com/carteb/carte-blanche)
 * [CUID compared to UUID or shortid](https://github.com/ericelliott/cuid)
+
+## Ajax
+
+* [better-fetch](https://github.com/Swizec/better-fetch)
 
 ## For Development
 
@@ -32,6 +39,10 @@ https://dollarshaveclub.github.io/stickybits/
 * [react-primitives](https://github.com/lelandrichardson/react-primitives)
 * [Blueprint](http://blueprintjs.com/)
 * [buffer-components](https://github.com/bufferapp/buffer-components)
+
+## Blank Slate
+
+* [react-skeletor](https://github.com/trainline/react-skeletor)
 
 ## Case Study
 
@@ -71,6 +82,7 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 * [Design Better Data Tables](https://medium.com/mission-log/design-better-data-tables-430a30a00d8c)
 * User tabular figures - `font-feature-settings: "tnum" 1`
 * [Free Work Sans has excellent true tabular lining figures](https://fonts.google.com/specimen/Work+Sans)
+* [Use HOC for pagination, sorting, etc.](https://codebrahma.com/using-higher-order-components-react-application/)
 
 ## Spreadsheet
 
@@ -88,6 +100,15 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 * [GooglePlaceAutocomplete](https://github.com/ydeshayes/googlePlaceAutocomplete)
 * [Algolia](https://community.algolia.com/react-instantsearch/)
 * [react-categorized-tag-input](http://erizocosmi.co/react-categorized-tag-input/)
+
+## Keyboard and Mouse
+
+* [react-combo-keys](https://github.com/SamyPesse/react-combo-keys)
+
+## Scroll
+
+* [Build a Reusable Scroll View Component with Animated scrollTo Abilities in React](https://codedaily.io/screencasts/48/Build-a-Reusable-Scroll-View-Component-with-Animated-scrollTo-Abilities-in-React)
+* [scroll-into-view](https://github.com/KoryNunn/scroll-into-view)
 
 ## Date Picker and Calendar
 
@@ -140,6 +161,88 @@ input.addEventListener('change', () => {
 ## Tabs
 
 * [react-tabs-redux](https://github.com/patrik-piskay/react-tabs-redux)
+* [tab-container-component](https://github.com/plantain-00/tab-container-component)
+* [react-multistep](https://github.com/srdjan/react-multistep)
+
+```html
+<Tabs>
+  <TabList>
+    <Tab>Tacos</Tab>
+    <Tab disabled>Burritos</Tab>
+    <Tab>Coconut Korma</Tab>
+  </TabList>
+  <TabPanels>
+    <TabPanel><p>Tacos are delicious</p></TabPanel>
+    <TabPanel><p>Burritos are bad</p></TabPanel>
+    <TabPanel><p>Coconut Korma is nice</p></TabPanel>
+  </TabPanels>
+</Tabs>
+```
+
+You will want to use implicit props to pass down information on which `<Tab>` and `<TabPanel>` to be selected.
+
+```js
+// We do not want to do this to use a props because we want
+// <Tab> to manage the state entirely in silent
+<TabPanels activeIndex={2}>
+</TabPanels>
+```
+
+```js
+class Tabs extend Component {
+  state = {
+    // Keep track of which tab is active
+    activeIndex: 1
+  }
+  
+  render() {
+    // We map over children and give each child component
+    // additional implicit props on the state managed by
+    // this <Tab>
+    const children = React.Children.map(this.props.children, (child) => {
+      return React.cloneElement(child, {
+        activeIndex: this.state.activeIndex
+      })
+    })
+    
+    return (
+      <div className="tabs">
+        {children}
+      </div>
+    )
+  }
+}
+```
+
+We can also use context instead of `React.Children.map`:
+
+```js
+class Tabs extend Component {
+  static childContextTypes = {
+    activeIndex: PropTypes.number.isRequired,
+    onSelectTab: PropTypes.func.isRequired,
+  }
+
+  state = {
+    activeIndex: 0
+  }
+  
+  getChildContext() {
+    return {
+      activeIndex: this.state.activeIndex,
+      onSelectTab: this.selectTabIndex
+    }
+  }
+  
+  render() {
+    return (
+      <div className="tabs">
+        {this.props.children}
+      </div>
+    )
+  }
+}
+```
 
 ## Sortable and Drag and Drop
 
@@ -164,3 +267,4 @@ input.addEventListener('change', () => {
 * [Anchorme - Tiny, fast, efficient, feature rich Javascript library to detect links/URLs/Emails in text and convert them to clickable HTML anchor links](https://alexcorvi.github.io/anchorme.js/)
 * [Alloy Editor](http://alloyeditor.com/)
 * [Creating a rich text editor - Part 1 - Barebones Editor](http://bitwiser.in/2017/04/11/creating-rte-barebones-editor.html)
+* [Draft-js building search and replace functionality](https://medium.com/@juliandoesstuff/draft-js-building-search-and-replace-functionality-688fd84f64cb)

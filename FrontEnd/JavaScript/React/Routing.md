@@ -1,9 +1,15 @@
 # Routing
 
+```
+npm install --save react-router-dom
+```
+
 > In RR4, routes aren't really routes, they are just components. Routes are now more like components that simply conditionally show or hide a target component or element based on whether the current URL matches the given path. If you focus on this key point, all the features and functionality that the new format gives you become so much more intuitive to understand.
 
 There are 2 client-side navigation component: `window.location` and `window.history` and history.js make it easy to work with Location API and History API.
 
+* [**React Router v4 Unofficial Migration Guide**](https://codeburst.io/react-router-v4-unofficial-migration-guide-5a370b8905a)
+* [Build your own RR v4](https://tylermcginnis.com/build-your-own-react-router-v4/)
 * [RR4 docs](https://react-router.now.sh/)
 * [Simple declarative Redux state with React Router 4 server side rendering](https://medium.com/@AlexFaunt/satisfying-your-apps-state-343118b0730d#.gh5ihu9ii)
 * [The One Thing you need to know about React Router 4](https://medium.com/@thegreengreek/the-one-thing-you-need-to-know-about-react-router-4-34e27cbe7b53)
@@ -58,6 +64,55 @@ const MatchWithFade = ({ component: Component, ...rest }) => (
 )
 ```
 
+**CRUD Route**
+
+```js
+const CrudRoute = ({ resource, list, create, edit, show, remove}) => {
+  const ResourcePage = component => routeProps => createElement(component, {resource, ...routeProps})
+  
+  return (
+    <Switch>
+      <Route exact path={`/${resource}`} render={ResourcePage(list)} />
+      <Route exact path={`/${resource}/create`} render={ResourcePage(create)} />
+      <Route exact path={`/${resource}/:id`} render={ResourcePage(edit)} />
+      <Route exact path={`/${resource}/:id/show`} render={ResourcePage(show)} />
+    </Switch>
+  )
+}
+```
+
+## Flowtype
+
+```js
+import type { Match } from 'react-router-dom'
+```
+
+## Passing Props to Route
+
+If you ever want to pass some data to Route Component:
+
+```js
+import preload from './data.json'
+
+// Note that the <Details> component also spread out the
+// props from the original <Route>
+const App = () => (
+  <BrowserRouter>
+    <div className="app">
+      <Switch>
+        <Route
+          path="/details/:id"
+          component={(props) => {
+            const selectedShow = preload.shows.find(show => props.match.params.id === show.id)
+            return <Details show={selectedShow} {...props} />
+          }}
+        />
+      </Switch>
+    </div>
+  </BrowserRouter>
+)
+```
+
 ## Animation
 
 * [react-router v4 animated with data-driven-motion](https://gist.github.com/tkh44/4cfedc32762966e318b24fcfe6f3564a)
@@ -104,12 +159,22 @@ This make sense as any number of components might match a given location and the
 
 This pose a problem for `/` root URL where it will match everything.
 
-## Exactly
+## Switch and Exact
 
 Do not use exactly if you have nested routes or else refreshing will not work.
 
 ```js
 <Route path="/e" component={Employment} />
+```
+
+You need to use `<Switch>` to match route exclusively and additionally add `exact` attribute also:
+
+```js
+<Switch>
+  <Route exact path="/posts" component={PostList} />
+  <Route exact path="/posts/:id" component={PostEdit} />
+  <Route exact path="/posts/:id/show" component={PostShow} />
+</Switch>
 ```
 
 ## URL Hierarchy and Component Hierarchy
@@ -132,6 +197,10 @@ this.context.router.transitionTo('/')
 Use the `<Redirect>` component or expose the history props with the `withRouter` HOC.
 
 ## Outlets / Nested Route
+
+There is no more nested route like in v3. You need to explicitly put it where the child component is at. This is the greatest new feature of v4: you can put `<Route>` components everywhere!
+
+Note that the path must be absolute and you can use `match.url` to compose the path. See [this](https://github.com/ReactTraining/react-router/pull/4539) for relative path support.
 
 * [Reusing layouts in React Router 4](https://simonsmith.io/reusing-layouts-in-react-router-4/)
 
@@ -165,6 +234,7 @@ const DefaultLayout = ({ component: Component, ...rest }) => (
 * [react-async-component](https://github.com/ctrlplusb/react-async-component)
 * [**react-perimeter**](https://github.com/aweary/react-perimeter)
 * [Code Splitting across multiple bundles](https://frint.js.org/guides/code-splitting/)
+* [Code-splitting with Webpack on the component level: Old but still good](https://medium.com/@sejoker/code-splitting-with-webpack-on-the-component-level-ac50748d80de)
 
 **Use Babel plugin: `syntax-dynamic-import`**
 
@@ -333,4 +403,7 @@ const MyComponent = () => {
 
 ## Server Side Rendering
 
+> Ultimately server side rendering is very hard to add in a meaningful way without also taking opinionated decisions about routing and data fetching. We don't intend to make such decisions at this time so Next.js indeed seems like a better match for you. - Dan Abramov on CRA position
+
 * [SSR with Create React App v2](https://medium.com/@benlu/ssr-with-create-react-app-v2-1b8b520681d9)
+* [Server side rendering with router v4 & redux](http://crypt.codemancers.com/posts/2017-06-03-reactjs-server-side-rendering-with-router-v4-and-redux/)

@@ -4,6 +4,8 @@
 
 ## Statistics
 
+Statistical significant
+
 ### Averages
 
 * [Moving Average](http://www.investopedia.com/terms/m/movingaverage.asp)

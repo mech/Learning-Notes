@@ -3,6 +3,7 @@
 * [Email Bugs Database](https://github.com/hteumeuleu/email-bugs)
 * [Gmail finally support embedded `<style>`, `display: none` and media queries in Sept 2016](https://developers.google.com/gmail/design/css)
 * [Email Client Market Share](https://emailclientmarketshare.com/)
+* [Bojler is an email boilerplate and a guideline for writing HTML code](https://slicejack.github.io/bojler/getting-started)
 
 ```html
 <!-- If you want to disable auto-scaling -->

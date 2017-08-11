@@ -1,11 +1,14 @@
 # Flexbox
 
+* [**Flexing your Flexbox muscles**](http://www.benmvp.com/slides/2017/fluent/flexbox.html#/)
 * [Build with Flexbox](http://flexbox.buildwithreact.com/)
 * [How To Approach CSS layouts in 2017 — and beyond](https://medium.com/flexbox-and-grids/css-flexbox-grid-layout-how-to-approach-css-layouts-in-2017-and-beyond-685deef03e6c)
 * [11 things I learned reading the flexbox spec](https://hackernoon.com/11-things-i-learned-reading-the-flexbox-spec-5f0c799c776b)
 * [Flexbox Grid - A grid system based on the flex display property](http://flexboxgrid.com/)
 * [Don't build a Bootstrap style grid-system with Flexbox](https://codepen.io/morganfeeney/post/dont-build-bootstrap-style-grid-systems-with-flexbox)
 * [Bulma - A modern CSS framework based on Flexbox](http://bulma.io/)
+* [Building Mega Menus with Flexbox](https://www.sitepoint.com/building-mega-menus-flexbox/)
+* [Getting Started with CSS Flexbox](https://blog.zipboard.co/getting-started-with-css-flexbox-f5b2b5a5b87d)
 
 Traditionally, we have 3 ways to do layout:
 

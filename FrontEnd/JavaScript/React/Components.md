@@ -5,6 +5,9 @@
 
 > Learning functional programming completely changed my design process. There's a lot of parallels you can directly apply to your work day to day — it's about composition and I think this is something super useful for the design system we're working on. Rather than starting with a layout or a big marketing page and breaking it down, I love the idea of starting with the smallest possible primitives and building up and up and up.
 
+* [Single Responsibility Components](https://www.youtube.com/watch?v=pSdp92Up8O8)
+* [**Under the hood: ReactJS**](https://bogdan-lyashenko.github.io/Under-the-hood-ReactJS/)
+* [React Architecture and Best Practices](https://github.com/markerikson/react-redux-links/blob/master/react-architecture.md)
 * [React FAQ](https://github.com/timarney/react-faq)
 * [React FAQ Site](https://reactfaq.site/)
 * [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react)
@@ -19,6 +22,27 @@
 * [Functional React — Get your App outta my Component](https://medium.com/@adamterlson/functional-react-series-part-1-get-your-app-outta-my-component-92656ae13e25?ref=mybridge.co)
 * [Embracing stateless functional component](https://medium.com/javascript-inside/embracing-functions-in-react-d7d558d8bd30)
 * [Examples app to build](https://medium.freecodecamp.org/every-time-you-build-a-to-do-list-app-a-puppy-dies-505b54637a5d)
+* [React Behavioral Wrapper Components](https://medium.com/@fastphrase/react-behavioral-wrapper-components-97b87a0108e8)
+* [All the Conditional Renderings in React](https://www.robinwieruch.de/conditional-rendering-react/)
+
+---
+
+1. Static components (HTML).
+2. Determine where state should live. Data flow down.
+3. Inverse data flow up. Propagating events from child to parent.
+4. Go to top-level container component to communicate with data server.
+
+> There are a lot of similarities in the way we build UIs with React and the principles of FP, and the more we are aware of it, the better our code will be - `UI = f(state)`
+
+## ReactElement vs ReactComponent
+
+* ReactElement is stateless and immutable. It is basically a plain JavaScript object.
+* ReactComponent has a render() that is expected to return ReactElement.
+
+## Examples and Case Studies
+
+* [real-world-react-apps](https://github.com/jeromedalbert/real-world-react-apps)
+* [Some good touch and animation examples](https://medium.com/@sanchitgn/what-ive-learnt-developing-a-modern-progressive-web-app-d3abe69933fa)
 
 ## Fiber
 
@@ -34,6 +58,10 @@
 * [OkCupid file structure](https://tech.okcupid.com/how-okcupid-organizes-its-multi-page-react-app/)
 * [quantum-blox](https://github.com/metaphorical/quantum-blox)
 
+---
+
+* [Universal create-react-app, step by step](https://medium.com/leanjs/universal-create-react-app-step-by-step-b80ba68d125d)
+
 ## Storybook
 
 * [Using React within a Design System](https://medium.com/buildit/using-react-within-a-design-system-73d4bb0cc822)
@@ -44,7 +72,11 @@
 
 1. Use Recompose before implement your own HOC
 2. Lift state up or down before using Redux
-3. 
+3. Don't initialize states using props
+4. Store things in state that your are going to render()
+5. State changes over time. So let's eliminate time. Let's be declarative and beat the passage of time.
+6. Look at jQuery for widget options/props
+7. Use Compound Components to compose just like `<option>` inside `<select>`
 
 ## Verbs for component name
 
@@ -64,167 +96,25 @@ const App = () => (
 * [Building a React Component Library - Part 1](https://hackernoon.com/building-a-react-component-library-part-1-d8a1e248fe6c)
 * Reusable components shouldn't worry about where data is coming from. It should come from the parent as `props`.
 * Reusable should deal with its interaction however and not rely on parent.
+* Small components with clean interface
 
-## Forms
+## Composition Patterns
 
-> Thinking in React apply to form also: It's best not to think in terms of "getting data from a form or user input". You get your data from your "state".
-
-* [React.js controlled components](http://blog.klipse.tech/react/2016/12/20/react-controlled-components.html)
-* [Form Validation as HOC](https://medium.com/javascript-inside/form-validation-as-a-higher-order-component-pt-1-83ac8fd6c1f0#.fv2zg6miy)
-* [react-reform](https://github.com/codecks-io/react-reform)
-* [react-jsonschema-form](https://github.com/mozilla-services/react-jsonschema-form)
-* [Web Form Validation: Best Practices](https://www.smashingmagazine.com/2009/07/web-form-validation-best-practices-and-tutorials/)
-* [How to create a Redux-Form with validation and initialized values](https://www.davidmeents.com/blog/create-redux-form-validation-initialized-values/)
-* [Form Validation Example With React](https://stvmlbrn.github.io/2017/01/16/form-validation-with-react.html)
-* [Submitting Form Data With React](https://stvmlbrn.github.io/2017/04/07/submitting-form-data-with-react.html)
-* [Native form validation — part 1](https://medium.com/samsung-internet-dev/native-form-validation-part-1-bf8e35099f1d)
-
-```js
-// Generic change handler
-handleChange({ target }) {
-  this.setState({
-    [target.name]: target.value
-  })
-}
-```
-
-```js
-const AddTodo = ({onAddClick}) => {
-  let input
-  
-  return (
-    <div>
-      <input ref={node => input = node} />
-      <button onClick={() => {
-        onAddClick(input.value)
-        input.value = ''
-      }}>
-        Add Todo
-      </button>
-    </div>
-  )
-}
-```
-
-What API is good for inputs:
-
-```js
-<Form onSubmit={this.handleSubmit}>
-  <Text name="email" label="Email" isRequired isEmail />
-  <Password name="password" label="Password" isRequired />
-</Form>
-```
-
-## Handling Events
-
-* [Best alternative to binding in render()](https://daveceddia.com/react-best-alternative-bind-render/)
-* [React Binding Patterns: 5 Approaches for Handling `this`](https://medium.com/@housecor/react-binding-patterns-5-approaches-for-handling-this-92c651b5af56?ref=mybridge.co)
-* [Event Switch](https://github.com/chantastic/reactpatterns.com#event-switch)
-* [React - to Bind or Not to Bind](https://medium.com/shoutem/react-to-bind-or-not-to-bind-7bf58327e22a)
-
-Synthetic Events are reusable and there is a single global handler. This means you cannot store a synthetic event and reuse it later because it becomes `null` right after the action. If you really want to store it, you can use `persist()`.
-
-```js
-// SyntheticEvent is pooled and reuse and will be reset, so this won't work
-handleClick(evt) {
-  setTimeout(function() {
-    // ERROR - name will be null
-    console.log(evt.target.name)
-  }, 1000)
-}
-```
-
-```js
-// Note that this returns a function
-select(choice) {
-  return (evt) => {
-    this.setState({
-      payMethod: choice
-    })
-  }
-}
-
-// Note our onClick is calling a function first that return a function
-// This is common pattern for passing arguments to handlers.
-// We close over the choice argument when we call `select`.
-render() {
-  return (
-    <PayPalPaymentChoice
-      onClick={this.select('PayPal')}
-    />
-  )
-}
-```
-
-```js
-// `todos` and `onTodoClick` are promoted to the props because we
-// want this to be a presentational component
-// BAD - poor performance as it need to re-render whenever props
-// changes due to function binding and lack of shouldComponentUpdate
-const TodoList = ({
-  todos,
-  onTodoClick
-}) => (
-  <ul>
-    {todos.map(todo =>
-      <Todo
-        key={todo.id}
-        {...todo}
-        onClick={() => onTodoClick(todo.id)}
-      />
-    )}
-  </ul>
-)
-
-// At the top-level App
-<TodoList
-  todos={visibleTodos}
-  onTodoClick={id =>
-    store.dispatch({
-      type: 'TOGGLE_TODO',
-      id
-    })
-  }
-/>
-```
-
-```js
-// Notice that the remove() is passed in as well as id
-const Item = ({ id, title, remove }) => (
-  <div className="item">
-    {title}
-    <span
-      className="deleteItem"
-      onClick={() => remove(id)}
-    >Delete</span>
-  </div>
-)
-```
-
-These are 2 **BAD** ways to do binding in component, because it will cause Component to re-render as different reference has been passed every time:
-
-* `<Component onClick={() => this.handleClick()} />`
-* `<Component onClick={this.handleClick.bind(this)} />`
-
-We need to pre-bind them in the constructor.
-
-## Refs
-
-* [When to use Ref on a DOM node in React](https://www.robinwieruch.de/react-ref-attribute-dom-node/)
-
-In case we need it, React gives us access to the actual DOM nodes in a way that we can perform imperative operations with them (like 3rd-party libraries).
-
-Using refs is imperative (i.e. `input.focus()`) and we should avoid using refs as much as possible because they force the code to be more imperative and harder to read and maintain.
-
-It is important to note that when setting the ref callback on a non-native component, the reference will be the whole instance itself and not the DOM node:
-
-```js
-<Input ref={element => this.element = element} />
-```
+* Props
+* Container and Presentational
+* HOC
+* Recompose
+* Function as Child
+* Compound Component with **implicit props**
 
 ## Props
 
 Be careful when passing props as `null`. Any default prop value will not be used if the props is `null`.
+
+> What existed as mutable state is passed down as immutable props.
+
+* props are immutable
+* Use `componentWillReceiveProps` to re-render if props changes
 
 ## States
 
@@ -235,12 +125,36 @@ Be careful when passing props as `null`. Any default prop value will not be used
 * [`setState()` Gate - Navigating React `setState()` Behavior Confusion](https://medium.com/javascript-scene/setstate-gate-abc10a9b2d82#.66ktn17qa)
 * [Functional `setState` is the future of React](https://medium.freecodecamp.com/functional-setstate-is-the-future-of-react-374f30401b6b#.2b7ljzb5c)
 * [5 types of application states](http://jamesknelson.com/5-types-react-application-state/)
+* As much as possible, treat state also as immutable, same as props
 
 State is only reserved for interactivity, that is, data changes over time.
 
 Every time we can compute (derivables) the final value from the props, we should not store any data into the state.
 
-Eliminate time as much as possible. If your `render()` accumulate state over time, you will want to eliminate that. See how Ryan Florence [remove time](https://www.youtube.com/watch?v=kp-NOggyz54).
+```js
+// We receive currency and value from props
+// And we always show them together
+this.state = {
+  price: `${props.currency}${props.value}`
+}
+
+// We may think that it would be better to store it in the state
+// and use the value inside the render()
+render() {
+  return <div>{this.state.price}</div>
+}
+
+// Problem is when the props change, the UI won't re-render
+// because the constructor is called once only!
+// Instead we should create a helper/getter function
+getPrice() {
+  return `${this.props.currency}${this.props.value}`
+}
+```
+
+### Eliminate Time
+
+**Eliminate time** as much as possible. If your `render()` accumulate state over time, you will want to eliminate that. See how Ryan Florence [remove time](https://www.youtube.com/watch?v=kp-NOggyz54).
 
 Declaring state let you eliminate time.
 
@@ -277,7 +191,30 @@ class FetchUser extends Component {
 
 Every time the state changes React runs the `render()` again unless told by `shouldComponentUpdate()` not to. Or else it's default behavior is to re-render every single time.
 
+```js
+function shouldIKeepSomethingInReactState() {
+  if (canICalculateFromPros()) {
+    // Don't duplicate date from props in state
+    // Calculate what you can in render() method
+    return false
+  }
+  
+  if (!amIUsingItInRenderMethod()) {
+    // Don't keep something in the state if you don't use it
+    // for rendering.
+    // For example, API subscriptions are better off as custom
+    // private fields or variables in external modules.
+    return false
+  }
+  
+  // You can use React state for this!
+  return true
+}
+```
+
 ### Use function in `setState`
+
+* [When to use callback function in setState](https://medium.com/@voonminghann/when-to-use-callback-function-of-setstate-in-react-37fff67e5a6c)
 
 See [for more details](https://medium.com/@shopsifter/using-a-function-in-setstate-instead-of-an-object-1f5cfd6e55d1#.u0tfkb84b)
 
@@ -313,6 +250,24 @@ handleChange(event) {
   }))
 }
 ```
+
+Remember to use Higher Order Function if you extract your functional setState outside of your component:
+
+```js
+setSearchResult(result) {
+  const { hits, page } = result
+  this.setState(updateResult(hits, page))
+}
+
+// Somewhere outside the component
+// This function return a function that match functional setState's signature
+const updateResult = (hit, page) => (prevState, props) => {
+}
+```
+
+### Do not initialize state using props
+
+The `constructor` is only called once when the component is created. If you initialize state using props and later change the props values, the component will never use that value.
 
 ## PropTypes
 
@@ -417,6 +372,13 @@ componentDidUpdate(prevProps, prevState) {
 
 ```js
 class Provider extends Component {
+  // Here, we promise to provide these context
+  static childContextTypes = {
+    store: PropTypes.object.isRequired
+  }
+
+  // This is a lifecycle hook
+  // Whenever a child request for context, this will be called
   getChildContext() {
     return {
       store: this.props.store
@@ -426,10 +388,6 @@ class Provider extends Component {
   render() {
     return this.props.children
   }
-}
-
-Provider.childContextTypes = {
-  store: React.PropTypes.object
 }
 ```
 
@@ -479,6 +437,8 @@ const PriceWithCurrency = withCurrency(Price)
 ```
 
 ## Container and Presentational Pattern
+
+The components above leaf components are primarily concerned with orchestration.
 
 React components typically contain a mix of **logic** and **presentation**.
 
@@ -556,320 +516,6 @@ class Log extends PureComponent {
 <Log>{currentUser}</Log>
 
 <Speak message={this.state.message} />
-```
-
-## Higher Order Components (HOC) - Behavior rather than Markup
-
-A type of Container Component.
-
-Components by itself are great to achieve reusability and composability. But what if different components in different domains share the same behavior? Early React gives use mixins to share behaviors.
-
-```js
-// Pre-React 0.13
-// Creating mixins is very similar to creating a component
-const WindowResize = {
-  getInitialState() {
-    return {
-      innerWidth: window.innerWidth
-    }
-  }
-  
-  componentDidMount() {
-    window.addEventListener('resize', this.handleResize)
-  }
-  
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleResize)
-  }
-  
-  handleResize() {
-    this.setState({
-      innerWidth: window.innerWidth
-    })
-  }
-}
-
-// Switching that into HOC
-const withInnerWidth = Component => (
-  class extends React.Component {
-    constructor(props) {
-      super(props)
-      
-      this.state = {
-        innerWidth: window.innerWidth
-      }
-      
-      this.handleResize = this.handleResize.bind(this)
-    }
-    
-    componentDidMount() {
-      window.addEventListener('resize', this.handleResize)
-    }
-  
-    componentWillUnmount() {
-      window.removeEventListener('resize', this.handleResize)
-    }
-
-    handleResize() {
-      this.setState({
-        innerWidth: window.innerWidth
-      })
-    }
-    
-    render() {
-      return <Component {...this.props} {...this.state} />
-    }
-  }
-)
-
-// Wrapped component
-const MyComponent = ({ innerWidth }) => {
-  console.log('window.innerWidth', innerWidth)
-}
-
-// Enhanced component
-const MyComponentWithInnerWidth = withInnerWidth(MyComponent)
-```
-
-Mixins tend to communicate with the component using the state, while HOC communicate using props which is much more nicer.
-
-The advantages of HOC over mixins: we do not pollute state and we do not require the component to implement any function.
-
-Behavioral-Oriented Component. HOC encapsulate behavior and typically does not render anything. It enhance and compose component.
-
-Good for addressing cross-cutting concerns or common functionalities, such as logging and tracking and listening for window resize events.
-
-* [Single-Prop HOCs – Better Composition in React](https://www.okgrow.com/posts/compose-react-sphoc)
-* [Facebook official HOC doc](https://facebook.github.io/react/docs/higher-order-components.html)
-* [HOC: A React Application Design Pattern from SitePoint](https://www.sitepoint.com/react-higher-order-components/)
-* [Functions as child components and HOC](http://rea.tech/functions-as-child-components-and-higher-order-components/)
-* [Real World Examples of Higher-Order Components](http://rea.tech/reactjs-real-world-examples-of-higher-order-components/)
-* [Abstract your UI from elemental component (`<input>`), then use HOC to add additional functionalities](https://www.youtube.com/watch?v=5rtbSYl70ak)
-* [Why The Hipsters Recompose Everything](https://medium.com/javascript-inside/why-the-hipsters-recompose-everything-23ac08748198#.qbwgfntlp)
-* [Higher Order Components: Theory and Practice](http://engineering.blogfoster.com/higher-order-components-theory-and-practice/)
-* [Reusable State with Higher Order Components](https://daveceddia.com/extract-state-with-higher-order-components/)
-* [React Higher Order Components in depth](https://medium.com/@franleplant/react-higher-order-components-in-depth-cf9032ee6c3e)
-
-Benefits of HOC:
-
-* Do things before and/or after it calls that component
-* Avoid rendering the component if certain criteria is not met
-* Update the props passed to that component, or add new props
-* Transform the output of rendering a component (e.g. wrap with extra DOM elements, etc.)
-* Enforce Single Responsibility Principle. Authenticated HOC should only be concerned with authentication and route handler component should be concerned with route handling only.
-
-It's rare to need to build a HOC; typically most components you build will directly render nodes to the DOM. Building a HOC that's abstract enough to reuse take planning. It's often easier to write a HOC after you see recurring patterns within your components.
-
-```js
-// HOCs are function that take a component as input and return an enhanced one as output
-const HOC = Component => EnhancedComponent
-```
-
-```js
-// Simple HOC
-export default function(ComposedComponent) {
-  class Authentication extends Component {
-    render() {
-      return <ComposedComponent {...props} />
-    }
-  }
-  
-  return Authentication
-}
-
-// If we remove the first and last line, you'll have no problem seeing
-// that it is just a normal component that import ComposedComponent
-```
-
-Using Redux for authenticated component:
-
-```js
-export default function(ComposedComponent) {
-  class Authentication extends Component {
-    componentWillMount() {
-      if (!this.props.authenticated) {
-        <Redirect to="/" />
-      }
-    }
-    
-    componentWillUpdate(nextProps) {
-      if (!nextProps.authenticated) {
-        <Redirect to="/" />
-      }
-    }
-    
-    render() {
-      return <ComposedComponent {...props} />
-    }
-  }
-  
-  function mapStateToProp(state) {
-    return { authenticated: state.auth.authenticated }
-  }
-  
-  return connect(mapStateToProp)(Authentication)
-}
-```
-
-```js
-const withPlayQueue = (component) => class PlayQueue extends React.Component {
-  state = {
-    isPlaying: false,
-    playQueue: [],
-    currentTrack: -1
-  }
-  
-  addTrack = (track) => this.setState({
-    playQueue: this.state.playQueue.concat(track)
-  })
-  
-  render() {
-    const playQueue = {
-      addTrack: this.addTrack
-    }
-    
-    return (
-      <View>
-        <Player />
-        <Component playQueue={playQueue} {...this.props} />
-      </View>
-    )
-  }
-}
-
-const App = () => { ... }
-module.exports = withPlayQueue(App)
-```
-
-```js
-const showHide = (Title, Content) => class ShowHide extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { isActive: false }
-    this.onToggle = this.onToggle.bind(this)
-  }
-  
-  render() {
-    return (
-      <div>
-        <Title onClick={this.onToggle} />
-        { this.state.isActive && <Content /> }
-      </div>
-    )
-  }
-  
-  onToggle() {
-    this.setState({ isActive: !this.state.isActive })
-  }
-}
-
-const Title = props => <p {...props}>title<p>
-const Content = props => <p>content<p>
-
-const ConcreteToggle = showHide(Title, Content)
-```
-
-**Tracking metric HOC example**
-
-The trackingData were specific to every page, but the tracking calls were not.
-
-```js
-import tracker from './tracking-api'
-
-const metricTracking = ComposedComponent => React.createClass({
-  componentDidMount() {
-    tracker.trackPageLoad(this.props.trackingData)
-  },
-  
-  componentDidUpdate() {
-    tracker.trackPageLoad(this.props.trackingData)
-  },
-  
-  render() {
-    return <ComposedComponent {...this.props} />
-  }
-})
-```
-
-**Some more examples**
-
-```js
-// We are returning a stateless functional component
-const withClassName = Component => props => (
-  <Component {...props} className="my-class" />
-)
-```
-
-### HOC with partial application
-
-* [Curry or Partial Application?](https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8#.fxhqqauo2)
-
-You can use partial application to let your HOC receives parameters first before applying it.
-
-```js
-const HOC = args => Component => EnhancedComponent
-```
-
-See the [Recompose](https://github.com/acdlite/recompose) library fore more examples.
-
-```js
-const enhanced = compose(
-  flattenProp('user),
-  renameProp('username', 'name'),
-  withInnerWidth
-)
-```
-
-**Warning:** Don't abuse HOC. Every time you wrap a component into a HOC, you are adding a new `render()`, a new lifecycle method call, and memory allocation. It may be a performance issues.
-
-### HOC with Ramda's compose or [Recompose](https://github.com/acdlite/recompose)
-
-```js
-import { compose } from 'ramda'
-// import { compose } from 'lodash/fp'
-// import { compose } from 'recompose'
-// import { compose } from 'react-apollo'
-
-const VisibleTodoList = compose(
-  withRouter,
-  connect(mapStateToProps, mapDispatchToProps)
-)(TodoList)
-
-// It can get more and more
-const enhance = compose(
-  withRouter,
-  withState('searchTerm', 'setSearchTerm'),
-  connect(mapStateToProps, mapDispatchToProps),
-  graphql(RepositoryQuery, {
-    options: ({ match }) => ({
-      variables: {
-        owner: match.params.owner,
-        name: match.params.name
-      }
-    })
-  })
-)
-
-export default enhance(Repository)
-```
-
-```js
-// One way to write the compose()
-const compose = (...fns) =>
-  (arg) =>
-    fns.reduce(
-      (composed, f) => f(composed),
-      arg
-    )
-```
-
-`compose()` takes in multiple functions as arguments and returns a single function. The returned function expects one argument `arg`. When this function is invoked, the `fns` array is piped starting with the argument we want to send through the function. The `arg` becomes the initial value for `composed` and then each iteration of the reduced callback returns. `composed` is the result of the previous function output. Eventually, the last function will be invoked and the last result returned.
-
-This is just a simple example of `compose()` and does not handle more than one argument or deal with arguments that are not functions. Other implementations of `compose()` may use `reduceRight` which would compose the functions in reverse order.
-
-```js
-// 4 HOC to decorate Todos dumb component
-compose(myTodos, createTodo, deleteTodo, isAdmin)(Todos)
 ```
 
 ## Keys
@@ -976,11 +622,13 @@ export Menu
 * [Guillermo Rauch](https://rauchg.com/essays)
 * [Jack Hsu](https://jaysoo.ca/)
 
-## Examples
-
-* [Some good touch and animation examples](https://medium.com/@sanchitgn/what-ive-learnt-developing-a-modern-progressive-web-app-d3abe69933fa)
-
 ## Videos
 
 * [React Component Patterns by Michael Chan](https://www.youtube.com/watch?v=YaZg8wg39QQ)
 * [ReactCasts](https://www.youtube.com/channel/UCZkjWyyLvzWeoVWEpRemrDQ/videos)
+
+## Books
+
+* [React Design Patterns and Best Practices (DONE)](https://www.safaribooksonline.com/library/view/react-design-patterns/9781786464538/)
+* [Learning React](https://www.safaribooksonline.com/library/view/learning-react-1st/9781491954614/ch02.html)
+* Fullstack React - Page 392/825

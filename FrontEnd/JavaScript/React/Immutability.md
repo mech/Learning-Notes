@@ -6,6 +6,7 @@ Equality check for value like string, boolean and integer is simple. Equality ch
 
 Immutable.js allows us to detect changes in JavaScript objects/arrays without resorting to the inefficiencies of deep equality checks, which in turn allows React to avoid expensive re-render operations when they are not required.
 
+* [Handling State in React: Four Immutable Approaches to Consider](https://medium.com/@housecor/handling-state-in-react-four-immutable-approaches-to-consider-d1f5c00249d5)
 * [How To Use Immutable.js in a React Redux Application](https://codebrahma.com/how-to-use-immutable-js-in-a-react-redux-application/)
 * [React, Redux and Immutable.js: Ingredients for Efficient Web Applications](https://www.toptal.com/react/react-redux-and-immutablejs)
 * [updeep - Easily update nested frozen objects and arrays in a declarative and immutable manner](https://github.com/substantial/updeep)
@@ -31,14 +32,37 @@ You need to also be mindful of:
 * Random numbers
 * Logging
 
+```js
+handleProductUpVote(productId) {
+  // While map() create a new array, the element inside
+  // is references the original
+  const nextProducts = this.state.products.map((product) => {
+    if (product.id === productId) {
+      // Since the element still references the original
+      // we need to clone it...
+      return Object.assign({}, product, {
+        votes: product.votes + 1,
+      });
+    } else {
+      return product;
+    }
+  });
+    this.setState({    products: nextProducts,  });}
+```
+
 ### Array
 
 * [Array's mutator methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Mutator_methods)
 
 ```js
+// Do not use push()
 items.concat(newItem)
 
 [...items, newItem]
+
+// Put item in front
+const items = this.state.items.slice()
+item.unshift('first item')
 ```
 
 ### Object

@@ -26,6 +26,7 @@ const clear = () => console.clear()
 * [Writing Elegant Code With React, Redux and Ramda](https://medium.com/javascript-inside/the-elegance-of-react-ebc21a2dcd19)
 * [Functional Programming Jargon](https://github.com/hemanth/functional-programming-jargon)
 * [Learn FP with React](https://jaysoo.ca/2017/04/30/learn-fp-with-react-part-1/)
+* [How I rediscovered my love for JavaScript after throwing 90% of it in the trash e](https://hackernoon.com/how-i-rediscovered-my-love-for-javascript-after-throwing-90-of-it-in-the-trash-f1baed075d1b)
 
 ```js
 // Functions can be anonymous

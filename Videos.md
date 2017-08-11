@@ -17,7 +17,11 @@ document.getElementsByTagName('video')[0].playbackRate = 2;
 * [ReactiveConf](https://www.youtube.com/channel/UCBHdUnixTWymmXBIw12Y8Qg/videos)
 * [dot Conferences](https://www.youtube.com/channel/UCSRhwaM00ay0fasnsw6EXKA)
 * [Full Stack Fest](https://www.youtube.com/channel/UCwoOpKfkyCQHW562hXXQAGg/videos)
+* [Fronteers](https://vimeo.com/fronteers)
+* [Full Stack Talks](https://www.youtube.com/channel/UCpq2_V-9AYYUHSsjoJZPUTg/videos)
 
 ## Innovation and Startups
 
 * [Clayton Christensen (The Innovator's Dilemma) at Startup Grind Global 2016](https://www.youtube.com/watch?v=Zn6-KksdOgE)
+
+* [OSCAMP - Open Source Camp](https://channel9.msdn.com/Events/DXPortugal/OSCAMP-Open-Source-Software-powered-by-Bright-Pixel)

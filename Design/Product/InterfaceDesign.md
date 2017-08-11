@@ -33,6 +33,15 @@
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
 
+## No Spinner
+
+* Disable submit button with "in progress" label, disable form elements
+* Show transitional overlay (e.g. "Connecting to PayPal...")
+* Erase content area of the page
+* No spinners!
+
+## Blank Slate
+
 ## Complexion Reduction
 
 * [Complexion Reduction: A New Trend In Mobile Design](http://www.huffingtonpost.com/entry/complexion-reduction-a-new-trend-in-mobile-design_us_577d828fe4b05b4c02fb8b07)

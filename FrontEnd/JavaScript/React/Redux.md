@@ -14,6 +14,8 @@
 
 > The main purpose of Redux is to isolate state management from I/O side effects.
 
+* [Redux Architecture Guidelines](http://joeellis.la/redux-architecture/)
+* [Redux Architecture and Best Practices](https://github.com/markerikson/react-redux-links/blob/master/redux-architecture.md)
 * [Dissecting Twitter’s Redux Store](https://medium.com/statuscode/dissecting-twitters-redux-store-d7280b62c6b1)
 * [Diving Deeper into Twitter’s Redux Store: Adventures in Minified Vendor Javascript](https://medium.com/@nuncamind/diving-deeper-into-twitters-redux-store-adventures-in-minified-vendor-javascript-67fbac5dc219)
 * [What's So Great About Redux?](https://medium.com/@modernserf/whats-so-great-about-redux-ac16f1cc0f8b)
@@ -32,6 +34,7 @@
 * [What is the right way to do asynchronous operations in Redux?](https://decembersoft.com/posts/what-is-the-right-way-to-do-asynchronous-operations-in-redux/)
 * [Some Redux Internals](https://medium.com/@jankjr_/dissecting-redux-864039c6cf59)
 * [How to make your React app fully functional, fully reactive, and able to handle all those crazy side effects](https://medium.freecodecamp.org/how-to-make-your-react-app-fully-functional-fully-reactive-and-able-to-handle-all-those-crazy-e5da8e7dac10)
+* [How to use React's Provider Pattern](https://www.robinwieruch.de/react-provider-pattern-context/)
 
 Redux helps us enforce good state boundary. You do not want to misapply it by storing form state in the store. It is not meant for that.
 
@@ -51,6 +54,16 @@ This means you should almost never write logic in a plain UI component.
 Many moving parts:
 
 * Store, state, reducers, action creators, actions, async actions, middleware, connected components
+
+## Performance
+
+* [Redux isn't slow, you're just doing it wrong - An optimization guide](https://reactrocket.com/post/react-redux-optimization/)
+
+## State Shape
+
+> Do not store object in Redux. Use plain primitive and serialize it into model object at client side instead.
+
+* [Why not to store objects in Redux](https://medium.com/collaborne-engineering/why-not-to-store-objects-in-redux-7f41243020fc)
 
 ## Compared to MobX
 
@@ -175,7 +188,7 @@ We then pass the normalized records to reducers. Reducers should only store thes
 https://medium.com/@mark.erikson/having-an-entities-slice-is-very-normal-60917516291f#.8hjj34h2y
 
 ```js
-// Using reduce to tag ID
+// Using reduce() to tag ID
 const colors = [
   {
     id: '-xekare',
@@ -198,6 +211,16 @@ const hashColors = colors.reduce(
     title: 'rad red',
     rating: 3
   }
+}
+
+// Use Object.values() to loop through
+// We do not need the keys, just values
+render() {
+  return (
+    {Object.values(props.colors).map(color =>
+      <Color color={color} />
+    )}
+  )
 }
 ```
 
@@ -446,6 +469,7 @@ The reducer is (almost) synonymous with "store", so don't be surprise when peopl
 * [Dispatch INIT after replaceReducer](https://github.com/reactjs/redux/issues/350)
 * [How to dynamically load reducers for code splitting in a Redux application?](https://stackoverflow.com/questions/32968016/how-to-dynamically-load-reducers-for-code-splitting-in-a-redux-application)
 * [redux-injector](https://github.com/randallknutson/redux-injector)
+* [SO - How to dynamically load reducers for code splitting in a Redux application?](https://stackoverflow.com/questions/32968016/how-to-dynamically-load-reducers-for-code-splitting-in-a-redux-application/33044701#33044701)
 
 Don't confuse between state tree and reducers. They are 2 separate things. You can retain your state tree while swapping out reducers during code splitting.
 

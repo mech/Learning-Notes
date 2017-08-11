@@ -1,4 +1,6 @@
-# Type Checking
+# Flow
+
+> When working with types, you find yourself asking this question: What is this? If you can identify it, it has a type.
 
 * [Flow guide](https://github.com/ryyppy/flow-guide)
 
@@ -25,6 +27,7 @@ What's the purpose of type checking?
 * [Flow is nominal typing](https://flowtype.org/docs/classes.html#structural-vs-nominal-typing-for-classes)
 * [TypeScript is structural typing](https://www.typescriptlang.org/docs/handbook/type-compatibility.html)
 * [If TypeScript is so great, how come all notable ReactJS projects use Babel?](https://discuss.reactjs.org/t/if-typescript-is-so-great-how-come-all-notable-reactjs-projects-use-babel/4887)
+* [Typed Redux](https://blog.callstack.io/typed-redux-2aa8bff926ff)
 
 ---
 
@@ -43,11 +46,19 @@ What's the purpose of type checking?
 ▶ yarn add global flow-typed
 ▶ flow-typed install
 
+// Not needed anymore as babel-preset-react will strip flow for us
 ▶ npm install --save-dev babel-plugin-transform-flow-strip-types
 
 // Create .flowconfig file
 ▶ flow init
+
+▶ yarn flow -- init
 ```
+
+Flow want annotation on:
+
+* Declarations
+* Function parameters
 
 ```js
 // Just a simple variable binding
@@ -150,6 +161,25 @@ function isValid(items: Array<string>): boolean {
 }
 ```
 
+## .flowconfig
+
+```
+[ignore]
+.*/node_modules/stylelint/.*
+<PROJECT_ROOT>/node_modules/styled-components/*
+
+[include]
+
+[libs]
+styled-components
+
+[options]
+```
+
+## Any Type
+
+
+
 ## Type Aliases
 
 Make it easy to refer to complex type by simple name. Essential to sharing codebase.
@@ -183,6 +213,14 @@ type Person = {
   (x: string): number, // callable property
   [x: number]: string  // computed property
 }
+```
+
+**Exact Object Types**
+
+```js
+type ObjType = {|
+  value?: string
+|}
 ```
 
 ## Function Types
@@ -456,6 +494,26 @@ function selectStory(props: StoryListItemProps, event: Event) {
 }
 ```
 
+```js
+// mixed is same as any but more safe
+type Props = {
+  value: string,
+  onChange: (value: string) => mixed
+}
+
+type State = {
+  count: number
+}
+
+class MyComponent extend React.Component {
+  props: Props
+  state: State = { count: 0 }
+  
+  render() {
+  }
+}
+```
+
 ## Disjoint Union
 
 ```js
@@ -527,6 +585,20 @@ func validate(user *User) bool {
   return user.Name != ""
 }
 ```
+
+```js
+handleSearchTermChange = (evt: SyntheticKeyboardEvent & { target: HTMLInputElement }) => {
+  this.setState({
+    searchTerm: evt.target.value
+  })
+}
+```
+
+## Variants
+
+* Covariance - Read only
+* Contravariance - Write only
+* Invariance - Read/Write
 
 ## People
 

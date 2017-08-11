@@ -1,5 +1,8 @@
 # React Performance
 
+> Poor design choices often lead to issues and, in the case of React, if we do not put the state in the right place, the risk is that our components are going to render more than needed.
+
+* [Rearchitecting Airbnb's Frontend](https://medium.com/airbnb-engineering/rearchitecting-airbnbs-frontend-5e213efc24d2)
 * [React Performance Tune-up](http://engineering.invisionapp.com/post/react-performance-tune-up/)
 * [Be careful with code splitting using link preload](https://medium.com/reloading/a-link-rel-preload-analysis-from-the-chrome-data-saver-team-5edf54b08715#.ssqki3op6)
 * [High Performance React: 3 New Tools to Speed Up Your Apps](https://medium.freecodecamp.org/make-react-fast-again-tools-and-techniques-for-speeding-up-your-react-app-7ad39d3c1b82)
@@ -12,6 +15,7 @@
 * [Twitter Lite and High Performance React Progressive Web Apps at Scale](https://medium.com/@paularmstrong/twitter-lite-and-high-performance-react-progressive-web-apps-at-scale-d28a00e780a3)
 * [**React at Light Speed**](https://blog.vixlet.com/react-at-light-speed-78cd172a6411)
 * [45% Faster React Functional Components, Now](https://medium.com/missive-app/45-faster-react-functional-components-now-3509a668e69f)
+* [How to Benchmark React Components: The Quick and Dirty Guide](https://engineering.musefind.com/how-to-benchmark-react-components-the-quick-and-dirty-guide-f595baf1014c)
 
 ```
 http://localhost:3000?react_perf
@@ -68,6 +72,45 @@ Don't forget to avoid the common mistakes that make the `PureComponent` less eff
 * Do as little work as possible in the `render()` function
 * Function binding and Object/Array literals are bad for performance
 
+## shouldComponentUpdate
+
+We can tell React to avoid reconciling **some parts of the tree**.
+
+To find out the necessary steps to reduce the DOM operations, React has to fire the render methods of all the components and compare the results with the previous ones.
+
+If nothing changes, no changes will be made in the DOM, which is great. But if our render methods do complex operations, React will take some time to figure out that no operations have to be done, which is not optimal.
+
+We surely want our components to be simple and we should avoid doing expensive operations inside the renderer. However, sometimes we simply cannot manage this and our applications become slow, even if the DOM is not touched at all.
+
+React is not able to figure out which components do not need to be updated but we have a function that we can implement to tell the library when to update a component or not.
+
+## Stateless Functional Components
+
+You can still use stateless components if you implement `shouldComponentUpdate()` on your container component correctly to prevent rendering of their children.
+
+It is beneficial to implement `shouldComponentUpdate()` as high up the tree as possible.
+
+## Constant Props
+
+```js
+// Will always re-render because props is array literal and
+// re-create on every render
+render() {
+  <Item
+    statuses={['open', 'close']}
+  />
+}
+
+// Instead we should do it outside the render()
+const statuses = ['open', 'close']
+...
+render() {
+  <Item
+    statuses={statuses}
+  />
+}
+```
+
 ## Recompose
 
 * [How to add state to functional components using recompose](http://blog.jakoblind.no/2017/04/03/how-to-add-state-to-functional-components-using-recompose/)
@@ -89,3 +132,7 @@ const DatagridBody = ({ ids }) => (
 
 export default pure(DatagridBody)
 ```
+
+## Server-Side Rendering
+
+* [Using Electrode to Improve React Server Side Render Performance By Up To 70%](https://medium.com/walmartlabs/using-electrode-to-improve-react-server-side-render-performance-by-up-to-70-e43f9494eb8b)

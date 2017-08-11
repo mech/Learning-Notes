@@ -17,3 +17,15 @@ Flow uses structural typing for objects and functions, but nominal typing for cl
 ## Interfaces
 
 In addition to classes, we can use interfaces to drive code consistency between domain concepts.
+
+```js
+interface HelloProps {
+  name: string
+}
+
+class Hello extends React.Component<HelloProps, {}> {
+  public render() {
+    return <div>Hello, {this.props.name}</div>
+  }
+}
+```

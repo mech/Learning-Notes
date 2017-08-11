@@ -6,6 +6,7 @@
 * [ransack - Object-based searching](https://github.com/activerecord-hackery/ransack)
 * [Processing Streaming Data at a Large Scale with Kafka](https://www.youtube.com/watch?v=-NMDqqW1uCE)
 * [Should You Use a Rowstore or a Columnstore?](http://blog.memsql.com/should-you-use-a-rowstore-or-a-columnstore/)
+* [ETL for Pros: Getting Data Into MongoDB](https://explore.mongodb.com/vidyard-all-players/andre-spiegel-2?jmp=twt)
 
 In normal business data processing, a write typically correspond to a transaction taking place. It is interactive and support ad-hoc queries.
 

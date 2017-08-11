@@ -46,3 +46,22 @@ We have no idea what screen size our users have. We just can't control that. But
 We should always start with content. Without content, design is meaningless. We design to help users consume content. We don't use content to help users enjoy our designs.
 
 > We often start designing with a box. And then we put smaller boxes inside it. Then later will fill in these boxes with actual content. As Frank Chimero beautifully explains in The Web's Grain, this is just about the worst thing we can do.
+
+```js
+// See https://medium.com/airbnb-engineering/rearchitecting-airbnbs-frontend-5e213efc24d2
+// for ShowAt and HideAt
+import HideAt from '../HideAt'
+import ShowAt from '../ShowAt'
+
+render() {
+  return (
+    <div key={roomTypeId}>
+      <ShowAt breakpoint="mediumAndAbove">
+      </ShowAt>
+      
+      <HideAt breakpoint="mediumAndAbove">
+      </HideAt>
+    </div>
+  )
+}
+```

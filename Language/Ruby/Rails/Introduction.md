@@ -13,6 +13,10 @@ if registered_at < Rails.application.config_for(:registration)['limit'].minutes.
 end
 ```
 
+## ActionCable
+
+* [Realtime with React and Rails](https://blog.codeship.com/realtime-with-react-and-rails/)
+
 ## Performance
 
 * [**Rails Speed**](https://www.railsspeed.com/)

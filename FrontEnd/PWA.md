@@ -6,6 +6,8 @@
 * [create-react-app's discussion on PWA](https://github.com/facebookincubator/create-react-app/issues/1086)
 * [create-react-pwa](https://github.com/jeffposnick/create-react-pwa/blob/master/README.md)
 * [How to speed up your UX with skeleton screens](https://www.sitepoint.com/how-to-speed-up-your-ux-with-skeleton-screens/)
+* [Progressive Web App with Webpack](https://codeburst.io/progressive-web-app-with-webpack-198b073f6c74)
+* [Hacker News readers as Progressive Web Apps](https://hnpwa.com/)
 
 ## PRPL Pattern
 

@@ -25,6 +25,11 @@ if (shouldShowSpinner(fsm, listNode)) {
 }
 ```
 
+## Function Parameters
+
+* [Best practices for JavaScript function parameters](https://codeutopia.net/blog/2016/11/24/best-practices-for-javascript-function-parameters/)
+* [Require Parameters for JavaScript Functions](https://davidwalsh.name/javascript-function-parameters)
+
 ## Arrow Function
 
 ```js
@@ -96,6 +101,8 @@ import { red, yellow } from './colors'
 
 ```js
 class Button extends React.Component {
+  // Actually you do not need constructor and call super(props)
+  // unless you need to use this.props inside the constructor
   constructor(props) {
     super(props)
     
@@ -104,6 +111,21 @@ class Button extends React.Component {
     
     // Binding option 1
     this.handleClick = this.handleClick.bind(this)
+  }
+  
+  // Class properties
+  state = {
+  }
+  
+  // Static properties
+  static propTypes = {
+  }
+  
+  static defaultProps = {
+  }
+  
+  // Binding option 2 and better
+  handleClick = () => {
   }
   
   render() {

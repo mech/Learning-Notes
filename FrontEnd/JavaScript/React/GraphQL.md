@@ -78,3 +78,4 @@ Under-fetching is actually a type error.
 
 * [Lessons from 4 Years of GraphQL](https://www.youtube.com/watch?v=zVNrqo9XGOs)
 * [High Performance GraphQL - DataLoader](https://www.youtube.com/watch?v=c35bj1AT3X8)
+* [Using Apollo with ReactJS and GraphQL - SingaporeJS](https://www.youtube.com/watch?v=JCBVrE59yAI)

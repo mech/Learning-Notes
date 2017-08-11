@@ -14,6 +14,8 @@
 ▶ brew install yarn
 ▶ yarn add --dev webpack
 ▶ yarn info webpack
+
+▶ yarn upgrade-interactive
 ```
 
 ## Deployment
