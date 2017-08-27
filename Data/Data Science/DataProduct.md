@@ -5,6 +5,7 @@ Big Data refers to data sets large enough (Volume) and data streams fast enough 
 Many Big Data sources represent **series of events** that are continuously produced (e.g. tweets, web logs, user transactions, system logs, sensors).
 
 * [Turning Data into Product](http://www.juiceanalytics.com/writing/turning-data-into-product)
+* [How data analytics killed the Premier League's long ball game](https://www.wired.co.uk/article/premier-league-stats-football-analytics-prozone-gegenpressing-tiki-taka)
 
 ## What do people want analytics?
 

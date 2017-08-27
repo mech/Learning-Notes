@@ -8,6 +8,10 @@ http {
 }
 ```
 
+## Compression
+
+* Typically you don't do gzip compression at Node/Rails server
+
 ## Monitoring
 
 * [Nginx Amplify](https://amplify.nginx.com/signup/)

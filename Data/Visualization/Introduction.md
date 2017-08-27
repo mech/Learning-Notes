@@ -7,12 +7,17 @@
 * [How do you draw a circle? We analyzed 100,000 drawings to show how culture shapes our instincts](https://qz.com/994486/the-way-you-draw-circles-says-a-lot-about-you/)
 * [The Book of Shaders](http://thebookofshaders.com/)
 * [100 days of algorithms](https://medium.com/100-days-of-algorithms)
+* [Five Principles for Good Data Visualization](http://achariam.com/dataviz/)
 
 ## Interesting
 
 * [HARC - Human Advancement Research Community](https://harc.ycr.org/member/)
 * [OpenAI](https://blog.openai.com/evolution-strategies/)
 * [Perspective was created by Jigsaw and Google’s Counter Abuse Technology team in a collaborative research project called Conversation-AI](http://perspectiveapi.com/)
+
+## Frequency Tables
+
+
 
 ## Blog
 

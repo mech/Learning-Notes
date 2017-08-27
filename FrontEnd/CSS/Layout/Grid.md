@@ -10,6 +10,7 @@
 * [Stripe Connect: behind the front-end experience](https://stripe.com/blog/connect-front-end-experience)
 * [Is it really safe to start using CSS Grid Layout?](https://www.rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/)
 * [How to Efficiently Master the CSS Grid in a Jiffy](https://medium.com/flexbox-and-grids/how-to-efficiently-master-the-css-grid-in-a-jiffy-585d0c213577)
+* [The Difference Between Explicit and Implicit Grids](https://css-tricks.com/difference-explicit-implicit-grids/)
 
 With 18 new CSS Grid properties, there are many ways to achieve the same thing with the Grid layout. This is what makes it overwhelming.
 

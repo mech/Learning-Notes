@@ -81,10 +81,37 @@ const CrudRoute = ({ resource, list, create, edit, show, remove}) => {
 }
 ```
 
+## Route Function Children
+
+```js
+<Route path={to}>
+  {({ match }) => (
+    <li className={match ? 'active' : ''}>
+      <Link to={to} {...rest} />
+    </li>
+  )}
+</Route>
+
+// Type it
+type Props = {
+  children: (data: { match: boolean }) => React.Node,
+  path: string
+}
+
+class Route extends React.Component<Props>
+```
+
 ## Flowtype
 
 ```js
-import type { Match } from 'react-router-dom'
+import type { Match, RouterHistory } from 'react-router-dom
+
+class Landing extends Component {
+  props: {
+    term: string,
+    history: RouterHistory
+  }
+}
 ```
 
 ## Passing Props to Route
@@ -196,6 +223,18 @@ this.context.router.transitionTo('/')
 
 Use the `<Redirect>` component or expose the history props with the `withRouter` HOC.
 
+Sometimes using the `<Redirect>` may be awkward if you need to check some condition like:
+
+```js
+render() {
+  if (shouldRedirect) {
+    <Redirect />
+  }
+}
+```
+
+In this case, you might as well use `this.props.history.push()`
+
 ## Outlets / Nested Route
 
 There is no more nested route like in v3. You need to explicitly put it where the child component is at. This is the greatest new feature of v4: you can put `<Route>` components everywhere!
@@ -223,6 +262,7 @@ const DefaultLayout = ({ component: Component, ...rest }) => (
 
 ## Code splitting
 
+* [**Code Splitting in Create React App**](http://serverless-stack.com/chapters/code-splitting-in-create-react-app.html)
 * [extract-css-chunks-webpack-plugin - Code splitting with CSS styles](https://github.com/faceyspacey/extract-css-chunks-webpack-plugin)
 * [**Route-based splitting vs Component-based splitting**](https://medium.com/@thejameskyle/react-loadable-2674c59de178#.kbvk273ju)
 * [v2.1.0-beta.28 release note](https://github.com/webpack/webpack/releases/tag/v2.1.0-beta.28)
@@ -406,4 +446,11 @@ const MyComponent = () => {
 > Ultimately server side rendering is very hard to add in a meaningful way without also taking opinionated decisions about routing and data fetching. We don't intend to make such decisions at this time so Next.js indeed seems like a better match for you. - Dan Abramov on CRA position
 
 * [SSR with Create React App v2](https://medium.com/@benlu/ssr-with-create-react-app-v2-1b8b520681d9)
-* [Server side rendering with router v4 & redux](http://crypt.codemancers.com/posts/2017-06-03-reactjs-server-side-rendering-with-router-v4-and-redux/)
+* [Server side rendering with router v4 & redux](http://blog.revathskumar.com/2017/07/reactjs-server-side-rendering-with-router-v4-redux.html)
+* [Zero-configuration pre-rendering - snapshotting](https://medium.com/superhighfives/an-almost-static-stack-6df0a2791319)
+
+Create your `<App>` that can service both client and server. Then use ClientApp.js and server.js to render `<App>` on their own.
+
+server.js is the Express app while ClientApp.js is the Webpack Entry file for client-side.
+
+The `<App>` must be agnostic to server and client.

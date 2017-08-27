@@ -1,5 +1,7 @@
 # Immutability
 
+String and numbers are always immutable by default. However, in Redux, state is almost always represented as an object.
+
 Ideally we want `shouldComponentUpdate` to always return `false`, but that is not realistic. So the next best option is to do simple and fast equality check.
 
 Equality check for value like string, boolean and integer is simple. Equality check for objects, arrays and functions is problematic.
@@ -55,14 +57,22 @@ handleProductUpVote(productId) {
 * [Array's mutator methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Mutator_methods)
 
 ```js
-// Do not use push()
+// To add a new item, instead of push(), we'd use concat()
 items.concat(newItem)
 
+// Or the slow performance spread method
 [...items, newItem]
+
+// Or use Immutable.js List
+const items = List([1, 2, 3])
+const items1 = items.push(3, 4, 5)
 
 // Put item in front
 const items = this.state.items.slice()
 item.unshift('first item')
+
+// To remove an item, instead of splice(), we'd use a simple filter()
+items.filter((s, _idx) => idx !== _idx)
 ```
 
 ### Object

@@ -20,3 +20,7 @@ Focus group = people wash their hand?
 ## Emotional Connector
 
 What is the 2 or 3 emotional connectors for your company. Your customer emotional connection with your company.
+
+## Dunning–Kruger Effect
+
+* The developer might have implemented principles that are unknown to you and you just don't see the benefits because you lack context.

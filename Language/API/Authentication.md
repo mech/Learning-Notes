@@ -9,6 +9,10 @@
 
 ## JWT
 
+* [JWT is a Bad Standard That Everyone Should Avoid](https://paragonie.com/blog/2017/03/jwt-json-web-tokens-is-bad-standard-that-everyone-should-avoid)
+* [Don't recommend JWT](https://github.com/shieldfy/API-Security-Checklist/issues/6#issuecomment-317308169)
+* [JWT the right way](https://stormpath.com/blog/jwt-the-right-way)
+
 JWT's payload contain **claims** which are **assertions** about a subject.
 
 * Expire token

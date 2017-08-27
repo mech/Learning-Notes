@@ -10,6 +10,8 @@
 * [Tips](https://medium.com/ux-power-tools/8-sketch-tricks-that-would-make-owen-wilson-say-wooow-tons-of-gifs-d2145ffb6ab2)
 * [Finally, Photoshop is dead for web and app design](https://www.xfive.co/blog/photoshop-dead-web-app-design/)
 * [Make icons with Sketch](https://github.com/allenwong/MakeIconsWithSketch)
+* [Bringing Sketch and After Effects Closer Together - Google Design](https://medium.com/google-design/bringing-sketch-and-after-effects-closer-together-d83b3e729c93)
+* [Designing Contrast](http://mds.is/designing-contrast/)
 
 ## Shortcuts
 

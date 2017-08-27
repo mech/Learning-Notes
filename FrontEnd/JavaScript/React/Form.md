@@ -23,6 +23,8 @@ handleCreateFormSubmit = (timer) => {
 }
 ```
 
+* [**JavaScript Events Unmasked: How to Create an Input Mask for Mobile**](https://medium.com/outsystems-experts/javascript-events-unmasked-how-to-create-an-input-mask-for-mobile-fc0df165e8b2)
+* [A list of form drivers](https://github.com/markerikson/redux-ecosystem-links/blob/master/forms.md)
 * [Formik](https://github.com/jaredpalmer/formik)
 * [NeoForm](https://github.com/zero-plus-x/neoform)
 * [React.js controlled components](http://blog.klipse.tech/react/2016/12/20/react-controlled-components.html)
@@ -72,6 +74,24 @@ What API is good for inputs:
   <Password name="password" label="Password" isRequired />
 </Form>
 ```
+
+## Forms as Data
+
+Treating forms as data. React changed the way we think about writing applications. Data is king. The pixels are just a "view" of the data.
+
+Instead of forms being an exception, forms are treated in the way everything else in React is - Data First.
+
+Forms felt like a monologue.
+
+> The shared trait among all the cases is that in React, all forms are data. The field values are data. Whether a certain field was touched, or whether a form is being submitted at the moment, is data too.
+
+## `<Form>` Component
+
+## `<Field>` Component
+
+`Fields` and `Input` components are different. A `Field` is a logical abstraction for representing a piece of data.
+
+An `Input` component is a way to see and edit the `Field`.
 
 ## Handling Events
 
@@ -252,6 +272,8 @@ It would be ideal if each field was responsible for identifying validation error
 1. Form level - validate whole models at `onSubmit`
 2. Field level - validate in real-time at `onChange`
 
+It is nice to have `<Input isRequired />` field-level validation, but we have to remind ourselves that validation status isn't "local" to fields. If we need to submit the form as a whole, we need to know about form-level validation!
+
 Another nice feature of form level is disabling/enabling the form submit button in real-time as the form passes/fails validation. This is a nice bit of feedback that can improve a form's UX and make it feel more responsive.
 
 ```js
@@ -315,6 +337,43 @@ class Field extends PureComponent {
     // will update the render() again
     this.props.onChange({ name, value, error })
   }
+}
+```
+
+Another way to write validate():
+
+```js
+function validate(inputs) {
+  return {
+    email: inputs.email.length > 3 ? null : 'Email should be longer than 3 characters'
+  }
+}
+
+// Use it at the render()
+// Computing errors in render() is just one approach
+// Another approach is keeping the errors in state
+render() {
+  const errors = validate({
+    email: this.state.email
+  })
+}
+```
+
+Generally the submit:
+
+```js
+handleSubmit = (evt) => {
+  evt.preventDefault()
+  
+  this.setState({ isSubmitting: true })
+  
+  const shouldAbort = anyError(this.state.errors)
+  if (shouldAbort) {
+    return
+  }
+  
+  saveData()
+  .then()
 }
 ```
 

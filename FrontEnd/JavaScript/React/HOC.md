@@ -414,6 +414,10 @@ const storeProvider = Component => {
 }
 ```
 
+## Static and Hoisting
+
+* [hoist-non-react-statics](https://github.com/mridgway/hoist-non-react-statics)
+
 ## Performance Issues
 
 Don't abuse HOC. Every time you wrap a component into a HOC, you are adding a new `render()`, a new lifecycle method call, and memory allocation. It may be a performance issues.

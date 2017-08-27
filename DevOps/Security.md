@@ -4,6 +4,7 @@
 * [Target="_blank" - the most underestimated vulnerability ever](https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/)
 * [IPLeak](https://ipleak.net/)
 * [VPN Comparison Chart](https://thatoneprivacysite.net/vpn-comparison-chart/)
+* [bettercap](https://github.com/evilsocket/bettercap)
 
 ## Threat Modeling
 
@@ -14,3 +15,7 @@
 ## Mac
 
 * [macOS Security and Privacy Guide](https://github.com/drduh/macOS-Security-and-Privacy-Guide/blob/master/README.md)
+
+## People
+
+* [Evil Socket](https://www.evilsocket.net/)

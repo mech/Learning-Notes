@@ -1,5 +1,9 @@
 # Product Design
 
+> He who learns and learns and yet does not what he knows, is one who plows and plows yet never sows - Ancient Persian Proverb
+
+---
+
 > I did it because I'm one of those guys who needs a pressure to make relevant or quality stuff.
 
 > Dare enough to share your work even if its half baked.
@@ -94,6 +98,8 @@ This has performance issues because cashier will be slow to adjust price for a d
 
 ## Advice
 
+* Having the Right Question can point development into the Right Direction. Like: "Is the cost of effort required to reduce those few gzipped bytes worth the benefits of saving a few dozen dollars in a year?"
+* Even if it turns out to be a waste of time, at least you have wasted that time in the question before starting to build the answer.
 * Set constraints. Whatever it is!
 * Lean UX allows you to embrace continuous change to focus on outcome instead of feature. Sense and respond.
 * Product need to improve in fast pace. Iterate on product and learn new thing and trigger scepticism.

@@ -16,6 +16,9 @@
 * [**React at Light Speed**](https://blog.vixlet.com/react-at-light-speed-78cd172a6411)
 * [45% Faster React Functional Components, Now](https://medium.com/missive-app/45-faster-react-functional-components-now-3509a668e69f)
 * [How to Benchmark React Components: The Quick and Dirty Guide](https://engineering.musefind.com/how-to-benchmark-react-components-the-quick-and-dirty-guide-f595baf1014c)
+* [Performance optimisations for React applications](https://medium.com/@alexandereardon/performance-optimisations-for-react-applications-b453c597b191)
+* [Normalised state and connected components](https://medium.com/@alexandereardon/performance-optimisations-for-react-applications-round-2-2042e5c9af97)
+* [Two Tips to Improve Performance by 30% With React and Webpack](http://engineering.teacherspayteachers.com/2017/08/16/two-tips-to-improve-performance-by-30-with-react-and-webpack.html)
 
 ```
 http://localhost:3000?react_perf
@@ -71,6 +74,8 @@ Don't forget to avoid the common mistakes that make the `PureComponent` less eff
 
 * Do as little work as possible in the `render()` function
 * Function binding and Object/Array literals are bad for performance
+* Make checks cheap - Invalidate references whenever you change data.
+* Make checks easy - Denormalize your data??
 
 ## shouldComponentUpdate
 
@@ -89,6 +94,11 @@ React is not able to figure out which components do not need to be updated but w
 You can still use stateless components if you implement `shouldComponentUpdate()` on your container component correctly to prevent rendering of their children.
 
 It is beneficial to implement `shouldComponentUpdate()` as high up the tree as possible.
+
+## PureComponent
+
+* [React Pattern: Extract Child Components to Avoid Binding](https://medium.freecodecamp.org/react-pattern-extract-child-components-to-avoid-binding-e3ad8310725e)
+* [Remember to not pass arrow function](https://medium.com/@housecor/hi-dana-great-question-note-this-affbe4a2f168)
 
 ## Constant Props
 
@@ -136,3 +146,7 @@ export default pure(DatagridBody)
 ## Server-Side Rendering
 
 * [Using Electrode to Improve React Server Side Render Performance By Up To 70%](https://medium.com/walmartlabs/using-electrode-to-improve-react-server-side-render-performance-by-up-to-70-e43f9494eb8b)
+
+## Videos
+
+* [Performance optimisations for React: round 3](https://www.youtube.com/watch?v=JZF06CPqOQ0)

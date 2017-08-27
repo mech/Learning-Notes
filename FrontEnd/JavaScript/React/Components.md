@@ -5,6 +5,7 @@
 
 > Learning functional programming completely changed my design process. There's a lot of parallels you can directly apply to your work day to day — it's about composition and I think this is something super useful for the design system we're working on. Rather than starting with a layout or a big marketing page and breaking it down, I love the idea of starting with the smallest possible primitives and building up and up and up.
 
+* [Pure UI Control](https://medium.com/@asolove/pure-ui-control-ac8d1be97a8d)
 * [Single Responsibility Components](https://www.youtube.com/watch?v=pSdp92Up8O8)
 * [**Under the hood: ReactJS**](https://bogdan-lyashenko.github.io/Under-the-hood-ReactJS/)
 * [React Architecture and Best Practices](https://github.com/markerikson/react-redux-links/blob/master/react-architecture.md)
@@ -33,6 +34,10 @@
 4. Go to top-level container component to communicate with data server.
 
 > There are a lot of similarities in the way we build UIs with React and the principles of FP, and the more we are aware of it, the better our code will be - `UI = f(state)`
+
+## Security
+
+* [The Most Common XSS Vulnerability in React.js Applications](https://medium.com/node-security/the-most-common-xss-vulnerability-in-react-js-applications-2bdffbcc1fa0)
 
 ## ReactElement vs ReactComponent
 
@@ -77,6 +82,9 @@
 5. State changes over time. So let's eliminate time. Let's be declarative and beat the passage of time.
 6. Look at jQuery for widget options/props
 7. Use Compound Components to compose just like `<option>` inside `<select>`
+8. Keep the props that your component expects to a minimum and make sure you use them individually. Do not just blindly spread the props as you may cause unnecessary re-renders.
+9. **Never let them know your next move.** Keep your components generic enough that they solve only one view element, really well. If your components are small and flexible, then they will not be pigeonhole’d and able to be composed into larger units.
+10. Your `render()` method should be as lightweight and fast as possible.
 
 ## Verbs for component name
 
@@ -102,7 +110,7 @@ const App = () => (
 
 * Props
 * Container and Presentational
-* HOC
+* HOC with **explicit props**
 * Recompose
 * Function as Child
 * Compound Component with **implicit props**
@@ -268,6 +276,15 @@ const updateResult = (hit, page) => (prevState, props) => {
 ### Do not initialize state using props
 
 The `constructor` is only called once when the component is created. If you initialize state using props and later change the props values, the component will never use that value.
+
+> If you read through articles on React, you may see that "setting state from props is an 'anti-pattern'". The main issue is handling updates to the state in response to the props changing. This can be a valid concern but should be understood as advice, not the ultimate rule.
+
+Especially for initializing form data, sometimes this rule can be broken.
+
+```js
+<Form initialData={data}>
+</Form>
+```
 
 ## PropTypes
 
@@ -595,6 +612,8 @@ return <div {...others} className={classes}>{children}</div>
 
 ## Namespaced Components
 
+* Called **Member Expressions** like `<TabBarIOS.Item>`
+
 ```js
 import Toolbar from './Toolbar'
 
@@ -632,3 +651,5 @@ export Menu
 * [React Design Patterns and Best Practices (DONE)](https://www.safaribooksonline.com/library/view/react-design-patterns/9781786464538/)
 * [Learning React](https://www.safaribooksonline.com/library/view/learning-react-1st/9781491954614/ch02.html)
 * Fullstack React - Page 392/825
+* The Missing Form Handbook of React (DONE)
+* [Advanced React.js (DONE)](https://app.pluralsight.com/library/courses/reactjs-advanced/table-of-contents)

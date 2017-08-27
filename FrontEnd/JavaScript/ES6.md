@@ -1,5 +1,11 @@
 # ES6
 
+* [Understanding ECMAScript 6 - Nicholas C. Zakas](https://leanpub.com/understandinges6/read)
+* [Exploring ES6 - Dr. Axel Rauschmayer](http://exploringjs.com/es6/index.html)
+* [Exploring ES2016 and ES2017 - Dr. Axel Rauschmayer](http://exploringjs.com/es2016-es2017/index.html)
+
+---
+
 * [**Practical Modern Javascript**](https://github.com/mjavascript/practical-modern-javascript)
 * [Clean Code for JavaScript](https://github.com/ryanmcdermott/clean-code-javascript)
 * [Optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
@@ -8,6 +14,8 @@
 * [Introduction to commonly used ES6 features](https://zellwk.com/blog/es6/)
 * [Overview of ECMAScript 6 features](https://github.com/lukehoban/es6features)
 * [What Do I Need to Know to Ace a JavaScript Interview?](https://github.com/adam-s/js-interview-review)
+* [The Best Frontend JavaScript Interview Questions (written by a Frontend Engineer)](https://performancejs.com/post/hde6d32/The-Best-Frontend-JavaScript-Interview-Questions-(Written-by-a-Frontend-Engineer))
+* [What the f*ck JavaScript?](https://github.com/denysdovhan/wtfjs)
 
 Encapsulate conditionals:
 
@@ -24,6 +32,10 @@ function shouldShowSpinner(fsm, listNode) {
 if (shouldShowSpinner(fsm, listNode)) {
 }
 ```
+
+## Let
+
+`let` hoist but it does not do initialization.
 
 ## Function Parameters
 
@@ -83,6 +95,7 @@ adder.add([1, 2, 3])
 ## Module Export Import
 
 * [JavaScript Module System](http://exploringjs.com/es6/ch_modules.html)
+* [ES6 Modules in Depth](https://ponyfoo.com/articles/es6-modules-in-depth#the-es6-module-system)
 
 ```js
 export default {
@@ -96,6 +109,7 @@ import { red, yellow } from './colors'
 ## Classes
 
 * [Classes in ECMAScript 6 (final semantics)](http://2ality.com/2015/02/es6-classes-final.html)
+* [ESnext class features for JavaScript](https://github.com/tc39/proposal-class-fields)
 
 ## React
 
@@ -356,28 +370,6 @@ render() {
       {this.canShowSecretData && <SecretData />}
     </div>
   )
-}
-```
-
-## Async Await
-
-* `await` takes in any Promises
-* Use normal try-catch to handle exceptions
-
-```js
-async submitForm(data) {
-  try {
-    let res = await fetch(url, {
-      method: 'POST',
-      body: JSON.stringify(data)
-    })
-    
-    newData = await res.json()
-  } catch(err) {
-    // handle error
-  }
-  
-  this.setState({ data })
 }
 ```
 

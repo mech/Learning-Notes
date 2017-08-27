@@ -5,6 +5,10 @@
 * [Reverse engineering Amazon and the Guardian - David Fox (LookZook)](https://www.safaribooksonline.com/library/view/fluent-conference-2017/9781491985298/video311523.html)
 * [Designing Speed with Progressive Enhancement](https://www.youtube.com/watch?v=cdv8UQu96PU)
 
+## Web Fonts
+
+* [Web fonts: when you need them, when you don't](https://hackernoon.com/web-fonts-when-you-need-them-when-you-dont-a3b4b39fe0ae)
+
 ## Gzip
 
 * [Better than Gzip Compression with Brotli](https://hacks.mozilla.org/2015/11/better-than-gzip-compression-with-brotli/)

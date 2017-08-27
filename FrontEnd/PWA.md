@@ -8,6 +8,11 @@
 * [How to speed up your UX with skeleton screens](https://www.sitepoint.com/how-to-speed-up-your-ux-with-skeleton-screens/)
 * [Progressive Web App with Webpack](https://codeburst.io/progressive-web-app-with-webpack-198b073f6c74)
 * [Hacker News readers as Progressive Web Apps](https://hnpwa.com/)
+* [Google Offline Cookbook](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/)
+
+## React
+
+* [React Progressive Web Apps - Part 1](https://medium.com/@gethylgeorge/react-progressive-web-apps-part-1-1cf381421672)
 
 ## PRPL Pattern
 

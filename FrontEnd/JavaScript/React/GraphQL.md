@@ -12,6 +12,7 @@
 * [GraphQL & React tutorial (part 1/6)](https://blog.hichroma.com/graphql-react-tutorial-part-1-6-d0691af25858)
 * [postgraphql](https://github.com/postgraphql/postgraphql)
 * [GraphQL Tour: Interfaces and Unions](https://medium.com/the-graphqlhub/graphql-tour-interfaces-and-unions-7dd5be35de0d)
+* [Coursera's journey to GraphQL](https://dev-blog.apollodata.com/courseras-journey-to-graphql-a5ad3b77f39a)
 
 ## What's Wrong with REST
 
@@ -65,6 +66,8 @@ Under-fetching is actually a type error.
 ## Data Loader
 
 * [graphql-batch for Ruby, sort of like DataLoader](https://github.com/Shopify/graphql-batch)
+* [DataLoader - Source code walkthrough by Lee Byron](https://www.youtube.com/watch?v=OQTnXNCDywA)
+* [Ruby BatchLoader](https://engineering.universe.com/batching-a-powerful-way-to-solve-n-1-queries-every-rubyist-should-know-24e20c6e7b94)
 
 ## Pagination
 

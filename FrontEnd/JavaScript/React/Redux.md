@@ -286,6 +286,17 @@ const configureStore = () => {
 
 * [Alternate Proof of Concept: Enhancer Overhaul](https://github.com/reactjs/redux/pull/2214)
 
+```js
+const enhancer = compose(
+  applyMiddleware(
+    thunk,
+    socketMiddleware,
+    logger
+  ),
+  DevTools.instrument()
+)
+```
+
 ## Provider
 
 Distant leaf components need access to state that intermediary components don't need.
@@ -403,6 +414,8 @@ export const fetchUserByEmail = (email) => {
 
 ## Middleware
 
+> Side effect is mostly done at middleware
+
 The action passes through the store's chain of middlewares, where actions may be intercepted and additional behaviour may be executed. Middlewares are commonly used to handle side-effects in Redux applications.
 
 * [Why do we need middleware for async flow in Redux?](https://stackoverflow.com/questions/34570758/why-do-we-need-middleware-for-async-flow-in-redux/)
@@ -477,6 +490,16 @@ Don't confuse between state tree and reducers. They are 2 separate things. You c
 
 * [Feature Request: Allow reducers to consult global state](https://github.com/reactjs/redux/pull/1768)
 * [RFC: Make combineReducers() shape-agnostic](https://github.com/reactjs/redux/issues/1792)
+
+---
+
+**Disadvantages of combineReducer**
+
+* Single reducer can't work with multiple slices of state
+* Does not work on non-object states
+* Does not work with immutable.js-based states
+
+---
 
 Break up state management into smaller, more focused chunk to handle a subset of the app's state and actions.
 
@@ -575,6 +598,8 @@ export default combineReducers({
 * [connect.js explained](https://gist.github.com/gaearon/1d19088790e70ac32ea636c025ba424e)
 
 `connect` is a higher order/curry function for generating a container component to let presentational component "connect" to the Redux Store.
+
+**Note:** It is okay to have a bit of logic at `mapStateToProps` like selecting the right state slice (selector) or filtering etc.
 
 connect function takes care of:
 
@@ -704,6 +729,8 @@ function () {
 
 ## Selectors - State Transformation
 
+> Selectors work well with `getState` inside of a thunk
+
 A caching and memoization strategy. Calculation only happen when a change happens in a related part of the state tree.
 
 * [Choose wisely (a fun introduction to reselect.js)](https://decembersoft.com/posts/redux-hero-part-3-choose-wisely-a-fun-introduction-to-reselect-js/)
@@ -731,6 +758,33 @@ export default todos
 
 export const getVisibleTodos = (todos, filter) => {
 }
+```
+
+More examples of selectors:
+
+```js
+// A basic selector - get a property of the state
+const channelsSelector = (state) => {
+  state.get('channels')
+}
+
+// A curried selector - method which returns a selector that only
+// finds an element with a given ID
+const channelSelector = (id) => (state) => {
+  state.get('channels').find(c => c.get('id') === id)
+}
+
+// A Reselect selector - parameters of final argument are the
+// results of the first two
+import { createSelector } from 'reselect'
+
+const activeChannelSelector = createSelector(
+  state => state.get('activeChannel'),
+  state => state.get('channels'),
+  (activeChannel, channels) => {
+    return channels.find(c => c.get('id') === activeChannel)
+  }
+)
 ```
 
 ## Recompose
@@ -788,3 +842,7 @@ function* watch() {
 ## Examples
 
 * [reddit-mobile](https://github.com/reddit/reddit-mobile)
+
+## Books
+
+* [Advanced Redux (DONE)](https://app.pluralsight.com/library/courses/advanced-redux/table-of-contents)

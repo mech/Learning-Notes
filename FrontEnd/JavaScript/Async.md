@@ -2,10 +2,73 @@
 
 ## Promises
 
+* [Passing data between Promise callbacks](http://2ality.com/2017/08/promise-callback-data-flow.html)
+
+Before you dive into the wonderful world of async/await, it's important that you understand and appreciate Promises.
+
 * Guaranteed future - Good and bad. Can't be cancelled, this means you're executing code you probably don't want to. Can't do auto-complete well. Route loading also problematic.
 * Immutable
 * Single value - problematic in modern web app
 * Caching
+* Can't do try-catch error handling
+* Still really using callback, but just nicely using thenables
+
+```js
+// Promise.prototype.finally()
+db.open()
+.then()
+.then()
+.catch()
+.finally()
+```
+
+## Async/Await
+
+* [Using ES2017 Async Functions](https://css-tricks.com/using-es2017-async-functions/)
+* `await` takes in any Promises
+* Use normal try-catch to handle exceptions
+* Built on Promises and Generators
+* **An async function will always itself return a promise**
+* When we await, it pauses the function, not the entire code
+* Is non-blocking, so other asynchronous function can still run while we are waiting 
+
+```js
+// This return a Promise<any>
+const fetchGitHubUser = async (handle) => {
+  const url = `https://api.github.com/users/${handle}`
+  const response = await.fetch(url)
+  return await response.json()
+}
+
+// An IIFE
+(async () => {
+  const user = await fetchGitHubUser('mech')
+  console.log(user.name)
+})();
+
+// Using Promise.all
+async function showUserAndRepos(handle) {
+  const [user, repos] = await Promise.all([
+    fetchFromGitHub(`/users/${handle}`),
+    fetchFromGitHub(`/users/${handle}/repos`)
+  ])
+}
+
+async submitForm(data) {
+  try {
+    let res = await fetch(url, {
+      method: 'POST',
+      body: JSON.stringify(data)
+    })
+    
+    newData = await res.json()
+  } catch(err) {
+    // handle error
+  }
+  
+  this.setState({ data })
+}
+```
 
 ## Generator
 

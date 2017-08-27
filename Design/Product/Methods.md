@@ -2,6 +2,14 @@
 
 * [UX Deliverables](https://uxplanet.org/a-complete-list-of-ux-deliverables-d62ccf1de434)
 
+## Boredom-Driven Design
+
+* [Embracing the idle mind](https://uxdesign.cc/embracing-the-idle-mind-43067637395c)
+
+> Daydreaming experience made me question how I had been using my idle time so far. Like many others, I was armed to the teeth with e-books, podcasts and social media accounts, ready to kill even the shortest downtime.
+> 
+> Suddenly, commutes started to become rewarding thinking sessions helping me to process my day and prepare for upcoming ones. Also, my 30-minute ride brought up long forgotten memories and new ideas started coming to me a lot easier.
+
 ## Personas
 
 * [Personas, you don't need them](https://hondo.wtf/posts/on-personas/)
@@ -35,3 +43,4 @@ Prototyping is a habit. It is a way to validate assumptions and ideas.
 
 * [Don't Make a Journey Map: 9 archetypes of good / bad, and how to decide what to use](https://medium.com/@shahrsays/dont-make-a-journey-map-9-archetypes-of-good-bad-and-how-to-decide-what-to-use-d65abd30ec6f#.fq1rrlsdt)
 * [Journey mapping as insight tool: A healthcare case study](https://www.youtube.com/watch?v=OUoZq-g-Z2g)
+* [How to make an experience map](https://blog.carbonfive.com/2017/08/03/experience-mapping-2/)

@@ -16,6 +16,7 @@ end
 ## ActionCable
 
 * [Realtime with React and Rails](https://blog.codeship.com/realtime-with-react-and-rails/)
+* [Using Rails 5 ActionCable and RethinkDB to build a Reactive WebSocket App](https://medium.com/rubyinside/using-rails-5-actioncable-and-rethinkdb-to-build-a-reactive-websocket-app-7f77382cfb5)
 
 ## Performance
 
@@ -42,9 +43,10 @@ worker_timeout
 * [sidekiq-scheduler](https://github.com/moove-it/sidekiq-scheduler)
 * [rufus-scheduler](https://github.com/jmettraux/rufus-scheduler)
 * [Pub/Sub for Sidekiq](https://github.com/hired/reactor)
-* [wisper-activejob](https://github.com/krisleech/wisper-activejob)
+* [**wisper-activejob**](https://github.com/krisleech/wisper-activejob)
 * [Beyond Validates_Presence_of: Ensuring Eventual Consistency](https://www.youtube.com/watch?v=QpbQpwXhrSI)
 * [Real World Rails Background Jobs](https://www.eliotsykes.com/real-world-rails-background-jobs)
+* [Evented Rails: Decoupling complex domains in Rails with Domain Events](https://blog.carbonfive.com/2017/07/18/evented-rails-decoupling-complex-domains-in-rails-with-domain-events/)
 
 Network failures:
 
@@ -59,6 +61,7 @@ Network failures:
 * Be kind to your downstream services (i.e. Slack notifier, Twitter, GeoTagging, etc.)
 * Roll back, roll forward
 * Timestamp your service to coalesce
+* **Always send email with deliver_later, even if it is inside background job already**
 
 ```ruby
 class SendAnalyticsEmailJob < ActiveJob::Base
@@ -68,6 +71,18 @@ class SendAnalyticsEmailJob < ActiveJob::Base
         UserMailer.delay(priority: 10).analytics(user: user, group: group)
       end
     end
+  end
+end
+```
+
+```ruby
+class SendDailyTriageEmailJob < ApplicationJob
+  def perform(user)
+    return false if before_email_time_of_day?(user)
+    return false if email_sent_in_last_24_hours?(user)
+    return false if skip_daily_email?(user)
+    
+    send_daily_triage!(user)
   end
 end
 ```

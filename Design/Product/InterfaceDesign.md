@@ -1,5 +1,7 @@
 # Interface Design
 
+> Instead of defining the face of our content — the stuff that appears in the UI — we should start by defining the how and the why that support that content - [Building Block Design](https://medium.com/ruxers/building-block-design-a-modular-design-strategy-for-uxers-927f63eec90c)
+
 * [What is Atomic Design?](https://blog.prototypr.io/what-is-atomic-design-b8f0368e580d#.bpbyph6i4)
 * [InterfaceLovers](https://interfacelovers.com)
 * [Mobile first, desktop worst](https://blog.prototypr.io/mobile-first-desktop-worst-f900909ae9e2)
@@ -7,6 +9,9 @@
 * [Tooltips](https://www.appcues.com/blog/tooltips/)
 * [**Stop the overuse of overflow menus**](https://medium.freecodecamp.org/stop-the-overuse-of-overflow-menus-5caa4b54e843)
 * [InterfaceLovers - Interviews people who build UI](https://interfacelovers.com/)
+* [Really Good UX](http://reallygoodux.io/)
+* [Floating labels are problematic](https://medium.com/simple-human/floating-labels-are-a-bad-idea-82edb64220f6)
+* [Don't mistake common UI patterns for best practices](https://medium.com/ruxers/dont-mistake-common-ui-patterns-for-best-practices-4a1c8d4bef9a)
 
 > Consistency, not uniformity
 

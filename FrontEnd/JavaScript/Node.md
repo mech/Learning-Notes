@@ -18,6 +18,11 @@
 ▶ yarn upgrade-interactive
 ```
 
+## ESM
+
+* [Node's ESM rules](https://github.com/nodejs/node-eps/blob/master/002-es-modules.md)
+* [@std/esm](https://medium.com/web-on-the-edge/es-modules-in-node-today-32cff914e4b)
+
 ## Deployment
 
 * [Load Balancing Node.js Applications with NGINX and Docker](https://auth0.com/blog/load-balancing-nodejs-applications-with-nginx-and-docker/)

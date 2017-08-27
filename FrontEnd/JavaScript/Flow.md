@@ -3,6 +3,8 @@
 > When working with types, you find yourself asking this question: What is this? If you can identify it, it has a type.
 
 * [Flow guide](https://github.com/ryyppy/flow-guide)
+* [Even Better Support for React in Flow 0.53.0](https://medium.com/flow-type/even-better-support-for-react-in-flow-25b0a3485627)
+* [Why use static types in JavaScript? (A 4-part primer on static typing with Flow)](https://medium.freecodecamp.org/why-use-static-types-in-javascript-part-1-8382da1e0adb)
 
 > Type correctness does not guarantee program correctness. If you haven't exercised the code, you really have no idea whether or not it works.
 
@@ -309,6 +311,16 @@ var item = first(arr, x => !!(x % 2))
 item. // => here we have intellisense
 ```
 
+```js
+// Promise is a parameterized type??
+// what this promise resolve is an object containing a
+// `default` property which is a Class type
+props: {
+  props: mixed,
+  loadingPromise: Promise<{ default: Class<React.Component<*, *, *>> }>
+}
+```
+
 ## Type-First Approach
 
 ```js
@@ -361,6 +373,34 @@ declare type SendInquiry = (x: ActionSendInquiry) => void
 `React.Component` takes type parameters. See [flowtype for react](https://github.com/facebook/flow/blob/master/lib/react.js)
 
 Flowtype annotations provide an alternative to `propTypes` runtime checks. It has the benefit to check `state` as well as `props`.
+
+```js
+// New since 0.53.0
+type Props = {
+  foo: number
+}
+
+type State = {
+  bar: number
+}
+
+class MyComponent extends React.Component<Props, State> {
+  // You don't need to provide Flow with any type annotations
+  // for default props
+  static defaultProps = {
+    foo: 42
+  }
+}
+
+// The same for functional component
+function MyComponent({ foo }: { foo: number }) {
+  return this.props.foo
+}
+
+MyComponent.defaultProps = {
+  foo: 42
+}
+```
 
 ```js
 type Props = {}

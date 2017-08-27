@@ -8,6 +8,8 @@
 * [Software Engineering Blogs](https://github.com/kilimchoi/engineering-blogs)
 * [Code Show and Tell: PolymorphicFinder](https://robots.thoughtbot.com/code-show-and-tell-polymorphic-finder)
 * [How We Ship: Codetree](https://codetree.com/how-we-ship/interviews/codetree)
+* [How To Understand The Balance Between Learning And Progress](https://hackernoon.com/how-to-understand-the-balance-between-learning-and-progress-6783e7f711ac)
+* [Naming: The hardest problem in computer science](https://eev.ee/blog/2016/07/26/the-hardest-problem-in-computer-science/)
 
 Good code not only works, but is also simple, understandable, expressive and changeable.
 
@@ -19,9 +21,14 @@ Good design preserves maximum flexibility at minimum cost by putting off decisio
 
 ## Boundaries
 
+* [Bring clarity to your monolith with Bounded Contexts](https://blog.carbonfive.com/2016/11/01/bring-clarity-to-your-monolith-with-bounded-contexts/)
+
+---
+
 * Just large enough - knows its boundaries
 * Highly cohesive and loosely coupled
 * Precise semantics that fully express the business domain
+* [Domain Event](https://blog.carbonfive.com/2017/07/18/evented-rails-decoupling-complex-domains-in-rails-with-domain-events/)
 
 ## Naming
 

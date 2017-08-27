@@ -1,6 +1,6 @@
 # Libraries
 
-> Look at jQuery UI for props inspiration? - [Compound Components](https://www.youtube.com/watch?v=hEGg-3pIHlE)
+> Look at **jQuery UI** or **YUI** for props and widgets inspiration? - [Compound Components](https://www.youtube.com/watch?v=hEGg-3pIHlE)
 
 https://github.com/hsnaydd/moveTo/
 
@@ -26,6 +26,8 @@ https://dollarshaveclub.github.io/stickybits/
 
 * [React Color](https://casesandberg.github.io/react-color/)
 * [Pure CSS Tooltips](https://medium.freecodecamp.org/a-step-by-step-guide-to-making-pure-css-tooltips-3d5a3e237346)
+* [Popper.js](https://popper.js.org/)
+* [Pace.js - For loading](http://github.hubspot.com/pace/docs/welcome/)
 
 ## UI Libraries
 
@@ -52,7 +54,8 @@ https://dollarshaveclub.github.io/stickybits/
 ## PDF
 
 * [Rendering PDFs with React Components](https://themeteorchef.com/tutorials/rendering-pdfs-with-react-components)
-* [react-pdf](https://github.com/nnarhinen/react-pdf)
+* [react-pdf](https://github.com/wojtekmaj/react-pdf)
+* [react-pdf](https://github.com/diegomura/react-pdf)
 
 ## Show/Hide
 
@@ -247,6 +250,7 @@ class Tabs extend Component {
 ## Sortable and Drag and Drop
 
 * [Some react-dnd example](https://gist.github.com/krzysu/1b391ae0e3c87d0c654cdf6d5a409632)
+* [Rethinking drag and drop](https://medium.com/@alexandereardon/rethinking-drag-and-drop-d9f5770b4e6b)
 
 ## D3
 
@@ -259,6 +263,7 @@ class Tabs extend Component {
 
 ## Editor
 
+* [Learn DraftJS](https://learn-draftjs.now.sh/)
 * [Dante 2](https://michelson.github.io/dante2/)
 * [Slate](https://github.com/ianstormtaylor/slate)
 * [react-in-markdown](https://github.com/kitze/react-in-markdown)

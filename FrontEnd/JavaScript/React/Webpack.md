@@ -72,6 +72,16 @@ What we want from CRA:
 * Code splitting with react-loadable
 * Storybook support
 
+```
+▶ yarn add husky lint-staged prettier
+▶ yarn add flow-bin
+▶ yarn add enzyme react-test-renderer
+▶ yarn add react-styleguidist
+▶ yarn add source-map-explorer
+
+▶ yarn flow init
+```
+
 ### Ejecting
 
 * [Configure create-react-app without ejecting ⏏](https://medium.com/@kitze/configure-create-react-app-without-ejecting-d8450e96196a)
@@ -93,6 +103,8 @@ bake()
 
 ## NamedModulesPlugin
 
+* [name-all-modules-plugin](https://github.com/timse/name-all-modules-plugin)
+
 Webpack, by default, assigns modules integer ids based on order. So when modules are changed, all ids could change, invalidating the cache. To use names instead of ids, we can use NamedModulesPlugin.
 
 However, it will make the file sizes larger as well as expose internal file paths of modules to outside world.
@@ -113,7 +125,8 @@ Make sure you don't use it twice at the CLI and at the webpack.config.js file. R
 
 Note that Hash is for "entire" build and chunkhash is for individual file.
 
-* [Caching assets long term with Webpack](https://medium.com/connect-the-dots/caching-assets-long-term-with-webpack-5ad24a4c39bd#.427deo91l)
+* [Predictable long term caching with Webpack - May 2017](https://medium.com/webpack/predictable-long-term-caching-with-webpack-d3eee1d3fa31)
+* [Caching assets long term with Webpack - Sep 2016](https://medium.com/connect-the-dots/caching-assets-long-term-with-webpack-5ad24a4c39bd#.427deo91l)
 
 Long-term bundle caching is achieved with content-based hashing policy: `[chunkhash]`.
 

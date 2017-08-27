@@ -79,6 +79,7 @@ DELETE /gists/:id/star
 
 * [Versioning a Rails API](https://chriskottom.com/blog/2017/04/versioning-a-rails-api/)
 * [Your API versioning is wrong, which is why I decided to do it 3 different wrong ways](https://www.troyhunt.com/your-api-versioning-is-wrong-which-is/)
+* [APIs as infrastructure: future-proofing Stripe with versioning](https://stripe.com/blog/api-versioning)
 
 ## Analytics
 

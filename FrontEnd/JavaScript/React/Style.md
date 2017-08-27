@@ -8,6 +8,10 @@
 * [Fela](http://fela.js.org/)
 * [JSS - The one chosen by Material-UI](http://cssinjs.org/?v=v6.5.0)
 * [ReactSimpleFlexGrid](https://github.com/abraztsov/ReactSimpleFlexGrid)
+* [**CSS Utility Classes and "Separation of Concerns"**](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/)
+* [Tailwind CSS](https://tailwindcss.com/)
+
+> My experience is that building things utility-first leads to more consistent looking designs than working component-first, as unintuitive as it might sound at first.
 
 ```js
 // If you want to extract the className

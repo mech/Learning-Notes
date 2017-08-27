@@ -1,7 +1,10 @@
 # Design System (Thinking)
 
+> In order to better scope projects, it's essential to look at what the interface is comprised of rather than looking at the quantity/type of pages. This is what software developers have been doing for years now, but the concept of "Web pages" has distracted us from breaking things down into features and components - [Scope Component, not Pages](http://bradfrost.com/blog/post/scope-components-not-pages/)
+
 We are not designing static graphics. We are designing interactive systems. We are designing for intents and behaviours.
 
+* The fundamental mistake of assuming a page is a uniform, isolated, quantifiable thing. The reality is that the web is a fluid, interactive, interdependent medium.
 * Design System - The whole design language of the system. Voice and Tones, Typography, Brand Identity, Copy Writing, Color Palettes, Icons, Grid System, Code, UI Patterns, etc. 
 * [Style Guides](http://bradfrost.com/blog/post/style-guides/) - Guidelines to styles. Cornerstones of a good design system.
 * Pattern Library - Documented UI library with code examples.
@@ -15,6 +18,7 @@ Maintain a visual language, UI elements, components and page types to realize su
 
 Living documentation based on executable examples.
 
+* [**Integrating Animation into a Design System**](https://alistapart.com/article/integrating-animation-into-a-design-system)
 * [Learning from Lego: A Step Forward in Modular Web Design](https://alistapart.com/article/learning-from-lego-a-step-forward-in-modular-web-design)
 * [The Future of Design Tools Isn’t Prototyping: Introducing Systems](https://www.uxpin.com/studio/design-systems/future-design-tools-isnt-prototyping-introducing-systems-uxpin/)
 * [Design Systems Sprint 0: The Silver Bullet of Product Development](https://medium.com/@marcintreder/design-systems-sprint-0-the-silver-bullet-of-product-development-8c0ed83bf00d)
@@ -126,6 +130,12 @@ To establish aesthetic direction, mood and atmosphere.
 
 In design, atmosphere comprises color, typography and texture, **separate from layout**. The layout can drastically change or move around depending on screen size, but the atmosphere (and feeling) remains. Layout is thus inconsequential when compared to the overall atmosphere.
 
+> Atmosphere describes the feelings we get that are evoked by color, texture and typography. The atmosphere of a design **doesn't depend on layout**. It's independent of arrangement and visual placement. It will be seen, or felt, at every screen size and on every device.
+
+Establishing design atmosphere early is critical to a project's success, which is why designers have found ways to facilitate these important conversations without having to generate full mockups. Like style tiles (Samantha Warren) and element collages (Dan Mall).
+
+By breaking **visual explorations** into smaller chunks, designers save time and effort while avoiding presenting unrealistic, premature layouts to client.
+
 ## Company Design Language
 
 * [macOS HIG](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/)
@@ -175,7 +185,7 @@ Instead of "homepage carousel", simple called it "carousel". Instead of "product
 
 > For instance, if working on an e-commerce site, you may be tempted to call a block containing a product image and title a "product card". But naming things in this manner immediately limits what type of content can live inside it. By naming the pattern simply "card", you can put all sorts of content patterns inside it: products, promotions, store locations, and so on.
 
-Naming things is really hard. But by conducting an Interface Inventory, you can remove patterns from the context of the page where they normally reside, meaning your team can create names that aren't distracted by their context/content.
+Naming things is really hard. But by conducting an **Interface Inventory**, you can remove patterns from the context of the page where they normally reside, meaning your team can create names that aren't distracted by their context/content.
 
 Focus on the pattern's structure rather than the content that lives inside it.
 
@@ -222,7 +232,7 @@ In the past, we build screen, then deconstruct it into component.
 Today, the idea of Atomic Design is to begin with common raw material (atoms) with which we can build the rest of it.
 
 1. Start with a unique visual language that is very close to our brand identity.
-2. With a strong identity, we can release our first atoms: colors, typographic, forms, shadows, spaces, rhythms, animations principles...
+2. With a strong identity, we can release our first atoms: colors, typographic, forms, shadows, spaces, rhythms, animations principles...Design Atmosphere (mood-board, style tiles, etc.)
 3. Again, it is essential to spend time designing this identity and make it unique, before you can tackle your atoms.
 4. To get rid this notion of "page", we will focus on features or user flow, not screens. Make components that are not "connected" to anything.
 5. We are going to focus on the action which we want our user to do and on the components that are needed to accomplish this action.

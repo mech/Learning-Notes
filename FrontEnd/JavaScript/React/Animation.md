@@ -1,5 +1,6 @@
 # React Animation
 
+* [**React Animations in Depth**](https://medium.com/react-native-training/react-animations-in-depth-433e2b3f0e8e)
 * [How to build animated microinteraction in React](https://medium.freecodecamp.org/how-to-build-animated-microinteractions-in-react-aab1cb9fe7c8)
 * [Airbnb - Behind the scenes of our new open-source animation tool](https://airbnb.design/introducing-lottie/)
 * [React Page Transition Animations](https://medium.com/front-end-hacking/react-page-transition-animations-9d18c90a9831#.jpe9r2a9b)
@@ -16,6 +17,7 @@
 * [Animated page transitions with React Router 4, ReactTransitionGroup and Animated](https://hackernoon.com/animated-page-transitions-with-react-router-4-reacttransitiongroup-and-animated-1ca17bd97a1a)
 * [Demystifying requestAnimationFrame](https://medium.com/@bkakadiya42/demystifying-the-requestanimationframe-867c3db6c217)
 * [Animating React Components with CSS and Styled-Components](https://codeburst.io/animating-react-components-with-css-and-styled-components-cc5a0585f105)
+* [Animating React Applications](https://x-team.com/blog/animating-react-applications/)
 
 React ships with react-addons-css-transition-group which is a component that helps us build animations in a declarative way.
 
@@ -57,5 +59,14 @@ The `*-enter` and `*-enter-active` classes are applied when a new element is add
 * [mo.js](http://mojs.io/)
 * Web Animations API - not mature yet
 * [Flight - Ultra Simple Animation Compositions for React](http://www.react-flight.io/)
+* [react-layout-transition](https://github.com/bkazi/react-layout-transition)
 
 ## Physicality, Velocity, Spring, Realism, Snapping, Friction
+
+## Videos
+
+* [Animating the Virtual DOM - Sarah Drasner](https://www.youtube.com/watch?v=W5AdUcJDHo0)
+
+## People
+
+* [Jason Brown - Animated](http://browniefed.com/)

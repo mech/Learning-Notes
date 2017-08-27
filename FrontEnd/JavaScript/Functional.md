@@ -81,6 +81,30 @@ const log = userLogs('mech')
 log('attempted to load')
 ```
 
+## Reduce
+
+* [Higher Order Functions: Using Filter, Map and Reduce for More Maintainable Code](https://medium.freecodecamp.org/higher-order-functions-in-javascript-d9101f9cf528)
+
+`map()` and `filter()` can created from `reduce()`
+
+```js
+const map = (collection, fn) => {
+  return collection.reduce((acc, item) => {
+    return acc.concat(fn(item))
+  }, [])
+}
+
+const filter = (collection, fn) => {
+  return collection.reduce((acc, item) => {
+    if (fn(item)) {
+      return acc.concat(item)
+    }
+    
+    return acc
+  }, [])
+}
+```
+
 ## flatMap
 
 * [Functional pattern: flatMap](http://2ality.com/2017/04/flatmap.html)

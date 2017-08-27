@@ -4,6 +4,7 @@
 * [Have Generics Killed Java?](http://www.artima.com/weblogs/viewpost.jsp?thread=299081)
 * [11 Ruby Tricks You Haven't Seen Before](http://www.blackbytes.info/2016/01/ruby-tricks/)
 * [Towards Minimal, Idiomatic, and Performant Ruby Code](https://blog.codeminer42.com/towards-minimal-idiomatic-and-performant-ruby-code-f3fc6aed3c94)
+* [5 Ruby Methods You Should Be Using](https://www.engineyard.com/blog/five-ruby-methods-you-should-be-using)
 
 ## Ruby 2.4
 
@@ -13,7 +14,7 @@
 
 * [Onigmo](https://github.com/k-takata/Onigmo/blob/3ddfbfcc469a246f8c5bc50072c7e9cdb1e50b22/doc/RE#L293)
 
-## Date
+## Date and Time
 
 * [Timezone problem](https://www.youtube.com/watch?v=aUk9981C-fQ)
 
@@ -42,7 +43,7 @@ Date.today   # don't use this, not timezone-aware
 # Avoid these
 Time.now
 Date.today
-Time.parse()
+Time.parse() # Very problematic as it will fallback to Time.now when any part of the string could not be parsed
 Time.strptime()
 ```
 
@@ -68,6 +69,7 @@ Integer(params.fetch(:id))
 
 * [Five Ruby methods your should be using](https://blog.engineyard.com/2015/five-ruby-methods-you-should-be-using)
 * [101 Ruby Code Factoids](https://6ftdan.com/allyourdev/2016/01/13/101-ruby-code-factoids/)
+* [The === (case equality) operator in Ruby](http://blog.arkency.com/the-equals-equals-equals-case-equality-operator-in-ruby/)
 
 ```ruby
 array = [1, 2, 3, 4, 5]
@@ -93,6 +95,45 @@ def keys(hashes)
   }.to_a
 end
 ```
+
+### flat_map
+
+```ruby
+users.map do |user|
+  user.posts.map do |post|
+    post.comments.map |comment|
+      comment.author.username
+    end
+  end
+end
+
+# => [[['Ben', 'Sam', 'David'], ['Keith']], [[], [nil]]]
+```
+
+This gives us a lot of unwanted nested arrays, we can use `flatten`.
+
+```ruby
+users.map do |user|
+  user.posts.map do |post|
+    post.comments.map |comment|
+      comment.author.username
+    end.flatten
+  end.flatten
+end.flatten
+```
+
+Or we can use `flat_map` also.
+
+```ruby
+users.flat_map do |user|
+  user.posts.flat_map do |post|
+    post.comments.flat_map |comment|
+      comment.author.username
+    end
+  end
+end
+```
+
 
 ## instance_eval
 

@@ -4,6 +4,10 @@
 
 ## Jest
 
+While Jest provides browser globals such as window thanks to jsdom, they are only approximations of the real browser behavior.
+
+Jest is intended to be used for unit tests of your logic and your components rather than the DOM quirks.
+
 * No longer need `__tests__/` folder
 * Auto-mocking is turned off
 * Using Jasmine's assertion library

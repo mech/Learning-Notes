@@ -9,6 +9,7 @@
 ## Fixtures
 
 * [Testing a Rails API](https://johnmosesman.com/post/testing-a-rails-api/)
+* [Factories or fixtures? Give me both!](https://evilmartians.com/chronicles/factories-or-fixtures)
 
 When Rails boots up the testing environment, it reads all the fixture definitions and insert them directly into the database, indiscriminately, bypassing validations and callbacks.
 
@@ -17,6 +18,24 @@ Your test data starts to form a narrative. A story takes shape around your model
 * [Getting friendly with fixtures](https://whatdoitest.com/getting-friendly-with-fixtures)
 * [7 reasons I'm sticking with Minitest and Fixtures in Rails](http://brandonhilkert.com/blog/7-reasons-why-im-sticking-with-minitest-and-fixtures-in-rails/)
 * [Rails Testing Antipatterns: Fixtures and Factories](https://semaphoreci.com/blog/2014/01/14/rails-testing-antipatterns-fixtures-and-factories.html)
+
+```ruby
+# spec/support/fixture_helpers.rb
+
+def fixture_file_path(filename)
+  Rails.root.join("spec/fixtures/#{filename}").to_s
+end
+
+def read_fixture_file(filename)
+  File.read fixture_file_path(filename)
+end
+
+def yaml_fixture_file(filename)
+  YAML.load_file(fixture_file_path(filename))
+end
+
+# ... whatever loaders you need
+```
 
 ## Controller Tests
 

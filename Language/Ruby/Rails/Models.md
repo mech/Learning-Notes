@@ -18,6 +18,41 @@
 * [Flag argument is a code smell](http://craftingruby.com/posts/2017/05/04/flag-arguments-are-a-code-smell.html)
 * [Using Services to Keep Your Rails Controllers Clean and DRY](https://blog.engineyard.com/2014/keeping-your-rails-controllers-dry-with-services)
 
+## Builder Patterns
+
+* [Builder design pattern in Ruby](https://medium.com/kkempin/builder-design-pattern-in-ruby-dfa2d557ff1b)
+
+```rb
+CandidateBuilder.build do |builder|
+  builder.set_name('mech')
+  builder.is_admin
+end
+
+class CandidateBuilder
+  def self.build
+    builder = new
+    yield builder
+    builder.user
+  end
+  
+  def initialize
+    @user = Candidate.new
+  end
+  
+  def set_name(name)
+    @user.name = name
+  end
+  
+  def is_admin
+    @user.roles = ['admin']
+  end
+  
+  def user
+    @user
+  end
+end
+```
+
 ## SQL
 
 ```ruby
@@ -26,12 +61,27 @@
 
 ## Query
 
+* [To join or not to join? An act of #includes](https://goiabada.blog/to-join-or-not-to-join-an-act-of-includes-f6728fcefea3)
+* [Active Record's queries tricks](https://medium.com/@apneadiving/active-records-queries-tricks-2546181a98dd)
+
 ```ruby
 # Bad
 Post.select(:id).map(&:id)
 
 # Good
 Post.pluck(:id)
+
+# User model
+scope :activated, -> {
+  joins(:profile).where(profiles: { activated: true })
+}
+
+# Instead of leaking profile logic inside User model, we can:
+
+# Profile model
+scope :activated, -> { where(activated: true) }
+# User model
+scope :activated, -> { joins(:profile).merge(Profile.activated) }
 ```
 
 ## Database
@@ -320,6 +370,8 @@ end
 * Format complex data for display
 
 ## Batch Processing
+
+* [Ruby BatchLoader](https://engineering.universe.com/batching-a-powerful-way-to-solve-n-1-queries-every-rubyist-should-know-24e20c6e7b94)
 
 ```ruby
 # 5.1 add support for limits in batch processing
