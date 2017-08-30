@@ -9,6 +9,7 @@
 
 ## JWT
 
+* [Why JWTs Suck as Session Tokens](https://developer.okta.com/blog/2017/08/17/why-jwts-suck-as-session-tokens)
 * [JWT is a Bad Standard That Everyone Should Avoid](https://paragonie.com/blog/2017/03/jwt-json-web-tokens-is-bad-standard-that-everyone-should-avoid)
 * [Don't recommend JWT](https://github.com/shieldfy/API-Security-Checklist/issues/6#issuecomment-317308169)
 * [JWT the right way](https://stormpath.com/blog/jwt-the-right-way)

@@ -121,6 +121,10 @@ render() {
 }
 ```
 
+## Reselect
+
+* [memoize-one](https://github.com/alexreardon/memoize-one)
+
 ## Recompose
 
 * [How to add state to functional components using recompose](http://blog.jakoblind.no/2017/04/03/how-to-add-state-to-functional-components-using-recompose/)

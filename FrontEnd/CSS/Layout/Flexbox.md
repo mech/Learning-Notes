@@ -1,5 +1,6 @@
 # Flexbox
 
+* [**Designer's Guide to Flexbox and Grid**](https://medium.com/@jonyablonski/designers-guide-to-flexbox-and-grid-cec6e7e45736)
 * [**Flexing your Flexbox muscles**](http://www.benmvp.com/slides/2017/fluent/flexbox.html#/)
 * [Build with Flexbox](http://flexbox.buildwithreact.com/)
 * [How To Approach CSS layouts in 2017 — and beyond](https://medium.com/flexbox-and-grids/css-flexbox-grid-layout-how-to-approach-css-layouts-in-2017-and-beyond-685deef03e6c)

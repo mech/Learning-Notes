@@ -24,6 +24,7 @@
 * [Introducing Dexter, the Automatic Indexer for Postgres](https://medium.com/@ankane/introducing-dexter-the-automatic-indexer-for-postgres-5f8fa8b28f27)
 * [How About Hypothetical Indexes ?](https://rjuju.github.io/postgresql/2015/07/02/how-about-hypothetical-indexes.html)
 * Indexes add overhead to write operations like INSERT, UPDATE and DELETE. Because of this, you may not want to index write-heavy tables.
+* [Index Columns for `LIKE` in PostgreSQL](https://niallburkley.com/blog/index-columns-for-like-in-postgres/)
 
 **BRIN**
 

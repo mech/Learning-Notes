@@ -55,6 +55,13 @@ Many moving parts:
 
 * Store, state, reducers, action creators, actions, async actions, middleware, connected components
 
+## Against Redux
+
+* [**How to manage or eliminate React state without Redux**](http://monicalent.com/blog/2017/07/23/manage-state-in-react/)
+* [Repatch - the simplified Redux](https://community.risingstack.com/repatch-the-simplified-redux/)
+* [Simplifying Redux Architecture](https://medium.com/@TuckerConnelly/simplifying-redux-architecture-cd50426c941a)
+* [The road to Redux and back - Why I decided to go back to vanilla React](https://medium.freecodecamp.org/the-road-to-redux-and-back-d9987c7bb894)
+
 ## Performance
 
 * [Redux isn't slow, you're just doing it wrong - An optimization guide](https://reactrocket.com/post/react-redux-optimization/)
@@ -109,6 +116,39 @@ Note: The 2nd argument to `createStore` should only use for state hydration and 
 
 ## Code Organization
 
+* [How I organize my React & Redux projects](https://medium.com/@bruno__quaresma/how-i-organize-my-react-redux-projects-602990f6d0f0)
+* [A feature based approach to React development](http://ryanlanciaux.com/blog/2017/08/20/a-feature-based-approach-to-react-development/)
+* [react_feature_folder_example](https://github.com/ryanlanciaux/react_feature_folder_example)
+
+```
+src/
+├── Login/     => Login feature
+  ├── index.js => Public API
+  ├── components/
+  ├── actions/
+  ├── reducers/
+  ├── selectors/
+├── Projects/
+├── shared/
+  ├── reducers.js
+```
+
+It's generally a good idea to reference any part of a feature through the feature's `index.js` rather than the file directly. This treats the index as each feature's API contract and quickly illuminates any issues that may occur with any refactoring.
+
+**Code is easier to refactor** - If a feature has one entry point, it's clear that removing the feature will have limited impact on the rest of the system. Additionally, if changes are made to a Login feature, they should have no impact on a Project feature.
+
+```
+src/
+├── components/ => Reusable components like <Input>, <Calendar>
+├── pages/      => Screens that are application-specific
+├── utils/      => Logic that are not about the application domain like String/Array operation
+├── redux/      => Redux state management code, arranged by features
+  ├── feature_name/
+    ├── actions.js
+    ├── reducers.js
+    ├── types.js
+```
+
 ```js
 // Try putting your actions and reducer into one file
 
@@ -160,6 +200,8 @@ Feature folder definitely make sense for isolated bounded-context kind of compon
 * [Nice series to watch](https://www.youtube.com/watch?v=g8O0FT0uoDA&list=PLuNEz8XtB51K-x3bwCC9uNM_cxXaiCcRY&index=21#t=155.03974)
 
 ## Normalizr
+
+* [Using Normalizr to organize data in stores - practical guide](https://hackernoon.com/using-normalizr-to-organize-data-in-stores-practical-guide-82fa061b60fb)
 
 Why do we need it? Our JSON API may be deeply nested and duplicative. We want to coerce that deep API into more manageable and cacheable ID-indexed objects.
 

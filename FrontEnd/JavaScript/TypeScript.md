@@ -1,8 +1,12 @@
 # TypeScript
 
-* [TypeScript loves React](https://medium.com/@basarat/typescript-developers-love-react-9871b494bc1a)
-
 https://github.com/paulcbetts/spawn-rx/pull/12/files
+
+## With React
+
+* [TypeScript loves React](https://medium.com/@basarat/typescript-developers-love-react-9871b494bc1a)
+* [Getting started with React.js and Typescript](https://jjude.com/react-with-tsc/)
+* [Using React in VS Code](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
 
 ## Structural vs Nominal
 

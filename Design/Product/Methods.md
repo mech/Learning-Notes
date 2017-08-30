@@ -44,3 +44,7 @@ Prototyping is a habit. It is a way to validate assumptions and ideas.
 * [Don't Make a Journey Map: 9 archetypes of good / bad, and how to decide what to use](https://medium.com/@shahrsays/dont-make-a-journey-map-9-archetypes-of-good-bad-and-how-to-decide-what-to-use-d65abd30ec6f#.fq1rrlsdt)
 * [Journey mapping as insight tool: A healthcare case study](https://www.youtube.com/watch?v=OUoZq-g-Z2g)
 * [How to make an experience map](https://blog.carbonfive.com/2017/08/03/experience-mapping-2/)
+
+## Kano Model
+
+* [Choosing the Right Features with Kano Model](https://uxdesign.cc/choosing-the-right-features-with-kano-model-cc0274b6a83)

@@ -82,10 +82,11 @@ What we want from CRA:
 ▶ yarn flow init
 ```
 
-### Ejecting
+### Ejecting/Forking
 
 * [Configure create-react-app without ejecting ⏏](https://medium.com/@kitze/configure-create-react-app-without-ejecting-d8450e96196a)
 * [custom-react-scripts](https://github.com/kitze/custom-react-scripts)
+* [Maintaining a fork of create-react-app as an alternative to ejecting](https://medium.com/@denis.zhbankov/maintaining-a-fork-of-create-react-app-as-an-alternative-to-ejecting-c555e8eb2b63)
 
 ## Tree Shaking
 

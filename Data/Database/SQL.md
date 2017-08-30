@@ -4,6 +4,8 @@
 * [Modern SQL](http://modern-sql.com/)
 * [What is the best online resource to learn advanced SQL?](https://news.ycombinator.com/item?id=13417326)
 * [Cool queries](https://github.com/sagemathinc/cocalc/blob/master/src/scripts/postgresql/cool-queries.md)
+* [**How To Write Better Queries**](https://www.datacamp.com/community/tutorials/sql-tutorial-query)
+* [How To Write Better SQL Queries: The Definitive Guide – Part 1](http://www.kdnuggets.com/2017/08/write-better-sql-queries-definitive-guide-part-1.html/2)
 
 ## Index
 

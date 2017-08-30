@@ -28,6 +28,60 @@ https://dollarshaveclub.github.io/stickybits/
 * [Pure CSS Tooltips](https://medium.freecodecamp.org/a-step-by-step-guide-to-making-pure-css-tooltips-3d5a3e237346)
 * [Popper.js](https://popper.js.org/)
 * [Pace.js - For loading](http://github.hubspot.com/pace/docs/welcome/)
+* [Heroku-style Loading Indicator](https://gist.github.com/patientdev/3dac07a069713c33d4d4cc039aa5ac2d)
+
+```js
+import React from 'react';
+
+export default class HerokuLoadingIndicator extends React.Component {
+    constructor() {
+        super();
+        const GLYPHS = [
+            '\u28FE', // ⣾
+            '\u28FD', // ⣽
+            '\u28FB', // ⣻
+            '\u28BF', // ⢿
+            '\u287F', // ⡿
+            '\u28DF', // ⣟
+            '\u28EF', // ⣯
+            '\u28F7'  // ⣷
+        ];
+        this.state = {
+            glyphs_index: 0,
+            glyphs: GLYPHS
+        };
+    }
+
+    // After the component mounts, cycle through the glyphs.
+    componentDidMount() {
+        this.timerID = setInterval(
+            () => this.updateGlyphsIndex(),
+            75
+        );
+    }
+
+    // Before the component unmounts, stop cycling the glyphs.
+    componentWillUnmount() {
+        clearInterval(this.timerID);
+    }
+
+    // Move to the next glyph. Uses modular arithmetic to cycle through the glyphs.
+    updateGlyphsIndex() {
+        this.setState((prevState) => ({
+            glyphs_index: (prevState.glyphs_index + 1) % this.state.glyphs.length
+        }));
+    }
+
+    render() {
+        return (
+            <span className="heroku-loading-indicator">
+                {this.state.glyphs[this.state.glyphs_index]}
+            </span>
+        );
+    }
+}
+
+```
 
 ## UI Libraries
 
@@ -41,6 +95,8 @@ https://dollarshaveclub.github.io/stickybits/
 * [react-primitives](https://github.com/lelandrichardson/react-primitives)
 * [Blueprint](http://blueprintjs.com/)
 * [buffer-components](https://github.com/bufferapp/buffer-components)
+* [ExtReact](https://www.sencha.com/products/extreact/#app)
+* [Microsoft Office UI Fabric](https://dev.office.com/fabric#/components) Also see [Repo](https://github.com/OfficeDev/office-ui-fabric-react)
 
 ## Blank Slate
 
@@ -56,12 +112,6 @@ https://dollarshaveclub.github.io/stickybits/
 * [Rendering PDFs with React Components](https://themeteorchef.com/tutorials/rendering-pdfs-with-react-components)
 * [react-pdf](https://github.com/wojtekmaj/react-pdf)
 * [react-pdf](https://github.com/diegomura/react-pdf)
-
-## Show/Hide
-
-* [render-if](https://github.com/ajwhite/render-if)
-* [react-only-if](https://github.com/MicheleBertoli/react-only-if)
-* [react-hoverbox](https://github.com/wix/react-hoverbox)
 
 ## Table (Filtering, Pagination)
 
@@ -86,10 +136,18 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 * User tabular figures - `font-feature-settings: "tnum" 1`
 * [Free Work Sans has excellent true tabular lining figures](https://fonts.google.com/specimen/Work+Sans)
 * [Use HOC for pagination, sorting, etc.](https://codebrahma.com/using-higher-order-components-react-application/)
+* [Griddle - An ultra customizable datagrid](https://griddlegriddle.github.io/Griddle/)
 
 ## Spreadsheet
 
 * [Handsontable](https://handsontable.com/)
+
+## Show/Hide
+
+* [render-if](https://github.com/ajwhite/render-if)
+* [react-only-if](https://github.com/MicheleBertoli/react-only-if)
+* [react-hoverbox](https://github.com/wix/react-hoverbox)
+* [react-detect-offline - Render certain content only when online (or only when offline)](https://github.com/chrisbolin/react-detect-offline)
 
 ## Modal and Dialog
 
@@ -97,8 +155,13 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 * [react-slot-fill](https://github.com/camwest/react-slot-fill)
 * [react-waypoint](https://github.com/brigade/react-waypoint)
 
+## Menu
+
+* [react-contexify](https://github.com/fkhadra/react-contexify)
+
 ## Auto-complete and Instant Search
 
+* [**Downshift**](https://medium.com/@kentcdodds/introducing-downshift-for-react-b1de3fca0817)
 * [RDropdown](https://github.com/jamhall/rdropdown)
 * [GooglePlaceAutocomplete](https://github.com/ydeshayes/googlePlaceAutocomplete)
 * [Algolia](https://community.algolia.com/react-instantsearch/)
@@ -255,6 +318,7 @@ class Tabs extend Component {
 ## D3
 
 * [A starting point on using D3 with React](https://blog.sicara.com/a-starting-point-on-using-d3-with-react-869fdf3dfaf#.aood1myab)
+* [Nivo](http://nivo.rocks/#/)
 
 ## Images
 

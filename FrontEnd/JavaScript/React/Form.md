@@ -23,7 +23,6 @@ handleCreateFormSubmit = (timer) => {
 }
 ```
 
-* [**JavaScript Events Unmasked: How to Create an Input Mask for Mobile**](https://medium.com/outsystems-experts/javascript-events-unmasked-how-to-create-an-input-mask-for-mobile-fc0df165e8b2)
 * [A list of form drivers](https://github.com/markerikson/redux-ecosystem-links/blob/master/forms.md)
 * [Formik](https://github.com/jaredpalmer/formik)
 * [NeoForm](https://github.com/zero-plus-x/neoform)
@@ -74,6 +73,16 @@ What API is good for inputs:
   <Password name="password" label="Password" isRequired />
 </Form>
 ```
+
+## Input Mask
+
+* [**JavaScript Events Unmasked: How to Create an Input Mask for Mobile**](https://medium.com/outsystems-experts/javascript-events-unmasked-how-to-create-an-input-mask-for-mobile-fc0df165e8b2)
+* [Text Input Mask for React Native](https://blog.cloudboost.io/text-input-mask-for-react-native-3c04e82843a6)
+* [react-number-input-field](https://github.com/mitchallen/react-number-input-field)
+
+## Children, cloneElement, etc.
+
+* [Unravelling the Thought Process — how to rationally explore problems in engineering](https://hackernoon.com/unravelling-the-thought-process-how-to-rationally-explore-problems-in-engineering-ad78fc45bc86)
 
 ## Forms as Data
 
@@ -192,6 +201,7 @@ We need to pre-bind them in the constructor.
 
 * Good for validation
 * Good for maintaining form state
+* [Controlled / Uncontrolled React Components](https://www.viget.com/articles/controlling-components-react)
 
 ```js
 state = {

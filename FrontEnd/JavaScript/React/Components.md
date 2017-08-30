@@ -44,6 +44,19 @@
 * ReactElement is stateless and immutable. It is basically a plain JavaScript object.
 * ReactComponent has a render() that is expected to return ReactElement.
 
+## React 16
+
+```js
+const Aux = (props) => {
+  // Before React 16
+  return <div>{props.children}</div>
+
+  // After React 16
+  // Good for flexbox, grid, tables
+  return props.children
+}
+```
+
 ## Examples and Case Studies
 
 * [real-world-react-apps](https://github.com/jeromedalbert/real-world-react-apps)
@@ -503,6 +516,7 @@ Button.propTypes = {
 
 ### Function as Child (vs HOC)
 
+* [**Downshift - Compound Component and Function as Child example**](https://medium.com/@kentcdodds/introducing-downshift-for-react-b1de3fca0817)
 * [return-null](https://github.com/joshwcomeau/return-null)
 * [Function as child components](https://medium.com/merrickchristensen/function-as-child-components-5f3920a9ace9)
 * [ReactCasts #2 - Function as Child Components](https://www.youtube.com/watch?v=WE3XAt9P8Ek)

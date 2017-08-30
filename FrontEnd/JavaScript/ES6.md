@@ -16,6 +16,7 @@
 * [What Do I Need to Know to Ace a JavaScript Interview?](https://github.com/adam-s/js-interview-review)
 * [The Best Frontend JavaScript Interview Questions (written by a Frontend Engineer)](https://performancejs.com/post/hde6d32/The-Best-Frontend-JavaScript-Interview-Questions-(Written-by-a-Frontend-Engineer))
 * [What the f*ck JavaScript?](https://github.com/denysdovhan/wtfjs)
+* [Pretty algorithms - Common useful algorithms written in modern JavaScript](https://github.com/jiayihu/pretty-algorithms)
 
 Encapsulate conditionals:
 
@@ -43,6 +44,8 @@ if (shouldShowSpinner(fsm, listNode)) {
 * [Require Parameters for JavaScript Functions](https://davidwalsh.name/javascript-function-parameters)
 
 ## Arrow Function
+
+* [When should I use Arrow Functions? - James K Nelson](https://reactarmory.com/answers/when-to-use-arrow-functions)
 
 ```js
 // Never use arrow functions to declare object methods as you

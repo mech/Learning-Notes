@@ -52,6 +52,10 @@ const Transition = () => (
 
 The `*-enter` and `*-enter-active` classes are applied when a new element is added as a child of the transition group.
 
+## GSAP - Greensock
+
+* [React meets GSAP](https://medium.com/@marcmintel/react-meets-gsap-c6dd82edeb72)
+
 ## Libraries
 
 * [React Overdrive - Simple and powerful animations](https://react-overdrive.now.sh/)

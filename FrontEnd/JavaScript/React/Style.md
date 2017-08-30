@@ -10,6 +10,7 @@
 * [ReactSimpleFlexGrid](https://github.com/abraztsov/ReactSimpleFlexGrid)
 * [**CSS Utility Classes and "Separation of Concerns"**](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/)
 * [Tailwind CSS](https://tailwindcss.com/)
+* [How we made our product more personalized with CSS Variables and React](https://medium.com/geckoboard-under-the-hood/how-we-made-our-product-more-personalized-with-css-variables-and-react-b29298fde608)
 
 > My experience is that building things utility-first leads to more consistent looking designs than working component-first, as unintuitive as it might sound at first.
 
