@@ -1,5 +1,9 @@
 # Interface Design
 
+> Many commercial software applications include user interfaces in which a screen presents a set of controls, but leaves it to the user to deduce the page's purpose and how to use the controls to accomplish that purpose. 
+
+---
+
 > Instead of defining the face of our content — the stuff that appears in the UI — we should start by defining the how and the why that support that content - [Building Block Design](https://medium.com/ruxers/building-block-design-a-modular-design-strategy-for-uxers-927f63eec90c)
 
 * [What is Atomic Design?](https://blog.prototypr.io/what-is-atomic-design-b8f0368e580d#.bpbyph6i4)
@@ -12,6 +16,8 @@
 * [Really Good UX](http://reallygoodux.io/)
 * [Floating labels are problematic](https://medium.com/simple-human/floating-labels-are-a-bad-idea-82edb64220f6)
 * [Don't mistake common UI patterns for best practices](https://medium.com/ruxers/dont-mistake-common-ui-patterns-for-best-practices-4a1c8d4bef9a)
+* [**Task-Based UI**](https://cqrs.wordpress.com/documents/task-based-ui/)
+* [Infinitely Better UIs with Finite Automata: FSM](https://www.youtube.com/watch?v=VU1NKX6Qkxc)
 
 > Consistency, not uniformity
 

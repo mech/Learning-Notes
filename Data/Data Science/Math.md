@@ -1,6 +1,7 @@
 # Math for Data Science
 
 * [The Problem with Math: Why Your Monitoring Solution is Wrong](https://www.circonus.com/2015/02/problem-math/)
+* [What maths are critical to pursuing ML/AI?](https://news.ycombinator.com/item?id=15116379)
 
 ## Statistics
 

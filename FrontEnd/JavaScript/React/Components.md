@@ -35,6 +35,14 @@
 
 > There are a lot of similarities in the way we build UIs with React and the principles of FP, and the more we are aware of it, the better our code will be - `UI = f(state)`
 
+## The Rise of Component, Mythical Man-Month and Atomic Design
+
+* React enable isolated components
+* Based on Atomic Design principles
+* Allow distributed work similar to picking cotton
+* 2013, Brad Frost published Atomic Design
+* 2013, Facebook released React
+
 ## Security
 
 * [The Most Common XSS Vulnerability in React.js Applications](https://medium.com/node-security/the-most-common-xss-vulnerability-in-react-js-applications-2bdffbcc1fa0)
@@ -664,6 +672,6 @@ export Menu
 
 * [React Design Patterns and Best Practices (DONE)](https://www.safaribooksonline.com/library/view/react-design-patterns/9781786464538/)
 * [Learning React](https://www.safaribooksonline.com/library/view/learning-react-1st/9781491954614/ch02.html)
-* Fullstack React - Page 392/825
+* Fullstack React - Page 676/825
 * The Missing Form Handbook of React (DONE)
 * [Advanced React.js (DONE)](https://app.pluralsight.com/library/courses/reactjs-advanced/table-of-contents)

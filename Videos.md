@@ -20,6 +20,14 @@ document.getElementsByTagName('video')[0].playbackRate = 2;
 * [Fronteers](https://vimeo.com/fronteers)
 * [Full Stack Talks](https://www.youtube.com/channel/UCpq2_V-9AYYUHSsjoJZPUTg/videos)
 
+## Go
+
+* [GopherCon 2017](https://www.youtube.com/playlist?list=PL2ntRZ1ySWBdD9bru6IR-_WXUgJqvrtx9)
+
+## Software
+
+* [Domain-Driven Design Europe](https://www.youtube.com/channel/UC3PGn-hQdbtRiqxZK9XBGqQ)
+
 ## Innovation and Startups
 
 * [Clayton Christensen (The Innovator's Dilemma) at Startup Grind Global 2016](https://www.youtube.com/watch?v=Zn6-KksdOgE)

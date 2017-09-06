@@ -138,6 +138,12 @@ class MyFormObject
 end
 ```
 
+## Repository
+
+Think about it. Let's say you are changing something in the `OrderLine` class. How would you grep your codebase to find all possible places querying it directly? Relying on some columns or data being there? You need to look for `OrderLine`, `order_line`, `order_lines` and combination of it with `find`, `where`, etc. and you still might not find all places.
+
+It would be a bit easier if we use the **repository pattern** and at least we know all possible queries that are executed on our tables.
+
 ## Service Object
 
 > Service layers are all about verbs.
@@ -240,6 +246,10 @@ end
 ```
 
 ## Value Object (Immutable)
+
+Examples: `ActiveSupport::TimeZone`, `GrossAmount`, `VatRate`
+
+> Value objects often represent compound attributes grouped together into one class like `Money` class.
 
 * [tcrayford/Values](https://github.com/tcrayford/Values)
 * [To Clojure and back](https://www.youtube.com/watch?v=doZ0XAc9Wtc)

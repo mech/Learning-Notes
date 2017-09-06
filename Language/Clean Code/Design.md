@@ -21,20 +21,60 @@ Good design preserves maximum flexibility at minimum cost by putting off decisio
 
 ## Boundaries
 
+* Ubiquitous language within the bounded context
+* Strategic modeling
+* With Ubiquitous Language and Subdomains
+* We want limits. We want boundaries. We want borders.
+* Boundaries have to be tangible.
+* Crossing the boundary should be a bit harder than operating within the limits of it.
+* Allows us to break things into pieces.
 * [Bring clarity to your monolith with Bounded Contexts](https://blog.carbonfive.com/2016/11/01/bring-clarity-to-your-monolith-with-bounded-contexts/)
 
 ---
 
 * Just large enough - knows its boundaries
 * Highly cohesive and loosely coupled
+* Don't couple directly to the task-based UI
 * Precise semantics that fully express the business domain
 * [Domain Event](https://blog.carbonfive.com/2017/07/18/evented-rails-decoupling-complex-domains-in-rails-with-domain-events/)
+
+> Ask yourself: what do these columns have in common? Why have they landed in the same database table and ActiveRecord model? Is it because they are **updated on the same screen**?
+
+> At a certain point however, the complexity of your domain increases and a one-to-one mapping between screen UIs and database design (and ActiveRecord models) is no longer good enough.
+
+## Aggregates
+
+* Tactical modeling
+* With Domain Events
+
+Classes with attributes that cooperate together and need to be updated in one transaction to protect business rules are called Aggregates.
+
+The role of an aggregate is to protect business rules, to protect invariants.
+
+## Event Sourcing
+
+* Modelling events forces temporal focus - Event force you to think temporally
+* Structure vs Behavioral - Events improve behavioral factor of your system
+* Append-only log
+* Kafka is event sourcing
+* Flux is event sourcing
+* Redux is event sourcing
+
+## Policies
 
 ## Naming
 
 Introduce new words into the application vocabulary.
 
 New name is actually an opportunity to reveal intent. But more names also has its cognitive costs.
+
+* Use case
+
+Is it `CreateUser` or is it `RegisterUser`? `DeleteClass` or `DeregisterStudent`?
+
+Is it `ChangeAddress`? Is there a difference between "Correcting an Address" and "Relocating the Customer"?
+
+Naming in Domain is important!
 
 ## Lack of Design
 

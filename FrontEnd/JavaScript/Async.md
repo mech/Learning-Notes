@@ -1,5 +1,7 @@
 # Async
 
+Async is basically eliminating callback hell.
+
 ## Promises
 
 * [Passing data between Promise callbacks](http://2ality.com/2017/08/promise-callback-data-flow.html)

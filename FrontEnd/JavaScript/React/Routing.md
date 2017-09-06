@@ -1,5 +1,64 @@
 # Routing
 
+```js
+// <Router> provide context for location and history object.
+// It also subscribe to history change event.
+class Router extends Component {
+  static childContextTypes = {
+    history: PropTypes.object,
+    location: PropTypes.object,
+  }
+
+  constructor(props) {
+    super(props)
+    
+    this.history = createHistory()
+    this.history.listen(() => this.forceUpdate())
+  }
+
+  getChildContext() {
+    return {
+      history: this.history,
+      location: window.location
+    }
+  }
+
+  render() {
+    return this.props.children
+  }
+}
+
+const Route = ({ path, component }, { location }) => {
+  const pathname = location.pathname
+
+  if (pathname.match(path)) {
+    return React.createElement(component)
+  } else {
+    return null
+  }
+}
+
+Route.contextTypes = {
+  location: PropTypes.object
+}
+
+const Link = ({ to, children }, { history }) => (
+  <a
+    onClick={(e) => {
+      e.preventDefault()
+      history.push(to)
+    }}
+    href={to}
+  >
+    {children}
+  </a>
+)
+
+Link.contextTypes = {
+  history: PropTypes.object
+}
+```
+
 ```
 npm install --save react-router-dom
 ```
@@ -153,11 +212,11 @@ Match renders UI when a pattern matches a location.
 
 ```js
 // Simplified <Route> implementation
-const Route = ({ pattern, component: Component }) => {
+const Route = ({ path, component }) => {
   const pathname = window.location.pathname
   
-  if (pathname.match(pattern)) {
-    return <Component />
+  if (pathname.match(path)) {
+    return React.createElement(component)
   } else {
     return null
   }

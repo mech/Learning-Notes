@@ -154,3 +154,4 @@ export default pure(DatagridBody)
 ## Videos
 
 * [Performance optimisations for React: round 3](https://www.youtube.com/watch?v=JZF06CPqOQ0)
+* [Scaling My First Enterprise React App!](https://www.youtube.com/watch?v=sL4D_zRUVw4)

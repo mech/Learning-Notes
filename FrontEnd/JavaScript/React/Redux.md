@@ -72,10 +72,52 @@ Many moving parts:
 
 * [Why not to store objects in Redux](https://medium.com/collaborne-engineering/why-not-to-store-objects-in-redux-7f41243020fc)
 
-## Compared to MobX
+3 approaches:
+
+1. The Nested Object
+2. The Nested Reference - flat
+3. The Separated Object - flat
+
+While all the approaches have their upsides and downsides, we will quickly discover that in Redux, keeping the structure as **flat and normalized** as possible (as in the second and third approaches) makes the code cleaner and simpler.
+
+```js
+// Nested Object
+state = {
+  recipes: [
+    {
+      name: 'omelette',
+      ingredients: [
+        { name, quantity }
+      ]
+    }
+  ]
+}
+
+// Nested Reference - Flat and Normalized
+// Use of 2 reducers for recipes and ingredients possible
+// since we can process them independently
+state = {
+  recipes: [
+    {
+      name: 'omelette',
+      ingredients: [2, 3]
+    }
+  ],
+  ingredients: {
+    2: { name, quantity },
+    3: { name, quantity }
+  }
+}
+```
+
+Treat your state as a database and design it separately from the presentation or logic layers.
+
+## Compared to MobX and @nx-js/observer-util
 
 * [Some complaints](https://news.ycombinator.com/item?id=12975737)
 * Redux often end up with very extensive lists of props. MobX generally get away with just passing in the model itself. You actions are just methods on the model class.
+* [react-easy-state is using @nx-js/observer-util under the hood](https://github.com/solkimicreb/react-easy-state)
+* [Writing a JavaScript Framework - Data Binding with ES6 Proxies](https://blog.risingstack.com/writing-a-javascript-framework-data-binding-es6-proxy/)
 
 ## Business Logic
 
@@ -107,6 +149,14 @@ What is business logic?
 * Processing (asynchronous orchestration) - waiting for response after making payment
 
 ## @@INIT
+
+After the store is initialized but right before it's returned, `createStore()` actually dispatches an initialization action:
+
+```js
+// Ensure all states are undefined, thus you can use default
+// parameter to define some initial state
+dispatch({ type: '@@redux/INIT' })
+```
 
 @@INIT is launched twice on purpose.
 
@@ -201,6 +251,8 @@ Feature folder definitely make sense for isolated bounded-context kind of compon
 
 ## Normalizr
 
+* A very flat structure
+* All entities have their ID and separate tables
 * [Using Normalizr to organize data in stores - practical guide](https://hackernoon.com/using-normalizr-to-organize-data-in-stores-practical-guide-82fa061b60fb)
 
 Why do we need it? Our JSON API may be deeply nested and duplicative. We want to coerce that deep API into more manageable and cacheable ID-indexed objects.
@@ -267,6 +319,9 @@ render() {
 ```
 
 ## Store
+
+* Where state are stored
+* Only the store has access to the reducer
 
 > Redux gets easier once I treat it as a plain **database**:
 
@@ -456,6 +511,14 @@ export const fetchUserByEmail = (email) => {
 
 ## Middleware
 
+Reducers are services that modify state. Middlewares modify actions. Unlike reducers, middleware can modify, stop/supress, or add more actions, and just actions.
+
+Interceptors for actions.
+
+Since the middleware have access to the actions, the `dispatch()` function, and the store, they are the **most versatile and powerful** entities in Redux.
+
+In some cases, middleware might suppress actions or change them. That is why **implementing a logger in a reducer** is not a viable solution: some of the actions might not reach it.
+
 > Side effect is mostly done at middleware
 
 The action passes through the store's chain of middlewares, where actions may be intercepted and additional behaviour may be executed. Middlewares are commonly used to handle side-effects in Redux applications.
@@ -468,6 +531,10 @@ Middleware has opportunity to log, stop, modify, or not touch an action.
 ```
 View => Action Creator => Action => Middleware => Reducers => State (Store)
 ```
+
+### Authorization Middleware
+
+Since to perform a task involve dispatching an action. And action can be stopped using middleware. Middleware is a good place to enforce authorization and permission related tasks.
 
 ### API Middleware
 
@@ -508,6 +575,8 @@ You can use middleware to:
 
 ## Reducers
 
+Think of reducers as "Services". You have a RecipeBook service, an Ingredient service, Authentication service, etc. Each of these services are their own reducers that manages just that slice of the data. Some actions can affect more than more service.
+
 Function that manage application state by listening to particular actions.
 
 * [Structuring Reducers](https://github.com/markerikson/redux/blob/structuring-reducers-page/docs/recipes/StructuringReducers.md)
@@ -529,6 +598,8 @@ The reducer is (almost) synonymous with "store", so don't be surprise when peopl
 Don't confuse between state tree and reducers. They are 2 separate things. You can retain your state tree while swapping out reducers during code splitting.
 
 ### Reducer Composition
+
+If you only have a single root reducer, you will find that it is taking care of different parts of the state tree. It is carrying too much responsibilities and frankly hard to maintain.
 
 * [Feature Request: Allow reducers to consult global state](https://github.com/reactjs/redux/pull/1768)
 * [RFC: Make combineReducers() shape-agnostic](https://github.com/reactjs/redux/issues/1792)
@@ -888,3 +959,5 @@ function* watch() {
 ## Books
 
 * [Advanced Redux (DONE)](https://app.pluralsight.com/library/courses/advanced-redux/table-of-contents)
+* The Complete Redux Book - Page 60/179
+* Redux from Scratch - Page 55/268

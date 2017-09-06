@@ -9,6 +9,11 @@
 
 * [Web fonts: when you need them, when you don't](https://hackernoon.com/web-fonts-when-you-need-them-when-you-dont-a3b4b39fe0ae)
 
+```html
+<link rel="preload" as="font" href="font.woff" type="font/woff2" crossorigin />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+```
+
 ## Gzip
 
 * [Better than Gzip Compression with Brotli](https://hacks.mozilla.org/2015/11/better-than-gzip-compression-with-brotli/)

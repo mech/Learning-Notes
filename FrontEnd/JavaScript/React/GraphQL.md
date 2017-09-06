@@ -14,12 +14,20 @@
 * [GraphQL Tour: Interfaces and Unions](https://medium.com/the-graphqlhub/graphql-tour-interfaces-and-unions-7dd5be35de0d)
 * [Coursera's journey to GraphQL](https://dev-blog.apollodata.com/courseras-journey-to-graphql-a5ad3b77f39a)
 
+GraphQL is basically:
+
+* Types
+* Resolvers
+
 ## What's Wrong with REST
 
 * Fetching complicated object graphs (i.e. associations) get unwieldy quick
 * REST's reliance on URL forces the use of incongruent query params to dynamically interact with resources
 * Alternative is to keep resources simple and force multiple HTTP requests which lead to poor performance and over-fetching
 * Weak-typing means little way of machine-readable metadata
+* Endpoint creep
+
+## N+1 Problem
 
 ## Thinking in Graphs
 
@@ -53,6 +61,10 @@ ShopType = ObjectType.define do
 end
 ```
 
+## Data Graph - Nodes and Edges
+
+* Be careful of N+1 problem with many edges
+
 ## Type
 
 Under-fetching is actually a type error.
@@ -65,6 +77,8 @@ Under-fetching is actually a type error.
 
 ## Data Loader
 
+Please don't do REST API backing your GraphQL. It will be damn slow. Always use some variants of Data Loader.
+
 * [graphql-batch for Ruby, sort of like DataLoader](https://github.com/Shopify/graphql-batch)
 * [DataLoader - Source code walkthrough by Lee Byron](https://www.youtube.com/watch?v=OQTnXNCDywA)
 * [Ruby BatchLoader](https://engineering.universe.com/batching-a-powerful-way-to-solve-n-1-queries-every-rubyist-should-know-24e20c6e7b94)
@@ -72,6 +86,8 @@ Under-fetching is actually a type error.
 ## Pagination
 
 * [Understanding pagination: REST, GraphQL, and Relay](https://dev-blog.apollodata.com/understanding-pagination-rest-graphql-and-relay-b10f835549e7)
+
+Instead of using literal page numbers, idiomatic GraphQL uses opaque strings called **cursors**. Cursors are more resilient to real-time changes to your data, which might lead to duplicates in simple page-based systems.
 
 ## Rails
 

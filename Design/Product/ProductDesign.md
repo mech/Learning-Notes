@@ -1,5 +1,10 @@
 # Product Design
 
+* [Game of Thrones' first AD on the challenges of Eastwatch](https://www.theverge.com/2017/8/15/16148146/game-of-thrones-behind-the-scenes-eastwatch-charlie-endean-assistant-director)
+
+* Design is how it works
+* Not Good Design, but Effective Design
+
 > He who learns and learns and yet does not what he knows, is one who plows and plows yet never sows - Ancient Persian Proverb
 
 ---

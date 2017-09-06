@@ -193,3 +193,7 @@ end
 ## Videos
 
 * [Drifting Ruby](https://www.driftingruby.com/episodes)
+
+## Books
+
+* Domain-Driven Rails - Page 57/187
