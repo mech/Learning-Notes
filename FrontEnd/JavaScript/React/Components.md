@@ -672,6 +672,6 @@ export Menu
 
 * [React Design Patterns and Best Practices (DONE)](https://www.safaribooksonline.com/library/view/react-design-patterns/9781786464538/)
 * [Learning React](https://www.safaribooksonline.com/library/view/learning-react-1st/9781491954614/ch02.html)
-* Fullstack React - Page 676/825
+* Fullstack React (DONE)
 * The Missing Form Handbook of React (DONE)
 * [Advanced React.js (DONE)](https://app.pluralsight.com/library/courses/reactjs-advanced/table-of-contents)

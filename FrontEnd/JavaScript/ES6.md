@@ -145,6 +145,13 @@ class Button extends React.Component {
   handleClick = () => {
   }
   
+  // With async
+  handlePressAsync = async () => {
+    if (!await Connectivity.isAvailableAsync()) {
+      this.alertNoInternetConnection()
+    }
+  }
+  
   render() {
   }
 }

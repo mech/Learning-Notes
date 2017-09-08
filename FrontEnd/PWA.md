@@ -35,3 +35,4 @@
 ## Videos
 
 * [Progressive What Apps](https://www.youtube.com/watch?v=Y1l5Y3INwaE)
+* [Redux + ServiceWorker = Offline React](https://www.youtube.com/watch?v=f4KnHNCZcH4)

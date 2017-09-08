@@ -106,7 +106,7 @@ Each uniqueness constraint must be backed by a unique database index to protect 
 3. Value object
 4. Query Object
 5. View Object
-6. Policy Object
+6. Policy Object - Whitelist? Gate? Access Control?
 7. Decorator
 
 ```ruby
