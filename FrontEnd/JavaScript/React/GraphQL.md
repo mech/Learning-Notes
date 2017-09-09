@@ -133,6 +133,7 @@ Think in graphs, not endpoints.
 
 * [Thinking in Graphs](http://graphql.org/learn/thinking-in-graphs/)
 * **Hierarchical** - Most product development involves the creation and manipulation of view hierarchies. To achieve congruence with the structure of these applications, a GraphQL query itself is a hierarchical set of fields. The query is shaped just like the data it returns. It is natural way for product engineers to describe data requirements.
+* Every query has the shape of a tree - i.e. **it is never circular**.
 
 ## Design Your Schema
 
@@ -271,6 +272,55 @@ Instead of using literal page numbers, idiomatic GraphQL uses opaque strings cal
 * [Caching GraphQL queries with GraphQL-ruby and Rails](http://mgiroux.me/2016/graphql-query-caching-with-rails/)
 * [graphql-ruby-demo](https://github.com/rmosolgo/graphql-ruby-demo)
 
+```ruby
+class GraphqlController < ApplicationController
+  def create
+    result = Graph::Schema.execute(params[:query])
+    render json: result
+  end
+end
+```
+
+```ruby
+# type RootQuery {
+#   restaurant(name: String): Restaurant
+# }
+
+module Graph::Types
+  RootQuery = GraphQL::ObjectType.define do
+    name 'RootQuery'
+    
+    field :restaurant do
+      argument :name, types.String
+      type Graph::Types::Restaurant
+      
+      resolve -> (object, arguments, context) do
+        ::Restaurant.find_by(name: arguments['name'])
+      end
+    end
+  end
+end
+
+# type Restaurant {
+#   name: String
+#   cuisine: String
+# }
+
+module Graph::Types
+  Restaurant = GraphQL::ObjectType.define do
+    name 'Restaurant'
+    
+    field :cuisine do
+      type types.String
+      
+      resolve -> (restaurant, arguments, context) do
+        restaurant.cuisine
+      end
+    end
+  end
+end
+```
+
 ## Resolvers
 
 * Resolve functions are like little routers.
@@ -295,3 +345,4 @@ Server developer can focus on **describing the data available** rather than impl
 * [Lessons from 4 Years of GraphQL](https://www.youtube.com/watch?v=zVNrqo9XGOs)
 * [High Performance GraphQL - DataLoader](https://www.youtube.com/watch?v=c35bj1AT3X8)
 * [Using Apollo with ReactJS and GraphQL - SingaporeJS](https://www.youtube.com/watch?v=JCBVrE59yAI)
+* [Optimizing for API Consumers with GraphQL](https://www.youtube.com/watch?v=psPnEUAL08w)

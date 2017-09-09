@@ -154,6 +154,7 @@ It would be a bit easier if we use the **repository pattern** and at least we kn
 * Encapsulate cross-cutting operations. Involves several models.
 * Encapsulate a single process of the business logic. Describe one business rule only.
 * Is functional, don't store any states. Services get input and produce output.
+* Application services orchestrate flow & usage of **aggregates** by loading and saving them to/from repositories.
 
 In Rails, controller is the boundary we want to separate. Service Object is the bridge between controller boundary and domain object. Controller's `params` acts as input and Service Object's output determine result (`render` or `redirect`).
 
@@ -180,6 +181,20 @@ end
 Most Services use the `call()` so you can use a closure as well. Some services also use `execute()`.
 
 Some services use verbs instead of nouns: `Movies::Create` vs `Movies::Creator`.
+
+```ruby
+# Your service object do not need to have only run() or execute()
+# or call() methods. It can be descriptive also.
+class OrdersService
+  def expire(order_number)
+    Order.transaction do
+      order = Order.lock.find(order_number) # Load
+      order.expire                          # Operate
+      order.save!                           # Save
+    end
+  end
+end
+```
 
 ## Form Object
 
