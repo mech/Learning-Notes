@@ -141,6 +141,7 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 ## Spreadsheet
 
 * [Handsontable](https://handsontable.com/)
+* [currency.js](https://github.com/scurker/currency.js)
 
 ## Show/Hide
 

@@ -141,7 +141,10 @@ class Button extends React.Component {
   static defaultProps = {
   }
   
-  // Binding option 2 and better
+  // Binding option 2 and better with lexical scoping using arrow function
+  // Bound instance property functions
+  // It looks like a method, but it is not. It really is just an instance property.
+  // Thus, when subclassing, this handleClick will not be inherited
   handleClick = () => {
   }
   

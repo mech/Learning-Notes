@@ -88,6 +88,7 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 * [Iteration is not design](https://medium.com/the-design-innovator/iteration-is-not-design-668695445f76)
 * [Use this exercise to solve any Product Design Challenge](https://medium.muz.li/a-super-simple-exercise-for-solving-almost-any-product-design-challenge-f9e6c0019d7d)
 * [Feature Fatigue](https://www.chargebee.com/blog/saas-product-feature-prioritization/)
+* [Look elsewhere - Don't stare at your industry. Look in the opposite direction.](https://m.signalvnoise.com/look-elsewhere-e89b2b24f3f2)
 
 ## Software influence behavior
 

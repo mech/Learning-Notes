@@ -1,5 +1,7 @@
 # Components
 
+> React allows us to describe and break up our view into components.
+
 * Self-sufficient, do one thing good
 * Easy to integrate with
 

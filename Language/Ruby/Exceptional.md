@@ -138,6 +138,26 @@ end
 render_user(user) { 'UNKNOWN USER' }
 ```
 
+## Learn from Go
+
+```ruby
+require 'faraday'
+
+# Machine communication scales better than human communication
+# Go does forced error handling very way
+# Ruby is a happy path obsessed ecosystem, so sometimes we need to force it
+def get(url, on_success:, on_failure:)
+  f = Faraday.new { |c| c.adapter Faraday.default_adapter }
+  
+  begin
+    resp = f.get(url)
+    on_success.call(resp)
+  rescue Faraday::ClientError => e
+    on_failure.call(e)
+  end
+end
+```
+
 ## Libraries
 
 * [StackExchange.Exceptional](https://github.com/NickCraver/StackExchange.Exceptional)

@@ -13,6 +13,8 @@
 * [JWT is a Bad Standard That Everyone Should Avoid](https://paragonie.com/blog/2017/03/jwt-json-web-tokens-is-bad-standard-that-everyone-should-avoid)
 * [Don't recommend JWT](https://github.com/shieldfy/API-Security-Checklist/issues/6#issuecomment-317308169)
 * [JWT the right way](https://stormpath.com/blog/jwt-the-right-way)
+* [Stop using JWT for sessions](http://cryto.net/~joepie91/blog/2016/06/13/stop-using-jwt-for-sessions/)
+* [Does JWT put your web app at risk?](http://blog.prevoty.com/does-jwt-put-your-web-app-at-risk)
 
 JWT's payload contain **claims** which are **assertions** about a subject.
 

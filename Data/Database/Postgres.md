@@ -184,6 +184,7 @@ EXCLUDE USING gist (
 * [Five ways to paginate in Postgres, from the basic to the exotic](https://www.citusdata.com/blog/2016/03/30/five-ways-to-paginate/)
 * [Build JSON API Responses With Postgres CTEs](http://www.codedependant.net/2017/04/30/build-json-api-responses-postregres-with-cte/)
 * [We need tool support for keyset pagination](http://use-the-index-luke.com/no-offset)
+* [Pagination: You're (Probably) Doing It Wrong](https://coderwall.com/p/lkcaag/pagination-you-re-probably-doing-it-wrong)
 
 ## PL/V8
 

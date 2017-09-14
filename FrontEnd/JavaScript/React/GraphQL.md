@@ -1,5 +1,7 @@
 # GraphQL
 
+> Unapologetically view-based
+
 * [**GraphQL Specification**](https://facebook.github.io/graphql/)
 * [**How to GraphQL**](https://www.howtographql.com/)
 * [Artsy's GraphQL for Mobile](https://artsy.github.io/blog/2016/06/19/graphql-for-mobile/)
@@ -15,45 +17,16 @@
 * [GraphQL Tour: Interfaces and Unions](https://medium.com/the-graphqlhub/graphql-tour-interfaces-and-unions-7dd5be35de0d)
 * [Coursera's journey to GraphQL](https://dev-blog.apollodata.com/courseras-journey-to-graphql-a5ad3b77f39a)
 
+React has view hierarchy. GraphQL has function hierarchy (fragments).
+
 GraphQL is a query language for APIs - not databases. It describe the data that you need, rather than HOW to get the data.
+
+GraphQL queries provide an efficient way to fetch data, even across multiple types. This results in a great abstraction layer on top of databases.
 
 GraphQL is basically:
 
 * Types
 * Resolvers
-* Query Composition - the parent component can gather up the child query and compose it into one single query request
-
-```js
-// Query Composition
-// This parent component will render FriendListItem
-// child component, so its query also need to be composed
-// of child query
-var FriendList = React.createClass({
-  statics: {
-    queries: {
-      viewer: function() {
-        return graphql`
-          Viewer {
-            friends {
-              ${FriendListItem.getQuery('user')}
-            }
-          }
-        `
-      }
-    }
-  },
-  
-  render() {
-    return (
-      <div>
-        {
-          this.props.viewer.friends.map(user => <FriendListItem user={user}>)
-        }
-      </div>
-    )
-  }
-})
-```
 
 GraphQL Documents are full of named things:
 
@@ -111,6 +84,11 @@ With GraphQL, you just need to declare your data requirement and use Relay/Apoll
 
 ## Authentication, Authorization, Caching
 
+* [A guide to authentication in GraphQL](https://dev-blog.apollodata.com/a-guide-to-authentication-in-graphql-e002a4039d1)
+* [Facebook is using something like **Permission Queries**](https://blog.graph.cool/reinventing-authorization-graphql-permission-queries-f2bd041bcd76)
+* [Crazy thinking](https://github.com/apollographql/graphql-tools/issues/313)
+* [How Facebook do Authorization](https://www.youtube.com/watch?v=etax3aEe2dA)
+
 You don't do all these thing in GraphQL. GraphQL is designed to be a thin interface on top of these layers.
 
 GraphQL should sit on top of your authentication system which is not coupled to GraphQL.
@@ -121,6 +99,23 @@ GraphQL should sit on top of your authentication system which is not coupled to 
 * Do not put business logic in the GraphQL layer
 
 If you put authorization logic into your GraphQL, you won't be able to swap from REST to RPC or GraphQL. You also have a hard time to test for it.
+
+---
+
+1. Login using `/auth/token` endpoint
+2. Send the token with your request to prove identity
+
+### Context
+
+* Once authentication with a separate endpoint, you simply pass `current_user` into GraphQL as context so you have access to user profile in the GraphQL resolver.
+
+### Edges and Nodes Authorization
+
+There are often multiple edges that lead to a particular node.
+
+Defining permission on edges is not practical.
+
+Put authorization logic into the **nodes** (type-level), such that they are enforced no matter how the node is reached in the graph.
 
 ## N+1 Problem
 
@@ -135,9 +130,83 @@ Think in graphs, not endpoints.
 * **Hierarchical** - Most product development involves the creation and manipulation of view hierarchies. To achieve congruence with the structure of these applications, a GraphQL query itself is a hierarchical set of fields. The query is shaped just like the data it returns. It is natural way for product engineers to describe data requirements.
 * Every query has the shape of a tree - i.e. **it is never circular**.
 
+### Traversing Graphs
+
+GraphQL makes traversing graphs (and therefore relational data) very easy. Based on the schema, you can retrieve data based on the relations they have.
+
+This sample query let you:
+
+1. Pull the name of users
+2. Who've written reviews
+3. On a business
+
+Note that it is hierarchical.
+
+```js
+{
+  business(id: "garaje-san-francisco") {
+    reviews {
+      user {
+        name
+      }
+    }
+  }
+}
+```
+
 ## Design Your Schema
 
+* [Break out the realm of URLs](https://dev-blog.apollodata.com/discourse-in-graphql-part-1-ee1ffd8a22df)
+
 With SDL (Schema Definition Language). The schema tells the server what queries clients are allowed to make, and how different types are related.
+
+A GraphQL schema defines types. Each type — except for scalar types like Int, Float or String — has fields which define the relationship between this type and other types (one to one, or one to many). If you think about your schema in terms of a graph, types are the nodes of your graph, and fields are edges. Scalar types have no fields, so they form the leaf nodes of your graph.
+
+> A GraphQL query is just an instruction for traversing the graph in a specific way, resulting in a tree.
+
+When traversing a tree, you would start at the root, but a graph has no root so there is no logical starting point! That's why every GraphQL schema needs to have a root query type: it's the entry point into the graph. The fields of the root query type are links to the actual queries that your GraphQL server supports.
+
+```js
+// It is common to have top-level query to be role-specific
+type Query {
+  me: User
+  user(id: Int): User
+}
+
+type User {
+  name: String
+  profilePicture(size: Int = 50): ProfilePicture
+  friends(first: Int, order_by: FriendOrderEnum): [User]
+  events(first: Int): [Event]
+}
+```
+
+Think about how you would traverse your graph, like for candidate:
+
+```js
+{
+  // Single endpoint - useful as an entry point into your
+  // object graph
+  candidate(id: 123) {
+    // List endpoint
+    employments {
+      period
+      contracts {
+        code
+        leaves {
+          day
+        }
+        timesheets {
+          details {
+            time_in
+            time_out
+          }
+        }
+      }
+    }
+  }
+}
+```
 
 ```js
 type Author {}
@@ -195,6 +264,36 @@ type Author {
 }
 ```
 
+```js
+const Page = new GraphQLObjectType({
+  name: 'Page',
+  description: 'Page of content',
+  interfaces: [Collection],
+  fields: {
+    url: {
+      type: GraphQLString,
+      resolve: (it) => {
+        return (it.sectionId ? `/stream/sectionsId/${it.sectionId}` : null)
+      }
+    },
+    title: {
+      type: GraphQLString
+    },
+    items: {
+      type: new GraphQLList(Content),
+      args: {
+        from: { type: GraphQLInt },
+        limit: { type: GraphQLInt },
+        genres: { type: new GraphQLList(GraphQLString) }
+      },
+      resolve: (page, {from, limit, genres}, {backend}) => {
+        return backend.contentv1(page.items, {from, limit, genres})
+      }
+    }
+  }
+})
+```
+
 ```ruby
 ShopType = ObjectType.define do
   name 'Shop'
@@ -206,6 +305,44 @@ ShopType = ObjectType.define do
 end
 ```
 
+## Data Composition
+
+* Query Composition - the parent component can gather up the child query and compose it into one single query request
+
+The parent need to know the data requirement of the children and combine into one big query, so GraphQL need to be composable.
+
+```js
+// Query Composition
+// This parent component will render FriendListItem
+// child component, so its query also need to be composed
+// of child query
+var FriendList = React.createClass({
+  statics: {
+    queries: {
+      viewer: function() {
+        return graphql`
+          Viewer {
+            friends {
+              ${FriendListItem.getQuery('user')}
+            }
+          }
+        `
+      }
+    }
+  },
+  
+  render() {
+    return (
+      <div>
+        {
+          this.props.viewer.friends.map(user => <FriendListItem user={user}>)
+        }
+      </div>
+    )
+  }
+})
+```
+
 ## Data Graph - Nodes and Edges
 
 * Be careful of N+1 problem with many edges
@@ -214,10 +351,44 @@ end
 
 Under-fetching is actually a type error.
 
+## Fragments
+
+> Fragment as a primitive - Fragment Models??
+
+Fragments are the primary unit of composition in GraphQL. It allow for the reuse of common repeated selections of fields, reducing duplicated text in the document.
+
+Fragments are a common unit of composition allowing for query reuse.
+
+The composition of all GraphQL fragments equals the total data requirements of the app.
+
+Fragments are consumed by using the spread operator (`...`).
+
+```js
+query {
+  user(id: 4) {
+    friends(first: 10) {
+      ...friendFields
+    }
+  }
+}
+
+fragment friendFields on User {
+  id
+  name
+  ...standardProfilePic
+}
+
+fragment standardProfilePic on User {
+  profilePic(size: 50)
+}
+```
+
 ## Relay
 
 **Declarative API** - Don't worry about HOW the data is fetched. Or even WHEN it is fetched. The framework orchestrates the data-fetching.
 
+* Send queries/mutation without having to worry about lower-level networking details or maintaining a local cache
+* Optimistic UI updates
 * [Learn Relay](https://www.learnrelay.org/)
 * GQL queries are co-located with the component with Relay Container Component
 * Co-locate data fetching and rendering
@@ -236,13 +407,15 @@ Relay has 2 join models (the edge/connection paradigm):
 
 Everything is nodes and edges in a graph.
 
-## Fragments
+```
+yarn add react-relay
+yarn add relay-compiler --dev
+yarn add babel-plugin-relay --dev
+```
 
-Fragments are the primary unit of composition in GraphQL. It allow for the reuse of common repeated selections of fields, reducing duplicated text in the document.
+## Relay Fragment Container
 
-Fragments are a common unit of composition allowing for query reuse.
 
-The composition of all GraphQL fragments equals the total data requirements of the app.
 
 ## Static Queries
 
@@ -253,6 +426,7 @@ Please don't do REST API backing your GraphQL. It will be damn slow. Always use 
 * [graphql-batch for Ruby, sort of like DataLoader](https://github.com/Shopify/graphql-batch)
 * [DataLoader - Source code walkthrough by Lee Byron](https://www.youtube.com/watch?v=OQTnXNCDywA)
 * [Ruby BatchLoader](https://engineering.universe.com/batching-a-powerful-way-to-solve-n-1-queries-every-rubyist-should-know-24e20c6e7b94)
+* [graphql-query-resolver - Minimize N+1 queries](https://github.com/nettofarah/graphql-query-resolver)
 
 ## Edges and Connection
 
@@ -261,8 +435,16 @@ Ability to traverse edges or connections, 1-to-many relationships.
 ## Pagination
 
 * [Understanding pagination: REST, GraphQL, and Relay](https://dev-blog.apollodata.com/understanding-pagination-rest-graphql-and-relay-b10f835549e7)
+* [Twitter - Using cursors to navigate collections](https://dev.twitter.com/overview/api/cursoring)
+* [GraphQ::Pro - Stable Cursors for ActiveRecord](http://graphql-ruby.org/pro/cursors)
 
 Instead of using literal page numbers, idiomatic GraphQL uses opaque strings called **cursors**. Cursors are more resilient to real-time changes to your data, which might lead to duplicates in simple page-based systems.
+
+## Ruby - Parallelism
+
+* [Issue 274 - First-class async support](https://github.com/rmosolgo/graphql-ruby/issues/274)
+* ActionController::Live
+* DeferredExecution
 
 ## Rails
 
@@ -271,6 +453,9 @@ Instead of using literal page numbers, idiomatic GraphQL uses opaque strings cal
 * [GraphQL + Relay Modern + Rails](https://collectiveidea.com/blog/archives/2017/08/03/graphql-relay-modern-rails)
 * [Caching GraphQL queries with GraphQL-ruby and Rails](http://mgiroux.me/2016/graphql-query-caching-with-rails/)
 * [graphql-ruby-demo](https://github.com/rmosolgo/graphql-ruby-demo)
+* [File uploading with Rails + Apollo client](https://gist.github.com/github0013/d79fa651be3d7450adcd447676d01921)
+
+`GraphQL::Introspection::INTROSPECTION_QUERY`
 
 ```ruby
 class GraphqlController < ApplicationController
@@ -340,9 +525,46 @@ Server developer can focus on **describing the data available** rather than impl
 
 * [graphql-language-service](https://github.com/graphql/graphql-language-service)
 
+## Introspection
+
+```
+▶ npm install -g get-graphql-schema
+
+▶ get-graphql-schema -h 'Authorization=XXX' http://localhost:3000/graphql
+```
+
+## Tooling
+
+* [graphql-docs by GitHub](https://github.com/gjtorikian/graphql-docs)
+* [graphql-client](https://github.com/github/graphql-client)
+* [apollo-fetch](https://github.com/apollographql/apollo-fetch)
+* `brew cask install graphiql`
+* [Expensive service - GraphQL::Pro](http://graphql.pro/)
+* [graphql-cli](https://github.com/graphcool/graphql-cli)
+
+```
+curl -X POST \
+"http://localhost:3000/graphql" \
+-H "Content-Type: application/graphql" \
+-H "Authorization: token" \
+-d '
+{
+  me {
+    name
+  }
+}
+'
+```
+
+## Examples
+
+* [Yelp](https://www.yelp.com/developers/graphql/guides/intro)
+* [Shopify](https://help.shopify.com/api/storefront-api/graphql)
+
 ## Videos
 
 * [Lessons from 4 Years of GraphQL](https://www.youtube.com/watch?v=zVNrqo9XGOs)
 * [High Performance GraphQL - DataLoader](https://www.youtube.com/watch?v=c35bj1AT3X8)
 * [Using Apollo with ReactJS and GraphQL - SingaporeJS](https://www.youtube.com/watch?v=JCBVrE59yAI)
 * [Optimizing for API Consumers with GraphQL](https://www.youtube.com/watch?v=psPnEUAL08w)
+* [GraphQL at Facebook](https://www.youtube.com/watch?v=etax3aEe2dA)

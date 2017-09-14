@@ -13,6 +13,8 @@
 
 Traditionally, we have 3 ways to do layout:
 
+See https://www.chenhuijing.com/blog/how-well-do-you-know-display/
+
 1. `float` - Need clearfix hack
 2. `display: inline-block` - whitespace sensitive
 3. `display: table` - `border-spacing`

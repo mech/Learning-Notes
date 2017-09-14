@@ -1,5 +1,7 @@
 # AWS EC2 and VPC
 
+* [The Open Guide to Amazon Web Services](https://github.com/open-guides/og-aws)
+
 # VPC
 
 Virtual Private Cloud (VPC) is a logically isolated network in AWS cloud. It is the very first primary big subnet you have where you can create more smaller subnets to use.

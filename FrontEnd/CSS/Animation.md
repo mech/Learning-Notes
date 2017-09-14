@@ -3,6 +3,7 @@
 * [The Illusion of Life](http://www.centolodigiani.com/117722/3078861/work/the-illusion-of-life)
 * [Easing](http://easings.net/)
 * [Creating Usability with Motion: The UX in Motion Manifesto](https://medium.com/@ux_in_motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc)
+* [How to create fancy revealing animations with these simple CSS tricks](https://hackernoon.com/how-to-create-fancy-revealing-animations-with-these-simple-css-tricks-5b34614ae69a)
 
 > The reason why I believe motion is so crucial isn't just because it looks nice, but because it changes the way we approach design.
 > 

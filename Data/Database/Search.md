@@ -2,10 +2,17 @@
 
 * [What's Wrong With Taxonomies - The Future is Faceted](http://semanticstudios.com/the_speed_of_information_architecture/)
 * [Search at Slack](https://slack.engineering/search-at-slack-431f8c80619e)
+* [What every software engineer should know about search](https://medium.com/startup-grind/what-every-software-engineer-should-know-about-search-27d1df99f80d)
+* [Doug Turnbull](https://medium.com/@softwaredoug/this-is-a-fantastic-post-e9caae910334)
+* [Awesome Information Retrieval](https://github.com/harpribot/awesome-information-retrieval)
 
 In Yelp business listing, there is business name, operating hours, images, and some attributes invisible to the users. There are also content components that we don't want to search, such as reviews and tips. These could confuse a user's search results; for example, if a review included the name of a competing restaurant.
 
 As much as we want to index all things, we should know when to leave out content that shouldn't be indexed.
+
+## Learning to Rank
+
+* [Rank Elasticsearch results using tree based (LambdaMART, Random Forest, MART) and linear models](https://github.com/o19s/elasticsearch-learning-to-rank)
 
 ## Personalized and Recent Results
 
@@ -73,3 +80,7 @@ Synonym management, hierarchical browsing, and associative linking.
 ## Blog
 
 * [Semantic Studios](http://semanticstudios.com/writing/)
+
+## Videos
+
+* [We built an Elasticsearch Learning to Rank plugin](https://www.youtube.com/watch?v=JqqtWfZQUTU)

@@ -193,6 +193,10 @@ end
 ## Videos
 
 * [Drifting Ruby](https://www.driftingruby.com/episodes)
+* [Therapeutic Refactoring by Katrina Owen](https://www.youtube.com/watch?v=J4dlF0kcThQ)
+* [Refactoring from Good to Great by Ben Orenstein](https://www.youtube.com/watch?v=DC-pQPq0acs)
+* [Type. Context. by Sam Phippen](https://www.youtube.com/watch?v=qzTOnnDePtc)
+* [Nothing is Something - Sandi Metz](https://www.youtube.com/results?search_query=nothing+is+something+sandi+metz)
 
 ## Books
 

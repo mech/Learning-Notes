@@ -22,7 +22,7 @@
 
 * [Builder design pattern in Ruby](https://medium.com/kkempin/builder-design-pattern-in-ruby-dfa2d557ff1b)
 
-```rb
+```ruby
 CandidateBuilder.build do |builder|
   builder.set_name('mech')
   builder.is_admin
@@ -98,6 +98,7 @@ Each uniqueness constraint must be backed by a unique database index to protect 
 
 * [Custom Validators in Ruby on Rails 4](http://www.rails-dev.com/custom-validators-in-ruby-on-rails-4)
 * [Data Corruption: Stop the Evil Tribbles](https://www.youtube.com/watch?v=kA8aR1ffoOg)
+* [**Using ruby Range with custom classes**](http://blog.arkency.com/2014/08/using-ruby-range-with-custom-classes/)
 
 ---
 
@@ -146,7 +147,19 @@ It would be a bit easier if we use the **repository pattern** and at least we kn
 
 ## Service Object
 
+* [Does my Rails app need a service layer?](https://blog.carbonfive.com/2012/01/10/does-my-rails-app-need-a-service-layer/)
+
+A service is an ACTION, not a thing. Instead of forcing the operation into an existing object, we should encapsulate it in a separate, stateless service.
+
 > Service layers are all about verbs.
+
+3 types of services:
+
+1. Application - CSV reporting?
+2. Domain - Services that involve multiple domain objects where responsibilities is spread
+3. Infrastructure - Involve external system like sending email and message queues. Mostly non-domain, "software" concerns.
+
+---
 
 * Specific to a use-case.
 * Can also be seen as a Command Object, to use a design pattern name for it.

@@ -79,6 +79,10 @@ How we use space to accomplish a task. (See [kitchen](http://andyfitzgerald.org/
 
 ## Content Structure
 
+* Designing **based upon intent** and **from the content out**.
+* Don't adjust your content to template or application shell. Let them adjust to your content! See Bootstrap and all websites look the same.
+* [Trouble in framework paradise](http://atomicdesign.bradfrost.com/chapter-1/#trouble-in-framework-paradise)
+
 > You can create good experiences without knowing the content. What you can't do is create good experiences without knowing your content structure. What is your content made from, not what your content is. - Mark Boulton
 
 ---
@@ -124,3 +128,4 @@ It shouldn't come as a surprise that when you change what your navigation looks 
 ## People
 
 * [Andy Fitzgerald](http://andyfitzgerald.org/)
+* [Jen Simmons](http://labs.jensimmons.com/)

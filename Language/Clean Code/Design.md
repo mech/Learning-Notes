@@ -42,6 +42,18 @@ Good design preserves maximum flexibility at minimum cost by putting off decisio
 
 > At a certain point however, the complexity of your domain increases and a one-to-one mapping between screen UIs and database design (and ActiveRecord models) is no longer good enough.
 
+## Entities
+
+Entities are **Enterprise Business Rules**. Entities include business rules that are universal to a company. They represent entities that are basic to its area of operation. They are the components with the **highest level of abstraction**.
+
+## Use Cases
+
+Use Cases are pointed out as **Application Business Rules**.
+
+An element in the Use Cases layer can't have any knowledge about any class or module related to GUI or data persistence. Likewise, an Entity can't know which Use Cases make use of it.
+
+Entities are blissfully unaware of which Use Cases are using them.
+
 ## Aggregates
 
 * Tactical modeling
