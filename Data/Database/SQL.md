@@ -6,6 +6,7 @@
 * [Cool queries](https://github.com/sagemathinc/cocalc/blob/master/src/scripts/postgresql/cool-queries.md)
 * [**How To Write Better Queries**](https://www.datacamp.com/community/tutorials/sql-tutorial-query)
 * [How To Write Better SQL Queries: The Definitive Guide – Part 1](http://www.kdnuggets.com/2017/08/write-better-sql-queries-definitive-guide-part-1.html/2)
+* [Finding the Oldest/Youngest Records Within a Group](https://robots.thoughtbot.com/ordering-within-a-sql-group-by-clause)
 
 ## Index
 
@@ -20,3 +21,4 @@
 ## Joins
 
 * [Keep INNER JOIN when merging relations](https://github.com/rails/rails/pull/27063)
+* [Visual Representation of SQL Joins](https://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins)

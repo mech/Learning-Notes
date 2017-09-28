@@ -6,6 +6,8 @@
 * [Data Science Simplified: Principles and Process](https://becominghuman.ai/data-science-simplified-principles-and-process-b06304d63308)
 * [Facial expression classification system](https://github.com/JostineHo/mememoji)
 * [Apple Machine Learning](https://machinelearning.apple.com)
+* [K Nearest Neighbours in Ruby](http://www.thagomizer.com/blog/2017/09/13/ml-basics-k-nearest-neighbors.html)
+* [fast.ai](http://www.fast.ai/)
 
 ML is not AI. ML is the ability for an algorithm to learn from prior data in order to produce a behavior. ML is teaching machines to make decisions in situations they have never seen.
 

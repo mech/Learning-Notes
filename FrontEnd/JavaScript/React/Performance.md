@@ -99,6 +99,20 @@ It is beneficial to implement `shouldComponentUpdate()` as high up the tree as p
 
 * [React Pattern: Extract Child Components to Avoid Binding](https://medium.freecodecamp.org/react-pattern-extract-child-components-to-avoid-binding-e3ad8310725e)
 * [Remember to not pass arrow function](https://medium.com/@housecor/hi-dana-great-question-note-this-affbe4a2f168)
+* [When to use Component or PureComponent](https://codeburst.io/when-to-use-component-or-purecomponent-a60cfad01a81)
+
+## Binding
+
+```js
+// Instead of this, which will cause re-render everytime
+<CommentItem likeComment={() => this.likeComment(user.id)} />
+
+// Do this
+<CommentItem likeComment={this.likeComment} userID={user.id} />
+
+// And use
+this.props.likeComment(this.props.userID)
+```
 
 ## Constant Props
 

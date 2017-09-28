@@ -1,5 +1,6 @@
 # Email
 
+* [The All-New Guide to CSS Support in Email - Sep 2017](https://www.campaignmonitor.com/blog/email-marketing/2017/09/all-new-guide-css-support-email/)
 * [Email Bugs Database](https://github.com/hteumeuleu/email-bugs)
 * [Gmail finally support embedded `<style>`, `display: none` and media queries in Sept 2016](https://developers.google.com/gmail/design/css)
 * [Email Client Market Share](https://emailclientmarketshare.com/)

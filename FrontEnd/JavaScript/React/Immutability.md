@@ -28,6 +28,8 @@ JavaScript also has the ability to `freeze()` objects, but those objects are onl
 
 ## Ways to Mutate
 
+* [React Redux Immutable Update Cheat Sheet](https://blog.cloudboost.io/react-redux-immutable-update-cheat-sheet-296bfdd1f19)
+
 You need to also be mindful of:
 
 * Time

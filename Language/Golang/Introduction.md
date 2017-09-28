@@ -5,6 +5,7 @@
 * [Go Type System](http://www.club.cc.cmu.edu/~cmccabe/blog_golang_type_system.html)
 * [Swift is like Kotlin](http://nilhcem.com/swift-is-like-kotlin/)
 * [A Tour of Acme](https://research.swtch.com/acme)
+* [10 years of Go](https://commandcenter.blogspot.co.id/2017/09/go-ten-years-and-climbing.html)
 
 ## Struct - Store data
 

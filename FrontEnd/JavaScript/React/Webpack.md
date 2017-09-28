@@ -6,6 +6,8 @@
 * [Webpack 2 Loader Variations](http://andrewhfarmer.com/webpack-2-loader-variations/)
 * [Getting Started with webpack 2](https://blog.madewithenvy.com/getting-started-with-webpack-2-ed2b86c68783)
 * [Migrating to Webpack 2](https://javascriptplayground.com/blog/2016/10/moving-to-webpack-2/)
+* [How I cut my Webpack bundle size in half](http://jmduke.com/posts/how-i-cut-my-webpack-bundle-size-in-half/)
+* [Deploying ES2015+ Code in Production Today](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/)
 
 ```
 ▶ yarn global add webpack-bundle-size-analyzer

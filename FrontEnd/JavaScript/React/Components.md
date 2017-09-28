@@ -1,5 +1,7 @@
 # Components
 
+> Less crafting and more assembling.
+
 > React allows us to describe and break up our view into components.
 
 * Self-sufficient, do one thing good
@@ -108,6 +110,7 @@ const Aux = (props) => {
 8. Keep the props that your component expects to a minimum and make sure you use them individually. Do not just blindly spread the props as you may cause unnecessary re-renders.
 9. **Never let them know your next move.** Keep your components generic enough that they solve only one view element, really well. If your components are small and flexible, then they will not be pigeonhole’d and able to be composed into larger units.
 10. Your `render()` method should be as lightweight and fast as possible.
+11. Avoid premature abstractions. Don't create small components immediately if it is not used elsewhere.
 
 ## Verbs for component name
 
@@ -135,7 +138,7 @@ const App = () => (
 * Container and Presentational
 * HOC with **explicit props**
 * Recompose
-* Function as Child
+* Function as Child (a.k.a render props)
 * Compound Component with **implicit props**
 
 ## Props
@@ -526,10 +529,25 @@ Button.propTypes = {
 
 ### Function as Child (vs HOC)
 
+Also known as Render Prop!
+
+> I should clarify at this point that "children as a function" is the exact same concept, just using the `children` prop instead of `render`.
+
+* [Reference implementation concept for render props](https://medium.com/styled-components/component-folder-pattern-ee42df37ec68)
+* [Function as Child Components Are an Anti-Pattern](http://americanexpress.io/faccs-are-an-antipattern/)
+* HOC will have props names collision similar to mixin.
+* HOC is static composition and not dynamic composition.
 * [**Downshift - Compound Component and Function as Child example**](https://medium.com/@kentcdodds/introducing-downshift-for-react-b1de3fca0817)
 * [return-null](https://github.com/joshwcomeau/return-null)
 * [Function as child components](https://medium.com/merrickchristensen/function-as-child-components-5f3920a9ace9)
 * [ReactCasts #2 - Function as Child Components](https://www.youtube.com/watch?v=WE3XAt9P8Ek)
+* [Use a Render Prop!](https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce)
+* [react-powerplug - A set of function as children components that add different types of state logics in your dumb components](https://github.com/renatorib/react-powerplug)
+* [**Michael Jackson - Never Write Another HoC**](https://www.youtube.com/watch?v=BcVAq3YFiuc)
+
+> Another problem that both mixins and HOCs share is that they use **static composition** instead of **dynamic composition**. Ask yourself: where is the composition happening in the HOC paradigm? Static composition happens once, when the component class is created (e.g. withRouter).
+> 
+> You don't use mixins or HOCs in your `render` method, which is a key piece of React's **dynamic composition model**. When you compose in render, you get to take advantage of the full React lifecycle. This point is subtle.
 
 **Alert!** You lose the ability to optimize your component at the render().
 

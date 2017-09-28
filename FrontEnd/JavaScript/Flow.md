@@ -20,6 +20,7 @@ Python and Ruby are strongly typed, dynamic languages. JavaScript is a weakly ty
 
 What's the purpose of type checking?
 
+* After assigning a value to a variable, you're not allowed to change the type. JavaScript lets you do this, but it's a common cause of de-optimization in modern runtimes (V8's Ignition and TurboFan)
 * Let the team knows what types the function needs if you don't write JSDoc (no more `@param` and `@return`).
 * Throw type errors if components are not given required props (but leave props with default values as optional)
 * Type annotations provide a form of always-up-to-date [documentation](http://documentation.js.org/) for developers to understand unfamiliar code base.
@@ -76,8 +77,11 @@ function reversed<T>(array: T[]): T[] {
 let rating: {[id:string]: number} = {};
 rating["stars"] = 5
 
-// A promise that returns an array of numbers
+// A promise that resolves/returns an array of numbers
 Promise<number[]>
+
+Promise<string>
+Promise.resolve('hello')
 
 // A promise that returns an array of strings
 Promise<string[]>

@@ -24,6 +24,7 @@ Remember, the CSS Grid does not **physically** exist. It is all invisibles lines
 
 * Flexbox is one-dimensional, it can be horizontally or vertically, but never both at the same time
 * CSS Grid is a two-dimensional system for placing elements
+* Use flexbox for the alignment options it brings on a single line/dimension.
 
 Layouts that previously were difficult, sometimes even impossible to create, are now within easy reach. New functions such as the MinMax in combination with new sizing units such as the `fr` offer all types of responsive layout possibilities.
 

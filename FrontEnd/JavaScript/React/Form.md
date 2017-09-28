@@ -1,5 +1,7 @@
 # React Form
 
+* [**Introducing Formik 0.9.0**](https://medium.com/@jaredpalmer/introducing-formik-0-9-0-690959a329a6)
+
 Creating a rich, interactive, easy to use form can often involve a **significant amount of programming**.
 
 > Thinking in React apply to form also: It's best not to think in terms of "getting data from a form or user input". You get your data from your "state".

@@ -1,5 +1,7 @@
 # API Authentication
 
+* [Your API-Centric Web App Is Probably Not Safe Against XSS and CSRF](http://www.redotheweb.com/2015/11/09/api-security.html)
+
 ## UUID
 
 * [shortid](https://github.com/dylang/shortid)

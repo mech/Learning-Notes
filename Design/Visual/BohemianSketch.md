@@ -12,6 +12,8 @@
 * [Make icons with Sketch](https://github.com/allenwong/MakeIconsWithSketch)
 * [Bringing Sketch and After Effects Closer Together - Google Design](https://medium.com/google-design/bringing-sketch-and-after-effects-closer-together-d83b3e729c93)
 * [Designing Contrast](http://mds.is/designing-contrast/)
+* [Dynamic Icons in Sketch](https://www.youtube.com/watch?v=1rJ1WyQ6lU0)
+* [Hacking Tables in Sketch App](https://medium.com/sketch-app-sources/hacking-tables-in-sketch-app-745e9b961992)
 
 ## Shortcuts
 
@@ -58,6 +60,7 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 ## Symbols and Nested Symbols
 
 * [Nested Button Symbols: The Complete Guide](https://blog.prototypr.io/nested-button-symbols-the-complete-guide-c0c91be46952)
+* [Nested Symbols & Auto-Updating Styleguides](http://symbols.janlosert.com/)
 
 ## Color Symbols
 
@@ -75,6 +78,7 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 
 * [40 Powerful plugins for sketch](https://medium.muz.li/40-powerful-free-plugins-for-sketch-c1af03ea9d7e)
 * [Text Style](http://www.textstyl.es/)
+* [Symbol Organizer](https://github.com/sonburn/symbol-organizer)
 
 ## Exporting
 

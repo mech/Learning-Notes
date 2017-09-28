@@ -1,5 +1,13 @@
 # Interface Design
 
+> The choice and execution of the patterns and their unique combination are influenced by a product’s purpose, ethos and design principles.
+
+---
+
+> Web interface is not the same as desktop interface!
+
+---
+
 > Many commercial software applications include user interfaces in which a screen presents a set of controls, but leaves it to the user to deduce the page's purpose and how to use the controls to accomplish that purpose. 
 
 ---
@@ -43,6 +51,15 @@
 * Innovation is often the product of constraint – Todd Waterbury
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
+
+## Stages of User Journey
+
+* Mapping
+
+## UI Names
+
+* Excerpt (little pieces of information)
+* Drawer/inspector/properties
 
 ## No Spinner
 

@@ -17,6 +17,7 @@ https://dollarshaveclub.github.io/stickybits/
 ## Ajax
 
 * [better-fetch](https://github.com/Swizec/better-fetch)
+* [react-idle](https://reacttraining.com/react-idle/)
 
 ## For Development
 

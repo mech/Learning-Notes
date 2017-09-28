@@ -1,6 +1,17 @@
 # GraphQL
 
+* DDoS
+* Are you leaking implementation details
+* Protocol buffer? gRPC?
+* Backend APIs are storage-centric
+* Front-end APIs are product-centric
+
+
 > Unapologetically view-based
+
+Each component specifies the bit of data that it will need in the form of a **query fragment**, and the framework takes care of composing all of the fragments into a larger hierarchy that represents the entire query. Because all of this is centralized in the framework, even dealing with massive queries (ie. all the data your entire application needs to render a complex, nested view hierarchy) can be made efficient through caching, batching, re-use, and other means to reduce the size of queries.
+
+> No need to transform into the shape that you need from REST endpoint. It is already on the correct shape.
 
 * [**GraphQL Specification**](https://facebook.github.io/graphql/)
 * [**How to GraphQL**](https://www.howtographql.com/)
@@ -62,6 +73,10 @@ class Query(graphene.ObjectType):
 
 ## What's Wrong with REST
 
+REST only contains the notion of resource - there is no notion of fields that you could use to restrict the response to only the details you need.
+
+REST has resources and sub-resources. Most of the time, you need to fetch additional requests just to get the sub-resources.
+
 * Fetching complicated object graphs (i.e. associations) get unwieldy quick
 * REST's reliance on URL forces the use of incongruent query params to dynamically interact with resources
 * Alternative is to keep resources simple and force multiple HTTP requests which lead to poor performance and over-fetching
@@ -97,6 +112,8 @@ GraphQL should sit on top of your authentication system which is not coupled to 
 * Authorization should be with the Business Logic layer
 * Do not put authorization logic at GraphQL layer
 * Do not put business logic in the GraphQL layer
+* Free-form data traversing nature of GraphQL adds new access control challenges
+* Can't rely on conventional status codes like REST. You can't say 10 field queries are 403 forbidden when there are at least 5 201 succeeded.
 
 If you put authorization logic into your GraphQL, you won't be able to swap from REST to RPC or GraphQL. You also have a hard time to test for it.
 
@@ -104,6 +121,12 @@ If you put authorization logic into your GraphQL, you won't be able to swap from
 
 1. Login using `/auth/token` endpoint
 2. Send the token with your request to prove identity
+
+## Validation and Masking Error
+
+We need to mask server errors to client.
+
+* [Validation and User Errors in GraphQL Mutations](https://medium.com/@tarkus/validation-and-user-errors-in-graphql-mutations-39ca79cd00bf)
 
 ### Context
 
@@ -121,6 +144,22 @@ Put authorization logic into the **nodes** (type-level), such that they are enfo
 
 * Using Ruby Fibre to solve N+1 problem innately? See Airbnb Graphist. Fibre will block until doing all aggregation.
 * N+1 is a under-fetching problem
+
+```
+// 6 queries
+// 1 query to find the rental
+// and 5 queries to find the owners one by one
+query {
+  rentals {
+    id
+    owner {
+      name
+    }
+  }
+}
+```
+
+If we eager-load using Rails, then we are back to over-fetching issues. Instead, we need to use a batching approach like DataLoader or graphql-batch.
 
 ## Thinking in Graphs
 
@@ -426,7 +465,10 @@ Please don't do REST API backing your GraphQL. It will be damn slow. Always use 
 * [graphql-batch for Ruby, sort of like DataLoader](https://github.com/Shopify/graphql-batch)
 * [DataLoader - Source code walkthrough by Lee Byron](https://www.youtube.com/watch?v=OQTnXNCDywA)
 * [Ruby BatchLoader](https://engineering.universe.com/batching-a-powerful-way-to-solve-n-1-queries-every-rubyist-should-know-24e20c6e7b94)
+* [batch-loader](https://github.com/exAspArk/batch-loader)
+* [dataloader](https://github.com/sheerun/dataloader)
 * [graphql-query-resolver - Minimize N+1 queries](https://github.com/nettofarah/graphql-query-resolver)
+* [Preloading Associations with graphql-batch](https://gist.github.com/mech/a2fb158c76f4617f72f0f8b6c48b80e1)
 
 ## Edges and Connection
 
@@ -437,6 +479,7 @@ Ability to traverse edges or connections, 1-to-many relationships.
 * [Understanding pagination: REST, GraphQL, and Relay](https://dev-blog.apollodata.com/understanding-pagination-rest-graphql-and-relay-b10f835549e7)
 * [Twitter - Using cursors to navigate collections](https://dev.twitter.com/overview/api/cursoring)
 * [GraphQ::Pro - Stable Cursors for ActiveRecord](http://graphql-ruby.org/pro/cursors)
+* [Pagination: You're (Probably) Doing It Wrong](https://coderwall.com/p/lkcaag/pagination-you-re-probably-doing-it-wrong)
 
 Instead of using literal page numbers, idiomatic GraphQL uses opaque strings called **cursors**. Cursors are more resilient to real-time changes to your data, which might lead to duplicates in simple page-based systems.
 
@@ -448,12 +491,18 @@ Instead of using literal page numbers, idiomatic GraphQL uses opaque strings cal
 
 ## Rails
 
+`rails generate graphql:install --batch --no-graphiql --schema=ApiSchema`
+
+* [**GraphQL and Performance in Rails**](https://blog.codeship.com/graphql-and-performance-in-rails/)
 * [Building a full on GraphQL app](https://medium.com/ryancollinsio/building-a-full-on-graphql-app-b261f6cfea93)
 * [How to Implement a GraphQL API in Rails](https://dzone.com/articles/how-to-implement-a-graphql-api-in-rails-via-codesh)
 * [GraphQL + Relay Modern + Rails](https://collectiveidea.com/blog/archives/2017/08/03/graphql-relay-modern-rails)
 * [Caching GraphQL queries with GraphQL-ruby and Rails](http://mgiroux.me/2016/graphql-query-caching-with-rails/)
 * [graphql-ruby-demo](https://github.com/rmosolgo/graphql-ruby-demo)
 * [File uploading with Rails + Apollo client](https://gist.github.com/github0013/d79fa651be3d7450adcd447676d01921)
+* [graphql-preload](https://github.com/ConsultingMD/graphql-preload)
+
+Raise `GraphQL::ExecutionError` if there are any errors.
 
 `GraphQL::Introspection::INTROSPECTION_QUERY`
 
@@ -516,6 +565,10 @@ end
 
 Server developer can focus on **describing the data available** rather than implementing and optimizing specific endpoints.
 
+The root query resolver will return a model for use on the next level of resolver and turtle all the way down.
+
+There is a `resolve()` for every field, but this does not mean that an individual database query is required to fetch each field.
+
 ## Subscription
 
 * [subscriptions-transport-ws](https://github.com/apollographql/subscriptions-transport-ws)
@@ -555,6 +608,10 @@ curl -X POST \
 }
 '
 ```
+
+## Caching
+
+It turns out that the tree structure of GraphQL lends itself extremely well to client-side caching.
 
 ## Examples
 

@@ -39,6 +39,7 @@ See https://www.chenhuijing.com/blog/how-well-do-you-know-display/
 
 ---
 
+* [The Ultimate Guide to Flexbox — Learning Through Examples](https://medium.freecodecamp.org/the-ultimate-guide-to-flexbox-learning-through-examples-8c90248d4676)
 * [Understanding Flexbox: Everything you need to know](https://medium.freecodecamp.com/understanding-flexbox-everything-you-need-to-know-b4013d4dc9af#.44b5tgfom)
 * [The Ultimate Flexbox Cheat Sheet](http://www.sketchingwithcss.com/samplechapter/cheatsheet.html)
 * [Codrops' Flexbox Reference](https://tympanus.net/codrops/css_reference/flexbox/)
@@ -85,6 +86,7 @@ align-items: flex-start | flex-end | center | stretch | baseline
 align-content: flex-start | flex-end | center | stretch
 ```
 
+* By default, flexbox will squash all child elements unto a single line with no wrapping.
 * `justify-content` defines how flex-items are laid out on the **main axis**. For `row`, the main axis is horizontal, for `column`, it is vertical.
 * `align-items` defines how flex-items are laid out on the **cross axis**.
 * `align-content` is very interesting and only happen if flex-items wrap to become multi-line.

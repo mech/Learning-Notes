@@ -15,6 +15,11 @@
 ▶ \x auto
 ```
 
+```sql
+// A faster way to write `WHERE id IN ($1, $2, $3)`
+SELECT * from users WHERE id = ANY($1::int[])
+```
+
 ## Rollup
 
 * [Efficient rollup tables with HyperLogLog in Postgres](https://www.citusdata.com/blog/2017/06/30/efficient-rollup-with-hyperloglog-on-postgres/)
@@ -127,6 +132,7 @@ The strength of window functions is not pagination, but analytical calculation.
 * [Dealing With Time Zones Using Rails and Postgres](http://brendankemp.com/essays/dealing-with-time-zones-using-rails-and-postgres/)
 * [How to deal with timestamps?](https://www.depesz.com/2014/04/04/how-to-deal-with-timestamps/)
 * [Working With Time in Postgres](http://www.craigkerstiens.com/2017/06/08/working-with-time-in-postgres/)
+* [Better Date Manipulation in PostgreSQL Queries](https://robots.thoughtbot.com/better-date-manipulation-in-postgres-queries)
 
 ```sql
 WHERE inserted_at
@@ -200,6 +206,7 @@ EXCLUDE USING gist (
 ## Full-Text Search
 
 * [Postgres Text Search: Simple, Adequate](http://info.pagnis.in/blog/2017/06/18/postgres-text-search-simple-adequate/)
+* [Implementing Multi-Table Full Text Search with Postgres in Rails](https://robots.thoughtbot.com/implementing-multi-table-full-text-search-with-postgres)
 
 ## Backup
 
