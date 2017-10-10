@@ -1,5 +1,14 @@
 # Product Design
 
+* Without outcome, you cannot critique (Crit)
+* Complete lack of 3M Post-it
+* Learning by doing
+* Real designers surround themselves with evidence
+* Prove it! In order for people to crit it
+* https://vimeo.com/228126880
+
+---
+
 * [Game of Thrones' first AD on the challenges of Eastwatch](https://www.theverge.com/2017/8/15/16148146/game-of-thrones-behind-the-scenes-eastwatch-charlie-endean-assistant-director)
 * [Inversion: The Crucial Thinking Skill Nobody Ever Taught You](http://jamesclear.com/inversion)
 * Design is how it works
@@ -200,6 +209,8 @@ Donald Norman points out that many technologies and products have become great n
 Basecamp designed around an activity and enabled thousands of potentially very different user types to work within the parameters of the activity.
 
 ## Jobs To Be Done
+
+> The problems people encounter in their lives rarely change from generation to generation. The products they hire to solve these problems change all the time.
 
 * [Position, Position, Position!](https://m.signalvnoise.com/position-position-position-34b510a28ddc#.e3zqxe7le)
 * [People don't buy products, they buy better versions of themselves](https://blog.bufferapp.com/people-dont-buy-products-they-buy-better-versions-of-themselves)

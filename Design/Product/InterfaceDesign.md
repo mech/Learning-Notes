@@ -14,6 +14,7 @@
 
 > Instead of defining the face of our content — the stuff that appears in the UI — we should start by defining the how and the why that support that content - [Building Block Design](https://medium.com/ruxers/building-block-design-a-modular-design-strategy-for-uxers-927f63eec90c)
 
+* [Designing for People Who Have Better Things To Do With Their Lives](https://www.joelonsoftware.com/2000/04/26/designing-for-people-who-have-better-things-to-do-with-their-lives/)
 * [What is Atomic Design?](https://blog.prototypr.io/what-is-atomic-design-b8f0368e580d#.bpbyph6i4)
 * [InterfaceLovers](https://interfacelovers.com)
 * [Mobile first, desktop worst](https://blog.prototypr.io/mobile-first-desktop-worst-f900909ae9e2)
@@ -28,11 +29,14 @@
 * [Infinitely Better UIs with Finite Automata: FSM](https://www.youtube.com/watch?v=VU1NKX6Qkxc)
 
 > Consistency, not uniformity
+> 
+> Consistency is not about making **different things** the same. It's about making the **same things** the same.
 
 ---
 
 > The ways in which we experience and consume information are growing and changing - and the information available to us is often richer and more complex.
 
+* Adding the word "Please" slow people down in a dialog box. Remove it!
 * Good user interface design is based on human goals and behavior. The user interface in-turn effects behavior, which further design decisions are based on. In subtle and unconscious ways, user experience alters how humans make decisions. What is seen, where it is presented, and how interactions are afforded, influence actions.
 * Clarity
 * [Ruthless prioritization](https://medium.com/@dburka/i-really-appreciate-the-response-5f765a270a8b)
@@ -49,6 +53,9 @@
 * A well-designed and humane interface does not need to be split into beginner and expert subsystems - Jef Raskin
 * Simplicity is about subtracting the obvious and adding the meaningful – John Maeda
 * Innovation is often the product of constraint – Todd Waterbury
+* Don't let problem hide, show feedback!
+* 5S - (Sort - remove unnecessary thing), (Straighten - make things easy to find), (Shine - keep workspace clean and safe), (Standardize - keep everything in its place), (Sustain - perform 5S as a routine)
+* Clients want THE SOLUTION, not THE SERVICE.
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
 

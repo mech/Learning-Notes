@@ -10,6 +10,7 @@
 * [5 Things I wish my grandfather told me about ActiveRecord and Postgres](https://medium.com/carwow-product-engineering/5-things-i-wish-my-grandfather-told-me-about-activerecord-and-postgres-93416faa09e7)
 * [My Top 10 Postgres Features and Tips for 2016](http://www.craigkerstiens.com/2015/12/29/my-postgres-top-10-for-2016/)
 * [pg_cron: Run periodic jobs in PostgreSQL](https://www.citusdata.com/blog/2016/09/09/pgcron-run-periodic-jobs-in-postgres/)
+* [Performance Tuning Queries in PostgreSQL](https://www.geekytidbits.com/performance-tuning-postgres/)
 
 ```
 ▶ \x auto
