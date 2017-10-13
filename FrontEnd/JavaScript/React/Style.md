@@ -173,6 +173,8 @@ Benefits:
 * Switch styles based on incoming props rather than appending new class names to HTML - (i.e. `isOpen` props)
 * Clearer JSX with little `<div>` littering around
 * Composing styles
+* [Not possible to do static extraction](https://github.com/styled-components/styled-components/issues/1056)
+* [Emotion can do extraction](https://github.com/emotion-js/emotion)
 
 ## Theming
 

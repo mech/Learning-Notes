@@ -1,5 +1,6 @@
 # Grid
 
+* [You do not need a CSS Grid based Grid System](https://rachelandrew.co.uk/archives/2017/07/01/you-do-not-need-a-css-grid-based-grid-system/)
 * [Grid, Flexbox, Box Alignment: Our New System for Layout](https://24ways.org/2015/grid-flexbox-box-alignment-our-new-system-for-layout/)
 * [Liberating layout through CSS Grid](https://cssgrid.cc/)
 * [Learn CSS Grid](http://learncssgrid.com/)
@@ -13,6 +14,7 @@
 * [Is it really safe to start using CSS Grid Layout?](https://www.rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/)
 * [How to Efficiently Master the CSS Grid in a Jiffy](https://medium.com/flexbox-and-grids/how-to-efficiently-master-the-css-grid-in-a-jiffy-585d0c213577)
 * [The Difference Between Explicit and Implicit Grids](https://css-tricks.com/difference-explicit-implicit-grids/)
+* [Rebuilding slack.com using Grid and Flexbox](https://slack.engineering/rebuilding-slack-com-b124c405c193)
 
 With 18 new CSS Grid properties, there are many ways to achieve the same thing with the Grid layout. This is what makes it overwhelming.
 
@@ -36,6 +38,8 @@ Grid is different from all the layout techniques we've used in the past because 
 * [Grid "fallbacks" and overrides](https://rachelandrew.co.uk/css/cheatsheets/grid-fallbacks)
 * [Basic grid layout with fallbacks using feature queries](https://www.chenhuijing.com/blog/basic-grid-with-fallbacks/)
 
+IE11 do not have `@supports`, so we can't use CSS Feature Queries even though IE11 has some Grid features.
+
 ```css
 /* For browser like IE11 which support Flexbox, it is still fine */
 main {
@@ -46,6 +50,18 @@ main {
 @supports (display: grid) {
   main {
     display: grid;
+  }
+}
+
+@supports (display: grid) and (grid-template-columns: repeat(3, 1fr)) and (grid-row-gap: 1%) and (grid-gap: 1%) and (grid-column-gap: 1%) {
+  .c-photo-collage {
+    display: grid;
+    grid-gap: 1.5rem 2.4390244%;
+  }
+  
+  .c-photo-collage > :nth-child(1) {
+    grid-column: 1 / span 3;
+    grid-row: 1;
   }
 }
 ```

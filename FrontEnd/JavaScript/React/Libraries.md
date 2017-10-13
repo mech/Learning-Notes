@@ -124,6 +124,7 @@ When paging, you can use arrow key. We also need to buffer and throttle requests
 
 If there are only 2 or 3 pages worth of data, why not just show all?
 
+* [preact-virtual-list](https://github.com/developit/preact-virtual-list)
 * [sematable](https://github.com/sematext/sematable)
 * [Facebook's fixed-data-table](https://github.com/facebook/fixed-data-table)
 * [reactable](https://github.com/glittershark/reactable)

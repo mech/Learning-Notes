@@ -65,6 +65,8 @@ plugins: [
 * [Porting enterprise React app to create-react-app](https://medium.com/@KarandikarMihir/porting-enterprise-react-app-to-create-react-app-bfb565a25460)
 * [Tweaking Configuration For React Scripts In Create React App](https://medium.com/@shubheksha/tweaking-configuration-for-react-scripts-in-create-react-app-d91e9d03a42f)
 * [Configure create-react-app without ejecting](https://medium.com/@kitze/configure-create-react-app-without-ejecting-d8450e96196a)
+* [RFC - babel-macros](https://github.com/facebookincubator/create-react-app/issues/2730)
+* [Deploy a React App to S3 and CloudFront with AWS Mobile Hub](https://aws.amazon.com/blogs/mobile/deploy-a-react-app-to-s3-and-cloudfront-with-aws-mobile-hub/)
 
 ---
 

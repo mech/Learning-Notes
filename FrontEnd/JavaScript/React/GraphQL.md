@@ -73,6 +73,8 @@ class Query(graphene.ObjectType):
 
 ## What's Wrong with REST
 
+REST is limited.
+
 REST only contains the notion of resource - there is no notion of fields that you could use to restrict the response to only the details you need.
 
 REST has resources and sub-resources. Most of the time, you need to fetch additional requests just to get the sub-resources.
@@ -196,6 +198,8 @@ Note that it is hierarchical.
 ## Design Your Schema
 
 * [Break out the realm of URLs](https://dev-blog.apollodata.com/discourse-in-graphql-part-1-ee1ffd8a22df)
+
+A Schema is just a collection of Types.
 
 With SDL (Schema Definition Language). The schema tells the server what queries clients are allowed to make, and how different types are related.
 
@@ -343,6 +347,16 @@ ShopType = ObjectType.define do
   field :products, types[ProductType]
 end
 ```
+
+## Object Type
+
+Fields can return scalars like Int, String, Boolean.
+
+Most of the fields you will be dealing with are List or Object.
+
+Object types are fields that eventually resolve to scalar types or other objects/lists.
+
+If there are no `resolve()` for a field, it will just be a method call to the parent object.
 
 ## Data Composition
 

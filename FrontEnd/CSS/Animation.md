@@ -25,6 +25,12 @@ Some animations take place on the UI thread. `opacity` and `transform` takes pla
 }
 ```
 
+## Animating `display` properties
+
+`display` is a property that cannot be animated. However for Drawer, sometimes we want to `display: none` the drawer if it is hidden and `display: block` it when transition into view.
+
+* [Animate display block none](https://www.impressivewebs.com/animate-display-block-none/)
+
 ## Transform
 
 * Cartesian coordinate - x, y, z
