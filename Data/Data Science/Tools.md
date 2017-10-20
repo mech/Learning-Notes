@@ -12,6 +12,7 @@
 * GraphX for graph processing
 * MLlib for machine learning
 * Medium latency, high throughput
+* [Building a versatile analytics pipeline on top of Apache Spark](https://tech.grammarly.com/blog/building-a-versatile-analytics-pipeline-on-top-of-apache-spark)
 
 Capable of running on standalone mode (with S3), but many run on top of Hadoop (YARN, HDFS).
 
@@ -32,3 +33,7 @@ What's the problem with "process-after-store" model? Unnecessary latencies betwe
 ## AWS Kinesis
 
 * [Processing Kinesis Streams w/ AWS Lambda and Golang](https://medium.com/@harlow/processing-kinesis-streams-w-aws-lambda-and-golang-264efc8f979a)
+
+## Prometheus
+
+* [Prometheus - Back Story](https://kartar.net/2017/10/prometheus/)

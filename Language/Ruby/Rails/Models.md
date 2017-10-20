@@ -55,6 +55,8 @@ end
 
 ## SQL
 
+* [SqlBuilder](https://github.com/discourse/discourse/blob/master/lib/sql_builder.rb)
+
 ```ruby
 
 ```

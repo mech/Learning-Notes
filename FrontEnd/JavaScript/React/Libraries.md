@@ -98,6 +98,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [buffer-components](https://github.com/bufferapp/buffer-components)
 * [ExtReact](https://www.sencha.com/products/extreact/#app)
 * [Microsoft Office UI Fabric](https://dev.office.com/fabric#/components) Also see [Repo](https://github.com/OfficeDev/office-ui-fabric-react)
+* [Pivotal](https://styleguide.pivotal.io/)
 
 ## Blank Slate
 
@@ -151,6 +152,7 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 * [react-only-if](https://github.com/MicheleBertoli/react-only-if)
 * [react-hoverbox](https://github.com/wix/react-hoverbox)
 * [react-detect-offline - Render certain content only when online (or only when offline)](https://github.com/chrisbolin/react-detect-offline)
+* [Accessible W3C conform accordion written in ES6](https://oncode.github.io/handorgel/)
 
 ## Modal and Dialog
 
@@ -341,3 +343,4 @@ class Tabs extend Component {
 * [Alloy Editor](http://alloyeditor.com/)
 * [Creating a rich text editor - Part 1 - Barebones Editor](http://bitwiser.in/2017/04/11/creating-rte-barebones-editor.html)
 * [Draft-js building search and replace functionality](https://medium.com/@juliandoesstuff/draft-js-building-search-and-replace-functionality-688fd84f64cb)
+* [ProseMirror](http://prosemirror.net/)

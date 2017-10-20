@@ -37,6 +37,7 @@ Grid is different from all the layout techniques we've used in the past because 
 * Use Feature Queries
 * [Grid "fallbacks" and overrides](https://rachelandrew.co.uk/css/cheatsheets/grid-fallbacks)
 * [Basic grid layout with fallbacks using feature queries](https://www.chenhuijing.com/blog/basic-grid-with-fallbacks/)
+* [Progressively Enhancing CSS Layout: From Floats To Flexbox To Grid](https://www.smashingmagazine.com/2017/07/enhancing-css-layout-floats-flexbox-grid/)
 
 IE11 do not have `@supports`, so we can't use CSS Feature Queries even though IE11 has some Grid features.
 
@@ -163,6 +164,10 @@ grid-template-rows: minmax(80px, auto);
 /* The 3rd column should never be less than 5em wide */
 grid-template-columns: 15em 4.5fr minmax(5em, 3fr) 10%;
 ```
+
+## Examples
+
+* [CSS Grid Challenge](https://www.smashingmagazine.com/2017/10/css-grid-challenge-2017-winners/)
 
 ## People
 

@@ -144,6 +144,7 @@ Put authorization logic into the **nodes** (type-level), such that they are enfo
 
 ## N+1 Problem
 
+* It's easy to fall into N+1 problem in GraphQL.
 * Using Ruby Fibre to solve N+1 problem innately? See Airbnb Graphist. Fibre will block until doing all aggregation.
 * N+1 is a under-fetching problem
 
@@ -348,6 +349,15 @@ ShopType = ObjectType.define do
 end
 ```
 
+## Field Naming
+
+2 format for mutations:
+
+* verbNoun - `createCustomer`
+* nounVerb - `customerCreate` (Shopify's approach)
+
+Shopify's approach is to name the noun first so it aid in advertising documentation, e.g. all the `customerXXX` will appear together.
+
 ## Object Type
 
 Fields can return scalars like Int, String, Boolean.
@@ -484,9 +494,46 @@ Please don't do REST API backing your GraphQL. It will be damn slow. Always use 
 * [graphql-query-resolver - Minimize N+1 queries](https://github.com/nettofarah/graphql-query-resolver)
 * [Preloading Associations with graphql-batch](https://gist.github.com/mech/a2fb158c76f4617f72f0f8b6c48b80e1)
 
-## Edges and Connection
+## Edges and Connections
 
-Ability to traverse edges or connections, 1-to-many relationships. 
+Ability to traverse edges or connections, 1-to-many relationships.
+
+* [Explaining GraphQL Connections - Edges have never been so fun!](https://dev-blog.apollodata.com/explaining-graphql-connections-c48b7c3d6976)
+* [GraphQL Connections In Rails](http://graphqlme.com/2017/09/24/graphql-connections-rails/)
+
+Connection is a collection of Edges
+
+```js
+type Company implements Node {
+  id: ID!
+  name: String
+  industry: String
+}
+
+type CompaniesConnection {
+  pageInfo: PageInfo!
+  edges: [CompaniesEdge]
+}
+
+// Edge can be additional metadata properties like
+// when the company was created, etc.
+type CompaniesEdge {
+  cursor: String!
+  node: Company
+}
+
+// To query this connection
+companiesConnection(first: 10) {
+  edges {
+    cursor
+    node {
+      id
+      name
+      industry
+    }
+  }
+}
+```
 
 ## Pagination
 
@@ -494,8 +541,21 @@ Ability to traverse edges or connections, 1-to-many relationships.
 * [Twitter - Using cursors to navigate collections](https://dev.twitter.com/overview/api/cursoring)
 * [GraphQ::Pro - Stable Cursors for ActiveRecord](http://graphql-ruby.org/pro/cursors)
 * [Pagination: You're (Probably) Doing It Wrong](https://coderwall.com/p/lkcaag/pagination-you-re-probably-doing-it-wrong)
+* [GraphQL Connections In Rails](http://graphqlme.com/2017/09/24/graphql-connections-rails/)
+* [Slack API Pagination](https://api.slack.com/docs/pagination)
+* [GraphQL Pagination Implementation](https://medium.com/@mattmazzola/graphql-pagination-implementation-8604f77fb254)
 
 Instead of using literal page numbers, idiomatic GraphQL uses opaque strings called **cursors**. Cursors are more resilient to real-time changes to your data, which might lead to duplicates in simple page-based systems.
+
+There are 2 pagination:
+
+1. **Classic pagination** using `LIMIT` and `OFFSET/SKIP` - good for basic business-oriented resources like documents and users list.
+2. **Cursor-based pagination** - for large list like Twitter/Facebook feed with Load More button. Not really situation for jumping to a specific page.
+
+```
+first = LIMIT the number of results
+after = The next cursor value. An alternative to integer offset.
+```
 
 ## Ruby - Parallelism
 
@@ -515,6 +575,10 @@ Instead of using literal page numbers, idiomatic GraphQL uses opaque strings cal
 * [graphql-ruby-demo](https://github.com/rmosolgo/graphql-ruby-demo)
 * [File uploading with Rails + Apollo client](https://gist.github.com/github0013/d79fa651be3d7450adcd447676d01921)
 * [graphql-preload](https://github.com/ConsultingMD/graphql-preload)
+* [Presenter pattern for Rails and GraphQL](http://graphqlme.com/2017/09/30/presenterdecorator-pattern-in-graphql-rails/)
+* [Caching GraphQL queries with GraphQL-ruby and Rails](http://mgiroux.me/2016/graphql-query-caching-with-rails/)
+* [Using IDL instead of Ruby definition](https://github.com/rmosolgo/graphql-ruby/issues/727)
+* [#820 - Object-oriented schema definition](https://github.com/rmosolgo/graphql-ruby/issues/820)
 
 Raise `GraphQL::ExecutionError` if there are any errors.
 
@@ -631,6 +695,11 @@ It turns out that the tree structure of GraphQL lends itself extremely well to c
 
 * [Yelp](https://www.yelp.com/developers/graphql/guides/intro)
 * [Shopify](https://help.shopify.com/api/storefront-api/graphql)
+* [MusicBrainz](https://github.com/exogen/graphbrainz/blob/master/docs/types.md)
+
+## People
+
+* [Marc-André Giroux](http://mgiroux.me/)
 
 ## Videos
 

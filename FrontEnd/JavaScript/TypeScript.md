@@ -4,6 +4,11 @@ https://github.com/paulcbetts/spawn-rx/pull/12/files
 
 * [Product Type and Sum Type](http://blog.jenkster.com/2016/06/functional-mumbo-jumbo-adts.html)
 
+## Bivariant and Contravariant
+
+* [What are covariance and contravariance?](https://www.stephanboyer.com/post/132/what-are-covariance-and-contravariance)
+* [Covariance and contravariance (computer science)](https://en.m.wikipedia.org/wiki/Covariance_and_contravariance_(computer_science))
+
 ## Implicit Typing
 
 * Assignment
@@ -11,7 +16,7 @@ https://github.com/paulcbetts/spawn-rx/pull/12/files
 ## Explicit Typing
 
 * Function parameters
-* Function return tyoe
+* Function return type
 
 ## With React
 

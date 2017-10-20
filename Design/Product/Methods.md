@@ -1,6 +1,8 @@
 # Methods
 
+* [IDEO Method Cards](https://www.ideo.com/post/method-cards)
 * [UX Deliverables](https://uxplanet.org/a-complete-list-of-ux-deliverables-d62ccf1de434)
+* [Design Research Techniques](http://designresearchtechniques.com/casestudies/)
 
 ## Boredom-Driven Design
 

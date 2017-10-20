@@ -8,6 +8,7 @@
 * [Migrating to Webpack 2](https://javascriptplayground.com/blog/2016/10/moving-to-webpack-2/)
 * [How I cut my Webpack bundle size in half](http://jmduke.com/posts/how-i-cut-my-webpack-bundle-size-in-half/)
 * [Deploying ES2015+ Code in Production Today](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/)
+* [Setting up Webpack, Babel and React from scratch, revisited](https://stanko.github.io/webpack-babel-react-revisited/)
 
 ```
 ▶ yarn global add webpack-bundle-size-analyzer

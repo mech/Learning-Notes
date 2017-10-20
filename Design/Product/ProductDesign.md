@@ -233,3 +233,4 @@ But some metaphors mean different things in different cultures. In United States
 ## Videos
 
 * [Debbie Millman, Design Matter](https://transition.percolate.com/debbie-millman-design-technology/)
+* [Bret Victor - Inventing on Principle](https://vimeo.com/36579366)

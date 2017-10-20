@@ -149,6 +149,7 @@ Be careful when passing props as `null`. Any default prop value will not be used
 
 * props are immutable
 * Use `componentWillReceiveProps` to re-render if props changes
+* Adding props makes the component more reusable, but it can be a sign that there are multiple responsibilities of the component.
 
 ## States
 

@@ -19,6 +19,7 @@
 ## Date and Time
 
 * [Timezone problem](https://www.youtube.com/watch?v=aUk9981C-fQ)
+* [When should you use DateTime and when should you use Time?](https://gist.github.com/pixeltrix/e2298822dd89d854444b)
 
 ```ruby
 Date.parse(params[:start])

@@ -1,10 +1,13 @@
 # Async
 
+* [How JavaScript works: Event loop and the rise of Async programming + 5 ways to better coding with async/await](https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5)
+
 Async is basically eliminating callback hell.
 
 ## Promises
 
 * [Passing data between Promise callbacks](http://2ality.com/2017/08/promise-callback-data-flow.html)
+* [JavaScript's Promise Leaks Memory](https://alexn.org/blog/2017/10/11/javascript-promise-leaks-memory.html)
 
 Before you dive into the wonderful world of async/await, it's important that you understand and appreciate Promises.
 

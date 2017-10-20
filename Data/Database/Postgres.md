@@ -216,6 +216,10 @@ EXCLUDE USING gist (
 * [3 Methods of backing up Postgres](https://www.urbackup.org/backup_postgresql.html)
 * [WAL-E - Continuous archiving for Postgres](https://github.com/wal-e/wal-e)
 
+## People
+
+* [Craig Kerstiens](http://www.craigkerstiens.com/)
+
 ## Videos
 
 * [PostgresOpen](https://www.youtube.com/user/postgresopen)

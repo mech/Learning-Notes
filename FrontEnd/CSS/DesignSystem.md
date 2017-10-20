@@ -1,5 +1,7 @@
 # Design System (Thinking)
 
+[Reboot.css](https://scotch.io/tutorials/a-look-at-bootstrap-4s-new-reset-rebootcss)
+
 > In order to better scope projects, it's essential to look at what the interface is comprised of rather than looking at the quantity/type of pages. This is what software developers have been doing for years now, but the concept of "Web pages" has distracted us from breaking things down into features and components - [Scope Component, not Pages](http://bradfrost.com/blog/post/scope-components-not-pages/)
 
 We are not designing static graphics. We are designing interactive systems. We are designing for intents and behaviours.
@@ -165,6 +167,7 @@ http://styleguides.io/examples.html
 * [Atlassian](https://design.atlassian.com)
 * [GE's Predix Design System](https://medium.com/ge-design/ges-predix-design-system-8236d47b0891#.ndls3eupf)
 * [Trello](https://design.trello.com/)
+* [Pivotal](https://styleguide.pivotal.io/)
 
 **Some forms examples**
 

@@ -18,6 +18,9 @@
 ## Frequency Tables
 
 
+## Libraries
+
+* [luma.gl by Uber](https://github.com/uber/luma.gl)
 
 ## Blog
 
