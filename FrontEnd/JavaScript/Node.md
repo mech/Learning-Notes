@@ -26,3 +26,7 @@
 ## Deployment
 
 * [Load Balancing Node.js Applications with NGINX and Docker](https://auth0.com/blog/load-balancing-nodejs-applications-with-nginx-and-docker/)
+
+## Security
+
+* [Node.js Security Overview](https://nemethgergely.com/nodejs-security-overview/)

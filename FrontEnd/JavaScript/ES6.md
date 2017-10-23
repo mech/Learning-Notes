@@ -3,6 +3,7 @@
 * [Understanding ECMAScript 6 - Nicholas C. Zakas](https://leanpub.com/understandinges6/read)
 * [Exploring ES6 - Dr. Axel Rauschmayer](http://exploringjs.com/es6/index.html)
 * [Exploring ES2016 and ES2017 - Dr. Axel Rauschmayer](http://exploringjs.com/es2016-es2017/index.html)
+* [ES2015+ Cheatsheet](https://devhints.io/es6)
 
 ---
 
@@ -99,6 +100,7 @@ adder.add([1, 2, 3])
 
 * [JavaScript Module System](http://exploringjs.com/es6/ch_modules.html)
 * [ES6 Modules in Depth](https://ponyfoo.com/articles/es6-modules-in-depth#the-es6-module-system)
+* [The JavaScript Modules Limbo](https://codeburst.io/the-javascript-modules-limbo-585eedbb182e)
 
 ```js
 export default {

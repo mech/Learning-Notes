@@ -30,6 +30,8 @@ https://dollarshaveclub.github.io/stickybits/
 * [Popper.js](https://popper.js.org/)
 * [Pace.js - For loading](http://github.hubspot.com/pace/docs/welcome/)
 * [Heroku-style Loading Indicator](https://gist.github.com/patientdev/3dac07a069713c33d4d4cc039aa5ac2d)
+* [react-flexview](https://github.com/buildo/react-flexview)
+* [react-x-ray - CSS Layout Debugger](https://github.com/jxnblk/react-x-ray)
 
 ```js
 import React from 'react';
@@ -164,13 +166,33 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 
 * [react-contexify](https://github.com/fkhadra/react-contexify)
 
+## Tree View
+
+* [bosket](https://elbywan.github.io/bosket/)
+
 ## Auto-complete and Instant Search
 
 * [**Downshift**](https://medium.com/@kentcdodds/introducing-downshift-for-react-b1de3fca0817)
+* [downshift](https://github.com/paypal/downshift)
 * [RDropdown](https://github.com/jamhall/rdropdown)
 * [GooglePlaceAutocomplete](https://github.com/ydeshayes/googlePlaceAutocomplete)
 * [Algolia](https://community.algolia.com/react-instantsearch/)
 * [react-categorized-tag-input](http://erizocosmi.co/react-categorized-tag-input/)
+
+```js
+import debounce from 'lodash/debounce'
+
+class Projects extends Component {
+  state = {
+    projects: fakeProjects,
+    value: ''
+  }
+  
+  handleFilter = debounce((e) => {
+    this.setState(/* whatever */)
+  }, 500)
+}
+```
 
 ## Keyboard and Mouse
 
@@ -321,10 +343,11 @@ class Tabs extend Component {
 * [Rethinking drag and drop](https://medium.com/@alexandereardon/rethinking-drag-and-drop-d9f5770b4e6b)
 * [Shopify Draggable](https://shopify.github.io/draggable/)
 
-## D3
+## D3 and Charts
 
 * [A starting point on using D3 with React](https://blog.sicara.com/a-starting-point-on-using-d3-with-react-869fdf3dfaf#.aood1myab)
 * [Nivo](http://nivo.rocks/#/)
+* [Chartify](https://kis.github.io/chartify/)
 
 ## Images
 
@@ -344,3 +367,4 @@ class Tabs extend Component {
 * [Creating a rich text editor - Part 1 - Barebones Editor](http://bitwiser.in/2017/04/11/creating-rte-barebones-editor.html)
 * [Draft-js building search and replace functionality](https://medium.com/@juliandoesstuff/draft-js-building-search-and-replace-functionality-688fd84f64cb)
 * [ProseMirror](http://prosemirror.net/)
+* [CKEditor 5: A new era for rich text editing](https://ckeditor.com/blog/CKEditor-5-A-new-era-for-rich-text-editing/)

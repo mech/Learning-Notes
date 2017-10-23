@@ -356,3 +356,7 @@ number.to_s.capitalize
 ## The Flocking Rules
 
 * [The Scandalous Story of the Dreadful Code Written by the Best of Us](https://www.youtube.com/watch?v=-wYLmsizBc0)
+
+## Unit and Integration Testing
+
+* [Falling through the KRACKs](https://blog.cryptographyengineering.com/2017/10/16/falling-through-the-kracks/)

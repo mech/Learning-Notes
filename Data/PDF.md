@@ -11,6 +11,7 @@
 * [Generating complex PDF with Prawn](http://www.yoniweisbrod.com/generating-complex-pdf-documents-in-rails-with-prawn/)
 * [PDF Object Representation in HexaPDF](https://gettalong.org/blog/2016/pdf-object-representation-in-hexapdf.html)
 * [react-pdf](https://github.com/diegomura/react-pdf)
+* [Puppeteer - Headless Chrome](https://try-puppeteer.appspot.com/)
 
 ```
 ▶ mdls INR123.pdf

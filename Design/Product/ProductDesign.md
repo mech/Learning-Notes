@@ -1,5 +1,7 @@
 # Product Design
 
+> In order to work, it must be invisible.
+
 * Without outcome, you cannot critique (Crit)
 * Complete lack of 3M Post-it
 * Learning by doing

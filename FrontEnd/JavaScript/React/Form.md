@@ -423,3 +423,4 @@ class SearchInput extends Component {
 * [tcomb-form](https://github.com/gcanti/tcomb-form)
 * [winterfell](https://github.com/andrewhathaway/winterfell)
 * [react-redux-form](https://github.com/davidkpiano/react-redux-form)
+* [Revalidation](http://revalidation.oss.25th-floor.com/)

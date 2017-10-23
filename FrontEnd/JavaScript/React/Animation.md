@@ -64,6 +64,8 @@ The `*-enter` and `*-enter-active` classes are applied when a new element is add
 * Web Animations API - not mature yet
 * [Flight - Ultra Simple Animation Compositions for React](http://www.react-flight.io/)
 * [react-layout-transition](https://github.com/bkazi/react-layout-transition)
+* [react-anime](https://github.com/hyperfuse/react-anime)
+* [lookforward.js - create smooth transitions between pages](https://github.com/appleple/lookforward)
 
 ## Physicality, Velocity, Spring, Realism, Snapping, Friction
 
