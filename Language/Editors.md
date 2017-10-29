@@ -27,6 +27,10 @@
 
 * [snippet grammar](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_snippet-syntax)
 
+### Debugging
+
+* [Debugging React Like a Champ with VSCode](https://hackernoon.com/debugging-react-like-a-champ-with-vscode-66281760037)
+
 ## Vim
 
 * [VIM After 15 Years](https://statico.github.io/vim3.html)

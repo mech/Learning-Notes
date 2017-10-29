@@ -697,10 +697,12 @@ It turns out that the tree structure of GraphQL lends itself extremely well to c
 * [Shopify](https://help.shopify.com/api/storefront-api/graphql)
 * [MusicBrainz](https://github.com/exogen/graphbrainz/blob/master/docs/types.md)
 * [northwind-graphql-ruby](https://github.com/tb/northwind-graphql-ruby)
+* [Fullstack GraphQL](https://github.com/atulmy/fullstack-graphql)
 
 ## People
 
 * [Marc-André Giroux](http://mgiroux.me/)
+* [Robert Mosolgo](https://rmosolgo.github.io/blog/archives/)
 
 ## Videos
 

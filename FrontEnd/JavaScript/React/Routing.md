@@ -321,7 +321,42 @@ const DefaultLayout = ({ component: Component, ...rest }) => (
 
 ## Code splitting
 
-* [**Code Splitting in Create React App**](http://serverless-stack.com/chapters/code-splitting-in-create-react-app.html)
+```js
+// Dynamically load a module using async/await
+(async () => {
+  const myModule = await import('./myModule.js')
+  myModule.foo()
+})
+```
+
+Beside code split at route-level, you can do it at click-level also:
+
+```js
+state = {
+  lazyEditForm: null
+}
+
+async loadEditForm() {
+  const { default: EditForm } = await import('./EditForm')
+  this.setState({ lazyEditForm: EditForm })
+}
+
+handleEditMode = async () => {
+  await this.loadEditForm()
+  
+  this.setState({
+    editMode: true
+  })
+}
+
+render() {
+  const EditForm = this.state.lazyEditForm
+  
+  <button onClick={this.handleEditMode}>Edit</button>
+}
+```
+
+* [**Code Splitting in Create React App**](https://serverless-stack.com/chapters/code-splitting-in-create-react-app.html)
 * [extract-css-chunks-webpack-plugin - Code splitting with CSS styles](https://github.com/faceyspacey/extract-css-chunks-webpack-plugin)
 * [**Route-based splitting vs Component-based splitting**](https://medium.com/@thejameskyle/react-loadable-2674c59de178#.kbvk273ju)
 * [v2.1.0-beta.28 release note](https://github.com/webpack/webpack/releases/tag/v2.1.0-beta.28)
@@ -507,6 +542,7 @@ const MyComponent = () => {
 * [SSR with Create React App v2](https://medium.com/@benlu/ssr-with-create-react-app-v2-1b8b520681d9)
 * [Server side rendering with router v4 & redux](http://blog.revathskumar.com/2017/07/reactjs-server-side-rendering-with-router-v4-redux.html)
 * [Zero-configuration pre-rendering - snapshotting](https://medium.com/superhighfives/an-almost-static-stack-6df0a2791319)
+* [You might (not) need a Server Side Rendering framework](https://adrienharnay.me/you-might-not-need-a-server-side-rendering-framework/)
 
 Create your `<App>` that can service both client and server. Then use ClientApp.js and server.js to render `<App>` on their own.
 

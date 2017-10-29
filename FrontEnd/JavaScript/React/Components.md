@@ -9,6 +9,8 @@
 
 > Learning functional programming completely changed my design process. There's a lot of parallels you can directly apply to your work day to day — it's about composition and I think this is something super useful for the design system we're working on. Rather than starting with a layout or a big marketing page and breaking it down, I love the idea of starting with the smallest possible primitives and building up and up and up.
 
+* [Custom Elements Everywhere](https://custom-elements-everywhere.com/)
+* [**7 architectural attributes of a reliable React component**](https://dmitripavlutin.com/7-architectural-attributes-of-a-reliable-react-component/)
 * [Pure UI Control](https://medium.com/@asolove/pure-ui-control-ac8d1be97a8d)
 * [Single Responsibility Components](https://www.youtube.com/watch?v=pSdp92Up8O8)
 * [**Under the hood: ReactJS**](https://bogdan-lyashenko.github.io/Under-the-hood-ReactJS/)
@@ -58,6 +60,8 @@
 
 ## React 16
 
+* [What's New With Server-Side Rendering in React 16](https://hackernoon.com/whats-new-with-server-side-rendering-in-react-16-9b0d78585d67)
+
 ```js
 const Aux = (props) => {
   // Before React 16
@@ -73,6 +77,7 @@ const Aux = (props) => {
 
 * [real-world-react-apps](https://github.com/jeromedalbert/real-world-react-apps)
 * [Some good touch and animation examples](https://medium.com/@sanchitgn/what-ive-learnt-developing-a-modern-progressive-web-app-d3abe69933fa)
+* [200+ example apps](https://www.javascriptstuff.com/react-example-apps/)
 
 ## Fiber
 
@@ -314,6 +319,8 @@ Especially for initializing form data, sometimes this rule can be broken.
 ```
 
 ## PropTypes
+
+* [React OneOf vs. OneOfType](https://jaketrent.com/post/react-oneof-vs-oneoftype/)
 
 We should always try to pass primitive props to components because they are simpler to validate and to compare. However, in some case it is unavoidable to pass objects and in those cases, we should declare our `propTypes` using **shapes**.
 

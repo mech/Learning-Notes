@@ -1,5 +1,9 @@
 # Redux
 
+> Premature optimisation is the root of all evil. While I still hold true to this quote, I believe that implementing Redux in most React applications **early on** is the right approach. From our experience, the point where just using local state becomes cumbersome happens pretty quickly.
+
+---
+
 > The command pattern, event sourcing, and Redux are all different architectures, but they all accomplish a similar goal: transactional state management.
 > 
 > What is revolutionary about Redux architecture is how it standardized the process of managing transactional state with reducers. In that sense, it applies the idea of transactional state to a particular context and demonstrates how reducer functions over action objects (events) can be the single source of truth for the application state.

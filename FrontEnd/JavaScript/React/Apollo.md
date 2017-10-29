@@ -29,8 +29,20 @@ const client = new ApolloClient({
 
 ## Apollo Link
 
+One of the most important features of Apollo Client 2.0 is the move to a network layer powered by observables, instead of promises.
+
+You can compose links to create complex control flows of GraphQL request.
+
+* [Evans Hauser - one of Apollo Link author](https://medium.com/@evanshauser)
+* [Creating a data component with Apollo Link](https://dev-blog.apollodata.com/creating-a-data-component-with-apollo-link-f0719d8193ee)
+* [Apollo Link: Creating your custom GraphQL client](https://dev-blog.apollodata.com/apollo-link-creating-your-custom-graphql-client-c865be0ce059)
+
+---
+
 * RetryLink
 * HttpLink
+* apollo-link-offline - Collect operations while user has no network connection and replay them when the app comes back online.
+* Terminating link is the one that doesn't use forward, but instead turns the operation into the result directly. Typically the final network request.
 
 ```js
 import {

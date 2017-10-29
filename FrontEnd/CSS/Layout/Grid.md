@@ -1,5 +1,7 @@
 # Grid
 
+* [SPEC: CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/)
+* [The Story of CSS Grid, from Its Creators](https://alistapart.com/article/the-story-of-css-grid-from-its-creators)
 * [You do not need a CSS Grid based Grid System](https://rachelandrew.co.uk/archives/2017/07/01/you-do-not-need-a-css-grid-based-grid-system/)
 * [Grid, Flexbox, Box Alignment: Our New System for Layout](https://24ways.org/2015/grid-flexbox-box-alignment-our-new-system-for-layout/)
 * [Liberating layout through CSS Grid](https://cssgrid.cc/)
@@ -15,8 +17,9 @@
 * [How to Efficiently Master the CSS Grid in a Jiffy](https://medium.com/flexbox-and-grids/how-to-efficiently-master-the-css-grid-in-a-jiffy-585d0c213577)
 * [The Difference Between Explicit and Implicit Grids](https://css-tricks.com/difference-explicit-implicit-grids/)
 * [Rebuilding slack.com using Grid and Flexbox](https://slack.engineering/rebuilding-slack-com-b124c405c193)
+* [CSS Grid Layout and PostCSS: Now Kiss!](https://medium.com/@SylvainPV/css-grid-layout-and-postcss-now-kiss-5e35f61a6f00)
 
-With 18 new CSS Grid properties, there are many ways to achieve the same thing with the Grid layout. This is what makes it overwhelming.
+With 18 new CSS Grid properties (Flexbox has 12), there are many ways to achieve the same thing with the Grid layout. This is what makes it overwhelming.
 
 > When is comes to creating consistent space between items, Grid beats any other layout method hands down.
 
@@ -136,6 +139,8 @@ A very different approach compared to the older methods where you had to specify
 
 ## Grid Lines and Tracks
 
+> Think about Grid systems in terms of tracks or lines or templates or even all three at once.
+
 * [Deep Dive into Grid Layout Placement](https://blogs.igalia.com/mrego/2016/02/01/deep-dive-into-grid-layout-placement/)
 
 Grid Lines start from the outermost edges. If you have 3 columns, then you have 4 lines. If you have 5 rows, then you have 6 lines.
@@ -168,10 +173,14 @@ grid-template-columns: 15em 4.5fr minmax(5em, 3fr) 10%;
 ## Examples
 
 * [CSS Grid Challenge](https://www.smashingmagazine.com/2017/10/css-grid-challenge-2017-winners/)
+* [Rachel Andrew's Grid by Example](https://gridbyexample.com)
+* [Jen Simmons's Labs](http://labs.jensimmons.com/)
 
 ## People
 
 * [Manuel Rego Casasnovas](https://blogs.igalia.com/mrego/)
+* Dr. Bert Bos
+* Håkon Wium Lie
 
 ## Videos
 
@@ -179,3 +188,4 @@ grid-template-columns: 15em 4.5fr minmax(5em, 3fr) 10%;
 * [CSS Grid Layout - Rachel Andrew | February 2017](https://www.youtube.com/watch?v=N5Lt1SLqBmQ)
 * [CSS4 Grid: True Layout Finally Arrives (Jen Kramer) - Full Stack Fest 2016](https://www.youtube.com/watch?v=axVw1Zduqn0)
 * [Start Using CSS Grid Layouts Today](https://youtu.be/tjHOLtouElA?list=PLBzScQzZ83I_n5kvxmUaRNZvc_vsCuEQD)
+* [](https://www.youtube.com/watch?v=tY-MHUsG6ls)

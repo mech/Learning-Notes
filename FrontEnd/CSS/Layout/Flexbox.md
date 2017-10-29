@@ -11,6 +11,11 @@
 * [Building Mega Menus with Flexbox](https://www.sitepoint.com/building-mega-menus-flexbox/)
 * [Getting Started with CSS Flexbox](https://blog.zipboard.co/getting-started-with-css-flexbox-f5b2b5a5b87d)
 
+**Games**
+
+* [Flexbox Froggy](http://flexboxfroggy.com/)
+* [Flexbox Defense](http://www.flexboxdefense.com/)
+
 Traditionally, we have 3 ways to do layout:
 
 See https://www.chenhuijing.com/blog/how-well-do-you-know-display/

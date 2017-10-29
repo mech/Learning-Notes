@@ -25,6 +25,10 @@ SELECT * from users WHERE id = ANY($1::int[])
 
 * [Efficient rollup tables with HyperLogLog in Postgres](https://www.citusdata.com/blog/2017/06/30/efficient-rollup-with-hyperloglog-on-postgres/)
 
+## Time-Series
+
+* [Problems with PostgreSQL 10 for time-series data](https://blog.timescale.com/time-series-data-postgresql-10-vs-timescaledb-816ee808bac5)
+
 ## Indexing
 
 * [Introducing Dexter, the Automatic Indexer for Postgres](https://medium.com/@ankane/introducing-dexter-the-automatic-indexer-for-postgres-5f8fa8b28f27)

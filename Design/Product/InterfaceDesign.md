@@ -14,6 +14,7 @@
 
 > Instead of defining the face of our content — the stuff that appears in the UI — we should start by defining the how and the why that support that content - [Building Block Design](https://medium.com/ruxers/building-block-design-a-modular-design-strategy-for-uxers-927f63eec90c)
 
+* [Machine Learning to Sketching Interfaces](https://airbnb.design/sketching-interfaces/)
 * [Designing for People Who Have Better Things To Do With Their Lives](https://www.joelonsoftware.com/2000/04/26/designing-for-people-who-have-better-things-to-do-with-their-lives/)
 * [What is Atomic Design?](https://blog.prototypr.io/what-is-atomic-design-b8f0368e580d#.bpbyph6i4)
 * [InterfaceLovers](https://interfacelovers.com)

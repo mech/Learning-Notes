@@ -35,3 +35,29 @@ obsv
     console.log(className)
   })
 ```
+
+> Observables are a function that take an observer and return a unsubscribing function.
+
+* [Learning Observable By Building Observable](https://medium.com/@benlesh/learning-observable-by-building-observable-d5da57405d87)
+
+```js
+// Observable is just a function that take an observer
+function Observable(observer) {
+  // This is the magical part
+  const ds = new DataSource()
+  
+  ds.ondata = (e) => observer.next(e)
+  ds.onerror = (err) => observer.error(err)
+  ds.oncomplete = () => observer.complete()
+  
+  // That return an cleanup function
+  return () => {
+    ds.destroy()
+  }
+}
+```
+
+## RxJS
+
+* [Netflix JavaScript Talks - RxJS + Redux + React = Amazing!](https://www.youtube.com/watch?v=AslncyG8whg)
+* [What is RxJS? And Why You Should Know About It](https://news.thisdot.co/what-is-rxjs-and-why-you-should-know-about-it-2a5afe58cea)

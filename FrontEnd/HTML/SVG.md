@@ -13,3 +13,5 @@
   vertical-align: -0.1em;
 }
 ```
+
+* [SVG to JSX converter](https://svg2jsx.herokuapp.com/)

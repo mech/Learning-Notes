@@ -6,6 +6,7 @@ https://github.com/hsnaydd/moveTo/
 
 https://dollarshaveclub.github.io/stickybits/
 
+* [200+ components](https://www.javascriptstuff.com/react-components/)
 * [**JS.Coach**](https://js.coach/)
 * [**Awesome React Components & Libraries**](https://github.com/brillout/awesome-react-components/blob/master/readme.md)
 * [React Desktop](http://reactdesktop.js.org/)
@@ -100,7 +101,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [buffer-components](https://github.com/bufferapp/buffer-components)
 * [ExtReact](https://www.sencha.com/products/extreact/#app)
 * [Microsoft Office UI Fabric](https://dev.office.com/fabric#/components) Also see [Repo](https://github.com/OfficeDev/office-ui-fabric-react)
-* [Pivotal](https://styleguide.pivotal.io/)
+* [**Pivotal**](https://styleguide.pivotal.io/)
 
 ## Blank Slate
 
@@ -161,6 +162,10 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 * [react-portal](https://github.com/tajo/react-portal)
 * [react-slot-fill](https://github.com/camwest/react-slot-fill)
 * [react-waypoint](https://github.com/brigade/react-waypoint)
+
+## Panel, Window
+
+* [react-mosaic](https://github.com/palantir/react-mosaic)
 
 ## Menu
 

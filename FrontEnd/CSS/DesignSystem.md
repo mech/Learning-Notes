@@ -20,6 +20,7 @@ Maintain a visual language, UI elements, components and page types to realize su
 
 Living documentation based on executable examples.
 
+* [A Design System Grammar - Dan Eden](https://daneden.me/2017/07/12/a-design-system-grammar/)
 * [**Integrating Animation into a Design System**](https://alistapart.com/article/integrating-animation-into-a-design-system)
 * [Learning from Lego: A Step Forward in Modular Web Design](https://alistapart.com/article/learning-from-lego-a-step-forward-in-modular-web-design)
 * [The Future of Design Tools Isn’t Prototyping: Introducing Systems](https://www.uxpin.com/studio/design-systems/future-design-tools-isnt-prototyping-introducing-systems-uxpin/)
@@ -167,7 +168,7 @@ http://styleguides.io/examples.html
 * [Atlassian](https://design.atlassian.com)
 * [GE's Predix Design System](https://medium.com/ge-design/ges-predix-design-system-8236d47b0891#.ndls3eupf)
 * [Trello](https://design.trello.com/)
-* [Pivotal](https://styleguide.pivotal.io/)
+* [Pivotal UI Styleguide](https://styleguide.pivotal.io/)
 
 **Some forms examples**
 
