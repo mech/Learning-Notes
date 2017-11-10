@@ -1,5 +1,7 @@
 # Product Design
 
+[Don't be fixed in your idea](https://www.youtube.com/watch?v=lzXHMy4ewtM)
+
 > In order to work, it must be invisible.
 
 * Without outcome, you cannot critique (Crit)

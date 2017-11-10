@@ -150,6 +150,10 @@ You can have 2 types of navigation structures: content-based structure and audie
 
 It shouldn't come as a surprise that when you change what your navigation looks like, you also are changing the way you communicate with your users. Typically a simple navigation will feature only one word per section label, so those words need to be chosen carefully.
 
+### Hamburger vs Horizontal Sliding Menu
+
+* [](https://medium.muz.li/iphone-x-web-navigation-concept-c06efc0e0c50)
+
 ## People
 
 * [Andy Fitzgerald](http://andyfitzgerald.org/)

@@ -1,16 +1,33 @@
 # Kafka
 
+A high-throughput distributed messaging system rethought as a **distributed commit log**.
+
 Kafka does not do data processing or transforming. It basically is a logger to produce and consume messages. It is a distributed commit log.
 
+* Producers push and consumers pull
+* No state held by broker
 * Data movement
 * Decoupled. Multiple data producers and consumers.
 * Re-playable history - configurable time-to-live for messages
 * Retains offsets
 * Enable **Event Sourcing** - an architectural style to maintaining an application's state by capturing all changes as a sequence of time-ordered, immutable events.
+* Message stay on disk when consumed, deletes on TTL or compaction. You can store message for days or weeks, it does not get lost after being consumed. You can therefore go back and replay or rerun things if you want.
 
 ---
 
 * [Turning the database inside out with Apache Samza - Martin Kleppmann](https://www.youtube.com/watch?v=fU9hR3kiOK0)
+
+## Leaders and Followers
+
+* Followers don't serve client requests, their only job is to replicate messages from the leader and stay up to date with the most recent messages the leader has
+
+## Jobline
+
+* Event-driven
+* Central nervous system
+* Central hub
+* True integration
+* Real-time processing
 
 ## Terms
 

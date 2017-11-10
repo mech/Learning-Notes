@@ -8,6 +8,10 @@
 * [Timeout: Ruby's Most Dangerous API](http://www.mikeperham.com/2015/05/08/timeout-rubys-most-dangerous-api/)
 * [The Ultimate Guide to Ruby Timeouts](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts)
 
+## CSV
+
+* [A Guide to the Ruby CSV Library - Part 2](https://www.sitepoint.com/guide-ruby-csv-library-part-2/)
+
 ## Ruby 2.4
 
 * [New Features in Ruby 2.4](https://blog.cognitohq.com/new-features-in-ruby-2-4/)

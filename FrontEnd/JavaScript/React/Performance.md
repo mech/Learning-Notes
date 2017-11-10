@@ -2,13 +2,13 @@
 
 > Poor design choices often lead to issues and, in the case of React, if we do not put the state in the right place, the risk is that our components are going to render more than needed.
 
+* [React is Slow, React is Fast: Optimizing React Apps in Practice](https://medium.com/dailyjs/react-is-slow-react-is-fast-optimizing-react-apps-in-practice-394176a11fba)
 * [Rearchitecting Airbnb's Frontend](https://medium.com/airbnb-engineering/rearchitecting-airbnbs-frontend-5e213efc24d2)
 * [React Performance Tune-up](http://engineering.invisionapp.com/post/react-performance-tune-up/)
 * [Be careful with code splitting using link preload](https://medium.com/reloading/a-link-rel-preload-analysis-from-the-chrome-data-saver-team-5edf54b08715#.ssqki3op6)
 * [High Performance React: 3 New Tools to Speed Up Your Apps](https://medium.freecodecamp.org/make-react-fast-again-tools-and-techniques-for-speeding-up-your-react-app-7ad39d3c1b82)
 * [Netflix - Crafting a high-performance TV user interface using React](https://medium.com/netflix-techblog/crafting-a-high-performance-tv-user-interface-using-react-3350e5a6ad3b)
 * [Optimizing the Performance of Your React Application](https://auth0.com/blog/optimizing-react/)
-* [React is Slow, React is Fast: Optimizing React Apps in Practice](https://marmelab.com/blog/2017/02/06/react-is-slow-react-is-fast.html)
 * [React at 60fps](https://hackernoon.com/react-at-60fps-4e36b8189a4c)
 * [Performance Problems and Solutions in React.js Part 1](https://blog.axosoft.com/2017/03/30/performance-solutions-react-js-pt-1/)
 * [A Deep Dive into React Perf Debugging](http://benchling.engineering/deep-dive-react-perf-debugging/)

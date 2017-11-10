@@ -1,5 +1,7 @@
 # Apollo Client
 
+* [apollo-tracing](https://github.com/apollographql/apollo-tracing)
+
 ```js
 const logger = (operation, forward) => {
   const { operationName, query, variables, context } = operation
@@ -26,6 +28,11 @@ const client = new ApolloClient({
   </Router>
 </ApolloProvider>
 ```
+
+### 2.0 Migration
+
+* [Real official 2.0 migration guide](https://www.apollographql.com/docs/react/2.0-migration.html)
+* [Some 2.0 migration guide](https://github.com/apollographql/apollo-client/blob/master/docs/source/2.0-migration.md)
 
 ## Apollo Link
 

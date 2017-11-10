@@ -1,5 +1,6 @@
 # Flexbox
 
+* [Flexbox and Grids, your layout's best friends](https://aerolab.co/blog/flexbox-grids/)
 * [**Designer's Guide to Flexbox and Grid**](https://medium.com/@jonyablonski/designers-guide-to-flexbox-and-grid-cec6e7e45736)
 * [**Flexing your Flexbox muscles**](http://www.benmvp.com/slides/2017/fluent/flexbox.html#/)
 * [Build with Flexbox](http://flexbox.buildwithreact.com/)
@@ -14,6 +15,7 @@
 **Games**
 
 * [Flexbox Froggy](http://flexboxfroggy.com/)
+* [Grid Garden](http://cssgridgarden.com/)
 * [Flexbox Defense](http://www.flexboxdefense.com/)
 
 Traditionally, we have 3 ways to do layout:
