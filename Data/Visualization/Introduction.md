@@ -14,6 +14,7 @@
 * [HARC - Human Advancement Research Community](https://harc.ycr.org/member/)
 * [OpenAI](https://blog.openai.com/evolution-strategies/)
 * [Perspective was created by Jigsaw and Google’s Counter Abuse Technology team in a collaborative research project called Conversation-AI](http://perspectiveapi.com/)
+* [A Graph of Medium's Tags](https://towardsdatascience.com/a-graph-of-mediums-tags-8e3cf6cad1d9)
 
 ## Frequency Tables
 

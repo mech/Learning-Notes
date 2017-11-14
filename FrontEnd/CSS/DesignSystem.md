@@ -20,6 +20,7 @@ Maintain a visual language, UI elements, components and page types to realize su
 
 Living documentation based on executable examples.
 
+* [Interior System](https://interiorsystem.co.uk/)
 * [A Design System Grammar - Dan Eden](https://daneden.me/2017/07/12/a-design-system-grammar/)
 * [**Integrating Animation into a Design System**](https://alistapart.com/article/integrating-animation-into-a-design-system)
 * [Learning from Lego: A Step Forward in Modular Web Design](https://alistapart.com/article/learning-from-lego-a-step-forward-in-modular-web-design)

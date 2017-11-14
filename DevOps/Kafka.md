@@ -1,6 +1,6 @@
 # Kafka
 
-A high-throughput distributed messaging system rethought as a **distributed commit log**.
+A high-throughput distributed messaging system rethought as a **distributed commit log/write-ahead log/transaction log**.
 
 Kafka does not do data processing or transforming. It basically is a logger to produce and consume messages. It is a distributed commit log.
 
@@ -12,6 +12,7 @@ Kafka does not do data processing or transforming. It basically is a logger to p
 * Retains offsets
 * Enable **Event Sourcing** - an architectural style to maintaining an application's state by capturing all changes as a sequence of time-ordered, immutable events.
 * Message stay on disk when consumed, deletes on TTL or compaction. You can store message for days or weeks, it does not get lost after being consumed. You can therefore go back and replay or rerun things if you want.
+* Recently added better support for transaction
 
 ---
 

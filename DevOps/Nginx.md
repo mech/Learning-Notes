@@ -40,6 +40,7 @@ To solve latency issues, HTTP/2 uses multiplexing. This does not mean you don't 
 
 PCI Security Council deprecated SSLv3 and TLS 1.0 for commercial transactions.
 
+* [**Enable HTTPS over localhost for Mac**](https://paulbrowne.xyz/https-localhost)
 * [SSL and TLS Deployment Best Practices](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices)
 * [Is TLS fast yet?](https://istlsfastyet.com/)
 * [SSL upgrades on rubygems.org and RubyInstaller versions](https://gist.github.com/luislavena/f064211759ee0f806c88)

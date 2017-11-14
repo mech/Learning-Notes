@@ -44,6 +44,7 @@ Using components to abstract style:
 Atomic CSS - Good for prototyping.
 
 * [chantastic's minions](https://github.com/chantastic/minions.css)
+* [Tailwind](https://tailwindcss.com/docs/what-is-tailwind/)
 
 Why do we want to have such immutable classes besides our CSS Modules component styles?
 
