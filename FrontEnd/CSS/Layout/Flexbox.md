@@ -181,6 +181,13 @@ li:last-child {
 
 If you use `margin: auto` alignment on flex-item, the `justify-content` property no longer works.
 
+## Align and Justify
+
+Assuming `flex-direction: row`
+
+* **Align** - think block-level (cross axis)
+* **Justify** - think inline, like justification (main axis)
+
 ## Bugs, Advice
 
 * [Flexbugs by Philip Walton](https://github.com/philipwalton/flexbugs)

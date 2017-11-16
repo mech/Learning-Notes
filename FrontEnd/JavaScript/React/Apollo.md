@@ -211,3 +211,7 @@ fragment UserFields on User {
 ## Queries Merging
 
 * [See queries merging section](https://marmelab.com/blog/2017/09/07/dive-into-graphql-part-iv-building-a-graphql-client-with-reactjs.html)
+
+## Subscription
+
+* [Introducing GraphQL Subscriptions - Lee Byron](https://www.youtube.com/watch?v=bn8qsi8jVew)

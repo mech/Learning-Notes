@@ -683,6 +683,10 @@ export Menu
 * Portals - https://github.com/tajo/react-portal
 * Modals
 
+## Portal
+
+* [Using a React 16 Portal to do something cool](https://hackernoon.com/using-a-react-16-portal-to-do-something-cool-2a2d627b0202)
+
 ## Blogs
 
 * [Dave Ceddia](https://daveceddia.com/)

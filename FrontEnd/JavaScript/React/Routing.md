@@ -76,6 +76,7 @@ There are 2 client-side navigation component: `window.location` and `window.hist
 * [Redux-First Router — A Step Beyond Redux-Little-Router](https://medium.com/faceyspacey/pre-release-redux-first-router-a-step-beyond-redux-little-router-cd2716576aea)
 * [Changing Old Habits in React Router 4](https://medium.com/@ivanmontiel/changing-old-habits-in-react-router-4-8483ee5e087c)
 * The best Redux-based apps design structure based on Redux state, and not on URL state. URL is just another place to store state externally, like a database.
+* [Advanced React Router concepts: recursive path, code splitting, animated transitions, and more](https://blog.logrocket.com/advanced-react-router-concepts-code-splitting-animated-transitions-scroll-restoration-recursive-17096c0cf9db)
 
 ```
 Route Component === Route Handler === Screen Container === Controller (Horror)

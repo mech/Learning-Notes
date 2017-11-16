@@ -15,6 +15,8 @@ Push vs Pull
 Real-time vs Asynchronous (act as buffer)
 Streaming vs Batch
 
+* [Transactionally Staged Job Drains in Postgres](https://brandur.org/job-drain)
+
 ## Traditional Messaging
 
 * Once the message has been processed, it is removed from the queue

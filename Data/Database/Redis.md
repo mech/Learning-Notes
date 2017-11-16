@@ -24,6 +24,22 @@ gem 'hiredis'
 gem 'redis', '~> 3.0', require: ['redis', 'redis/connection/hiredis']
 ```
 
+## Persistence
+
+* [Doc on persistence](https://redis.io/topics/persistence)
+
+```
+appendonly yes
+appendfsync always
+```
+
+Run different Redis instances for Cache and Unified Log.
+
+## As Kafka with Redis Stream
+
+* [Redis Streams and the Unified Log](https://brandur.org/redis-streams)
+* [Streams: a new general purpose data structure in Redis](http://antirez.com/news/114)
+
 ## Database
 
 Appending a number between 0 and 15 will specify the redis database, which defaults to 0.
