@@ -2,6 +2,9 @@
 
 * [10,000 times faster than MySQL?](https://brigade.engineering/10-000-times-faster-than-mysql-7296389e74bb#.kw0f0r6ce)
 * [Learn X in Y](https://learnxinyminutes.com/)
+* [I built an app that makes learning algorithms and data structures way more fun](https://medium.freecodecamp.org/i-built-an-app-that-makes-learning-algorithms-and-data-structures-way-more-fun-46fbb8afacaf)
+* [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+* [VisuAlgo](https://visualgo.net/en)
 
 ## Big O
 
@@ -16,6 +19,7 @@ The gist is that algorithms can take more or less time, depending on their compl
 * [Quicksort](http://me.dt.in.th/page/Quicksort/)
 * [On Iteration](http://www.informit.com/articles/article.aspx?p=1407357&seqNum=3)
 * [Counting Linearly With Counting Sort](https://medium.com/basecs/counting-linearly-with-counting-sort-cd8516ae09b3)
+* [Sorting Algorithms resources](https://github.com/no-stack-dub-sack/cs-playground-react/blob/master/RESOURCES.md)
 
 ## Searching
 

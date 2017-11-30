@@ -2,6 +2,10 @@
 
 ## Visual Studio Code
 
+* [From WebStorm To VS Code](https://medium.com/@jawache/from-webstorm-to-vs-code-bd01ccc92aaf)
+
+---
+
 * Bring your `keybindings` with you
 * Favor open standards over proprietary formats (.editorconfig, .jsconfig)
 * ⌘ + D

@@ -130,6 +130,12 @@ We need to mask server errors to client.
 
 * [Validation and User Errors in GraphQL Mutations](https://medium.com/@tarkus/validation-and-user-errors-in-graphql-mutations-39ca79cd00bf)
 
+## Error
+
+* GraphQL is capable of representing partial success
+* The request shouldn't blow up just because part of the request failed
+* This make tracking success rate a little difficult as GraphQL nearly always return success 200 even if it did not fetch any data
+
 ### Context
 
 * Once authentication with a separate endpoint, you simply pass `current_user` into GraphQL as context so you have access to user profile in the GraphQL resolver.
@@ -690,6 +696,12 @@ curl -X POST \
 ## Caching
 
 It turns out that the tree structure of GraphQL lends itself extremely well to client-side caching.
+
+## Persisted Query
+
+```
+POST /graphql/eyBuawWNlIHsdfHj5IhoHJ0
+```
 
 ## Examples
 

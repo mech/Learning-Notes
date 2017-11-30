@@ -28,6 +28,7 @@
 * [Don't mistake common UI patterns for best practices](https://medium.com/ruxers/dont-mistake-common-ui-patterns-for-best-practices-4a1c8d4bef9a)
 * [**Task-Based UI**](https://cqrs.wordpress.com/documents/task-based-ui/)
 * [Infinitely Better UIs with Finite Automata: FSM](https://www.youtube.com/watch?v=VU1NKX6Qkxc)
+* [7+-2 Miller Law for UI design](https://blog.prototypr.io/the-most-important-rule-in-ux-design-that-everyone-breaks-1c1cb188931)
 
 > Consistency, not uniformity
 > 

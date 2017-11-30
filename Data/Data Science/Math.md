@@ -5,6 +5,8 @@
 
 ## Statistics
 
+* [Quick Intro to Statistics — Power Your Stories with Data](https://hackernoon.com/quick-intro-to-statistics-power-your-stories-with-data-a3a35785692b)
+
 Statistical significant
 
 ### Averages

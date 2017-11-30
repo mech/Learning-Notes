@@ -2,6 +2,7 @@
 
 * [Better search for NPM](http://node-modules.com/)
 * [tiny-care-terminal](https://github.com/notwaldorf/tiny-care-terminal)
+* [Node.js Best Practices](https://github.com/i0natan/nodebestpractices)
 
 ```
 ▶ npm completion >> ~/.zshrc

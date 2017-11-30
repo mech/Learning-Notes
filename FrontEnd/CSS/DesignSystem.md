@@ -20,6 +20,9 @@ Maintain a visual language, UI elements, components and page types to realize su
 
 Living documentation based on executable examples.
 
+* [**Design System Handbook**](https://www.designbetter.co/design-systems-handbook/introducing-design-systems)
+* [**designsystems.com**](https://www.designsystems.com/)
+* [Figma - Introducing DesignSystems.com](https://blog.figma.com/introducing-designsystems-com-8826fd2efd57)
 * [Interior System](https://interiorsystem.co.uk/)
 * [A Design System Grammar - Dan Eden](https://daneden.me/2017/07/12/a-design-system-grammar/)
 * [**Integrating Animation into a Design System**](https://alistapart.com/article/integrating-animation-into-a-design-system)

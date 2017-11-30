@@ -128,6 +128,7 @@ When paging, you can use arrow key. We also need to buffer and throttle requests
 
 If there are only 2 or 3 pages worth of data, why not just show all?
 
+* [Introducing react-pivottable](https://codeburst.io/introducing-react-pivottable-4bfdd511afed)
 * [preact-virtual-list](https://github.com/developit/preact-virtual-list)
 * [sematable](https://github.com/sematext/sematable)
 * [Facebook's fixed-data-table](https://github.com/facebook/fixed-data-table)
@@ -166,6 +167,8 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 ## Panel, Window
 
 * [react-mosaic](https://github.com/palantir/react-mosaic)
+* [resize.js](https://github.com/no-stack-dub-sack/cs-playground-react/blob/master/src/utils/resize.js)
+* [simpledrag](https://github.com/lingtalfi/simpledrag)
 
 ## Menu
 

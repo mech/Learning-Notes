@@ -59,6 +59,7 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 
 ## Symbols and Nested Symbols
 
+* [Symbols are imperative for consistency and quality control](https://blog.usejournal.com/building-responsive-sketch-symbol-components-9973fafd4c04)
 * [Nested Button Symbols: The Complete Guide](https://blog.prototypr.io/nested-button-symbols-the-complete-guide-c0c91be46952)
 * [Nested Symbols & Auto-Updating Styleguides](http://symbols.janlosert.com/)
 * [Sketch Nested Symbols: How to make them Custom?](https://themindstudios.com/blog/sketch-nested-symbols-how-to-make-them-custom/)

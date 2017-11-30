@@ -18,6 +18,10 @@ config.action_mailer.smtp_settings = {
 
 Note: The SMTP username and password is not the same as the AWS access key ID and secret access key, so don't mix it up.
 
+```
+▶ aws ses get-send-statistics --region us-west-2
+```
+
 ## Limits
 
 * [Limits in Amazon SES](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/limits.html)

@@ -36,6 +36,8 @@ const client = new ApolloClient({
 
 ## Apollo Link
 
+> Creating a component-based request chain. Apollo Link is a request primitive designed for the GraphQL age.
+
 One of the most important features of Apollo Client 2.0 is the move to a network layer powered by observables, instead of promises.
 
 You can compose links to create complex control flows of GraphQL request.
@@ -215,3 +217,8 @@ fragment UserFields on User {
 ## Subscription
 
 * [Introducing GraphQL Subscriptions - Lee Byron](https://www.youtube.com/watch?v=bn8qsi8jVew)
+
+## @defer
+
+## @rest
+

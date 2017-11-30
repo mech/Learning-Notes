@@ -61,6 +61,10 @@ plugins: [
 ]
 ```
 
+## Starter Kits
+
+* [Universal React+GraphQL starter kit CLI](https://github.com/reactql/cli)
+
 ## create-react-app
 
 * [Porting enterprise React app to create-react-app](https://medium.com/@KarandikarMihir/porting-enterprise-react-app-to-create-react-app-bfb565a25460)
