@@ -57,6 +57,10 @@ PCI Security Council deprecated SSLv3 and TLS 1.0 for commercial transactions.
 * Logjam attack - 2015
 * As of Jan 2016, you can't get SHA1 cert anymore. Use SHA256.
 
+```html
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+```
+
 ### Checklist
 
 * OCSP stapling enabled?

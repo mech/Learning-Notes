@@ -3,6 +3,8 @@
 * [Layout powered by CSS variables](https://codepen.io/pixelass/post/layout-powered-by-css-variables)
 * [Stop using device breakpoints - Let the content be the grid](https://medium.com/simple-human/stop-using-device-breakpoints-b11a87e2625c)
 
+> Swiss designer Karl Gerstner defined the grid as follows: "a proportional regulator for composition, tables, pictures, etc. It is a formal program to accommodate x unknown items."
+
 ## Frameworks
 
 * [Lost](https://github.com/peterramsing/lost)

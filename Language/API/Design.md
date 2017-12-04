@@ -2,6 +2,7 @@
 
 APIs should be a key component of your deployment strategy. Without a widespread deployment of APIs, you can forget about deploying your final product in a timely fashion and within your budget.
 
+* [Pragmatic design with JSON API](https://jeremiahlee.com/blog/2017/10/10/pragmatic-design-with-json-api/)
 * [Test HTTP status code](http://httpstat.us/)
 * [Rails 5 API Tutorial](https://github.com/vasilakisfil/rails5_api_tutorial)
 * [active_hash_relation](https://github.com/kollegorna/active_hash_relation)
@@ -13,6 +14,7 @@ APIs should be a key component of your deployment strategy. Without a widespread
 * [REST Anti-Patterns](https://www.infoq.com/articles/rest-anti-patterns)
 * [Ultimate Guide to API Design](https://blog.qmo.io/ultimate-guide-to-api-design/)
 * [API Security Checklist](https://github.com/shieldfy/API-Security-Checklist)
+* [JSON Patch](http://jsonpatch.com/)
 
 ---
 
@@ -179,3 +181,4 @@ X-Served-By: a30e6f9aa7cf5731b87dfb3b9992202d
 ## Videos
 
 * [Rails APIs: The Next Generation](https://www.youtube.com/watch?v=iTbTz8_ztIM)
+* [Nordic API](https://www.youtube.com/user/nordicapis/playlists)

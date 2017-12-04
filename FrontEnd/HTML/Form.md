@@ -10,4 +10,9 @@
 
 ## Validation
 
-* [Native form validation — part 1](https://medium.com/samsung-internet-dev/native-form-validation-part-1-bf8e35099f1d)
+* [PPK - Native form validation — part 1](https://medium.com/samsung-internet-dev/native-form-validation-part-1-bf8e35099f1d)
+* [Happier HTML5 Form Validation](https://daverupert.com/2017/11/happier-html5-forms/)
+* [HTML5 Pattern](http://html5pattern.com/)
+* [Capture form validation back from the browser](https://hyperform.js.org/)
+
+Never use `input:invalid` as it is broken.

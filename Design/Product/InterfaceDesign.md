@@ -29,6 +29,7 @@
 * [**Task-Based UI**](https://cqrs.wordpress.com/documents/task-based-ui/)
 * [Infinitely Better UIs with Finite Automata: FSM](https://www.youtube.com/watch?v=VU1NKX6Qkxc)
 * [7+-2 Miller Law for UI design](https://blog.prototypr.io/the-most-important-rule-in-ux-design-that-everyone-breaks-1c1cb188931)
+* [Why I love ugly, messy interfaces — and you probably do too](https://m.signalvnoise.com/why-i-love-ugly-messy-interfaces-and-you-probably-do-too-edff4a896a83)
 
 > Consistency, not uniformity
 > 
@@ -58,8 +59,24 @@
 * Don't let problem hide, show feedback!
 * 5S - (Sort - remove unnecessary thing), (Straighten - make things easy to find), (Shine - keep workspace clean and safe), (Standardize - keep everything in its place), (Sustain - perform 5S as a routine)
 * Clients want THE SOLUTION, not THE SERVICE.
+* We needn't all pray at the beautiful minimalist design altar. Design doesn't have to be precious. Toss out your assumptions and build what works best.
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
+
+## The Purpose of UI Design
+
+* [Interface](https://spectrum.chat/thread/ac4cba39-0582-4b73-9582-9e863ed66346)
+
+> A software company's purpose is to solve some problem for a user. An effective solution can be enabling new behaviors, making existing processes easier, reducing cost, or simply giving people something they enjoy.
+> 
+> This maps directly to the purpose of any interface designer's work - which is to **compose an interaction layer** for software that enables users to access solutions to a given problem set.
+
+## Swiss Formalism
+
+* Simple typeface
+* Rational grid
+* Bold visual aesthetic
+* Dominating black headlines
 
 ## Stages of User Journey
 

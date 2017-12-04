@@ -81,6 +81,7 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 * [40 Powerful plugins for sketch](https://medium.muz.li/40-powerful-free-plugins-for-sketch-c1af03ea9d7e)
 * [Text Style](http://www.textstyl.es/)
 * [Symbol Organizer](https://github.com/sonburn/symbol-organizer)
+* [html-sketchapp - similar to react-sketchapp](https://github.com/brainly/html-sketchapp)
 
 ## Exporting
 

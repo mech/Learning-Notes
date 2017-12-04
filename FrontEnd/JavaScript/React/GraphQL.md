@@ -1,5 +1,7 @@
 # GraphQL
 
+> Finally! I can see my business domain - with GraphQL Voyager
+
 * DDoS
 * Are you leaking implementation details
 * Protocol buffer? gRPC?
@@ -58,6 +60,11 @@ def graphql(request):
 
 # Yelp expose business and search lookup
 class Query(graphene.ObjectType):
+  hello = graphene.String()
+  
+  def resolve_hello(self, info):
+    return 'World'
+
   business = graphene.Field(
     Business,
     alias=graphene.String(),
@@ -135,6 +142,25 @@ We need to mask server errors to client.
 * GraphQL is capable of representing partial success
 * The request shouldn't blow up just because part of the request failed
 * This make tracking success rate a little difficult as GraphQL nearly always return success 200 even if it did not fetch any data
+* Track your error as GraphQL do not provide backtraces and line numbers
+
+```js
+// Form error can be query also
+// Treat error as data also
+mutation createUser {
+  createUser(email: 'test@example.com') {
+    user {
+      id
+      email
+    }
+    wasSuccessful
+    userErrors {
+      field
+      message
+    }
+  }
+}
+```
 
 ### Context
 
@@ -203,6 +229,24 @@ Note that it is hierarchical.
 ```
 
 ## Design Your Schema
+
+Most languages have "classes" and "methods". Not GraphQL! As it has only "types" and "fields". But you can think of them as sort of the same:
+
+```js
+type User {
+  name: String!
+  friends: [User]!
+  profilePicture: Image
+}
+
+class FBUser {
+  public function getName(): string {
+    return $this->name;
+  }
+}
+```
+
+Type have fields. Fields have types.
 
 * [Break out the realm of URLs](https://dev-blog.apollodata.com/discourse-in-graphql-part-1-ee1ffd8a22df)
 
@@ -672,12 +716,31 @@ There is a `resolve()` for every field, but this does not mean that an individua
 
 ## Tooling
 
+https://www.youtube.com/watch?v=bQUYWYuVCP0
+
+```
+▶ yarn add graphql-cli
+▶ graphql init
+▶ graphql get-schema
+
+eslint-plugin-graphql
+
+.graphqlconfig
+
+graphql/template-strings
+graphql/named-operations
+graphql/required-fields
+```
+
 * [graphql-docs by GitHub](https://github.com/gjtorikian/graphql-docs)
 * [graphql-client](https://github.com/github/graphql-client)
 * [apollo-fetch](https://github.com/apollographql/apollo-fetch)
 * `brew cask install graphiql`
 * [Expensive service - GraphQL::Pro](http://graphql.pro/)
 * [graphql-cli](https://github.com/graphcool/graphql-cli)
+* [apollo-codegen](https://github.com/apollographql/apollo-codegen)
+
+Using `apollo-codegen` with queries and fragments. Attempting to use an undeclared field from a fragment declaration won't get caught by a linter, but will get caught by types.
 
 ```
 curl -X POST \
@@ -692,6 +755,14 @@ curl -X POST \
 }
 '
 ```
+
+## Codegen
+
+* [GraphQL Code-Generator 1.0](https://medium.com/@dotansimha/graphql-code-generator-a34e3785e6fb)
+
+## Request Budgeting
+
+* Maximum query time = 1 second?
 
 ## Caching
 

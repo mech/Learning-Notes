@@ -8,6 +8,7 @@
 * [The Book of Shaders](http://thebookofshaders.com/)
 * [100 days of algorithms](https://medium.com/100-days-of-algorithms)
 * [Five Principles for Good Data Visualization](http://achariam.com/dataviz/)
+* [Public holidays from just a handful of Asian countries](https://medium.com/@yanhann10/public-holidays-from-just-a-handful-of-asian-countries-ae3d0b5e0ffc)
 
 ## Interesting
 

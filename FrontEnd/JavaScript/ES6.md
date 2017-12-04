@@ -1,5 +1,6 @@
 # ES6
 
+* [The Modern JavaScript Tutorial](https://javascript.info/)
 * [Understanding ECMAScript 6 - Nicholas C. Zakas](https://leanpub.com/understandinges6/read)
 * [Exploring ES6 - Dr. Axel Rauschmayer](http://exploringjs.com/es6/index.html)
 * [Exploring ES2016 and ES2017 - Dr. Axel Rauschmayer](http://exploringjs.com/es2016-es2017/index.html)

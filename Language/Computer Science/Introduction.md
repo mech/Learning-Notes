@@ -1,5 +1,7 @@
 # Computer Science
 
+**https://github.com/PharkMillups/beautiful-docs/**
+
 * [10,000 times faster than MySQL?](https://brigade.engineering/10-000-times-faster-than-mysql-7296389e74bb#.kw0f0r6ce)
 * [Learn X in Y](https://learnxinyminutes.com/)
 * [I built an app that makes learning algorithms and data structures way more fun](https://medium.freecodecamp.org/i-built-an-app-that-makes-learning-algorithms-and-data-structures-way-more-fun-46fbb8afacaf)

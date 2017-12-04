@@ -125,6 +125,7 @@ Most single queries should be aiming for around a 1ms query time.
 
 * [Folding Postgres Window Functions into Rails](https://blog.codeship.com/folding-postgres-window-functions-into-rails/)
 * [Modeling Postgres Common Table Expressions and Window Functions with Rails and ActiveRecord](http://blog.nrowegt.com/modeling-postgres-common-table-expressions-and-window-functions-with-rails-and-activerecord/)
+* [Advanced SQL - window functions](http://mjk.space/advanced-sql-window-functions/)
 
 The strength of window functions is not pagination, but analytical calculation.
 
@@ -225,6 +226,11 @@ EXCLUDE USING gist (
 ## People
 
 * [Craig Kerstiens](http://www.craigkerstiens.com/)
+
+## Blog
+
+* [PG Analyze blog](https://pganalyze.com/blog)
+* [](https://brandur.org/articles)
 
 ## Videos
 

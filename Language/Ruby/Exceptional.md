@@ -9,8 +9,8 @@
 * [Exceptional Ruby - Avdi](http://avdi.org/talks/exceptional-ruby-rubyconf-2011/exceptional-ruby.html)
 * [Rescuing Exceptions in Ruby: A Primer](http://blog.appsignal.com/blog/2016/10/18/ruby-magic-exceptions-primer.html)
 * [Airbrake's Ruby Exception Handling series](https://airbrake.io/blog/category/ruby-exception-handling)
-* [How to control an application flow?
-](https://blog.lelonek.me/how-to-control-application-flow-e97895a60b3c#.yobp7071i)
+* [How to control an application flow?](https://blog.lelonek.me/how-to-control-application-flow-e97895a60b3c#.yobp7071i)
+* [Advanced Rescue & Raise](http://docs.honeybadger.io/ruby/exceptions/advanced-rescue-and-raise.html)
 
 ```ruby
 # Make warning be error only with -d flag
