@@ -12,3 +12,7 @@ Automation is not about time saved. It is about value-add, consistency, safety, 
 ## Cron
 
 * [minicron - Monitor your cron jobs](https://github.com/jamesrwhite/minicron)
+
+## Videos
+
+* [IT Revolution](https://www.youtube.com/channel/UCkAQCw5_sIZmj2IkSrNy00A/playlists)

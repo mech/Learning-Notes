@@ -16,6 +16,7 @@ https://dollarshaveclub.github.io/stickybits/
 * [Best Practices on building a UI component library for your company](https://www.youtube.com/watch?v=j8eBXGPl_5E)
 * [Carte Blanche - Like Storybook?](https://github.com/carteb/carte-blanche)
 * [CUID compared to UUID or shortid](https://github.com/ericelliott/cuid)
+* [reflective-bind](https://github.com/flexport/reflective-bind)
 
 ## Ajax
 

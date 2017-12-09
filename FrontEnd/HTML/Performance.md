@@ -5,6 +5,10 @@
 * [Reverse engineering Amazon and the Guardian - David Fox (LookZook)](https://www.safaribooksonline.com/library/view/fluent-conference-2017/9781491985298/video311523.html)
 * [Designing Speed with Progressive Enhancement](https://www.youtube.com/watch?v=cdv8UQu96PU)
 
+## Jank
+
+* [2018: 120fps and no jank](https://dassur.ma/things/120fps/)
+
 ## Web Fonts
 
 * [Web fonts: when you need them, when you don't](https://hackernoon.com/web-fonts-when-you-need-them-when-you-dont-a3b4b39fe0ae)
