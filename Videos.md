@@ -7,10 +7,13 @@ document.getElementsByTagName('video')[0].playbackRate = 2;
 * [Study from DNS Simple](https://study.dnsimple.com/)
 * [@Scale](https://www.youtube.com/channel/UCd9I8ZkgoR1d7GeSj_wi_LQ)
 * [An Event Apart](https://aneventapart.com/news/post/unified-ux-by-cameron-moll-an-event-apart-video)
+* [99U Conference](http://conference.99u.com/#video)
+* [Clearleft](https://vimeo.com/clearleft)
 
 ## CSS
 
 * [MelbCSS](https://www.youtube.com/channel/UCIpyTmd8_cCk26yzBaTIhUQ/videos)
+* [Web Conferences Amsterdam](https://vimeo.com/webconferences)
 
 ## JavaScript
 

@@ -1,5 +1,7 @@
 # Figma
 
+* [Modern Design Tools: Adaptive Layouts](https://medium.com/bridge-collection/modern-design-tools-adaptive-layouts-e236070856e3)
+
 ## Frames
 
 * Artboard in Sketch
@@ -13,3 +15,8 @@
 ## Team Library
 
 * Easily share components between Files and Teams
+
+## Resources
+
+* [Figma own resources](https://www.figma.com/resources)
+* [Figma Resources](https://www.figmaresources.com/)

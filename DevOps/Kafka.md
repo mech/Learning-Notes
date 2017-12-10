@@ -181,6 +181,11 @@ replica.fetch.max.bytes
 
 * [Scaling Slack's Job Queue](https://slack.engineering/scaling-slacks-job-queue-687222e9d100)
 
+## Ruby
+
+* [Kafka for Ruby](http://teamcoding.com/blog/2015/10/05/kafka/)
+* [Avro in Ruby](http://teamcoding.com/blog/2015/12/01/avro-in-ruby/)
+
 ## Videos
 
 * [Processing Streaming Data at a Large Scale with Kafka](https://www.youtube.com/watch?v=-NMDqqW1uCE)
