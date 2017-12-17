@@ -18,6 +18,7 @@
 
 > The main purpose of Redux is to isolate state management from I/O side effects.
 
+* [Finally understand Redux by building your own Store](https://toddmotto.com/redux-typescript-store)
 * [Debounce Your React and Redux Code to Improve Performance](https://medium.com/gitconnected/debounce-react-and-redux-code-for-improved-performance-4b8d3c19e305)
 * [Redux Resource](https://redux-resource.js.org/)
 * [A good overview of Redux](https://medium.com/@nicotsou/tltr-redux-e4fc30f87e4a)

@@ -1,6 +1,7 @@
 # BEM
 
 * [CSS Utility Classes and "Separation of Concerns"](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/)
+* [Specificity Visualizer](https://francescoschwarz.de/en/blog/introducing-the-specificity-visualizer/)
 
 A lot of semantic CSS class names have a lot in common from a design perspective.
 

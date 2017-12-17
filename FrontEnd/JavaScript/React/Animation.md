@@ -66,6 +66,7 @@ The `*-enter` and `*-enter-active` classes are applied when a new element is add
 * [react-layout-transition](https://github.com/bkazi/react-layout-transition)
 * [react-anime](https://github.com/hyperfuse/react-anime)
 * [lookforward.js - create smooth transitions between pages](https://github.com/appleple/lookforward)
+* [Popmotion](https://popmotion.io/)
 
 ## Physicality, Velocity, Spring, Realism, Snapping, Friction
 

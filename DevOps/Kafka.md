@@ -1,5 +1,7 @@
 # Kafka
 
+* [Handling user-initiated actions in an asynchronous, message-based architecture](https://www.oreilly.com/ideas/handling-user-initiated-actions-in-an-asynchronous-message-based-architecture)
+
 > To ensure that the new system worked end-to-end, we enqueued heartbeat canaries for every Kafka partition every minute.
 
 A high-throughput distributed messaging system rethought as a **distributed commit log/write-ahead log/transaction log**.

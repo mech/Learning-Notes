@@ -353,6 +353,7 @@ class Tabs extend Component {
 * [Some react-dnd example](https://gist.github.com/krzysu/1b391ae0e3c87d0c654cdf6d5a409632)
 * [Rethinking drag and drop](https://medium.com/@alexandereardon/rethinking-drag-and-drop-d9f5770b4e6b)
 * [Shopify Draggable](https://shopify.github.io/draggable/)
+* [react-beautiful-dnd by Atlassian](https://github.com/atlassian/react-beautiful-dnd)
 
 ## D3 and Charts
 

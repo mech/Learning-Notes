@@ -11,6 +11,9 @@
 ## Password
 
 * [Emil Bay: Keeping passwords safe in 2017](https://www.youtube.com/watch?v=EAaweXzUVh4)
+* [How Our Password Check Works](https://colloq.io/blog/how-our-password-check-works)
+* [Have I Been Pwned for Password](https://haveibeenpwned.com/Passwords)
+* [1.4 Billion Clear Text Credentials Discovered in a Single Database](https://medium.com/4iqdelvedeep/1-4-billion-clear-text-credentials-discovered-in-a-single-database-3131d0a1ae14)
 
 ## Mac
 

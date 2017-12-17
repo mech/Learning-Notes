@@ -1,5 +1,7 @@
 # ES6
 
+https://github.com/Chalarangelo/30-seconds-of-code
+
 * [The Modern JavaScript Tutorial](https://javascript.info/)
 * [Understanding ECMAScript 6 - Nicholas C. Zakas](https://leanpub.com/understandinges6/read)
 * [Exploring ES6 - Dr. Axel Rauschmayer](http://exploringjs.com/es6/index.html)
@@ -99,6 +101,7 @@ adder.add([1, 2, 3])
 
 ## Module Export Import
 
+* [Modules Modules Modules - The difficulty of CJS and ESM](https://www.youtube.com/watch?v=W5CXzo4TZVU)
 * [JavaScript Module System](http://exploringjs.com/es6/ch_modules.html)
 * [ES6 Modules in Depth](https://ponyfoo.com/articles/es6-modules-in-depth#the-es6-module-system)
 * [The JavaScript Modules Limbo](https://codeburst.io/the-javascript-modules-limbo-585eedbb182e)
@@ -320,6 +323,8 @@ upper`Hello ${name}`
 ```
 
 ## Symbols
+
+* [Arrays, symbols, and realms](https://jakearchibald.com/2017/arrays-symbols-realms/)
 
 All not that useful in a general case. A unique unguessable value. Use it as a symbolic placeholder for "something".
 
