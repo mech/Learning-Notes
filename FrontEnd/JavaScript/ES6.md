@@ -46,6 +46,7 @@ if (shouldShowSpinner(fsm, listNode)) {
 
 * [Best practices for JavaScript function parameters](https://codeutopia.net/blog/2016/11/24/best-practices-for-javascript-function-parameters/)
 * [Require Parameters for JavaScript Functions](https://davidwalsh.name/javascript-function-parameters)
+* [Function Parameters in Detail](https://blogg.bekk.no/function-parameters-in-detail-b0f0d971bec3)
 
 ## Arrow Function
 

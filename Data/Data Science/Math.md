@@ -11,6 +11,7 @@ Statistical significant
 
 ### Averages
 
+* [Modes, Medians and Means: A Unifying Perspective](http://www.johnmyleswhite.com/notebook/2013/03/22/modes-medians-and-means-an-unifying-perspective/)
 * [Moving Average](http://www.investopedia.com/terms/m/movingaverage.asp)
 * [The problem with averages](https://signalvnoise.com/posts/1836-the-problem-with-averages)
 

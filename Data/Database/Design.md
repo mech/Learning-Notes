@@ -1,5 +1,12 @@
 # Database Design
 
+Requirements that shape the data:
+
+* Detailed data/summarized data
+* Update of data
+* Clerical usage/management usage
+* Hourly/daily/weekly usage
+
 ## Models
 
 ```

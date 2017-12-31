@@ -4,6 +4,7 @@
 * [tiny-care-terminal](https://github.com/notwaldorf/tiny-care-terminal)
 * [Node.js Best Practices](https://github.com/i0natan/nodebestpractices)
 * [Awesome Awesome Node.js](https://github.com/bnb/awesome-awesome-nodejs)
+* [What's really wrong with node_modules and why this is your fault](https://hackernoon.com/whats-really-wrong-with-node-modules-and-why-this-is-your-fault-8ac9fa893823)
 
 ```
 ▶ npm completion >> ~/.zshrc

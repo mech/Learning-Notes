@@ -9,6 +9,7 @@ document.getElementsByTagName('video')[0].playbackRate = 2;
 * [An Event Apart](https://aneventapart.com/news/post/unified-ux-by-cameron-moll-an-event-apart-video)
 * [99U Conference](http://conference.99u.com/#video)
 * [Clearleft](https://vimeo.com/clearleft)
+* [code.talks](https://www.youtube.com/channel/UCfuj1MM5p37CRzWYPv_PsWA/videos)
 
 ## CSS
 
@@ -30,6 +31,7 @@ document.getElementsByTagName('video')[0].playbackRate = 2;
 ## Software
 
 * [Domain-Driven Design Europe](https://www.youtube.com/channel/UC3PGn-hQdbtRiqxZK9XBGqQ)
+* [LLVM](https://www.youtube.com/channel/UCv2_41bSAa5Y_8BacJUZfjQ)
 
 ## Innovation and Startups
 

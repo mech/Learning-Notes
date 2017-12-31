@@ -6,6 +6,7 @@
 * [Swift is like Kotlin](http://nilhcem.com/swift-is-like-kotlin/)
 * [A Tour of Acme](https://research.swtch.com/acme)
 * [10 years of Go](https://commandcenter.blogspot.co.id/2017/09/go-ten-years-and-climbing.html)
+* [Gophercises - coding exercises for budding gophers](https://gophercises.com/)
 
 ## Struct - Store data
 

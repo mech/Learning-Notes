@@ -33,6 +33,7 @@ NP-Complete
 ## Case Studies
 
 * [Using Machine Learning to Predict Parking Difficulty](https://iot-for-all.com/using-machine-learning-to-predict-parking-difficulty-d0af0cd3b9a9#.qusfhp3j8)
+* [Netflix - Introducing Vectorflow - Netflix shares the details of machine learning technologies that it uses to provide personalized content](https://medium.com/@NetflixTechBlog/introducing-vectorflow-fe10d7f126b8)
 
 ## Companies
 

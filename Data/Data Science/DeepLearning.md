@@ -5,3 +5,7 @@
 ## Neural Networks
 
 * [Google Quick](https://quickdraw.withgoogle.com/data)
+
+## Books
+
+* [Artificial Intuition: The Improbable Deep Learning Revolution](https://gumroad.com/l/IHDj)

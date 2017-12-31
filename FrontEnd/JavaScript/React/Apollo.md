@@ -222,3 +222,8 @@ fragment UserFields on User {
 
 ## @rest
 
+## Case Study
+
+* [NYT switch to Apollo](https://open.nytimes.com/the-new-york-times-now-on-apollo-b9a78a5038c)
+* [Coursera’s journey to GraphQL](https://dev-blog.apollodata.com/courseras-journey-to-graphql-a5ad3b77f39a)
+* [Changing the architecture of Express.com](https://dev-blog.apollodata.com/changing-the-architecture-of-express-com-23c950d43323)

@@ -8,6 +8,10 @@
 * [How To Write Better SQL Queries: The Definitive Guide – Part 1](http://www.kdnuggets.com/2017/08/write-better-sql-queries-definitive-guide-part-1.html/2)
 * [Finding the Oldest/Youngest Records Within a Group](https://robots.thoughtbot.com/ordering-within-a-sql-group-by-clause)
 
+## SQL Injection
+
+* [SQL Injection Wiki](https://sqlwiki.netspi.com/)
+
 ## Index
 
 ## Subquery

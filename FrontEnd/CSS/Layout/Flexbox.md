@@ -49,6 +49,7 @@ See https://www.chenhuijing.com/blog/how-well-do-you-know-display/
 * [The Ultimate Guide to Flexbox — Learning Through Examples](https://medium.freecodecamp.org/the-ultimate-guide-to-flexbox-learning-through-examples-8c90248d4676)
 * [Understanding Flexbox: Everything you need to know](https://medium.freecodecamp.com/understanding-flexbox-everything-you-need-to-know-b4013d4dc9af#.44b5tgfom)
 * [The Ultimate Flexbox Cheat Sheet](http://www.sketchingwithcss.com/samplechapter/cheatsheet.html)
+* [The Ultimate Flexbox Cheat Sheet - [Updated]](https://www.sketchingwithcss.com/samplechapter/cheatsheet.html)
 * [Codrops' Flexbox Reference](https://tympanus.net/codrops/css_reference/flexbox/)
 * [Flex-grow 9999 Hack](http://joren.co/flex-grow-9999-hack/)
 * [flex-grow is weird. Or is it?](https://css-tricks.com/flex-grow-is-weird/)

@@ -173,6 +173,7 @@ http://styleguides.io/examples.html
 * [GE's Predix Design System](https://medium.com/ge-design/ges-predix-design-system-8236d47b0891#.ndls3eupf)
 * [Trello](https://design.trello.com/)
 * [Pivotal UI Styleguide](https://styleguide.pivotal.io/)
+* [Shopify Polaris](https://polaris.shopify.com/)
 
 **Some forms examples**
 

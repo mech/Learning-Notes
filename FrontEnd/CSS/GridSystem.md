@@ -22,3 +22,4 @@
 * [Google Material - Baseline Grids](https://material.io/guidelines/layout/metrics-keylines.html#metrics-keylines-baseline-grids)
 * [Responsive & Baseline (Atomic) Grids](http://harmony.intuit.com/grid/)
 * [Space in Design Systems](https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62#.svn04vu44)
+* [The 8pt Grid: Consistent Spacing in UI Design with Sketch](https://blog.prototypr.io/the-8pt-grid-consistent-spacing-in-ui-design-with-sketch-577e4f0fd520)

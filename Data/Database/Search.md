@@ -76,6 +76,8 @@ Synonym management, hierarchical browsing, and associative linking.
 ## ElasticSearch
 
 * [stretchy - Query builder for ElasticSearch](https://github.com/hired/stretchy)
+* [Elasticsearch For Beginners: Indexing your Gmail Inbox](https://github.com/oliver006/elasticsearch-gmail)
+* [Building a new search for FT.com](https://www.maketea.co.uk/2017/12/20/building-a-new-search-for-ft-com.html)
 
 ## Blog
 

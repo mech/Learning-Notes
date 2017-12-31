@@ -82,6 +82,7 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 * [Text Style](http://www.textstyl.es/)
 * [Symbol Organizer](https://github.com/sonburn/symbol-organizer)
 * [html-sketchapp - similar to react-sketchapp](https://github.com/brainly/html-sketchapp)
+* [sketch-syntax-highlighter](https://danielguillan.github.io/sketch-syntax-highlighter/)
 
 ## Exporting
 

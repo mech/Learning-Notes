@@ -3,6 +3,7 @@
 * [IDEO Method Cards](https://www.ideo.com/post/method-cards)
 * [UX Deliverables](https://uxplanet.org/a-complete-list-of-ux-deliverables-d62ccf1de434)
 * [Design Research Techniques](http://designresearchtechniques.com/casestudies/)
+* [The Secrets of Creating Great Design Workshops](https://medium.com/eightshapes-llc/the-secrets-of-creating-great-design-workshops-1e3476b548bf)
 
 ## Boredom-Driven Design
 
@@ -50,3 +51,7 @@ Prototyping is a habit. It is a way to validate assumptions and ideas.
 ## Kano Model
 
 * [Choosing the Right Features with Kano Model](https://uxdesign.cc/choosing-the-right-features-with-kano-model-cc0274b6a83)
+
+## KJ
+
+* [The KJ-Technique: A Group Process for Establishing Priorities](https://articles.uie.com/kj_technique/)

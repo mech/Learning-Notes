@@ -9,6 +9,7 @@
 * [Progressive Web App with Webpack](https://codeburst.io/progressive-web-app-with-webpack-198b073f6c74)
 * [Hacker News readers as Progressive Web Apps](https://hnpwa.com/)
 * [Google Offline Cookbook](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/)
+* [What Web Can Do Today](https://whatwebcando.today)
 
 ## React
 

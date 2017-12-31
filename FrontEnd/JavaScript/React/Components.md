@@ -49,6 +49,15 @@
 * 2013, Brad Frost published Atomic Design
 * 2013, Facebook released React
 
+## XAML, MVVM
+
+* [RxSwift](https://store.raywenderlich.com/products/rxswift)
+* [MVVM in iOS](https://hackernoon.com/mvvm-in-ios-from-net-perspective-580eb7f4f129)
+* [React for XAML](https://github.com/demigor/nreact)
+* [What are the real-world benefits of declarative-UI languages such as XAML and QML?](https://stackoverflow.com/questions/2706037/what-are-the-real-world-benefits-of-declarative-ui-languages-such-as-xaml-and-qm)
+
+WPF uses XAML and the power of "Dependency Properties" to perform 2-way binding. In iOS we don't have declarative UI code like XAML.
+
 ## Security
 
 * [The Most Common XSS Vulnerability in React.js Applications](https://medium.com/node-security/the-most-common-xss-vulnerability-in-react-js-applications-2bdffbcc1fa0)
@@ -82,6 +91,17 @@ const Aux = (props) => {
 ## Fiber
 
 * [A look inside Fiber](http://makersden.io/blog/look-inside-fiber/)
+* [What is React Fiber ?](https://giamir.com/what-is-react-fiber)
+
+---
+
+* The main thread is the same as the UI thread. Only the main thread can change the DOM.
+* Solve choppy frame rates and laggy input.
+* Assign different priorities to different types of updates.
+* Fiber is just a JavaScript object representing the Virtual Stack Frame of an React component. Just like VDOM is a JavaScript object representing a component's DOM.
+* Time slicing or async setState (make use of functional setState instead of plain object - see `ReactDOM.unstable_deferredUpdates`)
+* Uses `requestIdleCallback` to cooperate with the browser's overall work schedule
+* Improve startup time rendering components as they become available to the browser without the need to wait for a whole bundle to be downloaded.
 
 ## Frameworks
 

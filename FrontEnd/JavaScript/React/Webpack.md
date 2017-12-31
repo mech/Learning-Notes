@@ -150,3 +150,7 @@ You should not use `[chunkhash]` or `[hash]` for development as this will cause 
 
 * [v1.0.0 release](https://github.com/facebookincubator/create-react-app/releases/tag/v1.0.0)
 * [README](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md)
+
+## Performance
+
+* [Tinder PWA case study](https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0)

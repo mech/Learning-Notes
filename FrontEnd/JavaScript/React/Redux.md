@@ -1,5 +1,7 @@
 # Redux
 
+* [Microsoft's Satchel.js](https://github.com/Microsoft/satcheljs)
+
 > Premature optimisation is the root of all evil. While I still hold true to this quote, I believe that implementing Redux in most React applications **early on** is the right approach. From our experience, the point where just using local state becomes cumbersome happens pretty quickly.
 
 ---
@@ -18,6 +20,7 @@
 
 > The main purpose of Redux is to isolate state management from I/O side effects.
 
+* [Idiomatic Redux: The Tao of Redux, Part 1 - Implementation and Intent](http://blog.isquaredsoftware.com/2017/05/idiomatic-redux-tao-of-redux-part-1/)
 * [Finally understand Redux by building your own Store](https://toddmotto.com/redux-typescript-store)
 * [Debounce Your React and Redux Code to Improve Performance](https://medium.com/gitconnected/debounce-react-and-redux-code-for-improved-performance-4b8d3c19e305)
 * [Redux Resource](https://redux-resource.js.org/)

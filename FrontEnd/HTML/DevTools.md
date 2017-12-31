@@ -10,6 +10,10 @@
 console.clear()
 ```
 
+## Firefox
+
+* [Introduction to Debugger](https://mozilladevelopers.github.io/playground/debugger/)
+
 ## Videos
 
 * [A Modern Front-End Workflow - Umar Hansa | Render 2017](https://www.youtube.com/watch?v=v5r_n6Tq0uk)

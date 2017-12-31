@@ -18,6 +18,8 @@ https://dollarshaveclub.github.io/stickybits/
 * [CUID compared to UUID or shortid](https://github.com/ericelliott/cuid)
 * [reflective-bind](https://github.com/flexport/reflective-bind)
 
+https://github.com/jaredpalmer/react-fns
+
 ## Ajax
 
 * [better-fetch](https://github.com/Swizec/better-fetch)
@@ -26,6 +28,10 @@ https://dollarshaveclub.github.io/stickybits/
 ## For Development
 
 * [react-inspector](https://github.com/xyc/react-inspector)
+
+## Toggle
+
+* [react-toggled](https://github.com/kentcdodds/react-toggled)
 
 ## Visual
 
@@ -103,8 +109,12 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [Blueprint](http://blueprintjs.com/)
 * [buffer-components](https://github.com/bufferapp/buffer-components)
 * [ExtReact](https://www.sencha.com/products/extreact/#app)
-* [Microsoft Office UI Fabric](https://dev.office.com/fabric#/components) Also see [Repo](https://github.com/OfficeDev/office-ui-fabric-react)
+* [Microsoft Office UI Fabric](https://dev.office.com/fabric#/components) Also see [Repo](https://github.com/OfficeDev/office-ui-fabric-react) and [Components](https://developer.microsoft.com/en-us/fabric#/components)
 * [**Pivotal**](https://styleguide.pivotal.io/)
+* [Material-UI](http://www.material-ui.com/#/)
+* [Khan Academy](https://khan.github.io/react-components/)
+* [Search reusable React components](http://www.reactjsx.com/)
+* [Another search engine for components](https://devarchy.com/react)
 
 ## Blank Slate
 
@@ -118,7 +128,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 ## PDF
 
 * [Rendering PDFs with React Components](https://themeteorchef.com/tutorials/rendering-pdfs-with-react-components)
-* [react-pdf](https://github.com/wojtekmaj/react-pdf)
+* [react-pdf - Display PDF using pdf.js with worker](https://github.com/wojtekmaj/react-pdf)
 * [react-pdf](https://github.com/diegomura/react-pdf)
 
 ## Table (Filtering, Pagination)
@@ -166,6 +176,8 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 * [react-portal](https://github.com/tajo/react-portal)
 * [react-slot-fill](https://github.com/camwest/react-slot-fill)
 * [react-waypoint](https://github.com/brigade/react-waypoint)
+* [react-accessible-modal](https://github.com/springload/react-accessible-modal)
+* [react-poppop](https://ctxhou.github.io/react-poppop/)
 
 ## Panel, Window
 
@@ -224,6 +236,7 @@ class Projects extends Component {
 * [react-day-picker](http://react-day-picker.js.org)
 * [calreact](https://github.com/learnetto/calreact)
 * [spectre](https://picturepan2.github.io/spectre/experimentals.html#calendars)
+* [react-date-picker](https://github.com/wojtekmaj/react-date-picker)
 
 ---
 

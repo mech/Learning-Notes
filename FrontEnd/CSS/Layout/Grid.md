@@ -1,5 +1,7 @@
 # Grid
 
+* [11 Things I Learned Reading the CSS Grid Specification](https://medium.freecodecamp.org/11-things-i-learned-reading-the-css-grid-specification-fb3983aa5e0)
+* [The ultimate CSS battle: Grid vs Flexbox](https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf)
 * [**A Complete Guide to Grid**](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * [SPEC: CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/)
 * [The Story of CSS Grid, from Its Creators](https://alistapart.com/article/the-story-of-css-grid-from-its-creators)
@@ -19,6 +21,7 @@
 * [The Difference Between Explicit and Implicit Grids](https://css-tricks.com/difference-explicit-implicit-grids/)
 * [Rebuilding slack.com using Grid and Flexbox](https://slack.engineering/rebuilding-slack-com-b124c405c193)
 * [CSS Grid Layout and PostCSS: Now Kiss!](https://medium.com/@SylvainPV/css-grid-layout-and-postcss-now-kiss-5e35f61a6f00)
+* [How Items Flow Into a CSS Grid](http://gedd.ski/post/grid-item-placement/)
 
 With 18 new CSS Grid properties (Flexbox has 12), there are many ways to achieve the same thing with the Grid layout. This is what makes it overwhelming.
 

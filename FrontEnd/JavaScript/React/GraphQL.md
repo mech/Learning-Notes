@@ -31,6 +31,7 @@ Each component specifies the bit of data that it will need in the form of a **qu
 * [postgraphql](https://github.com/postgraphql/postgraphql)
 * [GraphQL Tour: Interfaces and Unions](https://medium.com/the-graphqlhub/graphql-tour-interfaces-and-unions-7dd5be35de0d)
 * [Coursera's journey to GraphQL](https://dev-blog.apollodata.com/courseras-journey-to-graphql-a5ad3b77f39a)
+* [GitHub's Platform Forum for GraphQL](https://platform.github.community/c/graphql-api)
 
 React has view hierarchy. GraphQL has function hierarchy (fragments).
 
@@ -231,6 +232,8 @@ Note that it is hierarchical.
 ```
 
 ## Design Your Schema
+
+> The schema is basically a capabilities document that has a list of all the questions which the client can ask the GraphQL layer.
 
 Most languages have "classes" and "methods". Not GraphQL! As it has only "types" and "fields". But you can think of them as sort of the same:
 

@@ -70,6 +70,8 @@ The `*-enter` and `*-enter-active` classes are applied when a new element is add
 
 ## Physicality, Velocity, Spring, Realism, Snapping, Friction
 
+* [Spring Animation in CSS](https://medium.com/@dtinth/spring-animation-in-css-2039de6e1a03)
+
 ## Videos
 
 * [Animating the Virtual DOM - Sarah Drasner](https://www.youtube.com/watch?v=W5AdUcJDHo0)

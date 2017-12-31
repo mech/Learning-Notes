@@ -1,5 +1,23 @@
 # Higher Order Components - Behavior rather than Markup
 
+Container components are not very reusable when it comes to rendering different results. Take for example this container component:
+
+```js
+class MyContainer extends React.Component {
+  state = { loading: true }
+  
+  componentDidMount() {
+    fetch(url).then().then()
+  }
+  
+  render() {
+    return <FixedStaticView {...this.state} />
+  }
+}
+```
+
+We can see that `<FixedStaticView>` is somehow fixed and known ahead of time. You can't reuse the data fetching logic with different views. This is where HOC comes in or even more recently Render Props.
+
 Higher order function return a function that is usually enhanced with some special behaviors.
 
 A type of Container Component.
@@ -94,6 +112,7 @@ Good for addressing cross-cutting concerns or common functionalities, such as lo
 * [Functional Approach to Higher Order Components and Recompose](https://codebrahma.com/functional-approach-higher-order-components-recompose/)
 * [Understanding Higher Order Components](https://medium.freecodecamp.org/understanding-higher-order-components-6ce359d761b)
 * [react-only-if](https://github.com/MicheleBertoli/react-only-if)
+* [HOC and render props pattern](https://lucasmreis.github.io/blog/simple-react-patterns/)
 
 Benefits of HOC:
 

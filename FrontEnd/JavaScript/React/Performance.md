@@ -100,6 +100,12 @@ It is beneficial to implement `shouldComponentUpdate()` as high up the tree as p
 * [React Pattern: Extract Child Components to Avoid Binding](https://medium.freecodecamp.org/react-pattern-extract-child-components-to-avoid-binding-e3ad8310725e)
 * [Remember to not pass arrow function](https://medium.com/@housecor/hi-dana-great-question-note-this-affbe4a2f168)
 * [When to use Component or PureComponent](https://codeburst.io/when-to-use-component-or-purecomponent-a60cfad01a81)
+* [Is PureComponent faulty?](https://medium.com/myheritage-engineering/how-to-greatly-improve-your-react-app-performance-e70f7cbbb5f6)
+* [Always cache your object before using PureComponent](https://hackernoon.com/react-purecomponent-considered-harmful-8155b5c1d4bc)
+
+Typically you will want to use `PureComponent` for your leaf node in your render tree.
+
+See this [Issue #8669](https://github.com/facebook/react/issues/8669)
 
 ## Binding
 
