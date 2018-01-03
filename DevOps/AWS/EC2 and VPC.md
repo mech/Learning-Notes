@@ -1,6 +1,7 @@
 # AWS EC2 and VPC
 
 * [The Open Guide to Amazon Web Services](https://github.com/open-guides/og-aws)
+* [AWS do's and don'ts](https://8thlight.com/blog/sarah-sunday/2017/09/15/aws-dos-and-donts.html)
 
 # VPC
 

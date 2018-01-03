@@ -8,3 +8,7 @@
 // Find out what shell you are in
 ▶ ps -p $$
 ```
+
+```
+▶ for file in *.jpg;do echo convert $file ${file%.jpg}.png;done
+```

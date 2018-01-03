@@ -113,6 +113,7 @@ Good for addressing cross-cutting concerns or common functionalities, such as lo
 * [Understanding Higher Order Components](https://medium.freecodecamp.org/understanding-higher-order-components-6ce359d761b)
 * [react-only-if](https://github.com/MicheleBertoli/react-only-if)
 * [HOC and render props pattern](https://lucasmreis.github.io/blog/simple-react-patterns/)
+* [I'm Breaking up with Higher Order Components](https://medium.com/tandemly/im-breaking-up-with-higher-order-components-44b0df2db052)
 
 Benefits of HOC:
 

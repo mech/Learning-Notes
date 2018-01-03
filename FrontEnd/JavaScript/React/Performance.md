@@ -79,6 +79,8 @@ Don't forget to avoid the common mistakes that make the `PureComponent` less eff
 
 ## shouldComponentUpdate
 
+> We have a number of high level components that are responsible for fetching data. Whenever new data is fetched, it triggers a render of all of its children. Rendering all children due to a single piece of data updating can be costly and unnecessary when the fetched data doesn't modify the layout. Fortunately, with a couple of strategically placed `shouldComponentUpdate`s we were able to reduce the amount of time spent in scripting, layout, and painting considerably.
+
 We can tell React to avoid reconciling **some parts of the tree**.
 
 To find out the necessary steps to reduce the DOM operations, React has to fire the render methods of all the components and compare the results with the previous ones.
