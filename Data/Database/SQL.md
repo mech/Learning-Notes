@@ -14,6 +14,13 @@
 
 ## Index
 
+## Query
+
+```sql
+# Shorthand for >= AND <= (both inclusive)
+WHERE price BETWEEN 10 AND 20
+```
+
 ## Subquery
 
 * [Use Subqueries to Count Distinct 50X Faster](https://www.periscopedata.com/blog/use-subqueries-to-count-distinct-50x-faster.html)
@@ -26,3 +33,4 @@
 
 * [Keep INNER JOIN when merging relations](https://github.com/rails/rails/pull/27063)
 * [Visual Representation of SQL Joins](https://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins)
+

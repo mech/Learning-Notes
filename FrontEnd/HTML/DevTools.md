@@ -2,6 +2,8 @@
 
 * [Dev Tips](https://umaar.com/dev-tips/)
 * [Modern DevTools - a subscription](https://moderndevtools.com/)
+* [Headless Chrome Node API](https://github.com/GoogleChrome/puppeteer)
+* [Easy Accessibility Testing with aXe](https://www.axe-core.org/)
 
 ## Console
 
@@ -17,3 +19,5 @@ console.clear()
 ## Videos
 
 * [A Modern Front-End Workflow - Umar Hansa | Render 2017](https://www.youtube.com/watch?v=v5r_n6Tq0uk)
+* [Trent Willis - Working Well: The Future of Web Testing](https://www.youtube.com/watch?v=UrKUbaCJ938)
+

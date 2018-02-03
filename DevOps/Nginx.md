@@ -40,6 +40,7 @@ To solve latency issues, HTTP/2 uses multiplexing. This does not mean you don't 
 
 PCI Security Council deprecated SSLv3 and TLS 1.0 for commercial transactions.
 
+* [How to get HTTPS working on your local development environment in 5 minutes](https://medium.freecodecamp.org/how-to-get-https-working-on-your-local-development-environment-in-5-minutes-7af615770eec)
 * [**Enable HTTPS over localhost for Mac**](https://paulbrowne.xyz/https-localhost)
 * [SSL and TLS Deployment Best Practices](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices)
 * [Is TLS fast yet?](https://istlsfastyet.com/)
@@ -50,6 +51,7 @@ PCI Security Council deprecated SSLv3 and TLS 1.0 for commercial transactions.
 * [CertBot](https://certbot.eff.org/)
 * [Video: Browser Security in 2017](https://www.youtube.com/watch?v=vvZRYUBFX-8)
 * [Nginx Doc: Configuring HTTPS servers](https://nginx.org/en/docs/http/configuring_https_servers.html)
+* [Using Let's Encrypt with Docker containers](http://charliedrage.com/letsencrypt-on-docker)
 
 ---
 
@@ -65,3 +67,4 @@ PCI Security Council deprecated SSLv3 and TLS 1.0 for commercial transactions.
 
 * OCSP stapling enabled?
 * HTTP Strict Transport Security (HSTS) policy declared?
+

@@ -124,3 +124,18 @@ class App extends React.Component {
   }
 }
 ```
+
+## Semaphore
+
+* [semaphorejs](https://github.com/nybblr/semaphorejs)
+
+## Web Worker
+
+* [greenlet - Move an async function into its own thread](https://github.com/developit/greenlet)
+
+* Can only pass messages
+
+## Videos
+
+* [Async patterns to scale your multicore JavaScript elegantly](https://www.youtube.com/watch?v=726eZyVtC0Y)
+

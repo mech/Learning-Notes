@@ -18,6 +18,7 @@
 * Design is how it works
 * Not Good Design, but Effective Design
 * [Which compromises matter the least to you?](https://medium.freecodecamp.org/all-2017-flagship-phones-have-glaring-compromises-heres-what-they-tell-us-about-design-6a9ba6d8bbd0)
+* [Saving Your Web Workflows with Prototyping](https://matthiasott.com/articles/saving-your-web-workflows-with-prototyping)
 
 > He who learns and learns and yet does not what he knows, is one who plows and plows yet never sows - Ancient Persian Proverb
 
@@ -238,3 +239,4 @@ But some metaphors mean different things in different cultures. In United States
 
 * [Debbie Millman, Design Matter](https://transition.percolate.com/debbie-millman-design-technology/)
 * [Bret Victor - Inventing on Principle](https://vimeo.com/36579366)
+

@@ -77,6 +77,7 @@ There are 2 client-side navigation component: `window.location` and `window.hist
 * [Changing Old Habits in React Router 4](https://medium.com/@ivanmontiel/changing-old-habits-in-react-router-4-8483ee5e087c)
 * The best Redux-based apps design structure based on Redux state, and not on URL state. URL is just another place to store state externally, like a database.
 * [Advanced React Router concepts: recursive path, code splitting, animated transitions, and more](https://blog.logrocket.com/advanced-react-router-concepts-code-splitting-animated-transitions-scroll-restoration-recursive-17096c0cf9db)
+* [Fixing the "cannot GET /URL" error on refresh with React Router (or how client side routers work)](https://tylermcginnis.com/react-router-cannot-get-url-refresh/)
 
 ```
 Route Component === Route Handler === Screen Container === Controller (Horror)
@@ -297,6 +298,8 @@ In this case, you might as well use `this.props.history.push()`
 
 ## Outlets / Nested Route
 
+* [Nested routes with React Router v4](https://www.youtube.com/watch?v=sfvrjwVihFY)
+
 There is no more nested route like in v3. You need to explicitly put it where the child component is at. This is the greatest new feature of v4: you can put `<Route>` components everywhere!
 
 Note that the path must be absolute and you can use `match.url` to compose the path. See [this](https://github.com/ReactTraining/react-router/pull/4539) for relative path support.
@@ -357,6 +360,8 @@ render() {
 }
 ```
 
+* [Code Splitting with Higher Order Components](https://blog.prototypr.io/code-splitting-with-higher-order-components-4ac8f094b059)
+* [Server Rendering, Code Splitting, and Lazy Loading with React Router v4](https://medium.com/airbnb-engineering/server-rendering-code-splitting-and-lazy-loading-with-react-router-v4-bfe596a6af70)
 * [**Code Splitting in Create React App**](https://serverless-stack.com/chapters/code-splitting-in-create-react-app.html)
 * [extract-css-chunks-webpack-plugin - Code splitting with CSS styles](https://github.com/faceyspacey/extract-css-chunks-webpack-plugin)
 * [**Route-based splitting vs Component-based splitting**](https://medium.com/@thejameskyle/react-loadable-2674c59de178#.kbvk273ju)
@@ -550,3 +555,4 @@ Create your `<App>` that can service both client and server. Then use ClientApp.
 server.js is the Express app while ClientApp.js is the Webpack Entry file for client-side.
 
 The `<App>` must be agnostic to server and client.
+

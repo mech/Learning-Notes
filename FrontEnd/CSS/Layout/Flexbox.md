@@ -11,6 +11,7 @@
 * [Bulma - A modern CSS framework based on Flexbox](http://bulma.io/)
 * [Building Mega Menus with Flexbox](https://www.sitepoint.com/building-mega-menus-flexbox/)
 * [Getting Started with CSS Flexbox](https://blog.zipboard.co/getting-started-with-css-flexbox-f5b2b5a5b87d)
+* [CSS Grid + Flexbox Solving Real-world Problems](https://medium.com/@petermouland/css-grid-flexbox-solving-real-world-problems-1cce3ecb2b51)
 
 **Games**
 
@@ -225,3 +226,5 @@ footer {
 * [It's Time To Ditch The Grid System](https://www.youtube.com/watch?v=5N9RkIs31Ok)
 * [CSS4 Grid: True Layout Finally Arrives](https://www.youtube.com/watch?v=jl164y-Vb5E)
 * [Enhancing Responsiveness with Flexbox - booking.com example](https://vimeo.com/145055822)
+* [Jonathan Snook - Container Queries](https://www.youtube.com/watch?v=s1J4T1NW3qo)
+

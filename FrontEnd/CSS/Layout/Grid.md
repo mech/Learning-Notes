@@ -1,5 +1,6 @@
 # Grid
 
+* [Wes Bos's free CSS Grid course](https://cssgrid.io/)
 * [11 Things I Learned Reading the CSS Grid Specification](https://medium.freecodecamp.org/11-things-i-learned-reading-the-css-grid-specification-fb3983aa5e0)
 * [The ultimate CSS battle: Grid vs Flexbox](https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf)
 * [**A Complete Guide to Grid**](https://css-tricks.com/snippets/css/complete-guide-grid/)
@@ -42,6 +43,10 @@ Remember, the CSS Grid does not **physically** exist. It is all invisibles lines
 Layouts that previously were difficult, sometimes even impossible to create, are now within easy reach. New functions such as the MinMax in combination with new sizing units such as the `fr` offer all types of responsive layout possibilities.
 
 Grid is different from all the layout techniques we've used in the past because it is the only solution that works from the container in (credit to Rachel Andrew for this concept). It calls for a big picture view of the grid you have in mind, as opposed to sizing each item individually, which may sometimes lead to a "missing the forest for the trees" situation.
+
+## Alignment
+
+* [Demystifying CSS alignment](https://medium.com/@patrickbrosset/demystifying-css-alignment-2d3ea7a02a36)
 
 ## Fallback
 
@@ -197,3 +202,4 @@ grid-template-columns: 15em 4.5fr minmax(5em, 3fr) 10%;
 * [CSS4 Grid: True Layout Finally Arrives (Jen Kramer) - Full Stack Fest 2016](https://www.youtube.com/watch?v=axVw1Zduqn0)
 * [Start Using CSS Grid Layouts Today](https://youtu.be/tjHOLtouElA?list=PLBzScQzZ83I_n5kvxmUaRNZvc_vsCuEQD)
 * [](https://www.youtube.com/watch?v=tY-MHUsG6ls)
+

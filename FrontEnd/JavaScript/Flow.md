@@ -5,6 +5,7 @@
 * [Flow guide](https://github.com/ryyppy/flow-guide)
 * [Even Better Support for React in Flow 0.53.0](https://medium.com/flow-type/even-better-support-for-react-in-flow-25b0a3485627)
 * [Why use static types in JavaScript? (A 4-part primer on static typing with Flow)](https://medium.freecodecamp.org/why-use-static-types-in-javascript-part-1-8382da1e0adb)
+* [Make your Flow errors GLOW](https://github.com/thejameskyle/glow)
 
 > Type correctness does not guarantee program correctness. If you haven't exercised the code, you really have no idea whether or not it works.
 
@@ -652,3 +653,4 @@ handleSearchTermChange = (evt: SyntheticKeyboardEvent & { target: HTMLInputEleme
 ## Videos
 
 * [@Scale 2014 - Flow introduced](https://www.youtube.com/watch?v=M8x0bc81smU)
+

@@ -20,6 +20,7 @@
 
 > The main purpose of Redux is to isolate state management from I/O side effects.
 
+* [Resources for Learning Redux](http://blog.isquaredsoftware.com/2017/12/blogged-answers-learn-redux/)
 * [Idiomatic Redux: The Tao of Redux, Part 1 - Implementation and Intent](http://blog.isquaredsoftware.com/2017/05/idiomatic-redux-tao-of-redux-part-1/)
 * [Finally understand Redux by building your own Store](https://toddmotto.com/redux-typescript-store)
 * [Debounce Your React and Redux Code to Improve Performance](https://medium.com/gitconnected/debounce-react-and-redux-code-for-improved-performance-4b8d3c19e305)
@@ -46,6 +47,7 @@
 * [Some Redux Internals](https://medium.com/@jankjr_/dissecting-redux-864039c6cf59)
 * [How to make your React app fully functional, fully reactive, and able to handle all those crazy side effects](https://medium.freecodecamp.org/how-to-make-your-react-app-fully-functional-fully-reactive-and-able-to-handle-all-those-crazy-e5da8e7dac10)
 * [How to use React's Provider Pattern](https://www.robinwieruch.de/react-provider-pattern-context/)
+* [How to use Redux on highly scalable javascript applications?](https://medium.com/@alexmngn/how-to-use-redux-on-highly-scalable-javascript-applications-4e4b8cb5ef38)
 
 Redux helps us enforce good state boundary. You do not want to misapply it by storing form state in the store. It is not meant for that.
 
@@ -972,3 +974,5 @@ function* watch() {
 * [Advanced Redux (DONE)](https://app.pluralsight.com/library/courses/advanced-redux/table-of-contents)
 * The Complete Redux Book - Page 60/179
 * Redux from Scratch - Page 55/268
+
+

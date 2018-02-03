@@ -4,6 +4,7 @@
 * [UX Deliverables](https://uxplanet.org/a-complete-list-of-ux-deliverables-d62ccf1de434)
 * [Design Research Techniques](http://designresearchtechniques.com/casestudies/)
 * [The Secrets of Creating Great Design Workshops](https://medium.com/eightshapes-llc/the-secrets-of-creating-great-design-workshops-1e3476b548bf)
+* [Law of UX](https://lawsofux.com/)
 
 ## Boredom-Driven Design
 
@@ -24,6 +25,9 @@
 * [Design by prototyping](https://rgabydesign.com/design-by-prototyping-744b4031e7c7)
 * [Digital Product Design is Not Graphic Design](https://medium.com/subform/digital-product-design-is-not-graphic-design-931ea97a0beb)
 * [Framer Crash Course](https://www.youtube.com/playlist?list=PLWlUJU11tp4f41p4dzizVkjjTQ38kA0wG)
+* [Saving Your Web Workflows with Prototyping](https://matthiasott.com/articles/saving-your-web-workflows-with-prototyping)
+* [Prototyping.News](https://prototyping.news/)
+* [The Web Aesthetic](https://alistapart.com/article/the-web-aesthetic)
 
 > No Prototype, No Meeting
 
@@ -32,6 +36,13 @@ They were trying to think of a (brilliant) idea instead of *building their way* 
 Prototyping is a habit. It is a way to validate assumptions and ideas.
 
 > Trying, building, learning
+
+---
+
+> Prototyping supports you in making informed decisions in iterative workflows. It allows you to explore the characteristics of materials, quickly combine them into new constellations, and come up with something original. In this way, prototyping actively supports the **generative** and **constructive** nature of design. 
+> 
+> It lets you validate your assumptions and test ideas and new solution approaches early and in different contexts so that you know what will work and what you are building. Prototyping is a tool and a process, a way of working. But most importantly, prototyping is a way of thinking, a **mindset**.
+
 
 ## Contextual Research
 
@@ -55,3 +66,4 @@ Prototyping is a habit. It is a way to validate assumptions and ideas.
 ## KJ
 
 * [The KJ-Technique: A Group Process for Establishing Priorities](https://articles.uie.com/kj_technique/)
+

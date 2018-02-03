@@ -225,6 +225,7 @@ class Projects extends Component {
 
 * [Build a Reusable Scroll View Component with Animated scrollTo Abilities in React](https://codedaily.io/screencasts/48/Build-a-Reusable-Scroll-View-Component-with-Animated-scrollTo-Abilities-in-React)
 * [scroll-into-view](https://github.com/KoryNunn/scroll-into-view)
+* [Scrollytelling with IntersectionObserver](https://github.com/russellgoldenberg/scrollama)
 
 ## Date Picker and Calendar
 
@@ -258,6 +259,7 @@ const a = addDays(d, 10)
 ## File Upload
 
 * [Drag and drop file upload](https://codepen.io/pixelass/pen/dpyBOd?editors=0010)
+* [How To Make A Drag-and-Drop File Uploader With Vanilla JavaScript](https://www.smashingmagazine.com/2018/01/drag-drop-file-uploader-vanilla-js/)
 
 ```html
 <input type="file" accept="*">
@@ -367,6 +369,7 @@ class Tabs extend Component {
 * [Rethinking drag and drop](https://medium.com/@alexandereardon/rethinking-drag-and-drop-d9f5770b4e6b)
 * [Shopify Draggable](https://shopify.github.io/draggable/)
 * [react-beautiful-dnd by Atlassian](https://github.com/atlassian/react-beautiful-dnd)
+* [Dragging React performance forward](https://medium.com/@alexandereardon/dragging-react-performance-forward-688b30d40a33)
 
 ## D3 and Charts
 
@@ -393,3 +396,5 @@ class Tabs extend Component {
 * [Draft-js building search and replace functionality](https://medium.com/@juliandoesstuff/draft-js-building-search-and-replace-functionality-688fd84f64cb)
 * [ProseMirror](http://prosemirror.net/)
 * [CKEditor 5: A new era for rich text editing](https://ckeditor.com/blog/CKEditor-5-A-new-era-for-rich-text-editing/)
+* [draft-regex](https://github.com/YozhikM/draft-regex)
+

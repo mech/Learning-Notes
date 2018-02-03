@@ -10,6 +10,7 @@ document.getElementsByTagName('video')[0].playbackRate = 2;
 * [99U Conference](http://conference.99u.com/#video)
 * [Clearleft](https://vimeo.com/clearleft)
 * [code.talks](https://www.youtube.com/channel/UCfuj1MM5p37CRzWYPv_PsWA/videos)
+* [An Event Apart](https://aneventapart.com/news/videos)
 
 ## CSS
 
@@ -38,3 +39,4 @@ document.getElementsByTagName('video')[0].playbackRate = 2;
 * [Clayton Christensen (The Innovator's Dilemma) at Startup Grind Global 2016](https://www.youtube.com/watch?v=Zn6-KksdOgE)
 
 * [OSCAMP - Open Source Camp](https://channel9.msdn.com/Events/DXPortugal/OSCAMP-Open-Source-Software-powered-by-Bright-Pixel)
+

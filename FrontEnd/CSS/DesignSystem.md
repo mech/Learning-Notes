@@ -57,6 +57,7 @@ Living documentation based on executable examples.
 * [Designing Adobe Portfolio](https://medium.com/@andrewcouldwell/designing-adobe-portfolio-ffa1358e4913#.8beck9yc9)
 * [A useful list of design system documentation](https://dribbble.com/shots/3239960-Design-system-documentation)
 * [Seek's style guide](https://seek-oss.github.io/seek-style-guide/)
+* [Bye bye Material Design](https://medium.com/techtrument/bye-bye-material-design-acaebcc7c6b4)
 
 > Visualizing all the discrete states an application can be in will make your design systems better. This in essence is the most pure form of a "living style guide" and will help your design team develop a cohesive and modular design system.
 
@@ -126,6 +127,7 @@ A design system isn't set in stone. It should evolve with the product and always
 * [Polymer Library - Learn from it!](https://www.polymer-project.org/1.0/)
 * [Pattern Patter](https://ethanmarcotte.com/wrote/pattern-patter/)
 * [Pattern library for landing pages](http://www.goodweb.design/)
+* [Adele - The repository of publicly available design systems and pattern libraries](https://adele.uxpin.com/)
 
 ## Design Tokens
 
@@ -174,6 +176,8 @@ http://styleguides.io/examples.html
 * [Trello](https://design.trello.com/)
 * [Pivotal UI Styleguide](https://styleguide.pivotal.io/)
 * [Shopify Polaris](https://polaris.shopify.com/)
+* [GitHub's Primer Storybook](https://primer.github.io/storybook/)
+* [Pure CSS](https://purecss.io/)
 
 **Some forms examples**
 
@@ -272,3 +276,4 @@ Brand Identity -> Components -> System as a whole
 * [Thingness - Mark Boulton](https://vimeo.com/163510673)
 * [The Unbearable Likeness of Web Design](https://www.youtube.com/watch?v=8hK-JQlK89c)
 * [The GE Design System and Thoughts about Craft at Scale](https://vimeo.com/album/3484349/video/132580829)
+

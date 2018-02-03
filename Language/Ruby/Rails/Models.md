@@ -18,6 +18,27 @@
 * [Flag argument is a code smell](http://craftingruby.com/posts/2017/05/04/flag-arguments-are-a-code-smell.html)
 * [Using Services to Keep Your Rails Controllers Clean and DRY](https://blog.engineyard.com/2014/keeping-your-rails-controllers-dry-with-services)
 
+## Deprecation
+
+```ruby
+# Deprecated in Rails 3.2
+Model.find(:first)
+Model.find(:all)
+
+# Deprecated in Rails 4
+Model.find_by_xxx
+Model.find_all_by_xxx
+Model.find_or_initialize_by_xxx
+Model.scoped_by_name
+Model.find(:all, conditions: {})
+
+# Use these instead
+Model.where(xxx: '')
+Model.where(xxx: '').first_or_initialize
+```
+
+http://blog.remarkablelabs.com/2012/12/what-s-new-in-active-record-rails-4-countdown-to-2013
+
 ## Builder Patterns
 
 * [Builder design pattern in Ruby](https://medium.com/kkempin/builder-design-pattern-in-ruby-dfa2d557ff1b)
@@ -417,3 +438,4 @@ end
 # 5.1 add support for limits in batch processing
 Post.limit(500).find_each.map(&:title)
 ```
+

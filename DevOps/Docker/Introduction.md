@@ -8,6 +8,10 @@
 
 * Moby (xhyve virtual machine)
 
+## For Development?
+
+* [Docker As Rails Development Environment](https://medium.com/@sivakumarvadivelu/docker-as-rails-development-environment-9bdb361e992)
+
 ## Timezone
 
 ```
@@ -30,6 +34,11 @@ Aws::S3::Errors::RequestTimeTooSkewed (The difference between the request time a
 
 ## cgroups Memory Limit
 
+## Logging
+
+* [Top 10 Docker Logging Gotchas](https://sematext.com/blog/top-10-docker-logging-gotchas/)
+
 ## Problems
 
 * [Docker in Production: A History of Failure](https://thehftguy.com/2016/11/01/docker-in-production-an-history-of-failure/)
+

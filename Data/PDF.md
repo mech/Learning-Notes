@@ -12,6 +12,7 @@
 * [PDF Object Representation in HexaPDF](https://gettalong.org/blog/2016/pdf-object-representation-in-hexapdf.html)
 * [react-pdf](https://github.com/diegomura/react-pdf)
 * [Puppeteer - Headless Chrome](https://try-puppeteer.appspot.com/)
+* [WebAssembly and PDF](https://pspdfkit.com/blog/2017/webassembly-a-new-hope/)
 
 ```
 ▶ mdls INR123.pdf
@@ -67,3 +68,4 @@ The only Downsample filter for monochrome images is Subsample, ignoring request.
 
 ▶ jpegtran -copy none -optimize -progressive -outfile out.jpg in.jpg
 ```
+

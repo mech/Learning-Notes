@@ -4,7 +4,7 @@
 * [Easing](http://easings.net/)
 * [Creating Usability with Motion: The UX in Motion Manifesto](https://medium.com/@ux_in_motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc)
 * [How to create fancy revealing animations with these simple CSS tricks](https://hackernoon.com/how-to-create-fancy-revealing-animations-with-these-simple-css-tricks-5b34614ae69a)
-* [Anime.js](http://animejs.com/)
+* [Anime.js - Greensock may be too heavy](http://animejs.com/)
 
 > The reason why I believe motion is so crucial isn't just because it looks nice, but because it changes the way we approach design.
 > 
@@ -249,7 +249,9 @@ ease-in-out - cubic-bezier(0.42, 0, 0.58, 1)
 ## Videos
 
 * [Justin McDowell - Bauhaus in the Browser](https://www.youtube.com/watch?v=BaQl84nDBNY)
+* [FLIP technique](https://www.youtube.com/watch?v=wQ-jn1KYUkQ)
 
 ## People
 
 * [Justin McDowell](http://revoltpuppy.com/)
+

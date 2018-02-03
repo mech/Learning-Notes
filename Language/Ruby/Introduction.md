@@ -196,6 +196,7 @@ end
 
 * [Aaron Lasseigne](https://aaronlasseigne.com/)
 * [Shopify Engineering Blog](https://engineering.shopify.com/blogs/engineering)
+* [Appfolio](http://engineering.appfolio.com/)
 
 ## Videos
 
@@ -208,3 +209,4 @@ end
 ## Books
 
 * Domain-Driven Rails - Page 76/187
+

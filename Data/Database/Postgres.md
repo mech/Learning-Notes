@@ -223,6 +223,10 @@ EXCLUDE USING gist (
 * [3 Methods of backing up Postgres](https://www.urbackup.org/backup_postgresql.html)
 * [WAL-E - Continuous archiving for Postgres](https://github.com/wal-e/wal-e)
 
+## Compression
+
+* TOAST - Automatic Table Compression
+
 ## People
 
 * [Craig Kerstiens](http://www.craigkerstiens.com/)
@@ -236,3 +240,4 @@ EXCLUDE USING gist (
 
 * [PostgresOpen](https://www.youtube.com/user/postgresopen)
 * [dotScale 2017 - Marco Slot - Scaling out (Postgre)SQL](https://www.youtube.com/watch?v=xJghcPs0ibQ)
+

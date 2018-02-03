@@ -4,6 +4,7 @@
 * [Measuring web performance; it's really quite simple](https://hackernoon.com/measuring-web-performance-its-really-quite-simple-adeda8f7f39e)
 * [Reverse engineering Amazon and the Guardian - David Fox (LookZook)](https://www.safaribooksonline.com/library/view/fluent-conference-2017/9781491985298/video311523.html)
 * [Designing Speed with Progressive Enhancement](https://www.youtube.com/watch?v=cdv8UQu96PU)
+* [Mozilla Gfx Blog](https://mozillagfx.wordpress.com/)
 
 ## Jank
 
@@ -26,3 +27,4 @@
 ## Videos
 
 * [Designing Speed with Progressive Enhancement](https://www.youtube.com/watch?v=cdv8UQu96PU)
+

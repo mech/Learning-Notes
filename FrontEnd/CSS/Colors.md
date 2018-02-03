@@ -3,6 +3,7 @@
 * [CSS Custom Properties and Theming](https://css-tricks.com/css-custom-properties-theming/)
 * [How we made our product more personalized with CSS Variables and React](https://medium.com/geckoboard-under-the-hood/how-we-made-our-product-more-personalized-with-css-variables-and-react-b29298fde608)
 * [Ambiance](http://ambiance.somethingjustlikethis.com/)
+* [The most popular color palettes trending on Dribbble now](https://colorbook.me/)
 
 ```css
 .subheader {
@@ -40,3 +41,4 @@
   --complement-light: color-mod(var(--complement) lightness(+ 10%));
 }
 ```
+

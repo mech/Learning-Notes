@@ -2,6 +2,7 @@
 
 https://github.com/Chalarangelo/30-seconds-of-code
 
+* [How JavaScript works - A series](https://blog.sessionstack.com/how-javascript-works-the-building-blocks-of-web-workers-5-cases-when-you-should-use-them-a547c0757f6a)
 * [The Modern JavaScript Tutorial](https://javascript.info/)
 * [Understanding ECMAScript 6 - Nicholas C. Zakas](https://leanpub.com/understandinges6/read)
 * [Exploring ES6 - Dr. Axel Rauschmayer](http://exploringjs.com/es6/index.html)
@@ -114,6 +115,19 @@ export default {
 }
 
 import { red, yellow } from './colors'
+```
+
+### Named Import
+
+Note that named import still import the entire library:
+
+```js
+// Still import *everything* in my-component
+// and bloats bundle! Need index.js at root also.
+import { Label } from 'my-component';
+
+// Bootstrap optimize bundle size by using /lib
+import Button from 'react-bootstrap/lib/Button';
 ```
 
 ## Classes
@@ -409,3 +423,4 @@ if (obj.props !== undefined) {} // Explicit and faster
 
 * [Untangle your code with yield](https://www.youtube.com/watch?v=B15sTBSAotk)
 * [JavaScript Patterns for 2017](https://www.youtube.com/watch?v=hO7mzO83N1Q)
+

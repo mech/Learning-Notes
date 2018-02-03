@@ -30,6 +30,8 @@
 * [Infinitely Better UIs with Finite Automata: FSM](https://www.youtube.com/watch?v=VU1NKX6Qkxc)
 * [7+-2 Miller Law for UI design](https://blog.prototypr.io/the-most-important-rule-in-ux-design-that-everyone-breaks-1c1cb188931)
 * [Why I love ugly, messy interfaces — and you probably do too](https://m.signalvnoise.com/why-i-love-ugly-messy-interfaces-and-you-probably-do-too-edff4a896a83)
+* [Law of UX](https://lawsofux.com/)
+* [Psychology in Design (Part 1)](https://blog.prototypr.io/psychology-in-design-part-1-cdc63229cbe4)
 
 > Consistency, not uniformity
 > 
@@ -62,6 +64,14 @@
 * We needn't all pray at the beautiful minimalist design altar. Design doesn't have to be precious. Toss out your assumptions and build what works best.
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
+
+## Storyboarding UI
+
+* Writing - Writing the text. Write out a basic script. Make sure the heart of the content is solid.
+* Thumb-nailing - Storyboarding out the sequence.
+* [Every interface is a story](https://uxdesign.cc/every-interface-is-a-story-2e48d5285c39)
+
+> Storytelling and writing have never been so present in the design world. As customer journeys become more fragmented, it is our job to ensure brands are telling a coherent story across channels — and that those stories are clear, interesting, and human.
 
 ## The Purpose of UI Design
 
@@ -176,3 +186,4 @@ It shouldn't come as a surprise that when you change what your navigation looks 
 
 * [Andy Fitzgerald](http://andyfitzgerald.org/)
 * [Jen Simmons](http://labs.jensimmons.com/)
+

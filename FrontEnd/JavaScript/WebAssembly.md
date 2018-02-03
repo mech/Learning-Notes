@@ -9,3 +9,8 @@
 ## Shared Typed Array
 
 * [ecmascript_sharedmem](https://github.com/tc39/ecmascript_sharedmem)
+
+## Videos
+
+* [Practical WebAssembly](https://www.youtube.com/watch?v=bac0dGQbUto)
+

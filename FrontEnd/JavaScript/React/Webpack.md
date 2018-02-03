@@ -9,6 +9,8 @@
 * [How I cut my Webpack bundle size in half](http://jmduke.com/posts/how-i-cut-my-webpack-bundle-size-in-half/)
 * [Deploying ES2015+ Code in Production Today](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/)
 * [Setting up Webpack, Babel and React from scratch, revisited](https://stanko.github.io/webpack-babel-react-revisited/)
+* [Jarvis - A very intelligent browser based Webpack dashboard](https://github.com/zouhir/jarvis)
+* [Keep webpack Fast: A Field Guide for Better Build Performance](https://slack.engineering/keep-webpack-fast-a-field-guide-for-better-build-performance-f56a5995e8f1)
 
 ```
 ▶ yarn global add webpack-bundle-size-analyzer
@@ -63,6 +65,7 @@ plugins: [
 
 ## Starter Kits
 
+* [Next.js, Razzle, CRA. Why you should use them for a next project](https://hackernoon.com/next-js-razzle-cra-why-you-should-use-them-for-a-next-project-a78d320de97f)
 * [Universal React+GraphQL starter kit CLI](https://github.com/reactql/cli)
 
 ## create-react-app
@@ -154,3 +157,8 @@ You should not use `[chunkhash]` or `[hash]` for development as this will cause 
 ## Performance
 
 * [Tinder PWA case study](https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0)
+
+## Loaders
+
+* svgr-loader
+

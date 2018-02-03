@@ -41,6 +41,12 @@
 
 > There are a lot of similarities in the way we build UIs with React and the principles of FP, and the more we are aware of it, the better our code will be - `UI = f(state)`
 
+## Getting Started
+
+* [Official Courses](https://reactjs.org/community/courses.html)
+* [React Component Patterns](https://github.com/markerikson/react-redux-links/blob/master/react-component-patterns.md)
+* [React Component Composition](https://github.com/markerikson/react-redux-links/blob/master/react-component-composition.md)
+
 ## The Rise of Component, Mythical Man-Month and Atomic Design
 
 * React enable isolated components
@@ -728,3 +734,4 @@ export Menu
 * Fullstack React (DONE)
 * The Missing Form Handbook of React (DONE)
 * [Advanced React.js (DONE)](https://app.pluralsight.com/library/courses/reactjs-advanced/table-of-contents)
+

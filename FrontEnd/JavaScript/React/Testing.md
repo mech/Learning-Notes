@@ -2,6 +2,11 @@
 
 * [A guide to TDD a React/Redux TodoList App — Part 1](https://hackernoon.com/a-guide-to-tdd-a-react-redux-todolist-app-part-1-b8a200bb7091)
 
+When to test?
+
+* Test business logic using Jest unit test.
+* Use Snapshot Testing for React Structural Test - `react-test-renderer`
+
 ## Jest
 
 While Jest provides browser globals such as window thanks to jsdom, they are only approximations of the real browser behavior.
@@ -98,5 +103,9 @@ Shallow rendering:
 
 1. It tests component in isolation - we don't have to worry about child dependencies.
 2. It's faster - you avoid the DOM entirely.
+
+Mount rendering:
+
+1. Mount all children, good for interaction testing
 
 
