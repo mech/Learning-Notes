@@ -11,6 +11,7 @@
 ## CSV
 
 * [A Guide to the Ruby CSV Library - Part 2](https://www.sitepoint.com/guide-ruby-csv-library-part-2/)
+* [Superfast CSV imports using PostgreSQL's COPY command](https://infinum.co/the-capsized-eight/superfast-csv-imports-using-postgresqls-copy)
 
 ## Ruby 2.4
 
@@ -197,6 +198,7 @@ end
 * [Aaron Lasseigne](https://aaronlasseigne.com/)
 * [Shopify Engineering Blog](https://engineering.shopify.com/blogs/engineering)
 * [Appfolio](http://engineering.appfolio.com/)
+* [Infinum](https://infinum.co/the-capsized-eight)
 
 ## Videos
 

@@ -65,6 +65,12 @@
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
 
+## Breadth and Depth
+
+Start with breadth, then dive into depth.
+
+Being with "horizontal prototype" that covers all your main screens. Your next iteration will dive deeper into user flows for each screen.
+
 ## Storyboarding UI
 
 * Writing - Writing the text. Write out a basic script. Make sure the heart of the content is solid.

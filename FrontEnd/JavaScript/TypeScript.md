@@ -54,3 +54,8 @@ class Hello extends React.Component<HelloProps, {}> {
 
 * Aka Union Types, Sum Types (Algebraic Data Types)
 * [Use union type instead of boolean](https://robots.thoughtbot.com/booleans-and-enums)
+
+## Testing
+
+* [Stencil's way of configuring Jest for a TypeScript project](https://stenciljs.com/docs/testing)
+

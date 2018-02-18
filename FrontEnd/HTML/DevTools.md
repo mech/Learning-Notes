@@ -4,6 +4,7 @@
 * [Modern DevTools - a subscription](https://moderndevtools.com/)
 * [Headless Chrome Node API](https://github.com/GoogleChrome/puppeteer)
 * [Easy Accessibility Testing with aXe](https://www.axe-core.org/)
+* [Firefox - Debugging JavaScript With A Real Debugger You Did Not Know You Already Have](https://www.smashingmagazine.com/2018/02/javascript-firefox-debugger/)
 
 ## Console
 

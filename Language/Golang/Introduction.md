@@ -41,6 +41,11 @@ func HandleNew(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
+## Examples
+
+* [caire - Content aware image resize library](https://github.com/esimov/caire)
+
 ## People
 
 * [Russ Cox](https://swtch.com/~rsc/)
+

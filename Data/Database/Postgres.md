@@ -13,6 +13,7 @@
 * [Performance Tuning Queries in PostgreSQL](https://www.geekytidbits.com/performance-tuning-postgres/)
 * [Debugging complex PostgreSQL queries with **pgdebug**](http://korban.net/posts/postgres/2017-09-18-debugging-complex-postgres-queries-with-pgdebug/)
 * [The case against ORMs](http://korban.net/posts/postgres/2017-11-02-the-case-against-orms/)
+* [Postgres Hidden Gems](http://www.craigkerstiens.com/2018/01/31/postgres-hidden-gems/)
 
 ```
 ▶ \x auto
@@ -22,6 +23,16 @@
 // A faster way to write `WHERE id IN ($1, $2, $3)`
 SELECT * from users WHERE id = ANY($1::int[])
 ```
+
+## Constraints
+
+* [Protect Your Data with PostgreSQL Constraints](http://nathanmlong.com/2016/01/protect-your-data-with-postgresql-constraints/)
+
+## RBAC
+
+* [Postgraphile - Postgres for GraphQL](https://www.graphile.org/postgraphile/introduction/)
+* [Role-based grant system](https://www.postgresql.org/docs/9.6/static/user-manag.html)
+* [RLS - Row-level security policies](https://www.postgresql.org/docs/9.6/static/ddl-rowsecurity.html)
 
 ## Rollup
 
@@ -239,5 +250,6 @@ EXCLUDE USING gist (
 ## Videos
 
 * [PostgresOpen](https://www.youtube.com/user/postgresopen)
-* [dotScale 2017 - Marco Slot - Scaling out (Postgre)SQL](https://www.youtube.com/watch?v=xJghcPs0ibQ)
+* [dotScale 2017 - Marco Slot - Scaling out (Postgres)SQL](https://www.youtube.com/watch?v=xJghcPs0ibQ)
+* [Skillsmatter's Postgres Videos](https://skillsmatter.com/explore?q=tag%3Apostgresql)
 

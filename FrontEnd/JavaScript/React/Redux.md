@@ -1,6 +1,13 @@
 # Redux
 
+React separates state (VARIABLES) from view (UI).
+Redux separates *what's happening* (ACTION) from *what to do about it* (REDUCERS).
+
+Redux is an extreme form of lifting state up to the parent by all the way up to the top.
+
 * [Microsoft's Satchel.js](https://github.com/Microsoft/satcheljs)
+* [React Easy State using ES6 Proxies](https://blog.risingstack.com/introducing-react-easy-state/)
+* [Proxies in MobX 4](https://github.com/mobxjs/mobx/issues/1076)
 
 > Premature optimisation is the root of all evil. While I still hold true to this quote, I believe that implementing Redux in most React applications **early on** is the right approach. From our experience, the point where just using local state becomes cumbersome happens pretty quickly.
 
@@ -70,6 +77,8 @@ Many moving parts:
 
 ## Against Redux
 
+* [@JamieK on unstated](https://twitter.com/jamiebuilds/status/964675531533778944)
+* [unstated](https://github.com/jamiebuilds/unstated)
 * [**How to manage or eliminate React state without Redux**](http://monicalent.com/blog/2017/07/23/manage-state-in-react/)
 * [Repatch - the simplified Redux](https://community.risingstack.com/repatch-the-simplified-redux/)
 * [Simplifying Redux Architecture](https://medium.com/@TuckerConnelly/simplifying-redux-architecture-cd50426c941a)

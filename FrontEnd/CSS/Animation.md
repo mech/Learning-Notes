@@ -233,6 +233,7 @@ If `animation-duration: 1s`, then `steps(5)` will divide that into five 200ms st
 ## Easing and Bézier
 
 * [cubic-bezier by Lea Verou](http://cubic-bezier.com/#.17,.67,.83,.67)
+* [Writing an easing function; a slightly interesting story](https://hackernoon.com/writing-an-easing-function-a-slightly-interesting-story-70ce667c212a)
 
 ```
 ease        - cubic-bezier(0.25, 0.1, 0.25, 1)

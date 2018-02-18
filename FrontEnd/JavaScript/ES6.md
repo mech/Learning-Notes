@@ -8,6 +8,7 @@ https://github.com/Chalarangelo/30-seconds-of-code
 * [Exploring ES6 - Dr. Axel Rauschmayer](http://exploringjs.com/es6/index.html)
 * [Exploring ES2016 and ES2017 - Dr. Axel Rauschmayer](http://exploringjs.com/es2016-es2017/index.html)
 * [ES2015+ Cheatsheet](https://devhints.io/es6)
+* [JavaScript Object Explorer - Find the object method you need without digging through the docs](https://sdras.github.io/object-explorer/)
 
 ---
 

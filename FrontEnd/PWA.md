@@ -10,6 +10,7 @@
 * [Hacker News readers as Progressive Web Apps](https://hnpwa.com/)
 * [Google Offline Cookbook](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/)
 * [What Web Can Do Today](https://whatwebcando.today)
+* [Welcoming Progressive Web Apps to Microsoft Edge and Windows 10](https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/)
 
 ## React
 
@@ -37,3 +38,4 @@
 
 * [Progressive What Apps](https://www.youtube.com/watch?v=Y1l5Y3INwaE)
 * [Redux + ServiceWorker = Offline React](https://www.youtube.com/watch?v=f4KnHNCZcH4)
+

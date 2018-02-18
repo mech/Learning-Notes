@@ -13,6 +13,18 @@ if registered_at < Rails.application.config_for(:registration)['limit'].minutes.
 end
 ```
 
+## Upgrade
+
+* [Official guide on upgrading Rails](http://edgeguides.rubyonrails.org/upgrading_ruby_on_rails.html)
+
+### 5.1
+
+* [Ruby on Rails 5.1.0 Deprecations](https://blog.driftingruby.com/ruby-on-rails-5-1-0-deprecations/)
+
+### 4
+
+* [What's new in Active Record - Rails 4 Countdown to 2013](http://blog.remarkablelabs.com/2012/12/what-s-new-in-active-record-rails-4-countdown-to-2013)
+
 ## ActionCable
 
 * [Realtime with React and Rails](https://blog.codeship.com/realtime-with-react-and-rails/)
@@ -101,6 +113,7 @@ end
 * [AkitaOnRails](http://www.akitaonrails.com/?locale=en)
 * [solnic.eu](http://solnic.eu/)
 * [Michael Cordell - Reading Ruby Code](https://blog.mikecordell.com/)
+* [Nathan Long](http://nathanmlong.com/blog/)
 
 ## Example Applications
 
@@ -111,3 +124,4 @@ end
 
 * [Perusing the Rails Source Code](https://www.youtube.com/watch?v=Q_MpGRfnY5s)
 * [Ruby Australia](https://www.youtube.com/channel/UCr38SHAvOKMDyX3-8lhvJHA/videos)
+

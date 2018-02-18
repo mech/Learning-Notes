@@ -102,6 +102,7 @@ Track your API/endpoints call by incrementing counters. The most commonly used A
 * [jsonapi-utils](https://github.com/tiagopog/jsonapi-utils)
 * [jsonapi-serializers](https://github.com/fotinakis/jsonapi-serializers)
 * [Rails JSON API Tutorial - Using JSONAPI Resources gem](http://tutorialsfordevs.com/tutorials/rails-json-api-tutorial/)
+* [Netflix's fast version of AMS](https://github.com/Netflix/fast_jsonapi)
 
 ## OpenAPI
 
@@ -182,3 +183,4 @@ X-Served-By: a30e6f9aa7cf5731b87dfb3b9992202d
 
 * [Rails APIs: The Next Generation](https://www.youtube.com/watch?v=iTbTz8_ztIM)
 * [Nordic API](https://www.youtube.com/user/nordicapis/playlists)
+

@@ -20,6 +20,7 @@ Maintain a visual language, UI elements, components and page types to realize su
 
 Living documentation based on executable examples.
 
+* [Resources, links, references and articles on Design Systems](https://uxdesign.cc/resources-links-references-and-articles-on-design-systems-e8ab898e0ab5)
 * [**Design System Handbook**](https://www.designbetter.co/design-systems-handbook/introducing-design-systems)
 * [**designsystems.com**](https://www.designsystems.com/)
 * [Figma - Introducing DesignSystems.com](https://blog.figma.com/introducing-designsystems-com-8826fd2efd57)
@@ -58,6 +59,7 @@ Living documentation based on executable examples.
 * [A useful list of design system documentation](https://dribbble.com/shots/3239960-Design-system-documentation)
 * [Seek's style guide](https://seek-oss.github.io/seek-style-guide/)
 * [Bye bye Material Design](https://medium.com/techtrument/bye-bye-material-design-acaebcc7c6b4)
+* [Resources, links, references and articles on Design Systems](https://uxdesign.cc/resources-links-references-and-articles-on-design-systems-e8ab898e0ab5)
 
 > Visualizing all the discrete states an application can be in will make your design systems better. This in essence is the most pure form of a "living style guide" and will help your design team develop a cohesive and modular design system.
 
@@ -178,6 +180,7 @@ http://styleguides.io/examples.html
 * [Shopify Polaris](https://polaris.shopify.com/)
 * [GitHub's Primer Storybook](https://primer.github.io/storybook/)
 * [Pure CSS](https://purecss.io/)
+* [Polythene](https://github.com/ArthurClemens/polythene)
 
 **Some forms examples**
 

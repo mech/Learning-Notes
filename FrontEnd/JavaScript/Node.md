@@ -11,6 +11,10 @@
 ▶ source ~/.zshrc
 ```
 
+## package.json
+
+* [NPM graph - See dependency graph using your package.json file](http://npm.broofa.com/)
+
 ## Yarn
 
 ```
@@ -33,3 +37,4 @@
 ## Security
 
 * [Node.js Security Overview](https://nemethgergely.com/nodejs-security-overview/)
+

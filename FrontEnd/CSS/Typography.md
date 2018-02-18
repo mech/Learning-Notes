@@ -94,3 +94,5 @@ li p, li label {
 ## Videos
 
 * [Syntax Highlight Everything](https://www.youtube.com/watch?v=s_ooNo2EmMI)
+* [Web Fonts: Power Up!](https://www.youtube.com/watch?v=SBz54Wt65Fs)
+

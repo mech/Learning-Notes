@@ -23,6 +23,8 @@
 * [Rebuilding slack.com using Grid and Flexbox](https://slack.engineering/rebuilding-slack-com-b124c405c193)
 * [CSS Grid Layout and PostCSS: Now Kiss!](https://medium.com/@SylvainPV/css-grid-layout-and-postcss-now-kiss-5e35f61a6f00)
 * [How Items Flow Into a CSS Grid](http://gedd.ski/post/grid-item-placement/)
+* [Recreating the GitHub Contribution Graph with CSS Grid Layout](https://bitsofco.de/github-contribution-graph-css-grid/)
+* [Iota - A responsive micro-framework for the grid spec powered by CSS custom properties](http://korywakefield.com/iota/)
 
 With 18 new CSS Grid properties (Flexbox has 12), there are many ways to achieve the same thing with the Grid layout. This is what makes it overwhelming.
 
@@ -194,6 +196,7 @@ grid-template-columns: 15em 4.5fr minmax(5em, 3fr) 10%;
 * [Manuel Rego Casasnovas](https://blogs.igalia.com/mrego/)
 * Dr. Bert Bos
 * Håkon Wium Lie
+* [Ire Aderinokun](https://bitsofco.de/)
 
 ## Videos
 
@@ -201,5 +204,6 @@ grid-template-columns: 15em 4.5fr minmax(5em, 3fr) 10%;
 * [CSS Grid Layout - Rachel Andrew | February 2017](https://www.youtube.com/watch?v=N5Lt1SLqBmQ)
 * [CSS4 Grid: True Layout Finally Arrives (Jen Kramer) - Full Stack Fest 2016](https://www.youtube.com/watch?v=axVw1Zduqn0)
 * [Start Using CSS Grid Layouts Today](https://youtu.be/tjHOLtouElA?list=PLBzScQzZ83I_n5kvxmUaRNZvc_vsCuEQD)
-* [](https://www.youtube.com/watch?v=tY-MHUsG6ls)
+* [Why I love CSS Grid - by Jen Simmons](https://www.youtube.com/watch?v=tY-MHUsG6ls)
+* [dotCSS 2017 - Benjamin De Cock - CSS Grid in Production](https://www.youtube.com/watch?v=_BCiiE31D5M)
 

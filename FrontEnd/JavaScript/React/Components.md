@@ -17,6 +17,7 @@
 * [React Architecture and Best Practices](https://github.com/markerikson/react-redux-links/blob/master/react-architecture.md)
 * [React FAQ](https://github.com/timarney/react-faq)
 * [React FAQ Site](https://reactfaq.site/)
+* [React - Common Questions](https://academind.com/learn/react/react-q-a/)
 * [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react)
 * [React Patterns](https://github.com/chantastic/reactpatterns.com)
 * [React Bits - React patterns, techniques, tips and tricks](https://github.com/vasanthk/react-bits)
@@ -93,21 +94,8 @@ const Aux = (props) => {
 * [real-world-react-apps](https://github.com/jeromedalbert/real-world-react-apps)
 * [Some good touch and animation examples](https://medium.com/@sanchitgn/what-ive-learnt-developing-a-modern-progressive-web-app-d3abe69933fa)
 * [200+ example apps](https://www.javascriptstuff.com/react-example-apps/)
-
-## Fiber
-
-* [A look inside Fiber](http://makersden.io/blog/look-inside-fiber/)
-* [What is React Fiber ?](https://giamir.com/what-is-react-fiber)
-
----
-
-* The main thread is the same as the UI thread. Only the main thread can change the DOM.
-* Solve choppy frame rates and laggy input.
-* Assign different priorities to different types of updates.
-* Fiber is just a JavaScript object representing the Virtual Stack Frame of an React component. Just like VDOM is a JavaScript object representing a component's DOM.
-* Time slicing or async setState (make use of functional setState instead of plain object - see `ReactDOM.unstable_deferredUpdates`)
-* Uses `requestIdleCallback` to cooperate with the browser's overall work schedule
-* Improve startup time rendering components as they become available to the browser without the need to wait for a whole bundle to be downloaded.
+* [react-spotify](https://github.com/Pau1fitz/react-spotify)
+* [Building a Credit Card Form with React](https://themeteorchef.com/tutorials/building-a-credit-card-form-with-react)
 
 ## Frameworks
 
@@ -186,6 +174,7 @@ Be careful when passing props as `null`. Any default prop value will not be used
 
 > Visualizing all the discrete states an application can be in will make your design systems better.
 
+* [Why is `setState` asynchronous?](https://github.com/facebook/react/issues/11527)
 * [Treat state as immutable](https://medium.freecodecamp.org/handling-state-in-react-four-immutable-approaches-to-consider-d1f5c00249d5)
 * [Thinking statefully](https://daveceddia.com/thinking-statefully/)
 * [A visual guide to state in React](https://daveceddia.com/visual-guide-to-state-in-react/)
@@ -377,7 +366,9 @@ const age = (props, propName) => {
 
 ## Lifecycle Methods
 
-### componentWillMount
+* [Understanding React — Component life-cycle](https://medium.com/@baphemot/understanding-reactjs-component-life-cycle-823a640b3e8d)
+
+### componentWillMount / Deprecated in 16.3
 
 * Called before `render()`
 * Called only once
@@ -385,12 +376,14 @@ const age = (props, propName) => {
 * A chance to handle configuration (like global events), update state since props and states are defined
 * `setState()` will not trigger a re-render, but you can still use it to prepare
 
+Since it will be removed, do your initialization at the constructor. A constructor is called every time the component is mounted.
+
 ### componentDidMount
 
 * Called only once, so won't have infinite loop if you use `setState()`
 * By walking backwards, we know that every child has mounted and also run its own `componentDidMount()`. This guarantees the parent can access the Native UI elements for itself and its children. The leaf components always start first.
 
-### componentWillReceiveProps
+### componentWillReceiveProps / getDerivedStateFromProps
 
 Because props are immutable, the parent must provide the new values when there is changes.
 
@@ -414,7 +407,7 @@ If `shouldComponentUpdate` returns `false`, the component and all its children's
 
 > In React, immutable structures often lead to better performance: when data changes in a mutable representation, **you'll likely need to rely on React's virtual DOM** to determine whether components should update; alternatively, in an immutable representation, you can use a basic strict equality check to determine whether an update should occur.
 
-### componentWillUpdate
+### componentWillUpdate / Deprecated in 16.3
 
 * Will be called whenever we decide to `render()`
 * Sort of like `componentWillMount`, but not quite
@@ -427,6 +420,7 @@ If `shouldComponentUpdate` returns `false`, the component and all its children's
 * Have access to DOM, refs, etc.
 * Good when you want to update 3rd party library
 * Avoid `setState()`
+* Usually, you would use a callback to make sure some code is called when the state was actually updated - in this case, please use `componentDidUpdate()` instead.
 
 ```js
 // Access our chart instance and update it when data has changed
@@ -437,81 +431,6 @@ componentDidUpdate(prevProps, prevState) {
     })
   }
 }
-```
-
-## Context
-
-* [How to safely use React context](https://medium.com/@mweststrate/how-to-safely-use-react-context-b7e343eff076)
-
-| Parent/Grandparent                                                    | Child                                            |
-|-----------------------------------------------------------------------|--------------------------------------------------|
-| `childContextTypes` - defines what context to supply                  | `contextTypes` - defines what context to consume |
-| `getChildContext()` - keys are merged on to context (last merge wins) | `this.context`                                   |
-
-```js
-class Provider extends Component {
-  // Here, we promise to provide these context
-  static childContextTypes = {
-    store: PropTypes.object.isRequired
-  }
-
-  // This is a lifecycle hook
-  // Whenever a child request for context, this will be called
-  getChildContext() {
-    return {
-      store: this.props.store
-    }
-  }
-  
-  render() {
-    return this.props.children
-  }
-}
-```
-
-User of `Provider` will need to:
-
-```js
-const AddTodo = (props, { store }) => {
-}
-
-// Opt to receive context
-AddTodo.contextTypes = {
-  store: React.PropTypes.object
-}
-```
-
-**More examples**
-
-```js
-// SFC take props, context as arguments
-// Not reusable as it needs a parent (<Provider/>??) with the
-// currency as child context types to work
-const Price = ({ value }, { currency }) => (
-  <div>{currency}{value}</div>
-)
-
-Price.propTypes = {
-  value: React.PropTypes.number
-}
-
-Price.contextTypes = {
-  currency: React.PropTypes.string
-}
-
-// We can use Recompose's getContext() to create a HOC
-// that can receive the context and pass it as props
-const Price = ({ currency, value }) => (
-  <div>{currency}{value}</div>
-)
-
-// getContext is a HOC using partial application to
-// specialize itself
-const withCurrency = getContext({
-  currency: React.PropTypes.string
-})
-
-const PriceWithCurrency = withCurrency(Price)
 ```
 
 ## Container and Presentational Pattern

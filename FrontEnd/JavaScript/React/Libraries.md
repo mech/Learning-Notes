@@ -32,6 +32,7 @@ https://github.com/jaredpalmer/react-fns
 ## Toggle
 
 * [react-toggled](https://github.com/kentcdodds/react-toggled)
+* [Some toggle example](https://jrsinclair.com/articles/2018/react-redux-javascript-architecture/)
 
 ## Visual
 
@@ -42,6 +43,8 @@ https://github.com/jaredpalmer/react-fns
 * [Heroku-style Loading Indicator](https://gist.github.com/patientdev/3dac07a069713c33d4d4cc039aa5ac2d)
 * [react-flexview](https://github.com/buildo/react-flexview)
 * [react-x-ray - CSS Layout Debugger](https://github.com/jxnblk/react-x-ray)
+* [react-content-loader](http://danilowoz.com/react-content-loader/)
+* [react-measurements](https://github.com/rmfisher/react-measurements)
 
 ```js
 import React from 'react';
@@ -115,6 +118,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [Khan Academy](https://khan.github.io/react-components/)
 * [Search reusable React components](http://www.reactjsx.com/)
 * [Another search engine for components](https://devarchy.com/react)
+* [Polythene](https://github.com/ArthurClemens/polythene)
 
 ## Blank Slate
 
@@ -184,6 +188,7 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 * [react-mosaic](https://github.com/palantir/react-mosaic)
 * [resize.js](https://github.com/no-stack-dub-sack/cs-playground-react/blob/master/src/utils/resize.js)
 * [simpledrag](https://github.com/lingtalfi/simpledrag)
+* [nice-react-layout - Resizable panels](https://github.com/ekros/nice-react-layout)
 
 ## Menu
 
@@ -388,6 +393,7 @@ class Tabs extend Component {
 * [Dante 2](https://michelson.github.io/dante2/)
 * [Slate](https://github.com/ianstormtaylor/slate)
 * [react-in-markdown](https://github.com/kitze/react-in-markdown)
+* [markdown-to-jsx](https://github.com/probablyup/markdown-to-jsx)
 * [markdown-it](https://github.com/markdown-it/markdown-it)
 * [react-mde - React Markdown Editor](https://github.com/andrerpena/react-mde)
 * [Anchorme - Tiny, fast, efficient, feature rich Javascript library to detect links/URLs/Emails in text and convert them to clickable HTML anchor links](https://alexcorvi.github.io/anchorme.js/)

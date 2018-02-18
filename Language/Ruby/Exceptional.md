@@ -11,6 +11,7 @@
 * [Airbrake's Ruby Exception Handling series](https://airbrake.io/blog/category/ruby-exception-handling)
 * [How to control an application flow?](https://blog.lelonek.me/how-to-control-application-flow-e97895a60b3c#.yobp7071i)
 * [Advanced Rescue & Raise](http://docs.honeybadger.io/ruby/exceptions/advanced-rescue-and-raise.html)
+* [Exception matcher for dynamic rescue](http://blog.honeybadger.io/level-up-ruby-rescue-with-dynamic-exception-matchers/)
 
 ```ruby
 # Make warning be error only with -d flag
@@ -166,3 +167,4 @@ end
 ## Videos
 
 * [The Arcane Art of Error Handling by Brad Urani](https://www.youtube.com/watch?v=9R4wlyWBP1k)
+

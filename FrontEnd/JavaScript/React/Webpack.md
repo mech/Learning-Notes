@@ -1,5 +1,6 @@
 # Webpack
 
+* [Use lodash-es for tree shaking](https://www.npmjs.com/package/lodash-es)
 * [**Webpack Academy Free Videos**](https://webpack.academy/courses/enrolled/104961)
 * [Webpack v2 Quick Start](http://bendyworks.com/blog/webpack-v2-quick-start)
 * [From zero to webpack, one error at the time](http://www.jumoel.com/2017/zero-to-webpack.html)
@@ -10,6 +11,8 @@
 * [Deploying ES2015+ Code in Production Today](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/)
 * [Setting up Webpack, Babel and React from scratch, revisited](https://stanko.github.io/webpack-babel-react-revisited/)
 * [Jarvis - A very intelligent browser based Webpack dashboard](https://github.com/zouhir/jarvis)
+* [webpack-dashboard by FormidableLabs](https://github.com/FormidableLabs/webpack-dashboard)
+* [Webpack Monitor](http://webpackmonitor.com/)
 * [Keep webpack Fast: A Field Guide for Better Build Performance](https://slack.engineering/keep-webpack-fast-a-field-guide-for-better-build-performance-f56a5995e8f1)
 
 ```
@@ -63,10 +66,15 @@ plugins: [
 ]
 ```
 
+## Webpack 4
+
+* [webpack 4: Changes Part 1 (week 24–25)](https://medium.com/webpack/webpack-4-changes-part-1-week-24-25-fd4d77674e55)
+
 ## Starter Kits
 
 * [Next.js, Razzle, CRA. Why you should use them for a next project](https://hackernoon.com/next-js-razzle-cra-why-you-should-use-them-for-a-next-project-a78d320de97f)
 * [Universal React+GraphQL starter kit CLI](https://github.com/reactql/cli)
+* [Outline - a very good project to study on](https://www.getoutline.com/)
 
 ## create-react-app
 

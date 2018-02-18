@@ -25,6 +25,9 @@ JavaScript also has the ability to `freeze()` objects, but those objects are onl
 * [mori](https://github.com/swannodette/mori)
 * [Immutable.js](https://facebook.github.io/immutable-js/)
 * [Elsa - A babel plugin for replacing object and array literals with immutable versions](https://github.com/JonAbrams/elsa)
+* [automerge](https://github.com/automerge/automerge)
+* [unchanged - A tiny, fast, un-opinionated handler for updating JS objects and arrays immutably](https://github.com/planttheidea/unchanged)
+* [trdis - diff function returning a patch object](https://github.com/Swizz/trdis)
 
 ## Ways to Mutate
 

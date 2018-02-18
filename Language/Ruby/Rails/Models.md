@@ -18,6 +18,10 @@
 * [Flag argument is a code smell](http://craftingruby.com/posts/2017/05/04/flag-arguments-are-a-code-smell.html)
 * [Using Services to Keep Your Rails Controllers Clean and DRY](https://blog.engineyard.com/2014/keeping-your-rails-controllers-dry-with-services)
 
+## Compared with Ecto
+
+* [How Elixir's Ecto differs from Ruby's ActiveRecord](https://www.amberbit.com/blog/2016/2/24/how-elixirs-ecto-differs-from-rubys-activerecord/#Handling)
+
 ## Deprecation
 
 ```ruby
@@ -114,6 +118,8 @@ scope :activated, -> { joins(:profile).merge(Profile.activated) }
 * [Database views for Rails](https://github.com/thoughtbot/scenic)
 * [How to Check if a Record Exists](https://semaphoreci.com/blog/2017/03/14/faster-rails-how-to-check-if-a-record-exists.html)
 * [Compare password using BCrypt in Postgres](https://gist.github.com/Jacob-Kroeze/e0fa429e2b273f93ad65)
+* [Guaranteed Consistency: The Case for Database Constraints](http://nathanmlong.com/2017/02/guaranteed-consistency-the-case-for-database-constraints/)
+* [activerecord-import - Bulk insertion](https://github.com/zdennis/activerecord-import)
 
 Each uniqueness constraint must be backed by a unique database index to protect against race conditions.
 
@@ -240,6 +246,7 @@ end
 * [Creating Form Objects with ActiveModel and Virtus](https://webuild.envato.com/blog/creating-form-objects-with-activemodel-and-virtus/)
 * [ActiveModel Form Objects](https://robots.thoughtbot.com/activemodel-form-objects)
 * [**Reform**](https://github.com/trailblazer/reform)
+* [Things I wish ActiveRecord had after using Ecto](https://infinum.co/the-capsized-eight/things-i-wish-active-record-had-after-using-ecto)
 
 Encapsulate logic related to validating and persisting data.
 
