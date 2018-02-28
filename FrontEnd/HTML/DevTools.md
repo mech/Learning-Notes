@@ -1,5 +1,7 @@
 # Dev Tools
 
+https://www.freeformatter.com/html-entities.html
+
 * [Dev Tips](https://umaar.com/dev-tips/)
 * [Modern DevTools - a subscription](https://moderndevtools.com/)
 * [Headless Chrome Node API](https://github.com/GoogleChrome/puppeteer)

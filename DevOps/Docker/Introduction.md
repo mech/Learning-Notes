@@ -4,6 +4,14 @@
 * Storage - Acquire Infinit
 * Swarm
 
+## Installation
+
+### For Ubuntu
+
+```
+▶ 
+```
+
 ## Docker for Mac
 
 * Moby (xhyve virtual machine)
@@ -41,4 +49,9 @@ Aws::S3::Errors::RequestTimeTooSkewed (The difference between the request time a
 ## Problems
 
 * [Docker in Production: A History of Failure](https://thehftguy.com/2016/11/01/docker-in-production-an-history-of-failure/)
+
+## Videos
+
+* [Good basic introduction to container](https://www.youtube.com/watch?v=EnJ7qX9fkcU)
+
 

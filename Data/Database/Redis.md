@@ -76,12 +76,20 @@ Use dedicated instance for caching and Sidekiq. Do not mix them together. Use Do
 
 ```
 // See config variables
-▶ redis-cli info
+▶ redis-cli INFO
+
+// See how many databases you have
+▶ redis-cli INFO keyspace
 
 // Timeout errors
 ▶ redis-cli --latency localhost
 
 ▶ redis-cli --bigkeys
+```
+
+```
+redis> CONFIG GET databases
+redis> 
 ```
 
 ## redis.conf
@@ -91,3 +99,8 @@ If you use Redis for Cache and Sidekiq, use 2 separate instances.
 ```
 maxmemory-policy noeviction
 ```
+
+## Sidekiq
+
+* [What is Sidekiq server and client?](https://github.com/mperham/sidekiq/issues/638)
+

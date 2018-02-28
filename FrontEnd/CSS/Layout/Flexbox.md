@@ -12,6 +12,7 @@
 * [Building Mega Menus with Flexbox](https://www.sitepoint.com/building-mega-menus-flexbox/)
 * [Getting Started with CSS Flexbox](https://blog.zipboard.co/getting-started-with-css-flexbox-f5b2b5a5b87d)
 * [CSS Grid + Flexbox Solving Real-world Problems](https://medium.com/@petermouland/css-grid-flexbox-solving-real-world-problems-1cce3ecb2b51)
+* [Flex Grid Lite](http://flexgridlite.elliotdahl.com/)
 
 **Games**
 

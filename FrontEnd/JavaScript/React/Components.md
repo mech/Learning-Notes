@@ -96,6 +96,7 @@ const Aux = (props) => {
 * [200+ example apps](https://www.javascriptstuff.com/react-example-apps/)
 * [react-spotify](https://github.com/Pau1fitz/react-spotify)
 * [Building a Credit Card Form with React](https://themeteorchef.com/tutorials/building-a-credit-card-form-with-react)
+* [mimstris](https://github.com/mimshwright/mimstris)
 
 ## Frameworks
 

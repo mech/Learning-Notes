@@ -311,6 +311,7 @@ Examples: `ActiveSupport::TimeZone`, `GrossAmount`, `VatRate`
 
 * [tcrayford/Values](https://github.com/tcrayford/Values)
 * [To Clojure and back](https://www.youtube.com/watch?v=doZ0XAc9Wtc)
+* [Value Objects Like a Pro](https://hackernoon.com/value-objects-like-a-pro-f1bfc1548c72)
 
 Simple, small object that represents certain value-ness instead of an identity. Examples are money values in various currencies, temperatures, etc.
 

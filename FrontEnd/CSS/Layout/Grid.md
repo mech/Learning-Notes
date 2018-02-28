@@ -36,6 +36,10 @@ Remember, the CSS Grid does not **physically** exist. It is all invisibles lines
 
 * [Grid Garden](http://cssgridgarden.com/)
 
+## Tweets
+
+> My new website uses CSS Grid, Flexbox, Shapes etc. with no fallbacks whatsoever. Correct decision? The browser stats say so. - [Andy Clarke](https://twitter.com/Malarkey/status/956527755134304264)
+
 ## Differences with Flexbox
 
 * Flexbox is one-dimensional, it can be horizontally or vertically, but never both at the same time
