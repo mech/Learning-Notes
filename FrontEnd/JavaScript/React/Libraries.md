@@ -17,6 +17,7 @@ https://dollarshaveclub.github.io/stickybits/
 * [Carte Blanche - Like Storybook?](https://github.com/carteb/carte-blanche)
 * [CUID compared to UUID or shortid](https://github.com/ericelliott/cuid)
 * [reflective-bind](https://github.com/flexport/reflective-bind)
+* [insane - Lean and configurable whitelist-oriented HTML sanitizer](https://www.npmjs.com/package/insane)
 
 https://github.com/jaredpalmer/react-fns
 

@@ -425,3 +425,8 @@ class SearchInput extends Component {
 * [winterfell](https://github.com/andrewhathaway/winterfell)
 * [react-redux-form](https://github.com/davidkpiano/react-redux-form)
 * [Revalidation](http://revalidation.oss.25th-floor.com/)
+
+## Videos
+
+* [ReactNYC - Formik](https://www.youtube.com/watch?v=-tDy7ds0dag)
+

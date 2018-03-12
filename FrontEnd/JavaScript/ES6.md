@@ -86,6 +86,28 @@ var tahoe = {
     }, delay)
   }
 }
+
+// Don't anyhow use arrow function at event handler
+const box = document.querySelector('.box')
+box.addEventListener('click', () => {
+  // `this` will not be the box, but rather the
+  // global window object
+  // You are better off using normal function()
+  console.log(this)
+})
+
+// To fix the above, we usually use normal function
+// at the top of the parent
+const box = document.querySelector('.box')
+box.addEventListener('click', function() {
+  // this refer to the box
+  this.classList.toggle('opening')
+  setTimeout(() => {
+    // with arrow-function, this also refer to
+    // the box
+    this.classList.toggle('open')
+  }, 500)
+})
 ```
 
 ```js
@@ -195,6 +217,8 @@ Button.defaultProps = {
 
 ## Gather/Rest and Spread Operators
 
+Spread unpack items insides array/object and gather/rest package items into a single unit.
+
 There are 3 different "spread" operators in JavaScript:
 
 1. Array spreads, which is part of ES6
@@ -232,7 +256,7 @@ function foo() {
   bar.apply(null, args)
 }
 
-function foo(...args) { // Gather into an array
+function foo(...args) { // Rest parameter "gather" into an array
   args.unshift(42)
   bar(...args) // Spread out the array into individual parts
 }
@@ -242,7 +266,7 @@ function foo(...args) {
 }
 ```
 
-Gather and spread is nice opposite of each other.
+Gather (pack) and spread (unpack) is nice opposite of each other.
 
 Array can be spread out in function call as well as assignment:
 
@@ -419,6 +443,23 @@ if (obj.props) {} // could be 0, "", null...
 // if you mean this:
 if (obj.props !== undefined) {} // Explicit and faster
 ```
+
+## History
+
+Players:
+
+* Google
+* Mozilla
+* Microsoft
+* Apple
+* Adobe
+* Opera
+* Yahoo
+
+---
+
+* JavaScript 1.5
+* JavaScript 2.0 = ECMAScript 4
 
 ## Videos
 

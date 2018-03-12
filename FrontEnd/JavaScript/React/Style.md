@@ -1,5 +1,6 @@
 # Component Style
 
+* [Yelp - CSS in the Age of React: How We Traded the Cascade for Consistency](https://engineeringblog.yelp.com/2018/03/css-in-the-age-of-react.html)
 * [A Unified Styling Language](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660)
 * [**Awesome React Component - UI Frameworks**](https://github.com/brillout/awesome-react-components#ui-frameworks)
 * [All the CSS-in-JS options you have](https://github.com/MicheleBertoli/css-in-js)
@@ -188,3 +189,4 @@ Basically overriding styles. Treat the style as props.
 ```
 
 We don't nest across component boundary. If you want to make component look different depending on context, you can use props instead which is more maintainable than relying on parent-sibling-child relationship.
+

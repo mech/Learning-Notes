@@ -173,6 +173,8 @@ Be careful when passing props as `null`. Any default prop value will not be used
 
 ## States
 
+> https://twitter.com/browniefed/status/968931647042105344
+
 > Visualizing all the discrete states an application can be in will make your design systems better.
 
 * [Why is `setState` asynchronous?](https://github.com/facebook/react/issues/11527)

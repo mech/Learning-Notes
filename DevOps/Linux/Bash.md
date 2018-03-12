@@ -12,3 +12,14 @@
 ```
 ▶ for file in *.jpg;do echo convert $file ${file%.jpg}.png;done
 ```
+
+```
+▶ find . -name "*.haml" | wc -l
+▶ find . -type f | sed 's/.*\.//' | sort | uniq -c
+```
+
+```
+// Find the process that is using this port
+▶ lsof -i :3000
+```
+

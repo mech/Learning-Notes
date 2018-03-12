@@ -59,6 +59,10 @@ Instead of defining our typography with an absolute unit like the pixel, we can 
 0.41em
 ```
 
+## Fix Fonts
+
+* [`font-feature-settings`](https://twitter.com/wesbos/status/932644812582522880)
+
 ## EM
 
 Always tied to font-size. It is good for media queries or grid layout:

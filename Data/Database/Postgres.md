@@ -24,6 +24,11 @@
 SELECT * from users WHERE id = ANY($1::int[])
 ```
 
+## As a Job Queue
+
+* [What is SKIP LOCKED for in PostgreSQL 9.5?](https://blog.2ndquadrant.com/what-is-select-skip-locked-for-in-postgresql-9-5/)
+* [How we built a job queue with Postgres](https://blog.holistics.io/how-we-built-a-multi-tenant-job-queue-system-with-postgresql-ruby/)
+
 ## Constraints
 
 * [Protect Your Data with PostgreSQL Constraints](http://nathanmlong.com/2016/01/protect-your-data-with-postgresql-constraints/)
@@ -134,11 +139,25 @@ Most single queries should be aiming for around a 1ms query time.
 
 ## Window Functions
 
+Unlike aggregate function like `COUNT()`, `SUM()`, `AVG()`, which operate on an entire table, Window Functions operate on a set of rows and return a single aggregated value for each row.
+
+The rows retain their separate identities and the aggregated value is merely added to each row rather than grouped together.
+
 * [Folding Postgres Window Functions into Rails](https://blog.codeship.com/folding-postgres-window-functions-into-rails/)
 * [Modeling Postgres Common Table Expressions and Window Functions with Rails and ActiveRecord](http://blog.nrowegt.com/modeling-postgres-common-table-expressions-and-window-functions-with-rails-and-activerecord/)
 * [Advanced SQL - window functions](http://mjk.space/advanced-sql-window-functions/)
+* ANSI/ISO Standard SQL:2003
+* ANSI/ISO Standard SQL:2008
+* Microsoft SQL Server 2005 implemented (ROW_NUMBER, RANK, NTILE and DENSE_RANK functions only)
+* SQL Server 2012 implemented the full range of functions finally
+* MariaDB 10.2.0 implemented Window Functions finally
+* MySQL 8 implemented Window Functions finally
 
-The strength of window functions is not pagination, but analytical calculation.
+The strength of window functions is not pagination, but **analytical calculation**.
+
+The set of rows used for the calculation is called the "window" and will the entire dataset by default.
+
+The `PARTITION BY` is employed to reduce the window to a particular group within the dataset.
 
 ## Partition
 

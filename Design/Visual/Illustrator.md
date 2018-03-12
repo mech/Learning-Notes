@@ -7,3 +7,7 @@
 
 * [Geri Coady](http://www.hellogeri.com/)
 
+## Videos
+
+* [Swirling Infinite Logo Design in Illustrator](https://www.youtube.com/watch?v=m6aZg0nJX10)
+
