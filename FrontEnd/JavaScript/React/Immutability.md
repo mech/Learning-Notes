@@ -28,6 +28,8 @@ JavaScript also has the ability to `freeze()` objects, but those objects are onl
 * [automerge](https://github.com/automerge/automerge)
 * [unchanged - A tiny, fast, un-opinionated handler for updating JS objects and arrays immutably](https://github.com/planttheidea/unchanged)
 * [trdis - diff function returning a patch object](https://github.com/Swizz/trdis)
+* [List - A fast immutable list with a functional API](https://github.com/funkia/list)
+* [immer - Create the next immutable state by mutating the current one](https://github.com/mweststrate/immer)
 
 ## Ways to Mutate
 

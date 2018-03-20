@@ -120,6 +120,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [Search reusable React components](http://www.reactjsx.com/)
 * [Another search engine for components](https://devarchy.com/react)
 * [Polythene](https://github.com/ArthurClemens/polythene)
+* [Pinterest Gestalt](https://pinterest.github.io)
 
 ## Blank Slate
 
@@ -235,6 +236,7 @@ class Projects extends Component {
 
 ## Date Picker and Calendar
 
+* [InfiniteGrid's Calendar example](https://codepen.io/pen/)
 * [Making input type=date complicated](https://medium.com/samsung-internet-dev/making-input-type-date-complicated-a544fd27c45a)
 * [Designing The Perfect Date And Time Picker](https://www.smashingmagazine.com/2017/07/designing-perfect-date-time-picker/)
 * [react-big-calendar](https://github.com/intljusticemission/react-big-calendar)
@@ -266,6 +268,7 @@ const a = addDays(d, 10)
 
 * [Drag and drop file upload](https://codepen.io/pixelass/pen/dpyBOd?editors=0010)
 * [How To Make A Drag-and-Drop File Uploader With Vanilla JavaScript](https://www.smashingmagazine.com/2018/01/drag-drop-file-uploader-vanilla-js/)
+* [Upload anything you throw at it](https://pqina.nl/filepond/)
 
 ```html
 <input type="file" accept="*">
@@ -376,6 +379,7 @@ class Tabs extend Component {
 * [Shopify Draggable](https://shopify.github.io/draggable/)
 * [react-beautiful-dnd by Atlassian](https://github.com/atlassian/react-beautiful-dnd)
 * [Dragging React performance forward](https://medium.com/@alexandereardon/dragging-react-performance-forward-688b30d40a33)
+* [Dragon Drop - Accessible drag and drop](https://github.com/schne324/dragon-drop)
 
 ## D3 and Charts
 

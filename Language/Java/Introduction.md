@@ -1,5 +1,7 @@
 # Introduction
 
+* [Annotation Mania](http://annotatiomania.com/)
+
 ```
 ▶ /usr/libexec/java_home -V
 ```

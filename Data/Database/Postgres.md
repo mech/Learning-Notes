@@ -46,6 +46,7 @@ SELECT * from users WHERE id = ANY($1::int[])
 ## Time-Series
 
 * [Problems with PostgreSQL 10 for time-series data](https://blog.timescale.com/time-series-data-postgresql-10-vs-timescaledb-816ee808bac5)
+* [Time Series Database Lectures - Fall 2017](http://db.cs.cmu.edu/seminar2017/)
 
 ## Indexing
 
@@ -221,7 +222,7 @@ EXCLUDE USING gist (
 
 * Good for small unchanging constants like AWS regions
 
-## Pagination
+## Pagination - OFFSET vs Cursor/Keyset
 
 > offset pagination is broken and there are other ways to paginate
 
@@ -229,6 +230,7 @@ EXCLUDE USING gist (
 * [Build JSON API Responses With Postgres CTEs](http://www.codedependant.net/2017/04/30/build-json-api-responses-postregres-with-cte/)
 * [We need tool support for keyset pagination](http://use-the-index-luke.com/no-offset)
 * [Pagination: You're (Probably) Doing It Wrong](https://coderwall.com/p/lkcaag/pagination-you-re-probably-doing-it-wrong)
+* [We need tool support for keyset pagination](https://use-the-index-luke.com/no-offset)
 
 ## PL/V8
 

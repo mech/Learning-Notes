@@ -63,6 +63,20 @@ PCI Security Council deprecated SSLv3 and TLS 1.0 for commercial transactions.
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 ```
 
+## TLSv1.0 and v1.1
+
+Support for TLSv1.2 was added in OpenSSL 1.0.1 on March 2012.
+
+* [TLS 1.0 and 1.1 Deprecation Notice](https://blog.rubygems.org/2018/02/24/tls-10-and-11-deprecation-notice.html)
+* [Yes, Ruby 1.9 can support TLSv1.2!](http://crftr.com/yes-ruby-1-9-can-support-tls-1-2/)
+* [How to troubleshoot RubyGems and Bundler TLS/SSL Issues](https://bundler.io/v1.16/guides/rubygems_tls_ssl_troubleshooting_guide.html)
+
+```
+▶ curl -sL https://git.io/vQhWq | ruby
+
+▶ ruby -ropenssl -e 'puts OpenSSL::OPENSSL_LIBRARY_VERSION'
+```
+
 ### Checklist
 
 * OCSP stapling enabled?

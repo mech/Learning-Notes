@@ -8,6 +8,7 @@ Async is basically eliminating callback hell.
 
 * [Passing data between Promise callbacks](http://2ality.com/2017/08/promise-callback-data-flow.html)
 * [JavaScript's Promise Leaks Memory](https://alexn.org/blog/2017/10/11/javascript-promise-leaks-memory.html)
+* [p-cancelable - Create a promise that can be canceled](https://github.com/sindresorhus/p-cancelable)
 
 Before you dive into the wonderful world of async/await, it's important that you understand and appreciate Promises.
 

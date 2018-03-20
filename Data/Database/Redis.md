@@ -35,6 +35,10 @@ appendfsync always
 
 Run different Redis instances for Cache and Unified Log.
 
+## Rate Limiting
+
+* [redis-cell - rate limiting in Redis as a single command](https://github.com/brandur/redis-cell)
+
 ## As Kafka with Redis Stream
 
 * [Redis Streams and the Unified Log](https://brandur.org/redis-streams)

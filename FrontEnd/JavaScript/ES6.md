@@ -42,7 +42,25 @@ if (shouldShowSpinner(fsm, listNode)) {
 
 ## Let
 
+* `var`-variables don't have Temporal Dead Zone. When the scope (its surrounding function) of a `var` variable is entered, storage space (a binding) is created for it. The variable is immediately initialized, by setting it to `undefined`.
+* `let`-variables have Temporal Dead Zone.
+
 `let` hoist but it does not do initialization.
+
+```js
+// You can see the dead zone is really temporal (based on time)
+// and not spatial (based on location)
+let foo = console.log(foo); // ReferenceError due to TDZ
+
+if (true) { // enter new scope, TDZ starts
+  const func = function() {
+    console.log(myVar); // OK!
+  }
+  
+  let myVar = 3; // TDZ ends
+  func(); // called outside TDZ
+}
+```
 
 ## Function Parameters
 
@@ -303,6 +321,8 @@ var same = [].concat(arr)
 
 ## Destructuring
 
+Think of it as the opposite of constructing where we create data, while destructuring is where we extract data.
+
 Kind of like pattern matching, but not really.
 
 ### Array Destructuring
@@ -318,6 +338,12 @@ var array = [1, 2, 3]
 // e = undefined
 // args = []
 var [a, b, c, d = 42, e, ...args] = array || []
+
+// x = 'a'
+// y = 'b'
+// z = 'c'
+// You can use pattern for the rest operator also
+const [x, ...[y, z]] = ['a', 'b', 'c']
 ```
 
 ```js
@@ -345,6 +371,11 @@ var [a, b, c, [d, , e]] = a
 
 Mimic named arguments pattern somehow.
 
+```js
+// It is like accessing the 'abc'.length property
+const { length: len } = 'abc' // len=3
+```
+
 ## Tag Functions
 
 ```js
@@ -369,6 +400,13 @@ upper`Hello ${name}`
 All not that useful in a general case. A unique unguessable value. Use it as a symbolic placeholder for "something".
 
 ## Iterator
+
+```js
+// A new iteration is a brand new block, so we can use const
+// args.entries() give you index to loop over
+for (const [index, elem] of args.entries()) {
+}
+```
 
 ```js
 Array.prototype[Symbol.iterator] = function* () {

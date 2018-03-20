@@ -178,6 +178,7 @@ replica.fetch.max.bytes
 ## Duplicates
 
 * Kafka do not do de-duplication, so you need another data store with validation
+* [Real-time deduping at scale](http://eng.tapjoy.com/blog-list/real-time-deduping-at-scale)
 
 ## Case Studies
 
@@ -191,3 +192,4 @@ replica.fetch.max.bytes
 ## Videos
 
 * [Processing Streaming Data at a Large Scale with Kafka](https://www.youtube.com/watch?v=-NMDqqW1uCE)
+
