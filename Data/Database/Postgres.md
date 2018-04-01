@@ -50,6 +50,7 @@ SELECT * from users WHERE id = ANY($1::int[])
 
 ## Indexing
 
+* [Principles and Applications of the Index Types Supported by PostgreSQL](https://medium.com/@Alibaba_Cloud/principles-and-applications-of-the-index-types-supported-by-postgresql-481f59bab67d)
 * [Introducing Dexter, the Automatic Indexer for Postgres](https://medium.com/@ankane/introducing-dexter-the-automatic-indexer-for-postgres-5f8fa8b28f27)
 * [How About Hypothetical Indexes ?](https://rjuju.github.io/postgresql/2015/07/02/how-about-hypothetical-indexes.html)
 * Indexes add overhead to write operations like INSERT, UPDATE and DELETE. Because of this, you may not want to index write-heavy tables.

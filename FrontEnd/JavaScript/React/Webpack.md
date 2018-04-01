@@ -1,6 +1,7 @@
 # Webpack
 
 * [Use lodash-es for tree shaking](https://www.npmjs.com/package/lodash-es)
+* [Smaller Lodash bundles with Webpack and Babel](https://nolanlawson.com/2018/03/20/smaller-lodash-bundles-with-webpack-and-babel/)
 * [**Webpack Academy Free Videos**](https://webpack.academy/courses/enrolled/104961)
 * [Webpack v2 Quick Start](http://bendyworks.com/blog/webpack-v2-quick-start)
 * [From zero to webpack, one error at the time](http://www.jumoel.com/2017/zero-to-webpack.html)
@@ -83,6 +84,7 @@ plugins: [
 * [Configure create-react-app without ejecting](https://medium.com/@kitze/configure-create-react-app-without-ejecting-d8450e96196a)
 * [RFC - babel-macros](https://github.com/facebookincubator/create-react-app/issues/2730)
 * [Deploy a React App to S3 and CloudFront with AWS Mobile Hub](https://aws.amazon.com/blogs/mobile/deploy-a-react-app-to-s3-and-cloudfront-with-aws-mobile-hub/)
+* [Add ESLint & Prettier to VS Code for a Create React App](https://www.youtube.com/watch?v=bfyI9yl3qfE)
 
 ---
 

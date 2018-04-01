@@ -36,6 +36,12 @@ WHERE price BETWEEN 10 AND 20
 
 When you do aggregate function, you can't access the result at the WHERE clause, because WHERE clause is already logically executed.
 
+> If you're grouping by a column, it simple does not make sense to also aggregate that column.
+
+## Functional Dependency
+
+* [MySQL 5.7.5: GROUP BY respects functional dependencies](https://rpbouman.blogspot.sg/2014/09/mysql-575-group-by-respects-functional.html)
+
 ## Joins
 
 * [Keep INNER JOIN when merging relations](https://github.com/rails/rails/pull/27063)

@@ -8,10 +8,19 @@
 * [Timeout: Ruby's Most Dangerous API](http://www.mikeperham.com/2015/05/08/timeout-rubys-most-dangerous-api/)
 * [The Ultimate Guide to Ruby Timeouts](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts)
 
+## Codemod
+
+* [Refactoring Ruby programmatically](https://lethain.com/refactoring-programmatically/)
+* [How to write a codemod](https://vramana.github.io/blog/2015/12/21/codemod-tutorial/)
+
 ## CSV
 
 * [A Guide to the Ruby CSV Library - Part 2](https://www.sitepoint.com/guide-ruby-csv-library-part-2/)
 * [Superfast CSV imports using PostgreSQL's COPY command](https://infinum.co/the-capsized-eight/superfast-csv-imports-using-postgresqls-copy)
+
+## Ruby 2.5
+
+* BigDecimal.new() is deprecated.
 
 ## Ruby 2.4
 

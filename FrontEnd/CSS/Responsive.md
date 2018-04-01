@@ -17,6 +17,11 @@
 }
 ```
 
+## CSS Variables
+
+* [Learn CSS variables](https://scrimba.com/g/gcssvariables)
+* [How to make responsiveness super simple with CSS Variables](https://medium.freecodecamp.org/how-to-make-responsiveness-super-simple-with-css-variables-8c90ebf80d7f)
+
 ## `calc()`
 
 `calc()` is very useful for responsive design when you want to take value away from a percentage value.
@@ -65,3 +70,4 @@ render() {
   )
 }
 ```
+

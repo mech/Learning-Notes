@@ -4,3 +4,8 @@
 * [Building Conclave: a decentralized, real time, collaborative text editor](https://hackernoon.com/building-conclave-a-decentralized-real-time-collaborative-text-editor-a6ab438fe79f)
 * [sockette - tiny (344 bytes) wrapper around WebSocket](https://github.com/lukeed/sockette)
 
+## Operational Transformation
+
+* [Introducing CodeSandbox Live — real time code collaboration in the browser](https://medium.com/@compuives/introducing-codesandbox-live-real-time-code-collaboration-in-the-browser-6d508cfc70c9)
+
+

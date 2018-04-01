@@ -1,9 +1,12 @@
 # React 16 - Fiber
 
+> So much of React's architecture is based on stuff game developers figured out decades ago. - https://twitter.com/acdlite/status/978696799757086720
+
 * [What's New in React 16 and Fiber Explanation](https://medium.com/@treyhuffine/react-16-features-and-fiber-explanation-e779544bb1b7)
 * [A look inside Fiber](http://makersden.io/blog/look-inside-fiber/)
 * [What is React Fiber?](https://giamir.com/what-is-react-fiber)
 * [React Fiber resources](https://github.com/koba04/react-fiber-resources)
+* [Didact Fiber: Incremental reconciliation](https://engineering.hexacta.com/didact-fiber-incremental-reconciliation-b2fe028dcaec)
 
 ---
 

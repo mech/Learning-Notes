@@ -227,12 +227,18 @@ class Projects extends Component {
 ## Keyboard and Mouse
 
 * [react-combo-keys](https://github.com/SamyPesse/react-combo-keys)
+* [HotKeys.js](http://wangchujiang.com/hotkeys/)
 
 ## Scroll
+
+```js
+new IntersectionObserver(callback, options)
+```
 
 * [Build a Reusable Scroll View Component with Animated scrollTo Abilities in React](https://codedaily.io/screencasts/48/Build-a-Reusable-Scroll-View-Component-with-Animated-scrollTo-Abilities-in-React)
 * [scroll-into-view](https://github.com/KoryNunn/scroll-into-view)
 * [Scrollytelling with IntersectionObserver](https://github.com/russellgoldenberg/scrollama)
+* [Infinite scroll techniques in React](https://blog.logrocket.com/infinite-scroll-techniques-in-react-adcfd7ff32bd)
 
 ## Date Picker and Calendar
 

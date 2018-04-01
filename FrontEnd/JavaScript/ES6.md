@@ -9,6 +9,7 @@ https://github.com/Chalarangelo/30-seconds-of-code
 * [Exploring ES2016 and ES2017 - Dr. Axel Rauschmayer](http://exploringjs.com/es2016-es2017/index.html)
 * [ES2015+ Cheatsheet](https://devhints.io/es6)
 * [JavaScript Object Explorer - Find the object method you need without digging through the docs](https://sdras.github.io/object-explorer/)
+* [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
 
 ---
 
@@ -374,6 +375,21 @@ Mimic named arguments pattern somehow.
 ```js
 // It is like accessing the 'abc'.length property
 const { length: len } = 'abc' // len=3
+```
+
+Another benefit of destructuring object is immutability:
+
+https://medium.com/@yurik1776/hey-bill-569e596030b7
+
+```js
+const options = {
+  role: 'Admin'
+}
+
+let { role } = options // Making a shallow copy
+role = role.toLowerCase() // 'admin'
+
+options.role // still 'Admin', did not mutate!
 ```
 
 ## Tag Functions

@@ -20,6 +20,7 @@ Maintain a visual language, UI elements, components and page types to realize su
 
 Living documentation based on executable examples.
 
+* [Documenting Components](https://medium.com/eightshapes-llc/documenting-components-9fe59b80c015)
 * [Resources, links, references and articles on Design Systems](https://uxdesign.cc/resources-links-references-and-articles-on-design-systems-e8ab898e0ab5)
 * [**Design System Handbook**](https://www.designbetter.co/design-systems-handbook/introducing-design-systems)
 * [**designsystems.com**](https://www.designsystems.com/)

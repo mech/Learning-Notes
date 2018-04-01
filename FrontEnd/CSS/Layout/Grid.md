@@ -25,6 +25,8 @@
 * [How Items Flow Into a CSS Grid](http://gedd.ski/post/grid-item-placement/)
 * [Recreating the GitHub Contribution Graph with CSS Grid Layout](https://bitsofco.de/github-contribution-graph-css-grid/)
 * [Iota - A responsive micro-framework for the grid spec powered by CSS custom properties](http://korywakefield.com/iota/)
+* [IBM CSS Gridish](https://medium.freecodecamp.org/introducing-css-gridish-helping-teams-to-adapt-css-grid-today-3e031ab222de)
+* [Times - From Bootstrap to CSS Grid](https://open.nytimes.com/bootstrap-to-css-grid-87b3f5f830e4)
 
 With 18 new CSS Grid properties (Flexbox has 12), there are many ways to achieve the same thing with the Grid layout. This is what makes it overwhelming.
 
@@ -39,6 +41,12 @@ Remember, the CSS Grid does not **physically** exist. It is all invisibles lines
 ## Tweets
 
 > My new website uses CSS Grid, Flexbox, Shapes etc. with no fallbacks whatsoever. Correct decision? The browser stats say so. - [Andy Clarke](https://twitter.com/Malarkey/status/956527755134304264)
+
+## Subform
+
+> To think about complex systems, new representations are needed - Bret Victor in Media for Thinking the Unthinkable
+
+* [](https://medium.com/subform/better-grid-systems-in-ui-design-tools-495dc35c5791)
 
 ## Differences with Flexbox
 
@@ -195,6 +203,7 @@ grid-template-columns: 15em 4.5fr minmax(5em, 3fr) 10%;
 * [CSS Grid Challenge](https://www.smashingmagazine.com/2017/10/css-grid-challenge-2017-winners/)
 * [Rachel Andrew's Grid by Example](https://gridbyexample.com)
 * [Jen Simmons's Labs](http://labs.jensimmons.com/)
+* [Codepen collection on CSS Grid Layout](https://codepen.io/collection/XRRJGq/)
 
 ## People
 

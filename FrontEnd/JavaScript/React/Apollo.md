@@ -34,6 +34,10 @@ const client = new ApolloClient({
 * [Real official 2.0 migration guide](https://www.apollographql.com/docs/react/2.0-migration.html)
 * [Some 2.0 migration guide](https://github.com/apollographql/apollo-client/blob/master/docs/source/2.0-migration.md)
 
+## <Query>
+
+* [Tutorial: Render Props in React Apollo 2.1](https://blog.graph.cool/tutorial-render-props-in-react-apollo-2-1-199e9e2bd01e)
+
 ## Apollo Link
 
 > Creating a component-based request chain. Apollo Link is a request primitive designed for the GraphQL age.
@@ -227,3 +231,4 @@ fragment UserFields on User {
 * [NYT switch to Apollo](https://open.nytimes.com/the-new-york-times-now-on-apollo-b9a78a5038c)
 * [Coursera’s journey to GraphQL](https://dev-blog.apollodata.com/courseras-journey-to-graphql-a5ad3b77f39a)
 * [Changing the architecture of Express.com](https://dev-blog.apollodata.com/changing-the-architecture-of-express-com-23c950d43323)
+

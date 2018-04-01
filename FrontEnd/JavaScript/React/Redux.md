@@ -75,6 +75,10 @@ Many moving parts:
 
 * Store, state, reducers, action creators, actions, async actions, middleware, connected components
 
+## When to use Redux
+
+* [Redux - Not Dead Yet!](http://blog.isquaredsoftware.com/2018/03/redux-not-dead-yet/)
+
 ## Against Redux
 
 * [@JamieK on unstated](https://twitter.com/jamiebuilds/status/964675531533778944)

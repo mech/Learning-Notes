@@ -1,5 +1,7 @@
 # Product Design
 
+> You only get value when you ship things. - The Phoenix Project
+
 [Don't be fixed in your idea](https://www.youtube.com/watch?v=lzXHMy4ewtM)
 
 > In order to work, it must be invisible.
@@ -104,6 +106,7 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 * [Use this exercise to solve any Product Design Challenge](https://medium.muz.li/a-super-simple-exercise-for-solving-almost-any-product-design-challenge-f9e6c0019d7d)
 * [Feature Fatigue](https://www.chargebee.com/blog/saas-product-feature-prioritization/)
 * [Look elsewhere - Don't stare at your industry. Look in the opposite direction.](https://m.signalvnoise.com/look-elsewhere-e89b2b24f3f2)
+* [The Design Genome Project](https://www.invisionapp.com/enterprise/design-genome/)
 
 ## Software influence behavior
 

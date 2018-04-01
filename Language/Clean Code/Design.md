@@ -268,7 +268,11 @@ Change ripple through the system.
 
 ## Fluent Interface, Chain of Responsibility
 
+Fluent interfaces are good for query builder object. Maybe bad for business object?
+
 * [Fluent Interfaces in Ruby ecosystem](http://blog.arkency.com/2017/01/fluent-interfaces-in-ruby-ecosystem/)
+* [Fluent Interfaces Are Bad for Maintainability](http://www.yegor256.com/2018/03/13/fluent-interfaces.html)
+* [Fluent Interfaces are Evil](https://ocramius.github.io/blog/fluent-interfaces-are-evil/)
 
 ## Locality
 
@@ -282,9 +286,11 @@ Use it for *is-a* relationship. Always have a shallow, narrow hierarchy rather t
 
 ## Compositionality
 
+Decorator is just a form of object composition.
+
 > The meaning of a compound expression is a function of the meanings of its parts and the syntactic rule by which they are combined. - [Building on SOLID foundations - Steve Freeman & Nat Pryce](https://www.youtube.com/watch?v=6Bia81dI-JE)
 
-DSL can be composable.
+DSL can be composable. Is fluent language bad?
 
 ```java
 Scenario bankingCrisis = ScenarioDefinition.create()
@@ -360,3 +366,4 @@ number.to_s.capitalize
 ## Unit and Integration Testing
 
 * [Falling through the KRACKs](https://blog.cryptographyengineering.com/2017/10/16/falling-through-the-kracks/)
+
