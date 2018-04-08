@@ -177,6 +177,7 @@ Be careful when passing props as `null`. Any default prop value will not be used
 
 > Visualizing all the discrete states an application can be in will make your design systems better.
 
+* [Where to Hold React Component Data: state, store, static, and this](https://medium.freecodecamp.org/where-do-i-belong-a-guide-to-saving-react-component-data-in-state-store-static-and-this-c49b335e2a00)
 * [Why is `setState` asynchronous?](https://github.com/facebook/react/issues/11527)
 * [Treat state as immutable](https://medium.freecodecamp.org/handling-state-in-react-four-immutable-approaches-to-consider-d1f5c00249d5)
 * [Thinking statefully](https://daveceddia.com/thinking-statefully/)

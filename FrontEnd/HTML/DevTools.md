@@ -8,6 +8,7 @@ https://www.freeformatter.com/html-entities.html
 * [Easy Accessibility Testing with aXe](https://www.axe-core.org/)
 * [Firefox - Debugging JavaScript With A Real Debugger You Did Not Know You Already Have](https://www.smashingmagazine.com/2018/02/javascript-firefox-debugger/)
 * [A list of cool Chrome DevTools tips and tricks](https://flaviocopes.com/chrome-devtools-tips/)
+* [Cool Chrome DevTools tips and tricks you wish you knew already](https://medium.freecodecamp.org/cool-chrome-devtools-tips-and-tricks-you-wish-you-knew-already-f54f65df88d2)
 
 ## Console
 
@@ -19,6 +20,7 @@ console.clear()
 ## Firefox
 
 * [Introduction to Debugger](https://mozilladevelopers.github.io/playground/debugger/)
+* [Calling all web developers: here’s why you should be using Firefox](https://medium.com/swlh/calling-all-web-developers-heres-why-you-should-be-using-firefox-983f012d4aec)
 
 ## Videos
 

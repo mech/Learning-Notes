@@ -16,6 +16,7 @@
 * [OpenAI](https://blog.openai.com/evolution-strategies/)
 * [Perspective was created by Jigsaw and Google’s Counter Abuse Technology team in a collaborative research project called Conversation-AI](http://perspectiveapi.com/)
 * [A Graph of Medium's Tags](https://towardsdatascience.com/a-graph-of-mediums-tags-8e3cf6cad1d9)
+* [Netflix FlameScope](https://medium.com/netflix-techblog/netflix-flamescope-a57ca19d47bb)
 
 ## Frequency Tables
 
@@ -32,3 +33,4 @@
 
 * [Some A/B testing and P-Value??](https://www.youtube.com/watch?v=VbKRQwWtXcg)
 * [Predicting Titanic Survivors with Machine Learning ](https://www.youtube.com/watch?v=4l-aB_Sk41Y)
+

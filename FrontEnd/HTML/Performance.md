@@ -24,7 +24,8 @@
 * [Better than Gzip Compression with Brotli](https://hacks.mozilla.org/2015/11/better-than-gzip-compression-with-brotli/)
 * [The current state of Brotli compression](https://samsaffron.com/archive/2016/06/15/the-current-state-of-brotli-compression)
 
-## Videos
+## Images and Videos
 
 * [Designing Speed with Progressive Enhancement](https://www.youtube.com/watch?v=cdv8UQu96PU)
+* [Lazy Loading Images and Video](https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/)
 

@@ -18,6 +18,7 @@ https://dollarshaveclub.github.io/stickybits/
 * [CUID compared to UUID or shortid](https://github.com/ericelliott/cuid)
 * [reflective-bind](https://github.com/flexport/reflective-bind)
 * [insane - Lean and configurable whitelist-oriented HTML sanitizer](https://www.npmjs.com/package/insane)
+* [passw0rd](https://github.com/djadmin/passw0rd)
 
 https://github.com/jaredpalmer/react-fns
 
@@ -121,6 +122,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [Another search engine for components](https://devarchy.com/react)
 * [Polythene](https://github.com/ArthurClemens/polythene)
 * [Pinterest Gestalt](https://pinterest.github.io)
+* [Mineral UI](https://mineral-ui.com/)
 
 ## Blank Slate
 
@@ -392,6 +394,7 @@ class Tabs extend Component {
 * [A starting point on using D3 with React](https://blog.sicara.com/a-starting-point-on-using-d3-with-react-869fdf3dfaf#.aood1myab)
 * [Nivo](http://nivo.rocks/#/)
 * [Chartify](https://kis.github.io/chartify/)
+* [sparkline](https://github.com/fnando/sparkline)
 
 ## Images
 

@@ -10,6 +10,7 @@ https://github.com/Chalarangelo/30-seconds-of-code
 * [ES2015+ Cheatsheet](https://devhints.io/es6)
 * [JavaScript Object Explorer - Find the object method you need without digging through the docs](https://sdras.github.io/object-explorer/)
 * [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
+* [Interview questions?](https://medium.freecodecamp.org/the-definitive-javascript-handbook-for-a-developer-interview-44ffc6aeb54e)
 
 ---
 

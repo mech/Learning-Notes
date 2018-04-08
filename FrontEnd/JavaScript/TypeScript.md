@@ -3,6 +3,7 @@
 https://github.com/paulcbetts/spawn-rx/pull/12/files
 
 * [Product Type and Sum Type](http://blog.jenkster.com/2016/06/functional-mumbo-jumbo-adts.html)
+* [TypeScript — JavaScript with superpowers](https://medium.freecodecamp.org/typescript-javascript-with-super-powers-a333b0fcabc9)
 
 ## Bivariant and Contravariant
 

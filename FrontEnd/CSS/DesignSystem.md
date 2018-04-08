@@ -274,6 +274,10 @@ Today, the idea of Atomic Design is to begin with common raw material (atoms) wi
 Brand Identity -> Components -> System as a whole
 ```
 
+## Color
+
+* [Designing Systematic Colors](https://uxplanet.org/designing-systematic-colors-b5d2605b15c)
+
 ## Videos
 
 * [Can't You Make It More Like Bootstrap? – Alice Barlett from FT](https://www.youtube.com/watch?v=y4ggoN2xtAY)

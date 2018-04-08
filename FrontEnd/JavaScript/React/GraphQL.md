@@ -622,6 +622,7 @@ after = The next cursor value. An alternative to integer offset.
 
 `rails generate graphql:install --batch --no-graphiql --schema=ApiSchema`
 
+* [Using GraphQL, a Ruby on Rails introduction](https://medium.com/@UnicornAgency/you-should-be-using-graphql-a-ruby-introduction-9b1de3b001dd)
 * [**GraphQL and Performance in Rails**](https://blog.codeship.com/graphql-and-performance-in-rails/)
 * [Building a full on GraphQL app](https://medium.com/ryancollinsio/building-a-full-on-graphql-app-b261f6cfea93)
 * [How to Implement a GraphQL API in Rails](https://dzone.com/articles/how-to-implement-a-graphql-api-in-rails-via-codesh)
@@ -799,3 +800,4 @@ POST /graphql/eyBuawWNlIHsdfHj5IhoHJ0
 * [Using Apollo with ReactJS and GraphQL - SingaporeJS](https://www.youtube.com/watch?v=JCBVrE59yAI)
 * [Optimizing for API Consumers with GraphQL](https://www.youtube.com/watch?v=psPnEUAL08w)
 * [GraphQL at Facebook](https://www.youtube.com/watch?v=etax3aEe2dA)
+

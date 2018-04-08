@@ -12,17 +12,25 @@ In addition to `redis-store`, there's a new Redis gem called `readthis` which sh
 # Use for ActionCable also
 gem 'redis'
 
-# Better to use redis-rails than only redis-store
+# Provide :redis_store
+# May not be needed in Rails 5.2
 gem 'redis-rails'
 
-# Namespace is always good to have
+# Sidekiq recommend against using namespaces
 gem 'redis-namespace'
 
 # Or using the newer gem
 gem 'readthis'
 gem 'hiredis'
+
+# You do not need to do the require if using Rails 5.2 since
+# Rails will load redis/connection/hiredis for you
 gem 'redis', '~> 3.0', require: ['redis', 'redis/connection/hiredis']
 ```
+
+## Eviction
+
+* By default Redis doesn't expire key when it hits max memory.
 
 ## Persistence
 
@@ -56,6 +64,22 @@ REDIS_URL=redis://localhost:6379/2
 
 It is possible but not recommended to cache `nil`. `fetch()` treat `nil` values as a cache miss and re-generate/re-cache the value.
 
+You can monkey-patch to delete key if it is nil or an empty array.
+
+See https://github.com/rails/rails/issues/14075
+
+```ruby
+module CacheRealizer
+  def realize(key, *args, &block)
+    fetch(key, *args, &block).tap do |result|
+      delete(key) if result.nil?
+    end
+  end
+end
+
+Rails.cache.extend(CacheRealizer)
+```
+
 ## Rack::Cache
 
 If you are not using Nginx, you can get some of the same benefits using `Rack::Cache`, which is a reverse proxy cache implemented as a Rack middleware. It is not as fast as an optimized web server like Nginx.
@@ -79,6 +103,8 @@ Use dedicated instance for caching and Sidekiq. Do not mix them together. Use Do
 ## redis-cli
 
 ```
+▶ redis-cli --version
+
 // See config variables
 ▶ redis-cli INFO
 
@@ -92,8 +118,10 @@ Use dedicated instance for caching and Sidekiq. Do not mix them together. Use Do
 ```
 
 ```
+▶ redis-cli -n 2
+
 redis> CONFIG GET databases
-redis> 
+redis> KEYS *
 ```
 
 ## redis.conf
@@ -102,6 +130,17 @@ If you use Redis for Cache and Sidekiq, use 2 separate instances.
 
 ```
 maxmemory-policy noeviction
+```
+
+## Rails
+
+* [Pull request 31134 to add `:redis_cache_store`](https://github.com/rails/rails/pull/31134)
+
+```ruby
+config.cache_store = :redis_cache_store, { driver: :hiredis, url: 'redis://localhost:6379/0' }
+
+# Find all the keys
+Rails.cache.redis.keys
 ```
 
 ## Sidekiq

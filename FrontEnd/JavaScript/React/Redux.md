@@ -79,6 +79,22 @@ Many moving parts:
 
 * [Redux - Not Dead Yet!](http://blog.isquaredsoftware.com/2018/03/redux-not-dead-yet/)
 
+> I just want to also point out that sometimes you want to update the state of a component from within another, perhaps indirectly related, component. Think of an Add to Cart button somewhere on a product page being clicked which triggers the Shopping Cart component to expand and show the carts contents.
+>
+> From that perspective, managing UI state in Redux can be valuable (for now). I’m not saying that you should do this for all UI state changes, but it does have its place sometimes.
+>
+> Perhaps there is a way to do this currently using React component state, but that too gets messy. With the next release of React (16.3) comes the Context API, which will make UI state changes like this much cleaner to deal with outside of Redux.
+
+* Async middleware - Replaced by GraphQL
+* Provider - Replaced by Context API
+* Reducer - Pure function for immutable state update, can't be replaced
+* Action - CQRS, can't be replaced for undo/redo function
+
+
+## Replacement?
+
+
+
 ## Against Redux
 
 * [@JamieK on unstated](https://twitter.com/jamiebuilds/status/964675531533778944)
@@ -607,6 +623,7 @@ Function that manage application state by listening to particular actions.
 
 * [Structuring Reducers](https://github.com/markerikson/redux/blob/structuring-reducers-page/docs/recipes/StructuringReducers.md)
 * [Generating Reducers](http://redux.js.org/docs/recipes/ReducingBoilerplate.html#generating-reducers)
+* [`createReducer()` and `reduceReducers()`](https://medium.com/@avremelk/practical-redux-course-1aeb74bd01aa)
 
 Reducer is our action handler. It is where update of state happens. Reducer exists to specify how the state tree is **transformed** by actions. Reducer is a transformation function.
 

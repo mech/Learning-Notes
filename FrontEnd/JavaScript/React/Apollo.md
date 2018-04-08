@@ -31,6 +31,8 @@ const client = new ApolloClient({
 
 ### 2.0 Migration
 
+Use [Apollo Boost and React Apollo 2.1](https://alligator.io/react/graphql-apollo-boost/) - updated April 2018
+
 * [Real official 2.0 migration guide](https://www.apollographql.com/docs/react/2.0-migration.html)
 * [Some 2.0 migration guide](https://github.com/apollographql/apollo-client/blob/master/docs/source/2.0-migration.md)
 
@@ -221,6 +223,10 @@ fragment UserFields on User {
 ## Subscription
 
 * [Introducing GraphQL Subscriptions - Lee Byron](https://www.youtube.com/watch?v=bn8qsi8jVew)
+
+## Compose
+
+* [LoadMore with GraphQL and Apollo](http://blog.rstankov.com/loadmore-with-apollo/)
 
 ## @defer
 
