@@ -3,6 +3,7 @@
 * Networking - Acquire SocketPlane
 * Storage - Acquire Infinit
 * Swarm
+* LXC to runc
 
 ## Installation
 

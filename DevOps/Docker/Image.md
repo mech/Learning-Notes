@@ -3,6 +3,8 @@
 ```dockerfile
 FROM XXX
 
+LABEL maintainer="xxx@example.com"
+
 # To prevent: dpkg-preconfigure: unable to re-open stdin
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -30,4 +32,33 @@ Can be overridden by `docker run` command.
 * Can only ever have one `CMD`
 * Use Supervisor if you want to run multiple processes or commands
 
+## Multi-Stage Builds
+
+Multiple `FROM` instruction
+
+```dockerfile
+FROM node:latest AS storefront
+COPY react-app .
+RUN npm install
+RUN npm run build
+
+FROM maven:latest AS appserver
+COPY pom.xml .
+RUN mvn -B -f pom.xml -s ...
+
+FROM java:8 AS production
+WORKDIR /static
+COPY --from=storefront /usr/src/app/react-app/build .
+WORKDIR /app
+COPY --from=appserver /usr/src/target/snapshot.jar .
+```
+
+## Example
+
+/var/lib/docker
+
+```
+▶ docker image pull redis
+▶ docker image ls --digests
+```
 

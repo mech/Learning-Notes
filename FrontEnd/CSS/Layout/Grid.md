@@ -205,6 +205,7 @@ grid-template-columns: 15em 4.5fr minmax(5em, 3fr) 10%;
 * [Rachel Andrew's Grid by Example](https://gridbyexample.com)
 * [Jen Simmons's Labs](http://labs.jensimmons.com/)
 * [Codepen collection on CSS Grid Layout](https://codepen.io/collection/XRRJGq/)
+* [Art Directing For The Web With CSS Grid Template Areas](https://www.smashingmagazine.com/2018/04/art-directing-web-css-grid/)
 
 ## People
 

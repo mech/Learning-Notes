@@ -1,5 +1,6 @@
 # Postgres
 
+* [HOWTO](https://popsql.io/learn-sql/postgresql/)
 * [The Internals of PostgreSQL](http://www.interdb.jp/pg/)
 * [PostgreSQL Exercises](https://pgexercises.com/)
 * [Our Postgres Infrastructure](http://blog.honeybadger.io/our-postgres-infrastructure/)
@@ -14,6 +15,7 @@
 * [Debugging complex PostgreSQL queries with **pgdebug**](http://korban.net/posts/postgres/2017-09-18-debugging-complex-postgres-queries-with-pgdebug/)
 * [The case against ORMs](http://korban.net/posts/postgres/2017-11-02-the-case-against-orms/)
 * [Postgres Hidden Gems](http://www.craigkerstiens.com/2018/01/31/postgres-hidden-gems/)
+* [My Favorite PostgreSQL Queries and Why They Matter](https://severalnines.com/blog/my-favorite-postgresql-queries-and-why-they-matter)
 
 ```
 ▶ \x auto
@@ -42,6 +44,7 @@ SELECT * from users WHERE id = ANY($1::int[])
 ## Rollup
 
 * [Efficient rollup tables with HyperLogLog in Postgres](https://www.citusdata.com/blog/2017/06/30/efficient-rollup-with-hyperloglog-on-postgres/)
+* [Building Real Time Analytics APIs at Scale](https://blog.algolia.com/building-real-time-analytics-apis/)
 
 ## Time-Series
 
@@ -259,6 +262,10 @@ EXCLUDE USING gist (
 ## Compression
 
 * TOAST - Automatic Table Compression
+
+## Vacuum
+
+* [PostgreSQL Bloatbusters](http://blog.dataegret.com/2018/03/postgresql-bloatbusters.html)
 
 ## People
 

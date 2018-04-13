@@ -4,6 +4,9 @@
 * [Building Conclave: a decentralized, real time, collaborative text editor](https://hackernoon.com/building-conclave-a-decentralized-real-time-collaborative-text-editor-a6ab438fe79f)
 * [sockette - tiny (344 bytes) wrapper around WebSocket](https://github.com/lukeed/sockette)
 * [turbo-ws](https://github.com/hugmanrique/turbo-ws)
+* [hypermerge](https://github.com/automerge/hypermerge)
+* [hypermerge - chat example](https://github.com/automerge/hypermerge/tree/master/examples/chat)
+* [Pixelpusher: Real-time peer-to-peer collaboration with React](https://medium.com/@pvh/pixelpusher-real-time-peer-to-peer-collaboration-with-react-7c7bc8ecbf74)
 
 ## Operational Transformation
 

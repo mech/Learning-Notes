@@ -241,6 +241,7 @@ new IntersectionObserver(callback, options)
 * [scroll-into-view](https://github.com/KoryNunn/scroll-into-view)
 * [Scrollytelling with IntersectionObserver](https://github.com/russellgoldenberg/scrollama)
 * [Infinite scroll techniques in React](https://blog.logrocket.com/infinite-scroll-techniques-in-react-adcfd7ff32bd)
+* [Glide.js - slider and carousel](https://glidejs.com/docs/)
 
 ## Date Picker and Calendar
 

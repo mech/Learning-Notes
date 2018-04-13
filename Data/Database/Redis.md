@@ -31,14 +31,33 @@ gem 'redis', '~> 3.0', require: ['redis', 'redis/connection/hiredis']
 ## Eviction
 
 * By default Redis doesn't expire key when it hits max memory.
+* Default policy for Azure Redis is **volitile-lru**, which means that only keys that have an expiration value will be considered for eviction. If no keys have an expiration value, then the system won't evict any keys and clients will get out of memory.
+* You may want to consider **allkeys-lru**
+* So to be safe, always set expiration value
 
 ## Persistence
 
+* Redis is an In-Memory data store. Data loss can occur.
+* Redis provides 3: RDB, AOF and both
 * [Doc on persistence](https://redis.io/topics/persistence)
+* [Setting up Redis for Production Environment](https://blog.sensible.io/2013/08/20/setting-up-redis-for-production-environment.html)
 
 ```
+# RDB - Good for caching
+# /var/lib/redis/dump.rdb
+# Dump every 15 min = 900 seconds if at least 1 key changed
+save 900 1
+
+# AOF (Append Only File) - Good for Sidekiq background job
+# /var/lib/redis/appendonly.aof
+# Write to the log for all incoming write operations
 appendonly yes
+
+# Slow, but safest!
 appendfsync always
+
+# Compromise
+appendfsync everysec
 ```
 
 Run different Redis instances for Cache and Unified Log.
@@ -126,6 +145,8 @@ redis> KEYS *
 
 ## redis.conf
 
+* [Best Practices for Azure Redis](https://gist.github.com/JonCole/925630df72be1351b21440625ff2671f)
+
 If you use Redis for Cache and Sidekiq, use 2 separate instances.
 
 ```
@@ -146,4 +167,11 @@ Rails.cache.redis.keys
 ## Sidekiq
 
 * [What is Sidekiq server and client?](https://github.com/mperham/sidekiq/issues/638)
+
+## Monitoring
+
+* [Healthcheck?](https://github.com/docker-library/healthcheck/blob/master/redis/docker-healthcheck)
+* [redis-stat](https://github.com/junegunn/redis-stat)
+* [How to Monitor Redis](https://blog.serverdensity.com/monitor-redis/)
+
 
