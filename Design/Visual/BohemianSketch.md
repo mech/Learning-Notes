@@ -14,6 +14,11 @@
 * [Designing Contrast](http://mds.is/designing-contrast/)
 * [Dynamic Icons in Sketch](https://www.youtube.com/watch?v=1rJ1WyQ6lU0)
 * [Hacking Tables in Sketch App](https://medium.com/sketch-app-sources/hacking-tables-in-sketch-app-745e9b961992)
+* [Fix for QuickLook not working](https://sketchtalk.io/discussion/2307/mac-finder-preview-quick-look-thumbnail-not-showing-up)
+
+```
+▶ sudo update_dyld_shared_cache -force
+```
 
 ## Shortcuts
 

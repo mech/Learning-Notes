@@ -112,6 +112,7 @@ Use dedicated instance for caching and Sidekiq. Do not mix them together. Use Do
 * [The Complete Guide to Rails Caching](https://www.speedshop.co/2015/07/15/the-complete-guide-to-rails-caching.html)
 * [Optimizing Redis Usage For Caching](http://sorentwo.com/2015/07/27/optimizing-redis-usage-for-caching.html)
 * [Caching GraphQL queries with GraphQL-ruby and Rails](http://mgiroux.me/2016/graphql-query-caching-with-rails/)
+* [Using Redis as an LRU cache](https://redis.io/topics/lru-cache)
 
 ---
 

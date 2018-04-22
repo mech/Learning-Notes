@@ -98,7 +98,7 @@ Many moving parts:
 ## Against Redux
 
 * [@JamieK on unstated](https://twitter.com/jamiebuilds/status/964675531533778944)
-* [unstated](https://github.com/jamiebuilds/unstated)
+* [**unstated**](https://github.com/jamiebuilds/unstated)
 * [**How to manage or eliminate React state without Redux**](http://monicalent.com/blog/2017/07/23/manage-state-in-react/)
 * [Repatch - the simplified Redux](https://community.risingstack.com/repatch-the-simplified-redux/)
 * [Simplifying Redux Architecture](https://medium.com/@TuckerConnelly/simplifying-redux-architecture-cd50426c941a)
@@ -883,7 +883,7 @@ function () {
 }
 ```
 
-## Selectors - State Transformation
+## Selectors - State Transformation - mapStateToProps
 
 > Selectors work well with `getState` inside of a thunk
 

@@ -36,6 +36,22 @@ Use [Apollo Boost and React Apollo 2.1](https://alligator.io/react/graphql-apoll
 * [Real official 2.0 migration guide](https://www.apollographql.com/docs/react/2.0-migration.html)
 * [Some 2.0 migration guide](https://github.com/apollographql/apollo-client/blob/master/docs/source/2.0-migration.md)
 
+```js
+import ApolloClient from 'apollo-boost'
+
+const client = new ApolloClient({
+  uri: 'https://',
+  request: operation => {
+    operation.setContext(context => ({
+      headers: {
+        ...context.headers,
+        authorization: localStorage.getItem('token')
+      }
+    }))
+  }
+})
+```
+
 ## <Query>
 
 * [Tutorial: Render Props in React Apollo 2.1](https://blog.graph.cool/tutorial-render-props-in-react-apollo-2-1-199e9e2bd01e)

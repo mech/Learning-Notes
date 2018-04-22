@@ -1,6 +1,7 @@
 # Kafka
 
 * [Handling user-initiated actions in an asynchronous, message-based architecture](https://www.oreilly.com/ideas/handling-user-initiated-actions-in-an-asynchronous-message-based-architecture)
+* [Turning the database inside-out with Apache Samza](https://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/)
 
 > To ensure that the new system worked end-to-end, we enqueued heartbeat canaries for every Kafka partition every minute.
 

@@ -255,6 +255,8 @@ new IntersectionObserver(callback, options)
 * [calreact](https://github.com/learnetto/calreact)
 * [spectre](https://picturepan2.github.io/spectre/experimentals.html#calendars)
 * [react-date-picker](https://github.com/wojtekmaj/react-date-picker)
+* [Date Range Picker](http://www.daterangepicker.com/)
+* [A hunt for the perfect date picker UI](https://uxdesign.cc/date-picker-design-5c5ef8f35286)
 
 ---
 

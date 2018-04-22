@@ -177,6 +177,7 @@ Be careful when passing props as `null`. Any default prop value will not be used
 
 > Visualizing all the discrete states an application can be in will make your design systems better.
 
+* [unstated - alternative to Redux](https://github.com/jamiebuilds/unstated)
 * [Where to Hold React Component Data: state, store, static, and this](https://medium.freecodecamp.org/where-do-i-belong-a-guide-to-saving-react-component-data-in-state-store-static-and-this-c49b335e2a00)
 * [Why is `setState` asynchronous?](https://github.com/facebook/react/issues/11527)
 * [Treat state as immutable](https://medium.freecodecamp.org/handling-state-in-react-four-immutable-approaches-to-consider-d1f5c00249d5)
@@ -657,4 +658,18 @@ export Menu
 * Fullstack React (DONE)
 * The Missing Form Handbook of React (DONE)
 * [Advanced React.js (DONE)](https://app.pluralsight.com/library/courses/reactjs-advanced/table-of-contents)
+
+## Designing the API
+
+> When adding to a design system, it's important to prioritise API stability over any specific implementation, since this is what gives you the ability to ship early and iterate later.
+>
+> The real challenge—most designers don't work this way, or even understand what it means. - [Mark Dalgleish](https://twitter.com/markdalgleish/status/967545155719852033)
+
+```js
+<Icon name="payslip" size={20} />
+
+<Button primary icon="copy">Copy token to clipboard</Button>
+
+<Switch onToggle={value => this.toggle()} />
+```
 

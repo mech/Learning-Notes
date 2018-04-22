@@ -1,5 +1,6 @@
 # Models
 
+* [rails-patterns](https://github.com/Selleo/pattern)
 * [**Rails Database Practices**](http://blog.carbonfive.com/2016/11/16/rails-database-best-practices/)
 * [7 Design Patterns to Refactor MVC Components in Rails](https://www.sitepoint.com/7-design-patterns-to-refactor-mvc-components-in-rails/)
 * [7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
@@ -90,6 +91,7 @@ end
 
 * [To join or not to join? An act of #includes](https://goiabada.blog/to-join-or-not-to-join-an-act-of-includes-f6728fcefea3)
 * [Active Record's queries tricks](https://medium.com/@apneadiving/active-records-queries-tricks-2546181a98dd)
+* [Essential RubyOnRails patterns — part 2: Query Objects](https://medium.com/@blazejkosmowski/essential-rubyonrails-patterns-part-2-query-objects-4b253f4f4539)
 
 ```ruby
 # Bad
@@ -177,6 +179,7 @@ It would be a bit easier if we use the **repository pattern** and at least we kn
 ## Service Object
 
 * [Does my Rails app need a service layer?](https://blog.carbonfive.com/2012/01/10/does-my-rails-app-need-a-service-layer/)
+* [Essential RubyOnRails patterns — part 1: Service Objects](https://medium.com/selleo/essential-rubyonrails-patterns-part-1-service-objects-1af9f9573ca1)
 
 A service is an ACTION, not a thing. Instead of forcing the operation into an existing object, we should encapsulate it in a separate, stateless service.
 
@@ -247,6 +250,7 @@ end
 * [ActiveModel Form Objects](https://robots.thoughtbot.com/activemodel-form-objects)
 * [**Reform**](https://github.com/trailblazer/reform)
 * [Things I wish ActiveRecord had after using Ecto](https://infinum.co/the-capsized-eight/things-i-wish-active-record-had-after-using-ecto)
+* [How to keep your controllers thin with Form Objects](https://ducktypelabs.com/how-to-keep-your-controllers-thin-with-form-objects/)
 
 Encapsulate logic related to validating and persisting data.
 

@@ -1,5 +1,6 @@
 # Grid
 
+* [Everything You Know About Web Design Just Changed | Jen Simmons](https://hookedoncode.com/2018/04/everything-you-know-about-web-design-just-changed-jen-simmons/)
 * [Mozilla CSS Grid Playground](https://mozilladevelopers.github.io/playground/css-grid)
 * [Wes Bos's free CSS Grid course](https://cssgrid.io/)
 * [11 Things I Learned Reading the CSS Grid Specification](https://medium.freecodecamp.org/11-things-i-learned-reading-the-css-grid-specification-fb3983aa5e0)
@@ -189,6 +190,9 @@ grid-template-rows: repeat(2, minmax(80px, auto));
 
 ## minmax() Function
 
+* Can shrink down to their min
+* Can grow but only until their max
+
 ```css
 /* The first row has a min height of 80px but can grow if required by its content */
 grid-template-rows: minmax(80px, auto);
@@ -222,4 +226,5 @@ grid-template-columns: 15em 4.5fr minmax(5em, 3fr) 10%;
 * [Start Using CSS Grid Layouts Today](https://youtu.be/tjHOLtouElA?list=PLBzScQzZ83I_n5kvxmUaRNZvc_vsCuEQD)
 * [Why I love CSS Grid - by Jen Simmons](https://www.youtube.com/watch?v=tY-MHUsG6ls)
 * [dotCSS 2017 - Benjamin De Cock - CSS Grid in Production](https://www.youtube.com/watch?v=_BCiiE31D5M)
+* [Jen Simmons's YouTube channel](https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag/videos)
 

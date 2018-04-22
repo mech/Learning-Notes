@@ -182,6 +182,7 @@ http://styleguides.io/examples.html
 * [GitHub's Primer Storybook](https://primer.github.io/storybook/)
 * [Pure CSS](https://purecss.io/)
 * [Polythene](https://github.com/ArthurClemens/polythene)
+* [Cosmos by Auth0](https://github.com/auth0/cosmos)
 
 **Some forms examples**
 
@@ -284,4 +285,5 @@ Brand Identity -> Components -> System as a whole
 * [Thingness - Mark Boulton](https://vimeo.com/163510673)
 * [The Unbearable Likeness of Web Design](https://www.youtube.com/watch?v=8hK-JQlK89c)
 * [The GE Design System and Thoughts about Craft at Scale](https://vimeo.com/album/3484349/video/132580829)
+* [We Need To Talk About Our Frontend Workflow - ReactFest](https://www.youtube.com/watch?v=bLgZwFRYTJ4)
 

@@ -71,3 +71,7 @@ render() {
 }
 ```
 
+## Images
+
+`object-fit: cover`
+
