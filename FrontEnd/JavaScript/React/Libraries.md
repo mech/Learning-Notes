@@ -245,6 +245,7 @@ new IntersectionObserver(callback, options)
 
 ## Date Picker and Calendar
 
+* [Day.js](https://github.com/xx45/dayjs)
 * [InfiniteGrid's Calendar example](https://codepen.io/pen/)
 * [Making input type=date complicated](https://medium.com/samsung-internet-dev/making-input-type-date-complicated-a544fd27c45a)
 * [Designing The Perfect Date And Time Picker](https://www.smashingmagazine.com/2017/07/designing-perfect-date-time-picker/)

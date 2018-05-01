@@ -2,6 +2,7 @@
 
 * [CSS Utility Classes and "Separation of Concerns"](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/)
 * [Specificity Visualizer](https://francescoschwarz.de/en/blog/introducing-the-specificity-visualizer/)
+* [Let’s Define Exactly What Atomic CSS is](https://css-tricks.com/lets-define-exactly-atomic-css/)
 
 A lot of semantic CSS class names have a lot in common from a design perspective.
 
@@ -40,3 +41,4 @@ It turns out some of the cards on our site don't have rounded corners, but this 
   flex-basis: 30rem;
 }
 ```
+

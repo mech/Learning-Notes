@@ -71,6 +71,7 @@ Grid is different from all the layout techniques we've used in the past because 
 * [Grid "fallbacks" and overrides](https://rachelandrew.co.uk/css/cheatsheets/grid-fallbacks)
 * [Basic grid layout with fallbacks using feature queries](https://www.chenhuijing.com/blog/basic-grid-with-fallbacks/)
 * [Progressively Enhancing CSS Layout: From Floats To Flexbox To Grid](https://www.smashingmagazine.com/2017/07/enhancing-css-layout-floats-flexbox-grid/)
+* [Flexbox fallbacks for popular UI solutions that use CSS Grid](http://www.gridtoflex.com/)
 
 IE11 do not have `@supports`, so we can't use CSS Feature Queries even though IE11 has some Grid features.
 
@@ -128,6 +129,8 @@ grid-template-columns: 15em 1fr 10%;
 ```
 
 ## Grid Items
+
+When a grid is defined on a given element, only **direct children** of that element become grid items.
 
 Bulk of the work can be done at the Grid Container. Items will just do their automatic layout thing (flow into the cells of grid automatically). But you can have tight control over the placement of each Grid Item also.
 

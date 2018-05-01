@@ -545,6 +545,7 @@ const MyComponent = () => {
 
 > Ultimately server side rendering is very hard to add in a meaningful way without also taking opinionated decisions about routing and data fetching. We don't intend to make such decisions at this time so Next.js indeed seems like a better match for you. - Dan Abramov on CRA position
 
+* [An in-depth guide to server rendering with React and React Router](https://medium.freecodecamp.org/server-rendering-with-react-and-react-router-e0b7ba37653f)
 * [Server Rendering with React and React Router](https://tylermcginnis.com/react-router-server-rendering/)
 * [SSR with Create React App v2](https://medium.com/@benlu/ssr-with-create-react-app-v2-1b8b520681d9)
 * [Server side rendering with router v4 & redux](http://blog.revathskumar.com/2017/07/reactjs-server-side-rendering-with-router-v4-redux.html)

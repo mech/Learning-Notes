@@ -693,6 +693,8 @@ end
 
 ## Resolvers
 
+Resolvers are like REST controller. They resolve your data fields. It is way more **composable** than controller which is more isolated and one time only. Resolvers do 1 thing, but they are aware of things that happen before them and can set things up after them.
+
 * Resolve functions are like little routers.
 * Each field in the query corresponds to a resolve() function
 * ALL resolvers are called. Query is traversed field by field, executing "resolves" for each field.
@@ -704,6 +706,13 @@ Server developer can focus on **describing the data available** rather than impl
 The root query resolver will return a model for use on the next level of resolver and turtle all the way down.
 
 There is a `resolve()` for every field, but this does not mean that an individual database query is required to fetch each field.
+
+```javascript
+const project = async (_, args, ctx, info) => {
+  const project = await ctx.models.project.findById(args.input.id)
+  return project
+}
+```
 
 ## Subscription
 
@@ -804,4 +813,5 @@ POST /graphql/eyBuawWNlIHsdfHj5IhoHJ0
 * [GraphQL at Facebook](https://www.youtube.com/watch?v=etax3aEe2dA)
 * [State Management in a GraphQL Era](https://www.youtube.com/watch?v=s-3k7O5rSFY)
 * [GraphQL at Shopify](https://www.youtube.com/watch?v=Wlu_PWCjc6Y)
+* [Getting Started with GraphQL on Shopify](https://www.youtube.com/watch?v=S4hTq_3yQrk)
 

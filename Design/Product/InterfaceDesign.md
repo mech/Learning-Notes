@@ -1,5 +1,7 @@
 # Interface Design
 
+> What UI must do? - Give a lot of context on what things is happening. See progress. Qualitative measurement. See [Basecamp Hill Chart...](https://www.youtube.com/watch?v=JwrI6rxELFw&t=15s)
+
 > The choice and execution of the patterns and their unique combination are influenced by a product’s purpose, ethos and design principles.
 
 ---

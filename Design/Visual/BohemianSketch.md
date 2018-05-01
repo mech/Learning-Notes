@@ -81,6 +81,7 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 * [This is, without a doubt, the coolest Sketch technique you'll see all day](https://medium.com/ux-power-tools/this-is-without-a-doubt-the-coolest-sketch-technique-youll-see-all-day-ddefa65ea959#.c74pn3lwb)
 * [Brand AI](https://brand.ai/)
 * [Creating with a Design System in Sketch: Part 1](https://medium.com/sketch-app-sources/creating-with-a-design-system-in-sketch-part-one-tutorial-5116e36213f9)
+* [Using Sketch Libraries and primitives to build an even better system of buttons](https://medium.com/sketch-app-sources/using-sketch-libraries-and-primitives-to-build-an-even-better-system-of-buttons-ecc8f25486ac)
 
 # Sketch Plugins
 

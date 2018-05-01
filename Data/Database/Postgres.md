@@ -267,6 +267,10 @@ EXCLUDE USING gist (
 
 * [PostgreSQL Bloatbusters](http://blog.dataegret.com/2018/03/postgresql-bloatbusters.html)
 
+## Monitoring
+
+* [Key metrics for PostgreSQL monitoring](https://www.datadoghq.com/blog/postgresql-monitoring/)
+
 ## People
 
 * [Craig Kerstiens](http://www.craigkerstiens.com/)

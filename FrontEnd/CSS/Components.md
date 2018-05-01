@@ -16,6 +16,7 @@
 ## Button
 
 * [The ins and outs of input](https://www.youtube.com/watch?v=T1OwKW3tokE)
+* [How complex can a button be](https://medium.com/sketch-app-sources/using-sketch-libraries-and-primitives-to-build-an-even-better-system-of-buttons-ecc8f25486ac)
 
 `button` don't work as flex-container. Use a wrapper element that can be a flex-container like `div` or `span` directly inside of `button`.
 
@@ -60,3 +61,9 @@ renderTabContent(isOverview) {
   return _.isFunction(tabContent) ? tabContent() : tabContent
 }
 ```
+
+## Progress Bar
+
+* [Animating Progress](https://snook.ca/archives/html_and_css/animating-progress)
+
+

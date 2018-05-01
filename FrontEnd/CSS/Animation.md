@@ -5,12 +5,20 @@
 * [Creating Usability with Motion: The UX in Motion Manifesto](https://medium.com/@ux_in_motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc)
 * [How to create fancy revealing animations with these simple CSS tricks](https://hackernoon.com/how-to-create-fancy-revealing-animations-with-these-simple-css-tricks-5b34614ae69a)
 * [Anime.js - Greensock may be too heavy](http://animejs.com/)
+* [Native-Like Animations for Page Transitions on the Web](https://css-tricks.com/native-like-animations-for-page-transitions-on-the-web/)
 
 > The reason why I believe motion is so crucial isn't just because it looks nice, but because it changes the way we approach design.
 > 
 > Rather than thinking in screens, we are now **thinking in stories**. Stories explaining how those screens and the elements in them relate to one another. It's this simple thought, this simple idea really, that already elevates the quality of our interfaces considerably.
 > 
 > But while motion is all about timing, we rarely consider at which point we should actually start incorporating it into our processes.
+
+## Page Transition
+
+* [How JavaScript works: Under the hood of CSS and JS animations + how to optimize their performance](https://blog.sessionstack.com/how-javascript-works-under-the-hood-of-css-and-js-animations-how-to-optimize-their-performance-db0e79586216)
+* [How To Add Page Transitions with CSS and smoothState.js](https://css-tricks.com/add-page-transitions-css-smoothstate-js/)
+* [FLIP.js](https://github.com/googlearchive/flipjs)
+* [react-router-transition](https://github.com/maisano/react-router-transition)
 
 ## UI Thread and Jank
 

@@ -134,6 +134,10 @@ A design system isn't set in stone. It should evolve with the product and always
 
 ## Design Tokens
 
+UI Primitives - a term made popular by [Benjamin Wilkins, Airbnb](https://www.youtube.com/watch?v=z5XxgxBz3Fo) and [Dan Eden](https://daneden.me/2017/07/12/a-design-system-grammar/)
+
+Design tokens are the primitives.
+
 * [CenturyLink](http://assets.ctl.io/cyclops/1.8.2/tokens.html)
 * [Salesforce Design Tokens](https://www.lightningdesignsystem.com/design-tokens/)
 
@@ -286,4 +290,5 @@ Brand Identity -> Components -> System as a whole
 * [The Unbearable Likeness of Web Design](https://www.youtube.com/watch?v=8hK-JQlK89c)
 * [The GE Design System and Thoughts about Craft at Scale](https://vimeo.com/album/3484349/video/132580829)
 * [We Need To Talk About Our Frontend Workflow - ReactFest](https://www.youtube.com/watch?v=bLgZwFRYTJ4)
+* [Thinking in Symbols for Universal Design - Benjamin Wilkins, Airbnb](https://www.youtube.com/watch?v=z5XxgxBz3Fo)
 

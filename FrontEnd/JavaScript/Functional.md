@@ -1,5 +1,7 @@
 # Functional JavaScript
 
+* [Two Years of Functional Programming in JavaScript: Lessons Learned](https://hackernoon.com/two-years-of-functional-programming-in-javascript-lessons-learned-1851667c726)
+
 In functional programs, we should use functions over values wherever possible:
 
 ```js
@@ -116,3 +118,4 @@ const filter = (collection, fn) => {
 A functor is something that can be mapped over. It's a container that is "mappable".
 
 Array and Promises are functors. Interesting `.then()` obeys the functor laws.
+

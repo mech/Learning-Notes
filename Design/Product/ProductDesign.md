@@ -90,6 +90,9 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 
 > If you're not throwing things away you aren't replacing them with anything better.
 
+---
+
+> If Mozart was concerned about the approval of others for every piece he wrote, he wouldn’t have written so many. **His perfectionism would have created procrastination**.
 
 ---
 
@@ -242,4 +245,5 @@ But some metaphors mean different things in different cultures. In United States
 
 * [Debbie Millman, Design Matter](https://transition.percolate.com/debbie-millman-design-technology/)
 * [Bret Victor - Inventing on Principle](https://vimeo.com/36579366)
+* [Getting Real - Basecamp - How We Work](https://www.youtube.com/watch?v=pj2_ABFz9Tg)
 
