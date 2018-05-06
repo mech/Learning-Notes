@@ -19,6 +19,7 @@ https://dollarshaveclub.github.io/stickybits/
 * [reflective-bind](https://github.com/flexport/reflective-bind)
 * [insane - Lean and configurable whitelist-oriented HTML sanitizer](https://www.npmjs.com/package/insane)
 * [passw0rd](https://github.com/djadmin/passw0rd)
+* [ow - Function argument validation for humans](https://github.com/sindresorhus/ow)
 
 https://github.com/jaredpalmer/react-fns
 
@@ -123,6 +124,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [Polythene](https://github.com/ArthurClemens/polythene)
 * [Pinterest Gestalt](https://pinterest.github.io)
 * [Mineral UI](https://mineral-ui.com/)
+* [Zendesk Garden](https://garden.zendesk.com/react-components/#!/Button/5)
 
 ## Blank Slate
 
@@ -138,6 +140,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [Rendering PDFs with React Components](https://themeteorchef.com/tutorials/rendering-pdfs-with-react-components)
 * [react-pdf - Display PDF using pdf.js with worker](https://github.com/wojtekmaj/react-pdf)
 * [react-pdf](https://github.com/diegomura/react-pdf)
+* [ReLaXed - Create PDF documents using web technologies](https://github.com/RelaxedJS/ReLaXed)
 
 ## Table (Filtering, Pagination)
 
@@ -392,6 +395,7 @@ class Tabs extend Component {
 * [react-beautiful-dnd by Atlassian](https://github.com/atlassian/react-beautiful-dnd)
 * [Dragging React performance forward](https://medium.com/@alexandereardon/dragging-react-performance-forward-688b30d40a33)
 * [Dragon Drop - Accessible drag and drop](https://github.com/schne324/dragon-drop)
+* [selection.js - making visual DOM Selections](https://simonwep.github.io/selection/)
 
 ## D3 and Charts
 

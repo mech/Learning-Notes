@@ -1,5 +1,7 @@
 # Kafka
 
+> Graphical User Interface has been doing this for a long time. Instead of a TextInput know all your code, it will only generate event for you to handle the logic.
+
 * [Handling user-initiated actions in an asynchronous, message-based architecture](https://www.oreilly.com/ideas/handling-user-initiated-actions-in-an-asynchronous-message-based-architecture)
 * [Turning the database inside-out with Apache Samza](https://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/)
 
@@ -24,6 +26,9 @@ Kafka does not do data processing or transforming. It basically is a logger to p
 ---
 
 * [Turning the database inside out with Apache Samza - Martin Kleppmann](https://www.youtube.com/watch?v=fU9hR3kiOK0)
+
+## Change Data Capture
+
 
 ## Data Pipelines
 
@@ -95,6 +100,7 @@ adduser: Warning: The home directory `/var/lib/zookeeper' does not belong to the
 ## Plan your Partitions
 
 * Or else some of your disk will be full and others barely used
+* Ordering is also based on partition
 
 ## Maintain your Zookeeper
 
@@ -141,6 +147,9 @@ export KAFKA_JVM_PERFORMANCE_OPTS="-server -XX:+UseG1GC
 
 Since a topic can have many partitions, each ordered by their own, consumers also need to be inside its own Consumer Group to receive messages from different subset of the partitions.
 
+* Consumer Group is how we scale out consumer-side
+* Kafka will do the job of load balancing consumption across Consumer Group
+
 ## Database Locking
 
 One of Kafka's main job is to alleviate database locking when you stream too much data too frequently to your main database.
@@ -154,6 +163,7 @@ Decouple producers and consumers.
 * Allow consumer to maintain isolation and autonomy
 * Allow consumer to read message at their own pace
 * Retention period is 168 hours or 7 days and is configurable
+* A given topic will have the same offset ID across their partitions?
 
 ## Log Compaction
 
@@ -173,13 +183,17 @@ replica.fetch.max.bytes
 * Topic is broken down into partitions (like shards)
 * A partition is stored on a single disk. It can't be split into multiple disks.
 * Each partition can have multiple replicas, one of which is a designated leader
-* Kafka will make sure each replica for a partition is on a separate broker
-* Each partition has their own offset
+* Kafka will make sure each replica for a partition is on a separate broker (Node)
+* Each partition has their own offset. So be mindful of sequential operations, but really you should design your logic that is independent of ordering and idempotent.
 
 ## Duplicates
 
 * Kafka do not do de-duplication, so you need another data store with validation
 * [Real-time deduping at scale](http://eng.tapjoy.com/blog-list/real-time-deduping-at-scale)
+
+## Events vs Commands
+
+
 
 ## Case Studies
 
@@ -193,4 +207,6 @@ replica.fetch.max.bytes
 ## Videos
 
 * [Processing Streaming Data at a Large Scale with Kafka](https://www.youtube.com/watch?v=-NMDqqW1uCE)
+* [The Many Meanings of Event-Driven Architecture](https://www.youtube.com/watch?v=STKCRSUsyP0)
+* [Introduction to Apache Kafka by James Ward](https://www.youtube.com/watch?v=UEg40Te8pnE)
 

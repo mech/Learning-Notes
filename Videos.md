@@ -16,6 +16,7 @@ document.getElementsByTagName('video')[0].playbackRate = 2;
 
 * [MelbCSS](https://www.youtube.com/channel/UCIpyTmd8_cCk26yzBaTIhUQ/videos)
 * [Web Conferences Amsterdam](https://vimeo.com/webconferences)
+* [You Gotta Love Frontend](https://www.youtube.com/channel/UCU-fOxx_kT5OARG0KiksiCA/videos)
 
 ## JavaScript
 

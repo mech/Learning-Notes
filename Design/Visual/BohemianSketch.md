@@ -68,6 +68,7 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 * [Nested Button Symbols: The Complete Guide](https://blog.prototypr.io/nested-button-symbols-the-complete-guide-c0c91be46952)
 * [Nested Symbols & Auto-Updating Styleguides](http://symbols.janlosert.com/)
 * [Sketch Nested Symbols: How to make them Custom?](https://themindstudios.com/blog/sketch-nested-symbols-how-to-make-them-custom/)
+* [Using Sketch's Symbols as Links for Big Projects](https://medium.com/sketch-app-sources/sketch-symbol-links-ea4c32f63a16)
 
 ## Color Symbols
 

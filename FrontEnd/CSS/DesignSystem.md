@@ -20,6 +20,7 @@ Maintain a visual language, UI elements, components and page types to realize su
 
 Living documentation based on executable examples.
 
+* [The Language of Modular Design](https://alistapart.com/article/language-of-modular-design)
 * [Documenting Components](https://medium.com/eightshapes-llc/documenting-components-9fe59b80c015)
 * [Resources, links, references and articles on Design Systems](https://uxdesign.cc/resources-links-references-and-articles-on-design-systems-e8ab898e0ab5)
 * [**Design System Handbook**](https://www.designbetter.co/design-systems-handbook/introducing-design-systems)
@@ -89,6 +90,13 @@ Living documentation based on executable examples.
 > Designing the components in isolation often feels like a surefire recipe for a design that is generic, flat or lacking in a strong point of view. A strong design is informed by a view of the big picture, an understanding of the context, and strong art direction — even at the cost of consistency or time. - [Taking pattern libraries to the next level](https://www.smashingmagazine.com/taking-pattern-libraries-next-level/)
 
 Unfortunately, creating a style guide is not always easy in web application because often the concerns are not well defined, and some elements get duplicated to achieve small variations in requirements.
+
+---
+
+> We should start with language, not interfaces - [Alla Kholmatova](https://alistapart.com/article/language-of-modular-design)
+> A successful design system starts with CONTENT and PEOPLE
+
+## Scenario-Driven, not Layout-Driven
 
 ## Screens, Reusable Components, States and Data
 
@@ -291,4 +299,6 @@ Brand Identity -> Components -> System as a whole
 * [The GE Design System and Thoughts about Craft at Scale](https://vimeo.com/album/3484349/video/132580829)
 * [We Need To Talk About Our Frontend Workflow - ReactFest](https://www.youtube.com/watch?v=bLgZwFRYTJ4)
 * [Thinking in Symbols for Universal Design - Benjamin Wilkins, Airbnb](https://www.youtube.com/watch?v=z5XxgxBz3Fo)
+* [Vox Media - Is your design flexible? by Yesenia Perez](https://www.youtube.com/watch?v=qy4TgWvqEWE)
+* [Building Flexible Design Systems - The Design & Content Conference](https://vimeo.com/228908312)
 

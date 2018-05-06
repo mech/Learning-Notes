@@ -1,6 +1,7 @@
 # Fish
 
 * [fish-shell cookbook](https://github.com/JorgeBucaran/fish-shell-cookbook)
+* [bat - like cat](https://github.com/sharkdp/bat)
 
 ## Config
 

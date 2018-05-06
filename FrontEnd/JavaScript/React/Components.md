@@ -488,6 +488,8 @@ Button.propTypes = {
 
 ### Function as Child (vs HOC)
 
+> We in charge in states and you in charge of renders
+
 Also known as Render Prop!
 
 > I should clarify at this point that "children as a function" is the exact same concept, just using the `children` prop instead of `render`.

@@ -11,6 +11,7 @@ https://github.com/Chalarangelo/30-seconds-of-code
 * [JavaScript Object Explorer - Find the object method you need without digging through the docs](https://sdras.github.io/object-explorer/)
 * [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
 * [Interview questions?](https://medium.freecodecamp.org/the-definitive-javascript-handbook-for-a-developer-interview-44ffc6aeb54e)
+* [A guide to JavaScript Regular Expressions](https://flaviocopes.com/javascript-regular-expressions/)
 
 ---
 
@@ -376,6 +377,10 @@ Mimic named arguments pattern somehow.
 ```js
 // It is like accessing the 'abc'.length property
 const { length: len } = 'abc' // len=3
+
+// Object destructuring for array items
+const csv = '1997,John Doe,US,john@doe.com,New York'
+const { 2: country, 4: state } = csv.split(',')
 ```
 
 Another benefit of destructuring object is immutability:
@@ -497,6 +502,9 @@ if (obj.props) {} // could be 0, "", null...
 
 // if you mean this:
 if (obj.props !== undefined) {} // Explicit and faster
+
+// Remove duplicate items from an array using Set with spread operator
+[...new Set([1, 1, 1, 1, 22, 3, 2, 2])]
 ```
 
 ## History

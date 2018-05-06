@@ -1,5 +1,6 @@
 # Webpack
 
+* [An Easy to Understand Webpack 4+ Configuration File with Comments](https://medium.com/@timurcatakli/an-easy-to-understand-webpack-4-configuration-file-with-comments-6213882e9edf)
 * [Use lodash-es for tree shaking](https://www.npmjs.com/package/lodash-es)
 * [Smaller Lodash bundles with Webpack and Babel](https://nolanlawson.com/2018/03/20/smaller-lodash-bundles-with-webpack-and-babel/)
 * [**Webpack Academy Free Videos**](https://webpack.academy/courses/enrolled/104961)

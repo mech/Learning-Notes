@@ -1,8 +1,9 @@
 # Context
 
 * [Nested Provider example](https://codesandbox.io/s/9zj452q1yo)
+* [Migrating to React's New Context API](https://blog.kentcdodds.com/migrating-to-reacts-new-context-api-b15dc7a31ea0)
 
-
+https://twitter.com/ryanflorence/status/981179212147998721
 
 ## Deprecated
 
