@@ -6,6 +6,7 @@ Many Big Data sources represent **series of events** that are continuously produ
 
 * [Turning Data into Product](http://www.juiceanalytics.com/writing/turning-data-into-product)
 * [How data analytics killed the Premier League's long ball game](https://www.wired.co.uk/article/premier-league-stats-football-analytics-prozone-gegenpressing-tiki-taka)
+* [Why data science is simply the new astrology](https://www.livemint.com/Sundayapp/zDSjhU5IzcuI7ypo6W4WtL/Why-data-science-is-simply-the-new-astrology.html)
 
 ## What do people want analytics?
 
@@ -56,3 +57,4 @@ Why we don't store logs in databases:
 * [MapR Blog](https://mapr.com/blog/)
 * [Data Artisans](https://data-artisans.com/blog)
 * [Segment Engineering Blog](https://segment.com/blog/categories/engineering/)
+

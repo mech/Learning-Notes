@@ -2,6 +2,7 @@
 
 * [The Open Guide to Amazon Web Services](https://github.com/open-guides/og-aws)
 * [AWS do's and don'ts](https://8thlight.com/blog/sarah-sunday/2017/09/15/aws-dos-and-donts.html)
+* [Azure Cloud Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/)
 
 # VPC
 
@@ -64,3 +65,4 @@ The default VPC enables new account to immediately launch instances, but its sec
 
 * Instance store - Copied from S3 and limited to 10GB
 * EBS store - 16TB
+

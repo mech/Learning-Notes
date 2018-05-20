@@ -107,6 +107,7 @@ Most single queries should be aiming for around a 1ms query time.
 ## UUID
 
 * [A Brief History of the UUID](https://segment.com/blog/a-brief-history-of-the-uuid/)
+* [UUID or GUID as Primary Keys? Be Careful!](https://tomharrisonjr.com/uuid-or-guid-as-primary-keys-be-careful-7b2aa3dcb439)
 
 ## Tuning
 

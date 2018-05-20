@@ -38,6 +38,7 @@ document.getElementsByTagName('video')[0].playbackRate = 2;
 ## UX
 
 * [Interaction 18](https://uxdesign.cc/talks-from-interaction-18-available-online-6adb7d84290b)
+* [The Republic of Quality](https://vimeo.com/rofq)
 
 ## Innovation and Startups
 

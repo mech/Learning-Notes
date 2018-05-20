@@ -1,6 +1,9 @@
 # Figma
 
 * [Modern Design Tools: Adaptive Layouts](https://medium.com/bridge-collection/modern-design-tools-adaptive-layouts-e236070856e3)
+* [figma-api-demo](https://github.com/figma/figma-api-demo)
+* [Waiting for a sign to start building your design team’s component library?](https://medium.com/@willdjthrill/waiting-for-a-sign-to-start-building-your-design-teams-component-library-c43f4352c764)
+* [Figma is transforming my entire workflow](https://medium.com/@nspace/figma-is-transforming-my-entire-workflow-2ce2df2c12c2)
 
 ## Steps
 

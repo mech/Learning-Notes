@@ -63,6 +63,10 @@ PCI Security Council deprecated SSLv3 and TLS 1.0 for commercial transactions.
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 ```
 
+```
+sudo openssl dhparam -out dhparam.pem 4096
+```
+
 ## TLSv1.0 and v1.1
 
 Support for TLSv1.2 was added in OpenSSL 1.0.1 on March 2012.

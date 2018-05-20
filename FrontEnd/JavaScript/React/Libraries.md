@@ -1,5 +1,7 @@
 # Libraries
 
+https://github.com/sindresorhus/modern-normalize
+
 **https://inclusive-components.design/**
 
 > Look at **jQuery UI** or **YUI** for props and widgets inspiration? - [Compound Components](https://www.youtube.com/watch?v=hEGg-3pIHlE)
@@ -20,6 +22,7 @@ https://dollarshaveclub.github.io/stickybits/
 * [insane - Lean and configurable whitelist-oriented HTML sanitizer](https://www.npmjs.com/package/insane)
 * [passw0rd](https://github.com/djadmin/passw0rd)
 * [ow - Function argument validation for humans](https://github.com/sindresorhus/ow)
+* [A guide to building a React component with webpack 4, publishing to npm, and deploying the demo to GitHub Pages](https://medium.com/dailyjs/building-a-react-component-with-webpack-publish-to-npm-deploy-to-github-guide-6927f60b3220)
 
 https://github.com/jaredpalmer/react-fns
 
@@ -141,6 +144,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [react-pdf - Display PDF using pdf.js with worker](https://github.com/wojtekmaj/react-pdf)
 * [react-pdf](https://github.com/diegomura/react-pdf)
 * [ReLaXed - Create PDF documents using web technologies](https://github.com/RelaxedJS/ReLaXed)
+* [puppeteer-examples](https://github.com/GoogleChromeLabs/puppeteer-examples)
 
 ## Table (Filtering, Pagination)
 
@@ -248,6 +252,7 @@ new IntersectionObserver(callback, options)
 
 ## Date Picker and Calendar
 
+* [Create a custom calendar in React](https://blog.flowandform.agency/create-a-custom-calendar-in-react-3df1bfd0b728)
 * [Day.js](https://github.com/xx45/dayjs)
 * [InfiniteGrid's Calendar example](https://codepen.io/pen/)
 * [Making input type=date complicated](https://medium.com/samsung-internet-dev/making-input-type-date-complicated-a544fd27c45a)
@@ -261,6 +266,7 @@ new IntersectionObserver(callback, options)
 * [react-date-picker](https://github.com/wojtekmaj/react-date-picker)
 * [Date Range Picker](http://www.daterangepicker.com/)
 * [A hunt for the perfect date picker UI](https://uxdesign.cc/date-picker-design-5c5ef8f35286)
+* [TOAST UI Calendar](http://ui.toast.com/tui-calendar/)
 
 ---
 
@@ -396,6 +402,7 @@ class Tabs extend Component {
 * [Dragging React performance forward](https://medium.com/@alexandereardon/dragging-react-performance-forward-688b30d40a33)
 * [Dragon Drop - Accessible drag and drop](https://github.com/schne324/dragon-drop)
 * [selection.js - making visual DOM Selections](https://simonwep.github.io/selection/)
+* [react-kanban](https://github.com/markusenglund/react-kanban)
 
 ## D3 and Charts
 

@@ -55,6 +55,8 @@ Redux is an extreme form of lifting state up to the parent by all the way up to 
 * [How to make your React app fully functional, fully reactive, and able to handle all those crazy side effects](https://medium.freecodecamp.org/how-to-make-your-react-app-fully-functional-fully-reactive-and-able-to-handle-all-those-crazy-e5da8e7dac10)
 * [How to use React's Provider Pattern](https://www.robinwieruch.de/react-provider-pattern-context/)
 * [How to use Redux on highly scalable javascript applications?](https://medium.com/@alexmngn/how-to-use-redux-on-highly-scalable-javascript-applications-4e4b8cb5ef38)
+* [Hyperapp for Redux refugees](https://medium.com/hyperapp/hyperapp-for-redux-refugees-2507c9dd1ddc)
+* [Analyze Redux](https://medium.com/@toastui/analyze-redux-f1424a5eaa8e)
 
 Redux helps us enforce good state boundary. You do not want to misapply it by storing form state in the store. It is not meant for that.
 

@@ -1,5 +1,8 @@
 # Computer Science
 
+* [Crafting Interpreters](http://www.craftinginterpreters.com/contents.html)
+* [Game Programming Patterns](http://gameprogrammingpatterns.com/introduction.html)
+
 **https://github.com/PharkMillups/beautiful-docs/**
 
 * [10,000 times faster than MySQL?](https://brigade.engineering/10-000-times-faster-than-mysql-7296389e74bb#.kw0f0r6ce)
@@ -7,6 +10,7 @@
 * [I built an app that makes learning algorithms and data structures way more fun](https://medium.freecodecamp.org/i-built-an-app-that-makes-learning-algorithms-and-data-structures-way-more-fun-46fbb8afacaf)
 * [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 * [VisuAlgo](https://visualgo.net/en)
+* [The best books on Computer Science and Programming](https://fivebooks.com/best-books/programming-computer-science-ana-bell/)
 
 ## Big O
 
@@ -32,3 +36,4 @@ The gist is that algorithms can take more or less time, depending on their compl
 ## Bellman-Ford Algorithm
 
 ## Dijkstra's Algorithm
+

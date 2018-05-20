@@ -1,5 +1,6 @@
 # Machine Learning
 
+* [From Data to Deployment – Full Stack Data Science](http://engineering.indeedblog.com/talks/data-to-deployment/)
 * [**A visual introduction to machine learning**](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
 * [A Beginner’s Guide to Data Engineering — Part I](https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7)
 * [**A.I Experiments** from Google](https://aiexperiments.withgoogle.com/)
@@ -27,6 +28,10 @@ Simulated annealing
 Knapsack problem
 NP-Complete
 ```
+
+## Nearest Neighbor
+
+* [Fast Near-Duplicate Image Search using Locality Sensitive Hashing](https://towardsdatascience.com/fast-near-duplicate-image-search-using-locality-sensitive-hashing-d4c16058efcb)
 
 ## Simple Models
 

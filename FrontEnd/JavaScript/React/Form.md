@@ -202,6 +202,8 @@ We need to pre-bind them in the constructor.
 
 ## Controlled Components
 
+> Always prefer Controlled Component. Don't let HTML handle its internal state. React should be responsible for it.
+
 * Good for validation
 * Good for maintaining form state
 * [Controlled / Uncontrolled React Components](https://www.viget.com/articles/controlling-components-react)

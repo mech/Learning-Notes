@@ -62,6 +62,7 @@ The `*-enter` and `*-enter-active` classes are applied when a new element is add
 * [react-move](https://github.com/tannerlinsley/react-move)
 * [mo.js](http://mojs.io/)
 * Web Animations API - not mature yet
+* [JavaScript implementation of the Web Animations API](https://github.com/web-animations/web-animations-js)
 * [Flight - Ultra Simple Animation Compositions for React](http://www.react-flight.io/)
 * [react-layout-transition](https://github.com/bkazi/react-layout-transition)
 * [react-anime](https://github.com/hyperfuse/react-anime)

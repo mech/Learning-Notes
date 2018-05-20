@@ -2,6 +2,8 @@
 
 * [Nested Provider example](https://codesandbox.io/s/9zj452q1yo)
 * [Migrating to React's New Context API](https://blog.kentcdodds.com/migrating-to-reacts-new-context-api-b15dc7a31ea0)
+* [Let's talk about Context](http://reactcontext.com/)
+* [react-adopt - Compose render props components like a pro](https://github.com/pedronauck/react-adopt)
 
 https://twitter.com/ryanflorence/status/981179212147998721
 

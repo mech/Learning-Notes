@@ -18,19 +18,43 @@ RUN apt-get update && \
     apt-get install -y imagemagick
 ```
 
+## ENV
+
+* [Docker ARG, ENV and .env - a Complete Guide](https://vsupalov.com/docker-arg-env-variable-guide/)
+
 ## CMD and ENTRYPOINT
+
+* [Docker RUN vs CMD vs ENTRYPOINT](http://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/)
 
 Use array to run the command "as-is" without prepend `/bin/sh -c` to the command.
 
 ```dockerfile
 # If you don't use array, it will prepend /bin/sh -c to it
 CMD ["/bin/bash", "-l"]
+
+# Can be parameters only. In which case you need ENTRYPOINT
+CMD ["-f", "--verbose"]
 ```
 
 Can be overridden by `docker run` command.
 
-* Can only ever have one `CMD`
+* Can only ever have one `CMD`, since container execute only one main process (PID=1)
 * Use Supervisor if you want to run multiple processes or commands
+
+## Shell vs Exec
+
+```
+# Shell form
+# /bin/sh -c <COMMAND>
+RUN apt-get install node
+CMD echo "Hello"
+
+# Exec form
+# Call the executable directly and shell processing does not happen
+# Preferred??
+RUN ["apt-get", "install", "node"]
+ENTRYPOINT["/bin/bash", "-c", "echo Hello, $name"]
+```
 
 ## Multi-Stage Builds
 

@@ -6,6 +6,7 @@
 * [How to create fancy revealing animations with these simple CSS tricks](https://hackernoon.com/how-to-create-fancy-revealing-animations-with-these-simple-css-tricks-5b34614ae69a)
 * [Anime.js - Greensock may be too heavy](http://animejs.com/)
 * [Native-Like Animations for Page Transitions on the Web](https://css-tricks.com/native-like-animations-for-page-transitions-on-the-web/)
+* [How you can use simple Trigonometry to create better loaders](https://uxdesign.cc/how-you-can-use-simple-trigonometry-to-create-better-loaders-32a573577eb4)
 
 > The reason why I believe motion is so crucial isn't just because it looks nice, but because it changes the way we approach design.
 > 
@@ -254,6 +255,7 @@ ease-in-out - cubic-bezier(0.42, 0, 0.58, 1)
 ## GSAP
 
 * [Writing Smarter Animation Code](https://css-tricks.com/writing-smarter-animation-code/)
+* [The Beginner's Guide to the GreenSock Animation Platform](https://medium.freecodecamp.org/the-beginners-guide-to-the-greensock-animation-platform-7dc9fd9eb826)
 
 ## Videos
 

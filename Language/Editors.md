@@ -46,3 +46,7 @@
 
 * [VIM After 15 Years](https://statico.github.io/vim3.html)
 
+## RubyMine
+
+Keymap > Editor Actions > Move Caret to Text End...
+

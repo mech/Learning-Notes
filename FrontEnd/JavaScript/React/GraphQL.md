@@ -17,6 +17,7 @@ Each component specifies the bit of data that it will need in the form of a **qu
 
 > No need to transform into the shape that you need from REST endpoint. It is already on the correct shape.
 
+* [**Optimizing Your GraphQL Request Waterfalls**](https://dev-blog.apollodata.com/optimizing-your-graphql-request-waterfalls-7c3f3360b051)
 * [A complete React with Apollo and GraphQL Tutorial](https://www.robinwieruch.de/react-graphql-apollo-tutorial/)
 * [**GraphQL Specification**](https://facebook.github.io/graphql/)
 * [**How to GraphQL**](https://www.howtographql.com/)
@@ -80,6 +81,44 @@ class Query(graphene.ObjectType):
     location=graphene.String(),
     # ...
   )
+```
+
+## Variables
+
+More complex queries require dynamically entering variables. But we do not want to use string interpolation to do it.
+
+Think of it as named functions while previously you had an anonymous function.
+
+```
+query GetOwner($id: String) {
+  owner: person(id: $id) {
+    fullname: name
+  }
+}
+
+{
+  "id": "1"
+}
+```
+
+## Directives
+
+```
+query GetPerson($id: String) {
+  person(id: $id) {
+    fullname: name,
+    address: @include(if: $getAddress) {
+      city
+      street
+      country
+    }
+  }
+}
+
+{
+  "id": "1",
+  "getAddress": false
+}
 ```
 
 ## What's Wrong with REST
@@ -538,24 +577,13 @@ yarn add babel-plugin-relay --dev
 
 ## Static Queries
 
-## Data Loader
-
-Please don't do REST API backing your GraphQL. It will be damn slow. Always use some variants of Data Loader.
-
-* [graphql-batch for Ruby, sort of like DataLoader](https://github.com/Shopify/graphql-batch)
-* [DataLoader - Source code walkthrough by Lee Byron](https://www.youtube.com/watch?v=OQTnXNCDywA)
-* [Ruby BatchLoader](https://engineering.universe.com/batching-a-powerful-way-to-solve-n-1-queries-every-rubyist-should-know-24e20c6e7b94)
-* [batch-loader](https://github.com/exAspArk/batch-loader)
-* [dataloader](https://github.com/sheerun/dataloader)
-* [graphql-query-resolver - Minimize N+1 queries](https://github.com/nettofarah/graphql-query-resolver)
-* [Preloading Associations with graphql-batch](https://gist.github.com/mech/a2fb158c76f4617f72f0f8b6c48b80e1)
-
 ## Edges and Connections
 
 Ability to traverse edges or connections, 1-to-many relationships.
 
 * [Explaining GraphQL Connections - Edges have never been so fun!](https://dev-blog.apollodata.com/explaining-graphql-connections-c48b7c3d6976)
 * [GraphQL Connections In Rails](http://graphqlme.com/2017/09/24/graphql-connections-rails/)
+* [Optimizing Your GraphQL Request Waterfalls](https://dev-blog.apollodata.com/optimizing-your-graphql-request-waterfalls-7c3f3360b051)
 
 Connection is a collection of Edges
 
@@ -593,6 +621,7 @@ companiesConnection(first: 10) {
 
 ## Pagination
 
+* [Guys, we're doing pagination wrong…](https://hackernoon.com/guys-were-doing-pagination-wrong-f6c18a91b232)
 * [Understanding pagination: REST, GraphQL, and Relay](https://dev-blog.apollodata.com/understanding-pagination-rest-graphql-and-relay-b10f835549e7)
 * [Twitter - Using cursors to navigate collections](https://dev.twitter.com/overview/api/cursoring)
 * [GraphQ::Pro - Stable Cursors for ActiveRecord](http://graphql-ruby.org/pro/cursors)
@@ -791,6 +820,24 @@ It turns out that the tree structure of GraphQL lends itself extremely well to c
 ```
 POST /graphql/eyBuawWNlIHsdfHj5IhoHJ0
 ```
+
+## Performance
+
+* [Optimizing Your GraphQL Request Waterfalls](https://dev-blog.apollodata.com/optimizing-your-graphql-request-waterfalls-7c3f3360b051)
+
+### Data Loader
+
+> Collect all IDs, unique it (dedup), query one time (batch lookup like SQL `IN()` statement or Redis MGET), then distribute the IDs again.
+
+Please don't do REST API backing your GraphQL. It will be damn slow. Always use some variants of Data Loader.
+
+* [graphql-batch for Ruby, sort of like DataLoader](https://github.com/Shopify/graphql-batch)
+* [DataLoader - Source code walkthrough by Lee Byron](https://www.youtube.com/watch?v=OQTnXNCDywA)
+* [Ruby BatchLoader](https://engineering.universe.com/batching-a-powerful-way-to-solve-n-1-queries-every-rubyist-should-know-24e20c6e7b94)
+* [batch-loader](https://github.com/exAspArk/batch-loader)
+* [dataloader](https://github.com/sheerun/dataloader)
+* [graphql-query-resolver - Minimize N+1 queries](https://github.com/nettofarah/graphql-query-resolver)
+* [Preloading Associations with graphql-batch](https://gist.github.com/mech/a2fb158c76f4617f72f0f8b6c48b80e1)
 
 ## Examples
 

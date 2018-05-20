@@ -16,3 +16,14 @@
 ```
 
 * [SVG to JSX converter](https://svg2jsx.herokuapp.com/)
+
+## SVGGO
+
+* Do not use it if you want to do animation
+
+## XLINK:HREF
+
+## Videos
+
+* [Down the SVG Rabbit Hole](https://www.youtube.com/watch?v=IChfGN8nm5Q)
+

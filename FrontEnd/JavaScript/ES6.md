@@ -151,6 +151,7 @@ adder.add([1, 2, 3])
 * [JavaScript Module System](http://exploringjs.com/es6/ch_modules.html)
 * [ES6 Modules in Depth](https://ponyfoo.com/articles/es6-modules-in-depth#the-es6-module-system)
 * [The JavaScript Modules Limbo](https://codeburst.io/the-javascript-modules-limbo-585eedbb182e)
+* [`import * as React` vs `import React`](https://discuss.reactjs.org/t/es6-import-as-react-vs-import-react/360/9)
 
 ```js
 export default {
@@ -418,6 +419,7 @@ upper`Hello ${name}`
 ## Symbols
 
 * [Arrays, symbols, and realms](https://jakearchibald.com/2017/arrays-symbols-realms/)
+* [JavaScript Symbols, Iterators, Generators, Async/Await, and Async Iterators — All Explained Simply](https://medium.freecodecamp.org/some-of-javascripts-most-useful-features-can-be-tricky-let-me-explain-them-4003d7bbed32)
 
 All not that useful in a general case. A unique unguessable value. Use it as a symbolic placeholder for "something".
 

@@ -20,6 +20,12 @@
 ▶ sudo update_dyld_shared_cache -force
 ```
 
+## SVG
+
+```
+default write com.bohemiancoding.sketch3 exportCompactSVG -bool yes
+```
+
 ## Shortcuts
 
 ```

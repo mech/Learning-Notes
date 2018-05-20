@@ -177,6 +177,7 @@ In a large, complex information environment, a complete lack of lateral and vert
 
 Navigation can drown out the content.
 
+* [7 principles of effective digital navigation](https://medium.com/@gerrymcgovern/seven-principles-of-effective-digital-navigation-885231a0ffb4)
 * [Great Alternatives to Hamburger Menus](https://uxplanet.org/great-alternatives-to-hamburger-menus-d4c76d9414dd#.9vq36a5ry)
 * Navigation stress test - Ignore the home page and parachuting deep into the middle of the site and see how disorienting you will be.
 * Action-based labels like TED's "WATCH", "DISCOVER", "PARTICIPATE" links - [Simplified navigation](https://speckyboy.com/beauty-simplified-navigation/)

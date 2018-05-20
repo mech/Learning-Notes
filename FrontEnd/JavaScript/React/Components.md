@@ -9,6 +9,8 @@
 
 > Learning functional programming completely changed my design process. There's a lot of parallels you can directly apply to your work day to day — it's about composition and I think this is something super useful for the design system we're working on. Rather than starting with a layout or a big marketing page and breaking it down, I love the idea of starting with the smallest possible primitives and building up and up and up.
 
+* [Step by step guide for writing awesome React components](https://codeburst.io/step-by-step-guide-for-writing-awesome-react-components-210c6def902b)
+* [React Code Style Guide](https://css-tricks.com/react-code-style-guide/)
 * [Custom Elements Everywhere](https://custom-elements-everywhere.com/)
 * [**7 architectural attributes of a reliable React component**](https://dmitripavlutin.com/7-architectural-attributes-of-a-reliable-react-component/)
 * [Pure UI Control](https://medium.com/@asolove/pure-ui-control-ac8d1be97a8d)
@@ -652,6 +654,12 @@ export Menu
 
 * [React Component Patterns by Michael Chan](https://www.youtube.com/watch?v=YaZg8wg39QQ)
 * [ReactCasts](https://www.youtube.com/channel/UCZkjWyyLvzWeoVWEpRemrDQ/videos)
+
+### Video Courses
+
+* [Learn React](https://learnreact.com/lessons/2018-the-context-api-create-context)
+* [React Patterns](https://reactpatterns.com/)
+* [React Holiday](https://react.holiday/)
 
 ## Books
 

@@ -1,5 +1,6 @@
 # Grid
 
+* [Best Practices With CSS Grid Layout](https://www.smashingmagazine.com/2018/04/best-practices-grid-layout/)
 * [Everything You Know About Web Design Just Changed | Jen Simmons](https://hookedoncode.com/2018/04/everything-you-know-about-web-design-just-changed-jen-simmons/)
 * [Mozilla CSS Grid Playground](https://mozilladevelopers.github.io/playground/css-grid)
 * [Wes Bos's free CSS Grid course](https://cssgrid.io/)

@@ -18,4 +18,8 @@ Unit of scheduling. Containers that are part of the same pod are guaranteed to b
 
 ## Services
 
+## Networking
+
+* [Understanding kubernetes networking: ingress](https://medium.com/google-cloud/understanding-kubernetes-networking-ingress-1bc341c84078)
+
 
