@@ -23,6 +23,7 @@ https://dollarshaveclub.github.io/stickybits/
 * [passw0rd](https://github.com/djadmin/passw0rd)
 * [ow - Function argument validation for humans](https://github.com/sindresorhus/ow)
 * [A guide to building a React component with webpack 4, publishing to npm, and deploying the demo to GitHub Pages](https://medium.com/dailyjs/building-a-react-component-with-webpack-publish-to-npm-deploy-to-github-guide-6927f60b3220)
+* [11 Javascript Utility Libraries You Should Know In 2018](https://blog.bitsrc.io/11-javascript-utility-libraries-you-should-know-in-2018-3646fb31ade)
 
 https://github.com/jaredpalmer/react-fns
 
@@ -128,6 +129,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [Pinterest Gestalt](https://pinterest.github.io)
 * [Mineral UI](https://mineral-ui.com/)
 * [Zendesk Garden](https://garden.zendesk.com/react-components/#!/Button/5)
+* [RSuite](https://rsuitejs.com/en/components/overview)
 
 ## Blank Slate
 

@@ -48,6 +48,9 @@ handleChange({ target }) {
     [target.name]: target.value
   })
 }
+
+// At the form
+<form onChange={this.handleChange}>
 ```
 
 ```js

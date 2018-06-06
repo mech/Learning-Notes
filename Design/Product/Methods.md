@@ -6,6 +6,10 @@
 * [The Secrets of Creating Great Design Workshops](https://medium.com/eightshapes-llc/the-secrets-of-creating-great-design-workshops-1e3476b548bf)
 * [Law of UX](https://lawsofux.com/)
 
+## Mental Models
+
+* Achieve disruption in the marketplace through mental model innovation
+
 ## Boredom-Driven Design
 
 * [Embracing the idle mind](https://uxdesign.cc/embracing-the-idle-mind-43067637395c)

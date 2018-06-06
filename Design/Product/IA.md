@@ -15,3 +15,9 @@ IA is:
 3. Don't know what I need to know - carousels
 4. Re-finding
 
+## Information Scent
+
+> Bucknell site forces users to choose between two vague labels (Start Exploring and The Everything Directory), which have no **information scent**: users cannot predict what they will get when they click on either of these.
+
+* [Information Foraging: Why Google Makes People Leave Your Site Faster](https://www.nngroup.com/articles/information-scent/)
+

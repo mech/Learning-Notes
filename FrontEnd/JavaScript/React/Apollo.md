@@ -1,6 +1,8 @@
 # Apollo Client
 
 * [apollo-tracing](https://github.com/apollographql/apollo-tracing)
+* [A complete React with Apollo and GraphQL Tutorial](https://www.robinwieruch.de/react-graphql-apollo-tutorial/)
+* [Reconciling GraphQL and Thrift at Airbnb](https://medium.com/airbnb-engineering/reconciling-graphql-and-thrift-at-airbnb-a97e8d290712)
 
 ```js
 const logger = (operation, forward) => {

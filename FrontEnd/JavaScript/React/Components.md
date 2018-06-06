@@ -179,6 +179,8 @@ Be careful when passing props as `null`. Any default prop value will not be used
 
 > Visualizing all the discrete states an application can be in will make your design systems better.
 
+* [The React State Museum](https://hackernoon.com/the-react-state-museum-a278c726315)
+* [xstate - Microsoft - Functional, Stateless JS Finite State Machines and Statecharts](https://github.com/davidkpiano/xstate)
 * [unstated - alternative to Redux](https://github.com/jamiebuilds/unstated)
 * [Where to Hold React Component Data: state, store, static, and this](https://medium.freecodecamp.org/where-do-i-belong-a-guide-to-saving-react-component-data-in-state-store-static-and-this-c49b335e2a00)
 * [Why is `setState` asynchronous?](https://github.com/facebook/react/issues/11527)

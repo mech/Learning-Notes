@@ -621,6 +621,8 @@ companiesConnection(first: 10) {
 
 ## Pagination
 
+* [Paginated List in React - Build a powerful Component (Part I)](https://www.robinwieruch.de/react-paginated-list/)
+* [Infinite Scroll in React - Build a powerful Component (Part II)](https://www.robinwieruch.de/react-infinite-scroll/)
 * [Guys, we're doing pagination wrong…](https://hackernoon.com/guys-were-doing-pagination-wrong-f6c18a91b232)
 * [Understanding pagination: REST, GraphQL, and Relay](https://dev-blog.apollodata.com/understanding-pagination-rest-graphql-and-relay-b10f835549e7)
 * [Twitter - Using cursors to navigate collections](https://dev.twitter.com/overview/api/cursoring)

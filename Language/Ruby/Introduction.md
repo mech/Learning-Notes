@@ -48,6 +48,7 @@ end
 
 ## Date and Time
 
+* [UTC is enough for everyone, right?](https://zachholman.com/talk/utc-is-enough-for-everyone-right)
 * [Timezone problem](https://www.youtube.com/watch?v=aUk9981C-fQ)
 * [When should you use DateTime and when should you use Time?](https://gist.github.com/pixeltrix/e2298822dd89d854444b)
 * [The Exhaustive Guide to Rails Time Zones](http://danilenko.org/2012/7/6/rails_timezones/)

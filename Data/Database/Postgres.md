@@ -103,6 +103,7 @@ Most single queries should be aiming for around a 1ms query time.
 
 * [Expensive Query Dashboard](https://blog.heroku.com/expensive-query-speed-up-app)
 * [Using Rack Mini Profiler to find and fix slow queries](https://schneems.com/2017/06/22/a-tale-of-slow-pagination/)
+* [Scalable PostgreSQL connection pooler](https://github.com/yandex/odyssey)
 
 ## UUID
 

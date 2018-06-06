@@ -68,6 +68,10 @@
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
 
+## Value Proposition
+
+When designing UI, ask what is the value proposition of that screen.
+
 ## Breadth and Depth
 
 Start with breadth, then dive into depth.
@@ -183,17 +187,33 @@ Navigation can drown out the content.
 * Action-based labels like TED's "WATCH", "DISCOVER", "PARTICIPATE" links - [Simplified navigation](https://speckyboy.com/beauty-simplified-navigation/)
 * [Apple and Hamburgers](https://medium.com/design-philosophies/apple-and-hamburgers-a17e4099fada)
 * [Hamburgers & Basements: Why Not to Use Left Nav Flyouts](http://jxnblk.tumblr.com/post/36218805036/hamburgers-basements-why-not-to-use-left-nav)
+* [Breaking Web Design Conventions = Breaking the User Experience](https://www.nngroup.com/articles/breaking-web-conventions/)
+* [Killing Off the Global Navigation: One Trend to Avoid](https://www.nngroup.com/articles/killing-global-navigation-one-trend-avoid/)
 
 You can have 2 types of navigation structures: content-based structure and audience-based structure.
 
 It shouldn't come as a surprise that when you change what your navigation looks like, you also are changing the way you communicate with your users. Typically a simple navigation will feature only one word per section label, so those words need to be chosen carefully.
 
+### Information Scent
+
+### Role-Based vs Topic-Based Navigation
+
+Users don't necessarily self-identify, and they often don't understand which audience category contains the content that they want. Evaluate whether topic-based organization might be more efficient for your users.
+
 ### Hamburger vs Horizontal Sliding Menu
 
-* [](https://medium.muz.li/iphone-x-web-navigation-concept-c06efc0e0c50)
+* [iPhone X Web Navigation Concept](https://medium.muz.li/iphone-x-web-navigation-concept-c06efc0e0c50)
+
+### Enticing Labels
+
+Makes people want to click and explore.
 
 ## People
 
 * [Andy Fitzgerald](http://andyfitzgerald.org/)
 * [Jen Simmons](http://labs.jensimmons.com/)
+
+## Videos
+
+* [Best channels for UI designers on YouTube](https://uxplanet.org/best-channels-for-ui-deisgners-on-youtube-250b53b1be53)
 

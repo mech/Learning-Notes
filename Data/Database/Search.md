@@ -10,6 +10,10 @@ In Yelp business listing, there is business name, operating hours, images, and s
 
 As much as we want to index all things, we should know when to leave out content that shouldn't be indexed.
 
+## Search UI
+
+* [Search interface: 20 things to consider](https://uxplanet.org/search-interface-20-things-to-consider-4b1466e98881)
+
 ## Learning to Rank
 
 * [Rank Elasticsearch results using tree based (LambdaMART, Random Forest, MART) and linear models](https://github.com/o19s/elasticsearch-learning-to-rank)
@@ -86,3 +90,4 @@ Synonym management, hierarchical browsing, and associative linking.
 ## Videos
 
 * [We built an Elasticsearch Learning to Rank plugin](https://www.youtube.com/watch?v=JqqtWfZQUTU)
+

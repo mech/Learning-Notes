@@ -111,6 +111,10 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 * [Look elsewhere - Don't stare at your industry. Look in the opposite direction.](https://m.signalvnoise.com/look-elsewhere-e89b2b24f3f2)
 * [The Design Genome Project](https://www.invisionapp.com/enterprise/design-genome/)
 
+## Whole System
+
+* Zoom out and in
+
 ## Software influence behavior
 
 **Hospital case study**
@@ -123,8 +127,28 @@ Developer get design spec from manager who have safety in mind and want to preve
 
 This has performance issues because cashier will be slow to adjust price for a dozen products. So the new spec is modified to allow 10% allowance on price adjustment. This unfortunately lead to the behavior where all price are just adjusted forever at 10% because nobody want to go over the limit and bother the manager's approval.
 
+## Strategy
+
+Design strategy:
+
+- Involve finding user's goals (User Research)
+- Understanding mental model - Aligning design strategy with human behaviors
+- Plan of action
+- Strategy must be consistent
+- Customer journey
+
+Design tactic:
+
+- Operation
+- The art of doing
+- Actual work
+- Can change or evolve (no need to be too rigid)
+
+Strategy govern tactical execution.
+
 ## Advice
 
+* It's all about the experience.
 * Having the Right Question can point development into the Right Direction. Like: "Is the cost of effort required to reduce those few gzipped bytes worth the benefits of saving a few dozen dollars in a year?"
 * Even if it turns out to be a waste of time, at least you have wasted that time in the question before starting to build the answer.
 * Set constraints. Whatever it is!

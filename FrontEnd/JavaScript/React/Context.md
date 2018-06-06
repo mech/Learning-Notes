@@ -4,6 +4,10 @@
 * [Migrating to React's New Context API](https://blog.kentcdodds.com/migrating-to-reacts-new-context-api-b15dc7a31ea0)
 * [Let's talk about Context](http://reactcontext.com/)
 * [react-adopt - Compose render props components like a pro](https://github.com/pedronauck/react-adopt)
+* [Prop Drilling](https://buttondown.email/kentcdodds/archive/8e22429d-fcc7-4d5b-af0b-3880c64a9857)
+* [How to create react-tabs using ContextAPI](https://medium.com/dailyjs/how-to-create-react-tabs-using-contextapi-932c7bec35c7)
+* [How To Master Advanced React Design Patterns: Context API](https://itnext.io/using-advanced-design-patterns-to-create-flexible-and-reusable-react-components-part-2-react-3c5662b997ab)
+* [React 16.3 is out and with it comes the officially supported Context API](https://itnext.io/compound-components-with-react-v16-3-6679c752bd56)
 
 https://twitter.com/ryanflorence/status/981179212147998721
 

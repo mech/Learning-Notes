@@ -15,6 +15,7 @@
 * [Dynamic Icons in Sketch](https://www.youtube.com/watch?v=1rJ1WyQ6lU0)
 * [Hacking Tables in Sketch App](https://medium.com/sketch-app-sources/hacking-tables-in-sketch-app-745e9b961992)
 * [Fix for QuickLook not working](https://sketchtalk.io/discussion/2307/mac-finder-preview-quick-look-thumbnail-not-showing-up)
+* [10 Tricks & Techniques to Make The Most Out of Sketch](https://uxdesign.cc/10-tricks-techniques-to-make-the-most-out-of-sketch-d12ae16d47e9)
 
 ```
 ▶ sudo update_dyld_shared_cache -force

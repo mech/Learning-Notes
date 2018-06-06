@@ -68,9 +68,13 @@ Bitmap is less efficient than B-tree whose data is frequently updated.
 
 ## Star Schema - Dimensional Modeling
 
+* [A Beginner's Guide to Data Engineering — Part II](https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-ii-47c4e7cbda71)
+
 * **Fact** - represents the event that occur
 * **Dimensions** - represent the who, what, where, when, how, and why of the event
 
 ## Videos
 
 * [Reporting on Rails - ActiveRecord and ROLAP Working Together](https://www.youtube.com/watch?v=MczzCfTQGfU)
+
+

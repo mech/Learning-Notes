@@ -3,6 +3,8 @@
 * [Mastering Bash and Terminal](https://www.blockloop.io/mastering-bash-and-terminal)
 * [Bash conditional statements](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_01.html)
 * [Command Line Text Processing](https://github.com/learnbyexample/Command-line-text-processing)
+* [Safe ways to do things in bash](https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md)
+* [ShellCheck](https://github.com/koalaman/shellcheck/)
 
 ## Special Parameters
 

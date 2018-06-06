@@ -2,6 +2,7 @@
 
 > Poor design choices often lead to issues and, in the case of React, if we do not put the state in the right place, the risk is that our components are going to render more than needed.
 
+* [Debugging React performance with React 16 and Chrome Devtools](https://building.calibreapp.com/debugging-react-performance-with-react-16-and-chrome-devtools-c90698a522ad)
 * [React is Slow, React is Fast: Optimizing React Apps in Practice](https://medium.com/dailyjs/react-is-slow-react-is-fast-optimizing-react-apps-in-practice-394176a11fba)
 * [Rearchitecting Airbnb's Frontend](https://medium.com/airbnb-engineering/rearchitecting-airbnbs-frontend-5e213efc24d2)
 * [React Performance Tune-up](http://engineering.invisionapp.com/post/react-performance-tune-up/)
@@ -99,6 +100,7 @@ It is beneficial to implement `shouldComponentUpdate()` as high up the tree as p
 
 ## PureComponent
 
+* [Using a `<PureComponent/>` in React](https://medium.com/front-end-hacking/using-a-purecomponent-in-reacts-262972f9f1e0)
 * [React Pattern: Extract Child Components to Avoid Binding](https://medium.freecodecamp.org/react-pattern-extract-child-components-to-avoid-binding-e3ad8310725e)
 * [Remember to not pass arrow function](https://medium.com/@housecor/hi-dana-great-question-note-this-affbe4a2f168)
 * [When to use Component or PureComponent](https://codeburst.io/when-to-use-component-or-purecomponent-a60cfad01a81)
@@ -177,3 +179,4 @@ export default pure(DatagridBody)
 
 * [Performance optimisations for React: round 3](https://www.youtube.com/watch?v=JZF06CPqOQ0)
 * [Scaling My First Enterprise React App!](https://www.youtube.com/watch?v=sL4D_zRUVw4)
+

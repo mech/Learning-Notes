@@ -11,6 +11,16 @@
 ▶ source ~/.zshrc
 ```
 
+## NPM
+
+```
+▶ npm install -g npm
+▶ which npm
+  /Users/mech/.npm-packages/bin/npm
+
+set PATH $HOME/.npm-packages/bin $PATH
+```
+
 ## package.json
 
 * [NPM graph - See dependency graph using your package.json file](http://npm.broofa.com/)

@@ -7,6 +7,7 @@ Many Big Data sources represent **series of events** that are continuously produ
 * [Turning Data into Product](http://www.juiceanalytics.com/writing/turning-data-into-product)
 * [How data analytics killed the Premier League's long ball game](https://www.wired.co.uk/article/premier-league-stats-football-analytics-prozone-gegenpressing-tiki-taka)
 * [Why data science is simply the new astrology](https://www.livemint.com/Sundayapp/zDSjhU5IzcuI7ypo6W4WtL/Why-data-science-is-simply-the-new-astrology.html)
+* [When your client has a data question, do you have the answer?](https://blog.data.world/when-your-client-has-a-data-question-do-you-have-the-answer-45093e9336a7)
 
 ## What do people want analytics?
 
