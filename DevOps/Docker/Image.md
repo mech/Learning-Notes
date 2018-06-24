@@ -86,3 +86,8 @@ COPY --from=appserver /usr/src/target/snapshot.jar .
 ▶ docker image ls --digests
 ```
 
+## Clean Up
+
+* [What are Docker `<none>:<none>` images?](https://www.projectatomic.io/blog/2015/07/what-are-docker-none-none-images/)
+
+

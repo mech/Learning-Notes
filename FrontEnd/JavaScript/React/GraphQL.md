@@ -669,6 +669,9 @@ after = The next cursor value. An alternative to integer offset.
 * [Caching GraphQL queries with GraphQL-ruby and Rails](http://mgiroux.me/2016/graphql-query-caching-with-rails/)
 * [Using IDL instead of Ruby definition](https://github.com/rmosolgo/graphql-ruby/issues/727)
 * [#820 - Object-oriented schema definition](https://github.com/rmosolgo/graphql-ruby/issues/820)
+* [CacheQL](https://github.com/chatterbugapp/cacheql)
+* [graphql-errors](https://github.com/exAspArk/graphql-errors)
+* [graphql-guard](https://github.com/exAspArk/graphql-guard)
 
 Raise `GraphQL::ExecutionError` if there are any errors.
 

@@ -23,7 +23,12 @@
 
 ## Timezone
 
+* [Docker Container time & timezone (will not reflect changes)](https://serverfault.com/questions/683605/docker-container-time-timezone-will-not-reflect-changes)
+
 ```
+// Seems to work for jobline-upgrade
+▶ docker run -d -e TZ=Asia/Singapore ...
+
 ▶ docker run --rm -v /etc/localtime:/etc/localtime:ro busybox date
 ```
 

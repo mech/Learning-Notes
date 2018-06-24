@@ -6,6 +6,7 @@
 * [Towards Minimal, Idiomatic, and Performant Ruby Code](https://blog.codeminer42.com/towards-minimal-idiomatic-and-performant-ruby-code-f3fc6aed3c94)
 * [5 Ruby Methods You Should Be Using](https://www.engineyard.com/blog/five-ruby-methods-you-should-be-using)
 * [Timeout: Ruby's Most Dangerous API](http://www.mikeperham.com/2015/05/08/timeout-rubys-most-dangerous-api/)
+* [Ruby Users: Be Wary of Net::HTTP](https://engineering.wework.com/ruby-users-be-wary-of-net-http-f284747288b2)
 * [The Ultimate Guide to Ruby Timeouts](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts)
 * [Crafting Ruby](http://craftingruby.com/)
 
@@ -23,6 +24,11 @@ field :comments do
   }
 end
 ```
+
+## Splat and Double Splat
+
+* [Splat goes Ruby](https://dev.firmafon.dk/blog/splat-goes-ruby/)
+* [Drat! - Ruby has a Double Splat](https://dev.firmafon.dk/blog/drat-ruby-has-a-double-splat/)
 
 ## Codemod
 
@@ -211,10 +217,25 @@ def start(**attributes)
 end
 ```
 
+## yield_self
+
+* [As compared to Elixir's pipe operator](https://robots.thoughtbot.com/using-yieldself-for-composable-activerecord-relations)
+
 ## Frozen String
 
 * [Freeze string literals when not mutated](https://github.com/rails/rails/pull/20946)
 * [let_it_go](https://github.com/schneems/let_it_go)
+
+Affected behaviors:
+
+```ruby
+# String interpolation
+.gsub!
+.downcase!
+<<
+
+name.dup # Make an unfrozen copy of the string and do your modification
+```
 
 ## Problem Solving
 

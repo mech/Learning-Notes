@@ -22,3 +22,8 @@ end
 has_many :followers, serializer: Api::V1::UserSerializer
 ```
 
+## Strong Parameters
+
+[protected_attributes](https://github.com/rails/protected_attributes) is a gem for Mass Assignment which is being replaced by Strong Parameters. No longer supported in Rails 5.
+
+

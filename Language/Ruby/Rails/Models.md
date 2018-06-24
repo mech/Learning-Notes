@@ -19,6 +19,10 @@
 * [Flag argument is a code smell](http://craftingruby.com/posts/2017/05/04/flag-arguments-are-a-code-smell.html)
 * [Using Services to Keep Your Rails Controllers Clean and DRY](https://blog.engineyard.com/2014/keeping-your-rails-controllers-dry-with-services)
 
+## Update
+
+* [ActiveRecord::Relation#update](https://github.com/rails/rails/pull/11898)
+
 ## Compared with Ecto
 
 * [How Elixir's Ecto differs from Ruby's ActiveRecord](https://www.amberbit.com/blog/2016/2/24/how-elixirs-ecto-differs-from-rubys-activerecord/#Handling)
@@ -40,6 +44,7 @@ Model.find(:all, conditions: {})
 # Use these instead
 Model.where(xxx: '')
 Model.where(xxx: '').first_or_initialize
+Model.find_or_initialize_by(xxx: '')
 ```
 
 http://blog.remarkablelabs.com/2012/12/what-s-new-in-active-record-rails-4-countdown-to-2013
@@ -82,10 +87,8 @@ end
 ## SQL
 
 * [SqlBuilder](https://github.com/discourse/discourse/blob/master/lib/sql_builder.rb)
-
-```ruby
-
-```
+* [Added ActiveRecord::Relation#left_outer_joins](https://github.com/rails/rails/pull/12071)
+* [Add a native JSON data type support in MySQL](https://github.com/rails/rails/pull/21110)
 
 ## Query
 

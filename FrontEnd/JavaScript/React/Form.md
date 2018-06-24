@@ -28,6 +28,7 @@ handleCreateFormSubmit = (timer) => {
 
 * [A list of form drivers](https://github.com/markerikson/redux-ecosystem-links/blob/master/forms.md)
 * [Formik](https://github.com/jaredpalmer/formik)
+* [React Final Form](https://github.com/final-form/react-final-form)
 * [NeoForm](https://github.com/zero-plus-x/neoform)
 * [React.js controlled components](http://blog.klipse.tech/react/2016/12/20/react-controlled-components.html)
 * [Form Validation as HOC](https://medium.com/javascript-inside/form-validation-as-a-higher-order-component-pt-1-83ac8fd6c1f0#.fv2zg6miy)

@@ -8,6 +8,8 @@
 * [How to create react-tabs using ContextAPI](https://medium.com/dailyjs/how-to-create-react-tabs-using-contextapi-932c7bec35c7)
 * [How To Master Advanced React Design Patterns: Context API](https://itnext.io/using-advanced-design-patterns-to-create-flexible-and-reusable-react-components-part-2-react-3c5662b997ab)
 * [React 16.3 is out and with it comes the officially supported Context API](https://itnext.io/compound-components-with-react-v16-3-6679c752bd56)
+* [How to protect your routes with React Context](https://medium.freecodecamp.org/how-to-protect-your-routes-with-react-context-717670c4713a)
+* [How to build your own React-Router with new React Context Api](https://medium.com/@stevenkoch/how-to-build-your-own-react-router-with-new-react-context-api-1647406b9b93)
 
 https://twitter.com/ryanflorence/status/981179212147998721
 

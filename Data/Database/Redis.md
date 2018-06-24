@@ -2,6 +2,7 @@
 
 * Started in 2009 by Salvatore Sanfilippo
 * Allows different eviction policies beyond LRU (Least Recently Used) and LFU (Least Frequently Used - Redis 4.0)
+* [Random notes on improving the Redis LRU algorithm](http://antirez.com/news/109)
 * [redis-rb 4.0 support](https://github.com/rails/rails/pull/30748)
 
 If you are using `redis-store` with Rails, consider using the `redis-rails` gem instead.
@@ -34,6 +35,7 @@ gem 'redis', '~> 3.0', require: ['redis', 'redis/connection/hiredis']
 * Default policy for Azure Redis is **volitile-lru**, which means that only keys that have an expiration value will be considered for eviction. If no keys have an expiration value, then the system won't evict any keys and clients will get out of memory.
 * You may want to consider **allkeys-lru**
 * So to be safe, always set expiration value
+* [EXPIRE](https://redis.io/commands/expire)
 
 ## Persistence
 

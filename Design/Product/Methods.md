@@ -57,6 +57,13 @@ Prototyping is a habit. It is a way to validate assumptions and ideas.
 * You can break it down into features later. Always tell the story first. Scope out the engineering works later. What the person is going through and identify with that first. Sell the story, frame the story.
 * Just a few story to implant a seed on their mind, then backup sentiment with data.
 
+## User Flow
+
+* [The biggest WTF in design right now](https://uxdesign.cc/the-biggest-wtf-in-design-right-now-87139f367d66)
+* User flow should go in one direction
+* User flow is not sitemaps or high-res prototypes
+* User flow tell story
+
 ## Journey Map
 
 * [Don't Make a Journey Map: 9 archetypes of good / bad, and how to decide what to use](https://medium.com/@shahrsays/dont-make-a-journey-map-9-archetypes-of-good-bad-and-how-to-decide-what-to-use-d65abd30ec6f#.fq1rrlsdt)
