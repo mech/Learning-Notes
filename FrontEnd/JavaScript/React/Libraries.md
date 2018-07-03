@@ -134,6 +134,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 ## Blank Slate
 
 * [react-skeletor](https://github.com/trainline/react-skeletor)
+* [react-content-loader](https://github.com/danilowoz/react-content-loader)
 
 ## Case Study
 
@@ -251,9 +252,12 @@ new IntersectionObserver(callback, options)
 * [Scrollytelling with IntersectionObserver](https://github.com/russellgoldenberg/scrollama)
 * [Infinite scroll techniques in React](https://blog.logrocket.com/infinite-scroll-techniques-in-react-adcfd7ff32bd)
 * [Glide.js - slider and carousel](https://glidejs.com/docs/)
+* [react-scroll-shadow](https://github.com/zzarcon/react-scroll-shadow)
+* [react-virtualized](https://blog.logrocket.com/rendering-large-lists-with-react-virtualized-82741907a6b3)
 
 ## Date Picker and Calendar
 
+* [**react-day-picker**](http://react-day-picker.js.org/)
 * [Create a custom calendar in React](https://blog.flowandform.agency/create-a-custom-calendar-in-react-3df1bfd0b728)
 * [Day.js](https://github.com/xx45/dayjs)
 * [InfiniteGrid's Calendar example](https://codepen.io/pen/)

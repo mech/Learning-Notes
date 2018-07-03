@@ -5,9 +5,6 @@
 * [11 Ruby Tricks You Haven't Seen Before](http://www.blackbytes.info/2016/01/ruby-tricks/)
 * [Towards Minimal, Idiomatic, and Performant Ruby Code](https://blog.codeminer42.com/towards-minimal-idiomatic-and-performant-ruby-code-f3fc6aed3c94)
 * [5 Ruby Methods You Should Be Using](https://www.engineyard.com/blog/five-ruby-methods-you-should-be-using)
-* [Timeout: Ruby's Most Dangerous API](http://www.mikeperham.com/2015/05/08/timeout-rubys-most-dangerous-api/)
-* [Ruby Users: Be Wary of Net::HTTP](https://engineering.wework.com/ruby-users-be-wary-of-net-http-f284747288b2)
-* [The Ultimate Guide to Ruby Timeouts](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts)
 * [Crafting Ruby](http://craftingruby.com/)
 
 ```ruby
@@ -24,6 +21,15 @@ field :comments do
   }
 end
 ```
+
+## Timeout
+
+* [Timeout: Ruby's Most Dangerous API](http://www.mikeperham.com/2015/05/08/timeout-rubys-most-dangerous-api/)
+* [Ruby Users: Be Wary of Net::HTTP](https://engineering.wework.com/ruby-users-be-wary-of-net-http-f284747288b2)
+* [The Ultimate Guide to Ruby Timeouts](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts)
+* [Ruby Timeout, how does it even work?](https://flushentitypacket.github.io/ruby/2015/02/21/ruby-timeout-how-does-it-even-work.html)
+* [Why Ruby's Timeout is dangerous (and Thread.raise is terrifying)](https://jvns.ca/blog/2015/11/27/why-rubys-timeout-is-dangerous-and-thread-dot-raise-is-terrifying/)
+
 
 ## Splat and Double Splat
 

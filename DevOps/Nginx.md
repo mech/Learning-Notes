@@ -40,6 +40,7 @@ To solve latency issues, HTTP/2 uses multiplexing. This does not mean you don't 
 
 PCI Security Council deprecated SSLv3 and TLS 1.0 for commercial transactions.
 
+* [mkcert - making locally-trusted development certificates](https://github.com/FiloSottile/mkcert)
 * [How to get HTTPS working on your local development environment in 5 minutes](https://medium.freecodecamp.org/how-to-get-https-working-on-your-local-development-environment-in-5-minutes-7af615770eec)
 * [**Enable HTTPS over localhost for Mac**](https://paulbrowne.xyz/https-localhost)
 * [SSL and TLS Deployment Best Practices](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices)

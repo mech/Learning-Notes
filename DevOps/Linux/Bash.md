@@ -5,6 +5,7 @@
 * [Command Line Text Processing](https://github.com/learnbyexample/Command-line-text-processing)
 * [Safe ways to do things in bash](https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md)
 * [ShellCheck](https://github.com/koalaman/shellcheck/)
+* [Pure Bash Bible](https://github.com/dylanaraps/pure-bash-bible)
 
 ## Special Parameters
 
