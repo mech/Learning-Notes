@@ -11,3 +11,7 @@
 
 * [ice_cube](https://github.com/seejohnrun/ice_cube)
 
+## Async
+
+* [async-requests](https://github.com/Wolox/async-requests)
+

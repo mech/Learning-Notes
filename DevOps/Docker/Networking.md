@@ -11,6 +11,10 @@ Linux that run systemd like Ubuntu 16.04 use Predictable Network Interface Names
 
 The gateway will be the first available IP.
 
+## Load Balancing
+
+* [Introduction to modern network load balancing and proxying](https://blog.envoyproxy.io/introduction-to-modern-network-load-balancing-and-proxying-a57f6ff80236)
+
 ## Docker Internal Networking
 
 Prior to Docker 1.9 and is not recommended.

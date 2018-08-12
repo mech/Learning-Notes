@@ -1,5 +1,7 @@
 # Interface Design
 
+> Let the idea evolve
+
 > What UI must do? - Give a lot of context on what things is happening. See progress. Qualitative measurement. See [Basecamp Hill Chart...](https://www.youtube.com/watch?v=JwrI6rxELFw&t=15s)
 
 > The choice and execution of the patterns and their unique combination are influenced by a product’s purpose, ethos and design principles.
@@ -67,6 +69,16 @@
 * We needn't all pray at the beautiful minimalist design altar. Design doesn't have to be precious. Toss out your assumptions and build what works best.
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
+
+## Patterns
+
+* Patterns are especially important when redesigning an existing interface. They help find flaws in interactions and help you to understand what works best for your users.
+
+## Architecture
+
+* Firmitas (Durability) - A building should stand up robustly and remain in good condition. UI should function robustly and correctly and not say one thing and do it another way. Free of crashes.
+* Vtilitas (Utility) - Suitable for the purposes for which it is used. Material being used is different from conference room and houses for living. UI should accommodate and know what it's eventual purpose is. Do not use table list for everything. Different content need different UI layout.
+* Venvstas (Beauty) - it should be aesthetically pleasing. UI must be desirable.
 
 ## Value Proposition
 
@@ -159,6 +171,11 @@ How we use space to accomplish a task. (See [kitchen](http://andyfitzgerald.org/
 
 > The best approach to take is to let the content you have on your site dictate the actual widths you put into your media queries.
 
+## Boxy Syndrome
+
+* Break out of the box
+* Breaking grid
+
 ## Variations
 
 You need to articulate variations in templates, which is crucial for establishing robust and reliant design systems. For examples:
@@ -207,6 +224,11 @@ Users don't necessarily self-identify, and they often don't understand which aud
 ### Enticing Labels
 
 Makes people want to click and explore.
+
+## Radio and Drop-Down
+
+* [](https://blog.prototypr.io/7-rules-of-using-radio-buttons-vs-drop-down-menus-fddf50d312d1)
+* [SXSW Keynote - "You Know What? Fuck Dropdowns."](https://www.youtube.com/watch?v=hcYAHix-riY)
 
 ## People
 

@@ -13,6 +13,10 @@
 />
 ```
 
+## TextInput
+
+* [React Native's `<TextInput>`](https://facebook.github.io/react-native/docs/textinput)
+
 ## Button
 
 * [The ins and outs of input](https://www.youtube.com/watch?v=T1OwKW3tokE)

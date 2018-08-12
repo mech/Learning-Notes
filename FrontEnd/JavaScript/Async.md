@@ -33,6 +33,7 @@ db.open()
 
 * [Using ES2017 Async Functions](https://css-tricks.com/using-es2017-async-functions/)
 * [Node.js Async Function Best Practices](https://nemethgergely.com/async-function-best-practices/)
+* [JavaScript async/await: The Good Part, Pitfalls and How to Use](https://hackernoon.com/javascript-async-await-the-good-part-pitfalls-and-how-to-use-9b759ca21cda)
 * `await` takes in any Promises
 * Use normal try-catch to handle exceptions
 * Built on Promises and Generators

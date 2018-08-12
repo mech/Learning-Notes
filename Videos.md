@@ -11,6 +11,7 @@ document.getElementsByTagName('video')[0].playbackRate = 2;
 * [Clearleft](https://vimeo.com/clearleft)
 * [code.talks](https://www.youtube.com/channel/UCfuj1MM5p37CRzWYPv_PsWA/videos)
 * [An Event Apart](https://aneventapart.com/news/videos)
+* [DevTube](https://dev.tube/)
 
 ## CSS
 

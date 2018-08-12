@@ -431,6 +431,7 @@ class SearchInput extends Component {
 * [winterfell](https://github.com/andrewhathaway/winterfell)
 * [react-redux-form](https://github.com/davidkpiano/react-redux-form)
 * [Revalidation](http://revalidation.oss.25th-floor.com/)
+* [react-final-form-html5-validation](https://github.com/final-form/react-final-form-html5-validation)
 
 ## Videos
 

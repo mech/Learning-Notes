@@ -27,6 +27,20 @@ https://dollarshaveclub.github.io/stickybits/
 
 https://github.com/jaredpalmer/react-fns
 
+## React Native Web/DOM
+
+* [react-native-dom](https://github.com/vincentriemer/react-native-dom)
+
+## Navigator
+
+* [Full Stack React Navigation](https://www.youtube.com/watch?v=GzbravzRrBM)
+
+```
+<SwitchNavigator>
+
+<StackNavigator>
+```
+
 ## Ajax
 
 * [better-fetch](https://github.com/Swizec/better-fetch)
@@ -40,6 +54,7 @@ https://github.com/jaredpalmer/react-fns
 
 * [react-toggled](https://github.com/kentcdodds/react-toggled)
 * [Some toggle example](https://jrsinclair.com/articles/2018/react-redux-javascript-architecture/)
+* [On Designing and Building Toggle Switches](https://www.sarasoueidan.com/blog/toggle-switch-design/)
 
 ## Visual
 
@@ -130,6 +145,8 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [Mineral UI](https://mineral-ui.com/)
 * [Zendesk Garden](https://garden.zendesk.com/react-components/#!/Button/5)
 * [RSuite](https://rsuitejs.com/en/components/overview)
+* [Netlify](http://serverless-ux.netlify.com/)
+* [Atlaskit](http://atlaskit.atlassian.com/packages)
 
 ## Blank Slate
 
@@ -159,6 +176,7 @@ When paging, you can use arrow key. We also need to buffer and throttle requests
 
 If there are only 2 or 3 pages worth of data, why not just show all?
 
+* [Shopify's new table component](https://www.shopify.com/partners/blog/polaris-update)
 * [Introducing react-pivottable](https://codeburst.io/introducing-react-pivottable-4bfdd511afed)
 * [preact-virtual-list](https://github.com/developit/preact-virtual-list)
 * [sematable](https://github.com/sematext/sematable)
@@ -254,6 +272,7 @@ new IntersectionObserver(callback, options)
 * [Glide.js - slider and carousel](https://glidejs.com/docs/)
 * [react-scroll-shadow](https://github.com/zzarcon/react-scroll-shadow)
 * [react-virtualized](https://blog.logrocket.com/rendering-large-lists-with-react-virtualized-82741907a6b3)
+* [Scroll Magic](http://scrollmagic.io/)
 
 ## Date Picker and Calendar
 
@@ -438,4 +457,5 @@ class Tabs extend Component {
 * [ProseMirror](http://prosemirror.net/)
 * [CKEditor 5: A new era for rich text editing](https://ckeditor.com/blog/CKEditor-5-A-new-era-for-rich-text-editing/)
 * [draft-regex](https://github.com/YozhikM/draft-regex)
+* [Let's build a fast, slick and customizable rich text editor with Slate.js and React](https://codeburst.io/lets-build-a-fast-slick-and-customizable-rich-text-editor-with-slate-and-react-part-ii-3d3908d89664)
 

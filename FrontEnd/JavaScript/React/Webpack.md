@@ -68,10 +68,21 @@ plugins: [
 ]
 ```
 
+## Browserlist
+
+* [Use `default`](https://twitter.com/jamiebuilds/status/1022568918949408768)
+
+## Sourcemap
+
+* [Yet another explanation on sourcemap](https://medium.com/@trungutt/yet-another-explanation-on-sourcemap-669797e418ce)
+
 ## Webpack 4
 
 * [webpack 4: Changes Part 1 (week 24–25)](https://medium.com/webpack/webpack-4-changes-part-1-week-24-25-fd4d77674e55)
 * [A tale of Webpack 4 and how to finally configure it in the right way](https://hackernoon.com/a-tale-of-webpack-4-and-how-to-finally-configure-it-in-the-right-way-4e94c8e7e5c1)
+* Split chunking vs common chunking
+* Mini CSS extract
+* [Simple example](https://hackernoon.com/how-to-build-a-react-project-from-scratch-using-webpack-4-and-babel-56d4a26afd32)
 
 ## Starter Kits
 

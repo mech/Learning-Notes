@@ -13,6 +13,7 @@
 * [Named entity recognition](https://robots.thoughtbot.com/named-entity-recognition)
 * [The 5 Clustering Algorithms Data Scientists Need to Know](https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68)
 * [Introducing Guess.js - a toolkit for enabling data-driven user-experiences on the Web](http://snip.ly/yi2nn#https://blog.mgechev.com/2018/05/09/introducing-guess-js-data-driven-user-experiences-web/)
+* [No, Machine Learning is not just glorified Statistics](https://towardsdatascience.com/no-machine-learning-is-not-just-glorified-statistics-26d3952234e3)
 
 ML is not AI. ML is the ability for an algorithm to learn from prior data in order to produce a behavior. ML is teaching machines to make decisions in situations they have never seen.
 

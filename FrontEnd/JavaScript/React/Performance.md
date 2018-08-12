@@ -171,6 +171,12 @@ const DatagridBody = ({ ids }) => (
 export default pure(DatagridBody)
 ```
 
+## react-fast-compare
+
+* [react-fast-compare](https://github.com/FormidableLabs/react-fast-compare)
+
+First, see if a `PureComponent` would work for you. If it won't and you need deep checks, then use this.
+
 ## Server-Side Rendering
 
 * [Using Electrode to Improve React Server Side Render Performance By Up To 70%](https://medium.com/walmartlabs/using-electrode-to-improve-react-server-side-render-performance-by-up-to-70-e43f9494eb8b)

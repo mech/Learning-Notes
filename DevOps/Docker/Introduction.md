@@ -10,7 +10,12 @@
 ### For Ubuntu
 
 ```
-▶ 
+// Edit /etc/systemd/system/docker.service.d/mydocker.conf
+
+# Override by mech
+[Service]
+ExecStart=
+ExecStart=/usr/bin/dockerd --dns 8.8.8.8 --dns 8.8.4.4 --log-driver=syslog -H fd://
 ```
 
 ## Docker for Mac

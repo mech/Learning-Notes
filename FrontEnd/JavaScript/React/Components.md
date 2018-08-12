@@ -165,6 +165,8 @@ const App = () => (
 
 ## Props
 
+* [React PropType Best Practices](https://davidwells.io/blog/react-prop-type-best-practices/)
+
 Be careful when passing props as `null`. Any default prop value will not be used if the props is `null`.
 
 > What existed as mutable state is passed down as immutable props.

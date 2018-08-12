@@ -2,6 +2,16 @@
 
 Modules are a form of inheritance in Ruby.
 
+```ruby
+# To make a module able to be included as well use standalone
+module Timeout
+  def timeout(sec)
+  end
+  
+  module_function :timeout
+end
+```
+
 ## Rails Concern
 
 Bad concern:

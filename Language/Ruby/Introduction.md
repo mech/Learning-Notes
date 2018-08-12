@@ -29,7 +29,17 @@ end
 * [The Ultimate Guide to Ruby Timeouts](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts)
 * [Ruby Timeout, how does it even work?](https://flushentitypacket.github.io/ruby/2015/02/21/ruby-timeout-how-does-it-even-work.html)
 * [Why Ruby's Timeout is dangerous (and Thread.raise is terrifying)](https://jvns.ca/blog/2015/11/27/why-rubys-timeout-is-dangerous-and-thread-dot-raise-is-terrifying/)
+* [The disaster that is Ruby's timeout method](https://vaneyckt.io/posts/the_disaster_that_is_rubys_timeout_method/)
 
+```ruby
+# Ruby timeout is not thread-safe
+
+Timeout::timeout(5) do
+  # Block of code that should be interrupted if it takes
+  # longer than 5 seconds.
+  # However, exceptions from other threads will also affect this
+end
+```
 
 ## Splat and Double Splat
 

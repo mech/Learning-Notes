@@ -5,6 +5,7 @@
 * [Preparing and Exporting SVG Icons in Sketch](https://medium.com/sketch-app-sources/preparing-and-exporting-svg-icons-in-sketch-1a3d65b239bb#.hk01w4r4t)
 * [Shape Shifter - Morphing animation editor](https://github.com/alexjlockwood/ShapeShifter)
 * [Of SVG, Minification and Gzip](https://blog.usejournal.com/of-svg-minification-and-gzip-21cd26a5d007)
+* [The guide to integrating and styling icon systems — inline SVG and icon components](https://blog.nucleoapp.com/the-guide-to-integrating-and-styling-icon-systems-inline-svg-and-icon-components-9ed234419166)
 
 ```css
 /* Have you ever try to center your icon and not working? */

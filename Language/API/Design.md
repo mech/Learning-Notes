@@ -15,6 +15,7 @@ APIs should be a key component of your deployment strategy. Without a widespread
 * [Ultimate Guide to API Design](https://blog.qmo.io/ultimate-guide-to-api-design/)
 * [API Security Checklist](https://github.com/shieldfy/API-Security-Checklist)
 * [JSON Patch](http://jsonpatch.com/)
+* [APIs You Won't Hate](https://apisyouwonthate.com/)
 
 ---
 

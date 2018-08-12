@@ -2,6 +2,7 @@
 
 * [Reboot.css](https://scotch.io/tutorials/a-look-at-bootstrap-4s-new-reset-rebootcss)
 * [Yes, design systems will replace design jobs](https://www.designsystems.com/stories/will-design-systems-replace-designers/)
+* [Design system resources](https://medium.com/zendesk-creative-blog/design-system-resources-b9119ddf9790)
 
 > In order to better scope projects, it's essential to look at what the interface is comprised of rather than looking at the quantity/type of pages. This is what software developers have been doing for years now, but the concept of "Web pages" has distracted us from breaking things down into features and components - [Scope Component, not Pages](http://bradfrost.com/blog/post/scope-components-not-pages/)
 
@@ -196,6 +197,7 @@ http://styleguides.io/examples.html
 * [Pure CSS](https://purecss.io/)
 * [Polythene](https://github.com/ArthurClemens/polythene)
 * [Cosmos by Auth0](https://github.com/auth0/cosmos)
+* [Netlify](http://serverless-ux.netlify.com/)
 
 **Some forms examples**
 

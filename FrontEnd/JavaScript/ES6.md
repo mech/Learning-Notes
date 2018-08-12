@@ -175,6 +175,27 @@ import { Label } from 'my-component';
 import Button from 'react-bootstrap/lib/Button';
 ```
 
+## Tree Shaking
+
+* Use `export { default as XX }` for easier ES6 imports and tree shaking
+* [Why we have banned default exports in Javascript and you should do the same](https://blog.neufund.org/why-we-have-banned-default-exports-and-you-should-do-the-same-d51fdc2cf2ad)
+
+```js
+// It is always easier to do this and expect tree shaking to only
+// import the 2 functions
+import { isEmail, isNumeric } from 'validator';
+
+// In order to do this, we need to export it using...
+export { default as isEmail } from './lib/isEmail';
+export { default as isNumeric } from './lib/isNumeric';
+
+// Please verify!
+// Normally this won't work with tree shaking, but is it because
+// we are using export default as first?
+// Don't think need this...
+export default { isEmail, isNumeric }
+```
+
 ## Classes
 
 * [Classes in ECMAScript 6 (final semantics)](http://2ality.com/2015/02/es6-classes-final.html)

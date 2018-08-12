@@ -10,8 +10,62 @@
 * [React 16.3 is out and with it comes the officially supported Context API](https://itnext.io/compound-components-with-react-v16-3-6679c752bd56)
 * [How to protect your routes with React Context](https://medium.freecodecamp.org/how-to-protect-your-routes-with-react-context-717670c4713a)
 * [How to build your own React-Router with new React Context Api](https://medium.com/@stevenkoch/how-to-build-your-own-react-router-with-new-react-context-api-1647406b9b93)
+* [React Context in the World of Component Composition](https://medium.com/@ablamunits/react-context-in-the-world-of-component-composition-ce049d99afd9)
+* [What can the React Context API do for you? Multi-language text, Modals, and Themes](https://codeburst.io/what-can-react-context-api-do-for-you-multi-language-text-modals-and-theme-switchers-9cfbc8e5ee5e)
 
 https://twitter.com/ryanflorence/status/981179212147998721
+
+```js
+const defaultProviderValue = {
+  onItemClick: () => null,
+  selectedItems: []
+}
+
+const { Provider, Consumer } = React.createContext(defaultProviderValue)
+
+class Parent extends Component {
+  state = {
+    selectedItems: []
+  }
+  
+  render() {
+    const contextValue = {
+      onItemClick: this.onItemClick,
+      selectedItems: this.state.selectedItems
+    }
+    
+    return (
+      <Provider value={contextValue}>
+        {this.props.children}
+      </Provider>
+    )
+  }
+}
+
+class Item extends Component {
+  renderItem = (context) => {
+  }
+  
+  render() {
+    return (
+      <Consumer>
+        {(context) => this.renderItem(context)}
+      </Consumer>
+    )
+  }
+}
+
+class Usage extends Component {
+  render() {
+    return (
+      <Parent>
+        <Item />
+        <Item />
+      </Parent>
+    )
+  }
+}
+```
 
 ## Deprecated
 

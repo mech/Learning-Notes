@@ -1,5 +1,6 @@
 # React Animation
 
+* [Meaningful Motion with Action-Driven Animation](http://tobiasahlin.com/blog/meaningful-motion-w-action-driven-animation/)
 * [**React Animations in Depth**](https://medium.com/react-native-training/react-animations-in-depth-433e2b3f0e8e)
 * [How to build animated microinteraction in React](https://medium.freecodecamp.org/how-to-build-animated-microinteractions-in-react-aab1cb9fe7c8)
 * [Airbnb - Behind the scenes of our new open-source animation tool](https://airbnb.design/introducing-lottie/)
@@ -18,6 +19,7 @@
 * [Demystifying requestAnimationFrame](https://medium.com/@bkakadiya42/demystifying-the-requestanimationframe-867c3db6c217)
 * [Animating React Components with CSS and Styled-Components](https://codeburst.io/animating-react-components-with-css-and-styled-components-cc5a0585f105)
 * [Animating React Applications](https://x-team.com/blog/animating-react-applications/)
+* [Typed.js](https://mattboldt.com/demos/typed-js/)
 
 React ships with react-addons-css-transition-group which is a component that helps us build animations in a declarative way.
 

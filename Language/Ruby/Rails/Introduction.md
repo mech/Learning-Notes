@@ -27,8 +27,10 @@ end
 
 ## ActionCable
 
+* [anycable](https://github.com/anycable/anycable)
 * [Realtime with React and Rails](https://blog.codeship.com/realtime-with-react-and-rails/)
 * [Using Rails 5 ActionCable and RethinkDB to build a Reactive WebSocket App](https://medium.com/rubyinside/using-rails-5-actioncable-and-rethinkdb-to-build-a-reactive-websocket-app-7f77382cfb5)
+* [Action Cable 'Hello World' with Rails 5.1](https://medium.com/rubyinside/action-cable-hello-world-with-rails-5-1-efc475b0208b)
 
 ## Performance
 
