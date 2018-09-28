@@ -81,6 +81,28 @@ What API is good for inputs:
 </Form>
 ```
 
+## No Framework
+
+Most of the time, form should be simple to do and no framework like Formik is required.
+
+```js
+// Make use of dataset for passing ID
+handleIndexClick = event => {
+  this.setState({
+    active: +event.target.dataset.index
+  })
+}
+
+render() {
+  <img
+    src={photo.value}
+    onClick={this.handleIndexClick}
+    data-index={index}
+    className={index === active ? 'active' : ''}
+  />
+}
+```
+
 ## Input Mask
 
 * [**JavaScript Events Unmasked: How to Create an Input Mask for Mobile**](https://medium.com/outsystems-experts/javascript-events-unmasked-how-to-create-an-input-mask-for-mobile-fc0df165e8b2)
@@ -281,6 +303,8 @@ let input
 **Warn**: In general we should avoid using refs because they force the code to be more imperative, and harder to read and maintain.
 
 ## Validate in Real-Time
+
+* [Yup - Dead simple Object schema validation](https://github.com/jquense/yup)
 
 How we can validate in real-time at the **field level** and we'll create a `Field` component to improve the maintainability when an app has **multiple fields with different validation requirements**.
 

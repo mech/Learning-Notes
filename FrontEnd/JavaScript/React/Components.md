@@ -1,5 +1,7 @@
 # Components
 
+Component is just a function of state. A snapshot. You don't to have worry about state changing over time. The component will always show the current snapshot of the state.
+
 > Less crafting and more assembling.
 
 > React allows us to describe and break up our view into components.
@@ -378,6 +380,7 @@ const age = (props, propName) => {
 ## Lifecycle Methods
 
 * [Understanding React — Component life-cycle](https://medium.com/@baphemot/understanding-reactjs-component-life-cycle-823a640b3e8d)
+* [Problematic React Lifecycle Methods are Going Away in React 17](https://hackernoon.com/problematic-react-lifecycle-methods-are-going-away-in-react-17-4216acc7d58b)
 
 ### componentWillMount / Deprecated in 16.3
 

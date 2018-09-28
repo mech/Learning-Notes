@@ -867,4 +867,5 @@ Please don't do REST API backing your GraphQL. It will be damn slow. Always use 
 * [State Management in a GraphQL Era](https://www.youtube.com/watch?v=s-3k7O5rSFY)
 * [GraphQL at Shopify](https://www.youtube.com/watch?v=Wlu_PWCjc6Y)
 * [Getting Started with GraphQL on Shopify](https://www.youtube.com/watch?v=S4hTq_3yQrk)
+* [Prisma playlists](https://www.youtube.com/channel/UCptAHlN1gdwD89tFM3ENb6w/videos)
 

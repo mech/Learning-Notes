@@ -245,6 +245,8 @@ Basecamp designed around an activity and enabled thousands of potentially very d
 
 ## Jobs To Be Done
 
+It's not a feature, it's a problem. It's not a system, it's an experience.
+
 > The problems people encounter in their lives rarely change from generation to generation. The products they hire to solve these problems change all the time.
 
 * [Position, Position, Position!](https://m.signalvnoise.com/position-position-position-34b510a28ddc#.e3zqxe7le)
@@ -264,6 +266,10 @@ Basecamp designed around an activity and enabled thousands of potentially very d
 Product design is all about metaphors. Every icon, every button, and every interaction is a metaphor for something in the physical world. The Dropbox icon is a metaphor for a storage box. Click-and-drag is a metaphor for picking things up with your hand.
 
 But some metaphors mean different things in different cultures. In United States, an owl represents wisdom. In Finland and India, an owl can represent foolishness.
+
+## Case Studies
+
+* [A Faster and More Flexible Home Page that Delivers the News Readers Want](https://open.nytimes.com/a-faster-and-more-flexible-home-page-that-delivers-the-news-readers-want-1522ff64aa86)
 
 ## Videos
 

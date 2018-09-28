@@ -12,6 +12,7 @@ https://github.com/Chalarangelo/30-seconds-of-code
 * [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
 * [Interview questions?](https://medium.freecodecamp.org/the-definitive-javascript-handbook-for-a-developer-interview-44ffc6aeb54e)
 * [A guide to JavaScript Regular Expressions](https://flaviocopes.com/javascript-regular-expressions/)
+* [JavaScript "Prototype Chains"](https://medium.com/@hyejunglim/javascript-prototype-chains-cff594f35431)
 
 ---
 
@@ -220,6 +221,9 @@ class Button extends React.Component {
   // Class properties
   state = {
   }
+  
+  // Also class property, but instance property
+  x = 'bar'
   
   // Static properties
   static propTypes = {

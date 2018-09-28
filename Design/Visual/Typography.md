@@ -13,6 +13,8 @@
 * [Rails and web fonts](https://gist.github.com/anotheruiguy/7379570)
 * [Nginx to serve web fonts](https://github.com/fontello/fontello/wiki/How-to-setup-server-to-serve-fonts)
 * [How To Set Weights And Styles With The @font-face Declaration](https://coding.smashingmagazine.com/2013/02/setting-weights-and-styles-at-font-face-declaration/)
+* [The Font Loading Checklist](https://www.zachleat.com/web/font-checklist/)
+* [`font-display`](https://www.zachleat.com/web/font-display-reflow/)
 
 There are 6 web font formats:
 

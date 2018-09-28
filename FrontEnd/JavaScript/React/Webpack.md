@@ -74,6 +74,8 @@ plugins: [
 
 ## Sourcemap
 
+Don't use sourcemap in production!
+
 * [Yet another explanation on sourcemap](https://medium.com/@trungutt/yet-another-explanation-on-sourcemap-669797e418ce)
 
 ## Webpack 4

@@ -1,6 +1,7 @@
 # Async
 
 * [How JavaScript works: Event loop and the rise of Async programming + 5 ways to better coding with async/await](https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5)
+* [Handling errors with async/await and promises](https://medium.com/@vcarl/handling-errors-with-async-await-and-promises-cd2fea534f08)
 
 Async is basically eliminating callback hell.
 

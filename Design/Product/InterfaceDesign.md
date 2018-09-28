@@ -37,6 +37,7 @@
 * [Why I love ugly, messy interfaces — and you probably do too](https://m.signalvnoise.com/why-i-love-ugly-messy-interfaces-and-you-probably-do-too-edff4a896a83)
 * [Law of UX](https://lawsofux.com/)
 * [Psychology in Design (Part 1)](https://blog.prototypr.io/psychology-in-design-part-1-cdc63229cbe4)
+* [Coherence means making sure every part of your product feels like it belongs there, instead of trying to make them exactly the same](https://uxdesign.cc/coherent-not-consistent-b44244dadec4)
 
 > Consistency, not uniformity
 > 
@@ -73,6 +74,10 @@
 ## Patterns
 
 * Patterns are especially important when redesigning an existing interface. They help find flaws in interactions and help you to understand what works best for your users.
+
+---
+
+* [UI Sources](https://www.uisources.com/interactions)
 
 ## Architecture
 

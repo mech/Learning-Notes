@@ -1,5 +1,7 @@
 # Routing
 
+* [react-app-location](https://medium.com/dailyjs/stop-repeating-yourself-with-routes-links-and-location-parameter-parsing-in-your-react-app-a9ac317dfe1)
+
 ```js
 // <Router> provide context for location and history object.
 // It also subscribe to history change event.

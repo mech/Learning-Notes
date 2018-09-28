@@ -25,6 +25,16 @@
 
 * [Offline Web Applications](https://www.udacity.com/course/offline-web-applications--ud899)
 
+## Storage
+
+* [localForage](https://github.com/localForage/localForage)
+
+## Sync
+
+Sync is hard in PWA, use PouchDB?
+
+* [PouchDB & CouchDB: An interview with Nolan Lawson](https://blog.couchdb.org/2017/04/04/pouchdb-couchdb-an-interview-with-nolan-lawson/)
+
 ## Performance Budget
 
 * [Perf Budget Calculator](http://www.performancebudget.io/)

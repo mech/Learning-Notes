@@ -71,6 +71,11 @@ class Item extends React.PureComponent {
 
 Don't forget to avoid the common mistakes that make the `PureComponent` less effective, such as generating new functions inside the `render()`, or using constant as props.
 
+## Profiler
+
+* [Profiler RFC #51](https://github.com/reactjs/rfcs/pull/51)
+* [Interaction tracking with React](https://gist.github.com/bvaughn/8de925562903afd2e7a12554adcdda16)
+
 ## render()
 
 * Do as little work as possible in the `render()` function
