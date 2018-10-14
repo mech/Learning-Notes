@@ -1,5 +1,7 @@
 # Interface Design
 
+* [The Psychology of Design](https://alistapart.com/article/psychology-of-design)
+
 > Let the idea evolve
 
 > What UI must do? - Give a lot of context on what things is happening. See progress. Qualitative measurement. See [Basecamp Hill Chart...](https://www.youtube.com/watch?v=JwrI6rxELFw&t=15s)

@@ -305,6 +305,7 @@ let input
 ## Validate in Real-Time
 
 * [Yup - Dead simple Object schema validation](https://github.com/jquense/yup)
+* [validator.js - String validation](https://github.com/chriso/validator.js)
 
 How we can validate in real-time at the **field level** and we'll create a `Field` component to improve the maintainability when an app has **multiple fields with different validation requirements**.
 

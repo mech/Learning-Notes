@@ -13,6 +13,7 @@ https://github.com/Chalarangelo/30-seconds-of-code
 * [Interview questions?](https://medium.freecodecamp.org/the-definitive-javascript-handbook-for-a-developer-interview-44ffc6aeb54e)
 * [A guide to JavaScript Regular Expressions](https://flaviocopes.com/javascript-regular-expressions/)
 * [JavaScript "Prototype Chains"](https://medium.com/@hyejunglim/javascript-prototype-chains-cff594f35431)
+* [Mastering Modular JavaScript](https://github.com/mjavascript/mastering-modular-javascript)
 
 ---
 

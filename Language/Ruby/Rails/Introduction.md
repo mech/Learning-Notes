@@ -54,6 +54,7 @@ worker_timeout
 
 ## Background Job
 
+* [Shopify gem for making jobs interruptible and resumable](https://github.com/Shopify/job-iteration)
 * [sidekiq-scheduler](https://github.com/moove-it/sidekiq-scheduler)
 * [rufus-scheduler](https://github.com/jmettraux/rufus-scheduler)
 * [Pub/Sub for Sidekiq](https://github.com/hired/reactor)

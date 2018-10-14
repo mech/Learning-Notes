@@ -1,5 +1,7 @@
 # Attributes
 
+* [dry-types](https://dry-rb.org/gems/dry-types/)
+* [Stripe's type implementation for Ruby](https://sorbet.run/)
 * [attributes.rb](https://github.com/rails/rails/blob/master/activerecord/lib/active_record/attributes.rb)
 * [store_configurable](https://github.com/metaskills/store_configurable)
 

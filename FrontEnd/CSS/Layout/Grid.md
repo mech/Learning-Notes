@@ -1,5 +1,6 @@
 # Grid
 
+* [Visual guide to Grid](http://grid.malven.co/)
 * [Best Practices With CSS Grid Layout](https://www.smashingmagazine.com/2018/04/best-practices-grid-layout/)
 * [Everything You Know About Web Design Just Changed | Jen Simmons](https://hookedoncode.com/2018/04/everything-you-know-about-web-design-just-changed-jen-simmons/)
 * [Mozilla CSS Grid Playground](https://mozilladevelopers.github.io/playground/css-grid)
@@ -192,6 +193,7 @@ grid-template-rows: repeat(2, minmax(80px, auto));
 ## Fractional Unit
 
 * [What You Didn't know about the CSS Fractional Unit](https://medium.com/flexbox-and-grids/what-you-didnt-know-about-the-css-fractional-unit-580bd62647e8)
+* [Difference between `auto` and `1fr`](https://css-tricks.com/preventing-a-grid-blowout/)
 
 ## minmax() Function
 
@@ -215,6 +217,7 @@ grid-template-columns: 15em 4.5fr minmax(5em, 3fr) 10%;
 * [Jen Simmons's Labs](http://labs.jensimmons.com/)
 * [Codepen collection on CSS Grid Layout](https://codepen.io/collection/XRRJGq/)
 * [Art Directing For The Web With CSS Grid Template Areas](https://www.smashingmagazine.com/2018/04/art-directing-web-css-grid/)
+* [Creating horizontal scrolling containers the right way](https://uxdesign.cc/creating-horizontal-scrolling-containers-the-right-way-css-grid-c256f64fc585)
 
 ## People
 

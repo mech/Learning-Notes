@@ -1,5 +1,9 @@
 # Docker Introduction
 
+* [Play with Docker](https://training.play-with-docker.com/)
+
+---
+
 * Networking - Acquire SocketPlane
 * Storage - Acquire Infinit
 * Swarm

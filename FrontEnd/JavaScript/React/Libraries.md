@@ -147,6 +147,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [RSuite](https://rsuitejs.com/en/components/overview)
 * [Netlify](http://serverless-ux.netlify.com/)
 * [Atlaskit](http://atlaskit.atlassian.com/packages)
+* [Reakit](https://reakit.io/components/)
 
 ## Blank Slate
 

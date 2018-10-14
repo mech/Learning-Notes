@@ -94,6 +94,7 @@ Don't use sourcemap in production!
 
 ## create-react-app
 
+* [CRA v2](https://github.com/facebook/create-react-app/issues/5103)
 * [Porting enterprise React app to create-react-app](https://medium.com/@KarandikarMihir/porting-enterprise-react-app-to-create-react-app-bfb565a25460)
 * [Tweaking Configuration For React Scripts In Create React App](https://medium.com/@shubheksha/tweaking-configuration-for-react-scripts-in-create-react-app-d91e9d03a42f)
 * [Configure create-react-app without ejecting](https://medium.com/@kitze/configure-create-react-app-without-ejecting-d8450e96196a)

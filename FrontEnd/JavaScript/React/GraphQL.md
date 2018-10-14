@@ -444,6 +444,10 @@ ShopType = ObjectType.define do
 end
 ```
 
+## Nullability
+
+* [Using nullability in GraphQL](https://blog.apollographql.com/using-nullability-in-graphql-2254f84c4ed7)
+
 ## Field Naming
 
 2 format for mutations:
@@ -663,7 +667,6 @@ after = The next cursor value. An alternative to integer offset.
 * [GraphQL + Relay Modern + Rails](https://collectiveidea.com/blog/archives/2017/08/03/graphql-relay-modern-rails)
 * [Caching GraphQL queries with GraphQL-ruby and Rails](http://mgiroux.me/2016/graphql-query-caching-with-rails/)
 * [graphql-ruby-demo](https://github.com/rmosolgo/graphql-ruby-demo)
-* [File uploading with Rails + Apollo client](https://gist.github.com/github0013/d79fa651be3d7450adcd447676d01921)
 * [graphql-preload](https://github.com/ConsultingMD/graphql-preload)
 * [Presenter pattern for Rails and GraphQL](http://graphqlme.com/2017/09/30/presenterdecorator-pattern-in-graphql-rails/)
 * [Caching GraphQL queries with GraphQL-ruby and Rails](http://mgiroux.me/2016/graphql-query-caching-with-rails/)
@@ -725,6 +728,11 @@ module Graph::Types
   end
 end
 ```
+
+## File Uploading
+
+* [File uploading with Rails + Apollo client](https://gist.github.com/github0013/d79fa651be3d7450adcd447676d01921)
+* [Uploading files using Relay and a Rails GraphQL server](http://mgiroux.me/2015/uploading-files-using-relay-with-rails/)
 
 ## Resolvers
 
@@ -808,6 +816,11 @@ curl -X POST \
 '
 ```
 
+## IDE
+
+* [js-graphql-intellij-plugin](https://github.com/jimkyndemeyer/js-graphql-intellij-plugin)
+* [GraphQL for Visual Studio Code](https://www.prisma.io/blog/vscode-thieghu7shoo/)
+
 ## Codegen
 
 * [GraphQL Code-Generator 1.0](https://medium.com/@dotansimha/graphql-code-generator-a34e3785e6fb)
@@ -821,6 +834,8 @@ curl -X POST \
 It turns out that the tree structure of GraphQL lends itself extremely well to client-side caching.
 
 ## Persisted Query
+
+* [Persisted GraphQL Queries with Apollo Client](https://blog.apollographql.com/persisted-graphql-queries-with-apollo-client-119fd7e6bba5)
 
 ```
 POST /graphql/eyBuawWNlIHsdfHj5IhoHJ0

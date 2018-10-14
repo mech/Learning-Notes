@@ -5,6 +5,7 @@
 * [What every software engineer should know about search](https://medium.com/startup-grind/what-every-software-engineer-should-know-about-search-27d1df99f80d)
 * [Doug Turnbull](https://medium.com/@softwaredoug/this-is-a-fantastic-post-e9caae910334)
 * [Awesome Information Retrieval](https://github.com/harpribot/awesome-information-retrieval)
+* [Sourcegraph open sourced!](https://github.com/sourcegraph/sourcegraph)
 
 In Yelp business listing, there is business name, operating hours, images, and some attributes invisible to the users. There are also content components that we don't want to search, such as reviews and tips. These could confuse a user's search results; for example, if a review included the name of a competing restaurant.
 

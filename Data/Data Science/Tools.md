@@ -3,6 +3,7 @@
 * [Apache Airflow](https://airflow.apache.org/) - Monitor workflows as DAGs of tasks.
 * [Apache Spark](https://spark.apache.org/) - Data processing without MapReduce. Overtake Hadoop Map Reduce. Spark can execute batch processing jobs 10 to 100 times faster than MapReduce.
 * [Apache Flink](https://flink.apache.org/) - Overtake Spark's batch processing
+* [Declarative web scraping](https://github.com/MontFerret/ferret)
 
 ## Spark
 
