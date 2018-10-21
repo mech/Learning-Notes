@@ -2,6 +2,7 @@
 
 https://github.com/Chalarangelo/30-seconds-of-code
 
+* [33 concepts every JavaScript developer should know](https://github.com/leonardomso/33-js-concepts)
 * [How JavaScript works - A series](https://blog.sessionstack.com/how-javascript-works-the-building-blocks-of-web-workers-5-cases-when-you-should-use-them-a547c0757f6a)
 * [The Modern JavaScript Tutorial](https://javascript.info/)
 * [Understanding ECMAScript 6 - Nicholas C. Zakas](https://leanpub.com/understandinges6/read)
@@ -44,6 +45,10 @@ function shouldShowSpinner(fsm, listNode) {
 if (shouldShowSpinner(fsm, listNode)) {
 }
 ```
+
+## Conditionals
+
+* [5 yips to write better conditionals](https://scotch.io/bar-talk/5-tips-to-write-better-conditionals-in-javascript)
 
 ## Let
 

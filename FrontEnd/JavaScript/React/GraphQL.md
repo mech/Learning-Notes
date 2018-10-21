@@ -635,6 +635,7 @@ companiesConnection(first: 10) {
 * [GraphQL Connections In Rails](http://graphqlme.com/2017/09/24/graphql-connections-rails/)
 * [Slack API Pagination](https://api.slack.com/docs/pagination)
 * [GraphQL Pagination Implementation](https://medium.com/@mattmazzola/graphql-pagination-implementation-8604f77fb254)
+* [Building Chatty — Part 5: GraphQL Pagination](https://medium.com/react-native-training/building-chatty-part-5-pagination-with-graphql-23a25fc9f0bf)
 
 Instead of using literal page numbers, idiomatic GraphQL uses opaque strings called **cursors**. Cursors are more resilient to real-time changes to your data, which might lead to duplicates in simple page-based systems.
 

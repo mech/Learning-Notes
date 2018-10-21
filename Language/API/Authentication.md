@@ -17,6 +17,7 @@
 * [JWT the right way](https://stormpath.com/blog/jwt-the-right-way)
 * [Stop using JWT for sessions](http://cryto.net/~joepie91/blog/2016/06/13/stop-using-jwt-for-sessions/)
 * [Does JWT put your web app at risk?](http://blog.prevoty.com/does-jwt-put-your-web-app-at-risk)
+* [Does JWT still require CSRF check?](https://medium.com/paypal-engineering/securing-your-js-apps-w-stateless-csrf-9a60ee6bd010)
 
 JWT's payload contain **claims** which are **assertions** about a subject.
 

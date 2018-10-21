@@ -81,6 +81,10 @@
 
 * [UI Sources](https://www.uisources.com/interactions)
 
+## Filter
+
+* [Users Don't Want Filters, They Want Better Content](https://medium.com/@hopper_travel/users-dont-want-filters-they-want-better-content-3146f650b8f6)
+
 ## Architecture
 
 * Firmitas (Durability) - A building should stand up robustly and remain in good condition. UI should function robustly and correctly and not say one thing and do it another way. Free of crashes.
@@ -234,7 +238,7 @@ Makes people want to click and explore.
 
 ## Radio and Drop-Down
 
-* [](https://blog.prototypr.io/7-rules-of-using-radio-buttons-vs-drop-down-menus-fddf50d312d1)
+* [7 Rules of Using Radio Buttons vs Drop-Down Menus](https://blog.prototypr.io/7-rules-of-using-radio-buttons-vs-drop-down-menus-fddf50d312d1)
 * [SXSW Keynote - "You Know What? Fuck Dropdowns."](https://www.youtube.com/watch?v=hcYAHix-riY)
 
 ## People
@@ -245,4 +249,5 @@ Makes people want to click and explore.
 ## Videos
 
 * [Best channels for UI designers on YouTube](https://uxplanet.org/best-channels-for-ui-deisgners-on-youtube-250b53b1be53)
+* [Get the Right Answers from Users - UI Tips and Tricks](https://www.youtube.com/watch?v=ZipQC6NO1UQ)
 

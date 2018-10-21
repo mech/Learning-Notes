@@ -13,6 +13,7 @@
 * [react-pdf](https://github.com/diegomura/react-pdf)
 * [Puppeteer - Headless Chrome](https://try-puppeteer.appspot.com/)
 * [WebAssembly and PDF](https://pspdfkit.com/blog/2017/webassembly-a-new-hope/)
+* [A command-line tool to turn web pages into beautifully formatted PDFs](https://github.com/danburzo/percollate)
 
 ```
 ▶ mdls INR123.pdf

@@ -11,3 +11,4 @@
 ## Videos
 
 * [Stranger Danger: Fixing vulnerabilities in npm package ](https://www.youtube.com/watch?v=GtVStvEywzU)
+* [Mark Stuart, PayPal: Web Security in Node.js and JavaScript Apps](https://www.youtube.com/watch?v=vE5kCqwoSUg)

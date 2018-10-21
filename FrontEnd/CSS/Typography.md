@@ -65,6 +65,8 @@ Instead of defining our typography with an absolute unit like the pixel, we can 
 
 ## EM
 
+* [Pixels vs. Ems: Users DO Change Font Size](https://medium.com/@vamptvo/pixels-vs-ems-users-do-change-font-size-5cfb20831773)
+
 Always tied to font-size. It is good for media queries or grid layout:
 
 ```css

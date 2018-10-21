@@ -5,6 +5,8 @@
 ## CV & Resume
 
 * [Applying User Centered Design to a CV](https://uxdesign.cc/applying-user-centred-design-to-a-cv-8e1e7dadddd9)
+* [Resume Maker](https://www.resumemaker.online/)
+* [ResumeMaker.Online — a UX case study](https://uxdesign.cc/ux-case-study-resumemaker-online-9943f444a890)
 
 ## Job Boards
 

@@ -11,6 +11,10 @@ In Yelp business listing, there is business name, operating hours, images, and s
 
 As much as we want to index all things, we should know when to leave out content that shouldn't be indexed.
 
+## Diacritic
+
+* [Searching and sorting text with diacritical marks in JavaScript](https://thread.engineering/2018-08-29-searching-and-sorting-text-with-diacritical-marks-in-javascript/)
+
 ## Search UI
 
 * [Search interface: 20 things to consider](https://uxplanet.org/search-interface-20-things-to-consider-4b1466e98881)
