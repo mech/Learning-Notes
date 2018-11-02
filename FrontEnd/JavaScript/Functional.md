@@ -70,6 +70,8 @@ More than one arrow means that we have a higher-order function.
 
 ## Currying
 
+* [Understanding Currying in JavaScript](https://blog.bitsrc.io/understanding-currying-in-javascript-ceb2188c339)
+
 Currying is a functional technique that involves the use of higher-order functions. Currying is the practice of holding on to some of the values needed to complete an operation until the rest can be supplied at a later point in time. This is achieved through the use of a function that returns another function, the curried function.
 
 ```js

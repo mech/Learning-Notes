@@ -49,6 +49,7 @@ https://github.com/jaredpalmer/react-fns
 ## For Development
 
 * [react-inspector](https://github.com/xyc/react-inspector)
+* [clean_logs](https://github.com/pgiani/clean_logs)
 
 ## Toggle
 
@@ -67,6 +68,7 @@ https://github.com/jaredpalmer/react-fns
 * [react-x-ray - CSS Layout Debugger](https://github.com/jxnblk/react-x-ray)
 * [react-content-loader](http://danilowoz.com/react-content-loader/)
 * [react-measurements](https://github.com/rmfisher/react-measurements)
+* [vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/)
 
 ```js
 import React from 'react';
@@ -431,6 +433,7 @@ class Tabs extend Component {
 * [Dragon Drop - Accessible drag and drop](https://github.com/schne324/dragon-drop)
 * [selection.js - making visual DOM Selections](https://simonwep.github.io/selection/)
 * [react-kanban](https://github.com/markusenglund/react-kanban)
+* [smooth-dnd](https://github.com/kutlugsahin/smooth-dnd/)
 
 ## D3 and Charts
 

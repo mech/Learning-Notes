@@ -81,6 +81,10 @@ What API is good for inputs:
 </Form>
 ```
 
+## Formik
+
+* [Formik For React: A Dive Into Field Arrays](https://medium.com/@rossbulat/react-formik-a-dive-into-field-arrays-fc58fff8a791)
+
 ## No Framework
 
 Most of the time, form should be simple to do and no framework like Formik is required.
@@ -306,6 +310,7 @@ let input
 
 * [Yup - Dead simple Object schema validation](https://github.com/jquense/yup)
 * [validator.js - String validation](https://github.com/chriso/validator.js)
+* [An Introduction to Validation in React with Yup](https://medium.com/@rossbulat/introduction-to-yup-object-validation-in-react-9863af93dc0e)
 
 How we can validate in real-time at the **field level** and we'll create a `Field` component to improve the maintainability when an app has **multiple fields with different validation requirements**.
 

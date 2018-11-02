@@ -142,6 +142,8 @@ Being with "horizontal prototype" that covers all your main screens. Your next i
 
 ## Blank Slate
 
+* [Everything you need to know about skeleton screens](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a)
+
 ## Complexion Reduction
 
 * [Complexion Reduction: A New Trend In Mobile Design](http://www.huffingtonpost.com/entry/complexion-reduction-a-new-trend-in-mobile-design_us_577d828fe4b05b4c02fb8b07)

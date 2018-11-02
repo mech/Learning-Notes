@@ -18,7 +18,21 @@ Don't confuse Babel with Webpack. Babel is a compiler and Webpack is a module bu
 
 * JSON5 format
 * Using `babel.config.js` is recommended since Babel 7
-*  
+
+## Main Packages
+
+* @babel/core - where the transform takes place: `babel.transform("code()")`
+* @babel/cli - compile files from command line.
+* @babel/node
+
+```
+> import * as babel from "@babel/core"
+SyntaxError: /path/repl: Modules aren't supported in the REPL
+> 1 | import * as babel from "@babel/core"
+    | ^
+```
+
+**Modules aren't supported in the REPL**. If you want to use ES6-style module-loading in Node REPL, it is not supported due to technical limitations.
 
 ## Plugins
 

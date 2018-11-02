@@ -26,6 +26,7 @@ The gist is that algorithms can take more or less time, depending on their compl
 * [On Iteration](http://www.informit.com/articles/article.aspx?p=1407357&seqNum=3)
 * [Counting Linearly With Counting Sort](https://medium.com/basecs/counting-linearly-with-counting-sort-cd8516ae09b3)
 * [Sorting Algorithms resources](https://github.com/no-stack-dub-sack/cs-playground-react/blob/master/RESOURCES.md)
+* [Sorting in JavaScript is hard](https://v8.dev/blog/array-sort)
 
 ## Searching
 
