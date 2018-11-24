@@ -68,6 +68,10 @@ plugins: [
 ]
 ```
 
+## Polyfill
+
+* [What is a polyfill](https://blog.kentcdodds.com/what-is-a-polyfill-acab87e8481e)
+
 ## Browserlist
 
 * [Use `default`](https://twitter.com/jamiebuilds/status/1022568918949408768)
@@ -80,10 +84,11 @@ Don't use sourcemap in production!
 
 ## Webpack 4
 
+* [Webpack 4 + Babel 7](https://medium.com/oredi/webpack-with-babel-7-b61f7caa9565)
 * [webpack 4: Changes Part 1 (week 24–25)](https://medium.com/webpack/webpack-4-changes-part-1-week-24-25-fd4d77674e55)
 * [A tale of Webpack 4 and how to finally configure it in the right way](https://hackernoon.com/a-tale-of-webpack-4-and-how-to-finally-configure-it-in-the-right-way-4e94c8e7e5c1)
 * Split chunking vs common chunking
-* Mini CSS extract
+* [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) - Support dynamic CSS import
 * [Simple example](https://hackernoon.com/how-to-build-a-react-project-from-scratch-using-webpack-4-and-babel-56d4a26afd32)
 
 ## Starter Kits

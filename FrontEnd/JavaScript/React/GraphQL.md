@@ -17,6 +17,8 @@ Each component specifies the bit of data that it will need in the form of a **qu
 
 > No need to transform into the shape that you need from REST endpoint. It is already on the correct shape.
 
+* [Shopify GraphQL Design Tutorial](https://github.com/Shopify/graphql-design-tutorial)
+* [GraphQL Server Tutorial with Apollo Server and Express](https://www.robinwieruch.de/graphql-apollo-server-tutorial/)
 * [**Optimizing Your GraphQL Request Waterfalls**](https://dev-blog.apollodata.com/optimizing-your-graphql-request-waterfalls-7c3f3360b051)
 * [A complete React with Apollo and GraphQL Tutorial](https://www.robinwieruch.de/react-graphql-apollo-tutorial/)
 * [**GraphQL Specification**](https://facebook.github.io/graphql/)
@@ -676,6 +678,7 @@ after = The next cursor value. An alternative to integer offset.
 * [CacheQL](https://github.com/chatterbugapp/cacheql)
 * [graphql-errors](https://github.com/exAspArk/graphql-errors)
 * [graphql-guard](https://github.com/exAspArk/graphql-guard)
+* [graphql-cache](https://github.com/stackshareio/graphql-cache)
 
 Raise `GraphQL::ExecutionError` if there are any errors.
 

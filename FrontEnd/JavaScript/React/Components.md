@@ -118,6 +118,7 @@ const Aux = (props) => {
 
 ## Storybook
 
+* [Learn Storybook](https://www.learnstorybook.com/)
 * [Using React within a Design System](https://medium.com/buildit/using-react-within-a-design-system-73d4bb0cc822)
 
 ## Tips
@@ -165,7 +166,19 @@ const App = () => (
 * Function as Child (a.k.a render props)
 * Compound Component with **implicit props**
 
+## Uni-directional Data Flow
+
+One-way data flow, from parent to children only.
+
+What makes React unique is that its data flow is very simple and one way.
+
+There are 2 code paths. The code path for how the view is rendered is different from the code path the data will be changed. This is the reason why people like React and why jQuery developers need some time getting used to it.
+
+The key innovation React bring is the way you change the UI is different from the way you render the UI. You render the UI in one code path and you change UI in another code path by changing the underlying state of the application.
+
 ## Props
+
+Every props you have is a responsibility for that component. You have to think carefully about how many props or responsibilities you want your component to take in. Each change to the props will change the component behaviors.
 
 * [React PropType Best Practices](https://davidwells.io/blog/react-prop-type-best-practices/)
 
@@ -378,6 +391,8 @@ const age = (props, propName) => {
 ```
 
 ## Lifecycle Methods
+
+Understanding lifecycle methods will allow you to maintain proper data flow and handle events in your application.
 
 * [Understanding React — Component life-cycle](https://medium.com/@baphemot/understanding-reactjs-component-life-cycle-823a640b3e8d)
 * [Problematic React Lifecycle Methods are Going Away in React 17](https://hackernoon.com/problematic-react-lifecycle-methods-are-going-away-in-react-17-4216acc7d58b)

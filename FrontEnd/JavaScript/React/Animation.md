@@ -55,9 +55,19 @@ const Transition = () => (
 
 The `*-enter` and `*-enter-active` classes are applied when a new element is added as a child of the transition group.
 
+## Popmotion
+
+* [The Path To A Declaratively Animated Future](https://www.youtube.com/watch?v=1e07uPWpvzI)
+* [Popmotion](https://popmotion.io/)
+* [Pose](https://popmotion.io/pose/)
+
 ## GSAP - Greensock
 
 * [React meets GSAP](https://medium.com/@marcmintel/react-meets-gsap-c6dd82edeb72)
+
+## Anime.js
+
+* [Creating JavaScript Animations with Anime.js](https://medium.com/@ajmeyghani/creating-javascript-animations-with-anime-js-f2b14716cdc6)
 
 ## Libraries
 
@@ -70,7 +80,6 @@ The `*-enter` and `*-enter-active` classes are applied when a new element is add
 * [react-layout-transition](https://github.com/bkazi/react-layout-transition)
 * [react-anime](https://github.com/hyperfuse/react-anime)
 * [lookforward.js - create smooth transitions between pages](https://github.com/appleple/lookforward)
-* [Popmotion](https://popmotion.io/)
 * [Animate Plus](https://github.com/bendc/animateplus)
 * [Layer.js - UI composition & animation in pure HTML](https://layerjs.org/)
 

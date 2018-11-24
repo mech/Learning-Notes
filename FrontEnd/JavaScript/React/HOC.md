@@ -1,4 +1,43 @@
-# Higher Order Components - Behavior rather than Markup
+# Higher Order Components and Render Props - Behavior rather than Markup
+
+## Render Props
+
+* [React Render Props](https://tylermcginnis.com/react-render-props/)
+
+```js
+class TaskTimeline extends Component {
+  render() {
+    return (
+      // This is using render props
+      <TimelineLayout
+        items={this.props.tasks}
+        renderItem={this._renderItem}
+      />
+      
+      // It can also be written like this directly
+      <TimelineLayout>
+        {(item, layoutInfo) => (
+          <TimelineTask
+            task={item}
+            width={layoutInfo.width}
+          />
+        )}
+      </TimelineLayout>
+    )
+  }
+  
+  _renderItem = (item, layoutInfo) => {
+    return (
+      <TimelineTask
+        task={item}
+        width={layoutInfo.width}
+      />
+    )
+  }
+}
+```
+
+## HOC
 
 Container components are not very reusable when it comes to rendering different results. Take for example this container component:
 

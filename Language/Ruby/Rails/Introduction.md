@@ -13,6 +13,10 @@ if registered_at < Rails.application.config_for(:registration)['limit'].minutes.
 end
 ```
 
+## Architecture and File Structure
+
+* [Rails Parts](http://tomrothe.de/posts/rails_parts.html)
+
 ## Upgrade
 
 * [Official guide on upgrading Rails](http://edgeguides.rubyonrails.org/upgrading_ruby_on_rails.html)

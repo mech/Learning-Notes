@@ -441,6 +441,7 @@ class Tabs extend Component {
 * [Nivo](http://nivo.rocks/#/)
 * [Chartify](https://kis.github.io/chartify/)
 * [sparkline](https://github.com/fnando/sparkline)
+* [chart-parts](https://github.com/Microsoft/chart-parts)
 
 ## Images
 
@@ -449,6 +450,7 @@ class Tabs extend Component {
 
 ## Editor
 
+* [Slate JS](https://www.slatejs.org)
 * [Learn DraftJS](https://learn-draftjs.now.sh/)
 * [Dante 2](https://michelson.github.io/dante2/)
 * [Slate](https://github.com/ianstormtaylor/slate)

@@ -96,6 +96,7 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 
 ---
 
+* [I don't want a refrigerator with a learning curve](https://uxdesign.cc/build-less-make-better-things-7d7316dd7e4d)
 * [Design without purpose is happening left and right](https://uxdesign.cc/pretty-pixels-vs-functional-design-35170e413d67)
 * [Why hire more designers?](https://medium.com/the-year-of-the-looking-glass/why-hire-more-designers-fa270c4bc085)
 * [Apple's 2016 in review](https://chuqui.com/2017/01/apples-2016-in-review/)
@@ -110,6 +111,10 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 * [Feature Fatigue](https://www.chargebee.com/blog/saas-product-feature-prioritization/)
 * [Look elsewhere - Don't stare at your industry. Look in the opposite direction.](https://m.signalvnoise.com/look-elsewhere-e89b2b24f3f2)
 * [The Design Genome Project](https://www.invisionapp.com/enterprise/design-genome/)
+
+## Preset Preferences is Dangerous
+
+> And maybe I'll want my toaster to be able to detect bread type and cook it according to my preset preferences — and share each toast experience on Instagram if toast-posts start taking off. But I believe I never will, because those features are not, and will never be, useful. - [Build less, make better things](https://uxdesign.cc/build-less-make-better-things-7d7316dd7e4d)
 
 ## Whole System
 
@@ -249,6 +254,7 @@ It's not a feature, it's a problem. It's not a system, it's an experience.
 
 > The problems people encounter in their lives rarely change from generation to generation. The products they hire to solve these problems change all the time.
 
+* [How we accidentally invented Job Stories](https://www.intercom.com/blog/accidentally-invented-job-stories/)
 * [Position, Position, Position!](https://m.signalvnoise.com/position-position-position-34b510a28ddc#.e3zqxe7le)
 * [People don't buy products, they buy better versions of themselves](https://blog.bufferapp.com/people-dont-buy-products-they-buy-better-versions-of-themselves)
 * [Jobs to be Done: from Doubter to Believer by Sian Townsend at Front 2016](https://vimeo.com/167029277)

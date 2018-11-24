@@ -2,6 +2,7 @@
 
 https://github.com/Chalarangelo/30-seconds-of-code
 
+* [JS Essentials](https://codeburst.io/javascript-essentials-numbers-and-math-72655b2e5edd)
 * [33 concepts every JavaScript developer should know](https://github.com/leonardomso/33-js-concepts)
 * [How JavaScript works - A series](https://blog.sessionstack.com/how-javascript-works-the-building-blocks-of-web-workers-5-cases-when-you-should-use-them-a547c0757f6a)
 * [The Modern JavaScript Tutorial](https://javascript.info/)
@@ -45,6 +46,10 @@ function shouldShowSpinner(fsm, listNode) {
 if (shouldShowSpinner(fsm, listNode)) {
 }
 ```
+
+## Execution Context
+
+* [Understanding Execution Context and Execution Stack in Javascript](https://blog.bitsrc.io/understanding-execution-context-and-execution-stack-in-javascript-1c9ea8642dd0)
 
 ## Conditionals
 
@@ -159,6 +164,8 @@ adder.add([1, 2, 3])
 * [ES6 Modules in Depth](https://ponyfoo.com/articles/es6-modules-in-depth#the-es6-module-system)
 * [The JavaScript Modules Limbo](https://codeburst.io/the-javascript-modules-limbo-585eedbb182e)
 * [`import * as React` vs `import React`](https://discuss.reactjs.org/t/es6-import-as-react-vs-import-react/360/9)
+* [Misunderstanding ES6 Modules, Upgrading Babel, Tears, and a Solution](https://blog.kentcdodds.com/misunderstanding-es6-modules-upgrading-babel-tears-and-a-solution-ad2d5ab93ce0)
+* [ES6: The Bad Parts](https://benmccormick.org/2018/06/05/es6-the-bad-parts/)
 
 ```js
 export default {

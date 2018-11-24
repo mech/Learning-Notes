@@ -4,6 +4,7 @@
 * Allows different eviction policies beyond LRU (Least Recently Used) and LFU (Least Frequently Used - Redis 4.0)
 * [Random notes on improving the Redis LRU algorithm](http://antirez.com/news/109)
 * [redis-rb 4.0 support](https://github.com/rails/rails/pull/30748)
+* [AWS Caching Advice](https://aws.amazon.com/caching/)
 
 If you are using `redis-store` with Rails, consider using the `redis-rails` gem instead.
 
@@ -28,6 +29,8 @@ gem 'hiredis'
 # Rails will load redis/connection/hiredis for you
 gem 'redis', '~> 3.0', require: ['redis', 'redis/connection/hiredis']
 ```
+
+## Redis Cluster, Redis Sentinel, Redis Distributed
 
 ## Eviction
 
@@ -68,7 +71,7 @@ Run different Redis instances for Cache and Unified Log.
 
 * [redis-cell - rate limiting in Redis as a single command](https://github.com/brandur/redis-cell)
 
-## As Kafka with Redis Stream
+## As Kafka with Redis 5.0 Stream
 
 * [Redis Streams and the Unified Log](https://brandur.org/redis-streams)
 * [Streams: a new general purpose data structure in Redis](http://antirez.com/news/114)

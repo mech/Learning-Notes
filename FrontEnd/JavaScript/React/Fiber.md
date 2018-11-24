@@ -31,3 +31,18 @@
 
 ## Return Multiple Elements
 
+## Suspense
+
+* Pause state update until data is ready
+* On fast network, render after the whole tree is ready
+* On slow network, precisely control the loading states
+* Simplify data fetching, code splitting and any kind of async data requirement
+
+## Time-Slicing
+
+* React doesn't block the thread while rendering
+* Feels synchronous if device is fast
+* Feels responsive if device is slow
+* Only final rendered state is displayed
+* Make sure your most important renders are rendered first like text entry
+

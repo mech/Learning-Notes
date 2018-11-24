@@ -202,6 +202,7 @@ replica.fetch.max.bytes
 
 ## Ruby
 
+* [Karafka](https://github.com/karafka/karafka)
 * [Kafka for Ruby](http://teamcoding.com/blog/2015/10/05/kafka/)
 * [Avro in Ruby](http://teamcoding.com/blog/2015/12/01/avro-in-ruby/)
 * [delivery_boy](https://github.com/zendesk/delivery_boy)

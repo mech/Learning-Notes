@@ -21,6 +21,16 @@
 set PATH $HOME/.npm-packages/bin $PATH
 ```
 
+```
+▶ npm ls eslint
+▶ npx eslint --init
+▶ npm run
+▶ npm run lint -s
+▶ npm v create-react-app version
+▶ npm v create-react-app versions
+▶ npm v create-react-app
+```
+
 ## package.json
 
 * [NPM graph - See dependency graph using your package.json file](http://npm.broofa.com/)

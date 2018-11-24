@@ -1,6 +1,12 @@
 # Gems
 
 * [Creating Configuration Objects in Ruby](https://blog.codeship.com/creating-configuration-objects-in-ruby/)
+* [pagy - New faster pagination](https://github.com/ddnexus/pagy)
+* [autoload_reloader](https://github.com/Shopify/autoload_reloader)
+
+## Log
+
+* [sniffer](https://github.com/aderyabin/sniffer)
 
 ## Authentication
 

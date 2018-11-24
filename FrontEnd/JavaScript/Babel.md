@@ -11,6 +11,8 @@ Don't confuse Babel with Webpack. Babel is a compiler and Webpack is a module bu
 // If you have npm@5.2.0, you can use npx
 ▶ npx babel
 
+▶ env NODE_ENV=development node_modules/.bin/babel-node
+
 ▶ npx babel src --out-dir lib --plugins=@babel/plugin-transform-arrow-functions
 ```
 

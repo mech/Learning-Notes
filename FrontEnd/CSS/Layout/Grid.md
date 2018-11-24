@@ -235,4 +235,5 @@ grid-template-columns: 15em 4.5fr minmax(5em, 3fr) 10%;
 * [Why I love CSS Grid - by Jen Simmons](https://www.youtube.com/watch?v=tY-MHUsG6ls)
 * [dotCSS 2017 - Benjamin De Cock - CSS Grid in Production](https://www.youtube.com/watch?v=_BCiiE31D5M)
 * [Jen Simmons's YouTube channel](https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag/videos)
+* [CSS Grid in 45 Minutes!](https://www.youtube.com/watch?v=DCZdCKjnBCs)
 

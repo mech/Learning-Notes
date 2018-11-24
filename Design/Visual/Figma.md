@@ -5,6 +5,7 @@
 * [Waiting for a sign to start building your design team’s component library?](https://medium.com/@willdjthrill/waiting-for-a-sign-to-start-building-your-design-teams-component-library-c43f4352c764)
 * [Figma is transforming my entire workflow](https://medium.com/@nspace/figma-is-transforming-my-entire-workflow-2ce2df2c12c2)
 * [A Sketch user's perspective on switching to Figma](https://blog.figma.com/a-sketch-users-perspective-on-switching-to-figma-458d359c48ef)
+* [Donut charts in Figma the right way](https://uxdesign.cc/donut-charts-in-figma-the-right-way-7a087572126e)
 
 ## Steps
 

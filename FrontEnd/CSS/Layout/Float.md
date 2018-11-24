@@ -66,6 +66,8 @@ $padding: 10px;
 
 ## Box Model
 
+* [Thinking Inside The Box ‒ CSS Box Model](https://medium.com/@js_tut/css-tutorial-1-box-model-6ff80a9bbfda)
+
 CSS is all about rectangular boxes (element box). At the center is the content area surrounded by paddings, borders, outlines and margins.
 
 Padding cannot be negative, but margins can. Padding can't be `auto`, but margin can. Border cannot accept percentage values.
