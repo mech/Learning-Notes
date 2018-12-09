@@ -1,5 +1,8 @@
 # Babel
 
+* Babel 6 - Released 2015
+* Babel 7 - Released Aug 2018
+
 Don't confuse Babel with Webpack. Babel is a compiler and Webpack is a module bundler (your build system).
 
 * [James Kyle's Babel Handbook](https://github.com/thejameskyle/babel-handbook/)
@@ -19,7 +22,7 @@ Don't confuse Babel with Webpack. Babel is a compiler and Webpack is a module bu
 ## .babelrc or package.json or babel.config.js?
 
 * JSON5 format
-* Using `babel.config.js` is recommended since Babel 7
+* Using `babel.config.js` is recommended since Babel 7. Not a replacement for `.babelrc`??
 
 ## Main Packages
 

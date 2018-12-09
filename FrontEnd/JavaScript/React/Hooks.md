@@ -2,6 +2,9 @@
 
 * [Fullstack React: An Introduction to Hooks in React](https://www.fullstackreact.com/articles/an-introduction-to-hooks-in-react/)
 * [Why React Hooks, and how did we even get here?](https://medium.freecodecamp.org/why-react-hooks-and-how-did-we-even-get-here-aa5ed5dc96af)
+* [How to convert withRouter to a React Hook](https://itnext.io/how-to-convert-withrouter-to-a-react-hook-f7babe0be79b)
+* [useNavbar](https://frontarm.com/demoboard/?id=6bafab26-0391-48ae-80ff-38dbf8cefafa)
+* [Making Sense of React Hooks](https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889)
 
 Reusing logic still suck in React.
 

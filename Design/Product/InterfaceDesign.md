@@ -1,5 +1,7 @@
 # Interface Design
 
+One idea is not enough - [Iterative UI Design](https://developer.apple.com/videos/play/wwdc2016/805)
+
 * [The Psychology of Design](https://alistapart.com/article/psychology-of-design)
 
 > Let the idea evolve
@@ -151,6 +153,12 @@ Being with "horizontal prototype" that covers all your main screens. Your next i
 * Bigger, bolder, blacker headlines
 * Simple, thin, recognizable icons
 * Double your whitespace
+
+## UI Density and Information Density
+
+Depending on scale, the density of the UI can change.
+
+Use arrows for places where there are information density.
 
 ## Application Shell
 

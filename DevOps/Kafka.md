@@ -2,6 +2,7 @@
 
 > Graphical User Interface has been doing this for a long time. Instead of a TextInput know all your code, it will only generate event for you to handle the logic.
 
+* [Netflix: 1 trillion events a day into streaming ingestion pipeline](https://medium.com/netflix-techblog/notebook-innovation-591ee3221233)
 * [Thorough Introduction to Apache Kafka](https://hackernoon.com/thorough-introduction-to-apache-kafka-6fbf2989bbc1)
 * [Handling user-initiated actions in an asynchronous, message-based architecture](https://www.oreilly.com/ideas/handling-user-initiated-actions-in-an-asynchronous-message-based-architecture)
 * [Turning the database inside-out with Apache Samza](https://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/)

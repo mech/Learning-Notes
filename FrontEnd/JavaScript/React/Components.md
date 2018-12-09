@@ -11,6 +11,7 @@ Component is just a function of state. A snapshot. You don't to have worry about
 
 > Learning functional programming completely changed my design process. There's a lot of parallels you can directly apply to your work day to day — it's about composition and I think this is something super useful for the design system we're working on. Rather than starting with a layout or a big marketing page and breaking it down, I love the idea of starting with the smallest possible primitives and building up and up and up.
 
+* [Pointer events with React — The why, how, and what?](https://medium.com/cleversonder/pointer-events-with-react-the-why-how-what-617a5b51dbb2)
 * [Step by step guide for writing awesome React components](https://codeburst.io/step-by-step-guide-for-writing-awesome-react-components-210c6def902b)
 * [React Code Style Guide](https://css-tricks.com/react-code-style-guide/)
 * [Custom Elements Everywhere](https://custom-elements-everywhere.com/)
@@ -196,6 +197,7 @@ Be careful when passing props as `null`. Any default prop value will not be used
 
 > Visualizing all the discrete states an application can be in will make your design systems better.
 
+* [Tackling UI complexity with State Machines](https://medium.com/@carloslfu/tackling-ui-complexity-with-state-machines-b3f1eb6d1a97)
 * [The React State Museum](https://hackernoon.com/the-react-state-museum-a278c726315)
 * [xstate - Microsoft - Functional, Stateless JS Finite State Machines and Statecharts](https://github.com/davidkpiano/xstate)
 * [unstated - alternative to Redux](https://github.com/jamiebuilds/unstated)

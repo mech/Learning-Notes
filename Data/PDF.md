@@ -61,6 +61,10 @@
 The only Downsample filter for monochrome images is Subsample, ignoring request.
 ```
 
+## Prawn
+
+* [#28 - Table overflowing without needing to?](https://github.com/prawnpdf/prawn-table/issues/10)
+
 ## Image Compression
 
 ```

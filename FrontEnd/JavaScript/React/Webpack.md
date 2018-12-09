@@ -82,8 +82,12 @@ Don't use sourcemap in production!
 
 * [Yet another explanation on sourcemap](https://medium.com/@trungutt/yet-another-explanation-on-sourcemap-669797e418ce)
 
-## Webpack 4
+## Webpack 4 (and Babel 7)
 
+* [Create React App 2.0: Babel 7, Sass, and More](https://reactjs.org/blog/2018/10/01/create-react-app-v2.html)
+* [The minimal Node.js with Babel Setup](https://www.robinwieruch.de/minimal-node-js-babel-setup/)
+* [Working with Babel 7 and Webpack](https://www.thebasement.be/working-with-babel-7-and-webpack/)
+* [How to set up React, webpack 4, and Babel 7 (2018)](https://www.valentinog.com/blog/react-webpack-babel/)
 * [Webpack 4 + Babel 7](https://medium.com/oredi/webpack-with-babel-7-b61f7caa9565)
 * [webpack 4: Changes Part 1 (week 24–25)](https://medium.com/webpack/webpack-4-changes-part-1-week-24-25-fd4d77674e55)
 * [A tale of Webpack 4 and how to finally configure it in the right way](https://hackernoon.com/a-tale-of-webpack-4-and-how-to-finally-configure-it-in-the-right-way-4e94c8e7e5c1)

@@ -5,7 +5,7 @@ https://github.com/Chalarangelo/30-seconds-of-code
 * [JS Essentials](https://codeburst.io/javascript-essentials-numbers-and-math-72655b2e5edd)
 * [33 concepts every JavaScript developer should know](https://github.com/leonardomso/33-js-concepts)
 * [How JavaScript works - A series](https://blog.sessionstack.com/how-javascript-works-the-building-blocks-of-web-workers-5-cases-when-you-should-use-them-a547c0757f6a)
-* [The Modern JavaScript Tutorial](https://javascript.info/)
+* [**The Modern JavaScript Tutorial**](https://javascript.info/)
 * [Understanding ECMAScript 6 - Nicholas C. Zakas](https://leanpub.com/understandinges6/read)
 * [Exploring ES6 - Dr. Axel Rauschmayer](http://exploringjs.com/es6/index.html)
 * [Exploring ES2016 and ES2017 - Dr. Axel Rauschmayer](http://exploringjs.com/es2016-es2017/index.html)
@@ -274,6 +274,7 @@ Button.defaultProps = {
 ## this
 
 * [Understanding JavaScript Function Invocation and "this"](http://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/)
+* [Taming `this` In JavaScript With Bind Operator](https://www.smashingmagazine.com/2018/10/taming-this-javascript-bind-operator/)
 
 ## Gather/Rest and Spread Operators
 

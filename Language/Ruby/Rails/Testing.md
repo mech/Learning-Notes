@@ -1,6 +1,7 @@
 # Rails Testing
 
 * [How to Write Better Code Using Mutation Testing](https://blog.cognitohq.com/how-to-write-better-code-using-mutation-testing/)
+* [The Missing Practical Step-By-Step TDD](https://itnext.io/the-missing-practical-step-by-step-test-driven-development-a7140ca4b71)
 
 ## Integration Tests
 

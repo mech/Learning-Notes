@@ -1,5 +1,7 @@
 # CQRS
 
+* [Eventide](https://eventide-project.org/)
+
 DDD, Event Sourcing and CQRS.
 
 In contrast to CRUD, DDD does not focus on the data of application, but on its processes. Workflow and events are more important part.

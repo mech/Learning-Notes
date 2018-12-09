@@ -6,6 +6,10 @@
 
 Async is basically eliminating callback hell.
 
+## Books
+
+* [Mastering Async/Await](http://asyncawait.net/jsweekly)
+
 ## Promises
 
 * [Passing data between Promise callbacks](http://2ality.com/2017/08/promise-callback-data-flow.html)
@@ -33,9 +37,27 @@ db.open()
 
 ## Async/Await
 
+> I also see a surprising amount of code that uses async/await mixed with classic callbacks or promise chains. While passing an async function to a promise's then() function as shown below is valid, it misses the point of async/await:
+
+```js
+// Works, but misses the point
+getCustomer().then(async function(customer) {
+  const order = await getOrders(customer.id);
+  
+  return { customer, order };
+});
+
+// Do this instead
+const customer = await getCustomer();
+const order = await getOrders(customer.id);
+return { customer, order };
+```
+
+* [Common Async/Await Design Patterns in Node.js](http://thecodebarbarian.com/common-async-await-design-patterns-in-node.js.html)
 * [Using ES2017 Async Functions](https://css-tricks.com/using-es2017-async-functions/)
 * [Node.js Async Function Best Practices](https://nemethgergely.com/async-function-best-practices/)
 * [JavaScript async/await: The Good Part, Pitfalls and How to Use](https://hackernoon.com/javascript-async-await-the-good-part-pitfalls-and-how-to-use-9b759ca21cda)
+* [Understanding JavaScript's async await](https://ponyfoo.com/articles/understanding-javascript-async-await)
 * `await` takes in any Promises
 * Use normal try-catch to handle exceptions
 * Built on Promises and Generators

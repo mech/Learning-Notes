@@ -13,3 +13,6 @@ Clarity can be achieved with Soft Dome tweeters like ProAc, Sonus Fabre and Dyna
 
 * SPL - Sound Pressure Level. Commonly referred to efficiency and sensitivity.
 
+## Playlist
+
+* [Greatest Audiophile Collection 2019 Vol 2- Sound Test Audio System](https://www.youtube.com/watch?v=kmKpDX030q0)

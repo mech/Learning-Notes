@@ -6,6 +6,7 @@
 * [Towards Minimal, Idiomatic, and Performant Ruby Code](https://blog.codeminer42.com/towards-minimal-idiomatic-and-performant-ruby-code-f3fc6aed3c94)
 * [5 Ruby Methods You Should Be Using](https://www.engineyard.com/blog/five-ruby-methods-you-should-be-using)
 * [Crafting Ruby](http://craftingruby.com/)
+* [It's Ruby, There Must Be a Better Way](https://dev.to/rpalo/its-ruby-there-must-be-a-better-way-4f7e)
 
 ```ruby
 # Singleton instance

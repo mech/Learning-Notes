@@ -317,6 +317,7 @@ const a = addDays(d, 10)
 
 ## File Upload
 
+* [Video on FileReader](https://www.youtube.com/watch?v=-AR-6X_98rM)
 * [Drag and drop file upload](https://codepen.io/pixelass/pen/dpyBOd?editors=0010)
 * [How To Make A Drag-and-Drop File Uploader With Vanilla JavaScript](https://www.smashingmagazine.com/2018/01/drag-drop-file-uploader-vanilla-js/)
 * [Upload anything you throw at it](https://pqina.nl/filepond/)
@@ -438,10 +439,11 @@ class Tabs extend Component {
 ## D3 and Charts
 
 * [A starting point on using D3 with React](https://blog.sicara.com/a-starting-point-on-using-d3-with-react-869fdf3dfaf#.aood1myab)
-* [Nivo](http://nivo.rocks/#/)
+* [**Nivo**](https://nivo.rocks/)
 * [Chartify](https://kis.github.io/chartify/)
 * [sparkline](https://github.com/fnando/sparkline)
 * [chart-parts](https://github.com/Microsoft/chart-parts)
+* [d3-funnel](https://jakezatecky.github.io/d3-funnel/)
 
 ## Images
 

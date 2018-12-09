@@ -21,6 +21,10 @@
 ▶ sudo update_dyld_shared_cache -force
 ```
 
+## Data
+
+* [Do more with Data: Building a Data Supplier plugin for Sketch](https://blog.sketchapp.com/do-more-with-data-2b765e870e4f)
+
 ## SVG
 
 ```
