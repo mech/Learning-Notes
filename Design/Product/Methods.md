@@ -1,10 +1,14 @@
 # Methods
 
+> We should be thinking more about methodologies rather than methods - [Method vs. methodology: understanding the difference](https://uxdesign.cc/method-vs-methodology-whats-the-difference-9cc755c2e69d)
+
 * [IDEO Method Cards](https://www.ideo.com/post/method-cards)
 * [UX Deliverables](https://uxplanet.org/a-complete-list-of-ux-deliverables-d62ccf1de434)
 * [Design Research Techniques](http://designresearchtechniques.com/casestudies/)
 * [The Secrets of Creating Great Design Workshops](https://medium.com/eightshapes-llc/the-secrets-of-creating-great-design-workshops-1e3476b548bf)
 * [Law of UX](https://lawsofux.com/)
+* [Skip User Research Unless You're Doing It Right — Seriously](https://medium.com/microsoft-design/skip-user-research-unless-youre-doing-it-right-seriously-15494e5ee033)
+* [Enough Design Methods](http://www.themoderniststudio.com/2018/05/28/enough-design-methods/)
 
 ## Mental Models
 
@@ -24,8 +28,15 @@
 
 > Personas create a false barrier between stakeholders and real world customers. This causes unnecessary revisions and wheel spinning.
 
+## Needs Statements
+
+* [Case Study: Improving how users manage data connections in Cognos Analytics](https://blog.prototypr.io/design-case-study-improving-how-users-connect-to-data-in-cognos-analytics-c919ddab9891)
+
+> After diverging and everyone putting up various different needs statements, we began to converge and cluster them.
+
 ## Prototype
 
+* [Provocative prototyping](https://uxplanet.org/provocative-prototyping-dc312dc2b9bb)
 * [Design by prototyping](https://rgabydesign.com/design-by-prototyping-744b4031e7c7)
 * [Digital Product Design is Not Graphic Design](https://medium.com/subform/digital-product-design-is-not-graphic-design-931ea97a0beb)
 * [Framer Crash Course](https://www.youtube.com/playlist?list=PLWlUJU11tp4f41p4dzizVkjjTQ38kA0wG)
@@ -47,6 +58,9 @@ Prototyping is a habit. It is a way to validate assumptions and ideas.
 > 
 > It lets you validate your assumptions and test ideas and new solution approaches early and in different contexts so that you know what will work and what you are building. Prototyping is a tool and a process, a way of working. But most importantly, prototyping is a way of thinking, a **mindset**.
 
+## Prototyping Tools
+
+* [RelativeWave Form](https://relativewave.com/form/)
 
 ## Contextual Research
 

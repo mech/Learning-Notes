@@ -7,6 +7,8 @@
 * [Design system resources](https://medium.com/zendesk-creative-blog/design-system-resources-b9119ddf9790)
 * [Microsoft Fluent](https://docs.microsoft.com/en-us/windows/uwp/design/layout/page-layout)
 * [Design Systems at GitHub](https://medium.com/@broccolini/design-systems-at-github-c8e5378d2542)
+* [Design Systems — in the wild](https://uxdesign.cc/design-systems-in-the-wild-cbc863f41c2)
+* [Design Systems Sprint 1: The Interface Inventory](https://medium.com/@marcintreder/design-systems-sprint-1-the-interface-inventory-1f78d376e49a)
 
 > In order to better scope projects, it's essential to look at what the interface is comprised of rather than looking at the quantity/type of pages. This is what software developers have been doing for years now, but the concept of "Web pages" has distracted us from breaking things down into features and components - [Scope Component, not Pages](http://bradfrost.com/blog/post/scope-components-not-pages/)
 

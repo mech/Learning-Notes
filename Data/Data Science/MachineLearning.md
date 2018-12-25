@@ -50,6 +50,7 @@ NP-Complete
 
 ## Videos
 
+* [Standford CS231n](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)
 * [Google Developer's series of ML](https://www.youtube.com/watch?v=cKxRvEZd3Mw)
 * [Machine Learning is Generalization to group or cluster learnings](https://www.youtube.com/watch?v=T1nFQ49TyeA)
 * [Ruby for Home-Ec](https://www.youtube.com/watch?v=iosgoDJl8VY)

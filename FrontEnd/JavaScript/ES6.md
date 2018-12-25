@@ -166,6 +166,7 @@ adder.add([1, 2, 3])
 * [`import * as React` vs `import React`](https://discuss.reactjs.org/t/es6-import-as-react-vs-import-react/360/9)
 * [Misunderstanding ES6 Modules, Upgrading Babel, Tears, and a Solution](https://blog.kentcdodds.com/misunderstanding-es6-modules-upgrading-babel-tears-and-a-solution-ad2d5ab93ce0)
 * [ES6: The Bad Parts](https://benmccormick.org/2018/06/05/es6-the-bad-parts/)
+* [Using JavaScript modules on the web](https://developers.google.com/web/fundamentals/primers/modules)
 
 ```js
 export default {
@@ -231,9 +232,13 @@ class Button extends React.Component {
     this.handleClick = this.handleClick.bind(this)
   }
   
-  // Class properties
+  // Class properties or public class fields
+  // Public class fields are shipping in V8 v7.2 and Chrome 72
   state = {
   }
+  
+  // Private class fields
+  #version = 1.0
   
   // Also class property, but instance property
   x = 'bar'

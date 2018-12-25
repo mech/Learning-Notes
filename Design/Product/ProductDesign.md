@@ -189,6 +189,8 @@ Strategy govern tactical execution.
 
 ## Design Sprint
 
+* [Lightning Decision Jam — Solve Problems Without Discussion](https://medium.muz.li/a-super-simple-exercise-for-solving-almost-any-product-design-challenge-f9e6c0019d7d)
+* [Design Sprint Videos](https://www.youtube.com/channel/UCeB_OpLspKJGiKv1CYkWFFw/videos)
 * Sprints can create habits in your company. After the first sprint, you might notice a shift in the way your team works. You'll look for ways to turn discussions into testable hypotheses.
 * You'll look for ways to answer big questions, not someday, but this week.
 * Taken the sprint process and used it on their own to solve problems, reduce risk, and make better decisions at work.

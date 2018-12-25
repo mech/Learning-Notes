@@ -9,3 +9,4 @@
 ## Books
 
 * [Artificial Intuition: The Improbable Deep Learning Revolution](https://gumroad.com/l/IHDj)
+* [Deep Learning - Ian Goodfellow and Yoshua Bengio and Aaron Courville](https://www.deeplearningbook.org/)

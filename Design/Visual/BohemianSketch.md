@@ -124,3 +124,6 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 * [Jon Moore](https://medium.com/@jon.moore)
 * [Francesco Bertocci](https://medium.com/@FreeAndWilling)
 
+## Videos
+
+* [Breaking The Mold | Part 1 The Homepage Hero](https://www.youtube.com/watch?v=ShbTFwjzIkg)

@@ -10,6 +10,7 @@
 * [How We Ship: Codetree](https://codetree.com/how-we-ship/interviews/codetree)
 * [How To Understand The Balance Between Learning And Progress](https://hackernoon.com/how-to-understand-the-balance-between-learning-and-progress-6783e7f711ac)
 * [Naming: The hardest problem in computer science](https://eev.ee/blog/2016/07/26/the-hardest-problem-in-computer-science/)
+* [Goodbye, Object Oriented Programming](https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53)
 
 Good code not only works, but is also simple, understandable, expressive and changeable.
 
@@ -357,6 +358,26 @@ If you're unclear how to make code open, the way forward is to start removing co
 
 ```ruby
 number.to_s.capitalize
+```
+
+## Interface Segregation Principle
+
+* [Avoiding Interface Pollution with the Interface Segregation Principle](https://medium.com/@severinperez/avoiding-interface-pollution-with-the-interface-segregation-principle-5d3859c21013) 
+
+In Ruby, we do not have interface types. We are not forced into implementing anything. So "fat interface pollution" is not in Ruby.
+
+But we can still pollute method interface "signature", like:
+
+```ruby
+def find_all_post(category:)
+end
+
+def find_all_post(category:, sort: false)
+end
+
+# Or should we just create another method interface
+def find_all_post_sorted(category:, sort:)
+end
 ```
 
 ## The Flocking Rules
