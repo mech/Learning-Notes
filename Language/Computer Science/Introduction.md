@@ -38,3 +38,6 @@ The gist is that algorithms can take more or less time, depending on their compl
 
 ## Dijkstra's Algorithm
 
+## Videos
+
+* [Bloom filter for System Design](https://www.youtube.com/watch?v=Bay3X9PAX5k)

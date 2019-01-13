@@ -19,6 +19,14 @@
 * [Flag argument is a code smell](http://craftingruby.com/posts/2017/05/04/flag-arguments-are-a-code-smell.html)
 * [Using Services to Keep Your Rails Controllers Clean and DRY](https://blog.engineyard.com/2014/keeping-your-rails-controllers-dry-with-services)
 
+## Open Your Mind
+
+> Objects are closures
+
+* Read up [Trailblazer](http://trailblazer.to/)
+* [Eventide](https://eventide-project.org/)
+* Elixir Umbrella
+
 ## Update
 
 * [ActiveRecord::Relation#update](https://github.com/rails/rails/pull/11898)
@@ -181,6 +189,22 @@ It would be a bit easier if we use the **repository pattern** and at least we kn
 
 ## Service Object
 
+Not all about `app/services` folder in Rails.
+
+* [Easier to see mistakes](https://www.youtube.com/watch?v=qgKlu5gFsJM)
+* Easier to navigate work site
+
+```ruby
+# Prefer explicit stateless to fluent interface
+module PolicyService
+  def self.purchase_policy(user, params)
+    # purchase a policy using user
+  end
+end
+```
+
+The ideal way to build large Rails backends is by implementing the majority of the domain logic as static stateless methods. Procedural programming is actually good. Use Transaction Script rather than ActiveRecord pattern. If using OOP, you need to hold many states in your head at once.
+
 * [Does my Rails app need a service layer?](https://blog.carbonfive.com/2012/01/10/does-my-rails-app-need-a-service-layer/)
 * [Essential RubyOnRails patterns — part 1: Service Objects](https://medium.com/selleo/essential-rubyonrails-patterns-part-1-service-objects-1af9f9573ca1)
 
@@ -309,6 +333,14 @@ class CompanyForm
   end
 end
 ```
+
+## Entity
+
+Entities are **BE** things. They are the being, not the doing. Even though they have operations on them, their operations are only about their data.
+
+Entities are **DATA**.
+
+Everything else is a **doer**, and they do one thing.
 
 ## Value Object (Immutable)
 

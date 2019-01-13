@@ -31,6 +31,8 @@ Good design preserves maximum flexibility at minimum cost by putting off decisio
 * Allows us to break things into pieces.
 * [Bring clarity to your monolith with Bounded Contexts](https://blog.carbonfive.com/2016/11/01/bring-clarity-to-your-monolith-with-bounded-contexts/)
 
+Structured monolith - clearly defined component with clear boundaries
+
 ---
 
 * Just large enough - knows its boundaries
@@ -346,7 +348,22 @@ class FooTest < MiniTest::Test
 end
 ```
 
+## Single Responsibility Principle
+
+> Class should have one reason to change.
+
+* Don't mix concern
+* Class should have one reason to change
+* Database class should all be Repository
+
 ## Open/Closed Principle
+
+> Open for extension. Close for modification.
+
+* Plugins
+* Drivers
+* Strategy pattern
+* Polymorphic
 
 The decision about whether to refactor in the first place should be determined by whether your code is already "open" to the new requirement.
 

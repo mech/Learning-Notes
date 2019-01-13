@@ -7,6 +7,7 @@
 * [5 Ruby Methods You Should Be Using](https://www.engineyard.com/blog/five-ruby-methods-you-should-be-using)
 * [Crafting Ruby](http://craftingruby.com/)
 * [It's Ruby, There Must Be a Better Way](https://dev.to/rpalo/its-ruby-there-must-be-a-better-way-4f7e)
+* [Modular Monolith](https://medium.com/@dan_manges/the-modular-monolith-rails-architecture-fb1023826fc4)
 
 ```ruby
 # Singleton instance

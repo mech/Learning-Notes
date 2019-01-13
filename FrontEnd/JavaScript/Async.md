@@ -4,6 +4,7 @@
 * [How JavaScript works: Event loop and the rise of Async programming + 5 ways to better coding with async/await](https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5)
 * [Handling errors with async/await and promises](https://medium.com/@vcarl/handling-errors-with-async-await-and-promises-cd2fea534f08)
 * [JavaScript Getter/Setter Pyramid](https://staltz.com/javascript-getter-setter-pyramid.html)
+* [Async Memoization](https://medium.com/@bluepnume/async-javascript-is-much-more-fun-when-you-spend-less-time-thinking-about-control-flow-8580ce9f73fc)
 
 Async is basically eliminating callback hell.
 

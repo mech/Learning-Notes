@@ -53,4 +53,6 @@ Usually have tighter letter spacing for headers.
 ## Some fonts to use
 
 * [Faune](http://www.cnap.graphismeenfrance.fr/faune/en.html)
+* [circular-std](https://github.com/elartix/circular-std)
+* [Inter UI](https://rsms.me/inter/)
 

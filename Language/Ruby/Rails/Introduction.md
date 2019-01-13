@@ -3,6 +3,8 @@
 * [Rails Development Dependencies Install](http://guides.rubyonrails.org/development_dependencies_install.html)
 * [Efficient Rails DevOps - A book](https://efficientrailsdevops.com/)
 * [Tools for a Modern Ruby Development Setup](https://www.sitepoint.com/tools-for-a-modern-ruby-development-setup/)
+* [Modular Monolith Rails](https://medium.com/@dan_manges/the-modular-monolith-rails-architecture-fb1023826fc4)
+* [Prevention of god classes and OOP](https://medium.com/root-engineering/separating-data-and-code-in-rails-architecture-3a031e17706b)
 
 ```ruby
 # Look for config/payments.yml
@@ -12,6 +14,8 @@ Rails.application.config_for(:payments)['stripe_key']
 if registered_at < Rails.application.config_for(:registration)['limit'].minutes.ago
 end
 ```
+
+> The boundary between stateful and stateless logic helps us think about implementing some of our most complex business logic in pure Ruby, completely separated from Rails. This is the key point to modular Rails application.
 
 ## Architecture and File Structure
 

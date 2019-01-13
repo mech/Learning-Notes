@@ -14,3 +14,7 @@
 ## Microdata
 
 * [HTML5 Microdata](https://html.spec.whatwg.org/multipage/#toc-microdata)
+
+## Meta Tags
+
+* [Meta Tags](https://metatags.io/)

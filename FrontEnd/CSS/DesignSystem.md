@@ -204,6 +204,7 @@ http://styleguides.io/examples.html
 * [Polythene](https://github.com/ArthurClemens/polythene)
 * [Cosmos by Auth0](https://github.com/auth0/cosmos)
 * [Netlify](http://serverless-ux.netlify.com/)
+* [Spotify Design](https://spotify.design/)
 
 **Some forms examples**
 

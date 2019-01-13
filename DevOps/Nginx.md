@@ -1,6 +1,7 @@
 # Nginx
 
 * [Scriptability with Lua](https://openresty.org/en/)
+* [Nginx configuration generator](https://nginxconfig.io/)
 
 ```
 http {

@@ -1,11 +1,12 @@
 # Babel
 
-* Babel 6 - Released 2015
 * Babel 7 - Released Aug 2018
+* Babel 6 - Released 2015
 
 Don't confuse Babel with Webpack. Babel is a compiler and Webpack is a module bundler (your build system).
 
 * [James Kyle's Babel Handbook](https://github.com/thejameskyle/babel-handbook/)
+* [Learn to write custom Babel and ESLint plugins](https://blog.kentcdodds.com/how-writing-custom-babel-and-eslint-plugins-can-increase-your-productivity-and-improve-user-fd6dd8076e26)
 
 ```
 ▶ npm install --save-dev @babel/core @babel/cli @babel/preset-env
@@ -41,11 +42,11 @@ SyntaxError: /path/repl: Modules aren't supported in the REPL
 
 ## Plugins
 
-By default Babel does anything. You need to plugins for babel to do anything useful.
+By default Babel doesn't do anything. You need plugins for babel to do anything useful.
 
 Plugins are used to transform syntax without waiting for browser support.
 
-* babel-plugin-macros
+* babel-plugin-macros - Make it possible to run Babel transforms without changing a Babel config
 
 ## Presets
 

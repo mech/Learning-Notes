@@ -221,6 +221,7 @@ Put authorization logic into the **nodes** (type-level), such that they are enfo
 
 ## N+1 Problem
 
+* [Solving the N+1 Problem for GraphQL through Batching](https://engineering.shopify.com/blogs/engineering/solving-the-n-1-problem-for-graphql-through-batching)
 * It's easy to fall into N+1 problem in GraphQL.
 * Using Ruby Fibre to solve N+1 problem innately? See Airbnb Graphist. Fibre will block until doing all aggregation.
 * N+1 is a under-fetching problem
@@ -740,6 +741,8 @@ end
 
 ## Resolvers
 
+> A function or method that resolves a value for a type or field in a schema
+
 Resolvers are like REST controller. They resolve your data fields. It is way more **composable** than controller which is more isolated and one time only. Resolvers do 1 thing, but they are aware of things that happen before them and can set things up after them.
 
 * Resolve functions are like little routers.
@@ -747,6 +750,7 @@ Resolvers are like REST controller. They resolve your data fields. It is way mor
 * ALL resolvers are called. Query is traversed field by field, executing "resolves" for each field.
 * Complexity is pushed to the server-side resolvers where powerful machines can take care of the heavy computation work and caching
 * [How is query executed?](https://dev-blog.apollodata.com/graphql-explained-5844742f195e)
+* [GraphQL Resolvers: Best Practices from PayPal](https://medium.com/paypal-engineering/graphql-resolvers-best-practices-cd36fdbcef55)
 
 Server developer can focus on **describing the data available** rather than implementing and optimizing specific endpoints.
 

@@ -73,6 +73,8 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 
 ## Text Style
 
+* [Get Down to the Nitty-Gritty of Text Rendering in Sketch](https://journal.yummygum.com/get-down-to-the-nitty-gritty-of-text-rendering-in-sketch-cd49f0544e20)
+
 ## Symbols and Nested Symbols
 
 * [Symbols are imperative for consistency and quality control](https://blog.usejournal.com/building-responsive-sketch-symbol-components-9973fafd4c04)

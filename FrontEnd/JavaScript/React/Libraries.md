@@ -123,6 +123,12 @@ export default class HerokuLoadingIndicator extends React.Component {
 
 ```
 
+## Utilities
+
+* [Voca is a JavaScript library for manipulating strings](https://github.com/panzerdp/voca)
+* [Mout - Modular JavaScript Utilities](https://github.com/mout/mout)
+* [Convenient and dependency free wrapper for working with arrays and objects](https://github.com/ecrmnn/collect.js/)
+
 ## UI Libraries
 
 * [iOS HIG](https://developer.apple.com/ios/human-interface-guidelines/resources/)
@@ -171,6 +177,11 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [puppeteer-examples](https://github.com/GoogleChromeLabs/puppeteer-examples)
 
 ## Table (Filtering, Pagination, Datagrid)
+
+```
+<DataTable />
+<InfoTable />
+```
 
 > Tables are effective because the nature of enterprise applications requires users to view rows of data simultaneously, scanning through alerts, comparing data and looking at data in any specific order of the user's choice.
 > 
@@ -444,6 +455,7 @@ class Tabs extend Component {
 * [sparkline](https://github.com/fnando/sparkline)
 * [chart-parts](https://github.com/Microsoft/chart-parts)
 * [d3-funnel](https://jakezatecky.github.io/d3-funnel/)
+* [Chart.js](https://github.com/chartjs/Chart.js)
 
 ## Images
 

@@ -68,9 +68,24 @@ plugins: [
 ]
 ```
 
+## Raw Webpack
+
+Without using CRA, just playing around.
+
+```
+▶ npm init -y
+▶ npm i -D babel-loader @babel/core @babel/preset-env webpack webpack-dev-server
+▶ npm i -D eslint eslint-loader babel-eslint
+▶ npm i -D file-loader url-loader
+▶ npm i -D css-loader style-loader
+▶ npm i -D webpack-manifest-plugin terser-webpack-plugin mini-css-extract-plugin optimize-css-assets-webpack-plugin case-sensitive-paths-webpack-plugin
+▶ 
+```
+
 ## Polyfill
 
 * [What is a polyfill](https://blog.kentcdodds.com/what-is-a-polyfill-acab87e8481e)
+* In CRA 2.0, support for IE9-11 is opt-in with react-app-polyfill
 
 ## Browserlist
 

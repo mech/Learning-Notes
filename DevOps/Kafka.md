@@ -101,10 +101,16 @@ adduser: Warning: The home directory `/var/lib/zookeeper' does not belong to the
 
 ## Plan your Partitions
 
+Topic can have many partitions and those partitions can reside at different nodes. Consumer inside Consumer Group work for a single topic, but on different partition.
+
 * Or else some of your disk will be full and others barely used
 * Ordering is also based on partition
 
 ## Maintain your Zookeeper
+
+> Kafka does not work without zookeeper
+
+Odd quorum of 3, 5, 7, etc. 5 means you can have 2 nodes down and still working. 3 is the minimum.
 
 * Periodically clean up transaction log
 * Leader data stored in Zookeeper
@@ -135,6 +141,14 @@ Need at least 3 broker servers to guarantee no loss of data through replication.
 export KAFKA_JVM_PERFORMANCE_OPTS="-server -XX:+UseG1GC
 -XX:MaxGCPauseMillis=20 -XX:InitiatingHeapOccupancyPercent=35
 -XX:+DisableExplicitGC -Djava.awt.headless=true"
+```
+
+## Topics
+
+```
+▶ kafka-topics --zookeeper 127.0.0.1:2181 --create --topic first_topic --partitions 3 --replication-factor 1
+
+▶ kafka-topics --zookeeper 127.0.0.1:2181 --list
 ```
 
 ## Producer

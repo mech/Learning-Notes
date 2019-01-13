@@ -2,6 +2,7 @@
 
 One idea is not enough - [Iterative UI Design](https://developer.apple.com/videos/play/wwdc2016/805)
 
+* [**7 Practical Tips for Cheating at Design**](https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886)
 * [The Psychology of Design](https://alistapart.com/article/psychology-of-design)
 * [Facebook: Who broke the build](https://www.facebook.com/groups/whobrokethebuild/photos/)
 
