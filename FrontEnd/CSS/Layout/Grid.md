@@ -32,6 +32,7 @@
 * [IBM CSS Gridish](https://medium.freecodecamp.org/introducing-css-gridish-helping-teams-to-adapt-css-grid-today-3e031ab222de)
 * [Times - From Bootstrap to CSS Grid](https://open.nytimes.com/bootstrap-to-css-grid-87b3f5f830e4)
 * [**CSS Grid — The Swiss Army Knife For Website and Application Layouts**](https://medium.com/@js_tut/css-grid-the-swiss-army-knife-for-cutting-website-and-application-layouts-c1bd7a6b4e56)
+* [Becoming a CSS Grid Ninja!](https://medium.com/@elad/becoming-a-css-grid-ninja-f4c6db018cc1)
 
 With 18 new CSS Grid properties (Flexbox has 12), there are many ways to achieve the same thing with the Grid layout. This is what makes it overwhelming.
 

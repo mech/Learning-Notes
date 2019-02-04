@@ -128,6 +128,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [Voca is a JavaScript library for manipulating strings](https://github.com/panzerdp/voca)
 * [Mout - Modular JavaScript Utilities](https://github.com/mout/mout)
 * [Convenient and dependency free wrapper for working with arrays and objects](https://github.com/ecrmnn/collect.js/)
+* [lazy.js - Like Underscore, but lazier](https://github.com/dtao/lazy.js)
 
 ## UI Libraries
 

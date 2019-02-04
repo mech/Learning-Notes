@@ -1,5 +1,6 @@
 # CSS Animation
 
+* [CSS Versus JavaScript Animations](https://developers.google.com/web/fundamentals/design-and-ux/animations/css-vs-javascript)
 * [Meaningful Motion with Action-Driven Animation](http://tobiasahlin.com/blog/meaningful-motion-w-action-driven-animation/)
 * [The Illusion of Life](http://www.centolodigiani.com/117722/3078861/work/the-illusion-of-life)
 * [Easing](http://easings.net/)

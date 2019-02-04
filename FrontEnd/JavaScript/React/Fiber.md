@@ -26,6 +26,9 @@
 * [Issue on how react-redux is going to interact with "Suspense" and "Time-Slicing" behavior](https://github.com/reactjs/react-redux/issues/890)
 * [A Walkthrough of *that* React Suspense Demo](https://dev.to/swyx/a-walkthrough-of-that-react-suspense-demo--4j6a)
 
+## Code Splitting with React Lazy
+
+* [How to retry when React lazy fails](https://goenning.net/2018/11/16/how-to-retry-dynamic-import-with-react-lazy/)
 
 ## Error Boundaries
 

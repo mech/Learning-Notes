@@ -3,6 +3,7 @@
 ## Render Props
 
 * [React Render Props](https://tylermcginnis.com/react-render-props/)
+* [react-adopt - Compose render props components](https://github.com/pedronauck/react-adopt)
 
 ```js
 class TaskTimeline extends Component {

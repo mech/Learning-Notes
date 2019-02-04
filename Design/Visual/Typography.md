@@ -9,6 +9,7 @@
 
 ## Web Fonts
 
+* [How to use web fonts in CSS](https://blog.logrocket.com/how-to-use-web-fonts-in-css-a0326f4d6a4d)
 * [Use Style Link at CSS options](https://stackoverflow.com/questions/3795611/why-not-define-font-weight-or-font-style-in-font-face-font-squirrel)
 * [Rails and web fonts](https://gist.github.com/anotheruiguy/7379570)
 * [Nginx to serve web fonts](https://github.com/fontello/fontello/wiki/How-to-setup-server-to-serve-fonts)

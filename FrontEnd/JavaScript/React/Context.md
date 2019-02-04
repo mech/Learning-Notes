@@ -68,6 +68,10 @@ class Usage extends Component {
 }
 ```
 
+## Provider or State Container
+
+You can create multiple providers for different purposes. The pattern doesn't enforce a singleton. You could even consume state from one provider in the other. State composition.
+
 ## Deprecated
 
 * [react-contextual](https://github.com/drcmda/react-contextual)

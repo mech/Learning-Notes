@@ -30,6 +30,11 @@ gem 'hiredis'
 gem 'redis', '~> 3.0', require: ['redis', 'redis/connection/hiredis']
 ```
 
+## Stream
+
+* [Redis Streams and the Unified Log](https://brandur.org/redis-streams)
+* [Some discussion](https://news.ycombinator.com/item?id=16232946)
+
 ## Redis Cluster, Redis Sentinel, Redis Distributed
 
 ## Eviction

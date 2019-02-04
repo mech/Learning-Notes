@@ -1,5 +1,7 @@
 # Components
 
+* [**The React Handbook**](https://medium.freecodecamp.org/the-react-handbook-b71c27b0a795)
+
 Component is just a function of state. A snapshot. You don't to have worry about state changing over time. The component will always show the current snapshot of the state.
 
 > Less crafting and more assembling.

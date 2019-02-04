@@ -2,9 +2,11 @@
 
 One idea is not enough - [Iterative UI Design](https://developer.apple.com/videos/play/wwdc2016/805)
 
+* [**The Metaphor Behind Material Design**](https://uxdesign.cc/the-metaphor-behind-material-design-b3a3d0ede37f)
 * [**7 Practical Tips for Cheating at Design**](https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886)
 * [The Psychology of Design](https://alistapart.com/article/psychology-of-design)
 * [Facebook: Who broke the build](https://www.facebook.com/groups/whobrokethebuild/photos/)
+* [Anticipatory design](https://medium.com/ido-lechner/crafting-smarter-interfaces-with-anticipatory-design-624f19ce8352)
 
 > Let the idea evolve
 
