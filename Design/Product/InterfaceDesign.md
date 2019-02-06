@@ -7,6 +7,7 @@ One idea is not enough - [Iterative UI Design](https://developer.apple.com/video
 * [The Psychology of Design](https://alistapart.com/article/psychology-of-design)
 * [Facebook: Who broke the build](https://www.facebook.com/groups/whobrokethebuild/photos/)
 * [Anticipatory design](https://medium.com/ido-lechner/crafting-smarter-interfaces-with-anticipatory-design-624f19ce8352)
+* [Page Flows - Inspirations for user flow](https://pageflows.com/)
 
 > Let the idea evolve
 
@@ -46,6 +47,7 @@ One idea is not enough - [Iterative UI Design](https://developer.apple.com/video
 * [Law of UX](https://lawsofux.com/)
 * [Psychology in Design (Part 1)](https://blog.prototypr.io/psychology-in-design-part-1-cdc63229cbe4)
 * [Coherence means making sure every part of your product feels like it belongs there, instead of trying to make them exactly the same](https://uxdesign.cc/coherent-not-consistent-b44244dadec4)
+* [Tooltip Guidelines](https://www.nngroup.com/articles/tooltip-guidelines/)
 
 > Consistency, not uniformity
 > 

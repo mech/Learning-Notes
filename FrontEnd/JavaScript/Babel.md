@@ -25,6 +25,8 @@ Don't confuse Babel with Webpack. Babel is a compiler and Webpack is a module bu
 * JSON5 format
 * Using `babel.config.js` is recommended since Babel 7. Not a replacement for `.babelrc`??
 
+`.babelrc` can be overridden by another `.babelrc` belonging to a node_module that you're transpiling and that can lead to weird issues.
+
 ## Main Packages
 
 * @babel/core - where the transform takes place: `babel.transform("code()")`

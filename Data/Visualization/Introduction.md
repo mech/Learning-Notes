@@ -24,6 +24,7 @@
 ## Libraries
 
 * [luma.gl by Uber](https://github.com/uber/luma.gl)
+* [p5.js](https://medium.com/@yanhann10/drawing-waves-with-p5-js-444f447bdc39)
 
 ## Blog
 

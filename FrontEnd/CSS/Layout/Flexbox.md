@@ -2,6 +2,7 @@
 
 [**Firefox DevTools for CSS authors**](https://blog.logrocket.com/firefox-devtools-for-css-authors-1511f41d1e3)
 
+* [The Flexbox Holy Albatross](http://www.heydonworks.com/article/the-flexbox-holy-albatross)
 * [Cluster and Spread](https://github.com/Heydon/bruck#c-luster)
 * [MDN's CSS Layout Cookbook](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook)
 * [Flexbox and Grids, your layout's best friends](https://aerolab.co/blog/flexbox-grids/)
@@ -234,4 +235,5 @@ footer {
 * [CSS4 Grid: True Layout Finally Arrives](https://www.youtube.com/watch?v=jl164y-Vb5E)
 * [Enhancing Responsiveness with Flexbox - booking.com example](https://vimeo.com/145055822)
 * [Jonathan Snook - Container Queries](https://www.youtube.com/watch?v=s1J4T1NW3qo)
+* [Making Future Interfaces: Algorithmic Layouts](https://www.youtube.com/watch?v=qOUtkN6M52M)
 

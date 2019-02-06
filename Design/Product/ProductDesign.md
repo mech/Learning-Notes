@@ -134,6 +134,8 @@ This has performance issues because cashier will be slow to adjust price for a d
 
 ## Strategy
 
+* [Stratechery - Insight on Product Strategy](https://stratechery.com/)
+
 Design strategy:
 
 - Involve finding user's goals (User Research)

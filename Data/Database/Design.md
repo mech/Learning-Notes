@@ -7,6 +7,12 @@ Requirements that shape the data:
 * Clerical usage/management usage
 * Hourly/daily/weekly usage
 
+## Relational
+
+* Storage is expensive during that time
+* Normalized form since storage is expensive but processing in queries are longer (trade CPU time)
+* Storage cost down, CPU cost up
+
 ## Models
 
 ```

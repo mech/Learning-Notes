@@ -2,7 +2,7 @@
 
 * [What's Wrong With Taxonomies - The Future is Faceted](http://semanticstudios.com/the_speed_of_information_architecture/)
 * [Search at Slack](https://slack.engineering/search-at-slack-431f8c80619e)
-* [What every software engineer should know about search](https://medium.com/startup-grind/what-every-software-engineer-should-know-about-search-27d1df99f80d)
+* [**What every software engineer should know about search**](https://medium.com/startup-grind/what-every-software-engineer-should-know-about-search-27d1df99f80d)
 * [Doug Turnbull](https://medium.com/@softwaredoug/this-is-a-fantastic-post-e9caae910334)
 * [Awesome Information Retrieval](https://github.com/harpribot/awesome-information-retrieval)
 * [Sourcegraph open sourced!](https://github.com/sourcegraph/sourcegraph)
@@ -87,6 +87,7 @@ Synonym management, hierarchical browsing, and associative linking.
 * [stretchy - Query builder for ElasticSearch](https://github.com/hired/stretchy)
 * [Elasticsearch For Beginners: Indexing your Gmail Inbox](https://github.com/oliver006/elasticsearch-gmail)
 * [Building a new search for FT.com](https://www.maketea.co.uk/2017/12/20/building-a-new-search-for-ft-com.html)
+* [Elasticsearch bucket aggregations and faceted navigation](https://iridakos.com/tutorials/2018/10/22/elasticsearch-bucket-aggregations.html)
 
 ## Blog
 

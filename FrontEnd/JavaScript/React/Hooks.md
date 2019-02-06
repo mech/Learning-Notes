@@ -1,5 +1,7 @@
 # Hooks
 
+* [RFC: React Hooks](https://github.com/reactjs/rfcs/pull/68)
+* [Making setInterval Declarative with React Hooks](https://overreacted.io/making-setinterval-declarative-with-react-hooks/)
 * [Fullstack React: An Introduction to Hooks in React](https://www.fullstackreact.com/articles/an-introduction-to-hooks-in-react/)
 * [Why React Hooks, and how did we even get here?](https://medium.freecodecamp.org/why-react-hooks-and-how-did-we-even-get-here-aa5ed5dc96af)
 * [How to convert withRouter to a React Hook](https://itnext.io/how-to-convert-withrouter-to-a-react-hook-f7babe0be79b)
@@ -36,3 +38,11 @@ Flat is always better than nested wrapper hell.
 * Use for imperative DOM mutation, interfacing with browser API
 
 Run both after the initial render and on every update. May have performance issues (if for example you are subscribing to event like resize event).
+
+## useReducer
+
+* [An example of using `useReducer`](https://medium.com/@diegoalmesp/not-another-reactjs-hooks-post-823f2d5d6ba4)
+
+## Libraries and Tools
+
+* [retoggle](https://github.com/Raathigesh/retoggle)

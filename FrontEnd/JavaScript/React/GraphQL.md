@@ -736,6 +736,8 @@ end
 
 ## File Uploading
 
+* [GraphQL multipart request specification](https://github.com/jaydenseric/graphql-multipart-request-spec)
+* [GraphQL file upload with Shrine](https://blog.stanko.io/graphql-file-upload-with-shrine-45fa26463c68)
 * [File uploading with Rails + Apollo client](https://gist.github.com/github0013/d79fa651be3d7450adcd447676d01921)
 * [Uploading files using Relay and a Rails GraphQL server](http://mgiroux.me/2015/uploading-files-using-relay-with-rails/)
 

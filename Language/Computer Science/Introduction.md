@@ -1,5 +1,6 @@
 # Computer Science
 
+* [**Algorithms** - Free book](http://jeffe.cs.illinois.edu/teaching/algorithms/)
 * [Crafting Interpreters](http://www.craftinginterpreters.com/contents.html)
 * [Game Programming Patterns](http://gameprogrammingpatterns.com/introduction.html)
 

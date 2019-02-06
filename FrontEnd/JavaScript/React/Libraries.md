@@ -249,6 +249,7 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 
 ## Auto-complete and Instant Search
 
+* [autoComplete.js](https://github.com/TarekRaafat/autoComplete.js)
 * [**Downshift**](https://medium.com/@kentcdodds/introducing-downshift-for-react-b1de3fca0817)
 * [downshift](https://github.com/paypal/downshift)
 * [RDropdown](https://github.com/jamhall/rdropdown)

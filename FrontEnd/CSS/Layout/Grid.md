@@ -1,5 +1,6 @@
 # Grid
 
+* [Times: CSS Grid for Designers](https://open.nytimes.com/css-grid-for-designers-f74a883b98f5)
 * [Visual guide to Grid](http://grid.malven.co/)
 * [Best Practices With CSS Grid Layout](https://www.smashingmagazine.com/2018/04/best-practices-grid-layout/)
 * [Everything You Know About Web Design Just Changed | Jen Simmons](https://hookedoncode.com/2018/04/everything-you-know-about-web-design-just-changed-jen-simmons/)
@@ -195,6 +196,26 @@ grid-template-rows: repeat(2, minmax(80px, auto));
 
 * [What You Didn't know about the CSS Fractional Unit](https://medium.com/flexbox-and-grids/what-you-didnt-know-about-the-css-fractional-unit-580bd62647e8)
 * [Difference between `auto` and `1fr`](https://css-tricks.com/preventing-a-grid-blowout/)
+
+If we wanted a grid to have 3 columns with no gap, the percent would have a rounded decimal value like:
+
+```css
+grid-template-columns: 33.33% 33.33% 33.33%;
+```
+
+Fractional units take the guesswork out of and let us write simply:
+
+```css
+grid-template-columns: 1fr 1fr 1fr;
+```
+
+## Auto Width
+
+CSS Grid accepts `auto` for column width, which is a hugely powerful tool. For the case below, if the page is 500px wide, the auto section will take up the remaining 300px.
+
+```css
+grid-template-columns: 100px auto 100px;
+```
 
 ## minmax() Function
 

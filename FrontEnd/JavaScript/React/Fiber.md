@@ -32,6 +32,8 @@
 
 ## Error Boundaries
 
+* [Handling Errors in JavaScript: The Definitive Guide](https://levelup.gitconnected.com/the-definite-guide-to-handling-errors-gracefully-in-javascript-58424d9c60e6)
+
 ## Return Multiple Elements
 
 ## Suspense
@@ -40,6 +42,7 @@
 * On fast network, render after the whole tree is ready
 * On slow network, precisely control the loading states
 * Simplify data fetching, code splitting and any kind of async data requirement
+* [React Suspense with the Fetch API](https://medium.com/swlh/react-suspense-with-the-fetch-api-cc655aced759)
 
 ## Time-Slicing
 

@@ -10,6 +10,7 @@
 * [Native-Like Animations for Page Transitions on the Web](https://css-tricks.com/native-like-animations-for-page-transitions-on-the-web/)
 * [How you can use simple Trigonometry to create better loaders](https://uxdesign.cc/how-you-can-use-simple-trigonometry-to-create-better-loaders-32a573577eb4)
 * [Sculpting Software Animation](https://medium.com/@pasql/sculpting-software-animation-7d818ddcd40a)
+* [CSS Animation Tutorials](https://cssanimation.rocks/)
 
 > The reason why I believe motion is so crucial isn't just because it looks nice, but because it changes the way we approach design.
 > 
