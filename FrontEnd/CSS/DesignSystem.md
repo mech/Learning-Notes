@@ -1,5 +1,7 @@
 # Design System (Thinking)
 
+https://xotv.me/channels/22-important/vod_videos/781-important-slash-slash-basecamp-dot-com
+
 * [Clearleft - Designing design systems](https://clearleft.com/posts/designing-design-systems)
 * [Awesome Design Systems](https://github.com/alexpate/awesome-design-systems)
 * [Reboot.css](https://scotch.io/tutorials/a-look-at-bootstrap-4s-new-reset-rebootcss)

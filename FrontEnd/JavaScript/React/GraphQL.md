@@ -17,6 +17,7 @@ Each component specifies the bit of data that it will need in the form of a **qu
 
 > No need to transform into the shape that you need from REST endpoint. It is already on the correct shape.
 
+* [GraphQL Foundation](https://foundation.graphql.org/)
 * [Shopify GraphQL Design Tutorial](https://github.com/Shopify/graphql-design-tutorial)
 * [GraphQL Server Tutorial with Apollo Server and Express](https://www.robinwieruch.de/graphql-apollo-server-tutorial/)
 * [**Optimizing Your GraphQL Request Waterfalls**](https://dev-blog.apollodata.com/optimizing-your-graphql-request-waterfalls-7c3f3360b051)

@@ -13,6 +13,7 @@ document.getElementsByTagName('video')[0].playbackRate = 2;
 * [An Event Apart](https://aneventapart.com/news/videos)
 * [DevTube](https://dev.tube/)
 * [WeAreDevelopers](https://www.youtube.com/channel/UCSD0dLRGQk_T-D3RvpM5aFQ)
+* [USENIX](https://www.youtube.com/channel/UCIdV7bE97mSPTH1mOi_yUrw/videos)
 
 ## CSS
 
@@ -27,6 +28,7 @@ document.getElementsByTagName('video')[0].playbackRate = 2;
 * [Full Stack Fest](https://www.youtube.com/channel/UCwoOpKfkyCQHW562hXXQAGg/videos)
 * [Fronteers](https://vimeo.com/fronteers)
 * [Full Stack Talks](https://www.youtube.com/channel/UCpq2_V-9AYYUHSsjoJZPUTg/videos)
+* [Fitc](https://www.youtube.com/user/fitcevents/videos)
 
 ## Go
 

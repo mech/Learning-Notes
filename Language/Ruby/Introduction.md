@@ -58,6 +58,16 @@ end
 * [A Guide to the Ruby CSV Library - Part 2](https://www.sitepoint.com/guide-ruby-csv-library-part-2/)
 * [Superfast CSV imports using PostgreSQL's COPY command](https://infinum.co/the-capsized-eight/superfast-csv-imports-using-postgresqls-copy)
 
+## Ruby 2.6
+
+* [Ruby 2.6 Support for JRuby](https://github.com/jruby/jruby/issues/5576)
+* [Functional composition](https://blog.stanko.io/function-composition-ruby-8f91aea21e5f) with Proc and Lambda using `>>`. Similar to Elixir's pipeline
+* Infinite range
+* [Exploring Ruby 2.6 — Proc#compose and Enumerator#chain](https://medium.com/@baweaver/exploring-ruby-2-6-proc-compose-and-enumerator-chain-49f10e237542)
+* Array#union and #difference. Faster than doing concat and unique together.
+* Array#filter
+* [Ana María Martínez Gómez](http://anamaria.martinezgomez.name/2018/12/21/ruby2_6.html)
+
 ## Ruby 2.5
 
 * BigDecimal.new() is deprecated.
@@ -265,6 +275,7 @@ name.dup # Make an unfrozen copy of the string and do your modification
 * [Shopify Engineering Blog](https://engineering.shopify.com/blogs/engineering)
 * [Appfolio](http://engineering.appfolio.com/)
 * [Infinum](https://infinum.co/the-capsized-eight)
+* [Brandon Weaver](https://medium.com/@baweaver)
 
 ## Videos
 

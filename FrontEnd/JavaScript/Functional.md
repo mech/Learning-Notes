@@ -1,6 +1,7 @@
 # Functional JavaScript
 
 * [Two Years of Functional Programming in JavaScript: Lessons Learned](https://hackernoon.com/two-years-of-functional-programming-in-javascript-lessons-learned-1851667c726)
+* [Functional Programming Patterns: A Cookbook](https://medium.freecodecamp.org/functional-programming-patterns-cookbook-3a0dfe2d7e0a)
 
 In functional programs, we should use functions over values wherever possible:
 

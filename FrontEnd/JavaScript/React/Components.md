@@ -139,6 +139,7 @@ const Aux = (props) => {
 9. **Never let them know your next move.** Keep your components generic enough that they solve only one view element, really well. If your components are small and flexible, then they will not be pigeonhole’d and able to be composed into larger units.
 10. Your `render()` method should be as lightweight and fast as possible.
 11. Avoid premature abstractions. Don't create small components immediately if it is not used elsewhere.
+12. [SRP - One reason to change](https://blog.bitsrc.io/tiny-components-what-can-go-wrong-d6aa42d71370)
 
 ## Verbs for component name
 

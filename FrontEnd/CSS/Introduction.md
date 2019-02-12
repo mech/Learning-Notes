@@ -21,3 +21,7 @@ li:first-of-type { margin-right: 0; }
 /* Yeah */
 li:not(:first-of-type) { margin-right: 10px; }
 ```
+
+## Tips
+
+* [How to create a responsive navigation with Flexbox and CSS Grid and a no JS dropdown](https://www.youtube.com/watch?v=8QKOaTYvYUA)

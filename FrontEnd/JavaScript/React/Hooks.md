@@ -1,5 +1,7 @@
 # Hooks
 
+> Hardest things about hooks so far has been figuring out good patterns whilst tripping over bad ones. (Like dispatching inside a useEffect without passing an empty array as a second argument), infinite loops are not cool, people. - ‪@erik_hellman‬
+
 * [RFC: React Hooks](https://github.com/reactjs/rfcs/pull/68)
 * [Making setInterval Declarative with React Hooks](https://overreacted.io/making-setinterval-declarative-with-react-hooks/)
 * [Fullstack React: An Introduction to Hooks in React](https://www.fullstackreact.com/articles/an-introduction-to-hooks-in-react/)
@@ -21,9 +23,47 @@ We need a simpler, lightweight component that do not use ES6 class.
 
 > React doesn't provide a **stateful primitive** simpler than a class component.
 
+## Why Hooks
+
+* Currently in class component, it is very hard to share stateful logics.
+* Lifecycle tracking is too hard
+* Artificial hierarchy due to render props being structured in a fixed tree-like manner
+* [GDG Salt Lake DevFest 2018: Why React Hooks](https://www.youtube.com/watch?v=zWsZcBiwgVE)
+
 ## useState
 
 Stateful class component can have state, but functional pure component can only depend on passed in props to update their state. useState changes that!
+
+Allow you to manage only 1 value, be it single primitive or object. It differs from regular React class component's state where you typically manages many values in one shot.
+
+It is much simpler and does not do any merging of state.
+
+```js
+function CalendarPicker({ numOfCalendar }) {
+  const [numOfCalendar, setNumOfCalendar] = useState(numOfCalendar)
+  
+  return (
+    <>
+      {Array(numOfCalendar).fill().map(() => {
+        <Calendar />
+      })}
+    </>
+  )
+}
+```
+
+Each useState hook is totally separate and should not share state. If you want to share state, please use Context.
+
+`useState` is also a very good way to view your slice of state in a much more cleaner and clearer way. Think about this as the Reduce slice of state, only this time each `useState` control their own slice of data.
+
+To just set state once you can pass function instead of a value:
+
+```js
+// Notice that it is a function that run once only
+const [name, setName] = useState(() => {
+  window.localStorage.getItem('geo-chat:name')
+})
+```
 
 ## useContext
 
@@ -33,11 +73,15 @@ Flat is always better than nested wrapper hell.
 
 ## useEffect
 
+Essentially combination of `componentDidMount`, `componentDidUpdate` and `componentWillUnMount`.
+
 * Lifecycle methods
 * Firing off API request
 * Use for imperative DOM mutation, interfacing with browser API
 
 Run both after the initial render and on every update. May have performance issues (if for example you are subscribing to event like resize event).
+
+You interact with third party libraries in useEffect. You also do HTTP call in useEffect until we have Suspense.
 
 ## useReducer
 
@@ -46,3 +90,9 @@ Run both after the initial render and on every update. May have performance issu
 ## Libraries and Tools
 
 * [retoggle](https://github.com/Raathigesh/retoggle)
+
+## Videos
+
+* [Let's HOOK up with React](https://www.youtube.com/watch?v=h9qHKDlsnP0)
+* [React Hooks: A Complete Introduction](https://www.youtube.com/watch?v=jd8R0a2Ur8Q)
+* [Introducing React Hooks](https://www.youtube.com/watch?v=mxK8b99iJTg)
