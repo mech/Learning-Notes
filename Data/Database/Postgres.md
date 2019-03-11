@@ -26,6 +26,10 @@
 SELECT * from users WHERE id = ANY($1::int[])
 ```
 
+## UTF8
+
+* [MySQL schema/migration should default to CHARSET=utf8mb4](https://github.com/rails/rails/issues/33596)
+
 ## As a Job Queue
 
 * [What is SKIP LOCKED for in PostgreSQL 9.5?](https://blog.2ndquadrant.com/what-is-select-skip-locked-for-in-postgresql-9-5/)

@@ -8,6 +8,7 @@ One idea is not enough - [Iterative UI Design](https://developer.apple.com/video
 * [Facebook: Who broke the build](https://www.facebook.com/groups/whobrokethebuild/photos/)
 * [Anticipatory design](https://medium.com/ido-lechner/crafting-smarter-interfaces-with-anticipatory-design-624f19ce8352)
 * [Page Flows - Inspirations for user flow](https://pageflows.com/)
+* [How white space killed an enterprise app (and why data density matters)](https://uxdesign.cc/how-white-space-killed-an-enterprise-app-and-why-data-density-matters-b3afad6a5f2a)
 
 > Let the idea evolve
 
@@ -78,6 +79,7 @@ One idea is not enough - [Iterative UI Design](https://developer.apple.com/video
 * 5S - (Sort - remove unnecessary thing), (Straighten - make things easy to find), (Shine - keep workspace clean and safe), (Standardize - keep everything in its place), (Sustain - perform 5S as a routine)
 * Clients want THE SOLUTION, not THE SERVICE.
 * We needn't all pray at the beautiful minimalist design altar. Design doesn't have to be precious. Toss out your assumptions and build what works best.
+* Sometimes the system finds many problems, other times only a few. The UI had to handle both extremes gracefully.
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
 

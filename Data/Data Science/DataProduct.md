@@ -53,6 +53,7 @@ Why we don't store logs in databases:
 
 * [Big Data Architectural Patterns and Best Practices on AWS](https://www.youtube.com/watch?v=RNrsIlweCno)
 * [Stream-first architecture, Apache Flink & other emerging technologies](https://www.youtube.com/watch?v=ljDTXdqej9Q)
+* [Introduction to Data Science - A Practical Viewpoint--Jesus Rogel-Salazar](https://learning.oreilly.com/videos/odsc-europe-2018/9780135768389/9780135768389-ODSC_EURO18_01)
 
 ## Blog
 

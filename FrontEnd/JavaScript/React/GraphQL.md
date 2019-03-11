@@ -744,6 +744,8 @@ end
 
 ## Resolvers
 
+In REST, a single request will execute on controller on the server. In GraphQL a request might execute MANY resolvers on the server.
+
 > A function or method that resolves a value for a type or field in a schema
 
 Resolvers are like REST controller. They resolve your data fields. It is way more **composable** than controller which is more isolated and one time only. Resolvers do 1 thing, but they are aware of things that happen before them and can set things up after them.

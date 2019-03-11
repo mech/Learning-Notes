@@ -405,3 +405,6 @@ end
 
 * [Falling through the KRACKs](https://blog.cryptographyengineering.com/2017/10/16/falling-through-the-kracks/)
 
+## Videos
+
+* [Domain-Driven Design: Hidden Lessons from the Big Blue Book - Nick Tune](https://www.youtube.com/watch?v=f7NnPxhuuck)

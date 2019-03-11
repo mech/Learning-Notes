@@ -179,6 +179,8 @@ export default class HerokuLoadingIndicator extends React.Component {
 
 ## Table (Filtering, Pagination, Datagrid)
 
+* [HTML Tables: All there is to know about them](https://medium.freecodecamp.org/html-tables-all-there-is-to-know-about-them-d1245980ef96)
+
 ```
 <DataTable />
 <InfoTable />
@@ -210,6 +212,7 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 * [Free Work Sans has excellent true tabular lining figures](https://fonts.google.com/specimen/Work+Sans)
 * [Use HOC for pagination, sorting, etc.](https://codebrahma.com/using-higher-order-components-react-application/)
 * [Griddle - An ultra customizable datagrid](https://griddlegriddle.github.io/Griddle/)
+* [Flexmonster - Pivot table](https://www.flexmonster.com/?r=m7)
 
 ## Spreadsheet
 

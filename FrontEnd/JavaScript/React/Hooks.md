@@ -25,10 +25,97 @@ We need a simpler, lightweight component that do not use ES6 class.
 
 ## Why Hooks
 
+> Classes may seem like the ideal thing to hold state since that's what they're designed for. However, React is more written like a declarative function that keeps getting executed over and over to simulate it being reactive. Those two things have an impedance mismatch and that keeps leaking when we think of these as classes.
+> 
+> Another issue is just that the conceptual mental model for React is just functions calling other functions recursively. There is a lot of value to express it in those terms to help build the correct mental model.
+
 * Currently in class component, it is very hard to share stateful logics.
 * Lifecycle tracking is too hard
 * Artificial hierarchy due to render props being structured in a fixed tree-like manner
 * [GDG Salt Lake DevFest 2018: Why React Hooks](https://www.youtube.com/watch?v=zWsZcBiwgVE)
+
+```js
+// Creating a Media Listener component
+class Media extends Component {
+  state = {
+    matches: window.matchMedia(this.props.query).matches
+  }
+  
+  componentDidMount() {
+    this.setup()
+  }
+  
+  setup() {
+    let media = window.matchMedia(this.props.query)
+    if (media.matches !== this.state.matches) {
+      this.setState({ matches: media.matches })
+    }
+    
+    let listener = () => this.setState({ matches: media.matches })
+    media.addListener(listener)
+    this.removeListener = () => media.removeListener(listener)
+  }
+  
+  componentDidUpdate(prevProps) {
+    if (prevProps.query !== this.props.query) {
+      this.removeListener()
+      this.setup()
+    }
+  }
+  
+  componentWillUnmount() {
+    this.removeListener()
+  }
+  
+  render() {
+    return this.props.children(this.state.matches)
+  }
+}
+
+function App() {
+  return (
+    <Media query="(max-width: 400px)">
+      {small => (
+        <p>
+          Small? {small ? "Yep" : "Nope"}
+        </p>
+      )}
+    </Media>
+  )
+}
+```
+
+Let's do it in the hooks way
+
+```js
+function useMedia(query) {
+  let [matches, setMatches] = useState(
+    window.matchMedia(query).matches
+  )
+  
+  // cDM, cDU
+  useEffect(() => {
+    let media = window.matchMedia(query)
+    if (media.matches !== matches) {
+      setMatches(media.matches)
+    }
+    let listener = () => setMatches(media.matches)
+    media.addListener(listener)
+    
+    return () => media.removeListener(listener)
+  }, [query])
+}
+
+function App() {
+  let small = useMedia("(max-width: 400px)")
+  
+  return (
+    <p>
+      Small? {small ? "Yep" : "Nope"}
+    </p>
+  )
+}
+```
 
 ## useState
 
@@ -67,11 +154,37 @@ const [name, setName] = useState(() => {
 
 ## useContext
 
+Hooks are billed as the new way to share logic. But do not confuse this with sharing common state with other components in the tree. For that you still need the React Context API. Hooks are local shareable isolated logic, whilst context is more for shareable global state.
+
 No only read the context for you but also subscribe automatically for you and re-render when the context changes.
 
 Flat is always better than nested wrapper hell.
 
+```js
+const FormContext = React.createContext();
+
+function App() {
+  const [state, dispatch] = useReducer(appReducer, []);
+  
+  return (
+    <FormContext.Provider value={dispatch}>
+      <MyChildrenThatUseDispatcher items={state} />
+    </FormContext.Provider>
+  )
+}
+
+function MyChildrenThatUseDispatcher {
+  const dispatch = useContext(FormContext);
+  
+  return (
+    <button onClick={() => dispatch({ type: 'DELETE', payload: id })}>Delete</button>
+  )
+}
+```
+
 ## useEffect
+
+Where you do imperative thing in a declarative world.
 
 Essentially combination of `componentDidMount`, `componentDidUpdate` and `componentWillUnMount`.
 
@@ -83,9 +196,28 @@ Run both after the initial render and on every update. May have performance issu
 
 You interact with third party libraries in useEffect. You also do HTTP call in useEffect until we have Suspense.
 
+Due to batching and concurrent mode, the closed over values (closure) are actually not reactive. They capture the state as it was.
+
 ## useReducer
 
+The general pattern of dispatching and then centralizing the logic to transition between states at a higher level seems to be having great success. It also solves many quirks with callbacks in React, leads to many more intuitive solutions around complex state transitions. Especially in a concurrent world.
+
+So I see useReducer as the central API more so than useState. useState is still nice since it's very concise for simple use cases and easy to explain, but people should probably look into useReducer or similar patterns early on.
+
 * [An example of using `useReducer`](https://medium.com/@diegoalmesp/not-another-reactjs-hooks-post-823f2d5d6ba4)
+* [Are React Hooks Slower than Class Components?](https://www.youtube.com/watch?v=tKRWuVOEB2w)
+
+When dealing with form, we can use `useReducer` to not render any form that does not need to be rendered when certain state changes.
+
+You can also use `useReducer` when you are sick of having to deal with so many individual `useState` and just want to dump all things into a single state object.
+
+Another interesting reason to use `useReducer` is you can pass down the `dispatch` function into your children via props or context.
+
+## useMemo
+
+## useCallback
+
+## useImperativeMethods
 
 ## Libraries and Tools
 
@@ -96,3 +228,4 @@ You interact with third party libraries in useEffect. You also do HTTP call in u
 * [Let's HOOK up with React](https://www.youtube.com/watch?v=h9qHKDlsnP0)
 * [React Hooks: A Complete Introduction](https://www.youtube.com/watch?v=jd8R0a2Ur8Q)
 * [Introducing React Hooks](https://www.youtube.com/watch?v=mxK8b99iJTg)
+* [React Hooks: Advanced Hooks](https://www.youtube.com/watch?v=YKmiLcXiMMo)

@@ -61,6 +61,28 @@
 The only Downsample filter for monochrome images is Subsample, ignoring request.
 ```
 
+## JavaScript inside PDF
+
+Don't be surprise when you open a PDF inside a browser, it automatically display a Print dialog for you.
+
+Can we strip off all JavaScript inside PDF? Is it a security concern?
+
+```
+<<
+/Type /Action
+/S /JavaScript
+/JS (this.print\({bUI:true,bSilent:false,bShrinkToFit:true}\);)
+>>
+```
+
+Seems like using GhostScript can remove all active content (JavaScript) and embedded data (Videos, Flash, etc.)
+
+```
+▶ gs -dSAFER -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dAutoRotatePages=/None -dNOPAUSE -dQUIET -dBATCH -sOutputFile=matta_fair_2019-removed.pdf matta_fair_2019.pdf
+```
+
+* [Effectiveness of flattening a PDF to remove malware](https://security.stackexchange.com/questions/103323/effectiveness-of-flattening-a-pdf-to-remove-malware)
+
 ## Prawn
 
 * [#28 - Table overflowing without needing to?](https://github.com/prawnpdf/prawn-table/issues/10)

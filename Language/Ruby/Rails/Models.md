@@ -100,6 +100,7 @@ end
 
 ## Query
 
+* [How to use Query Objects to refactor Rails SQL-queries](https://mkdev.me/en/posts/how-to-use-query-objects-to-refactor-rails-sql-queries)
 * [To join or not to join? An act of #includes](https://goiabada.blog/to-join-or-not-to-join-an-act-of-includes-f6728fcefea3)
 * [Active Record's queries tricks](https://medium.com/@apneadiving/active-records-queries-tricks-2546181a98dd)
 * [Essential RubyOnRails patterns — part 2: Query Objects](https://medium.com/@blazejkosmowski/essential-rubyonrails-patterns-part-2-query-objects-4b253f4f4539)
@@ -188,6 +189,8 @@ Think about it. Let's say you are changing something in the `OrderLine` class. H
 It would be a bit easier if we use the **repository pattern** and at least we know all possible queries that are executed on our tables.
 
 ## Service Object
+
+See Interactor, Command Pattern, Operation, etc.
 
 Not all about `app/services` folder in Rails.
 
