@@ -5,6 +5,23 @@
 * [How to Reduce Controller Bloat with Interactors in Ruby](https://semaphoreci.com/community/tutorials/how-to-reduce-controller-bloat-with-interactors-in-ruby)
 * [Better Rails Performance with JSON Patch](https://formapi.io/blog/posts/json-patch-with-rails-5-and-react/)
 
+## Jim Werich
+
+```ruby
+def create
+  CreateRunner.new(self).run(params[:employee],
+    success: ->(employee) {
+      flash[:notice] = msg
+      redirect_to employee_path(employee)
+    },
+    failure: ->(employee) {
+      @employee = employee
+      render :new
+    }
+  )
+end
+```
+
 ## Routes
 
 ```ruby

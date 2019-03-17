@@ -19,6 +19,14 @@
 * [Flag argument is a code smell](http://craftingruby.com/posts/2017/05/04/flag-arguments-are-a-code-smell.html)
 * [Using Services to Keep Your Rails Controllers Clean and DRY](https://blog.engineyard.com/2014/keeping-your-rails-controllers-dry-with-services)
 
+## ApplicationRecord - New in Rails 5
+
+* [Why Rails 5 uses ApplicationRecord instead of ActiveRecord::Base?](https://stackoverflow.com/questions/37359527/why-rails-5-uses-applicationrecord-instead-of-activerecordbase)
+
+## Upsert
+
+* [Add insert_many to ActiveRecord models](https://github.com/rails/rails/pull/35077#issuecomment-471695480)
+
 ## Open Your Mind
 
 > Objects are closures

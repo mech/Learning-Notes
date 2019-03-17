@@ -129,6 +129,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [Mout - Modular JavaScript Utilities](https://github.com/mout/mout)
 * [Convenient and dependency free wrapper for working with arrays and objects](https://github.com/ecrmnn/collect.js/)
 * [lazy.js - Like Underscore, but lazier](https://github.com/dtao/lazy.js)
+* [decimal.js](https://github.com/MikeMcl/decimal.js/)
 
 ## UI Libraries
 
@@ -442,6 +443,7 @@ class Tabs extend Component {
 
 ## Sortable and Drag and Drop
 
+* [**Beautiful interactions**](https://medium.com/@alexandereardon/beautiful-interactions-8f67502ccf73)
 * [Some react-dnd example](https://gist.github.com/krzysu/1b391ae0e3c87d0c654cdf6d5a409632)
 * [Rethinking drag and drop](https://medium.com/@alexandereardon/rethinking-drag-and-drop-d9f5770b4e6b)
 * [Shopify Draggable](https://shopify.github.io/draggable/)

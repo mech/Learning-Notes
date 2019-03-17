@@ -184,6 +184,7 @@ http://styleguides.io/examples.html
 * [Apple Develop](https://developer.apple.com/develop/)
 * [Android Develop and Design](https://developer.android.com/design)
 * [IBM Design Language](http://www.ibm.com/design/language/)
+* [IBM Carbon Design System](https://www.carbondesignsystem.com/)
 * [Lonely Planet](https://rizzo.lonelyplanet.com/styleguide)
 * [FT's Origami](http://origami.ft.com/)
 * [FT Next](https://github.com/Financial-Times/next)

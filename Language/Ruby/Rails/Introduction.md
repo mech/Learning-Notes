@@ -25,6 +25,10 @@ end
 
 * [Official guide on upgrading Rails](http://edgeguides.rubyonrails.org/upgrading_ruby_on_rails.html)
 
+### 6
+
+* [Zeitwerk integration](https://github.com/rails/rails/pull/35235)
+
 ### 5.1
 
 * [Ruby on Rails 5.1.0 Deprecations](https://blog.driftingruby.com/ruby-on-rails-5-1-0-deprecations/)
@@ -120,6 +124,7 @@ end
 
 ## Blog
 
+* [Bogdan](https://bogdanvlviv.com/posts.html)
 * [Using Dotenv In Rails](http://metaskills.net/2013/10/03/using-dotenv-in-rails/)
 * [AkitaOnRails](http://www.akitaonrails.com/?locale=en)
 * [solnic.eu](http://solnic.eu/)

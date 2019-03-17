@@ -50,3 +50,5 @@
 
 Keymap > Editor Actions > Move Caret to Text End...
 
+* [Prettier and File Watcher plugin](https://prettier.io/docs/en/webstorm.html#running-prettier-on-save-using-file-watcher)
+

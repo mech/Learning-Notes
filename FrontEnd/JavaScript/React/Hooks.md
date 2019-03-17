@@ -2,6 +2,8 @@
 
 > Hardest things about hooks so far has been figuring out good patterns whilst tripping over bad ones. (Like dispatching inside a useEffect without passing an empty array as a second argument), infinite loops are not cool, people. - ‪@erik_hellman‬
 
+* [How to migrate from Recompose to React Hooks](https://medium.com/stationfive/how-to-migrate-from-recompose-to-react-hooks-89b2981c03d)
+* [Support both Hooks and Render Props with One Simple Trick](https://americanexpress.io/hydra/)
 * [RFC: React Hooks](https://github.com/reactjs/rfcs/pull/68)
 * [Making setInterval Declarative with React Hooks](https://overreacted.io/making-setinterval-declarative-with-react-hooks/)
 * [Fullstack React: An Introduction to Hooks in React](https://www.fullstackreact.com/articles/an-introduction-to-hooks-in-react/)
@@ -184,6 +186,8 @@ function MyChildrenThatUseDispatcher {
 
 ## useEffect
 
+Call **after render**. React will remember the function you passed and will call it **after the DOM updates**.
+
 Where you do imperative thing in a declarative world.
 
 Essentially combination of `componentDidMount`, `componentDidUpdate` and `componentWillUnMount`.
@@ -204,6 +208,7 @@ The general pattern of dispatching and then centralizing the logic to transition
 
 So I see useReducer as the central API more so than useState. useState is still nice since it's very concise for simple use cases and easy to explain, but people should probably look into useReducer or similar patterns early on.
 
+* [The React Hooks based alternative to Redux and the Flux pattern](https://medium.com/capbase-engineering/part-3-the-react-hooks-based-alternative-to-redux-and-the-flux-pattern-a726220a8a9a)
 * [An example of using `useReducer`](https://medium.com/@diegoalmesp/not-another-reactjs-hooks-post-823f2d5d6ba4)
 * [Are React Hooks Slower than Class Components?](https://www.youtube.com/watch?v=tKRWuVOEB2w)
 
@@ -218,6 +223,10 @@ Another interesting reason to use `useReducer` is you can pass down the `dispatc
 ## useCallback
 
 ## useImperativeMethods
+
+## Render Props
+
+* [Render props is still useful for inversion of control thing](https://kentcdodds.com/blog/react-hooks-whats-going-to-happen-to-render-props)
 
 ## Libraries and Tools
 

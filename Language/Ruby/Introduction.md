@@ -136,6 +136,7 @@ Integer(params.fetch(:id))
 
 ## Enumerable
 
+* [**Collection Pipeline**](https://martinfowler.com/articles/collection-pipeline/)
 * [Five Ruby methods your should be using](https://blog.engineyard.com/2015/five-ruby-methods-you-should-be-using)
 * [101 Ruby Code Factoids](https://6ftdan.com/allyourdev/2016/01/13/101-ruby-code-factoids/)
 * [The === (case equality) operator in Ruby](http://blog.arkency.com/the-equals-equals-equals-case-equality-operator-in-ruby/)
