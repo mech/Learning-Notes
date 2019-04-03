@@ -2,6 +2,8 @@
 
 > Hardest things about hooks so far has been figuring out good patterns whilst tripping over bad ones. (Like dispatching inside a useEffect without passing an empty array as a second argument), infinite loops are not cool, people. - ‪@erik_hellman‬
 
+* [React Hook Flow Diagram](https://www.bram.us/2019/03/11/react-hook-flow-diagram/)
+* [Everything you need to know about React Hooks](https://medium.com/@vcarl/everything-you-need-to-know-about-react-hooks-8f680dfd4349)
 * [How to migrate from Recompose to React Hooks](https://medium.com/stationfive/how-to-migrate-from-recompose-to-react-hooks-89b2981c03d)
 * [Support both Hooks and Render Props with One Simple Trick](https://americanexpress.io/hydra/)
 * [RFC: React Hooks](https://github.com/reactjs/rfcs/pull/68)
@@ -11,6 +13,7 @@
 * [How to convert withRouter to a React Hook](https://itnext.io/how-to-convert-withrouter-to-a-react-hook-f7babe0be79b)
 * [useNavbar](https://frontarm.com/demoboard/?id=6bafab26-0391-48ae-80ff-38dbf8cefafa)
 * [Making Sense of React Hooks](https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889)
+* [Simple Code Reuse with React Hooks](https://blog.bitsrc.io/simple-code-reuse-with-react-hooks-432f390696bf)
 
 Reusing logic still suck in React.
 
@@ -24,6 +27,10 @@ Wrapper hell. Lifecycle issues in huge components. Understanding classes is also
 We need a simpler, lightweight component that do not use ES6 class.
 
 > React doesn't provide a **stateful primitive** simpler than a class component.
+
+## Examples
+
+* [How to Build a Todo List with React Hooks](https://medium.freecodecamp.org/how-to-build-a-todo-list-with-react-hooks-ebaa4e3db3b)
 
 ## Why Hooks
 
@@ -145,14 +152,18 @@ Each useState hook is totally separate and should not share state. If you want t
 
 `useState` is also a very good way to view your slice of state in a much more cleaner and clearer way. Think about this as the Reduce slice of state, only this time each `useState` control their own slice of data.
 
-To just set state once you can pass function instead of a value:
+To just set state once you can pass function instead of a value. This is so that whenever your functional component render, the useState will not keep on constructing and re-initialising.
 
 ```js
-// Notice that it is a function that run once only
+// Notice that it is a function that run once only, on the first render!
 const [name, setName] = useState(() => {
   window.localStorage.getItem('geo-chat:name')
 })
 ```
+
+**Immutability and useState**
+
+useState does not do merging for you, it is a shallow update only, you typically have to handle immutability yourself (or it won't re-render)
 
 ## useContext
 
@@ -182,6 +193,25 @@ function MyChildrenThatUseDispatcher {
     <button onClick={() => dispatch({ type: 'DELETE', payload: id })}>Delete</button>
   )
 }
+```
+
+**What to put in context**
+
+Anything. You can put function, you can put hooks, you can put heavy object, you can put anything!
+
+## useRef
+
+```js
+const numRef = useRef(0)
+numRef.current++
+```
+
+```js
+const el = useRef()
+
+return (
+  <textarea ref={el}></textarea>
+)
 ```
 
 ## useEffect
@@ -222,7 +252,11 @@ Another interesting reason to use `useReducer` is you can pass down the `dispatc
 
 ## useCallback
 
+## useLayoutEffect
+
 ## useImperativeMethods
+
+For library author mostly.
 
 ## Render Props
 

@@ -24,6 +24,11 @@ field :comments do
 end
 ```
 
+## Weak References
+
+* [Getting to Know the Ruby Standard Library - WeakRef](https://endofline.wordpress.com/2011/01/09/getting-to-know-the-ruby-standard-library-weakref/)
+* [Use weak references in descendants tracker](https://github.com/rails/rails/pull/31442)
+
 ## Timeout
 
 * [Timeout: Ruby's Most Dangerous API](http://www.mikeperham.com/2015/05/08/timeout-rubys-most-dangerous-api/)

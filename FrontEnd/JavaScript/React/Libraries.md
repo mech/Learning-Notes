@@ -50,6 +50,7 @@ https://github.com/jaredpalmer/react-fns
 
 * [react-inspector](https://github.com/xyc/react-inspector)
 * [clean_logs](https://github.com/pgiani/clean_logs)
+* [Cypress - testing in the browser](https://www.cypress.io/)
 
 ## Toggle
 
@@ -130,6 +131,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [Convenient and dependency free wrapper for working with arrays and objects](https://github.com/ecrmnn/collect.js/)
 * [lazy.js - Like Underscore, but lazier](https://github.com/dtao/lazy.js)
 * [decimal.js](https://github.com/MikeMcl/decimal.js/)
+* [The Platform](https://github.com/palmerhq/the-platform)
 
 ## UI Libraries
 
@@ -230,6 +232,7 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 
 ## Modal and Dialog
 
+* [How to use react context to create a modal](https://medium.com/@francesco.agnoletto/how-to-use-react-context-to-create-a-modal-d8a387e09c28)
 * [react-portal](https://github.com/tajo/react-portal)
 * [react-slot-fill](https://github.com/camwest/react-slot-fill)
 * [react-waypoint](https://github.com/brigade/react-waypoint)

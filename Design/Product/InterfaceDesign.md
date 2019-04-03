@@ -49,6 +49,7 @@ One idea is not enough - [Iterative UI Design](https://developer.apple.com/video
 * [Psychology in Design (Part 1)](https://blog.prototypr.io/psychology-in-design-part-1-cdc63229cbe4)
 * [Coherence means making sure every part of your product feels like it belongs there, instead of trying to make them exactly the same](https://uxdesign.cc/coherent-not-consistent-b44244dadec4)
 * [Tooltip Guidelines](https://www.nngroup.com/articles/tooltip-guidelines/)
+* [Great design is invisible](https://medium.com/truthaboutdesign/great-design-vs-good-design-whats-the-difference-here-s-the-truth-da08557f6fdd)
 
 > Consistency, not uniformity
 > 
@@ -82,6 +83,10 @@ One idea is not enough - [Iterative UI Design](https://developer.apple.com/video
 * Sometimes the system finds many problems, other times only a few. The UI had to handle both extremes gracefully.
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
+
+## Mental Models
+
+* [](https://medium.com/swlh/leveraging-mental-models-in-ux-design-21ba8fbce22d)
 
 ## Interaction Modes
 

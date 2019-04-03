@@ -15,6 +15,7 @@
 
 ---
 
+* [The Experience Vision: A Self-Fulfilling UX Strategy](https://medium.com/@jmspool/the-experience-vision-a-self-fulfilling-ux-strategy-ce4cdb58227e)
 * [Game of Thrones' first AD on the challenges of Eastwatch](https://www.theverge.com/2017/8/15/16148146/game-of-thrones-behind-the-scenes-eastwatch-charlie-endean-assistant-director)
 * [Inversion: The Crucial Thinking Skill Nobody Ever Taught You](http://jamesclear.com/inversion)
 * Design is how it works
@@ -286,4 +287,5 @@ But some metaphors mean different things in different cultures. In United States
 * [Debbie Millman, Design Matter](https://transition.percolate.com/debbie-millman-design-technology/)
 * [Bret Victor - Inventing on Principle](https://vimeo.com/36579366)
 * [Getting Real - Basecamp - How We Work](https://www.youtube.com/watch?v=pj2_ABFz9Tg)
+* [Getting Real YouTube channel](https://www.youtube.com/channel/UCdx5Dk3EWTe2i8YDA7bfl6g?reload=9)
 

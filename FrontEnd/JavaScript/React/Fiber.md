@@ -2,6 +2,7 @@
 
 > So much of React's architecture is based on stuff game developers figured out decades ago. - https://twitter.com/acdlite/status/978696799757086720
 
+* [#7942 - Fiber Principles: Contributing To Fiber](https://github.com/facebook/react/issues/7942)
 * [What's New in React 16 and Fiber Explanation](https://medium.com/@treyhuffine/react-16-features-and-fiber-explanation-e779544bb1b7)
 * [A look inside Fiber](http://makersden.io/blog/look-inside-fiber/)
 * [What is React Fiber?](https://giamir.com/what-is-react-fiber)
