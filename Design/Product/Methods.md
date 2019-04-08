@@ -1,5 +1,9 @@
 # Methods
 
+Discovery is continuous through iteration/ideation/prototyping/testing. We can come out with "Vision of the Solution". That vision can stimulate more research and framing and re-framing of the problem. Which in turn inform and shape the "Vision of the Solution" on and on.
+
+---
+
 > We should be thinking more about methodologies rather than methods - [Method vs. methodology: understanding the difference](https://uxdesign.cc/method-vs-methodology-whats-the-difference-9cc755c2e69d)
 
 * [IDEO Method Cards](https://www.ideo.com/post/method-cards)
@@ -13,6 +17,10 @@
 ## Mental Models
 
 * Achieve disruption in the marketplace through mental model innovation
+
+## Card Sorting
+
+* [Card Sorting: Uncover Users' Mental Models for Better Information Architecture](https://www.nngroup.com/articles/card-sorting-definition/)
 
 ## Boredom-Driven Design
 

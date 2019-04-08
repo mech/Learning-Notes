@@ -81,6 +81,33 @@ What API is good for inputs:
 </Form>
 ```
 
+## Show Errors
+
+`null` can be a good way to show error messages
+
+```js
+function InputErrorMessage({ message }) {
+  if (!message) {
+    return null;
+  }
+  
+  return (
+    <div className="field-error">
+      {message}
+    </div>
+  )
+}
+
+class MyForm extends Component {
+  render() {
+    <FormGroup>
+      <TextInput name="Email" />
+      <InputErrorMessage message={this.state.email_error} />
+    </FormGroup>
+  }
+}
+```
+
 ## Formik
 
 * [Formik For React: A Dive Into Field Arrays](https://medium.com/@rossbulat/react-formik-a-dive-into-field-arrays-fc58fff8a791)
@@ -136,6 +163,8 @@ Forms felt like a monologue.
 An `Input` component is a way to see and edit the `Field`.
 
 ## Handling Events
+
+> You cannot return `false` to prevent default behavior in React. You must call `preventDefault` explicitly.
 
 * [Events Live Cheatsheet](https://reactarmory.com/resources/react-events-cheatsheet)
 * [Best alternative to binding in render()](https://daveceddia.com/react-best-alternative-bind-render/)
@@ -249,7 +278,7 @@ state = {
 
 onInputChange = (evt) => {
   const fields = this.state.fields
-  fields[evt.target.nam] = evt.target.value
+  fields[evt.target.name] = evt.target.value
   this.setState({ fields })
 }
 

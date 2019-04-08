@@ -286,6 +286,9 @@ class Projects extends Component {
 
 ## Scroll
 
+* [Twitter - Infinite List and React](https://itsze.ro/blog/2017/04/09/infinite-list-and-react.html)
+* [Twitter Lite](https://medium.com/@paularmstrong/twitter-lite-and-high-performance-react-progressive-web-apps-at-scale-d28a00e780a3)
+
 ```js
 new IntersectionObserver(callback, options)
 ```
@@ -297,10 +300,12 @@ new IntersectionObserver(callback, options)
 * [Glide.js - slider and carousel](https://glidejs.com/docs/)
 * [react-scroll-shadow](https://github.com/zzarcon/react-scroll-shadow)
 * [react-virtualized](https://blog.logrocket.com/rendering-large-lists-with-react-virtualized-82741907a6b3)
+* [react-window](https://react-window.now.sh)
 * [Scroll Magic](http://scrollmagic.io/)
 
 ## Date Picker and Calendar
 
+* [timetable-fns](https://github.com/flightplan-tool/timetable-fns)
 * [**react-day-picker**](http://react-day-picker.js.org/)
 * [Create a custom calendar in React](https://blog.flowandform.agency/create-a-custom-calendar-in-react-3df1bfd0b728)
 * [Day.js](https://github.com/xx45/dayjs)

@@ -10,6 +10,10 @@ https://www.freeformatter.com/html-entities.html
 * [A list of cool Chrome DevTools tips and tricks](https://flaviocopes.com/chrome-devtools-tips/)
 * [Cool Chrome DevTools tips and tricks you wish you knew already](https://medium.freecodecamp.org/cool-chrome-devtools-tips-and-tricks-you-wish-you-knew-already-f54f65df88d2)
 
+## Flame Graphs
+
+* [How to read flame graphs](http://www.brendangregg.com/flamegraphs.html)
+
 ## Console
 
 ```js

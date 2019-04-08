@@ -1,5 +1,6 @@
 # UX
 
+* [52 weeks of UX](http://52weeksofux.com/tagged/week_1)
 * [My top 5 must-listen UX/UI podcasts](https://uxdesign.cc/my-top-5-ux-ui-podcasts-3011f51017c9)
 * [User Friendly](https://medium.com/s/user-friendly)
 

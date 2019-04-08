@@ -1,5 +1,15 @@
 # Product Design
 
+* [Frank Gehry on Design Thinking](https://uxdesign.cc/frank-gehry-on-design-thinking-f7b374a785d6)
+
+> "He approaches each new project with a desire to do something different than he has done before and to experiment with materials, technologies and methods in his quest"
+
+---
+
+> Each project is seen as an opportunity for betterment over existing products, services, or processes.
+
+---
+
 > You only get value when you ship things. - The Phoenix Project
 
 [Don't be fixed in your idea](https://www.youtube.com/watch?v=lzXHMy4ewtM)

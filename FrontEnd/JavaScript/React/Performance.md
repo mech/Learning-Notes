@@ -13,7 +13,7 @@
 * [React at 60fps](https://hackernoon.com/react-at-60fps-4e36b8189a4c)
 * [Performance Problems and Solutions in React.js Part 1](https://blog.axosoft.com/2017/03/30/performance-solutions-react-js-pt-1/)
 * [A Deep Dive into React Perf Debugging](http://benchling.engineering/deep-dive-react-perf-debugging/)
-* [Twitter Lite and High Performance React Progressive Web Apps at Scale](https://medium.com/@paularmstrong/twitter-lite-and-high-performance-react-progressive-web-apps-at-scale-d28a00e780a3)
+* [**Twitter Lite and High Performance React Progressive Web Apps at Scale**](https://medium.com/@paularmstrong/twitter-lite-and-high-performance-react-progressive-web-apps-at-scale-d28a00e780a3)
 * [**React at Light Speed**](https://blog.vixlet.com/react-at-light-speed-78cd172a6411)
 * [45% Faster React Functional Components, Now](https://medium.com/missive-app/45-faster-react-functional-components-now-3509a668e69f)
 * [How to Benchmark React Components: The Quick and Dirty Guide](https://engineering.musefind.com/how-to-benchmark-react-components-the-quick-and-dirty-guide-f595baf1014c)
@@ -73,6 +73,8 @@ Don't forget to avoid the common mistakes that make the `PureComponent` less eff
 
 ## Profiler
 
+* [Profiling React performance with React 16 and Chrome Devtools](https://calibreapp.com/blog/react-performance-profiling-optimization/)
+* [Introducing the React Profiler](https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html)
 * [Profiler RFC #51](https://github.com/reactjs/rfcs/pull/51)
 * [Interaction tracking with React](https://gist.github.com/bvaughn/8de925562903afd2e7a12554adcdda16)
 
