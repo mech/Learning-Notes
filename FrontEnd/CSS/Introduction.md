@@ -4,6 +4,11 @@
 * [30 Seconds of CSS](https://30-seconds.github.io/30-seconds-of-css/)
 * [CSS and Network Performance](https://csswizardry.com/2018/11/css-and-network-performance/)
 
+## Z-index
+
+* [Managing dynamic z-index in component-based UI architecture](https://www.huy.dev/z-index-management-2019-04/)
+* [Stacking without the z-index property](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Stacking_without_z-index)
+
 ## Do
 
 * Use shallow selector 

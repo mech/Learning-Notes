@@ -89,6 +89,8 @@ Seems like using GhostScript can remove all active content (JavaScript) and embe
 
 ## Image Compression
 
+* [image_processing - libvips](https://github.com/janko/image_processing)
+
 ```
 // From PNG to JPEG
 ▶ convert from.png to.jpg

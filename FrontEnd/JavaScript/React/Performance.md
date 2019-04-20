@@ -2,6 +2,7 @@
 
 > Poor design choices often lead to issues and, in the case of React, if we do not put the state in the right place, the risk is that our components are going to render more than needed.
 
+* [**6 tips for better React performance**](https://itnext.io/6-tips-for-better-react-performance-4329d12c126b)
 * [Debugging React performance with React 16 and Chrome Devtools](https://building.calibreapp.com/debugging-react-performance-with-react-16-and-chrome-devtools-c90698a522ad)
 * [React is Slow, React is Fast: Optimizing React Apps in Practice](https://medium.com/dailyjs/react-is-slow-react-is-fast-optimizing-react-apps-in-practice-394176a11fba)
 * [Rearchitecting Airbnb's Frontend](https://medium.com/airbnb-engineering/rearchitecting-airbnbs-frontend-5e213efc24d2)
@@ -71,6 +72,10 @@ class Item extends React.PureComponent {
 
 Don't forget to avoid the common mistakes that make the `PureComponent` less effective, such as generating new functions inside the `render()`, or using constant as props.
 
+## WhyDidYouUpdate or WhyDidYouRender
+
+* [why-did-you-render](https://github.com/welldone-software/why-did-you-render)
+
 ## Profiler
 
 * [Profiling React performance with React 16 and Chrome Devtools](https://calibreapp.com/blog/react-performance-profiling-optimization/)
@@ -105,7 +110,9 @@ You can still use stateless components if you implement `shouldComponentUpdate()
 
 It is beneficial to implement `shouldComponentUpdate()` as high up the tree as possible.
 
-## PureComponent
+## PureComponent and React.memo
+
+If there are no visible changes, although the actual DOM will not be altered, the render() method is still getting called and may waste time doing unnecessary virtual DOM building. We may as well skip it with PureComponent/memo
 
 * [Using a `<PureComponent/>` in React](https://medium.com/front-end-hacking/using-a-purecomponent-in-reacts-262972f9f1e0)
 * [React Pattern: Extract Child Components to Avoid Binding](https://medium.freecodecamp.org/react-pattern-extract-child-components-to-avoid-binding-e3ad8310725e)

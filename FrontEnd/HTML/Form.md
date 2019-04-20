@@ -8,6 +8,28 @@
 * Conversational form
 * Move away from "data entry" look
 
+## Good Practice
+
+* Turn off HTML5 validation
+* Turn off IE/Edge "Show password" helper
+* Use onSubmit always
+* Use [implicit submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#implicit-submission)
+* Update `<title>` when there are errors: "(2 errors) Registration"
+* Move submit button to be left-align instead of right-align
+* Never says "There's an error". Say "There's a problem"
+
+```html
+<form novalidate>
+
+</form>
+```
+
+```css
+input[type=password]::-ms-reveal {
+  display: none;
+}
+```
+
 ## Validation
 
 * [PPK - Native form validation — part 1](https://medium.com/samsung-internet-dev/native-form-validation-part-1-bf8e35099f1d)
@@ -16,3 +38,11 @@
 * [Capture form validation back from the browser](https://hyperform.js.org/)
 
 Never use `input:invalid` as it is broken.
+
+```html
+<div role="group" tabindex="-1">
+  <h2>There's a problem</h2>
+</div>
+
+<input aria-invalid="true" />
+```

@@ -736,6 +736,24 @@ module Graph::Types
 end
 ```
 
+* [Multiple resolvers](https://itnext.io/graphql-with-ruby-on-rails-queries-in-multiple-files-3a7b818354a2)
+
+```ruby
+class RootType < Types::BaseObject
+  field :companies, resolver: CompanyQuery
+end
+
+class CompanyQuery < GraphQL::Schema::Resolver
+  argument :id, ID, required: true
+  
+  type CompanyType, null: false
+  
+  def resolve(id:)
+    ::Company.find(id)
+  end
+end
+```
+
 ## File Uploading
 
 * [GraphQL multipart request specification](https://github.com/jaydenseric/graphql-multipart-request-spec)

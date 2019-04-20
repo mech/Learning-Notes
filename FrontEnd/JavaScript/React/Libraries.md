@@ -70,6 +70,7 @@ https://github.com/jaredpalmer/react-fns
 * [react-content-loader](http://danilowoz.com/react-content-loader/)
 * [react-measurements](https://github.com/rmfisher/react-measurements)
 * [vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/)
+* [react-three-fiber](https://github.com/drcmda/react-three-fiber)
 
 ```js
 import React from 'react';
@@ -183,6 +184,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 ## Table (Filtering, Pagination, Datagrid)
 
 * [HTML Tables: All there is to know about them](https://medium.freecodecamp.org/html-tables-all-there-is-to-know-about-them-d1245980ef96)
+* [react-pivot-table](https://www.syncfusion.com/react-ui-components/react-pivot-table)
 
 ```
 <DataTable />
@@ -304,6 +306,10 @@ new IntersectionObserver(callback, options)
 * [Scroll Magic](http://scrollmagic.io/)
 
 ## Date Picker and Calendar
+
+https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table
+
+---
 
 * [timetable-fns](https://github.com/flightplan-tool/timetable-fns)
 * [**react-day-picker**](http://react-day-picker.js.org/)
@@ -479,6 +485,7 @@ class Tabs extend Component {
 
 ## Editor
 
+* [Editor.js](https://github.com/codex-team/editor.js)
 * [Slate JS](https://www.slatejs.org)
 * [Learn DraftJS](https://learn-draftjs.now.sh/)
 * [Dante 2](https://michelson.github.io/dante2/)

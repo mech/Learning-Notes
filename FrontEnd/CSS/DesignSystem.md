@@ -114,6 +114,8 @@ That's what our applications consist of.
 
 ## Why We Need Design System?
 
+> When we reduce mental overhead, teams don't have to compromise on quality, even while they build and ship features fast.
+
 * [Airbnb - Building a Visual Language](http://airbnb.design/building-a-visual-language/)
 
 When you experience growth. When you have many more teams. When you have too few constraints.

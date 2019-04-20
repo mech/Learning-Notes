@@ -81,6 +81,11 @@ What API is good for inputs:
 </Form>
 ```
 
+## File API
+
+* [File API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/File)
+* [Using files from web applications](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications)
+
 ## Show Errors
 
 `null` can be a good way to show error messages
@@ -144,11 +149,11 @@ render() {
 
 * [Unravelling the Thought Process — how to rationally explore problems in engineering](https://hackernoon.com/unravelling-the-thought-process-how-to-rationally-explore-problems-in-engineering-ad78fc45bc86)
 
-## Forms as Data
+## Forms as Data - Data IS King
 
 Treating forms as data. React changed the way we think about writing applications. Data is king. The pixels are just a "view" of the data.
 
-Instead of forms being an exception, forms are treated in the way everything else in React is - Data First.
+Instead of forms being an exception, forms are treated in the way everything else in React is - **Data First**.
 
 Forms felt like a monologue.
 

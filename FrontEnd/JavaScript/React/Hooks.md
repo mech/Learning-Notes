@@ -238,6 +238,7 @@ The general pattern of dispatching and then centralizing the logic to transition
 
 So I see useReducer as the central API more so than useState. useState is still nice since it's very concise for simple use cases and easy to explain, but people should probably look into useReducer or similar patterns early on.
 
+* [**From Redux to Hooks**](https://staleclosures.dev/from-redux-to-hooks-case-study/)
 * [The React Hooks based alternative to Redux and the Flux pattern](https://medium.com/capbase-engineering/part-3-the-react-hooks-based-alternative-to-redux-and-the-flux-pattern-a726220a8a9a)
 * [An example of using `useReducer`](https://medium.com/@diegoalmesp/not-another-reactjs-hooks-post-823f2d5d6ba4)
 * [Are React Hooks Slower than Class Components?](https://www.youtube.com/watch?v=tKRWuVOEB2w)

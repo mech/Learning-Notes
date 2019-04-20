@@ -44,6 +44,7 @@ When you do aggregate function, you can't access the result at the WHERE clause,
 
 ## Joins
 
+* [**Can we stop with the SQL JOINs venn diagrams insanity?**](https://towardsdatascience.com/can-we-stop-with-the-sql-joins-venn-diagrams-insanity-16791d9250c3)
 * [Keep INNER JOIN when merging relations](https://github.com/rails/rails/pull/27063)
 * [Visual Representation of SQL Joins](https://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins)
 

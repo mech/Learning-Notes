@@ -261,6 +261,10 @@ ease-in-out - cubic-bezier(0.42, 0, 0.58, 1)
 * [Writing Smarter Animation Code](https://css-tricks.com/writing-smarter-animation-code/)
 * [The Beginner's Guide to the GreenSock Animation Platform](https://medium.freecodecamp.org/the-beginners-guide-to-the-greensock-animation-platform-7dc9fd9eb826)
 
+## Performance
+
+* [Your ultimate guide to animation performance — always be measuring.](https://www.viget.com/articles/animation-performance-101-measuring-with-dev-tools/)
+
 ## Videos
 
 * [Justin McDowell - Bauhaus in the Browser](https://www.youtube.com/watch?v=BaQl84nDBNY)

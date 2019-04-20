@@ -115,6 +115,7 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 * [Auto Layout-like constraints](https://github.com/matt-curtis/Fluid-for-Sketch)
 * [Auto-Layout: Introducing Stacks — Flexbox for Sketch](https://medium.com/sketch-app-sources/auto-layout-introducing-stacks-flexbox-for-sketch-c8a11422c7b5)
 * [Stacks - Flexbox](https://animaapp.github.io/docs/v1/guide/12-stacks-flexbox.html)
+* [Padding symbol](https://medium.com/sketch-app-sources/add-specs-guides-to-sketch-symbols-part-1-padding-564b50b0db50)
 
 ## Icons
 
