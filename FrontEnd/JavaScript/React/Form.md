@@ -85,6 +85,7 @@ What API is good for inputs:
 
 * [File API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/File)
 * [Using files from web applications](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications)
+* [Handling File Upload Using Ruby on Rails 5 API](https://www.pluralsight.com/guides/handling-file-upload-using-ruby-on-rails-5-api)
 
 ## Show Errors
 

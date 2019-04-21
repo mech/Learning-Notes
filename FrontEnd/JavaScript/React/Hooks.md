@@ -126,6 +126,10 @@ function App() {
 }
 ```
 
+## Rules of Hooks
+
+* [Why Do React Hooks Rely on Call Order?](https://overreacted.io/why-do-hooks-rely-on-call-order/)
+
 ## useState
 
 Stateful class component can have state, but functional pure component can only depend on passed in props to update their state. useState changes that!
