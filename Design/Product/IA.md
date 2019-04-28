@@ -6,6 +6,10 @@ IA is:
 * Content
 * Context
 
+---
+
+* [Information Architecture: building bridges](https://uxdesign.cc/information-architecture-building-bridges-d581bf8ecd9a)
+
 ## Searching Modes or Information Seeking Behaviors
 
 4 modes of searching for information:

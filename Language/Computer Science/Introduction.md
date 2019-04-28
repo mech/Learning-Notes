@@ -39,6 +39,10 @@ The gist is that algorithms can take more or less time, depending on their compl
 
 ## Dijkstra's Algorithm
 
+## Levenshtein Distance
+
+* [Understanding the Levenshtein Distance Equation for Beginners](https://medium.com/@ethannam/understanding-the-levenshtein-distance-equation-for-beginners-c4285a5604f0)
+
 ## Videos
 
 * [Bloom filter for System Design](https://www.youtube.com/watch?v=Bay3X9PAX5k)

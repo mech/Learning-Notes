@@ -30,4 +30,5 @@ console.clear()
 
 * [A Modern Front-End Workflow - Umar Hansa | Render 2017](https://www.youtube.com/watch?v=v5r_n6Tq0uk)
 * [Trent Willis - Working Well: The Future of Web Testing](https://www.youtube.com/watch?v=UrKUbaCJ938)
+* [Totally Tooling Tips with Addy Osmani & Matt Gaunt](https://www.youtube.com/playlist?list=PLNYkxOF6rcIB3ci6nwNyLYNU6RDOU3YyL)
 

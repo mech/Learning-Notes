@@ -196,6 +196,10 @@ Be careful when passing props as `null`. Any default prop value will not be used
 
 ## States
 
+> State should be minimally scoped, not globally stored. - [Tweet](https://twitter.com/kmcclosk/status/1120472877684404224)
+
+---
+
 > https://twitter.com/browniefed/status/968931647042105344
 
 > Visualizing all the discrete states an application can be in will make your design systems better.

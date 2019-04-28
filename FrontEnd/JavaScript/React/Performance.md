@@ -114,6 +114,7 @@ It is beneficial to implement `shouldComponentUpdate()` as high up the tree as p
 
 If there are no visible changes, although the actual DOM will not be altered, the render() method is still getting called and may waste time doing unnecessary virtual DOM building. We may as well skip it with PureComponent/memo
 
+* [React.PureComponent's children](https://blog.cloudboost.io/react-purecomponents-children-979e3da15ba8)
 * [Using a `<PureComponent/>` in React](https://medium.com/front-end-hacking/using-a-purecomponent-in-reacts-262972f9f1e0)
 * [React Pattern: Extract Child Components to Avoid Binding](https://medium.freecodecamp.org/react-pattern-extract-child-components-to-avoid-binding-e3ad8310725e)
 * [Remember to not pass arrow function](https://medium.com/@housecor/hi-dana-great-question-note-this-affbe4a2f168)

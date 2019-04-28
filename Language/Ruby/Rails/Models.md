@@ -1,5 +1,7 @@
 # Models
 
+https://github.com/krisleech/wisper
+
 * [rails-patterns](https://github.com/Selleo/pattern)
 * [**Rails Database Practices**](http://blog.carbonfive.com/2016/11/16/rails-database-best-practices/)
 * [7 Design Patterns to Refactor MVC Components in Rails](https://www.sitepoint.com/7-design-patterns-to-refactor-mvc-components-in-rails/)

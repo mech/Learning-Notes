@@ -1,5 +1,6 @@
 # Machine Learning
 
+* [If you're a developer transitioning into data science, here are your best resources](https://medium.freecodecamp.org/if-youre-a-developer-transitioning-into-data-science-here-are-your-best-resources-c31928b53cd1)
 * [From Data to Deployment – Full Stack Data Science](http://engineering.indeedblog.com/talks/data-to-deployment/)
 * [**A visual introduction to machine learning**](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
 * [A Beginner’s Guide to Data Engineering — Part I](https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7)

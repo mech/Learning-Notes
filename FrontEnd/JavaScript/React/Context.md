@@ -72,6 +72,12 @@ class Usage extends Component {
 
 You can create multiple providers for different purposes. The pattern doesn't enforce a singleton. You could even consume state from one provider in the other. State composition.
 
+## Newer Context API
+
+* [Bitmasks and the new React Context API
+](https://hph.is/coding/bitmasks-react-context)
+* [#14110 - Can't use Context API for global state](https://github.com/facebook/react/issues/14110)
+
 ## Deprecated
 
 * [react-contextual](https://github.com/drcmda/react-contextual)
