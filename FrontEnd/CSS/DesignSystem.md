@@ -139,6 +139,8 @@ Without a design system, you are rendered inflexible. You can't explore and expe
 * **Building blocks** - Grid, Color, Typography, Structural, Icons
 * **UI Patterns** - Modules, Components, Elements, Templates
 * **Rules** - [Design Principles](https://medium.com/@marcintreder/design-system-sprint-4-design-principles-8efb22d8a208), Editorial Guidelines, Behavioral Guidelines
+* **Component Variants**
+* **Examples**
 
 A design system isn't set in stone. It should evolve with the product and always reflect the truth.
 

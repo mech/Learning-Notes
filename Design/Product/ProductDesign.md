@@ -123,6 +123,18 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 * [Look elsewhere - Don't stare at your industry. Look in the opposite direction.](https://m.signalvnoise.com/look-elsewhere-e89b2b24f3f2)
 * [The Design Genome Project](https://www.invisionapp.com/enterprise/design-genome/)
 
+## Simple
+
+> The thing that makes the finished work look simple emerged not at the project’s outset, but mid-process. We discovered it through prototyping and iteration. This is likely because good ideas that make use of complex platforms often need runway to find their most simple expressions. The problem comes when we evaluate emerging ideas not on their ability to be simple later, but rather on their ability to appear simple at the start. - [Simple is bad](https://medium.com/s/user-friendly/simple-is-bad-1381784fd679)
+
+---
+
+> At its worst, the simplicity bias contributes to a culture of hostility to deeper, slower thinking.
+
+---
+
+- [Simple is Subjective](https://medium.com/@mikevardy/simplicity-is-subjective-822a8fa5fb0f)
+
 ## Preset Preferences is Dangerous
 
 > And maybe I'll want my toaster to be able to detect bread type and cook it according to my preset preferences — and share each toast experience on Instagram if toast-posts start taking off. But I believe I never will, because those features are not, and will never be, useful. - [Build less, make better things](https://uxdesign.cc/build-less-make-better-things-7d7316dd7e4d)
@@ -298,4 +310,5 @@ But some metaphors mean different things in different cultures. In United States
 * [Bret Victor - Inventing on Principle](https://vimeo.com/36579366)
 * [Getting Real - Basecamp - How We Work](https://www.youtube.com/watch?v=pj2_ABFz9Tg)
 * [Getting Real YouTube channel](https://www.youtube.com/channel/UCdx5Dk3EWTe2i8YDA7bfl6g?reload=9)
+* [Hard-learned lessons in leading design at MailChimp - Aarron Walter @MySafari](https://learning.oreilly.com/case-studies/design-thinking/hard-learned-lessons-in-leadin/9781491991336-video318160/)
 

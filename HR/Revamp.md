@@ -1,5 +1,9 @@
 # Revamp
 
+## REW
+
+* [Useful for REW operation](https://www.focusmate.com/science)
+
 ## KPI
 
 Customer want to gauge:

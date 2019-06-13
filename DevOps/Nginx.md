@@ -1,5 +1,6 @@
 # Nginx
 
+* [How to Configure NGINX](https://www.linode.com/docs/web-servers/nginx/how-to-configure-nginx/)
 * [Scriptability with Lua](https://openresty.org/en/)
 * [Nginx configuration generator](https://nginxconfig.io/)
 

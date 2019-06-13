@@ -1,5 +1,7 @@
 # Color
 
+* [Coolors](https://coolors.co/)
+* [Color Hunt](https://colorhunt.co/)
 * [Automatic UI Color Palette Generator](https://palx.jxnblk.com/)
 * [**Color generator**](https://cloudflare.design/color/)
 * [Material Color Tool](https://material.io/color/)

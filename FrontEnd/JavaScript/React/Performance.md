@@ -72,6 +72,25 @@ class Item extends React.PureComponent {
 
 Don't forget to avoid the common mistakes that make the `PureComponent` less effective, such as generating new functions inside the `render()`, or using constant as props.
 
+## isMounted
+
+* [#1082 - Incorrect documentation for fixing memory leaks](https://github.com/reactjs/reactjs.org/issues/1082)
+* [Trashable - A wrapper to make promises cancellable and garbage collectable](https://github.com/hjylewis/trashable)
+* [isMounted is an Antipattern](https://reactjs.org/blog/2015/12/16/ismounted-antipattern.html)
+
+## FOUC
+
+* [The Most Effective Way to Avoid the FOUC](https://petrey.co/2017/05/the-most-effective-way-to-avoid-the-fouc/)
+
+## List Performance
+
+* [Two mistakes in React.js we keep making over and over again](https://medium.com/wix-engineering/two-mistakes-in-react-js-we-keep-doing-over-and-over-again-b1aea20fb3f0)
+* [React Performance Fixes on Airbnb Listing Pages](https://medium.com/airbnb-engineering/recent-web-performance-fixes-on-airbnb-listing-pages-6cd8d93df6f4)
+
+## Function Performance
+
+* [React, Inline Functions, and Performance](https://cdb.reacttraining.com/react-inline-functions-and-performance-bdff784f5578)
+
 ## WhyDidYouUpdate or WhyDidYouRender
 
 * [why-did-you-render](https://github.com/welldone-software/why-did-you-render)
@@ -114,6 +133,8 @@ It is beneficial to implement `shouldComponentUpdate()` as high up the tree as p
 
 If there are no visible changes, although the actual DOM will not be altered, the render() method is still getting called and may waste time doing unnecessary virtual DOM building. We may as well skip it with PureComponent/memo
 
+* [**Ending the debate on few anti-patterns in React**](https://medium.com/@nids.nitesh/ending-the-debate-on-few-anti-patterns-in-react-8a4118d175b5)
+* [React.js pure render performance anti-pattern](https://medium.com/@esamatti/react-js-pure-render-performance-anti-pattern-fb88c101332f)
 * [React.PureComponent's children](https://blog.cloudboost.io/react-purecomponents-children-979e3da15ba8)
 * [Using a `<PureComponent/>` in React](https://medium.com/front-end-hacking/using-a-purecomponent-in-reacts-262972f9f1e0)
 * [React Pattern: Extract Child Components to Avoid Binding](https://medium.freecodecamp.org/react-pattern-extract-child-components-to-avoid-binding-e3ad8310725e)

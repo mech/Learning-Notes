@@ -242,6 +242,7 @@ The general pattern of dispatching and then centralizing the logic to transition
 
 So I see useReducer as the central API more so than useState. useState is still nice since it's very concise for simple use cases and easy to explain, but people should probably look into useReducer or similar patterns early on.
 
+* [useReducer is more capable](https://levelup.gitconnected.com/interesting-points-from-abramovs-a-complete-guide-to-useeffect-99ef9e136a19)
 * [**From Redux to Hooks**](https://staleclosures.dev/from-redux-to-hooks-case-study/)
 * [Replacing redux with react hooks and context - Part 1](https://medium.com/octopus-labs-london/replacing-redux-with-react-hooks-and-context-part-1-11b72ffdb533)
 * [The React Hooks based alternative to Redux and the Flux pattern](https://medium.com/capbase-engineering/part-3-the-react-hooks-based-alternative-to-redux-and-the-flux-pattern-a726220a8a9a)
@@ -270,6 +271,33 @@ For library author mostly.
 
 * [Render props is still useful for inversion of control thing](https://kentcdodds.com/blog/react-hooks-whats-going-to-happen-to-render-props)
 
+## Form with Hooks
+
+* [React Hooks - Custom Hooks (form validation hook)](https://www.youtube.com/watch?v=tmlzjnZy6ZQ)
+
+```js
+const useInput = (initial) => {
+  const [value, setValue] = useState(initial)
+  return {
+    value, 
+    onChange: e => setValue(e.target.value)
+  }
+}
+
+// Use it
+const Form = () => {
+  const email = useInput('')
+  const password = useInput('')
+  
+  return (
+    <div>
+      <input type="email" {...email} />
+      <input type="password" {...password} />
+    </div>
+  )
+}
+```
+
 ## Libraries and Tools
 
 * [retoggle](https://github.com/Raathigesh/retoggle)
@@ -280,3 +308,5 @@ For library author mostly.
 * [React Hooks: A Complete Introduction](https://www.youtube.com/watch?v=jd8R0a2Ur8Q)
 * [Introducing React Hooks](https://www.youtube.com/watch?v=mxK8b99iJTg)
 * [React Hooks: Advanced Hooks](https://www.youtube.com/watch?v=YKmiLcXiMMo)
+* [Fun with React Hooks - Michael Jackson and Ryan Florence](https://www.youtube.com/watch?v=1jWS7cCuUXw)
+* [How React Hooks Change The Way We Build Forms](https://www.youtube.com/watch?v=8yo44xN7-nQ)

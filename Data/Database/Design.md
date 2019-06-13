@@ -35,3 +35,8 @@ Hierarchical Model -> Network Model    ->
 The poor support for joins in document databases may or may not be a problem, depending on the application. For example, many-to-many relationships may never be needed in an analytics application that uses a document database to record which events occurred at which time.
 
 It's not possible to say in general which data model leads to simpler application code; it depends on the kinds of relationships that exist between data items. For highly interconnected data, the document model is awkward, the relational model is acceptable, and graph models are the most natural.
+
+## Benchmarking
+
+* Find stress test tool
+* Benchmark can be useful to define latency SLA

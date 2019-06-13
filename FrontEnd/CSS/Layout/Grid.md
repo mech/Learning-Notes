@@ -234,6 +234,7 @@ grid-template-columns: 15em 4.5fr minmax(5em, 3fr) 10%;
 
 ## Examples
 
+* [**More Unicode Patterns**](https://yuanchuan.name/2018/06/02/more-unicode-patterns.html)
 * [CSS Grid Challenge](https://www.smashingmagazine.com/2017/10/css-grid-challenge-2017-winners/)
 * [Rachel Andrew's Grid by Example](https://gridbyexample.com)
 * [Jen Simmons's Labs](http://labs.jensimmons.com/)

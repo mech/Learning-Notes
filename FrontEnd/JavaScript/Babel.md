@@ -59,7 +59,10 @@ Instead of adding all the plugins we want one by one, we can use a "preset" whic
 
 You can configure your preset at `babel.config.js`.
 
-## Polyfill and useBuiltIns
+## Polyfill and useBuiltIns and core-js@3
+
+* [core-js@3, babel and a look into the future](https://github.com/zloirock/core-js/blob/master/docs/2019-03-19-core-js-3-babel-and-a-look-into-the-future.md)
+* [Polyfills: everything you ever wanted to know, or maybe a bit less](https://hackernoon.com/polyfills-everything-you-ever-wanted-to-know-or-maybe-a-bit-less-7c8de164e423)
 
 @babel/polyfill is provided as a convenience and you need to use it with @babel/preset-env and the `useBuiltIns` option in order to not include the whole polyfill which isn't always needed.
 

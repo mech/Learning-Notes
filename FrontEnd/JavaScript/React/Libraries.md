@@ -295,6 +295,7 @@ class Projects extends Component {
 new IntersectionObserver(callback, options)
 ```
 
+* [**Infinite component scrolling with React.lazy and IntersectionObserver**](https://itnext.io/infinite-component-scrolling-with-react-lazy-and-intersectionobserver-7774c03b08f2)
 * [Build a Reusable Scroll View Component with Animated scrollTo Abilities in React](https://codedaily.io/screencasts/48/Build-a-Reusable-Scroll-View-Component-with-Animated-scrollTo-Abilities-in-React)
 * [scroll-into-view](https://github.com/KoryNunn/scroll-into-view)
 * [Scrollytelling with IntersectionObserver](https://github.com/russellgoldenberg/scrollama)

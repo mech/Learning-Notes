@@ -1,5 +1,7 @@
 # Postgres
 
+**https://wiki.postgresql.org/wiki/Don't_Do_This**
+
 * [HOWTO](https://popsql.io/learn-sql/postgresql/)
 * [The Internals of PostgreSQL](http://www.interdb.jp/pg/)
 * [PostgreSQL Exercises](https://pgexercises.com/)

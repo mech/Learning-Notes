@@ -1,6 +1,7 @@
 # GraphQL
 
-https://gramps-graphql.github.io/gramps-express/
+* [Principled GraphQL](https://principledgraphql.com/)
+* https://gramps-graphql.github.io/gramps-express/
 
 > Finally! I can see my business domain - with GraphQL Voyager
 
@@ -86,6 +87,11 @@ class Query(graphene.ObjectType):
     # ...
   )
 ```
+
+## Guides
+
+* [Real world GraphQL tutorials for frontend developers with deadlines!](https://learn.hasura.io/)
+* [Open GraphQL - A GraphQL publication that is open to anything & everything GraphQL related](https://medium.com/open-graphql)
 
 ## Variables
 
@@ -915,4 +921,5 @@ Please don't do REST API backing your GraphQL. It will be damn slow. Always use 
 * [GraphQL at Shopify](https://www.youtube.com/watch?v=Wlu_PWCjc6Y)
 * [Getting Started with GraphQL on Shopify](https://www.youtube.com/watch?v=S4hTq_3yQrk)
 * [Prisma playlists](https://www.youtube.com/channel/UCptAHlN1gdwD89tFM3ENb6w/videos)
+* [GraphQL Asia 2019](https://www.youtube.com/playlist?list=PLYLxE0c1nvDDB2O8K2a2m9I8u9KW9HxFG)
 

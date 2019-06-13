@@ -1,5 +1,13 @@
 # Routing
 
+# Reach Router
+
+* [Why does Router render a div in the DOM? - tabindex=-1](https://github.com/reach/router/issues/270)
+* [SPA Accessibility - focus not reset when route changed](https://github.com/ReactTraining/react-router/issues/5210)
+* You need to give your focus element a tabindex of -1. (To allow focus)
+
+---
+
 * [react-app-location](https://medium.com/dailyjs/stop-repeating-yourself-with-routes-links-and-location-parameter-parsing-in-your-react-app-a9ac317dfe1)
 
 ```js
@@ -326,6 +334,8 @@ const DefaultLayout = ({ component: Component, ...rest }) => (
 ```
 
 ## Code splitting
+
+* [**Infinite component scrolling with React.lazy and IntersectionObserver**](https://itnext.io/infinite-component-scrolling-with-react-lazy-and-intersectionobserver-7774c03b08f2)
 
 ```js
 // Dynamically load a module using async/await

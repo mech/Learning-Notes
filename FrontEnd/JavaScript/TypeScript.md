@@ -2,6 +2,7 @@
 
 https://github.com/paulcbetts/spawn-rx/pull/12/files
 
+* [**A crash course in TypeScript**](https://medium.freecodecamp.org/a-crash-course-in-typescript-e6bf9c10946)
 * [Product Type and Sum Type](http://blog.jenkster.com/2016/06/functional-mumbo-jumbo-adts.html)
 * [TypeScript — JavaScript with superpowers](https://medium.freecodecamp.org/typescript-javascript-with-super-powers-a333b0fcabc9)
 

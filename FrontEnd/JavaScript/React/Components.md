@@ -680,6 +680,7 @@ export Menu
 * [Mark Erikson](http://blog.isquaredsoftware.com/)
 * [Guillermo Rauch](https://rauchg.com/essays)
 * [Jack Hsu](https://jaysoo.ca/)
+* [Josh Comeau](https://www.joshwcomeau.com/)
 
 ## Videos
 

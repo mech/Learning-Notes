@@ -1,5 +1,30 @@
 # Immutability
 
+```js
+// Apollo Client 2.6
+// Rewards you when you write your code in immutable style
+const client = new ApolloClient({
+  link: ...,
+  cache: new InMemoryCache({ freezeResults: true }),
+  assumeImmutableResults: true,
+})
+
+const data = client.readQuery({
+  query: CommentQuery
+})
+
+client.writeQuery({
+  query: CommentQuery,
+  data: {
+    ...data,
+    comments: [
+      ...data.comments,
+      newComment,
+    ]
+  }
+})
+```
+
 String and numbers are always immutable by default. However, in Redux, state is almost always represented as an object.
 
 Ideally we want `shouldComponentUpdate` to always return `false`, but that is not realistic. So the next best option is to do simple and fast equality check.

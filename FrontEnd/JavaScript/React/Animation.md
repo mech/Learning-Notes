@@ -86,6 +86,8 @@ The `*-enter` and `*-enter-active` classes are applied when a new element is add
 ## Physicality, Velocity, Spring, Realism, Snapping, Friction
 
 * [Spring Animation in CSS](https://medium.com/@dtinth/spring-animation-in-css-2039de6e1a03)
+* [react-use-gesture](https://github.com/react-spring/react-use-gesture)
+* [React-spring: and how hooks mark a shift in how we think of animation (Alec Larson)](https://www.youtube.com/watch?v=ERS0DO2xlAk&t=9143s)
 
 ## Videos
 

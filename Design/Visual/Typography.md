@@ -4,6 +4,9 @@
 * [HoeflerCo's review](https://twitter.com/HoeflerCo/status/836232427299274753)
 * [Variable fonts](https://www.axis-praxis.org/specimens/arphic-chinese)
 * [Font pair with Google Fonts](https://fontpair.co/)
+* [Figma line-height changes](https://www.figma.com/blog/line-height-changes/)
+* [The Value of Multi-Typeface Design](https://medium.com/s/about-face/the-value-of-multi-typeface-design-ccd67227b0ee)
+* [Typography for Lawyers](https://typographyforlawyers.com)
 
 > Variation in type sizes throughout the layout helps users quickly decode content hierarchy, while the emphasis on written words creates clarity when communicating across the app's 27 available languages. - [Airbnb](https://design.google.com/articles/airbnb/)
 
@@ -16,6 +19,7 @@
 * [How To Set Weights And Styles With The @font-face Declaration](https://coding.smashingmagazine.com/2013/02/setting-weights-and-styles-at-font-face-declaration/)
 * [The Font Loading Checklist](https://www.zachleat.com/web/font-checklist/)
 * [`font-display`](https://www.zachleat.com/web/font-display-reflow/)
+* [`font-display` for the Masses](https://css-tricks.com/font-display-masses/)
 
 There are 6 web font formats:
 

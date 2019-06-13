@@ -1,7 +1,10 @@
 # Interface Design
 
+UX designers should feel comfortable making decisions about layout and interaction design issues like flow, navigation, and how much information to present at one time.
+
 One idea is not enough - [Iterative UI Design](https://developer.apple.com/videos/play/wwdc2016/805)
 
+* [Availability Heuristic, Focalism Bias, Optimism Bias, Overconfidence Bias](https://www.smashingmagazine.com/2019/04/designers-guide-better-decisions/)
 * [**The Metaphor Behind Material Design**](https://uxdesign.cc/the-metaphor-behind-material-design-b3a3d0ede37f)
 * [**7 Practical Tips for Cheating at Design**](https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886)
 * [The Psychology of Design](https://alistapart.com/article/psychology-of-design)
@@ -59,6 +62,7 @@ One idea is not enough - [Iterative UI Design](https://developer.apple.com/video
 
 > The ways in which we experience and consume information are growing and changing - and the information available to us is often richer and more complex.
 
+* Instead of diving into UI solutions immediately, first, understand the user's problems.
 * Adding the word "Please" slow people down in a dialog box. Remove it!
 * Good user interface design is based on human goals and behavior. The user interface in-turn effects behavior, which further design decisions are based on. In subtle and unconscious ways, user experience alters how humans make decisions. What is seen, where it is presented, and how interactions are afforded, influence actions.
 * Clarity
@@ -84,9 +88,21 @@ One idea is not enough - [Iterative UI Design](https://developer.apple.com/video
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
 
+## Levelling
+
+* [Levelling Framework: a UI framework for three-dimensional space](https://uxdesign.cc/leveling-framework-72f9296e6920)
+
+```
+1st level - Base, chrome UI
+  2nd level - Listing, collection, filtering
+    3rd level - Detail, edit mode
+      4th level - Property sheet, inspector
+        5th level - Modal
+```
+
 ## Mental Models
 
-* [](https://medium.com/swlh/leveraging-mental-models-in-ux-design-21ba8fbce22d)
+* [Leveraging Mental Models in Product Design](https://medium.com/swlh/leveraging-mental-models-in-ux-design-21ba8fbce22d)
 
 ## Interaction Modes
 
@@ -162,6 +178,7 @@ Being with "horizontal prototype" that covers all your main screens. Your next i
 ## Blank Slate
 
 * [Everything you need to know about skeleton screens](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a)
+* [Designing for different states in the UI](https://uxdesign.cc/designing-for-different-ui-states-87d60130f85f)
 
 ## Complexion Reduction
 
@@ -272,6 +289,10 @@ Makes people want to click and explore.
 
 * [Andy Fitzgerald](http://andyfitzgerald.org/)
 * [Jen Simmons](http://labs.jensimmons.com/)
+
+## Case Studies
+
+* [Flow - Introducing Project Planning](https://www.getflow.com/blog/introducing-project-planning)
 
 ## Videos
 
