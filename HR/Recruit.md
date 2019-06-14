@@ -1,6 +1,7 @@
 # Recruit
 
 * [From Data to Deployment – Full Stack Data Science](http://engineering.indeedblog.com/talks/data-to-deployment/)
+* [The Best Questions to Ask at Your Performance Review](https://medium.com/s/story/the-best-questions-to-ask-at-your-performance-review-5aba3fb86528)
 
 ## CV & Resume
 

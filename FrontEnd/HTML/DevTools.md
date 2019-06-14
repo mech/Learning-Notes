@@ -2,6 +2,7 @@
 
 https://www.freeformatter.com/html-entities.html
 
+* [Chrome Tracing for Fun and Profit](https://slack.engineering/chrome-tracing-for-fun-and-profit-a15ec83aa908)
 * [Dev Tips](https://umaar.com/dev-tips/)
 * [Modern DevTools - a subscription](https://moderndevtools.com/)
 * [Headless Chrome Node API](https://github.com/GoogleChrome/puppeteer)

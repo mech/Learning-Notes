@@ -149,6 +149,7 @@ Each uniqueness constraint must be backed by a unique database index to protect 
 
 ## Validation
 
+* [Refactoring Rails application with dry-validation](http://gafur.me/2017/11/13/refactoring-rails-application-with-dry-validation.html)
 * [Custom Validators in Ruby on Rails 4](http://www.rails-dev.com/custom-validators-in-ruby-on-rails-4)
 * [Data Corruption: Stop the Evil Tribbles](https://www.youtube.com/watch?v=kA8aR1ffoOg)
 * [**Using ruby Range with custom classes**](http://blog.arkency.com/2014/08/using-ruby-range-with-custom-classes/)

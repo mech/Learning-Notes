@@ -82,7 +82,7 @@ AZ ArizonaAR ArkansasCA CaliforniaCO Colorado
 
 Synonym management, hierarchical browsing, and associative linking.
 
-## ElasticSearch
+## Elasticsearch
 
 * [stretchy - Query builder for ElasticSearch](https://github.com/hired/stretchy)
 * [Elasticsearch For Beginners: Indexing your Gmail Inbox](https://github.com/oliver006/elasticsearch-gmail)

@@ -1,5 +1,6 @@
 # Components
 
+* [Patterns For JavaScript Frontend Applications](https://medium.com/@richard.chihong.ng/the-state-of-web-applications-3f789a18b810)
 * [**The React Handbook**](https://medium.freecodecamp.org/the-react-handbook-b71c27b0a795)
 
 Component is just a function of state. A snapshot. You don't to have worry about state changing over time. The component will always show the current snapshot of the state.

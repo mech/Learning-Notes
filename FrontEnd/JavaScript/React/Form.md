@@ -1,5 +1,7 @@
 # React Form
 
+* [**Very nice approach to validation**](https://itnext.io/react-hooks-and-two-way-data-binding-dd4210f0ed94)
+* [react-use-state-x](https://github.com/avkonst/react-use-state-x)
 * [**Introducing Formik 0.9.0**](https://medium.com/@jaredpalmer/introducing-formik-0-9-0-690959a329a6)
 * [Govern - good state management for form?](https://github.com/jamesknelson/govern)
 

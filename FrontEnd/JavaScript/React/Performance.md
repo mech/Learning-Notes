@@ -129,10 +129,19 @@ You can still use stateless components if you implement `shouldComponentUpdate()
 
 It is beneficial to implement `shouldComponentUpdate()` as high up the tree as possible.
 
+## Event Handler and Re-rendering
+
+* [Dealing with callbacks as props in React](https://dev.to/xnimorz/dealing-with-event-handlers-in-react-540j)
+
 ## PureComponent and React.memo
 
 If there are no visible changes, although the actual DOM will not be altered, the render() method is still getting called and may waste time doing unnecessary virtual DOM building. We may as well skip it with PureComponent/memo
 
+https://www.google.com/search?q=react+list+rendering+callback+performance&rlz=1C5CHFA_enSG816SG816&oq=react+list+&aqs=chrome.1.69i57j35i39j0l4.4875j0j7&sourceid=chrome&ie=UTF-8
+
+
+* [When to useMemo and useCallback](https://kentcdodds.com/blog/usememo-and-usecallback)
+* [Improve Performance in React.js Using Hooks](https://medium.com/better-programming/improve-performance-in-react-js-using-hooks-3d0ebbad6956)
 * [**Ending the debate on few anti-patterns in React**](https://medium.com/@nids.nitesh/ending-the-debate-on-few-anti-patterns-in-react-8a4118d175b5)
 * [React.js pure render performance anti-pattern](https://medium.com/@esamatti/react-js-pure-render-performance-anti-pattern-fb88c101332f)
 * [React.PureComponent's children](https://blog.cloudboost.io/react-purecomponents-children-979e3da15ba8)

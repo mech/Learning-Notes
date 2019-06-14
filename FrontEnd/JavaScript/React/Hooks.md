@@ -2,6 +2,7 @@
 
 > Hardest things about hooks so far has been figuring out good patterns whilst tripping over bad ones. (Like dispatching inside a useEffect without passing an empty array as a second argument), infinite loops are not cool, people. - ‪@erik_hellman‬
 
+* [**Very good demonstration of hooks with isMounted, isIO**](https://itnext.io/essential-react-hooks-design-patterns-a04309cc0404)
 * [React Hook Flow Diagram](https://www.bram.us/2019/03/11/react-hook-flow-diagram/)
 * [Everything you need to know about React Hooks](https://medium.com/@vcarl/everything-you-need-to-know-about-react-hooks-8f680dfd4349)
 * [How to migrate from Recompose to React Hooks](https://medium.com/stationfive/how-to-migrate-from-recompose-to-react-hooks-89b2981c03d)
@@ -260,6 +261,8 @@ Another interesting reason to use `useReducer` is you can pass down the `dispatc
 * [Some example of useMemo() and memo()](https://github.com/facebook/react/issues/15156#issuecomment-474590693)
 
 ## useCallback
+
+* [When to useMemo and useCallback](https://kentcdodds.com/blog/usememo-and-usecallback)
 
 ## useLayoutEffect
 
