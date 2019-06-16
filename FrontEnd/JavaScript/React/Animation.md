@@ -1,5 +1,9 @@
 # React Animation
 
+* [React animation in 2019](https://hackernoon.com/5-ways-to-animate-a-reactjs-app-in-2019-56eb9af6e3bf)
+
+---
+
 * [Micro nudge: a micro animation for behavioral change](https://uxplanet.org/micro-nudge-a-micro-animation-for-behavioral-change-dd15ecd4fab3)
 * [Meaningful Motion with Action-Driven Animation](http://tobiasahlin.com/blog/meaningful-motion-w-action-driven-animation/)
 * [**React Animations in Depth**](https://medium.com/react-native-training/react-animations-in-depth-433e2b3f0e8e)
@@ -92,6 +96,8 @@ The `*-enter` and `*-enter-active` classes are applied when a new element is add
 ## Videos
 
 * [Animating the Virtual DOM - Sarah Drasner](https://www.youtube.com/watch?v=W5AdUcJDHo0)
+* [Node.js Dublin: UI animation in React](https://www.youtube.com/watch?v=6lshX4daC_c)
+* [UI Animation in React](https://cssanimation.rocks/ui-animation-react/)
 
 ## People
 

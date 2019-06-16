@@ -2,6 +2,8 @@
 
 ## Render Props
 
+* [Awesome React Render Props](https://github.com/jaredpalmer/awesome-react-render-props)
+
 > Useful if the child needs to communicate with the parent before rendering. Otherwise use normal "slot".
 
 * [How to give rendering control to users with prop getters](https://kentcdodds.com/blog/how-to-give-rendering-control-to-users-with-prop-getters)

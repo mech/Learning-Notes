@@ -5,6 +5,10 @@
 * [Apache Flink](https://flink.apache.org/) - Overtake Spark's batch processing
 * [Declarative web scraping](https://github.com/MontFerret/ferret)
 
+## Excel
+
+* [The 7 Biggest Excel Mistakes of All Time](https://www.teampay.co/insights/biggest-excel-mistakes-of-all-time/)
+
 ## Spark
 
 * In-memory data processing using RDD (Resilient Distributed Datasets)

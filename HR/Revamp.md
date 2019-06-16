@@ -1,5 +1,9 @@
 # Revamp
 
+## Payroll
+
+* [Tracking time case study](https://eightshapes.com/case-studies/ncarb.html)
+
 ## REW
 
 * [Useful for REW operation](https://www.focusmate.com/science)

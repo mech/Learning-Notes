@@ -23,6 +23,7 @@
 
 ## Data
 
+* [Gain a Real Advantage with Sketch Data](https://uxplanet.org/sketch-data-4d22f823253c)
 * [Do more with Data: Building a Data Supplier plugin for Sketch](https://blog.sketchapp.com/do-more-with-data-2b765e870e4f)
 
 ## SVG
@@ -76,6 +77,10 @@ To build more advanced layouts, you need to use hidden helper layers, shape grou
 * [Get Down to the Nitty-Gritty of Text Rendering in Sketch](https://journal.yummygum.com/get-down-to-the-nitty-gritty-of-text-rendering-in-sketch-cd49f0544e20)
 
 ## Symbols and Nested Symbols
+
+https://www.youtube.com/watch?v=B1G3nIuJYec
+
+---
 
 * [Symbols are imperative for consistency and quality control](https://blog.usejournal.com/building-responsive-sketch-symbol-components-9973fafd4c04)
 * [Nested Button Symbols: The Complete Guide](https://blog.prototypr.io/nested-button-symbols-the-complete-guide-c0c91be46952)

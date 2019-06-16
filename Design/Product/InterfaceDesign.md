@@ -4,13 +4,14 @@ UX designers should feel comfortable making decisions about layout and interacti
 
 One idea is not enough - [Iterative UI Design](https://developer.apple.com/videos/play/wwdc2016/805)
 
+* [Evernote.design](https://www.evernote.design)
 * [Availability Heuristic, Focalism Bias, Optimism Bias, Overconfidence Bias](https://www.smashingmagazine.com/2019/04/designers-guide-better-decisions/)
 * [**The Metaphor Behind Material Design**](https://uxdesign.cc/the-metaphor-behind-material-design-b3a3d0ede37f)
 * [**7 Practical Tips for Cheating at Design**](https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886)
 * [The Psychology of Design](https://alistapart.com/article/psychology-of-design)
 * [Facebook: Who broke the build](https://www.facebook.com/groups/whobrokethebuild/photos/)
 * [Anticipatory design](https://medium.com/ido-lechner/crafting-smarter-interfaces-with-anticipatory-design-624f19ce8352)
-* [Page Flows - Inspirations for user flow](https://pageflows.com/)
+* [**Page Flows** - Inspirations for user flow](https://pageflows.com/)
 * [How white space killed an enterprise app (and why data density matters)](https://uxdesign.cc/how-white-space-killed-an-enterprise-app-and-why-data-density-matters-b3afad6a5f2a)
 
 > Let the idea evolve

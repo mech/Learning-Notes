@@ -27,6 +27,7 @@ end
 
 ### 6
 
+* [What's coming to Rails 6.0?](https://medium.com/rubyinside/whats-coming-to-rails-6-0-8ec79eea66da)
 * [Zeitwerk integration](https://github.com/rails/rails/pull/35235)
 
 ### 5.1

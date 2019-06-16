@@ -1,6 +1,7 @@
 # Product Design
 
 * [Frank Gehry on Design Thinking](https://uxdesign.cc/frank-gehry-on-design-thinking-f7b374a785d6)
+* [Application Holotypes: A Guide to Architecture Decisions](https://jasonformat.com/application-holotypes/)
 
 > "He approaches each new project with a desire to do something different than he has done before and to experiment with materials, technologies and methods in his quest"
 

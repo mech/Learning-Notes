@@ -10,3 +10,6 @@
 * Heinz didn't redesign the bottle just for the hell of it. It redesigned it based on data gathered during user research.
 * Great product solve genuine problems
 
+## Videos
+
+* [UX / UI Inspiration (from the AJ&Smart designers) 2019](https://www.youtube.com/watch?v=dWZNtpNRpG8)

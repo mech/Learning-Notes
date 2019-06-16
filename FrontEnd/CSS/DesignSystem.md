@@ -1,7 +1,16 @@
 # Design System (Thinking)
 
+https://material.io/design/components/buttons.html#contained-button
+
+https://uxdesign.cc/ui-cheat-sheets-buttons-7329ed9d6112
+
+https://polaris.shopify.com/patterns-and-guides/crafting-admin#section-start-with-the-problem-not-the-ui
+
+---
+
 https://xotv.me/channels/22-important/vod_videos/781-important-slash-slash-basecamp-dot-com
 
+* [**Shopify - Tracking Polaris**](https://ux.shopify.com/tracking-polaris-adfa97f42c3f)
 * [Clearleft - Designing design systems](https://clearleft.com/posts/designing-design-systems)
 * [Awesome Design Systems](https://github.com/alexpate/awesome-design-systems)
 * [Reboot.css](https://scotch.io/tutorials/a-look-at-bootstrap-4s-new-reset-rebootcss)

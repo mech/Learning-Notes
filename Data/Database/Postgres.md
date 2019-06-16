@@ -1,5 +1,20 @@
 # Postgres
 
+RDBMS traditionally feature strong consistency and high availability at the expense of partition tolerance. They are optimized for writes.
+
+NoSQL are optimized for reads with eventual consistency in mind. For MailLog/audit log/activity feed purposes, if we just write once and read many times, then choosing NoSQL is the correct approach.
+
+```
+How many relationships are in your data? 
+What is the level of complexity in your data? 
+How often do the data change? 
+How often does your application query the data? 
+How often does your application query the relationship underlying the data?
+How often do your users update the data? 
+How often do your users update the logic in the data?
+How critical is your Application in a disaster scenario?
+```
+
 **https://wiki.postgresql.org/wiki/Don't_Do_This**
 
 * [HOWTO](https://popsql.io/learn-sql/postgresql/)

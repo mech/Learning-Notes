@@ -1,5 +1,6 @@
 # Grid
 
+* [**Using CSS Grid the right way**](https://vgpena.github.io/using-css-grid-the-right-way/)
 * [Times: CSS Grid for Designers](https://open.nytimes.com/css-grid-for-designers-f74a883b98f5)
 * [Visual guide to Grid](http://grid.malven.co/)
 * [Best Practices With CSS Grid Layout](https://www.smashingmagazine.com/2018/04/best-practices-grid-layout/)

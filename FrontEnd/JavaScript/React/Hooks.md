@@ -2,6 +2,7 @@
 
 > Hardest things about hooks so far has been figuring out good patterns whilst tripping over bad ones. (Like dispatching inside a useEffect without passing an empty array as a second argument), infinite loops are not cool, people. - ‪@erik_hellman‬
 
+* [Cross-cutting functionality in React using HOC, Render Props and Hooks](https://pawelgrzybek.com/cross-cutting-functionality-in-react-using-higher-order-components-render-props-and-hooks/)
 * [**Very good demonstration of hooks with isMounted, isIO**](https://itnext.io/essential-react-hooks-design-patterns-a04309cc0404)
 * [React Hook Flow Diagram](https://www.bram.us/2019/03/11/react-hook-flow-diagram/)
 * [Everything you need to know about React Hooks](https://medium.com/@vcarl/everything-you-need-to-know-about-react-hooks-8f680dfd4349)

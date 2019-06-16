@@ -345,7 +345,7 @@ let input
 
 ## Validate in Real-Time
 
-* [Yup - Dead simple Object schema validation](https://github.com/jquense/yup)
+* [**Yup** - Dead simple Object schema validation](https://github.com/jquense/yup)
 * [validator.js - String validation](https://github.com/chriso/validator.js)
 * [An Introduction to Validation in React with Yup](https://medium.com/@rossbulat/introduction-to-yup-object-validation-in-react-9863af93dc0e)
 
