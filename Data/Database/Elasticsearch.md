@@ -2,6 +2,12 @@
 
 Initially for full-text search and when Lucene got more powerful and capable, it can do much more like log analytic and aggregation. Elasticsearch is just a distributed version of Lucene.
 
+## Open Distro
+
+* [Security for Elasticsearch is now free for 6.8.0 and 7.1.0](https://www.elastic.co/blog/security-for-elasticsearch-is-now-free)
+* [Document Level Security in Elasticsearch — Part 1](https://medium.com/@alon.aizenberg/document-level-security-in-elasticsearch-94866249ffb9)
+* [AWS — Open Distro Elasticsearch](https://medium.com/@maxy_ermayank/tl-dr-aws-open-distro-elasticsearch-fc642f0e592a)
+
 ## Index
 
 One index for one resource. Like timesheets in one index, users in one index, etc.
