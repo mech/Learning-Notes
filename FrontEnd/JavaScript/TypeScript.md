@@ -6,6 +6,10 @@ https://github.com/paulcbetts/spawn-rx/pull/12/files
 * [Product Type and Sum Type](http://blog.jenkster.com/2016/06/functional-mumbo-jumbo-adts.html)
 * [TypeScript — JavaScript with superpowers](https://medium.freecodecamp.org/typescript-javascript-with-super-powers-a333b0fcabc9)
 
+## Generic
+
+* [How to Finally Understand Generics in TypeScript](https://medium.com/better-programming/typescript-generics-90be93d8c292)
+
 ## Bivariant and Contravariant
 
 * [What are covariance and contravariance?](https://www.stephanboyer.com/post/132/what-are-covariance-and-contravariance)
