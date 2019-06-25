@@ -9,6 +9,7 @@ https://github.com/paulcbetts/spawn-rx/pull/12/files
 ## Generic
 
 * [How to Finally Understand Generics in TypeScript](https://medium.com/better-programming/typescript-generics-90be93d8c292)
+* [Typescript Generics Explained](https://medium.com/@rossbulat/typescript-generics-explained-15c6493b510f)
 
 ## Bivariant and Contravariant
 
