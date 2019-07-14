@@ -207,6 +207,10 @@ You should not use `[chunkhash]` or `[hash]` for development as this will cause 
 
 ## Performance
 
+> Avoid PROD tasks in DEV, offload loaders to thread-loader, move rarely changed code to DllPlugin?
+
+https://twitter.com/addyosmani/status/1148479395692048384
+
 * [Tinder PWA case study](https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0)
 
 ## Loaders

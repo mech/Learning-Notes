@@ -1,5 +1,6 @@
 # Machine Learning
 
+* [The Data Science Interview Study Guide](https://medium.com/better-programming/the-data-science-interview-study-guide-c3824cb76c2e)
 * [If you're a developer transitioning into data science, here are your best resources](https://medium.freecodecamp.org/if-youre-a-developer-transitioning-into-data-science-here-are-your-best-resources-c31928b53cd1)
 * [From Data to Deployment – Full Stack Data Science](http://engineering.indeedblog.com/talks/data-to-deployment/)
 * [**A visual introduction to machine learning**](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
@@ -32,7 +33,11 @@ Knapsack problem
 NP-Complete
 ```
 
-## Nearest Neighbor
+## Random Forest
+
+* [Understanding Random Forest](https://towardsdatascience.com/understanding-random-forest-58381e0602d2)
+
+## Nearest Neighbour
 
 * [Fast Near-Duplicate Image Search using Locality Sensitive Hashing](https://towardsdatascience.com/fast-near-duplicate-image-search-using-locality-sensitive-hashing-d4c16058efcb)
 

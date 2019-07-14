@@ -106,7 +106,8 @@ server {
 Let's Encrypt performs domain validation by requesting a well-known URL from a domain. If it receives a certain response (the "challenge"), the domain is considered valid.
 
 * [Nginx and Let's Encrypt with Docker in Less Than 5 Minutes](https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71)
-* [How to Set Up Free SSL Certificates from Let's Encrypt using Docker and Nginx](https://www.humankode.com/ssl/how-to-set-up-free-ssl-certificates-from-lets-encrypt-using-docker-and-nginx)
+* [**How to Set Up Free SSL Certificates from Let's Encrypt using Docker and Nginx**](https://www.humankode.com/ssl/how-to-set-up-free-ssl-certificates-from-lets-encrypt-using-docker-and-nginx)
+* [Certbot commands](https://certbot.eff.org/docs/using.html#certbot-commands)
 
 ```
 // Every Monday 2:30am 

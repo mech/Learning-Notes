@@ -63,6 +63,8 @@ form {
 
 ## Combinator Selectors
 
+* [CSS Previous sibling selectors and how to fake them](https://medium.com/free-code-camp/how-to-make-the-impossible-possible-in-css-with-a-little-creativity-bd96bb42b29d)
+
 Combinators are character sequences that express a relationship between the selectors on either side of it.
 
 There are 4 combinators:

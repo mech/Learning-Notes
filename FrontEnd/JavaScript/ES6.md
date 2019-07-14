@@ -283,6 +283,17 @@ Button.defaultProps = {
 
 ## Gather/Rest and Spread Operators
 
+Both rest syntax and spread syntax uses the 3 dots, however they do different things.
+
+If you need to create an object that has all the properties except certain, you can simply combine destructuring (to ignore) and rest (to capture) the remaining properties:
+
+```js
+// We want to ignore name and age and capture the rest...
+const { name, age, ...rest } = person;
+```
+
+<span style="color:red">Note the spread syntax uses the same 3 dots to SHALLOW-COPY an array or an object into a new array or an object. What is shallow-copy? Simply put, any nested arrays or objects will be shared between copies.</span>
+
 Spread unpack items insides array/object and gather/rest package items into a single unit.
 
 There are 3 different "spread" operators in JavaScript:

@@ -1,5 +1,7 @@
 # GraphQL
 
+> GraphQL lets us model an **interface** to our **core domain**.
+
 * [Principled GraphQL](https://principledgraphql.com/)
 * https://gramps-graphql.github.io/gramps-express/
 
@@ -923,4 +925,4 @@ Please don't do REST API backing your GraphQL. It will be damn slow. Always use 
 * [Prisma playlists](https://www.youtube.com/channel/UCptAHlN1gdwD89tFM3ENb6w/videos)
 * [GraphQL Asia 2019](https://www.youtube.com/playlist?list=PLYLxE0c1nvDDB2O8K2a2m9I8u9KW9HxFG)
 * [GraphQL Conf Berlin 2019](https://www.youtube.com/watch?v=zSzn1f1TjRc)
-
+* [GraphQL Schema Design @Scale (Marc-André Giroux)](https://www.youtube.com/watch?v=pJamhW2xPYw&)

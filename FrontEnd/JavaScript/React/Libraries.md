@@ -58,6 +58,10 @@ https://github.com/jaredpalmer/react-fns
 * [Some toggle example](https://jrsinclair.com/articles/2018/react-redux-javascript-architecture/)
 * [On Designing and Building Toggle Switches](https://www.sarasoueidan.com/blog/toggle-switch-design/)
 
+## Breadcrumb
+
+* [Build a Stunning Breadcrumb Component in React with Plain CSS](https://medium.com/better-programming/build-a-stunning-breadcrumb-component-in-react-with-plain-css-414c68db293)
+
 ## Visual
 
 * [React Color](https://casesandberg.github.io/react-color/)
@@ -133,6 +137,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [lazy.js - Like Underscore, but lazier](https://github.com/dtao/lazy.js)
 * [decimal.js](https://github.com/MikeMcl/decimal.js/)
 * [The Platform](https://github.com/palmerhq/the-platform)
+* [flopflip - Toggle features and ship software more often](https://github.com/tdeekens/flopflip)
 
 ## UI Libraries
 
@@ -162,6 +167,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [Atlaskit](http://atlaskit.atlassian.com/packages)
 * [Reakit](https://reakit.io/components/)
 * [Evergreen](https://evergreen.segment.com/)
+* [Commercetools UI Kit](https://uikit.commercetools.com/?path=/story/introduction--getting-started)
 
 ## Blank Slate
 
@@ -243,6 +249,7 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 
 ## Panel, Window
 
+* [Nexus browser emulator - Window.js](https://gitlab.cern.ch/nexus-project/nexus-browser/blob/master/src/components/Window.js)
 * [react-mosaic](https://github.com/palantir/react-mosaic)
 * [resize.js](https://github.com/no-stack-dub-sack/cs-playground-react/blob/master/src/utils/resize.js)
 * [simpledrag](https://github.com/lingtalfi/simpledrag)
@@ -251,6 +258,7 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 ## Menu
 
 * [react-contexify](https://github.com/fkhadra/react-contexify)
+* [All of GitHub's menus & dialogs work without JavaScript.](https://twitter.com/Keithamus/status/1098260366017134592/photo/1)
 
 ## Tree View
 

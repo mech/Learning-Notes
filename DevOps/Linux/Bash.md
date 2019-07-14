@@ -8,6 +8,14 @@
 * [Pure Bash Bible](https://github.com/dylanaraps/pure-bash-bible)
 * [Bash cheatsheet](https://devhints.io/bash)
 
+## Grep
+
+* [Show lines before and after with grep](https://blog.liplex.de/grep-with-more-lines/)
+
+```
+cat production.log | grep '/e/claims/ca/S12703/2019/6' -A 10
+```
+
 ## Special Parameters
 
 * [The shell treats several parameters specially. These parameters may only be referenced; assignment to them is not allowed](https://www.gnu.org/software/bash/manual/html_node/Special-Parameters.html)
