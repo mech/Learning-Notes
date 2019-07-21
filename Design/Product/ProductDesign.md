@@ -1,5 +1,7 @@
 # Product Design
 
+> Use feedback to stabilize your design
+
 * [Frank Gehry on Design Thinking](https://uxdesign.cc/frank-gehry-on-design-thinking-f7b374a785d6)
 * [Application Holotypes: A Guide to Architecture Decisions](https://jasonformat.com/application-holotypes/)
 

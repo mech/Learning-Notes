@@ -79,6 +79,12 @@ PUT /gists/:id/star
 DELETE /gists/:id/star
 ```
 
+## Caching
+
+* [A Happy Compromise Between Customization and Cacheability](https://phil.tech/api/2017/08/13/a-happy-compromise-between-customization-and-cacheability/)
+* [GraphQL vs REST: Caching](https://phil.tech/api/2017/01/26/graphql-vs-rest-caching/)
+* [Caching Tutorial](https://www.mnot.net/cache_docs/)
+
 ## Versioning
 
 * [Versioning a Rails API](https://chriskottom.com/blog/2017/04/versioning-a-rails-api/)

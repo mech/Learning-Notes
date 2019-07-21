@@ -383,6 +383,7 @@ input.addEventListener('change', () => {
 * [react-tabs-redux](https://github.com/patrik-piskay/react-tabs-redux)
 * [tab-container-component](https://github.com/plantain-00/tab-container-component)
 * [react-multistep](https://github.com/srdjan/react-multistep)
+* [React containers, some assembly required](https://medium.com/zendesk-engineering/react-containers-some-assembly-required-43dd54d879a8)
 
 ```html
 <Tabs>

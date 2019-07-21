@@ -240,6 +240,12 @@ Due to batching and concurrent mode, the closed over values (closure) are actual
 
 ## useReducer
 
+> Should I use multiple useState or useReducer?
+> 
+> For independent things (isHovering and textInput), multiple useState.
+> 
+> For things that change together (isFetching and fetchedItems), or if their next state depends on previous (todos), I prefer useReducer. - https://twitter.com/dan_abramov/status/1083330668522864640
+
 The general pattern of dispatching and then centralizing the logic to transition between states at a higher level seems to be having great success. It also solves many quirks with callbacks in React, leads to many more intuitive solutions around complex state transitions. Especially in a concurrent world.
 
 So I see useReducer as the central API more so than useState. useState is still nice since it's very concise for simple use cases and easy to explain, but people should probably look into useReducer or similar patterns early on.
@@ -314,3 +320,4 @@ const Form = () => {
 * [React Hooks: Advanced Hooks](https://www.youtube.com/watch?v=YKmiLcXiMMo)
 * [Fun with React Hooks - Michael Jackson and Ryan Florence](https://www.youtube.com/watch?v=1jWS7cCuUXw)
 * [How React Hooks Change The Way We Build Forms](https://www.youtube.com/watch?v=8yo44xN7-nQ)
+* [Apollo + React Hooks + TypeScript = 🥰 by: James Reggio, Web Platform Lead, Convoy](https://www.youtube.com/watch?v=IxmrRiA9Gso)

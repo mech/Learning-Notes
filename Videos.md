@@ -38,6 +38,7 @@ document.getElementsByTagName('video')[0].playbackRate = 2;
 
 * [Domain-Driven Design Europe](https://www.youtube.com/channel/UC3PGn-hQdbtRiqxZK9XBGqQ)
 * [LLVM](https://www.youtube.com/channel/UCv2_41bSAa5Y_8BacJUZfjQ)
+* [DDD FR](https://www.youtube.com/channel/UCyqzNZFVOwc8paEVn-wtdpg/videos)
 
 ## UX
 
