@@ -242,6 +242,8 @@ grid-template-columns: 15em 4.5fr minmax(5em, 3fr) 10%;
 * [Codepen collection on CSS Grid Layout](https://codepen.io/collection/XRRJGq/)
 * [Art Directing For The Web With CSS Grid Template Areas](https://www.smashingmagazine.com/2018/04/art-directing-web-css-grid/)
 * [Creating horizontal scrolling containers the right way](https://uxdesign.cc/creating-horizontal-scrolling-containers-the-right-way-css-grid-c256f64fc585)
+* [Calendar with CSS Grid](https://snook.ca/archives/html_and_css/calendar-css-grid)
+* [Building a Conference Schedule with CSS Grid](https://css-tricks.com/building-a-conference-schedule-with-css-grid/)
 
 ## People
 
