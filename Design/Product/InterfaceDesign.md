@@ -4,6 +4,7 @@ UX designers should feel comfortable making decisions about layout and interacti
 
 One idea is not enough - [Iterative UI Design](https://developer.apple.com/videos/play/wwdc2016/805)
 
+* [Fast Software, the Best Software](https://craigmod.com/essays/fast_software/)
 * [Evernote.design](https://www.evernote.design)
 * [Availability Heuristic, Focalism Bias, Optimism Bias, Overconfidence Bias](https://www.smashingmagazine.com/2019/04/designers-guide-better-decisions/)
 * [**The Metaphor Behind Material Design**](https://uxdesign.cc/the-metaphor-behind-material-design-b3a3d0ede37f)

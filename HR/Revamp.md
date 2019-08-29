@@ -1,5 +1,9 @@
 # Revamp
 
+## RPA
+
+* [Robotic Process Automation (RPA) programme at Singtel](https://www.linkedin.com/feed/update/urn:li:activity:6545222863580946432/)
+
 ## Payroll
 
 * [Tracking time case study](https://eightshapes.com/case-studies/ncarb.html)

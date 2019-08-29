@@ -4,6 +4,7 @@
 * [react-use-state-x](https://github.com/avkonst/react-use-state-x)
 * [**Introducing Formik 0.9.0**](https://medium.com/@jaredpalmer/introducing-formik-0-9-0-690959a329a6)
 * [Govern - good state management for form?](https://github.com/jamesknelson/govern)
+* [How I built an async form validation library in ~100 lines of code with React Hooks](https://medium.com/free-code-camp/how-i-built-an-async-form-validation-library-in-100-lines-of-code-with-react-hooks-81dbff6c4a04)
 
 Creating a rich, interactive, easy to use form can often involve a **significant amount of programming**.
 

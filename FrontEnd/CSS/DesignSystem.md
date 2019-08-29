@@ -10,6 +10,7 @@ https://polaris.shopify.com/patterns-and-guides/crafting-admin#section-start-wit
 
 https://xotv.me/channels/22-important/vod_videos/781-important-slash-slash-basecamp-dot-com
 
+* [Stencil.js - What is Design System](https://stenciljs.com/docs/what-is-design-system)
 * [**Shopify - Tracking Polaris**](https://ux.shopify.com/tracking-polaris-adfa97f42c3f)
 * [Clearleft - Designing design systems](https://clearleft.com/posts/designing-design-systems)
 * [Awesome Design Systems](https://github.com/alexpate/awesome-design-systems)

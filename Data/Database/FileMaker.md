@@ -3,6 +3,10 @@
 * [Soliant Consultant](https://www.soliantconsulting.com/filemaker)
 * [Data Integration](https://www.filemaker.com/learning/custom-app-academy/205/overview.html)
 
+## SSL with Let's Encrypt
+
+* [Let's Encrypt SSL Certificates for FileMaker Server for Mac](https://bluefeathergroup.com/blog/lets-encrypt-ssl-certificates-for-filemaker-server-for-mac/)
+
 ## Data API
 
 * [2GB per month limit](https://community.filemaker.com/thread/186361)
@@ -39,5 +43,6 @@ Renewal::RenewalOption.where(service_code: '==S6414').total
 
 * [Soliant TV](https://www.youtube.com/user/SoliantConsultingTV/videos)
 * [Integration session videos](https://www.youtube.com/playlist?list=PLkvKnBkQSCeSvp0mzwQAuqSTSeJOaZv35)
+* [Search Features](https://app.works/community/training-tutorials/search-features/)
 
 
