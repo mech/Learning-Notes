@@ -27,6 +27,10 @@ https://dollarshaveclub.github.io/stickybits/
 
 https://github.com/jaredpalmer/react-fns
 
+## A11Y
+
+* [Accessibility auditing for React.js applications](https://github.com/dequelabs/react-axe)
+
 ## React Native Web/DOM
 
 * [react-native-dom](https://github.com/vincentriemer/react-native-dom)

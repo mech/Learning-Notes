@@ -1,5 +1,7 @@
 # Flexbox
 
+> Remember to keep the "flex" in Flexbox. Don't use the "width" property for specifying box widths.
+
 [**Firefox DevTools for CSS authors**](https://blog.logrocket.com/firefox-devtools-for-css-authors-1511f41d1e3)
 
 * [The Flexbox Holy Albatross](http://www.heydonworks.com/article/the-flexbox-holy-albatross)
