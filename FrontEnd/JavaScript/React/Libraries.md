@@ -142,6 +142,7 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [decimal.js](https://github.com/MikeMcl/decimal.js/)
 * [The Platform](https://github.com/palmerhq/the-platform)
 * [flopflip - Toggle features and ship software more often](https://github.com/tdeekens/flopflip)
+* [fpsmeter](https://github.com/Darsain/fpsmeter)
 
 ## UI Libraries
 
@@ -317,6 +318,11 @@ new IntersectionObserver(callback, options)
 * [react-virtualized](https://blog.logrocket.com/rendering-large-lists-with-react-virtualized-82741907a6b3)
 * [react-window](https://react-window.now.sh)
 * [Scroll Magic](http://scrollmagic.io/)
+
+## Scrollbar
+
+* [OverlayScrollbars](https://kingsora.github.io/OverlayScrollbars)
+* [Two Browsers Walked Into a Scrollbar](https://www.filamentgroup.com/lab/scrollbars/)
 
 ## Date Picker and Calendar
 

@@ -29,6 +29,7 @@ end
 
 * [What's coming to Rails 6.0?](https://medium.com/rubyinside/whats-coming-to-rails-6-0-8ec79eea66da)
 * [Zeitwerk integration](https://github.com/rails/rails/pull/35235)
+* [Goodbye Sprockets. Welcome Webpacker](https://medium.com/@coorasse/goodbye-sprockets-welcome-webpacker-3-0-ff877fb8fa79)
 
 ### 5.1
 

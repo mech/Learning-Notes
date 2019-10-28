@@ -30,6 +30,17 @@ We need a simpler, lightweight component that do not use ES6 class.
 
 > React doesn't provide a **stateful primitive** simpler than a class component.
 
+## Lifecycle
+
+First forget about React lifecycle on mounting and un-mounting and think about hooks in synchronisation/scheduling concept.
+
+Think of hook as state synchronisation and effect synchronisation.
+
+> The question is not "when does this effect run", the question is "with which state does this effect synchronise with"
+> useEffect(fn) // all state
+> useEffect(fn, []) // no state
+> useEffect(fn, [these, states])
+
 ## Examples
 
 * [How to Build a Todo List with React Hooks](https://medium.freecodecamp.org/how-to-build-a-todo-list-with-react-hooks-ebaa4e3db3b)
@@ -269,7 +280,9 @@ Another interesting reason to use `useReducer` is you can pass down the `dispatc
 
 ## useCallback
 
-* [When to useMemo and useCallback](https://kentcdodds.com/blog/usememo-and-usecallback)
+Don't use this all the time. Measure first.
+
+* [**When to useMemo and useCallback**](https://kentcdodds.com/blog/usememo-and-usecallback)
 
 ## useLayoutEffect
 

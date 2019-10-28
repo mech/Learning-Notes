@@ -90,6 +90,10 @@ One idea is not enough - [Iterative UI Design](https://developer.apple.com/video
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
 
+## Icons
+
+* [IconSVG](https://iconsvg.xyz)
+
 ## Levelling
 
 * [Levelling Framework: a UI framework for three-dimensional space](https://uxdesign.cc/leveling-framework-72f9296e6920)

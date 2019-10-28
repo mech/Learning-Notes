@@ -27,6 +27,8 @@ Now that Gmail supports the style block in the `<head>`, inlining is no longer n
 
 ## Media Queries
 
+* [The Fab Four technique to create Responsive Emails without Media Queries](https://www.freecodecamp.org/news/the-fab-four-technique-to-create-responsive-emails-without-media-queries-baf11fdfa848/#.dtpllw1lf)
+
 Because most email client do not have media queries support, we can't use mobile-first approach with `min-width`, rather we need to use `max-width` and go desktop-first.
 
 ```css

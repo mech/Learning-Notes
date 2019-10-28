@@ -1,5 +1,11 @@
 # Kafka
 
+> To rethink data as not stored records or transient messages, but instead as a continually updating stream of events.
+
+Make sure your data integration system of choice can survive stopped processes, crashed machines, network delays, and high loads without missing a message. After all, data integration systems only have one job - delivering those messages.
+
+---
+
 > Graphical User Interface has been doing this for a long time. Instead of a TextInput know all your code, it will only generate event for you to handle the logic.
 
 * [Netflix: 1 trillion events a day into streaming ingestion pipeline](https://medium.com/netflix-techblog/notebook-innovation-591ee3221233)

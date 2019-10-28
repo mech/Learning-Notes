@@ -14,6 +14,7 @@ document.getElementsByTagName('video')[0].playbackRate = 2;
 * [DevTube](https://dev.tube/)
 * [WeAreDevelopers](https://www.youtube.com/channel/UCSD0dLRGQk_T-D3RvpM5aFQ)
 * [USENIX](https://www.youtube.com/channel/UCIdV7bE97mSPTH1mOi_yUrw/videos)
+* [ATypl](https://www.youtube.com/watch?v=Zh--mK6r25U&list=PL0oMAzSh5W9qekqvcVFsSYaoO7U_5K6rR&index=2&t=0s)
 
 ## CSS
 

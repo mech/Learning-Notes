@@ -1,5 +1,9 @@
 # Product Design
 
+> The designer's first and most essential task is choosing the correct problem to solve. Because if you get that wrong, every choice you make after that is irrelevant. - @jjg
+
+---
+
 > Use feedback to stabilize your design
 
 * [Frank Gehry on Design Thinking](https://uxdesign.cc/frank-gehry-on-design-thinking-f7b374a785d6)

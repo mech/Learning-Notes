@@ -16,4 +16,6 @@ http://ihrp.sg/certification
 * https://www.trinet.com/full-service-hr/employee-benefits/
 * https://www.100offer.com/
 * https://keypay.com.au
+* https://www.bamboohr.com/time-tracking-software/
+* https://lattice.com/
 

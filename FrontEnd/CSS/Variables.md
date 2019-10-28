@@ -3,6 +3,7 @@
 By using variables in CSS, you can localize values and simplify initial development, iterative testing, and later maintenance all in one go.
 
 * [CSS Variables — No, really!](https://medium.com/dev-channel/css-variables-no-really-76f8c91bd34e)
+* [Back to :root](http://simurai.com/blog/2015/09/09/back-to-the-roots)
 
 ```css
 /*

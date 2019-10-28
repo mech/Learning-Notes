@@ -90,6 +90,11 @@ To understand why flexbox is not meant for grid system, you can imagine a layout
 * IE10 has tweener flexbox
 * IE10-IE11, flex-items ignore their parent container's height if it's set via the `min-height` property.
 
+## Intrinsic Web Design
+
+* [Should we still be selling responsive web design?](https://www.browserlondon.com/blog/2019/08/19/should-we-still-be-selling-responsive-web-design/)
+* [Responsive CSS Patterns without Media Queries](https://www.sitepoint.com/responsive-css-patterns-without-media-queries/)
+
 ## Flex Container
 
 Establishes a **flexbox-formatting context** in contrast to block-formatting context. A flex container expands items to fill available space, or shrinks them to prevent overflow.

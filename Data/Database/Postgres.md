@@ -197,6 +197,14 @@ The `PARTITION BY` is employed to reduce the window to a particular group within
 
 * [pg_partman](https://github.com/keithf4/pg_partman)
 * [partitionable](https://github.com/pacuna/partitionable)
+* [Video: RailsConf 2019 - Postgres & Rails 6 Multi-DB: Pitfalls, Patterns, Performance by Gabe Enslein](https://www.youtube.com/watch?v=a4OBp6edNaM)
+
+Default in Postgresql 11
+
+```
+ALTER TABLE invoices ATTACH PARTITION invoices_y2018m07 FOR VALUES FROM
+('2018-07-01') TO ('2018-08-01');
+```
 
 ## Date and Time
 

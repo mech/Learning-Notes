@@ -10,6 +10,10 @@
 
 > Variation in type sizes throughout the layout helps users quickly decode content hierarchy, while the emphasis on written words creates clarity when communicating across the app's 27 available languages. - [Airbnb](https://design.google.com/articles/airbnb/)
 
+## Relative Units
+
+* [Pixels vs. Ems: Users DO Change Font Size](https://medium.com/@vamptvo/pixels-vs-ems-users-do-change-font-size-5cfb20831773)
+
 ## Web Fonts
 
 * [How to use web fonts in CSS](https://blog.logrocket.com/how-to-use-web-fonts-in-css-a0326f4d6a4d)
@@ -20,6 +24,8 @@
 * [The Font Loading Checklist](https://www.zachleat.com/web/font-checklist/)
 * [`font-display`](https://www.zachleat.com/web/font-display-reflow/)
 * [`font-display` for the Masses](https://css-tricks.com/font-display-masses/)
+* [Future Fonts](https://www.futurefonts.xyz/fonts)
+* 
 
 There are 6 web font formats:
 

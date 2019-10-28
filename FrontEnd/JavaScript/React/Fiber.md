@@ -1,7 +1,18 @@
 # React 16 - Fiber
 
+* https://twitter.com/dan_abramov/status/977298210816393216
+* https://twitter.com/acdlite/status/978412930973687808
+
+Many names:
+
+* Async mode
+* Concurrent mode
+* Time slicing
+
 > So much of React's architecture is based on stuff game developers figured out decades ago. - https://twitter.com/acdlite/status/978696799757086720
 
+* [The Rise of JavaScript Scheduling](https://www.loxodrome.io/post/javascript-scheduling/)
+* [Scheduling in React - Philipp Spiess](https://philippspiess.com/scheduling-in-react/)
 * [#7942 - Fiber Principles: Contributing To Fiber](https://github.com/facebook/react/issues/7942)
 * [What's New in React 16 and Fiber Explanation](https://medium.com/@treyhuffine/react-16-features-and-fiber-explanation-e779544bb1b7)
 * [A look inside Fiber](http://makersden.io/blog/look-inside-fiber/)
@@ -15,10 +26,12 @@
 * The main thread is the same as the UI thread. Only the main thread can change the DOM.
 * Solve choppy frame rates and laggy input.
 * Assign different priorities to different types of updates.
-* Fiber is just a JavaScript object representing the Virtual Stack Frame of an React component. Just like VDOM is a JavaScript object representing a component's DOM.
+* Fiber is just a JavaScript object representing the Virtual Stack Frame of a React component. Just like VDOM is a JavaScript object representing a component's DOM.
 * Time slicing or async setState (make use of functional setState instead of plain object - see `ReactDOM.unstable_deferredUpdates`)
 * Uses `requestIdleCallback` to cooperate with the browser's overall work schedule
 * Improve startup time rendering components as they become available to the browser without the need to wait for a whole bundle to be downloaded.
+
+With the help of the new Fiber architecture rewrite React can now pause during rendering and yield to the main thread for prioritized tasks like updating input element UI.
 
 ## Async Rendering
 
@@ -37,14 +50,6 @@
 
 ## Return Multiple Elements
 
-## Suspense
-
-* Pause state update until data is ready
-* On fast network, render after the whole tree is ready
-* On slow network, precisely control the loading states
-* Simplify data fetching, code splitting and any kind of async data requirement
-* [React Suspense with the Fetch API](https://medium.com/swlh/react-suspense-with-the-fetch-api-cc655aced759)
-
 ## Time-Slicing
 
 * React doesn't block the thread while rendering
@@ -53,3 +58,10 @@
 * Only final rendered state is displayed
 * Make sure your most important renders are rendered first like text entry
 
+## Suspense
+
+* Pause state update until data is ready
+* On fast network, render after the whole tree is ready
+* On slow network, precisely control the loading states
+* Simplify data fetching, code splitting and any kind of async data requirement
+* [React Suspense with the Fetch API](https://medium.com/swlh/react-suspense-with-the-fetch-api-cc655aced759)
