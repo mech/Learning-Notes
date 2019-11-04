@@ -269,6 +269,7 @@ ease-in-out - cubic-bezier(0.42, 0, 0.58, 1)
 
 * [Justin McDowell - Bauhaus in the Browser](https://www.youtube.com/watch?v=BaQl84nDBNY)
 * [FLIP technique](https://www.youtube.com/watch?v=wQ-jn1KYUkQ)
+* [Interactive web animation with SVG by Cassie Evans](https://www.youtube.com/watch?v=8p5SDI4TNDc)
 
 ## People
 

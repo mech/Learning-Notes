@@ -1,5 +1,7 @@
 # Postgres
 
+> It's preferable to exercise Postgres's ability to execute JOINs rather than play with your network latency.
+
 RDBMS traditionally feature strong consistency and high availability at the expense of partition tolerance. They are optimized for writes.
 
 NoSQL are optimized for reads with eventual consistency in mind. For MailLog/audit log/activity feed purposes, if we just write once and read many times, then choosing NoSQL is the correct approach.
@@ -41,6 +43,33 @@ How critical is your Application in a disaster scenario?
 ```sql
 // A faster way to write `WHERE id IN ($1, $2, $3)`
 SELECT * from users WHERE id = ANY($1::int[])
+```
+
+## .psqlrc
+
+```
+\set PROMPT1 '%~%x%# '
+\x auto
+\set ON_ERROR_STOP on
+\set ON_ERROR_ROLLBACK interactive
+
+\pset null '¤'
+\pset linestyle 'unicode'
+\pset unicode_border_linestyle single
+\pset unicode_column_linestyle single
+\pset unicode_header_linestyle double
+set intervalstyle to 'postgres_verbose';
+
+\setenv LESS '-iMFXSx4R'
+```
+
+## Commands
+
+```
+select session_user;
+select current_schema();
+show search_path;
+\dn - list all schemas
 ```
 
 ## Rails Related

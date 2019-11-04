@@ -899,6 +899,10 @@ Please don't do REST API backing your GraphQL. It will be damn slow. Always use 
 * [graphql-query-resolver - Minimize N+1 queries](https://github.com/nettofarah/graphql-query-resolver)
 * [Preloading Associations with graphql-batch](https://gist.github.com/mech/a2fb158c76f4617f72f0f8b6c48b80e1)
 
+## Federation
+
+* [apollo-federation-ruby by Gusto](https://github.com/Gusto/apollo-federation-ruby)
+
 ## Examples
 
 * [Yelp](https://www.yelp.com/developers/graphql/guides/intro)

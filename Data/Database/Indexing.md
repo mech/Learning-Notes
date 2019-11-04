@@ -17,6 +17,21 @@ If you only index `lang` and not `created_at`, it will still be slow. The `lang`
 * One index scan is faster than 2. So don't use 2 separate indexes.
 * Write range queries for period, do this even for a single day.
 
+## Indexing Strategy
+
+Most importantly, you need to know which index you don't need!
+
+As writing SQL queries is the job of a developer, then coming up with the right indexing strategy for an application is also the job of the developer.
+
+Every change that has made it to the main tables must have made it to the indexes too. As a consequence, each index adds write costs to your DML queries. That's why it is not feasible to index everything in your databases.
+
+When you want to make a query faster and you see that its EXPLAIN plan is lacking index support, think about the query in terms of SLA in your application. Does this query need to run as fast as possible, even when it means that you now have to maintain more indexes?
+
+Use pg_stat_statements to list the most common queries in terms of number if times the query is executed and the cumulative time it took to execute the query.
+
+* [EXPLAIN tool](https://explain.depesz.com/)
+* [EXPLAIN visualizer](https://tatiyants.com/pev/#/plans)
+
 ## Unused or redundant indexes
 
 Covering indexes.

@@ -1,5 +1,6 @@
 # React Animation
 
+* [Mobile First Animation in React](https://github.com/aholachek/mobile-first-animation)
 * [React animation in 2019](https://hackernoon.com/5-ways-to-animate-a-reactjs-app-in-2019-56eb9af6e3bf)
 
 ---
