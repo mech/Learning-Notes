@@ -5,8 +5,18 @@
 * [Handling errors with async/await and promises](https://medium.com/@vcarl/handling-errors-with-async-await-and-promises-cd2fea534f08)
 * [JavaScript Getter/Setter Pyramid](https://staltz.com/javascript-getter-setter-pyramid.html)
 * [Async Memoization](https://medium.com/@bluepnume/async-javascript-is-much-more-fun-when-you-spend-less-time-thinking-about-control-flow-8580ce9f73fc)
+* [iterall](https://github.com/leebyron/iterall)
 
 Async is basically eliminating callback hell.
+
+## Iteration Protocols
+
+* [MDN's Iteration protocols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)
+
+2 protocols:
+
+* Iterable protocol - when object implement the Symbol.iterator method
+* Iterator protocol - when object implement next() method
 
 ## Books
 

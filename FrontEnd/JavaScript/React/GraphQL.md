@@ -662,11 +662,37 @@ first = LIMIT the number of results
 after = The next cursor value. An alternative to integer offset.
 ```
 
+## Pagination Issues
+
+* [#1359 - Rethink Pagination](https://github.com/rmosolgo/graphql-ruby/issues/1359)
+* [Add simpler, more flexible connections](https://github.com/rmosolgo/graphql-ruby/pull/2143)
+
+```ruby
+field :companies, CompanyQuery.connection, null: false, extension: ArrayConnection
+
+def companies
+  [1, 2, 3]
+end
+```
+
+v10 guide on pagination - https://github.com/rmosolgo/graphql-ruby/tree/v1.10.0.pre1/guides/pagination
+
 ## Ruby - Parallelism
 
 * [Issue 274 - First-class async support](https://github.com/rmosolgo/graphql-ruby/issues/274)
 * ActionController::Live
 * DeferredExecution
+
+## Issues on Shorthand SDL/IDL
+
+GraphQL has its own language to write GraphQL Schemas: The GraphQL Schema Definition Language (SDL).
+
+https://rmosolgo.github.io/blog/2017/03/17/prototyping-a-graphql-schema-from-definition-with-ruby/
+
+* [#666 - Shorthand notation](https://github.com/rmosolgo/graphql-ruby/issues/666)
+* [#727 - Schema Definition using the IDL](https://github.com/rmosolgo/graphql-ruby/issues/727)
+
+The `default_resolve` object in `GraphQL::Schema.from_definition` doesn't have to be a hash.
 
 ## Rails
 
@@ -930,3 +956,20 @@ Please don't do REST API backing your GraphQL. It will be damn slow. Always use 
 * [GraphQL Asia 2019](https://www.youtube.com/playlist?list=PLYLxE0c1nvDDB2O8K2a2m9I8u9KW9HxFG)
 * [GraphQL Conf Berlin 2019](https://www.youtube.com/watch?v=zSzn1f1TjRc)
 * [GraphQL Schema Design @Scale (Marc-André Giroux)](https://www.youtube.com/watch?v=pJamhW2xPYw&)
+
+## 2019
+
+https://mattboldt.com/2019/01/07/rails-and-graphql/
+
+https://www.eversql.com/faster-pagination-in-mysql-why-order-by-with-limit-and-offset-is-slow/
+
+https://sqlperformance.com/2015/01/t-sql-queries/pagination-with-offset-fetch
+
+https://www.novatec-gmbh.de/en/blog/art-pagination-offset-vs-value-based-paging/
+
+https://use-the-index-luke.com/no-offset
+
+Search for "pagination offset limit slow at end of page"
+
+https://blog.apollographql.com/understanding-pagination-rest-graphql-and-relay-b10f835549e7
+

@@ -325,6 +325,10 @@ EXCLUDE USING gist (
 * [3 Methods of backing up Postgres](https://www.urbackup.org/backup_postgresql.html)
 * [WAL-E - Continuous archiving for Postgres](https://github.com/wal-e/wal-e)
 
+## Migration
+
+* [Continuous migration with pgloader](https://pgloader.io/blog/continuous-migration/)
+
 ## Compression
 
 * TOAST - Automatic Table Compression
