@@ -165,6 +165,7 @@ Most single queries should be aiming for around a 1ms query time.
 
 * [A Brief History of the UUID](https://segment.com/blog/a-brief-history-of-the-uuid/)
 * [UUID or GUID as Primary Keys? Be Careful!](https://tomharrisonjr.com/uuid-or-guid-as-primary-keys-be-careful-7b2aa3dcb439)
+* [Why Auto Increment Is A Terrible Idea](https://www.clever-cloud.com/blog/engineering/2015/05/20/why-auto-increment-is-a-terrible-idea/)
 
 ## Tuning
 
@@ -176,6 +177,8 @@ Most single queries should be aiming for around a 1ms query time.
 * [explain.depesz.com - Postgres explain analyze made readable](https://explain.depesz.com/)
 * [Distinguishing Access and Filter-Predicates](http://use-the-index-luke.com/sql/explain-plan/postgresql/filter-predicates)
 * [Postgres EXPLAIN Visualizer (Pev)](http://tatiyants.com/pev/#/plans/new)
+
+Use parallel queries: split queries to multiple CPU using `max_parallel_workers` and `max_parallel_workers_per_gather` and `dynamic_shared_memory_type`
 
 ## Lateral Join
 
@@ -201,6 +204,10 @@ Most single queries should be aiming for around a 1ms query time.
 * Providing roll-ups
 
 ## Window Functions
+
+Useful for doing "running aggregate/total".
+
+See https://www.youtube.com/results?search_query=bruce+momjian+window+functions
 
 Unlike aggregate function like `COUNT()`, `SUM()`, `AVG()`, which operate on an entire table, Window Functions operate on a set of rows and return a single aggregated value for each row.
 
@@ -233,6 +240,26 @@ Default in Postgresql 11
 ```
 ALTER TABLE invoices ATTACH PARTITION invoices_y2018m07 FOR VALUES FROM
 ('2018-07-01') TO ('2018-08-01');
+```
+
+## Range Type or Temporal Extension
+
+Using "contains @>".
+
+"How many movies did we rented out on June 21st?"
+
+```sql
+select count(*) from rental
+where rental_period @> '2019-06-21'::timestamp;
+```
+
+Using "within &&"
+
+"How many movies did we rent during the month of June?"
+
+```sql
+select count(*) from rental
+where rental_period && tsrange('2019-06-01'::timestamp, '2019-06-30'::timestamp);
 ```
 
 ## Date and Time
@@ -355,4 +382,7 @@ EXCLUDE USING gist (
 * [PostgresOpen](https://www.youtube.com/user/postgresopen)
 * [dotScale 2017 - Marco Slot - Scaling out (Postgres)SQL](https://www.youtube.com/watch?v=xJghcPs0ibQ)
 * [Skillsmatter's Postgres Videos](https://skillsmatter.com/explore?q=tag%3Apostgresql)
+* [PostgresOpen 2019 The Art Of PostgreSQL](https://www.youtube.com/watch?v=q9IXCdy_mtY)
+* [Postgres Open Conference](https://www.youtube.com/user/postgresopen/videos)
+* [Bruce Momjian window functions](https://www.youtube.com/results?search_query=bruce+momjian+window+functions)
 

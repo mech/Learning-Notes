@@ -25,6 +25,19 @@ https://github.com/krisleech/wisper
 
 * [Why Rails 5 uses ApplicationRecord instead of ActiveRecord::Base?](https://stackoverflow.com/questions/37359527/why-rails-5-uses-applicationrecord-instead-of-activerecordbase)
 
+## ActiveModel::Attributes
+
+Starting from Rails 5, ActiveModel will get Attributes module also.
+
+```ruby
+class Customer
+  include ActiveModel::Attributes
+  
+  attribute :name, :string
+  attribute :age, :integer
+end
+```
+
 ## Upsert
 
 * [Add insert_many to ActiveRecord models](https://github.com/rails/rails/pull/35077#issuecomment-471695480)
