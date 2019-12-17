@@ -35,6 +35,18 @@ Kafka does not do data processing or transforming. It basically is a logger to p
 
 * [Turning the database inside out with Apache Samza - Martin Kleppmann](https://www.youtube.com/watch?v=fU9hR3kiOK0)
 
+## Why?
+
+Event streams can be used as:
+
+* Communication fabric
+* Integration fabric - integrate with other system
+* Replication fabric - replicate data for availability
+* Consensus fabric
+* Persistence fabric - accurate source of truth
+
+We have to rely on eventual consistency and then opt in to strong consistency if need be.
+
 ## Change Data Capture
 
 

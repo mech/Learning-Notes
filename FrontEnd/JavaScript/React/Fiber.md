@@ -33,7 +33,11 @@ Many names:
 
 With the help of the new Fiber architecture rewrite React can now pause during rendering and yield to the main thread for prioritized tasks like updating input element UI.
 
-## Async Rendering
+## Concurrent Mode and Async Rendering
+
+In Concurrent Mode, `render()` could be invoked multiple times without actually committing (like applying changes to the DOM).
+
+In Strict Mode, `render()` is rendered twice to simulate the behavior Concurrent Mode will be having in the future in order for you to easily catch any bug during development mode.
 
 * [Update on Async Rendering](https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html)
 * [Example of main thread blocking](https://build-mbfootjxoo.now.sh/)

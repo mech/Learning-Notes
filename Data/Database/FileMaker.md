@@ -3,13 +3,45 @@
 * [Soliant Consultant](https://www.soliantconsulting.com/filemaker)
 * [Data Integration](https://www.filemaker.com/learning/custom-app-academy/205/overview.html)
 
+## Uninstall FileMaker
+
+* [Get Mojave from AppStore direct link](https://itunes.apple.com/us/app/macos-mojave/id1398502828?mt=12)
+
+Sometimes we may have problem with FileMaker server installation especially when upgrading new macOS or new FileMaker server.
+
+* [Reinstalling FileMaker Server to troubleshoot an issue](https://support.filemaker.com/s/article/Reinstalling-FileMaker-Server-to-troubleshoot-an-issue-1503693085688?language=en_US)
+
+If you need to upgrade FileMaker server, you need to stop it first.
+
+```
+▶ sudo launchctl stop com.filemaker.fms
+```
+
+## FileMaker 17
+
+* [System Requirements for FileMaker Server 17](https://support.filemaker.com/s/article/System-Requirements-for-FileMaker-Server-17?language=en_US)
+* [System Requirements for FileMaker Server 18](https://support.filemaker.com/s/article/System-Requirements-for-FileMaker-Server-18?language=en_US)
+* [Deprecated and removed features in FileMaker 17](https://support.filemaker.com/s/answerview?language=en_US&anum=000026028)
+* [Edit Privilege Set](http://docs.360works.com/index.php/Enable_XML_FileMaker_17)
+
+## Apache Web Server
+
+macOS comes with its own Apache Web Server. Most of the time, FM will use it also for CWP.
+
+```
+▶ cd /Library/FileMaker\ Server/HTTPServer/bin/
+▶ sudo ./httpdctl start/stop/restart
+```
+
 ## SSL with Let's Encrypt
 
 * [Let's Encrypt SSL Certificates for FileMaker Server for Mac](https://bluefeathergroup.com/blog/lets-encrypt-ssl-certificates-for-filemaker-server-for-mac/)
+* [Request for using Let's Encrypt](https://community.filemaker.com/en/s/idea/0870H000000fyCcQAI/detail)
 
 ## Data API
 
 * [2GB per month limit](https://community.filemaker.com/thread/186361)
+* [FileMaker 17 Data API Costs for More Data - Good discussion on data limit](https://community.filemaker.com/en/s/question/0D50H00006dsjnzSAA/filemaker-17-data-api-costs-for-more-data)
 
 ## Query
 
