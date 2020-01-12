@@ -16,6 +16,7 @@
 ## SQL Injection
 
 * [SQL Injection Wiki](https://sqlwiki.netspi.com/)
+* [Payloads All The Things](https://github.com/swisskyrepo/PayloadsAllTheThings)
 
 ## Index
 
@@ -27,6 +28,8 @@ WHERE price BETWEEN 10 AND 20
 ```
 
 ## Subquery
+
+Always go for CTE and only when it become a performance issues, then go for subquery.
 
 * [Use Subqueries to Count Distinct 50X Faster](https://www.periscopedata.com/blog/use-subqueries-to-count-distinct-50x-faster.html)
 
@@ -49,6 +52,18 @@ The SQL standard introduces "noise words" in the syntax, and both inner and oute
 * [**Can we stop with the SQL JOINs Venn diagrams insanity?**](https://towardsdatascience.com/can-we-stop-with-the-sql-joins-venn-diagrams-insanity-16791d9250c3)
 * [Keep INNER JOIN when merging relations](https://github.com/rails/rails/pull/27063)
 * [Visual Representation of SQL Joins](https://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins)
+
+## Aggregate
+
+It is important to understand the interaction between aggregates and SQL's WHERE and HAVING clauses. The fundamental difference between WHERE and HAVING is this: WHERE selects input rows before groups and aggregates are computed (thus, it controls which rows go into the aggregate computation), whereas HAVING selects group rows after groups and aggregates are computed. Thus, the WHERE clause must not contain aggregate functions; it makes no sense to try to use an aggregate to determine which rows will be inputs to the aggregates. On the other hand, the HAVING clause always contains aggregate functions. (Strictly speaking, you are allowed to write a HAVING clause that doesn't use aggregates, but it's seldom useful. The same condition could be used more efficiently at the WHERE stage.)
+
+* Most aggregate functions ignore `null` inputs, so that rows in which one or more of the expressions yield `null` are discarded.
+
+```sql
+count(*) -- Total number of input rows
+count(f1) -- Number of input rows in which f1 is non-null
+count(distinct f1) -- Number of distinct non-null values of f1
+```
 
 ## Entity Attribute Value - EAV
 

@@ -130,6 +130,10 @@ document.getElementsByTagName('video')[0].playbackRate = 1.5;
 * [Look elsewhere - Don't stare at your industry. Look in the opposite direction.](https://m.signalvnoise.com/look-elsewhere-e89b2b24f3f2)
 * [The Design Genome Project](https://www.invisionapp.com/enterprise/design-genome/)
 
+## Management
+
+* [An Engineering Team where Everyone is a Leader](https://blog.pragmaticengineer.com/a-team-where-everyone-is-a-leader/)
+
 ## Simple
 
 > The thing that makes the finished work look simple emerged not at the project’s outset, but mid-process. We discovered it through prototyping and iteration. This is likely because good ideas that make use of complex platforms often need runway to find their most simple expressions. The problem comes when we evaluate emerging ideas not on their ability to be simple later, but rather on their ability to appear simple at the start. - [Simple is bad](https://medium.com/s/user-friendly/simple-is-bad-1381784fd679)

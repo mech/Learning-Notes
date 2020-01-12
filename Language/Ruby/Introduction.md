@@ -271,6 +271,25 @@ Affected behaviors:
 name.dup # Make an unfrozen copy of the string and do your modification
 ```
 
+## Proc
+
+```ruby
+handler = -> outside { -> inner { outside * inner } }
+
+[1, 2, 3].map(&handler.call(3))
+[1, 2, 3].map(&handler[3])
+```
+
+```ruby
+# My configuration
+config = {limit: 7, earned: true}
+# My handler
+pipeline = -> config { -> find_limit(config) }
+
+# My collection and data pipeline
+[Leave.find(1), Leave.find(2)].map(&pipeline.call(config))
+```
+
 ## Problem Solving
 
 * [Pair with Sum](http://routetomastery.com/blog/2017/01/08/has-pair-with-some-problem/)

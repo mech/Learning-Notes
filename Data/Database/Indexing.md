@@ -17,6 +17,25 @@ If you only index `lang` and not `created_at`, it will still be slow. The `lang`
 * One index scan is faster than 2. So don't use 2 separate indexes.
 * Write range queries for period, do this even for a single day.
 
+## B-Tree
+
+B for balanced, not binary!
+
+## Sorted List
+
+Index is a sorted list. We can make use of this fact to pre-calculate.
+
+Index is only useful when it is ordered.
+
+## Cost
+
+There are 2 query optimizer: Cost-based optimizers (CBO) and Rule-based optimizers (RBO).  RBO is less flexible and are seldom used today.
+
+* Postgres tries to optimize queries for minimal "cost"
+* One significant factor for "cost" is related to "pages" loaded/accessed
+* By default, a "page" is 8kB
+* Indexes are a cost storage/time trade-off. Spending more on storage for faster query.
+
 ## Indexing Strategy
 
 Most importantly, you need to know which index you don't need!
@@ -31,6 +50,20 @@ Use pg_stat_statements to list the most common queries in terms of number if tim
 
 * [EXPLAIN tool](https://explain.depesz.com/)
 * [EXPLAIN visualizer](https://tatiyants.com/pev/#/plans)
+
+As the developer, you should always use bind parameters except for values that shall influence the execution plan.
+
+## Table Data Distribution
+
+Choosing the best execution plan depends on the table's data distribution as well so the optimizer uses statistics about the contents of the database.
+
+Histogram distribution is used to calculate costs also.
+
+Column histograms are most useful if the values are not uniformly distributed.
+
+Example of unevenly distributed data is status code like "pending" and "approved". The number of "approved" entries often exceeds the "pending" records by order of magnitude. Using an index only makes sense when searching for "approved" entries in this case.
+
+Most of the time, "pending" status is very short-lived and all items will progress to "approved" status eventually.
 
 ## Unused or redundant indexes
 
@@ -49,9 +82,9 @@ Note: `FullTEXT` are not for ordinary `WHERE` clause operations so B-Tree is sti
 **Postgres**
 
 * B-tree
-* GIN
+* GIN (Generalized Inverse Index) - Good for multi-value data structure like JSONB, FTS, Array, etc.
 * GiST
-* BRIN
+* BRIN (Block Range Index) - Stores min/max value for indexed fields per page. Very tiny storage needs. Can trivially discard value that is not within range.
 
 ## B-Tree
 
@@ -80,6 +113,10 @@ Instead of indexing ALL the data, we can instead apply a partial index. I'm almo
 
 ```ruby
 add_index :issues, :created_at, where: "state = 'open'"
+```
+
+```
+create index on post (thread_id, account_id) where visible = true;
 ```
 
 ## Clustered and Non-Clustered Index
@@ -117,3 +154,5 @@ WHERE lname < ? AND dob < ?
 ## Videos
 
 * [The Secret Life of SQL: How to Optimize Database Performance](https://www.youtube.com/watch?v=BuDWWadCqIw)
+* [PostgreSQL Indexing : How, why, and when](https://www.youtube.com/watch?v=clrtT_4WBAw)
+* [Things every developer absolutely, positively needs to know about database indexing - Kai Sassnowski](https://www.youtube.com/watch?v=HubezKbFL7E)

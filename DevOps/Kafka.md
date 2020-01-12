@@ -247,3 +247,7 @@ replica.fetch.max.bytes
 * [The Many Meanings of Event-Driven Architecture](https://www.youtube.com/watch?v=STKCRSUsyP0)
 * [Introduction to Apache Kafka by James Ward](https://www.youtube.com/watch?v=UEg40Te8pnE)
 
+## Presentation
+
+* [Ruby Framework for Event Driven Architecture](https://mensfeld.github.io/karafka-ruby-kaigi-2018/index.html#/)
+* [RubyKaigi 2018 Unofficial Notes](https://github.com/Bombasarkadian/ruby-kaigi-notes)

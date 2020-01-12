@@ -1,5 +1,8 @@
 # Postgres
 
+* [PG Exercises](https://pgexercises.com/)
+* [Modern SQL](https://modern-sql.com/)
+
 > It's preferable to exercise Postgres's ability to execute JOINs rather than play with your network latency.
 
 RDBMS traditionally feature strong consistency and high availability at the expense of partition tolerance. They are optimized for writes.
@@ -43,6 +46,25 @@ How critical is your Application in a disaster scenario?
 ```sql
 // A faster way to write `WHERE id IN ($1, $2, $3)`
 SELECT * from users WHERE id = ANY($1::int[])
+```
+
+## Common Error
+
+```
+psql: error: could not connect to server: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+```
+
+You may have brew upgrade from different version and so the data directory might be incompatible.
+
+```
+The data directory was initialized by PostgreSQL version 11, which is not compatible with this version 12.1.
+```
+
+```
+▶ tail -n 10 /usr/local/var/log/postgres.log
+▶ brew postgresql-upgrade-database
 ```
 
 ## .psqlrc
@@ -89,6 +111,7 @@ show search_path;
 ## Constraints
 
 * [Protect Your Data with PostgreSQL Constraints](http://nathanmlong.com/2016/01/protect-your-data-with-postgresql-constraints/)
+* [Using PostgreSQL constraints](https://arjanvandergaag.nl/blog/using-postgresql-constraints.html)
 
 ## RBAC
 
@@ -139,6 +162,33 @@ WHERE instance_id=453345
 AND tstzrange(started_at, stopped_at, '[]') @> '2017-05-08 00:57:41'::timestamptz;
 ```
 
+## Indexing Problem
+
+B-tree indexes will bloat overtime.
+
+* Lots of updates == bloated indexes
+* Indexes take up way more space on disk than necessary
+* Very significant on large, busy tables
+* [Use check_postgres to monitor index bloat](https://github.com/bucardo/check_postgres)
+* [Check your index bloat](https://gist.github.com/jberkus/9923948)
+* An index that is not updated will not bloat, so try to not index null columns. Make no sense to index million of null values.
+* Updating indexes makes writes slower. Write amplification.
+
+```
+select pg_size_pretty(pg_relation_size('user_pkey'));
+reindex index user_pkey;
+```
+
+Note that REINDEX is not a concurrent operation.
+
+[Lessons Learned Operating Postgres at Scale Dave Pirotte](https://www.youtube.com/watch?v=-LCOAQZuuVo)
+
+Only index low cardinality column. If you have 10% true and 90% false, you might as well index those 10% true only.
+
+```
+create index concurrently index_where_true on large_table (low_cardinality_column) where low_cardinality_column = 't';
+```
+
 ## Scaling
 
 * [Citus - For large Postgres](https://www.citusdata.com/)
@@ -160,6 +210,13 @@ Most single queries should be aiming for around a 1ms query time.
 * [Expensive Query Dashboard](https://blog.heroku.com/expensive-query-speed-up-app)
 * [Using Rack Mini Profiler to find and fix slow queries](https://schneems.com/2017/06/22/a-tale-of-slow-pagination/)
 * [Scalable PostgreSQL connection pooler](https://github.com/yandex/odyssey)
+* pg_buffercache extension to see how much shared_buffers to allocate
+* work_mem - memory allocated to do sort operation
+* [PostgresOpen 2019 Mistaken And Ignored Parameters While Optimizing A PostgreSQL Database](https://www.youtube.com/watch?v=lJ18c1hGRBM)
+* Alway on autovacuum and track_count
+* Know your disk IOPS. Default settings in Postgres is for long spinning disks. Now we have faster SSD.
+* random_page_cost=4 with SSD vs seq_page_cost=1. If random_page_cost is high, query plan may prefer the low cost seq_page_cost.
+* wal_compression
 
 ## UUID
 
@@ -198,12 +255,16 @@ Use parallel queries: split queries to multiple CPU using `max_parallel_workers`
 
 ## Materialized/SQL Views
 
+Introducing views will enrich your domain vocabulary and help your application deal more with *business logic* than with *storage logic*.
+
 * [Speed up with Materialized Views on PostgreSQL and Rails](https://www.sitepoint.com/speed-up-with-materialized-views-on-postgresql-and-rails/)
 * Essentially a caching system at the database
 * Virtual table
 * Providing roll-ups
 
 ## Window Functions
+
+A window function call represents the application of an aggregate-like function over some portion of the rows selected by a query.
 
 Useful for doing "running aggregate/total".
 
@@ -337,8 +398,14 @@ EXCLUDE USING gist (
 
 ## Parallel Query
 
+* For long query only, like seconds. If your queries finished quick in millisecond, then there is no point to do parallel query.
+* Not for more concurrent queries than CPU.
+* Does not make your disk spin any faster. Not for IO bound queries also.
 * 9.6 has Parallel Sequential Scan
 * Parallel aggregate and parallel join
+* [Parallel Query In PostgreSQL Robert Haas](https://www.youtube.com/watch?v=pjEySZAv9Kw)
+* Best for 4 workers?
+* Good for JOIN partner? SUM?
 
 ## Full-Text Search
 
@@ -351,6 +418,7 @@ EXCLUDE USING gist (
 * Once you reached data that can't fit into RAM, you need to use physical backup like [WAL-E](https://github.com/wal-e/wal-e)
 * [3 Methods of backing up Postgres](https://www.urbackup.org/backup_postgresql.html)
 * [WAL-E - Continuous archiving for Postgres](https://github.com/wal-e/wal-e)
+* [pg_backrest](https://pgbackrest.org/)
 
 ## Migration
 
@@ -360,8 +428,10 @@ EXCLUDE USING gist (
 
 * TOAST - Automatic Table Compression
 
-## Vacuum
+## Auto-vacuum
 
+* Cleans up dead tuples, reclaiming space for Postgres (not for OS)
+* Auto-vacuum can cause outages.
 * [PostgreSQL Bloatbusters](http://blog.dataegret.com/2018/03/postgresql-bloatbusters.html)
 
 ## Monitoring

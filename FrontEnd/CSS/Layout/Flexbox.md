@@ -244,3 +244,7 @@ footer {
 * [Jonathan Snook - Container Queries](https://www.youtube.com/watch?v=s1J4T1NW3qo)
 * [Making Future Interfaces: Algorithmic Layouts](https://www.youtube.com/watch?v=qOUtkN6M52M)
 
+## Presentation
+
+* [Using DevTools to understand modern layout techniques - 1](https://noti.st/huijing/dcDRDo)
+* [Using DevTools to understand modern layout techniques - 2](https://www.chenhuijing.com/blog/devtools-for-understanding-modern-layout-techniques/#%F0%9F%9A%B2)

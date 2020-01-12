@@ -24,9 +24,25 @@ If you need to upgrade FileMaker server, you need to stop it first.
 * [Deprecated and removed features in FileMaker 17](https://support.filemaker.com/s/answerview?language=en_US&anum=000026028)
 * [Edit Privilege Set](http://docs.360works.com/index.php/Enable_XML_FileMaker_17)
 
+## Enable Custom Web Publishing
+
+Must be enabled using CLI.
+
+Starting from FileMaker 17, it is much harder to enable XML. We need to go into CLI to perform it. See [360Works document on Enable XML FileMaker 17](http://docs.360works.com/index.php/Enable_XML_FileMaker_17)
+
+```
+▶ fmsadmin set cwpconfig enablexml=true
+▶ fmsadmin restart wpe -y
+```
+
+Visit: 
+
+* http://localhost/fmi/xml/FMPXMLRESULT.xml?-dbnames
+* http://localhost/fmi/xml/fmresultset.xml?-dbnames
+
 ## Apache Web Server
 
-macOS comes with its own Apache Web Server. Most of the time, FM will use it also for CWP.
+macOS comes with its own Apache Web Server. Most of the time, FM will use it also for CWP. Just in case you need to know where FileMaker's Apache configuration is located. A well-configured FileMaker should not have to do the following though.
 
 ```
 ▶ cd /Library/FileMaker\ Server/HTTPServer/bin/
