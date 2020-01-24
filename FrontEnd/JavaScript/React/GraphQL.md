@@ -666,6 +666,7 @@ after = The next cursor value. An alternative to integer offset.
 
 * [#1359 - Rethink Pagination](https://github.com/rmosolgo/graphql-ruby/issues/1359)
 * [Add simpler, more flexible connections](https://github.com/rmosolgo/graphql-ruby/pull/2143)
+* [#1014 - WIP: add a StableRelationConnection for Sequel](https://github.com/rmosolgo/graphql-ruby/pull/1014/files)
 
 ```ruby
 field :companies, CompanyQuery.connection, null: false, extension: ArrayConnection
@@ -675,7 +676,7 @@ def companies
 end
 ```
 
-v10 guide on pagination - https://github.com/rmosolgo/graphql-ruby/tree/v1.10.0.pre1/guides/pagination
+**v10 guide on pagination** - https://github.com/rmosolgo/graphql-ruby/tree/v1.10.0.pre1/guides/pagination
 
 ## Ruby - Parallelism
 
@@ -693,6 +694,10 @@ https://rmosolgo.github.io/blog/2017/03/17/prototyping-a-graphql-schema-from-def
 * [#727 - Schema Definition using the IDL](https://github.com/rmosolgo/graphql-ruby/issues/727)
 
 The `default_resolve` object in `GraphQL::Schema.from_definition` doesn't have to be a hash.
+
+## Ruby GraphQL Issues
+
+* [#2100 - Release 1.10.0](https://github.com/rmosolgo/graphql-ruby/issues/2100)
 
 ## Rails
 

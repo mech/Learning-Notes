@@ -7,7 +7,6 @@
 
 ActiveRecord's types have been moved to ActiveModel and each needs their own `serialize(value)` implementation vs the old `type_cast_for_database(value)`.
 
-
 # Validation
 
 * [Custom type-casting with ActiveRecord, Virtus and dry-types](http://blog.arkency.com/2016/03/custom-typecasting-with-activerecord-virtus-and-dry-types/)
@@ -21,3 +20,18 @@ class RecurringEvent < ApplicationRecord
   validates :time, presence: true, format: { with: TIME_12H_FORMAT, message: 'invalid time - use format 10:00 am' }
 end
 ```
+
+## Attributes API
+
+Starting from Rails 5, ActiveModel will get Attributes module also.
+
+```ruby
+class Customer
+  include ActiveModel::Attributes
+  
+  attribute :name, :string
+  attribute :age, :integer
+end
+```
+
+* [Introduction to ActiveRecord and ActiveModel Attributes API](https://karolgalanciak.com/blog/2016/12/04/introduction-to-activerecord-and-activemodel-attributes-api/)

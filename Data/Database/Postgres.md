@@ -1,5 +1,6 @@
 # Postgres
 
+* [Postgres Guide](http://postgresguide.com/)
 * [PG Exercises](https://pgexercises.com/)
 * [Modern SQL](https://modern-sql.com/)
 
@@ -209,7 +210,6 @@ Most single queries should be aiming for around a 1ms query time.
 * [PGTune](https://pgtune.leopard.in.ua)
 * [Expensive Query Dashboard](https://blog.heroku.com/expensive-query-speed-up-app)
 * [Using Rack Mini Profiler to find and fix slow queries](https://schneems.com/2017/06/22/a-tale-of-slow-pagination/)
-* [Scalable PostgreSQL connection pooler](https://github.com/yandex/odyssey)
 * pg_buffercache extension to see how much shared_buffers to allocate
 * work_mem - memory allocated to do sort operation
 * [PostgresOpen 2019 Mistaken And Ignored Parameters While Optimizing A PostgreSQL Database](https://www.youtube.com/watch?v=lJ18c1hGRBM)
@@ -217,6 +217,11 @@ Most single queries should be aiming for around a 1ms query time.
 * Know your disk IOPS. Default settings in Postgres is for long spinning disks. Now we have faster SSD.
 * random_page_cost=4 with SSD vs seq_page_cost=1. If random_page_cost is high, query plan may prefer the low cost seq_page_cost.
 * wal_compression
+
+## Connection Pools
+
+* [Managed Databases Connection Pools and PostgreSQL Benchmarking Using pgbench](https://www.digitalocean.com/community/tutorials/managed-databases-connection-pools-and-postgresql-benchmarking-using-pgbench)
+* [Scalable PostgreSQL connection pooler](https://github.com/yandex/odyssey)
 
 ## UUID
 

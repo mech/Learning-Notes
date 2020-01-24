@@ -44,6 +44,7 @@ Think of hook as state synchronisation and effect synchronisation.
 ## Examples
 
 * [How to Build a Todo List with React Hooks](https://medium.freecodecamp.org/how-to-build-a-todo-list-with-react-hooks-ebaa4e3db3b)
+* [Class features vs. Hooks equivalents](https://medium.com/soluto-engineering/react-class-features-vs-hooks-equivalents-745368dafdb3)
 
 ## Why Hooks
 
@@ -218,6 +219,10 @@ Anything. You can put function, you can put hooks, you can put heavy object, you
 
 ## useRef
 
+Besides letting us to control DOM element directly. `useRef` can also be used as a generic container whose current property is mutable and can hold any value. Think of it like `this.instanceVariable`.
+
+It also be used to capture previous state or props.
+
 ```js
 const numRef = useRef(0)
 numRef.current++
@@ -229,6 +234,21 @@ const el = useRef()
 return (
   <textarea ref={el}></textarea>
 )
+```
+
+```js
+const Timer = (props) => {
+  const intervalRef = useRef()
+  
+  useEffect(() => {
+    const id = setInterval()
+    intervalRef.current = id
+    
+    return () => {
+      clearInterval(intervalRef.current)
+    }
+  })
+}
 ```
 
 ## useEffect
@@ -296,6 +316,7 @@ For library author mostly.
 
 ## Form with Hooks
 
+* [**React Hook Form**](https://react-hook-form.com/)
 * [React Hooks - Custom Hooks (form validation hook)](https://www.youtube.com/watch?v=tmlzjnZy6ZQ)
 
 ```js

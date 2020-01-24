@@ -246,5 +246,5 @@ footer {
 
 ## Presentation
 
-* [Using DevTools to understand modern layout techniques - 1](https://noti.st/huijing/dcDRDo)
+* [**Using DevTools to understand modern layout techniques - 1**](https://noti.st/huijing/dcDRDo)
 * [Using DevTools to understand modern layout techniques - 2](https://www.chenhuijing.com/blog/devtools-for-understanding-modern-layout-techniques/#%F0%9F%9A%B2)

@@ -194,8 +194,10 @@ export default class HerokuLoadingIndicator extends React.Component {
 
 ## Table (Filtering, Pagination, Datagrid)
 
+* [Make a better budget with **Airtable** and the new web clipper block](https://blog.airtable.com/personal-budget-challenge/)
 * [HTML Tables: All there is to know about them](https://medium.freecodecamp.org/html-tables-all-there-is-to-know-about-them-d1245980ef96)
 * [react-pivot-table](https://www.syncfusion.com/react-ui-components/react-pivot-table)
+* [The complete guide to building a smart data table in React](https://blog.logrocket.com/complete-guide-building-smart-data-table-react/)
 
 ```
 <DataTable />
@@ -217,7 +219,7 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 * [sematable](https://github.com/sematext/sematable)
 * [Facebook's fixed-data-table](https://github.com/facebook/fixed-data-table)
 * [reactable](https://github.com/glittershark/reactable)
-* [react-table](https://github.com/tannerlinsley/react-table)
+* [**react-table**](https://github.com/tannerlinsley/react-table)
 * [csvtotable](https://github.com/vividvilla/csvtotable)
 * [react-sticky](https://github.com/captivationsoftware/react-sticky)
 * [Design better tables for enterprise applications](https://uxdesign.cc/designing-better-tables-for-enterprise-applications-f9ef545e9fbd)

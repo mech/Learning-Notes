@@ -19,10 +19,40 @@ If you need to upgrade FileMaker server, you need to stop it first.
 
 ## FileMaker 17
 
+* [Technical Specifications for FileMaker Server 17](https://www.filemaker.com/products/filemaker-server/17-technical-specifications.html)
 * [System Requirements for FileMaker Server 17](https://support.filemaker.com/s/article/System-Requirements-for-FileMaker-Server-17?language=en_US)
 * [System Requirements for FileMaker Server 18](https://support.filemaker.com/s/article/System-Requirements-for-FileMaker-Server-18?language=en_US)
 * [Deprecated and removed features in FileMaker 17](https://support.filemaker.com/s/answerview?language=en_US&anum=000026028)
 * [Edit Privilege Set](http://docs.360works.com/index.php/Enable_XML_FileMaker_17)
+
+Make sure importing FM data with read/write mode.
+
+[FileMaker Server Event Log Messages](https://support.filemaker.com/s/article/FileMaker-Server-Event-Log-Messages-1503692957592?language=en_US)
+
+```
+2020-01-17 18:35:54.743 +0800	Information	737	Mac-Pro.local	Database "master Sales Records " being opened by "jobline"...
+2020-01-17 18:35:56.021 +0800	Information	18	Mac-Pro.local	Opened database "master Sales Records " read only.
+
+2020-01-18 01:08:22.218 +0800	Information	613	Mac-Pro.local	Maximum number of FileMaker Pro client connections configured in FileMaker Server: 250
+2020-01-18 01:08:22.219 +0800	Information	615	Mac-Pro.local	Maximum number of Custom Web Publishing connections configured in FileMaker Server: 200
+2020-01-18 01:08:22.219 +0800	Information	74	Mac-Pro.local	Maximum number of files to host: 125
+2020-01-18 01:08:22.219 +0800	Information	936	Mac-Pro.local	Maximum number of Perform Script on Server sessions to run simultaneously: 25
+2020-01-17 18:58:15.687 +0800	Information	166	Mac-Pro.local	Database cache size: 80000 MB
+```
+
+## FileMaker Issues
+
+After upgrading to FM 17, we have intermittent occurrences of :
+
+```
+803 (File is single user or host cannot be found)
+```
+
+Download Event.log to see:
+
+```
+▶ cat Event-3.log | grep '"Account_Name \[IP_Address\]"'
+```
 
 ## Enable Custom Web Publishing
 
@@ -48,6 +78,10 @@ macOS comes with its own Apache Web Server. Most of the time, FM will use it als
 ▶ cd /Library/FileMaker\ Server/HTTPServer/bin/
 ▶ sudo ./httpdctl start/stop/restart
 ```
+
+## SSL
+
+* [Configuring Security for FileMaker 17 and 18](https://support.filemaker.com/s/article/Configuring-Security-for-FileMaker-17?language=en_US)
 
 ## SSL with Let's Encrypt
 
@@ -92,5 +126,6 @@ Renewal::RenewalOption.where(service_code: '==S6414').total
 * [Soliant TV](https://www.youtube.com/user/SoliantConsultingTV/videos)
 * [Integration session videos](https://www.youtube.com/playlist?list=PLkvKnBkQSCeSvp0mzwQAuqSTSeJOaZv35)
 * [Search Features](https://app.works/community/training-tutorials/search-features/)
+* [Jesse Barnum devcon 2018 - AWS and FM](https://www.youtube.com/results?search_query=Jesse+Barnum+devcon+2018)
 
 

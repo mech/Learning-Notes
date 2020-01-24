@@ -56,6 +56,7 @@ PCI Security Council deprecated SSLv3 and TLS 1.0 for commercial transactions.
 * [Video: Browser Security in 2017](https://www.youtube.com/watch?v=vvZRYUBFX-8)
 * [Nginx Doc: Configuring HTTPS servers](https://nginx.org/en/docs/http/configuring_https_servers.html)
 * [Using Let's Encrypt with Docker containers](http://charliedrage.com/letsencrypt-on-docker)
+* [SSL Certificate with SubjectAlternativeName (SAN)](https://blog.confirm.ch/ssl-certificates-with-subjectalternativename-san/)
 
 ---
 
