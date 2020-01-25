@@ -13,3 +13,6 @@
 
 * [grab.careers](https://grab.careers/job-details/?id=5aca75018bdd01b3a1fed4007e1650c8)
 
+## Funnel
+
+* [A Complete Guide to Funnel Charts](https://chartio.com/learn/charts/funnel-chart-complete-guide/)

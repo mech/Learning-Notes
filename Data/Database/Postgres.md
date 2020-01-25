@@ -220,18 +220,23 @@ Most single queries should be aiming for around a 1ms query time.
 
 ## Connection Pools
 
+If you need more than 500 connections, use PGBouncer.
+
 * [Managed Databases Connection Pools and PostgreSQL Benchmarking Using pgbench](https://www.digitalocean.com/community/tutorials/managed-databases-connection-pools-and-postgresql-benchmarking-using-pgbench)
 * [Scalable PostgreSQL connection pooler](https://github.com/yandex/odyssey)
+* [How to Pool PostgreSQL Connections with PgBouncer](https://www.compose.com/articles/how-to-pool-postgresql-connections-with-pgbouncer/)
 
 ## UUID
 
+Random UUID can cause WAL write amplification?
+
+Sequential UUID generation can avoid fragmentation issue.
+
 * [A Brief History of the UUID](https://segment.com/blog/a-brief-history-of-the-uuid/)
 * [UUID or GUID as Primary Keys? Be Careful!](https://tomharrisonjr.com/uuid-or-guid-as-primary-keys-be-careful-7b2aa3dcb439)
+* [The Cost of GUIDs as Primary Keys](http://www.informit.com/articles/article.aspx?p=25862)
 * [Why Auto Increment Is A Terrible Idea](https://www.clever-cloud.com/blog/engineering/2015/05/20/why-auto-increment-is-a-terrible-idea/)
-
-## Tuning
-
-* If you need more than 500 connections, use PGBouncer.
+* [Sequential UUID Generators](https://www.2ndquadrant.com/en/blog/sequential-uuid-generators/)
 
 ## EXPLAIN and EXPLAIN ANALYZE
 

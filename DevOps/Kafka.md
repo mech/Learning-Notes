@@ -251,3 +251,9 @@ replica.fetch.max.bytes
 
 * [Ruby Framework for Event Driven Architecture](https://mensfeld.github.io/karafka-ruby-kaigi-2018/index.html#/)
 * [RubyKaigi 2018 Unofficial Notes](https://github.com/Bombasarkadian/ruby-kaigi-notes)
+
+## Pipeline, Prolog, Facts, Rules, Constraints
+
+* [Transducers: Efficient Data Processing Pipelines in JavaScript](https://medium.com/javascript-scene/transducers-efficient-data-processing-pipelines-in-javascript-7985330fe73d)
+* [PROLOG - Facts, Rules and Queries](http://www.cs.trincoll.edu/~ram/cpsc352/notes/prolog/factsrules.html)
+* [Yarn 2 Constraints](https://next.yarnpkg.com/features/constraints)
