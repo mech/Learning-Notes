@@ -52,6 +52,8 @@ compose2 = f => g => x => f(g(x))
 ## Pipeline and Transducer
 
 * [Transducers: Efficient Data Processing Pipelines in JavaScript](https://medium.com/javascript-scene/transducers-efficient-data-processing-pipelines-in-javascript-7985330fe73d)
+* [Example of lambda pipeline](https://github.com/0x4447/0x4447_product_s3_email_lambda_outbound/blob/development/index.js)
+* [0x4447_product_s3_email](https://github.com/0x4447/0x4447_product_s3_email)
 
 ## Higher-Order Functions
 

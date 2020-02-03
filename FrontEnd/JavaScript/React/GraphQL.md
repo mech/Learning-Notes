@@ -638,6 +638,7 @@ companiesConnection(first: 10) {
 
 ## Pagination
 
+* [**Understanding pagination: REST, GraphQL, and Relay**](https://blog.apollographql.com/understanding-pagination-rest-graphql-and-relay-b10f835549e7)
 * [Paginated List in React - Build a powerful Component (Part I)](https://www.robinwieruch.de/react-paginated-list/)
 * [Infinite Scroll in React - Build a powerful Component (Part II)](https://www.robinwieruch.de/react-infinite-scroll/)
 * [Guys, we're doing pagination wrong…](https://hackernoon.com/guys-were-doing-pagination-wrong-f6c18a91b232)
@@ -649,6 +650,7 @@ companiesConnection(first: 10) {
 * [Slack API Pagination](https://api.slack.com/docs/pagination)
 * [GraphQL Pagination Implementation](https://medium.com/@mattmazzola/graphql-pagination-implementation-8604f77fb254)
 * [Building Chatty — Part 5: GraphQL Pagination](https://medium.com/react-native-training/building-chatty-part-5-pagination-with-graphql-23a25fc9f0bf)
+* [GraphQL Connections In Rails](https://graphqlme.com/2017/09/24/graphql-connections-rails/)
 
 Instead of using literal page numbers, idiomatic GraphQL uses opaque strings called **cursors**. Cursors are more resilient to real-time changes to your data, which might lead to duplicates in simple page-based systems.
 
@@ -692,6 +694,9 @@ https://rmosolgo.github.io/blog/2017/03/17/prototyping-a-graphql-schema-from-def
 
 * [#666 - Shorthand notation](https://github.com/rmosolgo/graphql-ruby/issues/666)
 * [#727 - Schema Definition using the IDL](https://github.com/rmosolgo/graphql-ruby/issues/727)
+* [#789 - [IDL] Support accepts_definitions functions in IDL](https://github.com/rmosolgo/graphql-ruby/pull/789)
+* [#810 - Support .erb files in Schema.from_definition](https://github.com/rmosolgo/graphql-ruby/pull/810)
+* [#871 - [RFC] Schema Implementation API](https://github.com/rmosolgo/graphql-ruby/pull/871)
 
 The `default_resolve` object in `GraphQL::Schema.from_definition` doesn't have to be a hash.
 
@@ -922,6 +927,7 @@ POST /graphql/eyBuawWNlIHsdfHj5IhoHJ0
 
 Please don't do REST API backing your GraphQL. It will be damn slow. Always use some variants of Data Loader.
 
+* [The GraphQL Dataloader Pattern: Visualized](https://medium.com/@__xuorig__/the-graphql-dataloader-pattern-visualized-3064a00f319f)
 * [graphql-batch for Ruby, sort of like DataLoader](https://github.com/Shopify/graphql-batch)
 * [DataLoader - Source code walkthrough by Lee Byron](https://www.youtube.com/watch?v=OQTnXNCDywA)
 * [Ruby BatchLoader](https://engineering.universe.com/batching-a-powerful-way-to-solve-n-1-queries-every-rubyist-should-know-24e20c6e7b94)

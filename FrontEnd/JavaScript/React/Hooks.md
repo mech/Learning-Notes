@@ -253,6 +253,8 @@ const Timer = (props) => {
 
 ## useEffect
 
+Without the 2nd parameter, `useEffect()` will always keep running between render which is a good default because your application will not feel broken.
+
 Call **after render**. React will remember the function you passed and will call it **after the DOM updates**.
 
 Where you do imperative thing in a declarative world.
