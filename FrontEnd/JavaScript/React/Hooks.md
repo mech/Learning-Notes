@@ -32,7 +32,7 @@ We need a simpler, lightweight component that do not use ES6 class.
 
 ## Lifecycle
 
-First forget about React lifecycle on mounting and un-mounting and think about hooks in synchronisation/scheduling concept.
+**First forget about React lifecycle on mounting and un-mounting and think about hooks in synchronisation/scheduling concept.**
 
 Think of hook as state synchronisation and effect synchronisation.
 

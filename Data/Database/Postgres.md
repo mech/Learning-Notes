@@ -237,6 +237,11 @@ Sequential UUID generation can avoid fragmentation issue.
 * [The Cost of GUIDs as Primary Keys](http://www.informit.com/articles/article.aspx?p=25862)
 * [Why Auto Increment Is A Terrible Idea](https://www.clever-cloud.com/blog/engineering/2015/05/20/why-auto-increment-is-a-terrible-idea/)
 * [Sequential UUID Generators](https://www.2ndquadrant.com/en/blog/sequential-uuid-generators/)
+* [Storing UUID Values in MySQL](https://www.percona.com/blog/2014/12/19/store-uuid-optimized-way/)
+
+To use UUID as primary key, it must be sortable. Sorting by its raw bytes results in a sequence equivalent to sorting by its embedded timestamp, thus making it naturally more useful as primary key and providing improved reference locality and thus insert performance. Primary keys that are out of sequence are not just useless for sorting, but can also cause unnecessary disk access due to occupying significantly different locations in the index.
+
+UUID v6 may solve this?
 
 ## EXPLAIN and EXPLAIN ANALYZE
 
