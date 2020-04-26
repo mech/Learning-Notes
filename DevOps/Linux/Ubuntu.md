@@ -126,3 +126,10 @@ Reload the config:
 ▶ sudo chmod -x 10-help-text
 ▶ sudo chmod -x 50-motd-news
 ```
+
+## SSH and Git
+
+```
+▶ ssh-agent bash
+▶ ssh-add /home/deploy/.ssh/id_rsa
+```

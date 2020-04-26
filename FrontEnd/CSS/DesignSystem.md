@@ -10,6 +10,7 @@ https://polaris.shopify.com/patterns-and-guides/crafting-admin#section-start-wit
 
 https://xotv.me/channels/22-important/vod_videos/781-important-slash-slash-basecamp-dot-com
 
+* [Design System Checklist](https://designsystemchecklist.com/)
 * [Stencil.js - What is Design System](https://stenciljs.com/docs/what-is-design-system)
 * [**Shopify - Tracking Polaris**](https://ux.shopify.com/tracking-polaris-adfa97f42c3f)
 * [Clearleft - Designing design systems](https://clearleft.com/posts/designing-design-systems)
@@ -201,20 +202,15 @@ http://styleguides.io/examples.html
 * [IBM Carbon Design System](https://www.carbondesignsystem.com/)
 * [Lonely Planet](https://rizzo.lonelyplanet.com/styleguide)
 * [FT's Origami](http://origami.ft.com/)
-* [FT Next](https://github.com/Financial-Times/next)
 * [Buzz Feed](http://solid.buzzfeed.com/buttons.html)
 * [Airbnb Design](http://airbnb.design/)
-* [Nordnet](https://www.nordnet.se/brand/ui/)
 * [Intuit](http://harmony.intuit.com/)
 * [USA Gov](https://standards.usa.gov)
 * [MailChimp](http://ux.mailchimp.com/patterns)
 * [Firebase](https://www.firebase.com/docs/styleguide.html)
 * [Walmart](http://walmartlabs.github.io/web-style-guide/)
-* [Primer from GitHub](http://primercss.io/)
 * [Primer](https://primer.style/)
-* [Atlassian](https://design.atlassian.com)
 * [GE's Predix Design System](https://medium.com/ge-design/ges-predix-design-system-8236d47b0891#.ndls3eupf)
-* [Trello](https://design.trello.com/)
 * [Pivotal UI Styleguide](https://styleguide.pivotal.io/)
 * [Shopify Polaris](https://polaris.shopify.com/)
 * [GitHub's Primer Storybook](https://primer.github.io/storybook/)
@@ -229,7 +225,6 @@ http://styleguides.io/examples.html
 
 * [Semantic UI](http://semantic-ui.com/collections/form.html)
 * [Radium buttons](https://formidable.com/open-source/radium/)
-* [Primer from Github](http://primercss.io/forms/)
 * [Spectre.css](https://picturepan2.github.io/spectre/)
 
 ## Case Studies

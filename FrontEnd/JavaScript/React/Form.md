@@ -89,6 +89,15 @@ What API is good for inputs:
 * [File API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/File)
 * [Using files from web applications](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications)
 * [Handling File Upload Using Ruby on Rails 5 API](https://www.pluralsight.com/guides/handling-file-upload-using-ruby-on-rails-5-api)
+* [react-dropzone - Simple hook for drag'n'drop zone for files](https://react-dropzone.js.org/)
+* [Regarding file.path](https://github.com/react-dropzone/react-dropzone/issues/477)
+* [The ultimate guide to drag and drop in React](https://blog.logrocket.com/drag-and-drop-in-react/)
+
+```js
+// You can only send string over the FormData
+const formData = new FormData()
+formData.append("claims", JSON.stringify({amount: 12}))
+```
 
 ## Show Errors
 
@@ -349,6 +358,7 @@ let input
 * [**Yup** - Dead simple Object schema validation](https://github.com/jquense/yup)
 * [validator.js - String validation](https://github.com/chriso/validator.js)
 * [An Introduction to Validation in React with Yup](https://medium.com/@rossbulat/introduction-to-yup-object-validation-in-react-9863af93dc0e)
+* [Building a TextField component that does multiple validations in React from scratch](https://medium.com/@sumitspace/react-component-development-text-field-with-multiple-validations-ab33ebbe79bc)
 
 How we can validate in real-time at the **field level** and we'll create a `Field` component to improve the maintainability when an app has **multiple fields with different validation requirements**.
 

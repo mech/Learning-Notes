@@ -12,11 +12,9 @@ https://dollarshaveclub.github.io/stickybits/
 
 * [200+ components](https://www.javascriptstuff.com/react-components/)
 * [**JS.Coach**](https://js.coach/)
-* [**Awesome React Components & Libraries**](https://github.com/brillout/awesome-react-components/blob/master/readme.md)
+* [**Awesome React Components & Libraries**](https://github.com/brillout/awesome-react-components)
 * [React Desktop](http://reactdesktop.js.org/)
-* [Smart modules for React](https://github.com/smalldots/smalldots)
 * [Best Practices on building a UI component library for your company](https://www.youtube.com/watch?v=j8eBXGPl_5E)
-* [Carte Blanche - Like Storybook?](https://github.com/carteb/carte-blanche)
 * [CUID compared to UUID or shortid](https://github.com/ericelliott/cuid)
 * [reflective-bind](https://github.com/flexport/reflective-bind)
 * [insane - Lean and configurable whitelist-oriented HTML sanitizer](https://www.npmjs.com/package/insane)
@@ -30,31 +28,6 @@ https://github.com/jaredpalmer/react-fns
 ## A11Y
 
 * [Accessibility auditing for React.js applications](https://github.com/dequelabs/react-axe)
-
-## React Native Web/DOM
-
-* [react-native-dom](https://github.com/vincentriemer/react-native-dom)
-
-## Navigator
-
-* [Full Stack React Navigation](https://www.youtube.com/watch?v=GzbravzRrBM)
-
-```
-<SwitchNavigator>
-
-<StackNavigator>
-```
-
-## Ajax
-
-* [better-fetch](https://github.com/Swizec/better-fetch)
-* [react-idle](https://reacttraining.com/react-idle/)
-
-## For Development
-
-* [react-inspector](https://github.com/xyc/react-inspector)
-* [clean_logs](https://github.com/pgiani/clean_logs)
-* [Cypress - testing in the browser](https://www.cypress.io/)
 
 ## Toggle
 
@@ -149,10 +122,8 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [iOS HIG](https://developer.apple.com/ios/human-interface-guidelines/resources/)
 * [instructure-ui](https://instructure.github.io/instructure-ui/)
 * [Semantic UI React](https://react.semantic-ui.com/introduction)
-* [React Toolbox](http://react-toolbox.com/#/)
 * [Ant Design of React](https://ant.design/docs/react/introduce)
 * [Wix Style - React](https://github.com/wix/wix-style-react)
-* [MuleSoft](http://ux.mulesoft.com/#/playground/Row)
 * [react-primitives](https://github.com/lelandrichardson/react-primitives)
 * [Blueprint](http://blueprintjs.com/)
 * [buffer-components](https://github.com/bufferapp/buffer-components)
@@ -160,19 +131,13 @@ export default class HerokuLoadingIndicator extends React.Component {
 * [Microsoft Office UI Fabric](https://dev.office.com/fabric#/components) Also see [Repo](https://github.com/OfficeDev/office-ui-fabric-react) and [Components](https://developer.microsoft.com/en-us/fabric#/components)
 * [**Pivotal**](https://styleguide.pivotal.io/)
 * [Material-UI](http://www.material-ui.com/#/)
-* [Khan Academy](https://khan.github.io/react-components/)
 * [Search reusable React components](http://www.reactjsx.com/)
-* [Another search engine for components](https://devarchy.com/react)
-* [Polythene](https://github.com/ArthurClemens/polythene)
-* [Pinterest Gestalt](https://pinterest.github.io)
-* [Mineral UI](https://mineral-ui.com/)
+* [Pinterest Gestalt](https://github.com/pinterest/gestalt)
 * [Zendesk Garden](https://garden.zendesk.com/react-components/#!/Button/5)
-* [RSuite](https://rsuitejs.com/en/components/overview)
 * [Netlify](http://serverless-ux.netlify.com/)
 * [Atlaskit](http://atlaskit.atlassian.com/packages)
 * [Reakit](https://reakit.io/components/)
 * [Evergreen](https://evergreen.segment.com/)
-* [Commercetools UI Kit](https://uikit.commercetools.com/?path=/story/introduction--getting-started)
 
 ## Blank Slate
 
@@ -479,6 +444,8 @@ class Tabs extend Component {
 
 ## Sortable and Drag and Drop
 
+* [react-movable](https://github.com/tajo/react-movable)
+* [What a Drag - Vojtech Miksu](https://www.youtube.com/watch?v=y_XkQ2qMTSA)
 * [**Beautiful interactions**](https://medium.com/@alexandereardon/beautiful-interactions-8f67502ccf73)
 * [Some react-dnd example](https://gist.github.com/krzysu/1b391ae0e3c87d0c654cdf6d5a409632)
 * [Rethinking drag and drop](https://medium.com/@alexandereardon/rethinking-drag-and-drop-d9f5770b4e6b)

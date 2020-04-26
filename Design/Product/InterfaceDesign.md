@@ -90,6 +90,10 @@ One idea is not enough - [Iterative UI Design](https://developer.apple.com/video
 
 > UI design is just a series of "endless tweaking". Always changing the UI. Adaptability. Unexpected demand of the business.
 
+## Laws
+
+* Hick's Law - optimize decision making by offering fewer choices.
+
 ## Icons
 
 * [IconSVG](https://iconsvg.xyz)

@@ -55,6 +55,7 @@ JavaScript also has the ability to `freeze()` objects, but those objects are onl
 * [trdis - diff function returning a patch object](https://github.com/Swizz/trdis)
 * [List - A fast immutable list with a functional API](https://github.com/funkia/list)
 * [immer - Create the next immutable state by mutating the current one](https://github.com/mweststrate/immer)
+* [react-copy-write](https://github.com/aweary/react-copy-write)
 
 ## Ways to Mutate
 
