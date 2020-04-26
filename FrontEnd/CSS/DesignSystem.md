@@ -1,10 +1,13 @@
 # Design System (Thinking)
 
-https://material.io/design/components/buttons.html#contained-button
-
-https://uxdesign.cc/ui-cheat-sheets-buttons-7329ed9d6112
-
-https://polaris.shopify.com/patterns-and-guides/crafting-admin#section-start-with-the-problem-not-the-ui
+- https://material.io/design/components/buttons.html#contained-button
+- https://uxdesign.cc/ui-cheat-sheets-buttons-7329ed9d6112
+- https://polaris.shopify.com/patterns-and-guides/crafting-admin#section-start-with-the-problem-not-the-ui
+- [Base Web](https://baseweb.design/)
+- [System UI](https://system-ui.com/)
+- [Seek's Playroom](https://github.com/seek-oss/playroom)
+- [Blocks UI](https://blocks-ui.com/)
+- [Mobile Layouts & Grids](https://design.infinum.com/case/mobile-layouts-and-grids)
 
 ---
 

@@ -4,6 +4,8 @@
 
 [**Firefox DevTools for CSS authors**](https://blog.logrocket.com/firefox-devtools-for-css-authors-1511f41d1e3)
 
+* [**Flexbox: How Big Is That Flexible Box?**](https://www.smashingmagazine.com/2018/09/flexbox-sizing-flexible-box/)
+* [Flexbox adventures](https://chriswrightdesign.com/experiments/flexbox-adventures/)
 * [The Flexbox Holy Albatross](http://www.heydonworks.com/article/the-flexbox-holy-albatross)
 * [Cluster and Spread](https://github.com/Heydon/bruck#c-luster)
 * [MDN's CSS Layout Cookbook](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook)
