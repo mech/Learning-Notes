@@ -1,5 +1,6 @@
 # Design System (Thinking)
 
+- [10 great design systems and how to learn (and steal) from them](https://uxdesign.cc/10-great-design-systems-and-how-to-learn-and-steal-from-them-4b9c6f168fa6)
 - https://material.io/design/components/buttons.html#contained-button
 - https://uxdesign.cc/ui-cheat-sheets-buttons-7329ed9d6112
 - https://polaris.shopify.com/patterns-and-guides/crafting-admin#section-start-with-the-problem-not-the-ui

@@ -17,6 +17,8 @@ https://www.freeformatter.com/html-entities.html
 
 ## Console
 
+* [Mastering JS console.log like a Pro](https://medium.com/javascript-in-plain-english/mastering-js-console-log-like-a-pro-1c634e6393f9)
+
 ```js
 // Put this on top of your log script to clear everything you reload
 console.clear()

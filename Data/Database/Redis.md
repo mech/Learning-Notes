@@ -30,7 +30,7 @@ gem 'hiredis'
 gem 'redis', '~> 3.0', require: ['redis', 'redis/connection/hiredis']
 ```
 
-## Stream
+## Streams
 
 * [Redis Streams and the Unified Log](https://brandur.org/redis-streams)
 * [Some discussion](https://news.ycombinator.com/item?id=16232946)
@@ -185,4 +185,25 @@ Rails.cache.redis.keys
 * [redis-stat](https://github.com/junegunn/redis-stat)
 * [How to Monitor Redis](https://blog.serverdensity.com/monitor-redis/)
 
+## Use Cases
+
+* Most recent files (Box.com) - List
+* Chunk upload (Box.com)
+* Rate limiting
+* Leaderboards - Sorted Set
+* Voting - Sorted Set
+* Implement expires on items
+* Unique N items in a given amount of time
+* Queues - List
+* Lock - SET resource-name anystring NX EX max-lock-time
+* Picture masking (BITOP)
+* Storing relations (i.e. followers, friends etc.) - Set
+* Sorting takes place upon insert, so queries for ranges, even in the middle, are still fast - Sorted Set
+
+## Videos
+
+* https://www.youtube.com/watch?v=NymIgA7Wa78
+* https://www.youtube.com/watch?v=vBb9Diz-zaQ
+* https://www.youtube.com/watch?v=B_BVmJ90X8Q
+* [The trouble with databases](https://changelog.com/gotime/132)
 

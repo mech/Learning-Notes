@@ -2,6 +2,9 @@
 
 > Poor design choices often lead to issues and, in the case of React, if we do not put the state in the right place, the risk is that our components are going to render more than needed.
 
+https://scotch.io/tutorials/use-the-react-profiler-for-performance
+
+* [**Case study: Analyzing Notion app performance**](https://3perf.com/blog/notion/)
 * [**6 tips for better React performance**](https://itnext.io/6-tips-for-better-react-performance-4329d12c126b)
 * [Debugging React performance with React 16 and Chrome Devtools](https://building.calibreapp.com/debugging-react-performance-with-react-16-and-chrome-devtools-c90698a522ad)
 * [React is Slow, React is Fast: Optimizing React Apps in Practice](https://medium.com/dailyjs/react-is-slow-react-is-fast-optimizing-react-apps-in-practice-394176a11fba)

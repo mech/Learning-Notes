@@ -41,6 +41,10 @@ Think of hook as state synchronisation and effect synchronisation.
 > useEffect(fn, []) // no state
 > useEffect(fn, [these, states])
 
+## Trying to set state after component has unmounted
+
+* [React state update on an unmounted component](https://www.debuggr.io/react-update-unmounted-component/)
+
 ## Examples
 
 * [How to Build a Todo List with React Hooks](https://medium.freecodecamp.org/how-to-build-a-todo-list-with-react-hooks-ebaa4e3db3b)
@@ -219,6 +223,8 @@ Anything. You can put function, you can put hooks, you can put heavy object, you
 
 ## useRef
 
+* [6 Practical Applications for useRef](https://medium.com/frontend-digest/6-practical-applications-for-useref-2f5414f4ac68)
+
 Besides letting us to control DOM element directly. `useRef` can also be used as a generic container whose current property is mutable and can hold any value. Think of it like `this.instanceVariable`.
 
 It also be used to capture previous state or props.
@@ -315,6 +321,7 @@ For library author mostly.
 ## Render Props
 
 * [Render props is still useful for inversion of control thing](https://kentcdodds.com/blog/react-hooks-whats-going-to-happen-to-render-props)
+* [With Suspense and Hooks, do Render Props still have a place?](https://www.youtube.com/watch?v=_jehVItn7Vo)
 
 ## Form with Hooks
 
