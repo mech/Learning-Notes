@@ -25,6 +25,10 @@ https://dollarshaveclub.github.io/stickybits/
 
 https://github.com/jaredpalmer/react-fns
 
+## XHR
+
+* [umi-request - With timeout, better than Fetch or Axios](https://github.com/umijs/umi-request)
+
 ## A11Y
 
 * [Accessibility auditing for React.js applications](https://github.com/dequelabs/react-axe)
@@ -199,6 +203,7 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 
 ## Spreadsheet
 
+* [React Data Grid - Excel-like](https://adazzle.github.io/react-data-grid/)
 * [Handsontable](https://handsontable.com/)
 * [currency.js](https://github.com/scurker/currency.js)
 
@@ -238,6 +243,7 @@ If there are only 2 or 3 pages worth of data, why not just show all?
 
 ## Auto-complete and Instant Search
 
+* [Fuse.js - Fuzzy searching](https://fusejs.io/)
 * [autoComplete.js](https://github.com/TarekRaafat/autoComplete.js)
 * [**Downshift**](https://medium.com/@kentcdodds/introducing-downshift-for-react-b1de3fca0817)
 * [downshift](https://github.com/paypal/downshift)
@@ -281,6 +287,7 @@ new IntersectionObserver(callback, options)
 * [Scrollytelling with IntersectionObserver](https://github.com/russellgoldenberg/scrollama)
 * [Infinite scroll techniques in React](https://blog.logrocket.com/infinite-scroll-techniques-in-react-adcfd7ff32bd)
 * [Glide.js - slider and carousel](https://glidejs.com/docs/)
+* [**react-snaplist-carousel**](https://github.com/luispuig/react-snaplist-carousel)
 * [react-scroll-shadow](https://github.com/zzarcon/react-scroll-shadow)
 * [react-virtualized](https://blog.logrocket.com/rendering-large-lists-with-react-virtualized-82741907a6b3)
 * [react-window](https://react-window.now.sh)

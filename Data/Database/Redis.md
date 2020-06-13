@@ -45,7 +45,9 @@ gem 'redis', '~> 3.0', require: ['redis', 'redis/connection/hiredis']
 * So to be safe, always set expiration value
 * [EXPIRE](https://redis.io/commands/expire)
 
-## Persistence
+## Persistence (AOF and RDB)
+
+`/usr/local/etc/redis.conf`
 
 * Redis is an In-Memory data store. Data loss can occur.
 * Redis provides 3: RDB, AOF and both
@@ -185,6 +187,14 @@ Rails.cache.redis.keys
 * [redis-stat](https://github.com/junegunn/redis-stat)
 * [How to Monitor Redis](https://blog.serverdensity.com/monitor-redis/)
 
+## Serialization
+
+Protobuf is the most space efficient.
+
+## Routing
+
+## 
+
 ## Use Cases
 
 * Most recent files (Box.com) - List
@@ -205,5 +215,6 @@ Rails.cache.redis.keys
 * https://www.youtube.com/watch?v=NymIgA7Wa78
 * https://www.youtube.com/watch?v=vBb9Diz-zaQ
 * https://www.youtube.com/watch?v=B_BVmJ90X8Q
+* https://www.youtube.com/watch?v=vBb9Diz-zaQ
 * [The trouble with databases](https://changelog.com/gotime/132)
 

@@ -74,8 +74,13 @@ The `*-enter` and `*-enter-active` classes are applied when a new element is add
 
 * [Creating JavaScript Animations with Anime.js](https://medium.com/@ajmeyghani/creating-javascript-animations-with-anime-js-f2b14716cdc6)
 
+## Router
+
+* [React Tiger Transition](https://pedrobern.github.io/react-tiger-transition/)
+
 ## Libraries
 
+* [**94: Matt Perry on Magic Motion and React Performance Anxiety**](https://dev.to/reactpodcast/94-matt-perry-on-magic-motion-and-react-performance-anxiety)
 * [React Overdrive - Simple and powerful animations](https://react-overdrive.now.sh/)
 * [react-move](https://github.com/tannerlinsley/react-move)
 * [mo.js](http://mojs.io/)
@@ -87,6 +92,10 @@ The `*-enter` and `*-enter-active` classes are applied when a new element is add
 * [lookforward.js - create smooth transitions between pages](https://github.com/appleple/lookforward)
 * [Animate Plus](https://github.com/bendc/animateplus)
 * [Layer.js - UI composition & animation in pure HTML](https://layerjs.org/)
+
+## Text Animation
+
+* [Windups](https://windups.gwil.co/) - animated typewriter effects
 
 ## Physicality, Velocity, Spring, Realism, Snapping, Friction
 
