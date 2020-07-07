@@ -49,6 +49,14 @@ How critical is your Application in a disaster scenario?
 SELECT * from users WHERE id = ANY($1::int[])
 ```
 
+## postgresql.conf
+
+Find postgresql.conf at macOS at:
+
+```
+/usr/local/var/postgres
+```
+
 ## Common Error
 
 ```
@@ -207,6 +215,7 @@ create index concurrently index_where_true on large_table (low_cardinality_colum
 
 Most single queries should be aiming for around a 1ms query time.
 
+* `pg_stat_statements` is a MUST
 * [PGTune](https://pgtune.leopard.in.ua)
 * [Expensive Query Dashboard](https://blog.heroku.com/expensive-query-speed-up-app)
 * [Using Rack Mini Profiler to find and fix slow queries](https://schneems.com/2017/06/22/a-tale-of-slow-pagination/)
@@ -217,6 +226,26 @@ Most single queries should be aiming for around a 1ms query time.
 * Know your disk IOPS. Default settings in Postgres is for long spinning disks. Now we have faster SSD.
 * random_page_cost=4 with SSD vs seq_page_cost=1. If random_page_cost is high, query plan may prefer the low cost seq_page_cost.
 * wal_compression
+
+```
+SELECT substring(query, 1, 50) AS short_query,
+  round(total_time::numeric, 2) AS total_time,
+  calls, round(mean_time::numeric, 2) AS mean,
+  round((100 * total_time / sum(total_time::numeric) OVER ())::numeric, 2) AS percentage_overall
+FROM pg_stat_statements
+ORDER BY total_time DESC
+LIMIT 20;
+```
+
+Allow you to see potential missing indexes:
+
+```
+SELECT schemaname, relname, seq_scan, seq_tup_read,
+  idx_scan, seq_tup_read / seq_scan AS avg
+FROM pg_stat_user_tables
+WHERE seq_scan > 0
+ORDER BY seq_tup_read DESC;
+```
 
 ## Connection Pools
 

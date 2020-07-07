@@ -43,11 +43,16 @@ https://github.com/jaredpalmer/react-fns
 
 * [Build a Stunning Breadcrumb Component in React with Plain CSS](https://medium.com/better-programming/build-a-stunning-breadcrumb-component-in-react-with-plain-css-414c68db293)
 
+## Popper
+
+* [NanoPop](https://github.com/Simonwep/nanopop)
+* [Pure CSS Tooltips](https://medium.freecodecamp.org/a-step-by-step-guide-to-making-pure-css-tooltips-3d5a3e237346)
+* [Popper.js](https://popper.js.org/)
+
+
 ## Visual
 
 * [React Color](https://casesandberg.github.io/react-color/)
-* [Pure CSS Tooltips](https://medium.freecodecamp.org/a-step-by-step-guide-to-making-pure-css-tooltips-3d5a3e237346)
-* [Popper.js](https://popper.js.org/)
 * [Pace.js - For loading](http://github.hubspot.com/pace/docs/welcome/)
 * [Heroku-style Loading Indicator](https://gist.github.com/patientdev/3dac07a069713c33d4d4cc039aa5ac2d)
 * [react-flexview](https://github.com/buildo/react-flexview)
@@ -287,6 +292,7 @@ new IntersectionObserver(callback, options)
 * [Scrollytelling with IntersectionObserver](https://github.com/russellgoldenberg/scrollama)
 * [Infinite scroll techniques in React](https://blog.logrocket.com/infinite-scroll-techniques-in-react-adcfd7ff32bd)
 * [Glide.js - slider and carousel](https://glidejs.com/docs/)
+* [keen-slider](https://keen-slider.io/)
 * [**react-snaplist-carousel**](https://github.com/luispuig/react-snaplist-carousel)
 * [react-scroll-shadow](https://github.com/zzarcon/react-scroll-shadow)
 * [react-virtualized](https://blog.logrocket.com/rendering-large-lists-with-react-virtualized-82741907a6b3)

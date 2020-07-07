@@ -60,6 +60,10 @@ const Transition = () => (
 
 The `*-enter` and `*-enter-active` classes are applied when a new element is added as a child of the transition group.
 
+## Easing
+
+* [Easings](https://easings.co/)
+
 ## Popmotion
 
 * [The Path To A Declaratively Animated Future](https://www.youtube.com/watch?v=1e07uPWpvzI)
