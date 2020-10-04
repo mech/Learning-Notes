@@ -236,6 +236,7 @@ http://styleguides.io/examples.html
 * [How to Build Your Design System in Figma](https://blog.figma.com/how-to-build-your-design-system-in-figma-645a4d96509f)
 * [Gusto - Waiting for a sign to start building your design team's component library?](https://medium.com/@willdjthrill/waiting-for-a-sign-to-start-building-your-design-teams-component-library-c43f4352c764)
 * [Figma's reimagined Team Library](https://medium.freecodecamp.org/figmas-reimagined-team-library-fa027053c303)
+* [Redesigning the Tuple Client UI](https://tuple.app/blog/redesign)
 
 ## Context-Agnostic and Structural Thinking
 

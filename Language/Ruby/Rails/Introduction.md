@@ -50,6 +50,7 @@ end
 
 * [**Rails Speed**](https://www.railsspeed.com/)
 * [Speedshop Blog](https://www.speedshop.co/blog/)
+* [These Rails apps are overpacking their JavaScript bundles](https://rossta.net/blog/rails-apps-overpacking-with-webpacker.html)
 
 ## Deployment
 
@@ -132,6 +133,7 @@ end
 * [solnic.eu](http://solnic.eu/)
 * [Michael Cordell - Reading Ruby Code](https://blog.mikecordell.com/)
 * [Nathan Long](http://nathanmlong.com/blog/)
+* [Rails update site](https://blog.saeloun.com/)
 
 ## Example Applications
 

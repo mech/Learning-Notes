@@ -18,4 +18,5 @@ http://ihrp.sg/certification
 * https://keypay.com.au
 * https://www.bamboohr.com/time-tracking-software/
 * https://lattice.com/
+* https://harpoonapp.com/
 

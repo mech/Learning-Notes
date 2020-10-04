@@ -94,13 +94,19 @@ set intervalstyle to 'postgres_verbose';
 \setenv LESS '-iMFXSx4R'
 ```
 
-## Commands
+## Useful Commands
 
 ```
-select session_user;
-select current_schema();
-show search_path;
-\dn - list all schemas
+▶ \l = List all databases
+▶ \l+ = List all databases with more information
+▶ \dt = List all relations
+▶ \dn = List all schemas
+▶ \c database = Connect to the database being named
+▶ \pset format csv = Output format into CSV
+▶ 
+▶ select session_user;
+▶ select current_schema();
+▶ show search_path;
 ```
 
 ## Rails Related
@@ -423,6 +429,10 @@ EXCLUDE USING gist (
 ## ENUM
 
 * Good for small unchanging constants like AWS regions
+
+```sql
+CREATE TYPE leave_status AS ENUM ('Pending', 'Approved', 'Rejected');
+```
 
 ## Pagination - OFFSET vs Cursor/Keyset
 

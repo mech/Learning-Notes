@@ -90,6 +90,14 @@ class Query(graphene.ObjectType):
   )
 ```
 
+## Data Fetching
+
+New data fetching with cache:
+
+- [Rest Hooks](https://resthooks.io/)
+- [SWR](https://swr.vercel.app/)
+- [React Query](https://react-query.tanstack.com/)
+
 ## Guides
 
 * [Real world GraphQL tutorials for frontend developers with deadlines!](https://learn.hasura.io/)

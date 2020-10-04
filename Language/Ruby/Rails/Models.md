@@ -147,6 +147,11 @@ scope :activated, -> { joins(:profile).merge(Profile.activated) }
 
 Each uniqueness constraint must be backed by a unique database index to protect against race conditions.
 
+## Database indexing
+
+* [Faster Rails: Is Your Database Properly Indexed?](https://semaphoreci.com/blog/2017/05/09/faster-rails-is-your-database-properly-indexed.html)
+* [Indexes on Rails: How to make the most of your Postgres database](https://karolgalanciak.com/blog/2018/08/19/indexes-on-rails-how-to-make-the-most-of-your-postgres-database/)
+
 ## Validation
 
 * [Refactoring Rails application with dry-validation](http://gafur.me/2017/11/13/refactoring-rails-application-with-dry-validation.html)

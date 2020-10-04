@@ -1,5 +1,12 @@
 # Product Design
 
+https://reasonablypolymorphic.com/blog/writing-technical-posts/
+
+- [Favour progress over perfection](https://99u.adobe.com/articles/65455/overcome-perfectionism-and-planning-procrastination-in-disguise)
+
+
+> When design leaders think about how to grow their businesses, they usually don’t stop at one product or service: they imagine all of the different ways they can expand, even if they’re not quite sure how to get there. What if we could break into *this* new market? Add *this* type of product? Work with *these* kinds of clients? What if, what if, what if?! - [Building an Interdisciplinary Team That Can Handle Any Project](https://99u.adobe.com/articles/63983/how-to-build-an-interdisciplinary-team-that-can-handle-any-creative-project)
+
 * [**Tools for better thinking**](https://untools.co/)
 
 > The designer's first and most essential task is choosing the correct problem to solve. Because if you get that wrong, every choice you make after that is irrelevant. - @jjg
