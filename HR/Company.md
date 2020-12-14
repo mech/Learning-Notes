@@ -19,4 +19,11 @@ http://ihrp.sg/certification
 * https://www.bamboohr.com/time-tracking-software/
 * https://lattice.com/
 * https://harpoonapp.com/
+* https://breezy.hr/
+
+## Local
+
+* https://www.manpower.com.sg/
+* https://www.peoplestrong.com/
+* https://www.jobscan.co/
 

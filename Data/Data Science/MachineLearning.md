@@ -1,5 +1,15 @@
 # Machine Learning
 
+Machine learning is turning things(data) into numbers and finding patterns in those numbers.
+
+Turning values into number is important. A machine learning model requires all values to be numerical:
+
+- OneHotEncoding
+- LabelEncoder
+- Embedding encoding
+
+---
+
 * [The Data Science Interview Study Guide](https://medium.com/better-programming/the-data-science-interview-study-guide-c3824cb76c2e)
 * [If you're a developer transitioning into data science, here are your best resources](https://medium.freecodecamp.org/if-youre-a-developer-transitioning-into-data-science-here-are-your-best-resources-c31928b53cd1)
 * [From Data to Deployment – Full Stack Data Science](http://engineering.indeedblog.com/talks/data-to-deployment/)
@@ -32,6 +42,10 @@ Simulated annealing
 Knapsack problem
 NP-Complete
 ```
+
+## Getting Started
+
+
 
 ## Random Forest
 

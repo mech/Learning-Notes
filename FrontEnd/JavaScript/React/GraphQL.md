@@ -1,5 +1,8 @@
 # GraphQL
 
+https://hashrocket.com/blog/posts/graphql-way-limited-edition
+https://github.com/mathewtrivett/tfl-graphql
+
 > GraphQL lets us model an **interface** to our **core domain**.
 
 * [Principled GraphQL](https://principledgraphql.com/)
@@ -718,6 +721,7 @@ The `default_resolve` object in `GraphQL::Schema.from_definition` doesn't have t
 
 [**New class-based API for GraphQL-Ruby v1.8.0**](https://rmosolgo.github.io/blog/2018/04/09/updating-github-to-graphql-1-dot-8-0/)
 
+* [**Nice example of Ruby GraphQL**](https://github.com/mathewtrivett/tfl-graphql)
 * [Using GraphQL, a Ruby on Rails introduction](https://medium.com/@UnicornAgency/you-should-be-using-graphql-a-ruby-introduction-9b1de3b001dd)
 * [**GraphQL and Performance in Rails**](https://blog.codeship.com/graphql-and-performance-in-rails/)
 * [Building a full on GraphQL app](https://medium.com/ryancollinsio/building-a-full-on-graphql-app-b261f6cfea93)

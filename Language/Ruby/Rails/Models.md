@@ -1,7 +1,5 @@
 # Models
 
-https://github.com/krisleech/wisper
-
 * [rails-patterns](https://github.com/Selleo/pattern)
 * [**Rails Database Practices**](http://blog.carbonfive.com/2016/11/16/rails-database-best-practices/)
 * [7 Design Patterns to Refactor MVC Components in Rails](https://www.sitepoint.com/7-design-patterns-to-refactor-mvc-components-in-rails/)
@@ -20,6 +18,10 @@ https://github.com/krisleech/wisper
 * [Ruby Blog Pro](http://rubyblog.pro/)
 * [Flag argument is a code smell](http://craftingruby.com/posts/2017/05/04/flag-arguments-are-a-code-smell.html)
 * [Using Services to Keep Your Rails Controllers Clean and DRY](https://blog.engineyard.com/2014/keeping-your-rails-controllers-dry-with-services)
+
+## Design Approaches
+
+* https://blog.arkency.com/on-activerecord-callbacks-setters-and-derived-data/
 
 ## ApplicationRecord - New in Rails 5
 
@@ -505,3 +507,8 @@ end
 Post.limit(500).find_each.map(&:title)
 ```
 
+## Domain Events
+
+* [Domain Events over Active Record Callbacks](https://blog.arkency.com/2016/05/domain-events-over-active-record-callbacks/)
+* [Wisper - A micro library providing Ruby objects with Publish-Subscribe capabilities](https://github.com/krisleech/wisper)
+* [Rails Event Store](https://railseventstore.org/support/)

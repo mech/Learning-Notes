@@ -10,6 +10,11 @@
 * [How to Reduce Controller Bloat with Interactors in Ruby](https://semaphoreci.com/community/tutorials/how-to-reduce-controller-bloat-with-interactors-in-ruby)
 * [Better Rails Performance with JSON Patch](https://formapi.io/blog/posts/json-patch-with-rails-5-and-react/)
 
+## Reporting
+
+* [Big CSV exports with Rails: streaming FTW](https://dev.to/chrsgrrtt/big-csv-exports-with-rails-streaming-ftw-34o5)
+* [ActiveRecord with large result sets - part 2: streaming data](http://patshaughnessy.net/2010/10/11/activerecord-with-large-result-sets---part-2-streaming-data)
+
 ## Jim Werich
 
 ```ruby

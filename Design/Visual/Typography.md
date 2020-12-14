@@ -25,7 +25,6 @@
 * [`font-display`](https://www.zachleat.com/web/font-display-reflow/)
 * [`font-display` for the Masses](https://css-tricks.com/font-display-masses/)
 * [Future Fonts](https://www.futurefonts.xyz/fonts)
-* 
 
 There are 6 web font formats:
 
