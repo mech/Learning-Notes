@@ -245,6 +245,7 @@ footer {
 * [Enhancing Responsiveness with Flexbox - booking.com example](https://vimeo.com/145055822)
 * [Jonathan Snook - Container Queries](https://www.youtube.com/watch?v=s1J4T1NW3qo)
 * [Making Future Interfaces: Algorithmic Layouts](https://www.youtube.com/watch?v=qOUtkN6M52M)
+* [10 modern layouts in 1 line of CSS](https://www.youtube.com/watch?v=qm0IfG1GyZU)
 
 ## Presentation
 

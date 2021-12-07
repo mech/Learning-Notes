@@ -52,3 +52,4 @@ document.getElementsByTagName('video')[0].playbackRate = 2;
 * [Clayton Christensen (The Innovator's Dilemma) at Startup Grind Global 2016](https://www.youtube.com/watch?v=Zn6-KksdOgE)
 * [OSCAMP - Open Source Camp](https://channel9.msdn.com/Events/DXPortugal/OSCAMP-Open-Source-Software-powered-by-Bright-Pixel)
 
+https://dev.to/bholmesdev/conference-talks-that-changed-my-perspective-as-a-web-dev-lfp

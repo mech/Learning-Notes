@@ -139,3 +139,6 @@ server {
 }
 ```
 
+## Videos
+
+* [Nginx Crash Course (Layer 4 & Layer 7 Proxy, HTTPS, TLS 1.3, HTTP/2 & More)](https://www.youtube.com/watch?v=WC2-hNNBWII)

@@ -86,8 +86,14 @@ Postgres Documentation (where did you stop at?)
 - https://www.codecademy.com/articles/install-python3
 - https://towardsdatascience.com/important-topics-in-machine-learning-you-need-to-know-21ad02cc6be5
 - https://zapier.com/
+- https://www.kaggle.com/dataturks/resume-entities-for-ner
+- https://tfhub.dev/s?module-type=text-embedding
+- https://huggingface.co/transformers/
+- https://www.kaggle.com/c/titanic
+- https://course.fullstackdeeplearning.com/
+- 
 
-----
+---
 
 - https://github.com/Msq-9/Extraction-of-Skills
 - https://github.com/JAIJANYANI/Automated-Resume-Screening-System
@@ -95,4 +101,15 @@ Postgres Documentation (where did you stop at?)
 - https://github.com/brettamdur/skillSimilarities
 - http://karpathy.github.io/2015/05/21/rnn-effectiveness/
 - http://nlpx.net/archives/330
+- https://medium.com/@nuripurswani/word2vec-for-talent-acquisition-ab20a23e01d8
+- https://towardsdatascience.com/building-a-topic-modeling-pipeline-with-spacy-and-gensim-c5dc03ffc619
+- http://jalammar.github.io/illustrated-word2vec/
+- https://zerotomastery.io/blog/machine-learning-monthly-september-2020/
 
+---
+
+- https://developers.google.com/machine-learning/guides/rules-of-ml
+- https://www.dataschool.io/start/
+- https://madewithml.com/courses/applied-ml-in-production/
+
+https://dev.to/bholmesdev/conference-talks-that-changed-my-perspective-as-a-web-dev-lfp
